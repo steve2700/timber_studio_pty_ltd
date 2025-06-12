@@ -5,6 +5,8 @@ import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { FloatingWhatsApp } from "@/components/floating-whatsapp"
+import { PWAInstallPrompt } from "@/components/pwa-install-prompt"
+import { PWAStatus } from "@/components/pwa-status"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -31,6 +33,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  manifest: "/manifest.json",
   openGraph: {
     type: "website",
     locale: "en_ZA",
@@ -48,7 +51,22 @@ export const metadata: Metadata = {
   verification: {
     google: "your-google-verification-code",
   },
-    generator: 'v0.dev'
+  generator: "v0.dev",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Granite & Joinery Experts",
+  },
+  other: {
+    "mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "default",
+    "apple-mobile-web-app-title": "Granite & Joinery Experts",
+    "application-name": "Granite & Joinery Experts",
+    "msapplication-TileColor": "#d97706",
+    "msapplication-config": "/browserconfig.xml",
+    "theme-color": "#d97706",
+  },
 }
 
 export default function RootLayout({
@@ -59,6 +77,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+        <meta name="theme-color" content="#d97706" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Granite & Joinery Experts" />
+        <meta name="mobile-web-app-capable" content="yes" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -126,12 +153,32 @@ export default function RootLayout({
             }),
           }}
         />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                  navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                      console.log('SW registered: ', registration);
+                    })
+                    .catch(function(registrationError) {
+                      console.log('SW registration failed: ', registrationError);
+                    });
+                });
+              }
+            `,
+          }}
+        />
       </head>
       <body className={inter.className}>
         <Header />
         <main>{children}</main>
         <Footer />
         <FloatingWhatsApp />
+        <PWAInstallPrompt />
+        <PWAStatus />
       </body>
     </html>
   )

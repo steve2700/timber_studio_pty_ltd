@@ -98,33 +98,80 @@ html {
 /* Enhanced responsive utilities */
 @layer utilities {
   .container {
-    @apply mx-auto px-4 sm:px-6 lg:px-8;
+    @apply mx-auto px-3 sm:px-4 md:px-6 lg:px-8;
   }
 
-  /* Responsive text sizes */
+  /* Mobile-first responsive text sizes */
+  .text-responsive-sm {
+    @apply text-sm sm:text-base;
+  }
+
+  .text-responsive-base {
+    @apply text-base sm:text-lg;
+  }
+
+  .text-responsive-lg {
+    @apply text-lg sm:text-xl md:text-2xl;
+  }
+
   .text-responsive-xl {
-    @apply text-lg sm:text-xl lg:text-2xl;
+    @apply text-xl sm:text-2xl md:text-3xl;
   }
 
   .text-responsive-2xl {
-    @apply text-xl sm:text-2xl lg:text-3xl;
+    @apply text-2xl sm:text-3xl md:text-4xl;
   }
 
   .text-responsive-3xl {
-    @apply text-2xl sm:text-3xl lg:text-4xl;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
   }
 
-  .text-responsive-4xl {
-    @apply text-3xl sm:text-4xl lg:text-5xl;
+  /* Mobile-first responsive spacing */
+  .py-responsive-sm {
+    @apply py-8 sm:py-12 md:py-16;
   }
 
-  /* Responsive spacing */
   .py-responsive {
-    @apply py-12 sm:py-16 lg:py-20;
+    @apply py-12 sm:py-16 md:py-20;
+  }
+
+  .py-responsive-lg {
+    @apply py-16 sm:py-20 md:py-24;
   }
 
   .px-responsive {
-    @apply px-4 sm:px-6 lg:px-8;
+    @apply px-3 sm:px-4 md:px-6 lg:px-8;
+  }
+
+  /* Mobile button improvements */
+  .btn-mobile {
+    @apply w-full sm:w-auto min-h-[48px] text-base;
+  }
+
+  /* Mobile card spacing */
+  .card-mobile {
+    @apply p-4 sm:p-6 md:p-8;
+  }
+
+  /* Mobile grid improvements */
+  .grid-mobile-1 {
+    @apply grid-cols-1;
+  }
+
+  .grid-mobile-2 {
+    @apply grid-cols-1 sm:grid-cols-2;
+  }
+
+  .grid-mobile-3 {
+    @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .grid-mobile-4 {
+    @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-4;
+  }
+
+  .grid-mobile-6 {
+    @apply grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6;
   }
 }
 
@@ -143,43 +190,73 @@ html {
   animation: float 3s ease-in-out infinite;
 }
 
-/* Mobile-first responsive design improvements */
+/* Mobile-specific improvements */
 @media (max-width: 640px) {
   .container {
-    @apply px-4;
+    @apply px-3;
   }
 
-  /* Ensure buttons stack properly on mobile */
-  .hero-buttons {
-    @apply flex-col space-y-4;
+  /* Ensure proper touch targets */
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
   }
 
-  /* Responsive card grids */
-  .service-grid {
-    @apply grid-cols-1;
+  /* Better mobile typography */
+  h1 {
+    @apply text-2xl leading-tight;
+  }
+
+  h2 {
+    @apply text-xl leading-tight;
+  }
+
+  h3 {
+    @apply text-lg leading-tight;
   }
 
   /* Mobile navigation improvements */
   .mobile-nav {
     @apply max-h-screen overflow-y-auto;
   }
+
+  /* Mobile form improvements */
+  input,
+  textarea,
+  select {
+    @apply text-base; /* Prevents zoom on iOS */
+  }
+
+  /* Mobile card improvements */
+  .card {
+    @apply mx-2;
+  }
+
+  /* Mobile image improvements */
+  img {
+    @apply w-full h-auto;
+  }
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
+@media (min-width: 641px) and (max-width: 768px) {
   /* Tablet specific styles */
-  .service-grid {
-    @apply grid-cols-2;
+  .container {
+    @apply px-4;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Desktop tablet styles */
+  .container {
+    @apply px-6;
   }
 }
 
 @media (min-width: 1025px) {
-  /* Desktop specific styles */
-  .service-grid {
-    @apply grid-cols-3;
-  }
-
-  .hero-buttons {
-    @apply flex-row space-x-4 space-y-0;
+  /* Large desktop styles */
+  .container {
+    @apply px-8;
   }
 }
 
@@ -191,4 +268,28 @@ img {
 /* Responsive iframe for Google Maps */
 iframe {
   @apply w-full h-full;
+}
+
+/* Mobile-friendly button styles */
+.btn-primary {
+  @apply bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply border border-slate-300 hover:border-amber-600 text-slate-700 hover:text-amber-600 font-medium py-3 px-6 rounded-lg transition-colors duration-200;
+}
+
+/* Mobile hero section improvements */
+.hero-mobile {
+  @apply py-12 sm:py-16 md:py-20;
+}
+
+/* Mobile service grid */
+.service-grid-mobile {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8;
+}
+
+/* Mobile stats grid */
+.stats-grid-mobile {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 sm:gap-8;
 }

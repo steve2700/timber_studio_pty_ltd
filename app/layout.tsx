@@ -7,7 +7,6 @@ import { Footer } from "@/components/footer"
 import { FloatingWhatsApp } from "@/components/floating-whatsapp"
 import { PWAInstallPrompt } from "@/components/pwa-install-prompt"
 import { PWAStatus } from "@/components/pwa-status"
-import { PWADebug } from "@/components/pwa-debug"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -183,13 +182,6 @@ export default function RootLayout({
                 e.preventDefault();
                 deferredPrompt = e;
               });
-
-              // Debug info for testing
-              console.log('PWA Debug Info:');
-              console.log('User Agent:', navigator.userAgent);
-              console.log('Is Standalone:', window.matchMedia('(display-mode: standalone)').matches);
-              console.log('Is iOS Standalone:', window.navigator.standalone);
-              console.log('Service Worker Support:', 'serviceWorker' in navigator);
             `,
           }}
         />
@@ -201,7 +193,6 @@ export default function RootLayout({
         <FloatingWhatsApp />
         <PWAInstallPrompt />
         <PWAStatus />
-        <PWADebug />
       </body>
     </html>
   )

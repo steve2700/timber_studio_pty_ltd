@@ -79,6 +79,15 @@ export function Header() {
               About
             </Link>
             <Link
+              href="/areas/johannesburg-south"
+              className="text-slate-700 hover:text-amber-600 transition-colors text-sm xl:text-base"
+            >
+              Johannesburg South
+            </Link>
+            <Link href="/faq" className="text-slate-700 hover:text-amber-600 transition-colors text-sm xl:text-base">
+              FAQ
+            </Link>
+            <Link
               href="/contact"
               className="text-slate-700 hover:text-amber-600 transition-colors text-sm xl:text-base"
             >
@@ -172,6 +181,20 @@ export function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                href="/areas/johannesburg-south"
+                className="block py-3 px-3 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Johannesburg South
+              </Link>
+              <Link
+                href="/faq"
+                className="block py-3 px-3 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                FAQ
               </Link>
               <Link
                 href="/contact"

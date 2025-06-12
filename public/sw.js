@@ -1,6 +1,6 @@
-const CACHE_NAME = "granite-joinery-v1.0.0"
-const STATIC_CACHE_NAME = "granite-joinery-static-v1.0.0"
-const DYNAMIC_CACHE_NAME = "granite-joinery-dynamic-v1.0.0"
+const CACHE_NAME = "granite-joinery-v1.0.1"
+const STATIC_CACHE_NAME = "granite-joinery-static-v1.0.1"
+const DYNAMIC_CACHE_NAME = "granite-joinery-dynamic-v1.0.1"
 
 // Assets to cache immediately
 const STATIC_ASSETS = [
@@ -13,12 +13,8 @@ const STATIC_ASSETS = [
   "/services/kitchen-renovations",
   "/services/built-in-cupboards",
   "/services/quartz-granite",
-  "/services/decking-flooring",
-  "/services/drywall-ceilings",
-  "/services/carpentry-training",
+  "/offline.html",
   "/manifest.json",
-  "/icons/icon-192x192.png",
-  "/icons/icon-512x512.png",
 ]
 
 // Install event - cache static assets
@@ -32,7 +28,7 @@ self.addEventListener("install", (event) => {
         return cache.addAll(STATIC_ASSETS)
       })
       .then(() => {
-        console.log("Service Worker: Static assets cached")
+        console.log("Service Worker: Static assets cached successfully")
         return self.skipWaiting()
       })
       .catch((error) => {
@@ -58,7 +54,7 @@ self.addEventListener("activate", (event) => {
         )
       })
       .then(() => {
-        console.log("Service Worker: Activated")
+        console.log("Service Worker: Activated successfully")
         return self.clients.claim()
       }),
   )
@@ -122,6 +118,16 @@ self.addEventListener("fetch", (event) => {
   )
 })
 
+// Message handling for debugging
+self.addEventListener("message", (event) => {
+  console.log("Service Worker received message:", event.data)
+
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting()
+  }
+})
+
+console.log("Service Worker script loaded")
 // Background sync for form submissions
 self.addEventListener("sync", (event) => {
   if (event.tag === "contact-form-sync") {

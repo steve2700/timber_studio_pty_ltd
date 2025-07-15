@@ -15,7 +15,7 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-slate-600 to-slate-800 rounded"></div>
             <span className="font-bold text-sm sm:text-lg md:text-xl text-slate-800 leading-tight">
-              Granite & Joinery Experts
+              Granite & Carpentry
             </span>
           </Link>
 

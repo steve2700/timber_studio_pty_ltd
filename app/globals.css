@@ -68,9 +68,29 @@
   }
 }
 
-/* Custom scrollbar */
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Optimized scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -85,23 +105,18 @@
   @apply bg-slate-400;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Focus styles for accessibility */
 .focus-visible:focus {
   @apply outline-none ring-2 ring-amber-500 ring-offset-2;
 }
 
-/* Enhanced responsive utilities */
+/* Enhanced responsive utilities for better performance */
 @layer utilities {
   .container {
-    @apply mx-auto px-3 sm:px-4 md:px-6 lg:px-8;
+    @apply mx-auto px-3 sm:px-4 md:px-6 lg:px-8 max-w-7xl;
   }
 
-  /* Mobile-first responsive text sizes */
+  /* Optimized responsive text sizes */
   .text-responsive-sm {
     @apply text-sm sm:text-base;
   }
@@ -126,7 +141,7 @@ html {
     @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
   }
 
-  /* Mobile-first responsive spacing */
+  /* Optimized responsive spacing */
   .py-responsive-sm {
     @apply py-8 sm:py-12 md:py-16;
   }
@@ -143,17 +158,17 @@ html {
     @apply px-3 sm:px-4 md:px-6 lg:px-8;
   }
 
-  /* Mobile button improvements */
+  /* Mobile-optimized buttons */
   .btn-mobile {
-    @apply w-full sm:w-auto min-h-[48px] text-base;
+    @apply w-full sm:w-auto min-h-[48px] text-base touch-manipulation;
   }
 
-  /* Mobile card spacing */
+  /* Mobile-optimized cards */
   .card-mobile {
     @apply p-4 sm:p-6 md:p-8;
   }
 
-  /* Mobile grid improvements */
+  /* Optimized grid layouts */
   .grid-mobile-1 {
     @apply grid-cols-1;
   }
@@ -173,24 +188,40 @@ html {
   .grid-mobile-6 {
     @apply grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6;
   }
+
+  /* Performance optimizations */
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .will-change-opacity {
+    will-change: opacity;
+  }
+
+  .gpu-accelerated {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
 }
 
-/* Floating WhatsApp animation */
+/* Floating WhatsApp animation - optimized */
 @keyframes float {
   0%,
   100% {
-    transform: translateY(0px);
+    transform: translateY(0px) translateZ(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-10px) translateZ(0);
   }
 }
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
+  will-change: transform;
 }
 
-/* Mobile-specific improvements */
+/* Mobile-specific optimizations */
 @media (max-width: 640px) {
   .container {
     @apply px-3;
@@ -198,9 +229,12 @@ html {
 
   /* Ensure proper touch targets */
   button,
-  a {
+  a,
+  input,
+  select,
+  textarea {
     min-height: 44px;
-    min-width: 44px;
+    touch-action: manipulation;
   }
 
   /* Better mobile typography */
@@ -216,80 +250,99 @@ html {
     @apply text-lg leading-tight;
   }
 
-  /* Mobile navigation improvements */
-  .mobile-nav {
-    @apply max-h-screen overflow-y-auto;
-  }
-
   /* Mobile form improvements */
   input,
   textarea,
   select {
     @apply text-base; /* Prevents zoom on iOS */
+    font-size: 16px; /* Explicit for iOS */
   }
 
-  /* Mobile card improvements */
-  .card {
-    @apply mx-2;
-  }
-
-  /* Mobile image improvements */
+  /* Mobile image optimizations */
   img {
     @apply w-full h-auto;
+    max-width: 100%;
+    height: auto;
   }
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
-  /* Tablet specific styles */
   .container {
     @apply px-4;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  /* Desktop tablet styles */
   .container {
     @apply px-6;
   }
 }
 
 @media (min-width: 1025px) {
-  /* Large desktop styles */
   .container {
     @apply px-8;
   }
 }
 
-/* Ensure images are responsive */
+/* Ensure all images are responsive and optimized */
 img {
   @apply max-w-full h-auto;
+  display: block;
 }
 
-/* Responsive iframe for Google Maps */
+/* Responsive iframe optimization */
 iframe {
   @apply w-full h-full;
+  max-width: 100%;
 }
 
-/* Mobile-friendly button styles */
+/* Optimized button styles */
 .btn-primary {
-  @apply bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200;
+  @apply bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 touch-manipulation;
 }
 
 .btn-secondary {
-  @apply border border-slate-300 hover:border-amber-600 text-slate-700 hover:text-amber-600 font-medium py-3 px-6 rounded-lg transition-colors duration-200;
+  @apply border border-slate-300 hover:border-amber-600 text-slate-700 hover:text-amber-600 font-medium py-3 px-6 rounded-lg transition-colors duration-200 touch-manipulation;
 }
 
-/* Mobile hero section improvements */
-.hero-mobile {
-  @apply py-12 sm:py-16 md:py-20;
+/* Performance optimizations for animations */
+.transition-optimized {
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
-/* Mobile service grid */
-.service-grid-mobile {
-  @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8;
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
-/* Mobile stats grid */
-.stats-grid-mobile {
-  @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 sm:gap-8;
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
 }

@@ -1,0 +1,260 @@
+import type { Metadata } from "next"
+import Link from "next/link"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { CheckCircle, ArrowRight, Phone, Star, Award, Home } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Reliable Carpenter Boksburg | Kitchen Renovations & Built-in Cupboards East Rand",
+  description:
+    "Reliable carpenter in Boksburg East Rand. Professional kitchen renovations, built-in cupboards, granite installation for Boksburg, Benoni, Brakpan. Quality carpentry services with 5-star rating.",
+  keywords:
+    "carpenter Boksburg, kitchen renovation Boksburg, built-in cupboards Boksburg, granite installation Boksburg, carpenter Benoni, kitchen cabinets Brakpan, reliable carpenter East Rand, professional carpenter Boksburg, custom carpentry Boksburg",
+}
+
+export default function BoksburgPage() {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-slate-50 to-slate-100 py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div>
+              <div className="flex items-center mb-4">
+                <div className="flex text-amber-400 mr-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
+                  ))}
+                </div>
+                <span className="text-slate-600 font-medium text-sm sm:text-base">Reliable Boksburg Carpenter</span>
+              </div>
+
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 sm:mb-6 leading-tight">
+                Reliable <span className="text-amber-600">Carpenter</span> in{" "}
+                <span className="text-amber-600">Boksburg</span>
+              </h1>
+
+              <p className="text-lg sm:text-xl text-slate-600 mb-6 sm:mb-8 leading-relaxed">
+                Professional carpentry services in Boksburg, Benoni, and Brakpan. Reliable kitchen renovations, built-in
+                cupboards, and granite installations for East Rand families. Quality workmanship you can trust.
+              </p>
+
+              <div className="flex flex-col gap-3 sm:gap-4 mb-6 sm:mb-8">
+                <Button
+                  size="lg"
+                  asChild
+                  className="bg-amber-600 hover:bg-amber-700 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+                >
+                  <Link href="/contact">
+                    Get Reliable Quote
+                    <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+                  </Link>
+                </Button>
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    asChild
+                    className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto bg-transparent"
+                  >
+                    <a href="tel:+27676014490">
+                      <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
+                      Call: 067 601 4490
+                    </a>
+                  </Button>
+                  <Button
+                    size="lg"
+                    asChild
+                    variant="outline"
+                    className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 border-amber-600 text-amber-600 hover:bg-amber-50 w-full sm:w-auto bg-transparent"
+                  >
+                    <a href="https://g.co/kgs/epZT5BY" target="_blank" rel="noopener noreferrer">
+                      <Star className="mr-2 w-4 h-4 sm:w-5 sm:h-5 fill-current" />
+                      <span className="hidden sm:inline">5-Star Reviews</span>
+                      <span className="sm:hidden">Reviews</span>
+                    </a>
+                  </Button>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4 text-slate-600 text-sm sm:text-base">
+                <div className="flex items-center">
+                  <Home className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 mr-2" />
+                  <span>East Rand</span>
+                </div>
+                <div className="flex items-center">
+                  <Award className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 mr-2" />
+                  <span>Reliable Service</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/placeholder.svg?height=600&width=800"
+                alt="Reliable carpenter in Boksburg - professional kitchen renovation and built-in cupboards"
+                width={800}
+                height={600}
+                className="rounded-lg shadow-2xl w-full h-auto"
+                priority
+              />
+              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white p-3 sm:p-4 rounded-lg shadow-lg">
+                <div className="text-xl sm:text-2xl font-bold text-slate-800">Reliable</div>
+                <div className="text-slate-600 text-sm sm:text-base">Quality</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Boksburg Areas Section */}
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+              Serving All Boksburg Areas
+            </h2>
+            <p className="text-lg sm:text-xl text-slate-600">
+              Reliable carpentry services throughout Boksburg and East Rand areas
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+            {[
+              "Boksburg CBD",
+              "Benoni",
+              "Brakpan",
+              "Springs",
+              "Nigel",
+              "Dunnottar",
+              "Reiger Park",
+              "Vosloorus",
+              "Katlehong",
+              "Tsakane",
+              "Wattville",
+              "Daveyton",
+              "Etwatwa",
+              "Duduza",
+              "Germiston",
+              "Edenvale",
+            ].map((area) => (
+              <Card key={area} className="text-center hover:shadow-lg transition-shadow">
+                <CardContent className="p-3 sm:p-4">
+                  <h3 className="font-semibold text-slate-800 text-sm sm:text-base">{area}</h3>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-12 sm:py-16 md:py-20 bg-slate-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+              Reliable Carpentry Services in Boksburg
+            </h2>
+            <p className="text-lg sm:text-xl text-slate-600">
+              Professional carpentry and renovation services for East Rand homeowners
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">Family Kitchen Renovations</h3>
+                <p className="text-slate-600 mb-4 text-sm sm:text-base">
+                  Reliable kitchen renovations for Boksburg families. Functional designs that suit family living and
+                  daily use.
+                </p>
+                <ul className="space-y-2 text-slate-600 mb-6 text-sm sm:text-base">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Family-friendly layouts
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Durable materials
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Practical storage
+                  </li>
+                </ul>
+                <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
+                  <Link href="/services/kitchen-renovations">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">Dependable Built-in Storage</h3>
+                <p className="text-slate-600 mb-4 text-sm sm:text-base">
+                  Reliable built-in storage solutions for Boksburg homes. Quality craftsmanship that stands the test of
+                  time.
+                </p>
+                <ul className="space-y-2 text-slate-600 mb-6 text-sm sm:text-base">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Bedroom wardrobes
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Study storage
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Living room units
+                  </li>
+                </ul>
+                <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
+                  <Link href="/services/built-in-cupboards">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
+        <div className="container mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
+            Ready for Reliable Boksburg Service?
+          </h2>
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
+            Contact Boksburg's reliable carpentry specialists today. Dependable service, quality workmanship, and fair
+            pricing for all your home improvement needs.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-lg mx-auto">
+            <Button
+              size="lg"
+              asChild
+              className="bg-white text-amber-600 hover:bg-slate-50 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+            >
+              <Link href="/contact">
+                Get Reliable Quote
+                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+              </Link>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              asChild
+              className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto bg-transparent"
+            >
+              <a href="tel:+27676014490">
+                <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
+                Call: 067 601 4490
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}

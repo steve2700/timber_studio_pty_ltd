@@ -68,7 +68,7 @@ export default function DrywallCeilingsPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/drywall-contractor.jpg?height=600&width=800"
                 alt="Professional drywall and ceiling installation in Johannesburg"
                 width={800}
                 height={600}
@@ -281,7 +281,7 @@ export default function DrywallCeilingsPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/drywalling-installers.webp?height=500&width=600"
                 alt="Professional ceiling installation showing quality workmanship"
                 width={600}
                 height={500}

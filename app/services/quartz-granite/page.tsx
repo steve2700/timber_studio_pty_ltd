@@ -68,7 +68,7 @@ export default function QuartzGranitePage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/granite-installation-sandton.jpg?height=600&width=800"
                 alt="Premium quartz and granite countertop installation by Johannesburg specialists"
                 width={800}
                 height={600}

@@ -68,7 +68,7 @@ export default function BuiltInCupboardsPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/Custom-Bedroom-Built-In-Cupboards-and-Wardrobes-JHB.png?height=600&width=800"
                 alt="Custom built-in wardrobes and cupboards by Johannesburg carpenter"
                 width={800}
                 height={600}
@@ -220,7 +220,7 @@ export default function BuiltInCupboardsPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/Built-Built-in-Cupboards-Midrand.jpg?height=500&width=600"
                 alt="Custom built-in storage solutions showing space optimization"
                 width={600}
                 height={500}

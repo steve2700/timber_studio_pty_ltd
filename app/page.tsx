@@ -278,7 +278,7 @@ export default function HomePage() {
 
             <div className="relative order-1 lg:order-2">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/carpenter-johannesburg-installing-kitchen-cupboards.jpg?height=500&width=600"
                 alt="Professional carpenter working on built-in cupboards in Johannesburg - quality craftsmanship"
                 width={600}
                 height={500}

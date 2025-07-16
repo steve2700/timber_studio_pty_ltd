@@ -69,6 +69,87 @@ export function Header() {
                 </div>
               </div>
             </div>
+            <div className="relative group">
+              <button className="text-slate-700 hover:text-amber-600 transition-colors text-sm xl:text-base">
+                Areas Served
+              </button>
+              <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2 grid grid-cols-1">
+                  <Link
+                    href="/areas/sandton"
+                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600"
+                  >
+                    Sandton
+                  </Link>
+                  <Link
+                    href="/areas/randburg"
+                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600"
+                  >
+                    Randburg
+                  </Link>
+                  <Link
+                    href="/areas/fourways"
+                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600"
+                  >
+                    Fourways
+                  </Link>
+                  <Link
+                    href="/areas/midrand"
+                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600"
+                  >
+                    Midrand
+                  </Link>
+                  <Link
+                    href="/areas/kempton-park"
+                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600"
+                  >
+                    Kempton Park
+                  </Link>
+                  <Link
+                    href="/areas/boksburg"
+                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600"
+                  >
+                    Boksburg
+                  </Link>
+                  <Link
+                    href="/areas/edenvale"
+                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600"
+                  >
+                    Edenvale
+                  </Link>
+                  <Link
+                    href="/areas/alberton"
+                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600"
+                  >
+                    Alberton
+                  </Link>
+                  <Link
+                    href="/areas/roodepoort"
+                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600"
+                  >
+                    Roodepoort
+                  </Link>
+                  <Link
+                    href="/areas/centurion"
+                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600"
+                  >
+                    Centurion
+                  </Link>
+                  <Link
+                    href="/areas/pretoria"
+                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600"
+                  >
+                    Pretoria
+                  </Link>
+                  <Link
+                    href="/areas/johannesburg-south"
+                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600"
+                  >
+                    Johannesburg South
+                  </Link>
+                </div>
+              </div>
+            </div>
             <Link
               href="/portfolio"
               className="text-slate-700 hover:text-amber-600 transition-colors text-sm xl:text-base"
@@ -77,12 +158,6 @@ export function Header() {
             </Link>
             <Link href="/about" className="text-slate-700 hover:text-amber-600 transition-colors text-sm xl:text-base">
               About
-            </Link>
-            <Link
-              href="/areas/johannesburg-south"
-              className="text-slate-700 hover:text-amber-600 transition-colors text-sm xl:text-base"
-            >
-              Johannesburg South
             </Link>
             <Link href="/faq" className="text-slate-700 hover:text-amber-600 transition-colors text-sm xl:text-base">
               FAQ
@@ -168,6 +243,93 @@ export function Header() {
                   Carpentry Training
                 </Link>
               </div>
+              <div className="space-y-1">
+                <div className="py-2 px-3 text-slate-500 text-sm font-medium">Areas Served</div>
+                <Link
+                  href="/areas/sandton"
+                  className="block py-2 px-6 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Sandton
+                </Link>
+                <Link
+                  href="/areas/randburg"
+                  className="block py-2 px-6 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Randburg
+                </Link>
+                <Link
+                  href="/areas/fourways"
+                  className="block py-2 px-6 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Fourways
+                </Link>
+                <Link
+                  href="/areas/midrand"
+                  className="block py-2 px-6 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Midrand
+                </Link>
+                <Link
+                  href="/areas/kempton-park"
+                  className="block py-2 px-6 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Kempton Park
+                </Link>
+                <Link
+                  href="/areas/boksburg"
+                  className="block py-2 px-6 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Boksburg
+                </Link>
+                <Link
+                  href="/areas/edenvale"
+                  className="block py-2 px-6 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Edenvale
+                </Link>
+                <Link
+                  href="/areas/alberton"
+                  className="block py-2 px-6 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Alberton
+                </Link>
+                <Link
+                  href="/areas/roodepoort"
+                  className="block py-2 px-6 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Roodepoort
+                </Link>
+                <Link
+                  href="/areas/centurion"
+                  className="block py-2 px-6 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Centurion
+                </Link>
+                <Link
+                  href="/areas/pretoria"
+                  className="block py-2 px-6 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Pretoria
+                </Link>
+                <Link
+                  href="/areas/johannesburg-south"
+                  className="block py-2 px-6 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Johannesburg South
+                </Link>
+              </div>
               <Link
                 href="/portfolio"
                 className="block py-3 px-3 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors"
@@ -181,13 +343,6 @@ export function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </Link>
-              <Link
-                href="/areas/johannesburg-south"
-                className="block py-3 px-3 text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Johannesburg South
               </Link>
               <Link
                 href="/faq"

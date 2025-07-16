@@ -1,261 +1,318 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle, ArrowRight, Phone, Star, Award, MapPin } from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Phone, MapPin, Clock, Star, CheckCircle, Award, Users, Wrench } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Premium Carpenter Fourways | Luxury Kitchen Renovations & Built-in Cupboards",
+  title: "Professional Carpenter Fourways | Luxury Kitchen Renovations & Built-in Cupboards",
   description:
-    "Premium carpenter in Fourways. Luxury kitchen renovations, executive built-in cupboards, granite installation for Fourways, Lonehill, Dainfern. Upmarket carpentry services with 5-star rating.",
+    "Premium carpentry services in Fourways, Johannesburg. Specializing in luxury kitchen renovations, custom built-in cupboards, granite installations, and high-end joinery. Serving Fourways, Dainfern, Bryanston, and surrounding upmarket areas. Licensed professionals with 5-star rating.",
   keywords:
-    "carpenter Fourways, luxury kitchen renovation Fourways, premium built-in cupboards Fourways, granite installation Fourways, carpenter Lonehill, kitchen cabinets Dainfern, upmarket carpenter Fourways, executive carpentry Fourways, custom carpentry Fourways",
+    "carpenter Fourways, kitchen renovation Fourways, built-in cupboards Fourways, granite installation Fourways, luxury carpentry Fourways, professional carpenter Dainfern, custom kitchen cabinets Bryanston, quality joinery Fourways, Fourways carpenter near me, upmarket carpentry services, premium kitchen renovations, luxury built-in wardrobes, high-end carpentry Fourways, licensed carpenter Fourways",
+  openGraph: {
+    title: "Professional Carpenter Fourways | Luxury Kitchen Renovations",
+    description:
+      "Premium carpentry services in Fourways. Luxury kitchen renovations, custom built-in cupboards, granite installations. 5-star rated professionals serving upmarket Fourways area.",
+    url: "https://granitecarpentry.co.za/areas/fourways",
+  },
+  alternates: {
+    canonical: "https://granitecarpentry.co.za/areas/fourways",
+  },
 }
 
 export default function FourwaysPage() {
   return (
-    <>
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-50 to-slate-100 py-12 sm:py-16 md:py-20">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div>
-              <div className="flex items-center mb-4">
-                <div className="flex text-amber-400 mr-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
-                  ))}
-                </div>
-                <span className="text-slate-600 font-medium text-sm sm:text-base">Premium Fourways Carpenter</span>
-              </div>
-
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 sm:mb-6 leading-tight">
-                Premium <span className="text-amber-600">Carpenter</span> in{" "}
-                <span className="text-amber-600">Fourways</span>
-              </h1>
-
-              <p className="text-lg sm:text-xl text-slate-600 mb-6 sm:mb-8 leading-relaxed">
-                Premium carpentry services in Fourways, Lonehill, and Dainfern. Specializing in luxury kitchen
-                renovations, executive built-in cupboards, and high-end granite installations for Fourways' upmarket
-                properties.
-              </p>
-
-              <div className="flex flex-col gap-3 sm:gap-4 mb-6 sm:mb-8">
-                <Button
-                  size="lg"
-                  asChild
-                  className="bg-amber-600 hover:bg-amber-700 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
-                >
-                  <Link href="/contact">
-                    Get Luxury Quote
-                    <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-                  </Link>
-                </Button>
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    asChild
-                    className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto bg-transparent"
-                  >
-                    <a href="tel:+27676014490">
-                      <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                      Call: 067 601 4490
-                    </a>
-                  </Button>
-                  <Button
-                    size="lg"
-                    asChild
-                    variant="outline"
-                    className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 border-amber-600 text-amber-600 hover:bg-amber-50 w-full sm:w-auto bg-transparent"
-                  >
-                    <a href="https://g.co/kgs/epZT5BY" target="_blank" rel="noopener noreferrer">
-                      <Star className="mr-2 w-4 h-4 sm:w-5 sm:h-5 fill-current" />
-                      <span className="hidden sm:inline">5-Star Reviews</span>
-                      <span className="sm:hidden">Reviews</span>
-                    </a>
-                  </Button>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4 text-slate-600 text-sm sm:text-base">
-                <div className="flex items-center">
-                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 mr-2" />
-                  <span>Fourways Area</span>
-                </div>
-                <div className="flex items-center">
-                  <Award className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 mr-2" />
-                  <span>Luxury Service</span>
-                </div>
-              </div>
+      <section className="relative bg-gradient-to-r from-slate-900 via-slate-800 to-amber-900 text-white py-20">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="flex items-center justify-center gap-2 mb-6">
+              <MapPin className="w-6 h-6 text-amber-400" />
+              <Badge variant="secondary" className="bg-amber-600/20 text-amber-200 border-amber-400/30">
+                Serving Fourways & Surrounding Areas
+              </Badge>
             </div>
-
-            <div className="relative">
-              <Image
-                src="/placeholder.svg?height=600&width=800"
-                alt="Premium carpenter in Fourways - luxury kitchen renovation and executive built-in cupboards"
-                width={800}
-                height={600}
-                className="rounded-lg shadow-2xl w-full h-auto"
-                priority
-              />
-              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white p-3 sm:p-4 rounded-lg shadow-lg">
-                <div className="text-xl sm:text-2xl font-bold text-slate-800">Luxury</div>
-                <div className="text-slate-600 text-sm sm:text-base">Craftsmanship</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Fourways Areas Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white">
-        <div className="container mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
-              Serving All Fourways Areas
-            </h2>
-            <p className="text-lg sm:text-xl text-slate-600">
-              Premium carpentry services throughout Fourways and surrounding upmarket areas
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Premium Carpenter
+              <span className="block text-amber-400">Fourways</span>
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-slate-200 leading-relaxed">
+              Luxury carpentry services for Fourways' most discerning homeowners. Specializing in high-end kitchen
+              renovations, custom built-in cupboards, and premium granite installations.
             </p>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              "Fourways",
-              "Lonehill",
-              "Dainfern",
-              "Broadacres",
-              "Bryanston",
-              "Douglasdale",
-              "Sunninghill",
-              "Paulshof",
-              "Magaliessig",
-              "Chartwell",
-              "Cedar Lakes",
-              "Steyn City",
-              "Lanseria",
-              "Honeydew",
-              "Northgate",
-              "Randburg",
-            ].map((area) => (
-              <Card key={area} className="text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-3 sm:p-4">
-                  <h3 className="font-semibold text-slate-800 text-sm sm:text-base">{area}</h3>
-                </CardContent>
-              </Card>
-            ))}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+              <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4">
+                <Link href="/contact">Get Premium Quote</Link>
+              </Button>
+              <a
+                href="tel:+27676014490"
+                className="flex items-center gap-2 text-lg hover:text-amber-400 transition-colors"
+              >
+                <Phone className="w-5 h-5" />
+                067 601 4490
+              </a>
+            </div>
+            <div className="flex items-center justify-center gap-6 text-sm">
+              <div className="flex items-center gap-2">
+                <Star className="w-5 h-5 text-amber-400 fill-current" />
+                <span>5.0 Rating</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Award className="w-5 h-5 text-amber-400" />
+                <span>Licensed & Insured</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Users className="w-5 h-5 text-amber-400" />
+                <span>47+ Projects</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Premium Services Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-slate-50">
-        <div className="container mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+      {/* Services Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
               Luxury Carpentry Services in Fourways
             </h2>
-            <p className="text-lg sm:text-xl text-slate-600">
-              Executive carpentry and stone installation for Fourways' finest properties
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Serving Fourways, Dainfern, Bryanston, Lonehill, and surrounding upmarket areas with premium carpentry
+              solutions
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">Executive Kitchen Design</h3>
-                <p className="text-slate-600 mb-4 text-sm sm:text-base">
-                  Luxury kitchen transformations for Fourways executives. Premium materials, sophisticated designs, and
-                  flawless execution.
-                </p>
-                <ul className="space-y-2 text-slate-600 mb-6 text-sm sm:text-base">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Designer kitchen islands
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Wrench className="w-5 h-5 text-amber-600" />
+                  Luxury Kitchen Renovations
+                </CardTitle>
+                <CardDescription>Premium kitchen transformations for upmarket homes</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    High-end custom cabinetry
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Premium stone surfaces
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Premium granite & quartz countertops
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    High-end cabinetry
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Luxury kitchen islands & breakfast bars
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Designer storage solutions
                   </li>
                 </ul>
-                <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <Link href="/services/kitchen-renovations">Learn More</Link>
-                </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">Luxury Built-in Solutions</h3>
-                <p className="text-slate-600 mb-4 text-sm sm:text-base">
-                  Bespoke storage solutions for upmarket Fourways homes. Custom designs that reflect your lifestyle and
-                  status.
-                </p>
-                <ul className="space-y-2 text-slate-600 mb-6 text-sm sm:text-base">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Walk-in dressing rooms
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Wrench className="w-5 h-5 text-amber-600" />
+                  Custom Built-in Cupboards
+                </CardTitle>
+                <CardDescription>Bespoke storage solutions for luxury homes</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Walk-in wardrobes & dressing rooms
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Executive home offices
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Study & home office built-ins
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Entertainment centers
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Entertainment unit installations
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Custom linen & storage cupboards
                   </li>
                 </ul>
-                <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <Link href="/services/built-in-cupboards">Learn More</Link>
-                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Wrench className="w-5 h-5 text-amber-600" />
+                  Premium Stone Installations
+                </CardTitle>
+                <CardDescription>Granite, quartz & marble installations</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Caesarstone & Silestone countertops
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Natural granite installations
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Marble vanity tops
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Precision templating & fitting
+                  </li>
+                </ul>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
-        <div className="container mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
-            Ready for Luxury Fourways Service?
-          </h2>
-          <p className="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
-            Contact Fourways' premier luxury carpentry specialists today. Executive service, premium materials, and
-            exceptional craftsmanship for discerning homeowners.
+      {/* Why Choose Us Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">
+              Why Fourways Homeowners Choose Us
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Award className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-slate-800 mb-2">Luxury Market Specialists</h3>
+                    <p className="text-slate-600">
+                      Extensive experience working in Fourways' upmarket properties, understanding the quality standards
+                      expected by discerning homeowners.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Star className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-slate-800 mb-2">Premium Materials Only</h3>
+                    <p className="text-slate-600">
+                      We source only the finest materials and work with trusted suppliers to ensure your investment
+                      delivers lasting value and beauty.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-slate-800 mb-2">Flexible Scheduling</h3>
+                    <p className="text-slate-600">
+                      We understand busy lifestyles and offer flexible scheduling to minimize disruption to your daily
+                      routine while delivering exceptional results.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Users className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-slate-800 mb-2">Personalized Service</h3>
+                    <p className="text-slate-600">
+                      Direct communication with our master carpenter ensures your vision is understood and executed to
+                      perfection, with attention to every detail.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Coverage Area */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Fourways Area Coverage</h2>
+            <p className="text-xl text-slate-600 mb-12">
+              Proudly serving Fourways and surrounding upmarket areas with premium carpentry services
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+              <div className="p-4 bg-slate-50 rounded-lg">
+                <h3 className="font-semibold text-slate-800">Fourways</h3>
+                <p className="text-sm text-slate-600">Main Area</p>
+              </div>
+              <div className="p-4 bg-slate-50 rounded-lg">
+                <h3 className="font-semibold text-slate-800">Dainfern</h3>
+                <p className="text-sm text-slate-600">Golf Estate</p>
+              </div>
+              <div className="p-4 bg-slate-50 rounded-lg">
+                <h3 className="font-semibold text-slate-800">Bryanston</h3>
+                <p className="text-sm text-slate-600">Upmarket Suburb</p>
+              </div>
+              <div className="p-4 bg-slate-50 rounded-lg">
+                <h3 className="font-semibold text-slate-800">Lonehill</h3>
+                <p className="text-sm text-slate-600">Residential Area</p>
+              </div>
+              <div className="p-4 bg-slate-50 rounded-lg">
+                <h3 className="font-semibold text-slate-800">Douglasdale</h3>
+                <p className="text-sm text-slate-600">Established Area</p>
+              </div>
+              <div className="p-4 bg-slate-50 rounded-lg">
+                <h3 className="font-semibold text-slate-800">Broadacres</h3>
+                <p className="text-sm text-slate-600">Luxury Homes</p>
+              </div>
+              <div className="p-4 bg-slate-50 rounded-lg">
+                <h3 className="font-semibold text-slate-800">Steyn City</h3>
+                <p className="text-sm text-slate-600">Premium Estate</p>
+              </div>
+              <div className="p-4 bg-slate-50 rounded-lg">
+                <h3 className="font-semibold text-slate-800">Diepsloot</h3>
+                <p className="text-sm text-slate-600">Surrounding Area</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Luxury Carpentry Project?</h2>
+          <p className="text-xl mb-8 text-amber-100">
+            Contact Fourways' trusted carpentry specialists for a premium consultation and detailed quote
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-lg mx-auto">
-            <Button
-              size="lg"
-              asChild
-              className="bg-white text-amber-600 hover:bg-slate-50 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
-            >
-              <Link href="/contact">
-                Get Luxury Quote
-                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-              </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button asChild size="lg" variant="secondary" className="bg-white text-amber-700 hover:bg-slate-100">
+              <Link href="/contact">Get Premium Quote</Link>
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto bg-transparent"
+            <a
+              href="tel:+27676014490"
+              className="flex items-center gap-2 text-lg hover:text-amber-200 transition-colors"
             >
-              <a href="tel:+27676014490">
-                <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                Call: 067 601 4490
-              </a>
-            </Button>
+              <Phone className="w-5 h-5" />
+              067 601 4490
+            </a>
           </div>
         </div>
       </section>
-    </>
+    </div>
   )
 }

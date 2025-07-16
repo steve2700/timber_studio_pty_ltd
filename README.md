@@ -40,6 +40,7 @@ Serving all major areas across Gauteng:
 - Midrand & Fourways
 - Boksburg & Benoni
 - Centurion & Pretoria
+-capetown areas will be added soon
 
 ## 🏗️ Technical Stack
 

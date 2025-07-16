@@ -114,7 +114,7 @@ export default function HomePage() {
 
             <div className="relative order-1 lg:order-2">
               <Image
-                src="/kitchen-renovation-granite-installation-johannesburg.jpg?height=600&width=800"
+                src="/granite-countertop.jpg?height=600&width=800"
                 alt="Professional kitchen renovation with granite countertops by Johannesburg carpentry experts"
                 width={800}
                 height={600}

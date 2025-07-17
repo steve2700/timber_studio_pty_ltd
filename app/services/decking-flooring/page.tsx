@@ -68,7 +68,7 @@ export default function DeckingFlooringPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/decking-flooring.jpg?height=600&width=800"
                 alt="Professional decking and flooring installation in Johannesburg"
                 width={800}
                 height={600}
@@ -284,7 +284,7 @@ export default function DeckingFlooringPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/beautiful-decking.jpg?"
                 alt="Beautiful deck installation showing quality craftsmanship"
                 width={600}
                 height={500}

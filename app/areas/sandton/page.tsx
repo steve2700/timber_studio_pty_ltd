@@ -93,7 +93,7 @@ export default function SandtonPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/granite-installation-sandton.jpg?height=600&width=800"
                 alt="Professional carpenter in Sandton - luxury kitchen renovation and granite installation"
                 width={800}
                 height={600}

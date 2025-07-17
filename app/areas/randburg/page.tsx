@@ -93,7 +93,7 @@ export default function RandburgPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/trusted-carpenter-randburg.jpg?height=600&width=800"
                 alt="Trusted carpenter in Randburg - kitchen renovation and built-in cupboards"
                 width={800}
                 height={600}

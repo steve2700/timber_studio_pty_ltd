@@ -84,7 +84,7 @@ export default function CarpentryTrainingPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/south_african_woodworking_certification-jpg?height=600&width=800"
                 alt="Professional carpentry training course with hands-on experience in Johannesburg"
                 width={800}
                 height={600}
@@ -276,7 +276,7 @@ export default function CarpentryTrainingPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/quality_woodworking_education_in_south_africa-1.jpg?height=500&width=600"
                 alt="Students learning carpentry skills in hands-on training environment"
                 width={600}
                 height={500}

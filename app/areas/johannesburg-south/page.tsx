@@ -92,7 +92,7 @@ export default function JohannesburgSouthPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/granite-carpentry.webp?height=600&width=800"
                 alt="Best carpenter in Johannesburg South - kitchen renovation and built-in cupboards"
                 width={800}
                 height={600}

@@ -92,7 +92,7 @@ export default function KemptonParkPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/granite-carpentry.webp?height=600&width=800"
                 alt="Expert carpenter in Kempton Park - professional joinery and kitchen renovation"
                 width={800}
                 height={600}

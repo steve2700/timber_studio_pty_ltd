@@ -19,37 +19,37 @@ export default function PortfolioPage() {
       title: "Modern Kitchen Renovation - Randburg",
       category: "Kitchen Renovation",
       description: "Complete kitchen makeover with custom cabinetry and quartz countertops",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/modern-kitchen renovation.webp?height=400&width=600",
     },
     {
       title: "Built-in Wardrobes - Johannesburg South",
       category: "Built-in Storage",
       description: "Custom bedroom wardrobes with sliding doors and internal organization",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/built-in-wardrobes-sliding (1) (1).webp?height=400&width=600",
     },
     {
       title: "Granite Kitchen Island - Kempton Park",
       category: "Stone Installation",
       description: "Premium granite island with waterfall edge and integrated seating",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/granite-kitchen-island.webp?height=400&width=600",
     },
     {
       title: "Study Built-ins - Roodepoort",
       category: "Built-in Storage",
       description: "Floor-to-ceiling study storage with integrated desk and shelving",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/built-in-study-1 (1).webp?height=400&width=600",
     },
     {
       title: "Bathroom Vanity - Sandton",
       category: "Stone Installation",
       description: "Elegant quartz vanity top with undermount basins",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/bathroom-vanity (1).webp?height=400&width=600",
     },
     {
       title: "Entertainment Unit - Johannesburg",
       category: "Built-in Storage",
       description: "Custom entertainment center with hidden cable management",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/entertainment unit.jpg?height=400&width=600",
     },
   ]
 

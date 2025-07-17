@@ -101,7 +101,7 @@ export default function PretoriaPage() {
 
         {/* Decorative image */}
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/carpenter-johannesburg-installing-kitchen-cupboards.jpg?height=800&width=1200"
           alt="Modern Pretoria kitchen installed by Granite & Carpentry"
           width={1200}
           height={800}

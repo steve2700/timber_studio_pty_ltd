@@ -65,7 +65,7 @@ export default function AboutPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/granite-carpentry.webp?height=600&width=800"
                 alt="Professional carpenter team at Granite & Joinery Experts Johannesburg"
                 width={800}
                 height={600}
@@ -141,7 +141,7 @@ export default function AboutPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/granite-carpentry-different.webp?height=500&width=600"
                 alt="Quality craftsmanship and attention to detail in carpentry work"
                 width={600}
                 height={500}

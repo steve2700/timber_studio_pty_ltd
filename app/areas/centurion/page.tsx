@@ -95,7 +95,7 @@ export default function CenturionPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/carpenter-johannesburg-installing-kitchen-cupboards.jpg?height=600&width=800"
                 alt="Professional carpenter in Centurion - modern kitchen renovation and built-in cupboards"
                 width={800}
                 height={600}

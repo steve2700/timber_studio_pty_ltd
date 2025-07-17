@@ -68,7 +68,7 @@ export default function KitchenRenovationsPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/Kitchen-renovations-sandton.webp?height=600&width=800"
                 alt="Modern kitchen renovation with custom cabinetry by Johannesburg carpenter"
                 width={800}
                 height={600}

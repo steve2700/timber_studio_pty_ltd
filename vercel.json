@@ -2,7 +2,10 @@
   "version": 2,
   "installCommand": "pnpm install --no-frozen-lockfile",
   "builds": [{ "src": "package.json", "use": "@vercel/next" }],
-  "routes": [{ "src": "/sitemap.xml", "dest": "/api/sitemap" }, { "src": "/robots.txt", "dest": "/api/robots" }],
+  "rewrites": [
+    { "source": "/sitemap.xml", "destination": "/api/sitemap" },
+    { "source": "/robots.txt", "destination": "/api/robots" }
+  ],
   "headers": [
     {
       "source": "/(.*)",

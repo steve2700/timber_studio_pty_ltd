@@ -25,7 +25,7 @@ export default function PortfolioPage() {
       title: "Built-in Wardrobes - Johannesburg South",
       category: "Built-in Storage",
       description: "Custom bedroom wardrobes with sliding doors and internal organization",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/built-in-wardrobes-sliding (1) (1).webp?height=400&width=600",
     },
     {
       title: "Granite Kitchen Island - Kempton Park",

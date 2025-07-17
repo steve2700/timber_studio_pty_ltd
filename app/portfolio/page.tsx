@@ -31,13 +31,13 @@ export default function PortfolioPage() {
       title: "Granite Kitchen Island - Kempton Park",
       category: "Stone Installation",
       description: "Premium granite island with waterfall edge and integrated seating",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/granite-kitchen-island.webp?height=400&width=600",
     },
     {
       title: "Study Built-ins - Roodepoort",
       category: "Built-in Storage",
       description: "Floor-to-ceiling study storage with integrated desk and shelving",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/built-in-study-1 (1).webp?height=400&width=600",
     },
     {
       title: "Bathroom Vanity - Sandton",

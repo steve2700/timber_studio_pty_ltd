@@ -43,13 +43,13 @@ export default function PortfolioPage() {
       title: "Bathroom Vanity - Sandton",
       category: "Stone Installation",
       description: "Elegant quartz vanity top with undermount basins",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/bathroom-vanity (1).webp?height=400&width=600",
     },
     {
       title: "Entertainment Unit - Johannesburg",
       category: "Built-in Storage",
       description: "Custom entertainment center with hidden cable management",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/?height=400&width=600",
     },
   ]
 

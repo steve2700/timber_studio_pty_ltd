@@ -107,7 +107,7 @@ npm start
 *Built with ❤️ for professional carpentry excellence in Johannesburg*
 \`\`\`
 
-```plaintext file="vercel.json"
+\`\`\`plaintext file="vercel.json"
 {
   "version": 2,
   "builds": [

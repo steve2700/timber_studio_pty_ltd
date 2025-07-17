@@ -49,7 +49,7 @@ export default function PortfolioPage() {
       title: "Entertainment Unit - Johannesburg",
       category: "Built-in Storage",
       description: "Custom entertainment center with hidden cable management",
-      image: "/?height=400&width=600",
+      image: "/entertainment unit.jpg?height=400&width=600",
     },
   ]
 

@@ -93,7 +93,7 @@ export default function MidrandPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/professional-carpenter-midrand.jpeg?height=600&width=800"
                 alt="Professional carpenter in Midrand - commercial and residential carpentry services"
                 width={800}
                 height={600}

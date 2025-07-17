@@ -93,7 +93,7 @@ export default function AlbertonPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/carpenter-alberton.jpg?height=600&width=800"
                 alt="Trusted carpenter in Alberton - family kitchen renovation and built-in cupboards"
                 width={800}
                 height={600}

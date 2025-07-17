@@ -92,7 +92,7 @@ export default function RoodepoortPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/modern-kitchen renovation.webp?height=600&width=800"
                 alt="Quality carpenter in Roodepoort - kitchen renovation and granite installation"
                 width={800}
                 height={600}

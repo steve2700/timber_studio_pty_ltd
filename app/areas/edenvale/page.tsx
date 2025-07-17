@@ -93,7 +93,7 @@ export default function EdenvalePage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/granite-kitchen-island.webp?height=600&width=800"
                 alt="Quality carpenter in Edenvale - premium kitchen renovation and built-in cupboards"
                 width={800}
                 height={600}

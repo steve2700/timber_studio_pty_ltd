@@ -19,7 +19,7 @@ export default function PortfolioPage() {
       title: "Modern Kitchen Renovation - Randburg",
       category: "Kitchen Renovation",
       description: "Complete kitchen makeover with custom cabinetry and quartz countertops",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/modern-kitchen renovation.webp?height=400&width=600",
     },
     {
       title: "Built-in Wardrobes - Johannesburg South",

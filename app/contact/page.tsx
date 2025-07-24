@@ -47,14 +47,14 @@ export default function ContactPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a
-                href="tel:+27-11-XXX-XXXX"
+                href="tel:+27676014490"
                 className="inline-flex items-center justify-center px-8 py-4 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors text-lg font-medium"
               >
                 <Phone className="mr-2 w-5 h-5" />
-                Call Now: 011-XXX-XXXX
+                Call Now: 067 601 4490
               </a>
               <a
-                href="https://wa.me/27XXXXXXXXX"
+                href="https://wa.me/27676014490"
                 className="inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-lg font-medium"
               >
                 <MessageCircle className="mr-2 w-5 h-5" />
@@ -64,7 +64,7 @@ export default function ContactPage() {
                 size="lg"
                 asChild
                 variant="outline"
-                className="border-amber-600 text-amber-600 hover:bg-amber-50 text-lg px-8"
+                className="border-amber-600 text-amber-600 hover:bg-amber-50 text-lg px-8 bg-transparent"
               >
                 <a href="https://g.co/kgs/epZT5BY" target="_blank" rel="noopener noreferrer">
                   <Star className="mr-2 w-5 h-5 fill-current" />
@@ -107,7 +107,7 @@ export default function ContactPage() {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange("phone", e.target.value)}
-                        placeholder="011-XXX-XXXX"
+                        placeholder="067 601 4490"
                         required
                       />
                     </div>
@@ -185,8 +185,8 @@ export default function ContactPage() {
                       <Phone className="w-6 h-6 text-amber-600 mr-4 mt-1" />
                       <div>
                         <h4 className="font-semibold text-slate-800 mb-1">Phone</h4>
-                        <a href="tel:+27-11-XXX-XXXX" className="text-slate-600 hover:text-amber-600">
-                          011-XXX-XXXX
+                        <a href="tel:+27676014490" className="text-slate-600 hover:text-amber-600">
+                          067 601 4490
                         </a>
                       </div>
                     </div>
@@ -315,12 +315,12 @@ export default function ContactPage() {
                     </Button>
 
                     <div className="grid grid-cols-2 gap-4">
-                      <Button asChild variant="outline" className="text-sm">
+                      <Button asChild variant="outline" className="text-sm bg-transparent">
                         <a href="https://g.co/kgs/epZT5BY" target="_blank" rel="noopener noreferrer">
                           Read Reviews
                         </a>
                       </Button>
-                      <Button asChild variant="outline" className="text-sm">
+                      <Button asChild variant="outline" className="text-sm bg-transparent">
                         <a href="https://g.co/kgs/epZT5BY" target="_blank" rel="noopener noreferrer">
                           Get Directions
                         </a>

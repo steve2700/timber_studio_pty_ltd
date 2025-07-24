@@ -50,7 +50,6 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <div className="flex h-8 w-8 items-center justify-center rounded bg-amber-600 text-white font-bold">
               G&C
@@ -58,7 +57,6 @@ export function Header() {
             <span className="hidden font-bold sm:inline-block">Granite & Carpentry</span>
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             {navigation.map((item) => (
               <div key={item.name} className="relative group">
@@ -87,7 +85,6 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Contact Info & CTA */}
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-slate-600">
               <Phone className="h-4 w-4" />
@@ -102,7 +99,6 @@ export function Header() {
             </Button>
           </div>
 
-          {/* Mobile menu button */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button

@@ -11,7 +11,6 @@ export function Footer() {
     <footer className="bg-slate-900 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="flex h-8 w-8 items-center justify-center rounded bg-amber-600 text-white font-bold">
@@ -33,7 +32,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Services */}
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Our Services</h3>
             <ul className="space-y-2 text-sm">
@@ -85,7 +83,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Service Areas */}
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Service Areas</h3>
             <ul className="space-y-2 text-sm">
@@ -126,7 +123,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact & Newsletter */}
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Get In Touch</h3>
             <div className="space-y-3 text-sm">
@@ -163,7 +159,6 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Newsletter Signup */}
             <div className="pt-4">
               <h4 className="font-medium mb-2">Get Project Updates</h4>
               <div className="flex space-x-2">
@@ -182,7 +177,6 @@ export function Footer() {
 
         <Separator className="my-8 bg-slate-700" />
 
-        {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-slate-400">
             <p>&copy; {currentYear} Granite & Carpentry Johannesburg. All rights reserved.</p>
@@ -199,7 +193,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Social Media */}
           <div className="flex items-center space-x-4">
             <span className="text-sm text-slate-400">Follow us:</span>
             <div className="flex space-x-3">
@@ -234,7 +227,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Business Credentials */}
         <div className="mt-6 pt-6 border-t border-slate-700">
           <div className="flex flex-wrap justify-center items-center gap-4 text-xs text-slate-500">
             <span>Licensed Carpentry Contractor</span>

@@ -98,9 +98,9 @@ export const metadata: Metadata = {
     creator: "@granitecarpentry",
   },
   verification: {
-    google: "your-google-verification-code", // Add your actual Google verification code
-    yandex: "your-yandex-verification-code", // Add if needed
-    yahoo: "your-yahoo-verification-code", // Add if needed
+    google: "your-google-verification-code",
+    yandex: "your-yandex-verification-code",
+    yahoo: "your-yahoo-verification-code",
   },
   category: "Construction & Home Improvement",
   classification: "Business",
@@ -132,7 +132,6 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Granite & Carpentry" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-        {/* Preconnect to external domains */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://wa.me" />
@@ -142,7 +141,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
 
-        {/* DNS prefetch for performance */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         <link rel="dns-prefetch" href="//wa.me" />
@@ -152,10 +150,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
 
-        {/* Google Business Profile verification */}
         <meta name="google-site-verification" content="your-google-verification-code" />
-
-        {/* Enhanced meta tags for AI and search */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow" />
@@ -175,7 +170,6 @@ export default function RootLayout({
         <meta name="business:contact_data:phone_number" content="+27676014490" />
         <meta name="business:contact_data:email" content="info@granitecarpentry.co.za" />
 
-        {/* Structured Data for Local Business */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -205,23 +199,17 @@ export default function RootLayout({
               <Footer />
             </div>
 
-            {/* AI Chat Widget */}
             <AIChatWidget />
-
-            {/* Floating WhatsApp Button */}
             <FloatingWhatsApp />
-
-            {/* Analytics Provider */}
             <AnalyticsProvider />
           </Suspense>
         </ThemeProvider>
 
-        {/* Google Business Schema */}
         <GoogleBusinessSchema
           businessName="Granite & Carpentry Johannesburg"
           description="Leading professional carpentry and granite installation specialists in Johannesburg, Gauteng. Expert kitchen renovations, built-in cupboards, quartz countertops, decking, drywall, and ceiling services."
           address={{
-            street: "123 Main Street", // Update with your actual address
+            street: "123 Main Street",
             city: "Johannesburg South",
             region: "Gauteng",
             postalCode: "2190",

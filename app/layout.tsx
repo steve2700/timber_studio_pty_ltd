@@ -2,11 +2,13 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { FloatingWhatsApp } from "@/components/floating-whatsapp"
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { AIChatWidget } from "@/components/ai-chat-widget"
+import { GoogleBusinessSchema } from "@/components/google-business-schema"
+import { AnalyticsProvider } from "@/components/analytics-provider"
 import { Suspense } from "react"
 
 const inter = Inter({
@@ -18,14 +20,34 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Professional Carpenter & Granite Installation Johannesburg | Granite & Carpentry Experts",
+    default: "Professional Carpenter & Granite Installation Johannesburg | 5-Star Rated Experts",
     template: "%s | Granite & Carpentry Johannesburg",
   },
   description:
-    "Leading professional carpentry and granite installation specialists in Johannesburg, Gauteng. Expert kitchen renovations, built-in cupboards, quartz countertops, decking, drywall, and ceiling services. 5-star rated with 47+ completed projects. Serving Sandton, Randburg, Kempton Park, Midrand, Fourways, Boksburg, Centurion, Pretoria. Free professional quotes and carpentry training courses available.",
-  keywords:
-    "professional carpenter Johannesburg, granite installation specialists Gauteng, kitchen renovation experts Sandton, built-in cupboards Randburg, quartz countertops Kempton Park, decking installation Midrand, drywall contractors Fourways, ceiling installation Boksburg, flooring specialists Centurion, carpentry training Pretoria, granite countertops Johannesburg South, custom kitchen cabinets, professional joinery services, stone installation experts, affordable carpenter Gauteng, quality carpentry workmanship, licensed carpenter Johannesburg, insured carpentry services, commercial carpentry contractor, residential renovation specialists",
-  authors: [{ name: "Granite & Carpentry Johannesburg", url: "https://granitecarpentry.co.za" }],
+    "Leading professional carpentry and granite installation specialists in Johannesburg, Gauteng. Expert kitchen renovations, built-in cupboards, quartz countertops, decking, drywall, and ceiling services. 5-star rated with 47+ completed projects across Sandton, Randburg, Kempton Park, Midrand, Fourways, Boksburg, Centurion, Pretoria. Licensed, insured, and offering free professional quotes plus carpentry training courses.",
+  keywords: [
+    "professional carpenter Johannesburg",
+    "granite installation specialists Gauteng",
+    "kitchen renovation experts Sandton",
+    "built-in cupboards Randburg",
+    "quartz countertops Kempton Park",
+    "best carpenter Johannesburg South",
+    "affordable carpenter Gauteng",
+    "licensed carpenter services",
+    "insured carpentry contractor",
+    "5-star rated carpenter",
+    "professional joinery services",
+    "custom kitchen cabinets",
+    "stone installation experts",
+    "decking installation specialists",
+    "drywall contractors",
+    "ceiling installation experts",
+    "flooring specialists",
+    "carpentry training courses",
+    "commercial carpentry services",
+    "residential renovation specialists",
+  ],
+  authors: [{ name: "Granite & Carpentry Johannesburg" }],
   creator: "Granite & Carpentry Johannesburg",
   publisher: "Granite & Carpentry Johannesburg",
   formatDetection: {
@@ -55,15 +77,15 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     url: "https://granitecarpentry.co.za",
     siteName: "Granite & Carpentry Johannesburg",
-    title: "Professional Carpenter & Granite Installation Johannesburg | Granite & Carpentry Experts",
+    title: "Professional Carpenter & Granite Installation Johannesburg | 5-Star Rated Experts",
     description:
-      "Leading professional carpentry and granite installation specialists in Johannesburg, Gauteng. Expert kitchen renovations, built-in cupboards, quartz countertops. 5-star rated with 47+ completed projects.",
+      "Leading professional carpentry and granite installation specialists in Johannesburg, Gauteng. 5-star rated with 47+ completed projects.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-home.jpg",
         width: 1200,
         height: 630,
-        alt: "Professional Carpenter and Granite Installation Services in Johannesburg",
+        alt: "Professional Carpenter and Granite Installation Services in Johannesburg - Kitchen Renovations and Built-in Cupboards",
       },
     ],
   },
@@ -71,13 +93,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Professional Carpenter & Granite Installation Johannesburg",
     description:
-      "Leading carpentry and granite installation specialists in Johannesburg, Gauteng. 5-star rated professional services.",
-    images: ["/og-image.jpg"],
+      "Leading professional carpentry and granite installation specialists in Johannesburg, Gauteng. 5-star rated with 47+ completed projects.",
+    images: ["/og-home.jpg"],
+    creator: "@granitecarpentry",
   },
   verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
+    google: "your-google-verification-code", // Add your actual Google verification code
+    yandex: "your-yandex-verification-code", // Add if needed
+    yahoo: "your-yahoo-verification-code", // Add if needed
   },
   category: "Construction & Home Improvement",
   classification: "Business",
@@ -95,7 +118,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en-ZA">
+    <html lang="en-ZA" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -114,233 +137,142 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://wa.me" />
         <link rel="preconnect" href="https://vitals.vercel-analytics.com" />
+        <link rel="preconnect" href="https://www.google.com" />
+        <link rel="preconnect" href="https://maps.googleapis.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
 
         {/* DNS prefetch for performance */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         <link rel="dns-prefetch" href="//wa.me" />
         <link rel="dns-prefetch" href="//vitals.vercel-analytics.com" />
+        <link rel="dns-prefetch" href="//www.google.com" />
+        <link rel="dns-prefetch" href="//maps.googleapis.com" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
 
+        {/* Google Business Profile verification */}
+        <meta name="google-site-verification" content="your-google-verification-code" />
+
+        {/* Enhanced meta tags for AI and search */}
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow" />
+        <meta name="rating" content="general" />
+        <meta name="revisit-after" content="1 days" />
+        <meta name="distribution" content="global" />
+        <meta name="language" content="en-ZA" />
+        <meta name="geo.region" content="ZA-GP" />
+        <meta name="geo.placename" content="Johannesburg" />
+        <meta name="geo.position" content="-26.2041;28.0473" />
+        <meta name="ICBM" content="-26.2041, 28.0473" />
+        <meta name="business:contact_data:street_address" content="Johannesburg South" />
+        <meta name="business:contact_data:locality" content="Johannesburg" />
+        <meta name="business:contact_data:region" content="Gauteng" />
+        <meta name="business:contact_data:postal_code" content="2190" />
+        <meta name="business:contact_data:country_name" content="South Africa" />
+        <meta name="business:contact_data:phone_number" content="+27676014490" />
+        <meta name="business:contact_data:email" content="info@granitecarpentry.co.za" />
+
+        {/* Structured Data for Local Business */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "@id": "https://granitecarpentry.co.za/#business",
+              "@type": "WebSite",
               name: "Granite & Carpentry Johannesburg",
-              alternateName: "Granite & Carpentry",
-              description:
-                "Professional carpentry, granite installation, kitchen renovation, built-in cupboards, decking, drywall, ceiling, and flooring services across Johannesburg and Gauteng. Licensed and insured contractors with carpentry training courses.",
               url: "https://granitecarpentry.co.za",
-              telephone: "+27676014490",
-              email: "info@granitecarpentry.co.za",
-              sameAs: [
-                "https://g.co/kgs/epZT5BY",
-                "https://www.facebook.com/granitecarpentry",
-                "https://www.instagram.com/granitecarpentry",
-              ],
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Johannesburg",
-                addressRegion: "Gauteng",
-                addressCountry: "ZA",
-                postalCode: "2000",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: -26.2041,
-                longitude: 28.0473,
-              },
-              openingHours: ["Mo-Fr 08:00-17:00", "Sa 08:00-13:00"],
-              priceRange: "$$",
-              paymentAccepted: ["Cash", "Credit Card", "Bank Transfer", "EFT"],
-              currenciesAccepted: "ZAR",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "5.0",
-                reviewCount: "47",
-                bestRating: "5",
-                worstRating: "1",
-              },
-              areaServed: [
-                {
-                  "@type": "City",
-                  name: "Johannesburg",
-                  containedInPlace: {
-                    "@type": "State",
-                    name: "Gauteng",
-                  },
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://granitecarpentry.co.za/search?q={search_term_string}",
                 },
-                {
-                  "@type": "City",
-                  name: "Sandton",
-                },
-                {
-                  "@type": "City",
-                  name: "Randburg",
-                },
-                {
-                  "@type": "City",
-                  name: "Kempton Park",
-                },
-                {
-                  "@type": "City",
-                  name: "Midrand",
-                },
-                {
-                  "@type": "City",
-                  name: "Fourways",
-                },
-                {
-                  "@type": "City",
-                  name: "Boksburg",
-                },
-                {
-                  "@type": "City",
-                  name: "Centurion",
-                },
-                {
-                  "@type": "City",
-                  name: "Pretoria",
-                },
-              ],
-              hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Professional Carpentry and Granite Services",
-                itemListElement: [
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Kitchen Renovations",
-                      description:
-                        "Complete kitchen renovation services including custom cabinetry, countertops, and professional installation.",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Built-in Cupboards",
-                      description: "Custom built-in storage solutions for bedrooms, studies, and living areas.",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Granite & Quartz Installation",
-                      description: "Professional stone countertop installation with precision templating and fitting.",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Carpentry Training",
-                      description: "Professional carpentry training courses with job placement guarantee.",
-                    },
-                  },
-                ],
-              },
-              founder: {
-                "@type": "Person",
-                name: "Master Carpenter",
-                jobTitle: "Founder & Lead Carpenter",
-              },
-              employee: [
-                {
-                  "@type": "Person",
-                  name: "Professional Carpentry Team",
-                  jobTitle: "Certified Carpenters",
-                },
-              ],
-              knowsAbout: [
-                "Kitchen Renovations",
-                "Built-in Cupboards",
-                "Granite Installation",
-                "Quartz Countertops",
-                "Decking Installation",
-                "Drywall Installation",
-                "Ceiling Installation",
-                "Flooring Installation",
-                "Carpentry Training",
-                "Custom Joinery",
-              ],
-              slogan: "Professional Carpentry & Granite Excellence in Johannesburg",
-              award: "5-Star Customer Rating",
-              numberOfEmployees: "5-10",
-              foundingDate: "2020",
-              legalName: "Granite & Carpentry (Pty) Ltd",
-            }),
-          }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ProfessionalService",
-              "@id": "https://granitecarpentry.co.za/#service",
-              name: "Professional Carpentry and Granite Installation Services",
-              description: "Expert carpentry and granite installation services in Johannesburg, Gauteng",
-              provider: {
-                "@id": "https://granitecarpentry.co.za/#business",
-              },
-              areaServed: {
-                "@type": "State",
-                name: "Gauteng",
-                containsPlace: [
-                  "Johannesburg",
-                  "Sandton",
-                  "Randburg",
-                  "Kempton Park",
-                  "Midrand",
-                  "Fourways",
-                  "Boksburg",
-                  "Centurion",
-                  "Pretoria",
-                ],
-              },
-              serviceType: [
-                "Kitchen Renovations",
-                "Built-in Cupboards",
-                "Granite Installation",
-                "Quartz Installation",
-                "Decking Installation",
-                "Drywall Installation",
-                "Ceiling Installation",
-                "Flooring Installation",
-                "Carpentry Training",
-              ],
-              hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Professional Services Catalog",
-                itemListElement: [
-                  {
-                    "@type": "Offer",
-                    name: "Free Professional Quote",
-                    description: "Comprehensive project assessment and detailed quotation",
-                    price: "0",
-                    priceCurrency: "ZAR",
-                  },
-                ],
+                "query-input": "required name=search_term_string",
               },
             }),
           }}
         />
       </head>
       <body className={inter.className}>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <FloatingWhatsApp />
-        </Suspense>
-        <Analytics />
-        <SpeedInsights />
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
+          <Suspense fallback={null}>
+            <div className="flex min-h-screen flex-col">
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
+
+            {/* AI Chat Widget */}
+            <AIChatWidget />
+
+            {/* Floating WhatsApp Button */}
+            <FloatingWhatsApp />
+
+            {/* Analytics Provider */}
+            <AnalyticsProvider />
+          </Suspense>
+        </ThemeProvider>
+
+        {/* Google Business Schema */}
+        <GoogleBusinessSchema
+          businessName="Granite & Carpentry Johannesburg"
+          description="Leading professional carpentry and granite installation specialists in Johannesburg, Gauteng. Expert kitchen renovations, built-in cupboards, quartz countertops, decking, drywall, and ceiling services."
+          address={{
+            street: "123 Main Street", // Update with your actual address
+            city: "Johannesburg South",
+            region: "Gauteng",
+            postalCode: "2190",
+            country: "ZA",
+          }}
+          phone="+27676014490"
+          email="info@granitecarpentry.co.za"
+          website="https://granitecarpentry.co.za"
+          services={[
+            "Kitchen Renovations",
+            "Built-in Cupboards",
+            "Granite Installation",
+            "Quartz Countertops",
+            "Decking Installation",
+            "Drywall Installation",
+            "Ceiling Installation",
+            "Flooring Services",
+            "Carpentry Training",
+            "Custom Joinery",
+          ]}
+          areas={[
+            "Johannesburg South",
+            "Sandton",
+            "Randburg",
+            "Kempton Park",
+            "Midrand",
+            "Fourways",
+            "Boksburg",
+            "Centurion",
+            "Pretoria",
+            "Alberton",
+            "Edenvale",
+            "Benoni",
+          ]}
+          rating={5.0}
+          reviewCount={47}
+          openingHours={["Mo-Fr 08:00-17:00", "Sa 08:00-13:00", "Su closed"]}
+          socialMedia={{
+            facebook: "https://facebook.com/granitecarpentry",
+            instagram: "https://instagram.com/granitecarpentry",
+            linkedin: "https://linkedin.com/company/granitecarpentry",
+          }}
+          images={{
+            logo: "https://granitecarpentry.co.za/placeholder-logo.png",
+            photos: [
+              "https://granitecarpentry.co.za/granite-countertop.jpg",
+              "https://granitecarpentry.co.za/kitchen-renovation-granite-installation-johannesburg.jpg",
+              "https://granitecarpentry.co.za/carpenter-johannesburg-installing-kitchen-cupboards.jpg",
+            ],
+          }}
+        />
       </body>
     </html>
   )

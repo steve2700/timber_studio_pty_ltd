@@ -5,6 +5,9 @@ import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { FloatingWhatsApp } from "@/components/floating-whatsapp"
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Suspense } from "react"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -110,11 +113,13 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://wa.me" />
+        <link rel="preconnect" href="https://vitals.vercel-analytics.com" />
 
         {/* DNS prefetch for performance */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         <link rel="dns-prefetch" href="//wa.me" />
+        <link rel="dns-prefetch" href="//vitals.vercel-analytics.com" />
 
         <script
           type="application/ld+json"
@@ -328,10 +333,14 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <FloatingWhatsApp />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <FloatingWhatsApp />
+        </Suspense>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

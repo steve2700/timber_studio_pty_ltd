@@ -1,101 +1,32 @@
 "use client"
 
-import { useState, useCallback } from "react"
-import { MessageCircle, X } from "lucide-react"
+import { MessageCircle } from "lucide-react"
 
 export function FloatingWhatsApp() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const whatsappNumber = "27676014490"
-  const message =
-    "Hi! I'm interested in your professional carpentry and granite services. Could you please provide me with more information and a free quote?"
-
-  const handleWhatsAppClick = useCallback(() => {
-    const encodedMessage = encodeURIComponent(message)
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer")
-    setIsOpen(false)
-  }, [message])
-
-  const toggleOpen = useCallback(() => {
-    setIsOpen((prev) => !prev)
-  }, [])
-
-  const closeChat = useCallback(() => {
-    setIsOpen(false)
-  }, [])
+  const handleWhatsAppClick = () => {
+    const message = encodeURIComponent(
+      "Hi! I'm interested in your carpentry and granite installation services. Could you please provide me with more information and a quote?",
+    )
+    const whatsappUrl = `https://wa.me/27676014490?text=${message}`
+    window.open(whatsappUrl, "_blank")
+  }
 
   return (
-    <>
-      {/* Floating WhatsApp Button */}
-      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50">
-        <button
-          onClick={toggleOpen}
-          className="bg-green-500 hover:bg-green-600 text-white rounded-full p-3 sm:p-4 shadow-lg hover:shadow-xl transition-all duration-300 animate-float touch-manipulation"
-          aria-label="Open WhatsApp chat"
-          type="button"
-        >
-          <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
-        </button>
+    <button
+      onClick={handleWhatsAppClick}
+      className="fixed bottom-6 right-4 sm:bottom-8 sm:right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 sm:p-5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-float group"
+      aria-label="Contact us on WhatsApp"
+    >
+      <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7" />
+
+      {/* Tooltip for mobile */}
+      <div className="absolute bottom-full right-0 mb-3 px-3 py-2 bg-slate-800 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
+        Chat on WhatsApp
+        <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-slate-800"></div>
       </div>
 
-      {/* WhatsApp Chat Popup */}
-      {isOpen && (
-        <div className="fixed bottom-20 right-4 sm:bottom-24 sm:right-6 z-50 w-72 sm:w-80 bg-white rounded-lg shadow-2xl border border-gray-200">
-          <div className="bg-green-500 text-white p-3 sm:p-4 rounded-t-lg flex items-center justify-between">
-            <div className="flex items-center">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-white rounded-full flex items-center justify-center mr-3">
-                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-sm sm:text-base">Granite & Carpentry</h3>
-                <p className="text-xs sm:text-sm opacity-90">Typically replies instantly</p>
-              </div>
-            </div>
-            <button
-              onClick={closeChat}
-              className="text-white hover:text-gray-200 transition-colors touch-manipulation"
-              aria-label="Close chat"
-              type="button"
-            >
-              <X className="w-4 h-4 sm:w-5 sm:h-5" />
-            </button>
-          </div>
-
-          <div className="p-3 sm:p-4">
-            <div className="bg-gray-100 rounded-lg p-3 mb-3 sm:mb-4">
-              <p className="text-xs sm:text-sm text-gray-700">
-                Hi! I'm interested in your professional carpentry and granite services. Could you please provide me with
-                more information and a free quote?
-              </p>
-            </div>
-
-            <button
-              onClick={handleWhatsAppClick}
-              className="w-full bg-green-500 hover:bg-green-600 text-white py-2 sm:py-3 px-4 rounded-lg font-medium transition-colors text-sm sm:text-base touch-manipulation"
-              type="button"
-            >
-              Start Chat on WhatsApp
-            </button>
-
-            <p className="text-xs text-gray-500 text-center mt-2">Click to chat with us on WhatsApp</p>
-          </div>
-        </div>
-      )}
-
-      {/* Backdrop */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-20 z-40"
-          onClick={closeChat}
-          role="button"
-          tabIndex={0}
-          onKeyDown={(e) => {
-            if (e.key === "Escape") closeChat()
-          }}
-          aria-label="Close WhatsApp chat"
-        />
-      )}
-    </>
+      {/* Pulse animation */}
+      <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20"></div>
+    </button>
   )
 }

@@ -1,32 +1,58 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import { MessageCircle } from "lucide-react"
 
 export function FloatingWhatsApp() {
+  const [isVisible, setIsVisible] = useState(false)
+  const [showTooltip, setShowTooltip] = useState(false)
+
+  useEffect(() => {
+    // Delay showing the WhatsApp button to improve initial page load
+    const timer = setTimeout(() => {
+      setIsVisible(true)
+    }, 2000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      "Hi! I'm interested in your carpentry and granite installation services. Could you please provide me with more information and a quote?",
+      "Hi! I'm interested in your carpentry and granite installation services. Could you please provide me with more information?",
     )
     const whatsappUrl = `https://wa.me/27676014490?text=${message}`
-    window.open(whatsappUrl, "_blank")
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer")
   }
 
+  if (!isVisible) return null
+
   return (
-    <button
-      onClick={handleWhatsAppClick}
-      className="fixed bottom-6 right-4 sm:bottom-8 sm:right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 sm:p-5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-float group"
-      aria-label="Contact us on WhatsApp"
-    >
-      <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7" />
+    <div className="fixed bottom-4 right-4 z-50 no-print">
+      <div className="relative">
+        {/* Tooltip */}
+        {showTooltip && (
+          <div className="absolute bottom-full right-0 mb-2 px-3 py-2 bg-slate-800 text-white text-sm rounded-lg whitespace-nowrap shadow-lg">
+            Chat on WhatsApp
+            <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-slate-800"></div>
+          </div>
+        )}
 
-      {/* Tooltip for mobile */}
-      <div className="absolute bottom-full right-0 mb-3 px-3 py-2 bg-slate-800 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
-        Chat on WhatsApp
-        <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-slate-800"></div>
+        {/* WhatsApp Button */}
+        <button
+          onClick={handleWhatsAppClick}
+          onMouseEnter={() => setShowTooltip(true)}
+          onMouseLeave={() => setShowTooltip(false)}
+          onFocus={() => setShowTooltip(true)}
+          onBlur={() => setShowTooltip(false)}
+          className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-float will-change-transform"
+          aria-label="Chat with us on WhatsApp"
+        >
+          <MessageCircle className="w-7 h-7 sm:w-8 sm:h-8" />
+        </button>
+
+        {/* Pulse animation ring */}
+        <div className="absolute inset-0 w-14 h-14 sm:w-16 sm:h-16 bg-green-500 rounded-full animate-ping opacity-20 pointer-events-none"></div>
       </div>
-
-      {/* Pulse animation */}
-      <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20"></div>
-    </button>
+    </div>
   )
 }

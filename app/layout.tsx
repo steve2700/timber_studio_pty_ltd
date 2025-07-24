@@ -10,6 +10,7 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   preload: true,
+  fallback: ["system-ui", "arial"],
 })
 
 export const metadata: Metadata = {
@@ -82,7 +83,7 @@ export const metadata: Metadata = {
     "color-scheme": "light",
     "format-detection": "telephone=no",
   },
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -93,7 +94,7 @@ export default function RootLayout({
   return (
     <html lang="en-ZA">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#d97706" />
@@ -104,6 +105,16 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Granite & Carpentry" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+        {/* Preconnect to external domains */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://wa.me" />
+
+        {/* DNS prefetch for performance */}
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        <link rel="dns-prefetch" href="//wa.me" />
 
         <script
           type="application/ld+json"

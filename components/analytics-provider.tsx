@@ -14,7 +14,7 @@ export function AnalyticsProvider() {
 
   useEffect(() => {
     // Google Analytics 4 setup
-    const GA_MEASUREMENT_ID = "G-XXXXXXXXXX" // Replace with your actual GA4 measurement ID
+    const GA_MEASUREMENT_ID = "G-KHJ36N0NYE" // Replace with my  actual GA4 measurement ID
 
     // Load Google Analytics script
     const script1 = document.createElement("script")

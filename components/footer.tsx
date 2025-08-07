@@ -135,10 +135,10 @@ export function Footer() {
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-amber-400" />
                 <a
-                  href="mailto:info@granitecarpentry.co.za"
+                  href="mailto:granitecarpentry5@gmail.com"
                   className="text-slate-300 hover:text-amber-400 transition-colors"
                 >
-                  info@granitecarpentry.co.za
+                  granitecarpentry5@gmail.com
                 </a>
               </div>
               <div className="flex items-start space-x-2">
@@ -197,7 +197,7 @@ export function Footer() {
             <span className="text-sm text-slate-400">Follow us:</span>
             <div className="flex space-x-3">
               <a
-                href="https://facebook.com/granitecarpentry"
+                href="https://www.facebook.com/profile.php?id=61578331346427"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-amber-400 transition-colors"
@@ -215,7 +215,7 @@ export function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/company/granitecarpentry"
+                href="https://www.linkedin.com/in/granite-carpentry-41aa10377/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-amber-400 transition-colors"

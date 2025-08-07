@@ -66,7 +66,7 @@ export default function ContactPage() {
                 variant="outline"
                 className="border-amber-600 text-amber-600 hover:bg-amber-50 text-lg px-8 bg-transparent"
               >
-                <a href="https://g.co/kgs/epZT5BY" target="_blank" rel="noopener noreferrer">
+                <a href="https://share.google/zwuaX8OcVl2guFlGI" target="_blank" rel="noopener noreferrer">
                   <Star className="mr-2 w-5 h-5 fill-current" />
                   Read Our 5-Star Google Reviews
                 </a>
@@ -281,7 +281,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Granite & Joinery Experts Johannesburg Location"
+                  title="Granite & Carpentry Experts Johannesburg Location"
                 ></iframe>
               </div>
             </div>
@@ -308,7 +308,7 @@ export default function ContactPage() {
                     </div>
 
                     <Button asChild className="w-full bg-amber-600 hover:bg-amber-700 text-lg py-3">
-                      <a href="https://g.co/kgs/epZT5BY" target="_blank" rel="noopener noreferrer">
+                      <a href="https://share.google/zwuaX8OcVl2guFlGI" target="_blank" rel="noopener noreferrer">
                         <Star className="mr-2 w-5 h-5" />
                         View Our Google My Business Profile
                       </a>
@@ -316,12 +316,12 @@ export default function ContactPage() {
 
                     <div className="grid grid-cols-2 gap-4">
                       <Button asChild variant="outline" className="text-sm bg-transparent">
-                        <a href="https://g.co/kgs/epZT5BY" target="_blank" rel="noopener noreferrer">
+                        <a href="https://share.google/zwuaX8OcVl2guFlGI" target="_blank" rel="noopener noreferrer">
                           Read Reviews
                         </a>
                       </Button>
                       <Button asChild variant="outline" className="text-sm bg-transparent">
-                        <a href="https://g.co/kgs/epZT5BY" target="_blank" rel="noopener noreferrer">
+                        <a href="https://share.google/zwuaX8OcVl2guFlGI" target="_blank" rel="noopener noreferrer">
                           Get Directions
                         </a>
                       </Button>

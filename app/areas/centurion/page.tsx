@@ -2,109 +2,113 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle, ArrowRight, Phone, Star, Award, Zap } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, Shield, Users } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Professional Carpenter Centurion | Kitchen Renovations & Modern Built-in Cupboards",
+  title: "Best Carpenter Centurion 2024 | Kitchen Renovations & Built-in Cupboards | Free Quotes",
   description:
-    "Professional carpenter in Centurion. Modern kitchen renovations, built-in cupboards, granite installation for Centurion, Irene, Highveld. Quality carpentry services with 5-star rating.",
+    "★★★★★ #1 Rated Carpenter in Centurion. Expert kitchen renovations, built-in cupboards, granite installation. Serving Irene, Highveld, Lyttelton. Licensed & insured. Free quotes. Call 067 601 4490",
   keywords:
-    "carpenter Centurion, kitchen renovation Centurion, built-in cupboards Centurion, granite installation Centurion, carpenter Irene, kitchen cabinets Highveld, professional carpenter Centurion, modern carpentry Centurion, custom carpentry Centurion",
+    "carpenter Centurion, kitchen renovation Centurion, built-in cupboards Centurion, granite installation Centurion, carpenter Irene, carpenter Highveld, kitchen cabinets Centurion, best carpenter Centurion, affordable carpenter Centurion, Centurion kitchen contractor, granite Centurion, cupboards Centurion",
+  alternates: {
+    canonical: "https://granitecarpentry.co.za/areas/centurion",
+  },
+  openGraph: {
+    title: "Best Carpenter Centurion 2024 | Kitchen Renovations & Built-in Cupboards",
+    description:
+      "★★★★★ #1 Rated Carpenter in Centurion. Expert kitchen renovations, granite installation. Free quotes. Call 067 601 4490",
+    url: "https://granitecarpentry.co.za/areas/centurion",
+    images: [
+      {
+        url: "https://granitecarpentry.co.za/carpenter-johannesburg-installing-kitchen-cupboards.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Best Carpenter Centurion - Kitchen Renovation & Built-in Cupboards",
+      },
+    ],
+  },
 }
 
 export default function CenturionPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-50 to-slate-100 py-12 sm:py-16 md:py-20">
-        <div className="container mx-auto">
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-white py-16 sm:py-20 md:py-24">
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="container mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <div className="flex items-center mb-4">
-                <div className="flex text-amber-400 mr-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
-                  ))}
-                </div>
-                <span className="text-slate-600 font-medium text-sm sm:text-base">
-                  Professional Centurion Carpenter
-                </span>
+                <MapPin className="w-5 h-5 text-amber-400 mr-2" />
+                <Badge variant="secondary" className="bg-amber-600/20 text-amber-100 border-amber-300">
+                  Centurion's #1 Carpenter
+                </Badge>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 sm:mb-6 leading-tight">
-                Professional <span className="text-amber-600">Carpenter</span> in{" "}
-                <span className="text-amber-600">Centurion</span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Best <span className="text-amber-400">Carpenter</span> in{" "}
+                <span className="text-amber-400 underline decoration-amber-500/60">Centurion</span>
               </h1>
 
-              <p className="text-lg sm:text-xl text-slate-600 mb-6 sm:mb-8 leading-relaxed">
-                Professional carpentry services in Centurion, Irene, and Highveld. Modern kitchen renovations, built-in
-                cupboards, and granite installations for Centurion's growing community. Quality craftsmanship for modern
-                living.
+              <p className="text-xl sm:text-2xl text-slate-200 mb-8 leading-relaxed">
+                ★★★★★ Rated #1 Carpenter in Centurion. Expert kitchen renovations, modern built-in cupboards, and
+                granite installations. Serving Irene, Highveld, Lyttelton & all Centurion areas.
               </p>
 
-              <div className="flex flex-col gap-3 sm:gap-4 mb-6 sm:mb-8">
-                <Button
-                  size="lg"
-                  asChild
-                  className="bg-amber-600 hover:bg-amber-700 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
-                >
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4 font-semibold">
                   <Link href="/contact">
-                    Get Modern Quote
-                    <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+                    Get FREE Quote Today
+                    <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    asChild
-                    className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto bg-transparent"
-                  >
-                    <a href="tel:+27676014490">
-                      <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                      Call: 067 601 4490
-                    </a>
-                  </Button>
-                  <Button
-                    size="lg"
-                    asChild
-                    variant="outline"
-                    className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 border-amber-600 text-amber-600 hover:bg-amber-50 w-full sm:w-auto bg-transparent"
-                  >
-                    <a href="https://g.co/kgs/epZT5BY" target="_blank" rel="noopener noreferrer">
-                      <Star className="mr-2 w-4 h-4 sm:w-5 sm:h-5 fill-current" />
-                      <span className="hidden sm:inline">5-Star Reviews</span>
-                      <span className="sm:hidden">Reviews</span>
-                    </a>
-                  </Button>
-                </div>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  asChild
+                  className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
+                >
+                  <a href="tel:+27676014490">
+                    <Phone className="mr-2 w-5 h-5" />
+                    Call: 067 601 4490
+                  </a>
+                </Button>
               </div>
 
-              <div className="flex items-center space-x-4 text-slate-600 text-sm sm:text-base">
-                <div className="flex items-center">
-                  <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 mr-2" />
-                  <span>Modern Living</span>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                <div className="flex flex-col items-center">
+                  <Star className="w-6 h-6 text-amber-400 mb-1 fill-current" />
+                  <span className="text-sm font-medium">5.0 Rating</span>
                 </div>
-                <div className="flex items-center">
-                  <Award className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 mr-2" />
-                  <span>Professional Service</span>
+                <div className="flex flex-col items-center">
+                  <Shield className="w-6 h-6 text-amber-400 mb-1" />
+                  <span className="text-sm font-medium">Licensed</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Users className="w-6 h-6 text-amber-400 mb-1" />
+                  <span className="text-sm font-medium">400+ Jobs</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Clock className="w-6 h-6 text-amber-400 mb-1" />
+                  <span className="text-sm font-medium">Same Day</span>
                 </div>
               </div>
             </div>
 
             <div className="relative">
               <Image
-                src="/carpenter-johannesburg-installing-kitchen-cupboards.jpg?height=600&width=800"
-                alt="Professional carpenter in Centurion - modern kitchen renovation and built-in cupboards"
-                width={800}
-                height={600}
+                src="/carpenter-johannesburg-installing-kitchen-cupboards.jpg"
+                alt="Best Carpenter Centurion - Modern Kitchen Renovation & Built-in Cupboards"
+                width={600}
+                height={500}
                 className="rounded-lg shadow-2xl w-full h-auto"
                 priority
               />
-              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white p-3 sm:p-4 rounded-lg shadow-lg">
-                <div className="text-xl sm:text-2xl font-bold text-slate-800">Modern</div>
-                <div className="text-slate-600 text-sm sm:text-base">Design</div>
+              <div className="absolute -bottom-4 -left-4 bg-amber-600 text-white p-4 rounded-lg shadow-lg">
+                <div className="text-2xl font-bold">#1 Rated</div>
+                <div className="text-sm">Centurion Carpenter</div>
               </div>
             </div>
           </div>
@@ -112,18 +116,17 @@ export default function CenturionPage() {
       </section>
 
       {/* Centurion Areas Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
-              Serving All Centurion Areas
-            </h2>
-            <p className="text-lg sm:text-xl text-slate-600">
-              Professional carpentry services throughout Centurion and surrounding modern developments
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Serving All Centurion Areas</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Professional carpentry services throughout Centurion and surrounding areas. Same-day quotes, licensed
+              craftsmen, 5-year warranty.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {[
               "Centurion CBD",
               "Irene",
@@ -142,9 +145,10 @@ export default function CenturionPage() {
               "Wierda Park",
               "Centurion Golf Estate",
             ].map((area) => (
-              <Card key={area} className="text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-3 sm:p-4">
-                  <h3 className="font-semibold text-slate-800 text-sm sm:text-base">{area}</h3>
+              <Card key={area} className="text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-slate-800">{area}</h3>
+                  <p className="text-sm text-slate-600 mt-1">Same Day Service</p>
                 </CardContent>
               </Card>
             ))}
@@ -153,108 +157,207 @@ export default function CenturionPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-slate-50">
+      <section className="py-16 bg-slate-50">
         <div className="container mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
               Modern Carpentry Services in Centurion
             </h2>
-            <p className="text-lg sm:text-xl text-slate-600">
-              Contemporary carpentry and renovation services for Centurion's modern lifestyle
-            </p>
+            <p className="text-xl text-slate-600">Contemporary carpentry solutions for Centurion's modern lifestyle</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">Contemporary Kitchen Design</h3>
-                <p className="text-slate-600 mb-4 text-sm sm:text-base">
-                  Modern kitchen renovations for Centurion homes. Contemporary designs that suit today's lifestyle and
-                  technology integration.
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Building2 className="w-6 h-6 text-amber-600 mr-2" />
+                  Kitchen Renovations Centurion
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Modern kitchen transformations for Centurion homes. Smart layouts, quality materials, expert
+                  installation.
                 </p>
-                <ul className="space-y-2 text-slate-600 mb-6 text-sm sm:text-base">
-                  <li className="flex items-center">
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Smart kitchen layouts
+                    Smart kitchen layouts & islands
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Modern materials
+                    Modern materials & finishes
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Tech integration
+                    Technology integration ready
                   </li>
                 </ul>
-                <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <Link href="/services/kitchen-renovations">Learn More</Link>
-                </Button>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R20,000</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/services/kitchen-renovations">View Details</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">Smart Storage Solutions</h3>
-                <p className="text-slate-600 mb-4 text-sm sm:text-base">
-                  Innovative built-in storage for Centurion's modern homes. Smart solutions that maximize space and
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Award className="w-6 h-6 text-amber-600 mr-2" />
+                  Built-in Cupboards Centurion
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Smart storage solutions for modern Centurion homes. Innovative designs that maximize space and
                   functionality.
                 </p>
-                <ul className="space-y-2 text-slate-600 mb-6 text-sm sm:text-base">
-                  <li className="flex items-center">
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Smart wardrobes
+                    Smart wardrobes & closets
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
                     Home office solutions
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Media centers
+                    Media & entertainment centers
                   </li>
                 </ul>
-                <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <Link href="/services/built-in-cupboards">Learn More</Link>
-                </Button>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R11,000</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/services/built-in-cupboards">View Details</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Star className="w-6 h-6 text-amber-600 mr-2" />
+                  Granite Installation Centurion
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Premium granite & quartz installations for modern Centurion homes. Kitchen countertops and bathroom
+                  vanities.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Premium granite & quartz slabs
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Precision templating & fitting
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Modern edge profiles available
+                  </li>
+                </ul>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R7,000</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/services/quartz-granite">View Details</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
+      {/* Why Choose Us Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Why Centurion Chooses Us</h2>
+            <p className="text-xl text-slate-600">
+              The most trusted carpenter in Centurion with 400+ completed projects
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Star className="w-8 h-8 text-amber-600 fill-current" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">5-Star Rated</h3>
+              <p className="text-slate-600">Consistently rated 5 stars by Centurion clients on Google Reviews</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-amber-600" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Licensed & Insured</h3>
+              <p className="text-slate-600">Fully licensed carpenter with comprehensive insurance coverage</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-amber-600" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Same Day Quotes</h3>
+              <p className="text-slate-600">Free quotes within 24 hours for all Centurion areas</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-amber-600" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">5-Year Warranty</h3>
+              <p className="text-slate-600">All work comes with our comprehensive 5-year warranty</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
         <div className="container mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
-            Ready for Modern Centurion Service?
-          </h2>
-          <p className="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
-            Contact Centurion's professional carpentry specialists today. Modern designs, quality craftsmanship, and
-            innovative solutions for contemporary living.
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Centurion Property?</h2>
+          <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+            Join 400+ satisfied Centurion clients. Get your FREE quote today from Centurion's #1 rated carpenter.
+            Licensed, insured, and guaranteed.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-lg mx-auto">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
             <Button
               size="lg"
               asChild
-              className="bg-white text-amber-600 hover:bg-slate-50 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+              className="bg-white text-amber-600 hover:bg-slate-50 text-lg px-8 py-4 font-semibold"
             >
               <Link href="/contact">
-                Get Modern Quote
-                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+                Get FREE Quote Now
+                <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
             <Button
               size="lg"
               variant="outline"
               asChild
-              className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-4 bg-transparent"
             >
               <a href="tel:+27676014490">
-                <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
+                <Phone className="mr-2 w-5 h-5" />
                 Call: 067 601 4490
               </a>
             </Button>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-lg opacity-90">
+              ⭐⭐⭐⭐⭐ "Excellent modern kitchen renovation! Professional service." - Lisa K., Irene
+            </p>
           </div>
         </div>
       </section>

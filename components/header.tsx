@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { ScrollArea } from "@/components/ui/scroll-area"
 import { Menu, Phone, Star, MapPin } from "lucide-react"
 
 export function Header() {
@@ -41,6 +42,7 @@ export function Header() {
       ],
     },
     { name: "Portfolio", href: "/portfolio" },
+    { name: "Blog", href: "/blog" },
     { name: "About", href: "/about" },
     { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact" },
@@ -57,6 +59,7 @@ export function Header() {
             <span className="hidden font-bold sm:inline-block">Granite & Carpentry</span>
           </Link>
 
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             {navigation.map((item) => (
               <div key={item.name} className="relative group">
@@ -85,6 +88,7 @@ export function Header() {
             ))}
           </nav>
 
+          {/* Contact Info & CTA */}
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-slate-600">
               <Phone className="h-4 w-4" />
@@ -99,6 +103,7 @@ export function Header() {
             </Button>
           </div>
 
+          {/* Mobile menu button */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button
@@ -109,44 +114,51 @@ export function Header() {
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="pr-0">
-              <div className="flex flex-col space-y-4">
-                <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
-                  <div className="flex h-8 w-8 items-center justify-center rounded bg-amber-600 text-white font-bold">
-                    G&C
-                  </div>
-                  <span className="font-bold">Granite & Carpentry</span>
-                </Link>
-
-                <div className="flex flex-col space-y-3 pt-6">
-                  {navigation.map((item) => (
-                    <div key={item.name}>
-                      <Link
-                        href={item.href}
-                        className="block text-lg font-medium text-slate-900 hover:text-amber-600"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {item.name}
-                      </Link>
-                      {item.submenu && (
-                        <div className="ml-4 mt-2 space-y-2">
-                          {item.submenu.map((subitem) => (
-                            <Link
-                              key={subitem.name}
-                              href={subitem.href}
-                              className="block text-sm text-slate-600 hover:text-amber-600"
-                              onClick={() => setIsOpen(false)}
-                            >
-                              {subitem.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] p-0">
+              <div className="flex flex-col h-full">
+                {/* Header */}
+                <div className="flex items-center justify-between p-6 border-b">
+                  <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
+                    <div className="flex h-8 w-8 items-center justify-center rounded bg-amber-600 text-white font-bold">
+                      G&C
                     </div>
-                  ))}
+                    <span className="font-bold">Granite & Carpentry</span>
+                  </Link>
                 </div>
 
-                <div className="border-t pt-6 space-y-4">
+                {/* Scrollable Navigation */}
+                <ScrollArea className="flex-1 px-6">
+                  <div className="flex flex-col space-y-4 py-6">
+                    {navigation.map((item) => (
+                      <div key={item.name}>
+                        <Link
+                          href={item.href}
+                          className="block text-lg font-medium text-slate-900 hover:text-amber-600 py-2"
+                          onClick={() => setIsOpen(false)}
+                        >
+                          {item.name}
+                        </Link>
+                        {item.submenu && (
+                          <div className="ml-4 mt-2 space-y-2 border-l-2 border-amber-100 pl-4">
+                            {item.submenu.map((subitem) => (
+                              <Link
+                                key={subitem.name}
+                                href={subitem.href}
+                                className="block text-sm text-slate-600 hover:text-amber-600 py-1"
+                                onClick={() => setIsOpen(false)}
+                              >
+                                {subitem.name}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </ScrollArea>
+
+                {/* Footer */}
+                <div className="border-t p-6 space-y-4">
                   <div className="flex items-center space-x-2 text-sm text-slate-600">
                     <Phone className="h-4 w-4" />
                     <span>067 601 4490</span>

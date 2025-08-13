@@ -6,17 +6,59 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/private/", "/admin/", "/_next/", "/api/"],
+        disallow: ["/private/", "/admin/", "/_next/", "/api/", "/tmp/", "/*.json$", "/search", "/404", "/500"],
       },
       {
         userAgent: "Googlebot",
         allow: "/",
-        disallow: ["/private/", "/admin/"],
+        disallow: ["/private/", "/admin/", "/api/", "/tmp/"],
+        crawlDelay: 1,
       },
       {
         userAgent: "Bingbot",
         allow: "/",
-        disallow: ["/private/", "/admin/"],
+        disallow: ["/private/", "/admin/", "/api/", "/tmp/"],
+        crawlDelay: 1,
+      },
+      {
+        userAgent: "facebookexternalhit",
+        allow: "/",
+        disallow: ["/private/", "/admin/", "/api/"],
+      },
+      {
+        userAgent: "Twitterbot",
+        allow: "/",
+        disallow: ["/private/", "/admin/", "/api/"],
+      },
+      {
+        userAgent: "LinkedInBot",
+        allow: "/",
+        disallow: ["/private/", "/admin/", "/api/"],
+      },
+      {
+        userAgent: "WhatsApp",
+        allow: "/",
+        disallow: ["/private/", "/admin/", "/api/"],
+      },
+      {
+        userAgent: "ChatGPT-User",
+        allow: "/",
+        disallow: ["/private/", "/admin/", "/api/"],
+      },
+      {
+        userAgent: "Claude-Web",
+        allow: "/",
+        disallow: ["/private/", "/admin/", "/api/"],
+      },
+      {
+        userAgent: "PerplexityBot",
+        allow: "/",
+        disallow: ["/private/", "/admin/", "/api/"],
+      },
+      {
+        userAgent: "YouBot",
+        allow: "/",
+        disallow: ["/private/", "/admin/", "/api/"],
       },
     ],
     sitemap: "https://granitecarpentry.co.za/sitemap.xml",

@@ -1,85 +1,189 @@
+import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { SmartRecommendations } from "@/components/smart-recommendations"
-import {
-  Phone,
-  Mail,
-  MapPin,
-  Clock,
-  Star,
-  CheckCircle,
-  Hammer,
-  Home,
-  Wrench,
-  Award,
-  Users,
-  ArrowRight,
-  Shield,
-  Zap,
-  Heart,
-} from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Separator } from "@/components/ui/separator"
+import { Phone, Star, CheckCircle, Clock, Shield, Award, Users, MapPin, ArrowRight, Quote } from "lucide-react"
 
 export default function HomePage() {
+  const services = [
+    {
+      title: "Kitchen Renovations",
+      description: "Complete kitchen makeovers with custom cabinets, granite countertops, and modern appliances.",
+      image: "/Kitchen-renovations-sandton.webp",
+      href: "/services/kitchen-renovations",
+      price: "From R50,000",
+      duration: "7-14 days",
+    },
+    {
+      title: "Built-in Cupboards",
+      description: "Custom wardrobes, study units, and storage solutions designed for your space.",
+      image: "/Built-Built-in-Cupboards-Midrand.jpg",
+      href: "/services/built-in-cupboards",
+      price: "From R15,000",
+      duration: "3-7 days",
+    },
+    {
+      title: "Granite & Quartz",
+      description: "Premium stone countertops and surfaces with professional installation.",
+      image: "/granite-installation-Johannesburg.jpg",
+      href: "/services/quartz-granite",
+      price: "From R8,000",
+      duration: "2-5 days",
+    },
+    {
+      title: "Decking & Flooring",
+      description: "Beautiful outdoor decking and indoor flooring solutions.",
+      image: "/beautiful-decking.jpg",
+      href: "/services/decking-flooring",
+      price: "From R12,000",
+      duration: "3-8 days",
+    },
+    {
+      title: "Drywall & Ceilings",
+      description: "Professional drywall installation and ceiling solutions.",
+      image: "/drywall-contractor.jpg",
+      href: "/services/drywall-ceilings",
+      price: "From R6,000",
+      duration: "2-6 days",
+    },
+    {
+      title: "Carpentry Training",
+      description: "Professional carpentry courses and skills development programs.",
+      image: "/quality_woodworking_education_in_south_africa-1.jpg",
+      href: "/services/carpentry-training",
+      price: "From R3,500",
+      duration: "1-12 weeks",
+    },
+  ]
+
+  const areas = [
+    { name: "Johannesburg South", href: "/areas/johannesburg-south" },
+    { name: "Sandton", href: "/areas/sandton" },
+    { name: "Randburg", href: "/areas/randburg" },
+    { name: "Kempton Park", href: "/areas/kempton-park" },
+    { name: "Midrand", href: "/areas/midrand" },
+    { name: "Fourways", href: "/areas/fourways" },
+    { name: "Boksburg", href: "/areas/boksburg" },
+    { name: "Centurion", href: "/areas/centurion" },
+    { name: "Pretoria", href: "/areas/pretoria" },
+    { name: "Alberton", href: "/areas/alberton" },
+    { name: "Edenvale", href: "/areas/edenvale" },
+    { name: "Roodepoort", href: "/areas/roodepoort" },
+  ]
+
+  const testimonials = [
+    {
+      name: "Sarah Mitchell",
+      location: "Sandton",
+      rating: 5,
+      text: "Absolutely exceptional work! Our kitchen renovation exceeded all expectations. The team was professional, punctual, and delivered exactly what they promised.",
+      service: "Kitchen Renovation",
+    },
+    {
+      name: "David Thompson",
+      location: "Randburg",
+      rating: 5,
+      text: "The built-in cupboards transformed our bedroom completely. Quality craftsmanship and attention to detail was outstanding. Highly recommended!",
+      service: "Built-in Cupboards",
+    },
+    {
+      name: "Lisa Chen",
+      location: "Midrand",
+      rating: 5,
+      text: "Professional granite installation with perfect finishing. The team cleaned up after themselves and the result is stunning. Worth every penny!",
+      service: "Granite Installation",
+    },
+  ]
+
+  const whyChooseUs = [
+    {
+      icon: <Award className="h-8 w-8 text-amber-600" />,
+      title: "5-Star Rated Service",
+      description: "Consistently rated 5 stars by our clients with 47+ completed projects",
+    },
+    {
+      icon: <Shield className="h-8 w-8 text-amber-600" />,
+      title: "24-Month Warranty",
+      description: "Comprehensive warranty on all workmanship and 12-month on installations",
+    },
+    {
+      icon: <Users className="h-8 w-8 text-amber-600" />,
+      title: "Licensed & Insured",
+      description: "Fully licensed carpentry business with public liability insurance",
+    },
+    {
+      icon: <Clock className="h-8 w-8 text-amber-600" />,
+      title: "On-Time Delivery",
+      description: "We complete projects on schedule with transparent timelines",
+    },
+  ]
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-amber-50 to-orange-100 py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative container mx-auto px-4 py-20 lg:py-32">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge variant="secondary" className="bg-amber-100 text-amber-800 border-amber-200">
-                  <Star className="w-4 h-4 mr-1" />
-                  5-Star Rated • 47+ Projects Completed
+                <Badge className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2">
+                  Johannesburg's #1 Rated Carpenter
                 </Badge>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Professional{" "}
-                  <span className="text-amber-600 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-                    Carpentry
-                  </span>{" "}
-                  & Granite Specialists
+                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+                  Professional Carpenter &<span className="text-amber-400"> Granite Installation</span>
+                  Specialists
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
-                  Transform your home with expert kitchen renovations, built-in cupboards, and premium granite
-                  installations across Johannesburg and Gauteng. Quality craftsmanship guaranteed.
+                <p className="text-xl text-slate-300 leading-relaxed">
+                  Transform your home with Johannesburg's most trusted carpentry and granite installation experts.
+                  Kitchen renovations, built-in cupboards, and stone installations with 5-star service since 2020.
                 </p>
               </div>
 
+              <div className="flex flex-wrap gap-4 items-center">
+                <div className="flex items-center space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 text-amber-400 fill-current" />
+                  ))}
+                  <span className="ml-2 font-semibold">5.0 Rating</span>
+                </div>
+                <Separator orientation="vertical" className="h-6 bg-slate-600" />
+                <span className="font-semibold">47+ Projects Completed</span>
+                <Separator orientation="vertical" className="h-6 bg-slate-600" />
+                <span className="font-semibold">24-Month Warranty</span>
+              </div>
+
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
+                <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-6">
                   <Link href="/contact">
+                    <Phone className="mr-2 h-5 w-5" />
                     Get Free Quote
-                    <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
                 <Button
                   asChild
                   variant="outline"
                   size="lg"
-                  className="border-amber-600 text-amber-600 hover:bg-amber-50 bg-transparent"
+                  className="border-white text-white hover:bg-white hover:text-slate-900 text-lg px-8 py-6 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">
-                    <Phone className="mr-2 w-5 h-5" />
-                    Call: 067 601 4490
-                  </Link>
+                  <Link href="/portfolio">View Our Work</Link>
                 </Button>
               </div>
 
-              <div className="grid grid-cols-3 gap-6 pt-8 border-t border-amber-200">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">47+</div>
-                  <div className="text-sm text-gray-600">Projects Completed</div>
+              <div className="flex items-center space-x-4 text-sm">
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="h-5 w-5 text-green-400" />
+                  <span>Licensed & Insured</span>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">5.0</div>
-                  <div className="text-sm text-gray-600">Star Rating</div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="h-5 w-5 text-green-400" />
+                  <span>Free Consultations</span>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">12+</div>
-                  <div className="text-sm text-gray-600">Areas Served</div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="h-5 w-5 text-green-400" />
+                  <span>Same-Day Quotes</span>
                 </div>
               </div>
             </div>
@@ -87,21 +191,23 @@ export default function HomePage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/granite-kitchen-island.webp"
-                  alt="Professional kitchen renovation with granite countertops in Johannesburg"
+                  src="/granite-carpentry.webp"
+                  alt="Professional Carpenter & Granite Installation Johannesburg"
                   width={600}
                   height={400}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6">
                   <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4">
-                    <div className="flex items-center space-x-2">
-                      <CheckCircle className="w-5 h-5 text-green-600" />
-                      <span className="font-semibold text-gray-900">Latest Project: Luxury Kitchen Renovation</span>
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="font-semibold text-slate-900">Quick Response</p>
+                        <p className="text-sm text-slate-600">Call 067 601 4490</p>
+                      </div>
+                      <Phone className="h-8 w-8 text-amber-600" />
                     </div>
-                    <p className="text-sm text-gray-600 mt-1">Sandton • Custom granite island • Built-in storage</p>
                   </div>
                 </div>
               </div>
@@ -110,110 +216,55 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Smart Recommendations Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <SmartRecommendations />
-        </div>
-      </section>
-
       {/* Services Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Professional Carpentry & Granite Services
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From kitchen renovations to custom built-ins, we deliver exceptional craftsmanship across Johannesburg and
-              Gauteng
+            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Our Services</Badge>
+            <h2 className="text-4xl font-bold text-slate-900 mb-6">Complete Carpentry & Installation Solutions</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              From kitchen renovations to custom built-ins, we deliver exceptional craftsmanship with premium materials
+              and professional installation throughout Johannesburg.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Kitchen Renovations",
-                description:
-                  "Complete kitchen makeovers with custom cabinetry, granite countertops, and modern designs",
-                icon: <Home className="w-8 h-8" />,
-                image: "/modern-kitchen renovation.webp",
-                link: "/services/kitchen-renovations",
-                badge: "Most Popular",
-              },
-              {
-                title: "Built-in Cupboards",
-                description: "Custom storage solutions for bedrooms, studies, and living areas to maximize space",
-                icon: <Hammer className="w-8 h-8" />,
-                image: "/built-in-wardrobes-sliding (1) (1).webp",
-                link: "/services/built-in-cupboards",
-                badge: "Space Saving",
-              },
-              {
-                title: "Granite & Quartz",
-                description: "Premium stone countertops with professional templating, fabrication, and installation",
-                icon: <Wrench className="w-8 h-8" />,
-                image: "/granite-installation-sandton.jpg",
-                link: "/services/quartz-granite",
-                badge: "Premium",
-              },
-              {
-                title: "Decking & Flooring",
-                description: "Beautiful outdoor decking and indoor flooring solutions for any space",
-                icon: <Home className="w-8 h-8" />,
-                image: "/beautiful-decking.jpg",
-                link: "/services/decking-flooring",
-                badge: "Outdoor",
-              },
-              {
-                title: "Drywall & Ceilings",
-                description: "Professional drywall installation and ceiling solutions for modern interiors",
-                icon: <Hammer className="w-8 h-8" />,
-                image: "/drywall-contractor.jpg",
-                link: "/services/drywall-ceilings",
-                badge: "Interior",
-              },
-              {
-                title: "Carpentry Training",
-                description: "Professional carpentry courses with job placement guarantee and certification",
-                icon: <Award className="w-8 h-8" />,
-                image: "/quality_woodworking_education_in_south_africa-1.jpg",
-                link: "/services/carpentry-training",
-                badge: "Education",
-              },
-            ].map((service, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
-                <div className="relative h-48 overflow-hidden">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+                <div className="relative overflow-hidden rounded-t-lg">
                   <Image
                     src={service.image || "/placeholder.svg"}
-                    alt={`${service.title} services in Johannesburg`}
+                    alt={service.title}
                     width={400}
-                    height={200}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    height={250}
+                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute top-4 right-4">
-                    <Badge variant="secondary" className="bg-white/90 text-gray-800">
-                      {service.badge}
-                    </Badge>
+                  <div className="absolute top-4 left-4">
+                    <Badge className="bg-amber-600 text-white">{service.price}</Badge>
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <div className="text-amber-600">{service.icon}</div>
-                    <CardTitle className="text-xl">{service.title}</CardTitle>
-                  </div>
-                  <CardDescription className="text-gray-600">{service.description}</CardDescription>
+                  <CardTitle className="text-xl group-hover:text-amber-600 transition-colors">
+                    {service.title}
+                  </CardTitle>
+                  <CardDescription className="text-slate-600">{service.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="w-full group-hover:bg-amber-600 group-hover:text-white transition-colors bg-transparent"
-                  >
-                    <Link href={service.link}>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center space-x-2 text-sm text-slate-500">
+                      <Clock className="h-4 w-4" />
+                      <span>{service.duration}</span>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 text-amber-400 fill-current" />
+                      ))}
+                    </div>
+                  </div>
+                  <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
+                    <Link href={service.href}>
                       Learn More
-                      <ArrowRight className="ml-2 w-4 h-4" />
+                      <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                 </CardContent>
@@ -224,43 +275,24 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Why Choose Granite & Carpentry?</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're Johannesburg's trusted carpentry and granite specialists with a proven track record of excellence
+            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Why Choose Us</Badge>
+            <h2 className="text-4xl font-bold text-slate-900 mb-6">Johannesburg's Most Trusted Carpentry Experts</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              With over 47 completed projects and a perfect 5-star rating, we're the preferred choice for homeowners
+              across Johannesburg and Gauteng.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: <Shield className="w-8 h-8 text-blue-600" />,
-                title: "Licensed & Insured",
-                description: "Fully licensed contractors with comprehensive insurance coverage for your peace of mind",
-              },
-              {
-                icon: <Star className="w-8 h-8 text-amber-600" />,
-                title: "5-Star Rated",
-                description: "Consistently rated 5 stars by our customers across Johannesburg and Gauteng",
-              },
-              {
-                icon: <Zap className="w-8 h-8 text-green-600" />,
-                title: "Fast Response",
-                description: "Free quotes within 24 hours and flexible scheduling to meet your timeline",
-              },
-              {
-                icon: <Heart className="w-8 h-8 text-red-600" />,
-                title: "Quality Guarantee",
-                description: "We stand behind our work with comprehensive warranties on all projects",
-              },
-            ].map((feature, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {whyChooseUs.map((item, index) => (
+              <Card key={index} className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="pt-8">
-                  <div className="flex justify-center mb-4">{feature.icon}</div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <div className="flex justify-center mb-4">{item.icon}</div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">{item.title}</h3>
+                  <p className="text-slate-600">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -268,46 +300,80 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Service Areas Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      {/* Areas Served Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Service Areas Across Gauteng</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Professional carpentry and granite services throughout Johannesburg and surrounding areas
+            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Service Areas</Badge>
+            <h2 className="text-4xl font-bold text-slate-900 mb-6">Serving Greater Johannesburg & Gauteng</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              We provide professional carpentry and granite installation services throughout Johannesburg and
+              surrounding areas in Gauteng province.
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[
-              { name: "Johannesburg South", link: "/areas/johannesburg-south", badge: "Home Base" },
-              { name: "Sandton", link: "/areas/sandton", badge: "Premium" },
-              { name: "Randburg", link: "/areas/randburg", badge: "Popular" },
-              { name: "Kempton Park", link: "/areas/kempton-park", badge: null },
-              { name: "Midrand", link: "/areas/midrand", badge: null },
-              { name: "Fourways", link: "/areas/fourways", badge: "Luxury" },
-              { name: "Boksburg", link: "/areas/boksburg", badge: null },
-              { name: "Centurion", link: "/areas/centurion", badge: null },
-              { name: "Pretoria", link: "/areas/pretoria", badge: null },
-              { name: "Alberton", link: "/areas/alberton", badge: null },
-              { name: "Edenvale", link: "/areas/edenvale", badge: null },
-            ].map((area, index) => (
-              <Card key={index} className="hover:shadow-md transition-shadow">
-                <CardContent className="p-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-semibold text-gray-900">{area.name}</h3>
-                    {area.badge && (
-                      <Badge variant="secondary" className="text-xs">
-                        {area.badge}
-                      </Badge>
-                    )}
+            {areas.map((area, index) => (
+              <Link
+                key={index}
+                href={area.href}
+                className="group p-4 rounded-lg border border-slate-200 hover:border-amber-300 hover:bg-amber-50 transition-all duration-200"
+              >
+                <div className="flex items-center space-x-3">
+                  <MapPin className="h-5 w-5 text-amber-600 group-hover:text-amber-700" />
+                  <span className="font-medium text-slate-900 group-hover:text-amber-700">{area.name}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button asChild variant="outline" size="lg">
+              <Link href="/areas">
+                View All Service Areas
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-slate-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <Badge className="bg-amber-600 text-white px-4 py-2 mb-4">Client Testimonials</Badge>
+            <h2 className="text-4xl font-bold mb-6">What Our Clients Say</h2>
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+              Don't just take our word for it. Here's what our satisfied clients have to say about our carpentry and
+              installation services.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="bg-slate-800 border-slate-700 text-white">
+                <CardContent className="pt-6">
+                  <div className="flex items-center mb-4">
+                    <Quote className="h-8 w-8 text-amber-400 mr-3" />
+                    <div className="flex">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 text-amber-400 fill-current" />
+                      ))}
+                    </div>
                   </div>
-                  <Button asChild variant="outline" size="sm" className="w-full bg-transparent">
-                    <Link href={area.link}>
-                      View Services
-                      <ArrowRight className="ml-1 w-3 h-3" />
-                    </Link>
-                  </Button>
+                  <p className="text-slate-300 mb-6 leading-relaxed">"{testimonial.text}"</p>
+                  <div className="border-t border-slate-700 pt-4">
+                    <div className="flex justify-between items-center">
+                      <div>
+                        <p className="font-semibold">{testimonial.name}</p>
+                        <p className="text-sm text-slate-400">{testimonial.location}</p>
+                      </div>
+                      <Badge variant="outline" className="border-amber-400 text-amber-400">
+                        {testimonial.service}
+                      </Badge>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -315,19 +381,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Contact CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-600 to-orange-600">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Transform Your Space?</h2>
-          <p className="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
-            Get your free, detailed quote today. Our expert team is ready to bring your vision to life with professional
-            carpentry and granite installation services.
+      {/* CTA Section */}
+      <section className="py-20 bg-amber-600 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Home?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+            Get a free consultation and quote for your carpentry or granite installation project. We're ready to bring
+            your vision to life with professional craftsmanship.
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button asChild size="lg" variant="secondary" className="bg-white text-amber-600 hover:bg-gray-100">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              asChild
+              size="lg"
+              variant="secondary"
+              className="bg-white text-amber-600 hover:bg-slate-100 text-lg px-8 py-6"
+            >
               <Link href="/contact">
-                <Mail className="mr-2 w-5 h-5" />
+                <Phone className="mr-2 h-5 w-5" />
                 Get Free Quote
               </Link>
             </Button>
@@ -335,36 +405,27 @@ export default function HomePage() {
               asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-amber-600 bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">
-                <Phone className="mr-2 w-5 h-5" />
-                Call: 067 601 4490
-              </Link>
+              <Link href="tel:+27676014490">Call 067 601 4490</Link>
             </Button>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
-            <div className="flex items-center justify-center space-x-3">
-              <MapPin className="w-6 h-6 text-amber-200" />
-              <div>
-                <div className="font-semibold">Service Areas</div>
-                <div className="text-amber-100">Johannesburg & Gauteng</div>
-              </div>
+          <div className="mt-8 flex flex-wrap justify-center gap-8 text-sm opacity-90">
+            <div className="flex items-center space-x-2">
+              <CheckCircle className="h-5 w-5" />
+              <span>Free Consultations</span>
             </div>
-            <div className="flex items-center justify-center space-x-3">
-              <Clock className="w-6 h-6 text-amber-200" />
-              <div>
-                <div className="font-semibold">Business Hours</div>
-                <div className="text-amber-100">Mon-Fri 8AM-5PM</div>
-              </div>
+            <div className="flex items-center space-x-2">
+              <CheckCircle className="h-5 w-5" />
+              <span>Same-Day Quotes</span>
             </div>
-            <div className="flex items-center justify-center space-x-3">
-              <Users className="w-6 h-6 text-amber-200" />
-              <div>
-                <div className="font-semibold">Response Time</div>
-                <div className="text-amber-100">Within 24 Hours</div>
-              </div>
+            <div className="flex items-center space-x-2">
+              <CheckCircle className="h-5 w-5" />
+              <span>24-Month Warranty</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <CheckCircle className="h-5 w-5" />
+              <span>Licensed & Insured</span>
             </div>
           </div>
         </div>

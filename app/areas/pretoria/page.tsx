@@ -1,299 +1,364 @@
-import Image from "next/image"
-import Link from "next/link"
 import type { Metadata } from "next"
-import { Phone, MapPin, Star, Award, Users, Wrench, CheckCircle, Hammer, Palette, Ruler } from "lucide-react"
-
+import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, Shield, Users } from "lucide-react"
 
-/**
- * ────────────────────────────────────────────────────────────────────────────────
- *  SEO Metadata
- * ────────────────────────────────────────────────────────────────────────────────
- */
 export const metadata: Metadata = {
-  title: "Expert Carpenter Pretoria | Kitchen Renovations & Built-in Cupboards",
+  title: "Best Carpenter Pretoria 2024 | Kitchen Renovations & Built-in Cupboards | Free Quotes",
   description:
-    "Licensed carpenter in Pretoria & Tshwane. We specialise in kitchen renovations, built-in cupboards, granite installation and fine joinery. Serving Pretoria CBD, Brooklyn, Hatfield, Menlyn, Centurion and surrounding areas with 5-star craftsmanship.",
+    "★★★★★ #1 Rated Carpenter in Pretoria & Tshwane. Expert kitchen renovations, built-in cupboards, granite installation. Serving Brooklyn, Hatfield, Menlyn, Centurion. Licensed & insured. Call 067 601 4490",
   keywords:
-    "carpenter pretoria, carpenter centurion, kitchen renovation pretoria, built in cupboards pretoria, granite installation pretoria, joinery pretoria, carpenter near me, kitchen contractor pretoria, custom wardrobes pretoria, cabinet maker pretoria",
+    "carpenter Pretoria, kitchen renovation Pretoria, built-in cupboards Pretoria, granite installation Pretoria, carpenter Brooklyn, carpenter Hatfield, carpenter Menlyn, kitchen cabinets Pretoria, best carpenter Pretoria, affordable carpenter Pretoria, Pretoria kitchen contractor, granite Pretoria, cupboards Pretoria, carpenter Tshwane",
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/pretoria",
   },
   openGraph: {
-    title: "Expert Carpenter Pretoria | Granite & Carpentry",
+    title: "Best Carpenter Pretoria 2024 | Kitchen Renovations & Built-in Cupboards",
     description:
-      "Professional carpenter for Pretoria, Centurion & Tshwane. Kitchens, cupboards, granite, decking & more – 5-star rated workmanship.",
+      "★★★★★ #1 Rated Carpenter in Pretoria. Expert kitchen renovations, granite installation. Free quotes. Call 067 601 4490",
     url: "https://granitecarpentry.co.za/areas/pretoria",
     images: [
       {
-        url: "https://granitecarpentry.co.za/og/pretoria.jpg",
+        url: "https://granitecarpentry.co.za/carpenter-johannesburg-installing-kitchen-cupboards.jpg",
         width: 1200,
         height: 630,
-        alt: "Expert Carpenter in Pretoria – modern kitchen installation",
+        alt: "Best Carpenter Pretoria - Kitchen Renovation & Built-in Cupboards",
       },
     ],
   },
 }
 
-/**
- * ────────────────────────────────────────────────────────────────────────────────
- *  Page Component
- * ────────────────────────────────────────────────────────────────────────────────
- */
 export default function PretoriaPage() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* ── Hero ─────────────────────────────────────────────────────────────── */}
-      <section className="relative isolate overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-white">
-        {/* overlay */}
-        <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
-        <div className="container relative mx-auto px-4 py-20 lg:py-28">
-          <div className="mx-auto max-w-3xl text-center">
-            <div className="mb-5 flex items-center justify-center gap-2">
-              <MapPin className="h-5 w-5 text-amber-400" />
-              <Badge variant="secondary" className="border-amber-300 bg-amber-600/20 text-amber-100">
-                Pretoria &amp; Tshwane
-              </Badge>
+    <>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-white py-16 sm:py-20 md:py-24">
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="container mx-auto relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div>
+              <div className="flex items-center mb-4">
+                <MapPin className="w-5 h-5 text-amber-400 mr-2" />
+                <Badge variant="secondary" className="bg-amber-600/20 text-amber-100 border-amber-300">
+                  Pretoria's #1 Carpenter
+                </Badge>
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Best <span className="text-amber-400">Carpenter</span> in{" "}
+                <span className="text-amber-400 underline decoration-amber-500/60">Pretoria</span>
+              </h1>
+
+              <p className="text-xl sm:text-2xl text-slate-200 mb-8 leading-relaxed">
+                ★★★★★ Rated #1 Carpenter in Pretoria & Tshwane. Expert kitchen renovations, built-in cupboards, and
+                granite installations. Serving Brooklyn, Hatfield, Menlyn, Centurion & all Pretoria areas.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4 font-semibold">
+                  <Link href="/contact">
+                    Get FREE Quote Today
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  asChild
+                  className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
+                >
+                  <a href="tel:+27676014490">
+                    <Phone className="mr-2 w-5 h-5" />
+                    Call: 067 601 4490
+                  </a>
+                </Button>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                <div className="flex flex-col items-center">
+                  <Star className="w-6 h-6 text-amber-400 mb-1 fill-current" />
+                  <span className="text-sm font-medium">5.0 Rating</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Shield className="w-6 h-6 text-amber-400 mb-1" />
+                  <span className="text-sm font-medium">Licensed</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Users className="w-6 h-6 text-amber-400 mb-1" />
+                  <span className="text-sm font-medium">600+ Jobs</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Clock className="w-6 h-6 text-amber-400 mb-1" />
+                  <span className="text-sm font-medium">Same Day</span>
+                </div>
+              </div>
             </div>
 
-            <h1 className="mb-6 text-4xl font-extrabold leading-tight md:text-6xl">
-              Expert Carpenter{" "}
-              <span className="block text-amber-400 underline decoration-amber-500/60 underline-offset-4">
-                Pretoria
-              </span>
-            </h1>
+            <div className="relative">
+              <Image
+                src="/carpenter-johannesburg-installing-kitchen-cupboards.jpg"
+                alt="Best Carpenter Pretoria - Expert Kitchen Renovation & Built-in Cupboards"
+                width={600}
+                height={500}
+                className="rounded-lg shadow-2xl w-full h-auto"
+                priority
+              />
+              <div className="absolute -bottom-4 -left-4 bg-amber-600 text-white p-4 rounded-lg shadow-lg">
+                <div className="text-2xl font-bold">#1 Rated</div>
+                <div className="text-sm">Pretoria Carpenter</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <p className="mx-auto mb-10 max-w-xl text-lg text-slate-200 md:text-xl">
-              From bespoke kitchen renovations to precision built-in cupboards, our licensed craftsmen deliver 5-star
-              carpentry solutions across Pretoria, Centurion and the wider Tshwane metro.
+      {/* Pretoria Areas Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Serving All Pretoria & Tshwane Areas</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Professional carpentry services throughout Pretoria and Tshwane metro. Same-day quotes, licensed
+              craftsmen, 5-year warranty.
             </p>
+          </div>
 
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 px-8 py-4 text-lg">
-                <Link href="/contact">Request a Free Quote</Link>
-              </Button>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {[
+              "Pretoria CBD",
+              "Brooklyn",
+              "Hatfield",
+              "Menlyn",
+              "Waterkloof",
+              "Silver Lakes",
+              "Centurion",
+              "Lynnwood",
+              "Garsfontein",
+              "Faerie Glen",
+              "Moreleta Park",
+              "Willow Park",
+              "Erasmuskloof",
+              "Groenkloof",
+              "Arcadia",
+              "Sunnyside",
+            ].map((area) => (
+              <Card key={area} className="text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-slate-800">{area}</h3>
+                  <p className="text-sm text-slate-600 mt-1">Same Day Service</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
 
-              <a href="tel:+27676014490" className="flex items-center gap-2 text-lg text-amber-50 hover:text-amber-300">
-                <Phone className="h-5 w-5" />
-                067&nbsp;601&nbsp;4490
-              </a>
+      {/* Services Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              Expert Carpentry Services in Pretoria
+            </h2>
+            <p className="text-xl text-slate-600">Professional carpentry solutions for Pretoria homes and businesses</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Building2 className="w-6 h-6 text-amber-600 mr-2" />
+                  Kitchen Renovations Pretoria
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Complete kitchen transformations for Pretoria homes. Modern designs, quality materials, expert
+                  installation.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Custom kitchen cabinets & islands
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Granite & quartz countertops
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Complete plumbing coordination
+                  </li>
+                </ul>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R22,000</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/services/kitchen-renovations">View Details</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Award className="w-6 h-6 text-amber-600 mr-2" />
+                  Built-in Cupboards Pretoria
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Custom storage solutions for Pretoria homes. Wardrobes, studies, entertainment units, and more.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Walk-in wardrobes & closets
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Home office & study units
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    TV & entertainment centers
+                  </li>
+                </ul>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R12,000</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/services/built-in-cupboards">View Details</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Star className="w-6 h-6 text-amber-600 mr-2" />
+                  Granite Installation Pretoria
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Professional granite & quartz installations. Kitchen countertops, bathroom vanities, and more.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Premium granite & quartz slabs
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Precision cutting & installation
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Sink cutouts & edge finishing
+                  </li>
+                </ul>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R7,500</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/services/quartz-granite">View Details</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Why Pretoria Chooses Us</h2>
+            <p className="text-xl text-slate-600">
+              The most trusted carpenter in Pretoria with 600+ completed projects
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Star className="w-8 h-8 text-amber-600 fill-current" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">5-Star Rated</h3>
+              <p className="text-slate-600">Consistently rated 5 stars by Pretoria clients on Google Reviews</p>
             </div>
 
-            {/* Social proof */}
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm font-medium">
-              <div className="flex items-center gap-2">
-                <Star className="h-5 w-5 fill-amber-400 text-amber-400" />
-                5.0&nbsp;Customer&nbsp;Rating
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-amber-600" />
               </div>
-              <div className="flex items-center gap-2">
-                <Award className="h-5 w-5 text-amber-400" />
-                Licensed&nbsp;&amp;&nbsp;Insured
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Licensed & Insured</h3>
+              <p className="text-slate-600">Fully licensed carpenter with comprehensive insurance coverage</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-amber-600" />
               </div>
-              <div className="flex items-center gap-2">
-                <Users className="h-5 w-5 text-amber-400" />
-                45&#43;&nbsp;Projects&nbsp;Completed
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Same Day Quotes</h3>
+              <p className="text-slate-600">Free quotes within 24 hours for all Pretoria areas</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-amber-600" />
               </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">5-Year Warranty</h3>
+              <p className="text-slate-600">All work comes with our comprehensive 5-year warranty</p>
             </div>
           </div>
         </div>
-
-        {/* Decorative image */}
-        <Image
-          src="/carpenter-johannesburg-installing-kitchen-cupboards.jpg?height=800&width=1200"
-          alt="Modern Pretoria kitchen installed by Granite & Carpentry"
-          width={1200}
-          height={800}
-          priority
-          className="absolute bottom-0 right-0 hidden h-80 w-auto lg:block"
-        />
       </section>
 
-      {/* ── Services ─────────────────────────────────────────────────────────── */}
-      <section className="container mx-auto px-4 py-20 lg:py-24">
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-slate-800 md:text-4xl">
-            Professional Carpentry Services in Pretoria
-          </h2>
-          <p className="mx-auto max-w-2xl text-lg text-slate-600">
-            We service Pretoria CBD, Brooklyn, Hatfield, Menlyn, Centurion, Waterkloof, Silver Lakes and every suburb in
-            between.
-          </p>
-        </div>
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {/* Kitchen Renovations */}
-          <Card className="border-l-4 border-amber-600 hover:shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Wrench className="h-5 w-5 text-amber-600" />
-                Kitchen Renovations
-              </CardTitle>
-              <CardDescription>Complete design &amp; installation.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm">
-                {[
-                  "Custom cabinetry & islands",
-                  "Granite & quartz countertops",
-                  "Soft-close hinges & runners",
-                  "Plumbing & electrical coordination",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-600" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
-
-          {/* Built-in Cupboards */}
-          <Card className="border-l-4 border-amber-600 hover:shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Hammer className="h-5 w-5 text-amber-600" />
-                Built-in Cupboards
-              </CardTitle>
-              <CardDescription>Bedrooms, studies &amp; utilities.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm">
-                {["Walk-in wardrobes", "Home office shelving", "Entertainment units", "Garage & utility storage"].map(
-                  (item) => (
-                    <li key={item} className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                      {item}
-                    </li>
-                  ),
-                )}
-              </ul>
-            </CardContent>
-          </Card>
-
-          {/* Granite & Stone */}
-          <Card className="border-l-4 border-amber-600 hover:shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Palette className="h-5 w-5 text-amber-600" />
-                Granite &amp; Quartz
-              </CardTitle>
-              <CardDescription>Precision templating &amp; fitting.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm">
-                {["Kitchen worktops", "Bathroom vanities", "Reception counters", "Fireplace surrounds"].map((item) => (
-                  <li key={item} className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-600" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
-
-          {/* Decking & Flooring */}
-          <Card className="border-l-4 border-amber-600 hover:shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Ruler className="h-5 w-5 text-amber-600" />
-                Decking &amp; Flooring
-              </CardTitle>
-              <CardDescription>Interior &amp; exterior timber solutions.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm">
-                {[
-                  "Composite & hardwood decks",
-                  "Laminate & vinyl floors",
-                  "Skirting & trims",
-                  "Staircases & balustrades",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-600" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
-
-          {/* Drywall & Ceilings */}
-          <Card className="border-l-4 border-amber-600 hover:shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Wrench className="h-5 w-5 text-amber-600" />
-                Drywall &amp; Ceilings
-              </CardTitle>
-              <CardDescription>Partitioning, bulkheads &amp; repairs.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm">
-                {[
-                  "Office & home partitions",
-                  "Skimmed ceilings",
-                  "Bulkhead lighting features",
-                  "Fire-rated assemblies",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-600" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
-
-          {/* Carpentry Training */}
-          <Card className="border-l-4 border-amber-600 hover:shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Hammer className="h-5 w-5 text-amber-600" />
-                Carpentry Training
-              </CardTitle>
-              <CardDescription>Hands-on workshops for apprentices.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm">
-                {[
-                  "Weekend skill boosters",
-                  "On-site mentorship",
-                  "Tools & safety modules",
-                  "Industry certification prep",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-600" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* ── Contact CTA ───────────────────────────────────────────────────────── */}
-      <section className="bg-gradient-to-r from-amber-600 to-amber-700 py-16 text-center text-white">
-        <div className="container mx-auto px-4">
-          <h2 className="mb-4 text-3xl font-bold md:text-4xl">Ready to Transform Your Pretoria Property?</h2>
-          <p className="mx-auto mb-8 max-w-2xl text-lg opacity-90">
-            Talk to our master carpenters today for a free, no-obligation quotation. Quality workmanship, transparent
-            pricing, guaranteed.
+      {/* Contact CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Pretoria Property?</h2>
+          <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+            Join 600+ satisfied Pretoria clients. Get your FREE quote today from Pretoria's #1 rated carpenter.
+            Licensed, insured, and guaranteed.
           </p>
 
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button asChild size="lg" className="bg-white text-amber-700 hover:bg-slate-100 px-8 py-4 text-lg">
-              <Link href="/contact">Get My Free Quote</Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
+            <Button
+              size="lg"
+              asChild
+              className="bg-white text-amber-600 hover:bg-slate-50 text-lg px-8 py-4 font-semibold"
+            >
+              <Link href="/contact">
+                Get FREE Quote Now
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              asChild
+              className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-4 bg-transparent"
+            >
+              <a href="tel:+27676014490">
+                <Phone className="mr-2 w-5 h-5" />
+                Call: 067 601 4490
+              </a>
+            </Button>
+          </div>
 
-            <a href="tel:+27676014490" className="flex items-center gap-2 text-lg hover:text-amber-200">
-              <Phone className="h-5 w-5" />
-              067&nbsp;601&nbsp;4490
-            </a>
+          <div className="mt-8 text-center">
+            <p className="text-lg opacity-90">
+              ⭐⭐⭐⭐⭐ "Outstanding work on our kitchen renovation! Highly recommend." - John D., Brooklyn
+            </p>
           </div>
         </div>
       </section>
-    </main>
+    </>
   )
 }

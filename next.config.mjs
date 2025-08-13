@@ -1,5 +1,12 @@
+import { withContentlayer } from "next-contentlayer"
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  swcMinify: true,
+  reactStrictMode: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -7,17 +14,24 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ['localhost'],
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: '**',
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+        pathname: "/**",
       },
     ],
+    unoptimized: true,
   },
-  experimental: {
-    optimizePackageImports: ['lucide-react'],
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        fs: false,
+      }
+    }
+    return config
   },
 }
 
-export default nextConfig
+export default withContentlayer(nextConfig)

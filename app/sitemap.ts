@@ -2,147 +2,215 @@ import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://granitecarpentry.co.za"
+  const currentDate = new Date()
 
-  return [
+  // Static pages with high priority
+  const staticPages = [
     {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
+      url: `${baseUrl}`,
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
+      priority: 1.0,
     },
     {
-      url: `${baseUrl}/services/kitchen-renovations`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      url: `${baseUrl}/contact`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/about`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/portfolio`,
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/faq`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified: currentDate,
+      changeFrequency: "yearly" as const,
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/terms`,
+      lastModified: currentDate,
+      changeFrequency: "yearly" as const,
+      priority: 0.3,
+    },
+  ]
+
+  // Service pages - high priority for SEO
+  const servicePages = [
+    {
+      url: `${baseUrl}/services/kitchen-renovations`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/services/built-in-cupboards`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/services/quartz-granite`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/services/decking-flooring`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/services/drywall-ceilings`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/services/carpentry-training`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     },
-    // Area pages - high priority for local SEO
+  ]
+
+  // Area pages - high priority for local SEO
+  const areaPages = [
     {
       url: `${baseUrl}/areas/johannesburg-south`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/areas/sandton`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/areas/randburg`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/areas/kempton-park`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/areas/roodepoort`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/areas/midrand`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/areas/fourways`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/areas/boksburg`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/areas/pretoria`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/areas/centurion`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/areas/pretoria`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/areas/alberton`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
     },
     {
       url: `${baseUrl}/areas/edenvale`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    // Other pages
-    {
-      url: `${baseUrl}/portfolio`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
     },
     {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/faq`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      url: `${baseUrl}/areas/roodepoort`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
     },
   ]
+
+  // Blog posts - good for content marketing
+  const blogPosts = [
+    {
+      url: `${baseUrl}/blog/kitchen-renovation-trends-2025-johannesburg`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/granite-vs-quartz-kitchen-countertops`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/maximizing-small-spaces-built-in-cupboards`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/complete-guide-outdoor-decking-south-africa`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/drywall-installation-professional-tips`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/starting-carpentry-career-training-opportunities`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+  ]
+
+  return [...staticPages, ...servicePages, ...areaPages, ...blogPosts]
 }

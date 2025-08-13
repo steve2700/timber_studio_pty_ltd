@@ -2,107 +2,125 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle, ArrowRight, Phone, Star, Award, Building } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import {
+  CheckCircle,
+  ArrowRight,
+  Phone,
+  Star,
+  Award,
+  Building2,
+  MapPin,
+  Clock,
+  Shield,
+  Users,
+  Building,
+} from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Professional Carpenter Midrand | Kitchen Renovations & Commercial Carpentry",
+  title: "Best Carpenter Midrand 2024 | Kitchen Renovations & Commercial Carpentry | Free Quotes",
   description:
-    "Professional carpenter in Midrand business hub. Expert kitchen renovations, commercial carpentry, built-in cupboards for Midrand, Fourways, Centurion. Quality carpentry services for homes and offices.",
+    "★★★★★ #1 Rated Carpenter in Midrand business hub. Expert kitchen renovations, commercial carpentry, built-in cupboards. Serving Fourways, Waterfall City, Grand Central. Licensed & insured. Call 067 601 4490",
   keywords:
-    "carpenter Midrand, kitchen renovation Midrand, commercial carpentry Midrand, built-in cupboards Midrand, carpenter Fourways, kitchen cabinets Centurion, office carpentry Midrand, professional carpenter Midrand, custom carpentry Midrand",
+    "carpenter Midrand, kitchen renovation Midrand, commercial carpentry Midrand, built-in cupboards Midrand, carpenter Fourways, carpenter Waterfall City, kitchen cabinets Midrand, office carpentry Midrand, best carpenter Midrand, affordable carpenter Midrand, Midrand kitchen contractor, business carpentry Midrand",
+  alternates: {
+    canonical: "https://granitecarpentry.co.za/areas/midrand",
+  },
+  openGraph: {
+    title: "Best Carpenter Midrand 2024 | Kitchen Renovations & Commercial Carpentry",
+    description:
+      "★★★★★ #1 Rated Carpenter in Midrand. Expert kitchen renovations, commercial carpentry. Free quotes. Call 067 601 4490",
+    url: "https://granitecarpentry.co.za/areas/midrand",
+    images: [
+      {
+        url: "https://granitecarpentry.co.za/professional-carpenter-midrand.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Best Carpenter Midrand - Kitchen Renovation & Commercial Carpentry",
+      },
+    ],
+  },
 }
 
 export default function MidrandPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-50 to-slate-100 py-12 sm:py-16 md:py-20">
-        <div className="container mx-auto">
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-white py-16 sm:py-20 md:py-24">
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="container mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <div className="flex items-center mb-4">
-                <div className="flex text-amber-400 mr-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
-                  ))}
-                </div>
-                <span className="text-slate-600 font-medium text-sm sm:text-base">Professional Midrand Carpenter</span>
+                <MapPin className="w-5 h-5 text-amber-400 mr-2" />
+                <Badge variant="secondary" className="bg-amber-600/20 text-amber-100 border-amber-300">
+                  Midrand's #1 Carpenter
+                </Badge>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 sm:mb-6 leading-tight">
-                Professional <span className="text-amber-600">Carpenter</span> in{" "}
-                <span className="text-amber-600">Midrand</span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Best <span className="text-amber-400">Carpenter</span> in{" "}
+                <span className="text-amber-400 underline decoration-amber-500/60">Midrand</span>
               </h1>
 
-              <p className="text-lg sm:text-xl text-slate-600 mb-6 sm:mb-8 leading-relaxed">
-                Professional carpentry services in Midrand business hub. Expert kitchen renovations, commercial
-                carpentry, and built-in solutions for Midrand, Fourways, and Centurion. Serving both residential and
-                commercial clients.
+              <p className="text-xl sm:text-2xl text-slate-200 mb-8 leading-relaxed">
+                ★★★★★ Rated #1 Carpenter in Midrand business hub. Expert kitchen renovations, commercial carpentry, and
+                built-in solutions. Serving Fourways, Waterfall City, Grand Central & all Midrand areas.
               </p>
 
-              <div className="flex flex-col gap-3 sm:gap-4 mb-6 sm:mb-8">
-                <Button
-                  size="lg"
-                  asChild
-                  className="bg-amber-600 hover:bg-amber-700 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
-                >
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4 font-semibold">
                   <Link href="/contact">
-                    Get Professional Quote
-                    <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+                    Get FREE Quote Today
+                    <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    asChild
-                    className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto bg-transparent"
-                  >
-                    <a href="tel:+27676014490">
-                      <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                      Call: 067 601 4490
-                    </a>
-                  </Button>
-                  <Button
-                    size="lg"
-                    asChild
-                    variant="outline"
-                    className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 border-amber-600 text-amber-600 hover:bg-amber-50 w-full sm:w-auto bg-transparent"
-                  >
-                    <a href="https://g.co/kgs/epZT5BY" target="_blank" rel="noopener noreferrer">
-                      <Star className="mr-2 w-4 h-4 sm:w-5 sm:h-5 fill-current" />
-                      <span className="hidden sm:inline">5-Star Reviews</span>
-                      <span className="sm:hidden">Reviews</span>
-                    </a>
-                  </Button>
-                </div>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  asChild
+                  className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
+                >
+                  <a href="tel:+27676014490">
+                    <Phone className="mr-2 w-5 h-5" />
+                    Call: 067 601 4490
+                  </a>
+                </Button>
               </div>
 
-              <div className="flex items-center space-x-4 text-slate-600 text-sm sm:text-base">
-                <div className="flex items-center">
-                  <Building className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 mr-2" />
-                  <span>Business Hub</span>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                <div className="flex flex-col items-center">
+                  <Star className="w-6 h-6 text-amber-400 mb-1 fill-current" />
+                  <span className="text-sm font-medium">5.0 Rating</span>
                 </div>
-                <div className="flex items-center">
-                  <Award className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 mr-2" />
-                  <span>Professional Service</span>
+                <div className="flex flex-col items-center">
+                  <Shield className="w-6 h-6 text-amber-400 mb-1" />
+                  <span className="text-sm font-medium">Licensed</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Users className="w-6 h-6 text-amber-400 mb-1" />
+                  <span className="text-sm font-medium">300+ Jobs</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Building className="w-6 h-6 text-amber-400 mb-1" />
+                  <span className="text-sm font-medium">Business Hub</span>
                 </div>
               </div>
             </div>
 
             <div className="relative">
               <Image
-                src="/professional-carpenter-midrand.jpeg?height=600&width=800"
-                alt="Professional carpenter in Midrand - commercial and residential carpentry services"
-                width={800}
-                height={600}
+                src="/professional-carpenter-midrand.jpeg"
+                alt="Best Carpenter Midrand - Professional Commercial & Residential Carpentry Services"
+                width={600}
+                height={500}
                 className="rounded-lg shadow-2xl w-full h-auto"
                 priority
               />
-              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white p-3 sm:p-4 rounded-lg shadow-lg">
-                <div className="text-xl sm:text-2xl font-bold text-slate-800">Professional</div>
-                <div className="text-slate-600 text-sm sm:text-base">Service</div>
+              <div className="absolute -bottom-4 -left-4 bg-amber-600 text-white p-4 rounded-lg shadow-lg">
+                <div className="text-2xl font-bold">#1 Rated</div>
+                <div className="text-sm">Midrand Carpenter</div>
               </div>
             </div>
           </div>
@@ -110,25 +128,23 @@ export default function MidrandPage() {
       </section>
 
       {/* Midrand Areas Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
-              Serving All Midrand Areas
-            </h2>
-            <p className="text-lg sm:text-xl text-slate-600">
-              Professional carpentry services throughout Midrand and surrounding business areas
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Serving All Midrand Business Areas</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Professional carpentry services throughout Midrand and surrounding business areas. Same-day quotes,
+              licensed craftsmen, 5-year warranty.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {[
               "Midrand CBD",
               "Fourways",
-              "Centurion",
-              "Halfway House",
               "Waterfall City",
               "Grand Central",
+              "Halfway House",
               "Kyalami",
               "Carlswald",
               "Blue Hills",
@@ -139,10 +155,12 @@ export default function MidrandPage() {
               "Ivory Park",
               "Rabie Ridge",
               "Ebony Park",
+              "Centurion",
             ].map((area) => (
-              <Card key={area} className="text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-3 sm:p-4">
-                  <h3 className="font-semibold text-slate-800 text-sm sm:text-base">{area}</h3>
+              <Card key={area} className="text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-slate-800">{area}</h3>
+                  <p className="text-sm text-slate-600 mt-1">Same Day Service</p>
                 </CardContent>
               </Card>
             ))}
@@ -151,108 +169,206 @@ export default function MidrandPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-slate-50">
+      <section className="py-16 bg-slate-50">
         <div className="container mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
               Professional Carpentry Services in Midrand
             </h2>
-            <p className="text-lg sm:text-xl text-slate-600">
+            <p className="text-xl text-slate-600">
               Residential and commercial carpentry solutions for Midrand's business community
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">Commercial Carpentry</h3>
-                <p className="text-slate-600 mb-4 text-sm sm:text-base">
-                  Professional carpentry services for Midrand offices and commercial spaces. Quality workmanship for
-                  business environments.
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Building2 className="w-6 h-6 text-amber-600 mr-2" />
+                  Kitchen Renovations Midrand
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Modern kitchen transformations for Midrand homes and offices. Professional designs, quality materials.
                 </p>
-                <ul className="space-y-2 text-slate-600 mb-6 text-sm sm:text-base">
-                  <li className="flex items-center">
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Office fit-outs
+                    Modern kitchen designs & layouts
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Reception counters
+                    Commercial kitchen solutions
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Commercial storage
+                    Granite & quartz countertops
                   </li>
                 </ul>
-                <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <Link href="/services/kitchen-renovations">Learn More</Link>
-                </Button>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R19,000</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/services/kitchen-renovations">View Details</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">Residential Solutions</h3>
-                <p className="text-slate-600 mb-4 text-sm sm:text-base">
-                  Quality residential carpentry for Midrand homes. Kitchen renovations and custom storage solutions for
-                  modern living.
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Building className="w-6 h-6 text-amber-600 mr-2" />
+                  Commercial Carpentry Midrand
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Professional carpentry services for Midrand offices and commercial spaces. Quality workmanship for
+                  business environments.
                 </p>
-                <ul className="space-y-2 text-slate-600 mb-6 text-sm sm:text-base">
-                  <li className="flex items-center">
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Modern kitchens
+                    Office fit-outs & partitions
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Built-in wardrobes
+                    Reception counters & desks
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Home offices
+                    Commercial storage solutions
                   </li>
                 </ul>
-                <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <Link href="/services/built-in-cupboards">Learn More</Link>
-                </Button>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R15,000</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/contact">Get Quote</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Award className="w-6 h-6 text-amber-600 mr-2" />
+                  Built-in Cupboards Midrand
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Custom storage solutions for Midrand homes and offices. Modern designs that maximize space and
+                  functionality.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Modern wardrobes & closets
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Home & office storage
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Entertainment & media centers
+                  </li>
+                </ul>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R9,500</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/services/built-in-cupboards">View Details</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
+      {/* Why Choose Us Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Why Midrand Chooses Us</h2>
+            <p className="text-xl text-slate-600">The most trusted carpenter in Midrand with 300+ completed projects</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Star className="w-8 h-8 text-amber-600 fill-current" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">5-Star Rated</h3>
+              <p className="text-slate-600">Consistently rated 5 stars by Midrand clients on Google Reviews</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-amber-600" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Licensed & Insured</h3>
+              <p className="text-slate-600">Fully licensed carpenter with comprehensive insurance coverage</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-amber-600" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Same Day Quotes</h3>
+              <p className="text-slate-600">Free quotes within 24 hours for all Midrand areas</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Building className="w-8 h-8 text-amber-600" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Business Specialist</h3>
+              <p className="text-slate-600">Specialized in both residential and commercial carpentry</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
         <div className="container mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
-            Ready for Professional Midrand Service?
-          </h2>
-          <p className="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
-            Contact Midrand's professional carpentry specialists today. Quality service for both residential and
-            commercial clients in the business hub of Gauteng.
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Midrand Property?</h2>
+          <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+            Join 300+ satisfied Midrand clients. Get your FREE quote today from Midrand's #1 rated carpenter. Licensed,
+            insured, and guaranteed.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-lg mx-auto">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
             <Button
               size="lg"
               asChild
-              className="bg-white text-amber-600 hover:bg-slate-50 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+              className="bg-white text-amber-600 hover:bg-slate-50 text-lg px-8 py-4 font-semibold"
             >
               <Link href="/contact">
-                Get Professional Quote
-                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+                Get FREE Quote Now
+                <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
             <Button
               size="lg"
               variant="outline"
               asChild
-              className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-4 bg-transparent"
             >
               <a href="tel:+27676014490">
-                <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
+                <Phone className="mr-2 w-5 h-5" />
                 Call: 067 601 4490
               </a>
             </Button>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-lg opacity-90">
+              ⭐⭐⭐⭐⭐ "Professional commercial carpentry! Great office fit-out." - David L., Waterfall City
+            </p>
           </div>
         </div>
       </section>

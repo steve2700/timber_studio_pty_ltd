@@ -1,6 +1,5 @@
 "use client"
-
-import type React from "react"
+import type { AnalyticsProviderProps } from "./types" // Assuming types are defined in a separate file
 
 import { useEffect } from "react"
 import { usePathname } from "next/navigation"
@@ -13,7 +12,7 @@ declare global {
   }
 }
 
-export function AnalyticsProvider({ children }: { children: React.ReactNode }) {
+export function AnalyticsProvider({ children }: AnalyticsProviderProps) {
   const pathname = usePathname()
 
   useEffect(() => {

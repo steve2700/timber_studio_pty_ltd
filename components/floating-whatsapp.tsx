@@ -1,44 +1,39 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { Button } from "@/components/ui/button"
+import { useState } from "react"
 import { MessageCircle } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export function FloatingWhatsApp() {
-  const [isMobile, setIsMobile] = useState(false)
+  const [showTooltip, setShowTooltip] = useState(false)
 
-  useEffect(() => {
-    // Check if running on the client-side
-    if (typeof window !== "undefined") {
-      setIsMobile(window.innerWidth <= 768)
-
-      const handleResize = () => {
-        setIsMobile(window.innerWidth <= 768)
-      }
-
-      window.addEventListener("resize", handleResize)
-
-      return () => {
-        window.removeEventListener("resize", handleResize)
-      }
-    }
-  }, [])
+  const handleWhatsAppClick = () => {
+    const message = encodeURIComponent(
+      "Hi! I'm interested in your carpentry services. Could you please provide more information?",
+    )
+    const whatsappUrl = `https://wa.me/27115689012?text=${message}`
+    window.open(whatsappUrl, "_blank")
+  }
 
   return (
-    <Button
-      asChild
-      className="fixed bottom-4 right-4 z-50 bg-green-600 hover:bg-green-700 text-white rounded-full p-4 shadow-lg"
-      size="lg"
-    >
-      <a
-        href={isMobile ? "https://wa.me/27676014490" : "https://web.whatsapp.com/send?phone=27676014490"}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="WhatsApp Chat"
-      >
-        <MessageCircle className="w-6 h-6" />
-        <span className="sr-only">WhatsApp Chat</span>
-      </a>
-    </Button>
+    <div className="fixed bottom-20 left-4 z-50">
+      <div className="relative">
+        {showTooltip && (
+          <div className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg whitespace-nowrap">
+            Chat with us on WhatsApp
+            <div className="absolute top-full left-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
+          </div>
+        )}
+        <Button
+          onClick={handleWhatsAppClick}
+          onMouseEnter={() => setShowTooltip(true)}
+          onMouseLeave={() => setShowTooltip(false)}
+          className="h-14 w-14 rounded-full bg-green-500 hover:bg-green-600 shadow-lg"
+          size="icon"
+        >
+          <MessageCircle className="h-6 w-6" />
+        </Button>
+      </div>
+    </div>
   )
 }

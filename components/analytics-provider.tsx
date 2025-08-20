@@ -1,7 +1,11 @@
 "use client"
 
+import type React from "react"
+
 import { useEffect } from "react"
 import { usePathname } from "next/navigation"
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 declare global {
   interface Window {
@@ -9,12 +13,12 @@ declare global {
   }
 }
 
-export function AnalyticsProvider() {
+export function AnalyticsProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
 
   useEffect(() => {
     // Google Analytics 4 setup
-    const GA_MEASUREMENT_ID = "G-KHJ36N0NYE" // Replace with my  actual GA4 measurement ID
+    const GA_MEASUREMENT_ID = "G-KHJ36N0NYE" // Replace with my actual GA4 measurement ID
 
     // Load Google Analytics script
     const script1 = document.createElement("script")
@@ -51,7 +55,13 @@ export function AnalyticsProvider() {
     }
   }, [pathname])
 
-  return null
+  return (
+    <>
+      {children}
+      <Analytics />
+      <SpeedInsights />
+    </>
+  )
 }
 
 export function useTrackInteraction() {

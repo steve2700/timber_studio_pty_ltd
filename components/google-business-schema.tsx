@@ -1,5 +1,3 @@
-"use client"
-
 interface GoogleBusinessSchemaProps {
   businessName: string
   description: string
@@ -19,9 +17,9 @@ interface GoogleBusinessSchemaProps {
   reviewCount: number
   openingHours: string[]
   socialMedia: {
-    facebook: string
-    instagram: string
-    linkedin: string
+    facebook?: string
+    instagram?: string
+    linkedin?: string
   }
   images: {
     logo: string
@@ -50,8 +48,10 @@ export function GoogleBusinessSchema({
     name: businessName,
     description: description,
     image: images.photos,
+    logo: images.logo,
     telephone: phone,
-    email: email, // Updated email prop usage
+    email: email,
+    url: website,
     address: {
       "@type": "PostalAddress",
       streetAddress: address.street,
@@ -65,22 +65,30 @@ export function GoogleBusinessSchema({
       latitude: -26.2041,
       longitude: 28.0473,
     },
-    url: website,
-    servesCuisine: services,
-    areaServed: areas,
+    openingHoursSpecification: openingHours.map((hours) => {
+      const [day, time] = hours.split(" ")
+      const [opens, closes] = time.split("-")
+      return {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: day,
+        opens: opens,
+        closes: closes,
+      }
+    }),
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: rating,
       reviewCount: reviewCount,
     },
-    openingHoursSpecification: openingHours.map((day) => ({
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: day.split(" ")[0],
-      opens: day.split(" ")[1]?.split("-")[0] || "08:00",
-      closes: day.split(" ")[1]?.split("-")[1] || "17:00",
+    areaServed: areas.map((area) => ({
+      "@type": "City",
+      name: area,
     })),
-    sameAs: [socialMedia.facebook, socialMedia.instagram, socialMedia.linkedin, website],
-    logo: images.logo,
+    serviceType: services,
+    sameAs: Object.values(socialMedia).filter(Boolean),
+    priceRange: "$$",
+    currenciesAccepted: "ZAR",
+    paymentAccepted: ["Cash", "Bank Transfer", "Card"],
   }
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

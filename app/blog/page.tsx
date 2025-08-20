@@ -1,223 +1,274 @@
+import type { Metadata } from "next"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Calendar, Clock, User, ArrowRight } from "lucide-react"
-import Image from "next/image"
+import { Calendar, Clock, ArrowRight } from "lucide-react"
 import Link from "next/link"
-import type { Metadata } from "next"
+import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Carpentry & Granite Blog | Expert Tips & Project Ideas | Johannesburg",
+  title: "★★★★★ Carpentry Blog | Expert Tips & Guides 2024 | Granite Carpentry",
   description:
-    "Expert carpentry and granite installation tips, project ideas, and industry insights from Johannesburg's leading specialists. Learn about kitchen renovations, built-in cupboards, and stone installations.",
-  keywords: [
-    "carpentry blog Johannesburg",
-    "granite installation tips",
-    "kitchen renovation ideas",
-    "built-in cupboard designs",
-    "carpentry tutorials",
-    "home improvement blog South Africa",
-  ],
+    "Professional carpentry tips, kitchen renovation guides, built-in cupboard ideas, and expert advice from Johannesburg's #1 rated carpenters. Free guides & tutorials.",
+  keywords:
+    "carpentry blog, kitchen renovation tips, built-in cupboard ideas, carpentry guides, woodworking tips, home improvement blog, carpenter advice johannesburg",
   openGraph: {
-    title: "Carpentry & Granite Blog | Expert Tips & Project Ideas",
-    description:
-      "Expert carpentry and granite installation tips, project ideas, and industry insights from Johannesburg's leading specialists.",
-    url: "https://granitecarpentry.co.za/blog",
-    siteName: "Granite & Carpentry Johannesburg",
-    type: "website",
+    title: "★★★★★ Carpentry Blog | Expert Tips & Guides 2024",
+    description: "Professional carpentry tips and guides from Johannesburg's top-rated carpenters",
+    images: ["/granite-carpentry.webp"],
   },
 }
 
+// Mock blog posts data - in a real app, this would come from a CMS or database
 const blogPosts = [
   {
     id: 1,
-    title: "10 Kitchen Renovation Trends for 2024 in Johannesburg",
-    excerpt:
-      "Discover the latest kitchen design trends that are transforming homes across Johannesburg and Gauteng. From granite countertops to smart storage solutions.",
-    image: "/modern-kitchen renovation.webp",
-    category: "Kitchen Renovations",
-    author: "Granite & Carpentry Team",
+    title: "Complete Guide to Kitchen Renovations in Johannesburg 2024",
+    description:
+      "Everything you need to know about planning and executing a successful kitchen renovation, from design to installation.",
+    image: "/Kitchen-renovations-sandton.webp",
     date: "2024-01-15",
-    readTime: "5 min read",
-    slug: "kitchen-renovation-trends-2024-johannesburg",
+    readTime: "8 min read",
+    category: "Kitchen Renovations",
+    slug: "complete-guide-kitchen-renovations-johannesburg-2024",
+    featured: true,
   },
   {
     id: 2,
-    title: "Granite vs Quartz: Which is Best for Your Kitchen?",
-    excerpt:
-      "A comprehensive comparison of granite and quartz countertops, including pros, cons, costs, and maintenance requirements for South African homes.",
-    image: "/granite-countertop.jpg",
-    category: "Granite & Quartz",
-    author: "Stone Installation Expert",
+    title: "Built-in Cupboards vs Freestanding: Which is Better?",
+    description:
+      "Compare the pros and cons of built-in cupboards versus freestanding furniture for your home storage solutions.",
+    image: "/built-in-wardrobes-sliding (1) (1).webp",
     date: "2024-01-10",
-    readTime: "7 min read",
-    slug: "granite-vs-quartz-kitchen-countertops",
+    readTime: "6 min read",
+    category: "Built-in Cupboards",
+    slug: "built-in-cupboards-vs-freestanding-which-is-better",
+    featured: true,
   },
   {
     id: 3,
-    title: "Maximizing Small Spaces with Built-in Cupboards",
-    excerpt:
-      "Learn how custom built-in cupboards can transform small bedrooms and living spaces in Johannesburg apartments and homes.",
-    image: "/built-in-wardrobes-sliding (1) (1).webp",
-    category: "Built-in Cupboards",
-    author: "Custom Carpentry Specialist",
+    title: "Granite vs Quartz Countertops: The Ultimate Comparison",
+    description:
+      "Detailed comparison of granite and quartz countertops including durability, maintenance, cost, and aesthetic appeal.",
+    image: "/granite-countertop.jpg",
     date: "2024-01-05",
-    readTime: "6 min read",
-    slug: "maximizing-small-spaces-built-in-cupboards",
+    readTime: "7 min read",
+    category: "Stone Work",
+    slug: "granite-vs-quartz-countertops-ultimate-comparison",
+    featured: false,
   },
   {
     id: 4,
-    title: "The Complete Guide to Outdoor Decking in South Africa",
-    excerpt:
-      "Everything you need to know about choosing, installing, and maintaining outdoor decking in South Africa's climate.",
+    title: "Decking Installation: Wood vs Composite Materials",
+    description:
+      "Learn about different decking materials, installation processes, and maintenance requirements for outdoor spaces.",
     image: "/beautiful-decking.jpg",
-    category: "Decking & Flooring",
-    author: "Outdoor Specialist",
     date: "2023-12-28",
-    readTime: "8 min read",
-    slug: "complete-guide-outdoor-decking-south-africa",
+    readTime: "5 min read",
+    category: "Decking & Flooring",
+    slug: "decking-installation-wood-vs-composite-materials",
+    featured: false,
   },
   {
     id: 5,
-    title: "Drywall Installation: Professional Tips for Perfect Results",
-    excerpt:
-      "Professional techniques and tips for drywall installation that ensure smooth, durable walls in your home renovation project.",
+    title: "Drywall Installation: Professional Tips and Techniques",
+    description:
+      "Master the art of drywall installation with professional techniques, tools, and troubleshooting tips.",
     image: "/drywall-contractor.jpg",
-    category: "Drywall & Ceilings",
-    author: "Construction Expert",
     date: "2023-12-20",
     readTime: "9 min read",
-    slug: "drywall-installation-professional-tips",
+    category: "Drywall & Ceilings",
+    slug: "drywall-installation-professional-tips-techniques",
+    featured: false,
   },
   {
     id: 6,
-    title: "Starting Your Carpentry Career: Training and Opportunities",
-    excerpt:
-      "A guide to carpentry training programs, certification requirements, and career opportunities in South Africa's construction industry.",
-    image: "/quality_woodworking_education_in_south_africa-1.jpg",
-    category: "Carpentry Training",
-    author: "Training Coordinator",
+    title: "Home Office Built-in Solutions for Remote Work",
+    description: "Create the perfect home office with custom built-in desks, storage, and organizational solutions.",
+    image: "/built-in-study-1 (1).webp",
     date: "2023-12-15",
-    readTime: "10 min read",
-    slug: "starting-carpentry-career-training-opportunities",
+    readTime: "6 min read",
+    category: "Built-in Cupboards",
+    slug: "home-office-built-in-solutions-remote-work",
+    featured: false,
   },
 ]
 
-export default function BlogPage() {
-  return (
-    <div className="min-h-screen py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Carpentry & Granite Blog</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Expert tips, project ideas, and industry insights from Johannesburg's leading carpentry and granite
-            specialists
-          </p>
-        </div>
+const categories = [
+  "All",
+  "Kitchen Renovations",
+  "Built-in Cupboards",
+  "Stone Work",
+  "Decking & Flooring",
+  "Drywall & Ceilings",
+]
 
-        {/* Featured Post */}
-        <div className="mb-16">
-          <Card className="overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-              <div className="relative h-64 lg:h-auto">
-                <Image
-                  src={blogPosts[0].image || "/placeholder.svg"}
-                  alt={blogPosts[0].title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-8 flex flex-col justify-center">
-                <Badge variant="secondary" className="w-fit mb-4">
-                  Featured Post
+export default function BlogPage() {
+  const featuredPosts = blogPosts.filter((post) => post.featured)
+  const regularPosts = blogPosts.filter((post) => !post.featured)
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-amber-600 to-amber-700 text-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">★★★★★ Carpentry Blog & Expert Guides</h1>
+            <p className="text-xl md:text-2xl mb-8 text-amber-100">
+              Professional tips, tutorials, and insights from Johannesburg's #1 rated carpenters
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 text-sm">
+              <div className="flex items-center gap-2">
+                <Badge variant="secondary" className="bg-white/20 text-white">
+                  1000+ Projects Completed
                 </Badge>
-                <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">{blogPosts[0].title}</h2>
-                <p className="text-gray-600 mb-6">{blogPosts[0].excerpt}</p>
-                <div className="flex items-center space-x-4 text-sm text-gray-500 mb-6">
-                  <div className="flex items-center">
-                    <User className="w-4 h-4 mr-1" />
-                    {blogPosts[0].author}
-                  </div>
-                  <div className="flex items-center">
-                    <Calendar className="w-4 h-4 mr-1" />
-                    {new Date(blogPosts[0].date).toLocaleDateString()}
-                  </div>
-                  <div className="flex items-center">
-                    <Clock className="w-4 h-4 mr-1" />
-                    {blogPosts[0].readTime}
-                  </div>
-                </div>
-                <Button asChild className="w-fit bg-amber-600 hover:bg-amber-700">
-                  <Link href={`/blog/${blogPosts[0].slug}`}>
-                    Read Full Article
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Link>
-                </Button>
+              </div>
+              <div className="flex items-center gap-2">
+                <Badge variant="secondary" className="bg-white/20 text-white">
+                  15+ Years Experience
+                </Badge>
+              </div>
+              <div className="flex items-center gap-2">
+                <Badge variant="secondary" className="bg-white/20 text-white">
+                  Expert Advice
+                </Badge>
               </div>
             </div>
-          </Card>
+          </div>
         </div>
+      </section>
 
-        {/* Blog Posts Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.slice(1).map((post) => (
-            <Card key={post.id} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-48">
-                <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
-                <div className="absolute top-4 left-4">
-                  <Badge variant="secondary" className="bg-white/90 text-gray-800">
+      {/* Featured Posts */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Featured Articles</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {featuredPosts.map((post) => (
+              <Card key={post.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative h-64">
+                  <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
+                  <Badge className="absolute top-4 left-4 bg-amber-600">Featured</Badge>
+                </div>
+                <CardHeader>
+                  <div className="flex items-center gap-4 text-sm text-gray-600 mb-2">
+                    <div className="flex items-center gap-1">
+                      <Calendar className="h-4 w-4" />
+                      {new Date(post.date).toLocaleDateString()}
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Clock className="h-4 w-4" />
+                      {post.readTime}
+                    </div>
+                    <Badge variant="outline">{post.category}</Badge>
+                  </div>
+                  <CardTitle className="text-xl mb-2">{post.title}</CardTitle>
+                  <CardDescription className="text-gray-600">{post.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Link href={`/blog/${post.slug}`}>
+                    <Button className="w-full bg-amber-600 hover:bg-amber-700">
+                      Read Article
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* All Posts */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">All Articles</h2>
+
+          {/* Category Filter */}
+          <div className="flex flex-wrap justify-center gap-2 mb-12">
+            {categories.map((category) => (
+              <Button
+                key={category}
+                variant={category === "All" ? "default" : "outline"}
+                className={category === "All" ? "bg-amber-600 hover:bg-amber-700" : ""}
+              >
+                {category}
+              </Button>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {regularPosts.map((post) => (
+              <Card key={post.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative h-48">
+                  <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
+                </div>
+                <CardHeader>
+                  <div className="flex items-center gap-4 text-sm text-gray-600 mb-2">
+                    <div className="flex items-center gap-1">
+                      <Calendar className="h-4 w-4" />
+                      {new Date(post.date).toLocaleDateString()}
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Clock className="h-4 w-4" />
+                      {post.readTime}
+                    </div>
+                  </div>
+                  <Badge variant="outline" className="w-fit mb-2">
                     {post.category}
                   </Badge>
-                </div>
-              </div>
-              <CardHeader>
-                <CardTitle className="text-xl line-clamp-2">{post.title}</CardTitle>
-                <CardDescription className="line-clamp-3">{post.excerpt}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
-                  <div className="flex items-center">
-                    <Calendar className="w-4 h-4 mr-1" />
-                    {new Date(post.date).toLocaleDateString()}
-                  </div>
-                  <div className="flex items-center">
-                    <Clock className="w-4 h-4 mr-1" />
-                    {post.readTime}
-                  </div>
-                </div>
-                <Button asChild variant="outline" className="w-full bg-transparent">
+                  <CardTitle className="text-lg mb-2">{post.title}</CardTitle>
+                  <CardDescription className="text-gray-600 text-sm">{post.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
                   <Link href={`/blog/${post.slug}`}>
-                    Read More
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                    <Button
+                      variant="outline"
+                      className="w-full hover:bg-amber-50 hover:border-amber-600 bg-transparent"
+                    >
+                      Read More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
                   </Link>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
+      </section>
 
-        {/* Newsletter Signup */}
-        <div className="mt-16">
-          <Card className="bg-gradient-to-r from-amber-50 to-orange-50 border-amber-200">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Stay Updated with Our Latest Tips</h3>
-              <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Get expert carpentry and granite installation tips, project ideas, and exclusive offers delivered to
-                your inbox.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
-                />
-                <Button className="bg-amber-600 hover:bg-amber-700">Subscribe</Button>
-              </div>
-            </CardContent>
-          </Card>
+      {/* Newsletter Signup */}
+      <section className="py-16 bg-amber-600 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Stay Updated with Expert Tips</h2>
+          <p className="text-xl mb-8 text-amber-100">
+            Get the latest carpentry tips, project ideas, and exclusive guides delivered to your inbox
+          </p>
+          <div className="max-w-md mx-auto flex gap-4">
+            <input type="email" placeholder="Enter your email" className="flex-1 px-4 py-2 rounded-lg text-gray-900" />
+            <Button className="bg-white text-amber-600 hover:bg-gray-100">Subscribe</Button>
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
+          <p className="text-xl text-gray-600 mb-8">Get expert advice and a free quote for your carpentry project</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
+              <Button size="lg" className="bg-amber-600 hover:bg-amber-700">
+                Get Free Quote
+              </Button>
+            </Link>
+            <Link href="tel:0676014490">
+              <Button size="lg" variant="outline">
+                Call: 067 601 4490
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

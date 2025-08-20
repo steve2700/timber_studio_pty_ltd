@@ -1,160 +1,281 @@
 import Link from "next/link"
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Star, Award, Shield, Users } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Separator } from "@/components/ui/separator"
 
 export function Footer() {
+  const currentYear = new Date().getFullYear()
+
+  const services = [
+    { name: "Kitchen Renovations", href: "/services/kitchen-renovations" },
+    { name: "Built-in Cupboards", href: "/services/built-in-cupboards" },
+    { name: "Granite & Quartz", href: "/services/quartz-granite" },
+    { name: "Drywall & Ceilings", href: "/services/drywall-ceilings" },
+    { name: "Decking & Flooring", href: "/services/decking-flooring" },
+    { name: "Carpentry Training", href: "/services/carpentry-training" },
+  ]
+
+  const areas = [
+    { name: "Johannesburg", href: "/areas/johannesburg-south" },
+    { name: "Sandton", href: "/areas/sandton" },
+    { name: "Randburg", href: "/areas/randburg" },
+    { name: "Pretoria", href: "/areas/pretoria" },
+    { name: "Centurion", href: "/areas/centurion" },
+    { name: "Midrand", href: "/areas/midrand" },
+  ]
+
+  const company = [
+    { name: "About Us", href: "/about" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "Blog", href: "/blog" },
+    { name: "FAQ", href: "/faq" },
+    { name: "Contact", href: "/contact" },
+    { name: "Privacy Policy", href: "/privacy" },
+  ]
+
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-slate-900 text-white">
+      {/* Trust Indicators */}
+      <div className="border-b border-slate-800">
+        <div className="container mx-auto px-4 py-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div className="flex flex-col items-center space-y-2">
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
+                <Star className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-amber-400">★★★★★</div>
+                <div className="text-sm text-slate-300">5-Star Rated</div>
+              </div>
+            </div>
+            <div className="flex flex-col items-center space-y-2">
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
+                <Users className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-amber-400">1000+</div>
+                <div className="text-sm text-slate-300">Projects Completed</div>
+              </div>
+            </div>
+            <div className="flex flex-col items-center space-y-2">
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
+                <Shield className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-amber-400">24</div>
+                <div className="text-sm text-slate-300">Month Warranty</div>
+              </div>
+            </div>
+            <div className="flex flex-col items-center space-y-2">
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
+                <Award className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-amber-400">15+</div>
+                <div className="text-sm text-slate-300">Years Experience</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">GC</span>
+          <div className="space-y-6">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="h-8 w-8 rounded bg-amber-600 flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">GC</span>
+                </div>
+                <div>
+                  <div className="font-bold text-lg text-amber-400">Granite Carpentry</div>
+                  <div className="text-sm text-slate-400">& Joinery Experts</div>
+                </div>
               </div>
-              <div>
-                <div className="font-bold text-lg">Granite Carpentry</div>
-                <div className="text-sm text-gray-400">& Joinery Experts</div>
+              <p className="text-slate-300 leading-relaxed">
+                Johannesburg's #1 rated carpenter with over 1000+ completed projects. Professional kitchen renovations,
+                built-in cupboards, and granite installations with 24-month warranty.
+              </p>
+            </div>
+
+            {/* Contact Info */}
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-amber-400 flex-shrink-0" />
+                <div>
+                  <a href="tel:+27676014490" className="hover:text-amber-400 transition-colors">
+                    067 601 4490
+                  </a>
+                  <div className="text-xs text-slate-400">24/7 Emergency Service</div>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-3">
+                <Mail className="h-5 w-5 text-amber-400 flex-shrink-0" />
+                <div>
+                  <a href="mailto:info@granitecarpentry.co.za" className="hover:text-amber-400 transition-colors">
+                    info@granitecarpentry.co.za
+                  </a>
+                  <div className="text-xs text-slate-400">Free Quotes Available</div>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-3">
+                <MapPin className="h-5 w-5 text-amber-400 flex-shrink-0" />
+                <div>
+                  <span>Johannesburg, Gauteng</span>
+                  <div className="text-xs text-slate-400">Serving Greater Johannesburg</div>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-3">
+                <Clock className="h-5 w-5 text-amber-400 flex-shrink-0" />
+                <div>
+                  <span>Mon-Sat: 7AM-5PM</span>
+                  <div className="text-xs text-slate-400">Sunday: Emergency Only</div>
+                </div>
               </div>
             </div>
-            <p className="text-gray-400 text-sm">
-              Professional carpentry and joinery services with over 15 years of experience. Serving Greater Johannesburg
-              and Pretoria with quality craftsmanship.
-            </p>
+
+            {/* Social Media */}
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="https://facebook.com/granitecarpentry"
+                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors"
+                aria-label="Follow us on Facebook"
+              >
                 <Facebook className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              </a>
+              <a
+                href="https://instagram.com/granitecarpentry"
+                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors"
+                aria-label="Follow us on Instagram"
+              >
                 <Instagram className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              </a>
+              <a
+                href="https://linkedin.com/company/granite-carpentry"
+                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors"
+                aria-label="Connect with us on LinkedIn"
+              >
                 <Linkedin className="h-5 w-5" />
-              </Link>
+              </a>
             </div>
           </div>
 
           {/* Services */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Our Services</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/services/kitchen-renovations" className="text-gray-400 hover:text-white transition-colors">
-                  Kitchen Renovations
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/built-in-cupboards" className="text-gray-400 hover:text-white transition-colors">
-                  Built-in Cupboards
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/quartz-granite" className="text-gray-400 hover:text-white transition-colors">
-                  Quartz & Granite Installation
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/decking-flooring" className="text-gray-400 hover:text-white transition-colors">
-                  Decking & Flooring
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/drywall-ceilings" className="text-gray-400 hover:text-white transition-colors">
-                  Drywall & Ceilings
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/carpentry-training" className="text-gray-400 hover:text-white transition-colors">
-                  Carpentry Training
-                </Link>
-              </li>
+          <div>
+            <h4 className="text-lg font-semibold text-amber-400 mb-6">Our Services</h4>
+            <ul className="space-y-3">
+              {services.map((service) => (
+                <li key={service.name}>
+                  <Link
+                    href={service.href}
+                    className="text-slate-300 hover:text-amber-400 transition-colors flex items-center group"
+                  >
+                    <span className="w-2 h-2 bg-amber-600 rounded-full mr-3 group-hover:bg-amber-400 transition-colors"></span>
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Areas Served */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Areas Served</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/areas/johannesburg-south" className="text-gray-400 hover:text-white transition-colors">
-                  Johannesburg South
-                </Link>
-              </li>
-              <li>
-                <Link href="/areas/sandton" className="text-gray-400 hover:text-white transition-colors">
-                  Sandton
-                </Link>
-              </li>
-              <li>
-                <Link href="/areas/pretoria" className="text-gray-400 hover:text-white transition-colors">
-                  Pretoria
-                </Link>
-              </li>
-              <li>
-                <Link href="/areas/centurion" className="text-gray-400 hover:text-white transition-colors">
-                  Centurion
-                </Link>
-              </li>
-              <li>
-                <Link href="/areas/midrand" className="text-gray-400 hover:text-white transition-colors">
-                  Midrand
-                </Link>
-              </li>
-              <li>
-                <Link href="/areas/kempton-park" className="text-gray-400 hover:text-white transition-colors">
-                  Kempton Park
-                </Link>
-              </li>
+          {/* Service Areas */}
+          <div>
+            <h4 className="text-lg font-semibold text-amber-400 mb-6">Service Areas</h4>
+            <ul className="space-y-3">
+              {areas.map((area) => (
+                <li key={area.name}>
+                  <Link
+                    href={area.href}
+                    className="text-slate-300 hover:text-amber-400 transition-colors flex items-center group"
+                  >
+                    <span className="w-2 h-2 bg-amber-600 rounded-full mr-3 group-hover:bg-amber-400 transition-colors"></span>
+                    {area.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
+            <div className="mt-6 p-4 bg-slate-800 rounded-lg">
+              <h5 className="font-semibold text-amber-400 mb-2">Free Service Areas</h5>
+              <p className="text-sm text-slate-300">
+                We provide free quotes and consultations throughout Johannesburg, Sandton, Randburg, Pretoria, and
+                surrounding areas.
+              </p>
+            </div>
           </div>
 
-          {/* Contact Info */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Contact Us</h3>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 text-primary" />
-                <span>011 568 9012</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-primary" />
-                <span>info@granitecarpentry.co.za</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4 text-primary" />
-                <span>Greater Johannesburg & Pretoria</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Clock className="h-4 w-4 text-primary" />
-                <span>Mon-Fri: 7AM-5PM, Sat: 8AM-2PM</span>
-              </div>
+          {/* Newsletter & Company */}
+          <div>
+            <h4 className="text-lg font-semibold text-amber-400 mb-6">Stay Updated</h4>
+            <p className="text-slate-300 mb-4">
+              Get expert carpentry tips, project ideas, and special offers delivered to your inbox.
+            </p>
+
+            <div className="space-y-3 mb-6">
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                className="bg-slate-800 border-slate-700 text-white placeholder:text-slate-400"
+              />
+              <Button className="w-full bg-amber-600 hover:bg-amber-700">Subscribe to Newsletter</Button>
             </div>
 
-            <div className="pt-4">
-              <Link
-                href="/contact"
-                className="inline-block bg-primary text-primary-foreground px-4 py-2 rounded text-sm font-medium hover:bg-primary/90 transition-colors"
-              >
-                Get Free Quote
-              </Link>
+            <div className="space-y-3">
+              <h5 className="font-semibold text-amber-400">Company</h5>
+              <ul className="space-y-2">
+                {company.map((item) => (
+                  <li key={item.name}>
+                    <Link href={item.href} className="text-slate-300 hover:text-amber-400 transition-colors text-sm">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-gray-400">
-              © 2024 Granite Carpentry & Joinery Experts. All rights reserved.
+      <Separator className="bg-slate-800" />
+
+      {/* Bottom Footer */}
+      <div className="container mx-auto px-4 py-6">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="text-slate-400 text-sm text-center md:text-left">
+            <p>© {currentYear} Granite Carpentry & Joinery Experts. All rights reserved.</p>
+            <p className="mt-1">
+              Professional carpentry services in Johannesburg | Licensed & Insured | 24-Month Warranty
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center md:justify-end items-center space-x-6 text-sm">
+            <Link href="/privacy" className="text-slate-400 hover:text-amber-400 transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="text-slate-400 hover:text-amber-400 transition-colors">
+              Terms of Service
+            </Link>
+            <div className="text-slate-400">
+              <span className="text-amber-400">★★★★★</span> 5.0 Rating
             </div>
-            <div className="flex space-x-6 text-sm">
-              <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
-                Terms of Service
-              </Link>
-            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Emergency Contact Banner */}
+      <div className="bg-amber-600 text-white py-2">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <span className="font-semibold">24/7 Emergency Carpentry Service Available</span>
+            <span className="mx-2">|</span>
+            <a href="tel:+27676014490" className="hover:underline font-semibold">
+              Call 067 601 4490 Now
+            </a>
           </div>
         </div>
       </div>

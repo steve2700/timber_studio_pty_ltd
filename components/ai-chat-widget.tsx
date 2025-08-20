@@ -1,10 +1,11 @@
 "use client"
 
 import { useState } from "react"
+import { MessageSquare, X, Send, Bot, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { MessageCircle, X, Send, Bot, User } from "lucide-react"
+import { ScrollArea } from "@/components/ui/scroll-area"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 interface Message {
   id: string
@@ -18,52 +19,27 @@ export function AIChatWidget() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "Hi! I'm here to help you with your carpentry needs. What project are you planning?",
+      text: "Hi! I'm here to help you with your carpentry needs. What can I assist you with today?",
       sender: "bot",
       timestamp: new Date(),
     },
   ])
   const [inputValue, setInputValue] = useState("")
 
-  const suggestions = [
+  const quickReplies = [
     "Kitchen renovation quote",
     "Built-in cupboards pricing",
-    "Granite installation cost",
-    "Decking installation",
+    "Granite installation",
     "Service areas",
+    "Contact information",
   ]
 
-  const botResponses = {
-    kitchen:
-      "I'd be happy to help with your kitchen renovation! Our kitchen services include custom cabinetry, granite/quartz countertops, and complete installations. Would you like me to connect you with our team for a free quote?",
-    cupboards:
-      "Our built-in cupboards are custom-made to fit your space perfectly. We offer bedroom wardrobes, study units, and storage solutions. Prices start from R8,000 depending on size and materials. Would you like to schedule a consultation?",
-    granite:
-      "We specialize in granite and quartz installations for kitchens and bathrooms. Our team handles templating, fabrication, and installation. Typical costs range from R1,200-R2,500 per square meter. Shall I arrange a site visit?",
-    decking:
-      "Our decking services include wooden deck installation for both indoor and outdoor spaces. We use quality timber and provide waterproofing. Would you like information about materials and pricing?",
-    areas:
-      "We serve Greater Johannesburg and Pretoria including Sandton, Centurion, Midrand, Kempton Park, Randburg, and surrounding areas. Where is your project located?",
-    default:
-      "Thank you for your question! For detailed information and personalized quotes, I'd recommend speaking with our expert team. You can call us at 011 568 9012 or request a quote through our contact form. Is there anything specific about our services you'd like to know?",
-  }
-
-  const getBotResponse = (userMessage: string): string => {
-    const message = userMessage.toLowerCase()
-    if (message.includes("kitchen")) return botResponses.kitchen
-    if (message.includes("cupboard") || message.includes("wardrobe")) return botResponses.cupboards
-    if (message.includes("granite") || message.includes("quartz")) return botResponses.granite
-    if (message.includes("deck") || message.includes("flooring")) return botResponses.decking
-    if (message.includes("area") || message.includes("location") || message.includes("where")) return botResponses.areas
-    return botResponses.default
-  }
-
-  const handleSendMessage = () => {
-    if (!inputValue.trim()) return
+  const handleSendMessage = (text: string) => {
+    if (!text.trim()) return
 
     const userMessage: Message = {
       id: Date.now().toString(),
-      text: inputValue,
+      text: text.trim(),
       sender: "user",
       timestamp: new Date(),
     }
@@ -73,9 +49,10 @@ export function AIChatWidget() {
 
     // Simulate bot response
     setTimeout(() => {
+      const botResponse = getBotResponse(text.trim())
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: getBotResponse(inputValue),
+        text: botResponse,
         sender: "bot",
         timestamp: new Date(),
       }
@@ -83,104 +60,144 @@ export function AIChatWidget() {
     }, 1000)
   }
 
-  const handleSuggestionClick = (suggestion: string) => {
-    setInputValue(suggestion)
+  const getBotResponse = (userText: string): string => {
+    const text = userText.toLowerCase()
+
+    if (text.includes("kitchen") || text.includes("renovation")) {
+      return "Great! We specialize in kitchen renovations. Our services include custom cupboards, granite countertops, and complete kitchen makeovers. Prices typically range from R50,000 to R200,000+. Would you like me to connect you with our team for a free quote? Call us at 067 601 4490."
+    }
+
+    if (text.includes("cupboard") || text.includes("built-in")) {
+      return "We create beautiful built-in cupboards for bedrooms, studies, and living areas. Our custom solutions maximize your space and match your style perfectly. Typical projects range from R15,000 to R80,000. Contact us at 067 601 4490 for a personalized quote!"
+    }
+
+    if (text.includes("granite") || text.includes("quartz")) {
+      return "We're experts in granite and quartz countertop installation! We offer premium stone surfaces with professional installation and a 12-month warranty. Prices vary by material and size. Call 067 601 4490 for a free consultation and quote."
+    }
+
+    if (text.includes("price") || text.includes("cost") || text.includes("quote")) {
+      return "Our pricing depends on the specific project requirements. We offer free consultations and detailed quotes. Here are typical ranges: Kitchen renovations (R50k-R200k+), Built-in cupboards (R15k-R80k), Granite installation (R8k-R25k). Call 067 601 4490 for your personalized quote!"
+    }
+
+    if (text.includes("area") || text.includes("location") || text.includes("where")) {
+      return "We serve the entire Greater Johannesburg area including Sandton, Randburg, Pretoria, Centurion, Midrand, Kempton Park, Edenvale, Boksburg, Fourways, and surrounding areas. Free quotes available in all service areas!"
+    }
+
+    if (text.includes("contact") || text.includes("phone") || text.includes("call")) {
+      return "You can reach us at:\n📞 067 601 4490\n📧 info@granitecarpentry.co.za\n🕒 Mon-Sat: 7AM-5PM\n\nWe offer free consultations and quotes. Our team is ready to help with your carpentry project!"
+    }
+
+    if (text.includes("warranty") || text.includes("guarantee")) {
+      return "We stand behind our work with comprehensive warranties:\n✅ 24-month warranty on all carpentry work\n✅ 12-month warranty on granite installations\n✅ Licensed and insured business\n✅ 5-star rated service\n\nYour satisfaction is guaranteed!"
+    }
+
+    return "Thanks for your question! I'd be happy to help you with information about our carpentry services, pricing, or service areas. For detailed assistance, please call our team at 067 601 4490 or email info@granitecarpentry.co.za. We offer free consultations!"
+  }
+
+  if (!isOpen) {
+    return (
+      <div className="fixed bottom-6 left-6 z-50">
+        <Button
+          onClick={() => setIsOpen(true)}
+          size="lg"
+          className="h-14 w-14 rounded-full bg-blue-600 hover:bg-blue-700 shadow-lg"
+          aria-label="Open chat"
+        >
+          <MessageSquare className="h-6 w-6 text-white" />
+        </Button>
+      </div>
+    )
   }
 
   return (
-    <>
-      {/* Chat Widget Button */}
-      {!isOpen && (
-        <Button
-          onClick={() => setIsOpen(true)}
-          className="fixed bottom-4 right-4 h-14 w-14 rounded-full shadow-lg z-50"
-          size="icon"
-        >
-          <MessageCircle className="h-6 w-6" />
-        </Button>
-      )}
-
-      {/* Chat Window */}
-      {isOpen && (
-        <Card className="fixed bottom-4 right-4 w-80 h-96 shadow-xl z-50 flex flex-col">
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Carpentry Assistant</CardTitle>
-            <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)} className="h-6 w-6">
+    <div className="fixed bottom-6 left-6 z-50 w-80 sm:w-96">
+      <Card className="shadow-2xl">
+        <CardHeader className="bg-blue-600 text-white rounded-t-lg">
+          <div className="flex items-center justify-between">
+            <CardTitle className="text-lg flex items-center gap-2">
+              <Bot className="h-5 w-5" />
+              Carpentry Assistant
+            </CardTitle>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsOpen(false)}
+              className="text-white hover:bg-blue-700 h-8 w-8 p-0"
+            >
               <X className="h-4 w-4" />
             </Button>
-          </CardHeader>
+          </div>
+          <p className="text-sm text-blue-100">Ask me about our carpentry services!</p>
+        </CardHeader>
 
-          <CardContent className="flex-1 flex flex-col p-0">
-            {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-4">
+        <CardContent className="p-0">
+          <ScrollArea className="h-80 p-4">
+            <div className="space-y-4">
               {messages.map((message) => (
-                <div key={message.id} className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}>
+                <div
+                  key={message.id}
+                  className={`flex items-start gap-2 ${message.sender === "user" ? "justify-end" : "justify-start"}`}
+                >
+                  {message.sender === "bot" && (
+                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                      <Bot className="h-4 w-4 text-blue-600" />
+                    </div>
+                  )}
                   <div
-                    className={`flex items-start space-x-2 max-w-[80%] ${
-                      message.sender === "user" ? "flex-row-reverse space-x-reverse" : ""
+                    className={`max-w-[70%] p-3 rounded-lg text-sm ${
+                      message.sender === "user"
+                        ? "bg-blue-600 text-white rounded-br-none"
+                        : "bg-gray-100 text-gray-900 rounded-bl-none"
                     }`}
                   >
-                    <div
-                      className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center ${
-                        message.sender === "user" ? "bg-primary" : "bg-muted"
-                      }`}
-                    >
-                      {message.sender === "user" ? (
-                        <User className="h-3 w-3 text-primary-foreground" />
-                      ) : (
-                        <Bot className="h-3 w-3" />
-                      )}
-                    </div>
-                    <div
-                      className={`rounded-lg px-3 py-2 text-sm ${
-                        message.sender === "user" ? "bg-primary text-primary-foreground" : "bg-muted"
-                      }`}
-                    >
-                      {message.text}
-                    </div>
+                    <p className="whitespace-pre-line">{message.text}</p>
                   </div>
+                  {message.sender === "user" && (
+                    <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                      <User className="h-4 w-4 text-gray-600" />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
+          </ScrollArea>
 
-            {/* Suggestions */}
-            {messages.length === 1 && (
-              <div className="p-4 border-t">
-                <div className="text-xs text-muted-foreground mb-2">Quick questions:</div>
-                <div className="flex flex-wrap gap-1">
-                  {suggestions.map((suggestion) => (
-                    <Button
-                      key={suggestion}
-                      variant="outline"
-                      size="sm"
-                      className="text-xs h-6 bg-transparent"
-                      onClick={() => handleSuggestionClick(suggestion)}
-                    >
-                      {suggestion}
-                    </Button>
-                  ))}
-                </div>
-              </div>
-            )}
+          {/* Quick Replies */}
+          <div className="p-4 border-t bg-gray-50">
+            <div className="flex flex-wrap gap-2 mb-3">
+              {quickReplies.map((reply) => (
+                <Button
+                  key={reply}
+                  variant="outline"
+                  size="sm"
+                  onClick={() => handleSendMessage(reply)}
+                  className="text-xs"
+                >
+                  {reply}
+                </Button>
+              ))}
+            </div>
 
             {/* Input */}
-            <div className="p-4 border-t">
-              <div className="flex space-x-2">
-                <Input
-                  value={inputValue}
-                  onChange={(e) => setInputValue(e.target.value)}
-                  placeholder="Ask about our services..."
-                  className="flex-1"
-                  onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
-                />
-                <Button size="icon" onClick={handleSendMessage}>
-                  <Send className="h-4 w-4" />
-                </Button>
-              </div>
+            <div className="flex gap-2">
+              <Input
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                placeholder="Ask about our services..."
+                onKeyPress={(e) => {
+                  if (e.key === "Enter") {
+                    handleSendMessage(inputValue)
+                  }
+                }}
+                className="flex-1"
+              />
+              <Button onClick={() => handleSendMessage(inputValue)} size="sm" className="bg-blue-600 hover:bg-blue-700">
+                <Send className="h-4 w-4" />
+              </Button>
             </div>
-          </CardContent>
-        </Card>
-      )}
-    </>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
   )
 }

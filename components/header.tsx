@@ -4,8 +4,8 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Phone, Mail, MapPin, ChevronDown } from "lucide-react"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { ScrollArea } from "@/components/ui/scroll-area"
+import { Menu, Phone, Mail, MapPin, ChevronDown, Star } from "lucide-react"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -37,22 +37,32 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       {/* Top Bar */}
-      <div className="bg-primary text-primary-foreground">
+      <div className="bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="flex h-10 items-center justify-between text-sm">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-1">
-                <Phone className="h-3 w-3" />
-                <span>011 568 9012</span>
+                <Phone className="h-3 w-3 text-amber-400" />
+                <a href="tel:+27676014490" className="hover:text-amber-400 transition-colors">
+                  067 601 4490
+                </a>
               </div>
               <div className="hidden sm:flex items-center space-x-1">
-                <Mail className="h-3 w-3" />
-                <span>info@granitecarpentry.co.za</span>
+                <Mail className="h-3 w-3 text-amber-400" />
+                <a href="mailto:info@granitecarpentry.co.za" className="hover:text-amber-400 transition-colors">
+                  info@granitecarpentry.co.za
+                </a>
               </div>
             </div>
-            <div className="hidden md:flex items-center space-x-1">
-              <MapPin className="h-3 w-3" />
-              <span>Serving Greater Johannesburg & Pretoria</span>
+            <div className="hidden md:flex items-center space-x-4">
+              <div className="flex items-center space-x-1">
+                <MapPin className="h-3 w-3 text-amber-400" />
+                <span>Serving Greater Johannesburg & Pretoria</span>
+              </div>
+              <div className="flex items-center space-x-1">
+                <Star className="h-3 w-3 text-amber-400 fill-current" />
+                <span className="text-amber-400">★★★★★ 5.0</span>
+              </div>
             </div>
           </div>
         </div>
@@ -63,131 +73,206 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">GC</span>
+              <div className="h-8 w-8 rounded bg-amber-600 flex items-center justify-center">
+                <span className="text-white font-bold text-sm">GC</span>
               </div>
               <div className="hidden sm:block">
-                <div className="font-bold text-lg">Granite Carpentry</div>
-                <div className="text-xs text-muted-foreground">& Joinery Experts</div>
+                <div className="font-bold text-lg text-slate-900">Granite Carpentry</div>
+                <div className="text-xs text-slate-600">& Joinery Experts</div>
               </div>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
+          <nav className="hidden lg:flex items-center space-x-6">
+            <Link href="/" className="text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
               Home
             </Link>
 
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center text-sm font-medium hover:text-primary transition-colors">
+            <div className="relative group">
+              <button className="flex items-center text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
                 Services <ChevronDown className="ml-1 h-3 w-3" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56">
-                {services.map((service) => (
-                  <DropdownMenuItem key={service.href} asChild>
-                    <Link href={service.href}>{service.name}</Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+              </button>
+              <div className="absolute left-0 top-full mt-2 w-56 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-1">
+                  {services.map((service) => (
+                    <Link
+                      key={service.href}
+                      href={service.href}
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600"
+                    >
+                      {service.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
 
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center text-sm font-medium hover:text-primary transition-colors">
+            <div className="relative group">
+              <button className="flex items-center text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
                 Areas <ChevronDown className="ml-1 h-3 w-3" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56 max-h-96 overflow-y-auto">
-                {areas.map((area) => (
-                  <DropdownMenuItem key={area.href} asChild>
-                    <Link href={area.href}>{area.name}</Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+              </button>
+              <div className="absolute left-0 top-full mt-2 w-56 max-h-96 overflow-y-auto rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-1">
+                  {areas.map((area) => (
+                    <Link
+                      key={area.href}
+                      href={area.href}
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600"
+                    >
+                      {area.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
 
-            <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link href="/about" className="text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
               About
             </Link>
-            <Link href="/portfolio" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="/portfolio"
+              className="text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors"
+            >
               Portfolio
             </Link>
-            <Link href="/blog" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link href="/blog" className="text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
               Blog
             </Link>
-            <Link href="/faq" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link href="/faq" className="text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
               FAQ
             </Link>
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button asChild className="hidden sm:inline-flex">
+            <Button asChild className="hidden sm:inline-flex bg-amber-600 hover:bg-amber-700">
               <Link href="/contact">Get Quote</Link>
             </Button>
 
             {/* Mobile menu */}
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
-              <SheetTrigger asChild className="md:hidden">
-                <Button variant="ghost" size="icon">
+              <SheetTrigger asChild className="lg:hidden">
+                <Button variant="ghost" size="icon" className="text-slate-700">
                   <Menu className="h-5 w-5" />
                   <span className="sr-only">Toggle menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                <nav className="flex flex-col space-y-4">
-                  <Link href="/" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
-                    Home
-                  </Link>
-
-                  <div className="space-y-2">
-                    <div className="text-lg font-medium">Services</div>
-                    <div className="pl-4 space-y-2">
-                      {services.map((service) => (
-                        <Link
-                          key={service.href}
-                          href={service.href}
-                          className="block text-sm text-muted-foreground hover:text-foreground"
-                          onClick={() => setIsOpen(false)}
-                        >
-                          {service.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <div className="text-lg font-medium">Areas</div>
-                    <div className="pl-4 space-y-2 max-h-48 overflow-y-auto">
-                      {areas.map((area) => (
-                        <Link
-                          key={area.href}
-                          href={area.href}
-                          className="block text-sm text-muted-foreground hover:text-foreground"
-                          onClick={() => setIsOpen(false)}
-                        >
-                          {area.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-
-                  <Link href="/about" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
-                    About
-                  </Link>
-                  <Link href="/portfolio" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
-                    Portfolio
-                  </Link>
-                  <Link href="/blog" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
-                    Blog
-                  </Link>
-                  <Link href="/faq" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
-                    FAQ
-                  </Link>
-                  <Button asChild className="w-full">
-                    <Link href="/contact" onClick={() => setIsOpen(false)}>
-                      Get Quote
+              <SheetContent side="right" className="w-[300px] sm:w-[350px] p-0">
+                <div className="flex flex-col h-full">
+                  {/* Header */}
+                  <div className="flex items-center justify-between p-6 border-b">
+                    <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
+                      <div className="h-8 w-8 rounded bg-amber-600 flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">GC</span>
+                      </div>
+                      <div>
+                        <div className="font-bold text-lg text-slate-900">Granite Carpentry</div>
+                        <div className="text-xs text-slate-600">& Joinery Experts</div>
+                      </div>
                     </Link>
-                  </Button>
-                </nav>
+                  </div>
+
+                  {/* Scrollable Navigation */}
+                  <ScrollArea className="flex-1 px-6">
+                    <div className="flex flex-col space-y-6 py-6">
+                      <Link
+                        href="/"
+                        className="text-lg font-medium text-slate-900 hover:text-amber-600 transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Home
+                      </Link>
+
+                      <div className="space-y-3">
+                        <div className="text-lg font-medium text-slate-900">Services</div>
+                        <div className="pl-4 space-y-3 border-l-2 border-amber-100">
+                          {services.map((service) => (
+                            <Link
+                              key={service.href}
+                              href={service.href}
+                              className="block text-sm text-slate-600 hover:text-amber-600 transition-colors py-1"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {service.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="space-y-3">
+                        <div className="text-lg font-medium text-slate-900">Areas</div>
+                        <div className="pl-4 space-y-3 border-l-2 border-amber-100">
+                          {areas.map((area) => (
+                            <Link
+                              key={area.href}
+                              href={area.href}
+                              className="block text-sm text-slate-600 hover:text-amber-600 transition-colors py-1"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {area.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+
+                      <Link
+                        href="/about"
+                        className="text-lg font-medium text-slate-900 hover:text-amber-600 transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        About
+                      </Link>
+                      <Link
+                        href="/portfolio"
+                        className="text-lg font-medium text-slate-900 hover:text-amber-600 transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Portfolio
+                      </Link>
+                      <Link
+                        href="/blog"
+                        className="text-lg font-medium text-slate-900 hover:text-amber-600 transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Blog
+                      </Link>
+                      <Link
+                        href="/faq"
+                        className="text-lg font-medium text-slate-900 hover:text-amber-600 transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        FAQ
+                      </Link>
+                    </div>
+                  </ScrollArea>
+
+                  {/* Footer */}
+                  <div className="border-t p-6 space-y-4">
+                    <div className="flex items-center space-x-2 text-sm text-slate-600">
+                      <Phone className="h-4 w-4 text-amber-600" />
+                      <a href="tel:+27676014490" className="hover:text-amber-600 transition-colors">
+                        067 601 4490
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-2 text-sm text-slate-600">
+                      <Mail className="h-4 w-4 text-amber-600" />
+                      <span>info@granitecarpentry.co.za</span>
+                    </div>
+                    <div className="flex items-center space-x-2 text-sm text-slate-600">
+                      <MapPin className="h-4 w-4 text-amber-600" />
+                      <span>Johannesburg & Pretoria</span>
+                    </div>
+                    <div className="flex items-center space-x-1 text-sm">
+                      <Star className="h-4 w-4 text-amber-400 fill-current" />
+                      <span className="text-amber-600 font-medium">★★★★★ 5.0 Rating</span>
+                    </div>
+                    <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
+                      <Link href="/contact" onClick={() => setIsOpen(false)}>
+                        Get Free Quote
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
               </SheetContent>
             </Sheet>
           </div>

@@ -51,7 +51,7 @@ export function GoogleBusinessSchema({
     description: description,
     image: images.photos,
     telephone: phone,
-    email: email,
+    email: email, // Updated email prop usage
     address: {
       "@type": "PostalAddress",
       streetAddress: address.street,

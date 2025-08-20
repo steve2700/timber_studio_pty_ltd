@@ -27,7 +27,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact Johannesburg's #1 Carpenter | Free Quotes Kitchen Renovations 2025",
   description:
-    "Contact Granite Carpentry for free quotes on kitchen renovations, built-in cupboards & granite installation. Call 067 601 4490 or email granitecarpentry5@gmail.com. 5-star rated carpenter serving Johannesburg, Sandton, Randburg.",
+    "Contact Granite Carpentry for free quotes on kitchen renovations, built-in cupboards & granite installation. Call 067 601 4490 or email info@granitecarpentry.co.za. 5-star rated carpenter serving Johannesburg, Sandton, Randburg.",
   keywords:
     "contact carpenter Johannesburg, free kitchen renovation quote, granite installation quote Johannesburg, built-in cupboards quote, carpenter contact details Johannesburg, kitchen renovation consultation, professional carpenter contact",
   robots: "index, follow",
@@ -185,9 +185,9 @@ export default function ContactPage() {
                   variant="outline"
                   className="w-full border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
                 >
-                  <a href="mailto:granitecarpentry5@gmail.com">Send Email</a>
+                  <a href="mailto:info@granitecarpentry.co.za">Send Email</a>
                 </Button>
-                <p className="text-xs text-slate-500 mt-2">granitecarpentry5@gmail.com</p>
+                <p className="text-xs text-slate-500 mt-2">info@granitecarpentry.co.za</p>
               </CardContent>
             </Card>
 

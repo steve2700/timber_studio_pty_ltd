@@ -139,10 +139,10 @@ export function Footer() {
                 <div>
                   <p className="text-slate-300 text-sm">Email Us</p>
                   <Link
-                    href="mailto:granitecarpentry5@gmail.com"
+                    href="mailto:info@granitecarpentry.co.za"
                     className="text-white hover:text-amber-400 transition-colors font-medium"
                   >
-                    granitecarpentry5@gmail.com
+                    info@granitecarpentry.co.za
                   </Link>
                 </div>
               </div>

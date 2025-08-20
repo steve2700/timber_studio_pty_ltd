@@ -36,8 +36,8 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      {/* Top Bar */}
-      <div className="bg-slate-900 text-white">
+      {/* Top Bar - Hidden on small mobile, visible on larger screens */}
+      <div className="bg-slate-900 text-white hidden sm:block">
         <div className="container mx-auto px-4">
           <div className="flex h-10 items-center justify-between text-sm">
             <div className="flex items-center space-x-4">
@@ -47,14 +47,14 @@ export function Header() {
                   067 601 4490
                 </a>
               </div>
-              <div className="hidden sm:flex items-center space-x-1">
+              <div className="hidden md:flex items-center space-x-1">
                 <Mail className="h-3 w-3 text-amber-400" />
                 <a href="mailto:info@granitecarpentry.co.za" className="hover:text-amber-400 transition-colors">
                   info@granitecarpentry.co.za
                 </a>
               </div>
             </div>
-            <div className="hidden md:flex items-center space-x-4">
+            <div className="hidden lg:flex items-center space-x-4">
               <div className="flex items-center space-x-1">
                 <MapPin className="h-3 w-3 text-amber-400" />
                 <span>Serving Greater Johannesburg & Pretoria</span>
@@ -69,18 +69,33 @@ export function Header() {
       </div>
 
       {/* Main Navigation */}
-      <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded bg-amber-600 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">GC</span>
+      <div className="container mx-auto px-3 sm:px-4">
+        <div className="flex h-14 sm:h-16 items-center justify-between">
+          {/* Logo - Optimized for mobile */}
+          <div className="flex items-center min-w-0 flex-1">
+            <Link href="/" className="flex items-center space-x-2 min-w-0">
+              <div className="h-8 w-8 sm:h-10 sm:w-10 rounded bg-amber-600 flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold text-sm sm:text-base">GC</span>
               </div>
-              <div className="hidden sm:block">
-                <div className="font-bold text-lg text-slate-900">Granite Carpentry</div>
-                <div className="text-xs text-slate-600">& Joinery Experts</div>
+              <div className="min-w-0 flex-1">
+                <div className="font-bold text-base sm:text-lg text-slate-900 truncate">Granite Carpentry</div>
+                <div className="text-xs text-slate-600 hidden sm:block">& Joinery Experts</div>
               </div>
             </Link>
+          </div>
+
+          {/* Mobile Contact & CTA - Only on small screens */}
+          <div className="flex items-center space-x-2 sm:hidden">
+            <a
+              href="tel:+27676014490"
+              className="flex items-center justify-center h-9 w-9 rounded-full bg-amber-600 text-white hover:bg-amber-700 transition-colors"
+              aria-label="Call us"
+            >
+              <Phone className="h-4 w-4" />
+            </a>
+            <Button asChild size="sm" className="bg-amber-600 hover:bg-amber-700 text-xs px-3">
+              <Link href="/contact">Quote</Link>
+            </Button>
           </div>
 
           {/* Desktop Navigation */}
@@ -144,36 +159,37 @@ export function Header() {
             </Link>
           </nav>
 
-          <div className="flex items-center space-x-4">
+          {/* Desktop CTA & Mobile Menu */}
+          <div className="flex items-center space-x-3">
             <Button asChild className="hidden sm:inline-flex bg-amber-600 hover:bg-amber-700">
               <Link href="/contact">Get Quote</Link>
             </Button>
 
-            {/* Mobile menu */}
+            {/* Mobile menu trigger */}
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="lg:hidden">
-                <Button variant="ghost" size="icon" className="text-slate-700">
+                <Button variant="ghost" size="icon" className="text-slate-700 h-9 w-9">
                   <Menu className="h-5 w-5" />
                   <span className="sr-only">Toggle menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[350px] p-0">
+              <SheetContent side="right" className="w-[280px] sm:w-[350px] p-0">
                 <div className="flex flex-col h-full">
                   {/* Header */}
-                  <div className="flex items-center justify-between p-6 border-b">
+                  <div className="flex items-center justify-between p-4 sm:p-6 border-b bg-slate-50">
                     <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
                       <div className="h-8 w-8 rounded bg-amber-600 flex items-center justify-center">
                         <span className="text-white font-bold text-sm">GC</span>
                       </div>
                       <div>
-                        <div className="font-bold text-lg text-slate-900">Granite Carpentry</div>
+                        <div className="font-bold text-base text-slate-900">Granite Carpentry</div>
                         <div className="text-xs text-slate-600">& Joinery Experts</div>
                       </div>
                     </Link>
                   </div>
 
                   {/* Scrollable Navigation */}
-                  <ScrollArea className="flex-1 px-6">
+                  <ScrollArea className="flex-1 px-4 sm:px-6">
                     <div className="flex flex-col space-y-6 py-6">
                       <Link
                         href="/"
@@ -247,7 +263,7 @@ export function Header() {
                   </ScrollArea>
 
                   {/* Footer */}
-                  <div className="border-t p-6 space-y-4">
+                  <div className="border-t p-4 sm:p-6 space-y-4 bg-slate-50">
                     <div className="flex items-center space-x-2 text-sm text-slate-600">
                       <Phone className="h-4 w-4 text-amber-600" />
                       <a href="tel:+27676014490" className="hover:text-amber-600 transition-colors">

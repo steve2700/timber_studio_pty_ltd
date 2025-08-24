@@ -53,7 +53,7 @@ export default function QuartzGranitePage() {
               "@type": "LocalBusiness",
               name: "Granite Carpentry",
               telephone: "+27676014490",
-              email: "granitecarpentry5@gmail.com",
+              email: "info@granitecarpentry.co.za",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Johannesburg",
@@ -186,7 +186,7 @@ export default function QuartzGranitePage() {
                 title: "Kitchen Islands",
                 description: "Stunning kitchen island tops with overhang support and premium stone selection.",
                 features: ["Overhang support", "Premium stones", "Custom shapes", "Breakfast bars"],
-                image: "/granite-kitchen-island.webp",
+                image: "/granitecarpentry.webp",
               },
               {
                 icon: <Wrench className="w-8 h-8" />,

@@ -65,7 +65,7 @@ export default function AboutPage() {
 
             <div className="relative">
               <Image
-                src="/granite-carpentry.webp?height=600&width=800"
+                src="/granitecarpentry.webp?height=600&width=800"
                 alt="Professional carpenter team at Granite & Joinery Experts Johannesburg"
                 width={800}
                 height={600}

@@ -189,7 +189,7 @@ export default function KitchenRenovationsPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/granite-kitchen-island.webp"
+                  src="/granitecarpentry.webp"
                   alt="Granite countertops installation kitchen renovation Johannesburg"
                   width={400}
                   height={250}

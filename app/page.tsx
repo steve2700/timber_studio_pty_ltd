@@ -200,7 +200,7 @@ export default function HomePage() {
             <div className="relative mt-8 lg:mt-0">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/granite-kitchen-island.webp"
+                  src="/granitecarpentry.webp"
                   alt="Professional Carpenter & Granite Installation Johannesburg"
                   width={600}
                   height={400}

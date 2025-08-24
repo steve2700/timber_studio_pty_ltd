@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     url: "https://granitecarpentry.co.za/areas/kempton-park",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granite-carpentry.webp",
+        url: "https://granitecarpentry.co.za/granitecarpentry.webp",
         width: 1200,
         height: 630,
         alt: "Best Carpenter Kempton Park - Kitchen Renovation & Joinery Services",
@@ -111,7 +111,7 @@ export default function KemptonParkPage() {
 
             <div className="relative">
               <Image
-                src="/granite-carpentry.webp"
+                src="/granitecarpentry.webp"
                 alt="Best Carpenter Kempton Park - Expert Joinery & Kitchen Renovation near OR Tambo"
                 width={600}
                 height={500}

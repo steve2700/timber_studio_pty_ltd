@@ -49,7 +49,7 @@ export default function PortfolioPage() {
       location: "Pretoria",
       price: "R35,000",
       description: "Premium granite island with waterfall edge and integrated breakfast bar seating",
-      image: "/granite-kitchen-island.webp?height=400&width=600",
+      image: "/granitecarpentry.webp?height=400&width=600",
       features: ["Waterfall Edge", "Breakfast Bar", "Premium Granite", "Professional Installation"],
     },
     {

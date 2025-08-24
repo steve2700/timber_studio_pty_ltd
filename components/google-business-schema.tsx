@@ -96,11 +96,13 @@ export function GoogleBusinessSchema({
     sameAs: Object.values(socialMedia).filter(Boolean),
     logo: {
       "@type": "ImageObject",
-      url: images.logo,
+      url: `https://granitecarpentry.co.za${images.logo}`,
+      width: 300,
+      height: 100,
     },
     image: images.photos.map((photo) => ({
       "@type": "ImageObject",
-      url: photo,
+      url: `https://granitecarpentry.co.za${photo}`,
     })),
   }
 

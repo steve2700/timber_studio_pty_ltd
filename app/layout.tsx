@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       "Johannesburg's #1 rated carpenter & granite installation specialists. Kitchen renovations, built-in cupboards, quartz countertops. 5-star service with 24-month warranty.",
     images: [
       {
-        url: "/granite-carpentry.webp",
+        url: "/granitecarpentry-logo.png",
         width: 1200,
         height: 630,
         alt: "Granite Carpentry - Professional Carpenter & Granite Installation Johannesburg",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "Professional Carpenter & Granite Installation Johannesburg 2025",
     description:
       "Johannesburg's #1 rated carpenter. Kitchen renovations, built-in cupboards, granite installation. 5-star service, 24-month warranty.",
-    images: ["/granite-carpentry.webp"],
+    images: ["/granitecarpentry-logo.png"],
     creator: "@granitecarpentry",
   },
   verification: {
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
     "business:hours:start": "08:00",
     "business:hours:end": "14:00",
   },
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export default function RootLayout({
@@ -103,12 +103,14 @@ export default function RootLayout({
   return (
     <html lang="en-ZA" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        {/* Updated Favicon and Icon References */}
+        <link rel="icon" href="/granitecarpentry-logo.png" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/granitecarpentry-logo.png" sizes="32x32" type="image/png" />
+        <link rel="apple-touch-icon" href="/granitecarpentry-logo.png" sizes="180x180" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#d97706" />
         <meta name="msapplication-TileColor" content="#d97706" />
+        <meta name="msapplication-TileImage" content="/granitecarpentry-logo.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=yes" />
@@ -147,13 +149,13 @@ export default function RootLayout({
                   url: "https://granitecarpentry.co.za",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://granitecarpentry.co.za/placeholder-logo.svg",
+                    url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
                     width: 300,
                     height: 100,
                   },
                   image: {
                     "@type": "ImageObject",
-                    url: "https://granitecarpentry.co.za/granite-carpentry.webp",
+                    url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
                     width: 1200,
                     height: 630,
                   },
@@ -230,7 +232,7 @@ export default function RootLayout({
                   "@type": "LocalBusiness",
                   "@id": "https://granitecarpentry.co.za/#localbusiness",
                   name: "Granite Carpentry",
-                  image: "https://granitecarpentry.co.za/granite-carpentry.webp",
+                  image: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
                   telephone: "+27676014490",
                   email: "info@granitecarpentry.co.za",
                   address: {
@@ -408,9 +410,9 @@ export default function RootLayout({
                   linkedin: "https://www.linkedin.com/company/granite-carpentry",
                 }}
                 images={{
-                  logo: "/placeholder-logo.svg",
+                  logo: "/granitecarpentry-logo.png",
                   photos: [
-                    "/granite-carpentry.webp",
+                    "/granitecarpentry-logo.png",
                     "/granite-installation-Johannesburg.jpg",
                     "/Built-Built-in-Cupboards-Midrand.jpg",
                   ],

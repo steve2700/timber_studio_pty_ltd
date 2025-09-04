@@ -30,11 +30,71 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     type: "website",
   },
+  alternates: {
+    canonical: "https://granitecarpentry.co.za/services/kitchen-renovations",
+  },
 }
 
 export default function KitchenRenovationsPage() {
+  const faqs = [
+    {
+      question: "How long does a kitchen renovation take in Johannesburg?",
+      answer:
+        "A typical kitchen renovation in Johannesburg takes 2-4 weeks depending on the scope of work. Simple cabinet replacements can be completed in 1-2 weeks, while full renovations with granite countertops, plumbing, and electrical work may take 3-4 weeks. We provide detailed timelines during our free consultation and keep you informed throughout the process.",
+    },
+    {
+      question: "What is the average cost of kitchen renovations in Johannesburg?",
+      answer:
+        "Kitchen renovation costs in Johannesburg vary based on size and materials. Basic renovations start from R45,000, mid-range renovations range from R80,000-R150,000, and luxury kitchen renovations can cost R200,000+. This includes custom cabinets, granite countertops, appliances, and professional installation. We provide detailed quotes with no hidden costs.",
+    },
+    {
+      question: "Do you provide kitchen design services in Sandton and Randburg?",
+      answer:
+        "Yes, we provide comprehensive kitchen design services throughout Johannesburg, including Sandton, Randburg, Midrand, and surrounding areas. Our design team creates 3D renderings, helps with material selection, and ensures optimal space utilization. Design consultation is included free with every kitchen renovation project.",
+    },
+    {
+      question: "What warranty do you offer on kitchen renovations?",
+      answer:
+        "We provide a comprehensive 24-month warranty on all kitchen renovation work, including cabinets, granite countertops, and installation. This covers workmanship defects and ensures your investment is protected. We also provide ongoing support and maintenance advice to keep your kitchen looking perfect for years to come.",
+    },
+  ]
+
   return (
     <>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Kitchen Renovations Johannesburg",
+            description:
+              "Professional kitchen renovation services in Johannesburg including custom cabinets, granite countertops, and complete kitchen remodeling.",
+            provider: {
+              "@type": "LocalBusiness",
+              name: "Granite Carpentry",
+              telephone: "+27676014490",
+              email: "info@granitecarpentry.co.za",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Johannesburg",
+                addressRegion: "Gauteng",
+                addressCountry: "ZA",
+              },
+            },
+            areaServed: ["Johannesburg", "Sandton", "Randburg", "Pretoria", "Centurion"],
+            serviceType: "Kitchen Renovation",
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "ZAR",
+              priceRange: "R45000-R300000",
+              availability: "https://schema.org/InStock",
+            },
+          }),
+        }}
+      />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-50 to-slate-100 py-20">
         <div className="container mx-auto px-4">
@@ -264,8 +324,58 @@ export default function KitchenRenovationsPage() {
         </div>
       </section>
 
-      {/* Kitchen Renovation Process */}
+      {/* Expanded Content Section */}
       <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-8">
+              Why Choose Professional Kitchen Renovations in Johannesburg?
+            </h2>
+
+            <div className="prose prose-lg max-w-none text-slate-600 space-y-6">
+              <p>
+                Kitchen renovations in Johannesburg have become increasingly popular as homeowners recognize the value
+                of investing in their most important living space. A well-designed kitchen renovation not only enhances
+                your daily cooking experience but also significantly increases your property value. Our team of
+                experienced kitchen renovation specialists understands the unique challenges and opportunities that come
+                with renovating kitchens in Johannesburg's diverse architectural styles.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
+                Modern Kitchen Design Trends in Johannesburg
+              </h3>
+              <p>
+                Contemporary kitchen renovations in Johannesburg are embracing open-plan designs that seamlessly
+                integrate with living areas. Popular trends include waterfall granite countertops, handleless cabinet
+                designs, and smart storage solutions that maximize space efficiency. Our kitchen renovation team stays
+                current with international design trends while incorporating elements that suit South African lifestyles
+                and climate considerations.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">Kitchen Renovation Process and Timeline</h3>
+              <p>
+                Our comprehensive kitchen renovation process begins with a detailed consultation where we assess your
+                current space, discuss your vision, and provide expert recommendations. The typical kitchen renovation
+                timeline in Johannesburg ranges from 2-4 weeks, depending on the scope of work. We coordinate all
+                aspects including plumbing, electrical work, cabinet installation, and granite countertop fitting to
+                ensure minimal disruption to your daily routine.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">Quality Materials and Craftsmanship</h3>
+              <p>
+                We source premium materials from trusted suppliers throughout Johannesburg and Gauteng. Our kitchen
+                cabinets are manufactured using high-quality melamine and solid wood options, while our granite and
+                quartz countertops are selected from the finest stone suppliers in the region. Every kitchen renovation
+                project includes professional installation with attention to detail that ensures lasting quality and
+                customer satisfaction.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Kitchen Renovation Process */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Our Kitchen Renovation Process</h2>
@@ -323,7 +433,7 @@ export default function KitchenRenovationsPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -408,6 +518,27 @@ export default function KitchenRenovationsPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Frequently Asked Questions</h2>
+              <p className="text-xl text-slate-600">Common questions about kitchen renovations in Johannesburg</p>
+            </div>
+
+            <div className="space-y-8">
+              {faqs.map((faq, index) => (
+                <div key={index} className="border-b border-slate-200 pb-8">
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">{faq.question}</h3>
+                  <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
@@ -462,6 +593,54 @@ export default function KitchenRenovationsPage() {
             <Button asChild variant="outline" size="lg">
               <Link href="/contact">Check Service Availability</Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Related Services</h2>
+            <p className="text-xl text-slate-600">Complete your kitchen renovation with our additional services</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Built-in Cupboards</h3>
+                <p className="text-slate-600 mb-6">
+                  Maximize your kitchen storage with custom built-in cupboards and pantry solutions.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/services/built-in-cupboards">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Granite Countertops</h3>
+                <p className="text-slate-600 mb-6">
+                  Premium granite and quartz countertops for your kitchen renovation project.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/services/quartz-granite">View Options</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Decking & Flooring</h3>
+                <p className="text-slate-600 mb-6">
+                  Complete your home renovation with professional flooring installation services.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/services/decking-flooring">Explore Flooring</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

@@ -1,34 +1,22 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import {
-  CheckCircle,
-  Star,
-  Clock,
-  Shield,
-  Phone,
-  Mail,
-  MapPin,
-  ArrowRight,
-  TreePine,
-  Hammer,
-  Palette,
-  Wrench,
-} from "lucide-react"
+import { Phone, Star, CheckCircle, ArrowRight, Shield, Award, Clock, Users, MapPin, Wrench, Home } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Decking & Flooring Installation Johannesburg 2025 | Wooden Decks & Laminate Floors | 5-Star Rated",
+  title: "Decking & Flooring Johannesburg 2025 | Professional Installation Services",
   description:
-    "Professional decking & flooring installation Johannesburg. Wooden decks, laminate flooring, vinyl floors. 5-star service, 24-month warranty. Licensed installers. Free quotes. Call 067 601 4490.",
+    "Professional decking & flooring installation in Johannesburg. Wooden decking, laminate flooring, vinyl flooring. 5-star service, 24-month warranty. Free quotes. Call 067 601 4490.",
   keywords:
-    "decking installation Johannesburg 2025, wooden decks Johannesburg, laminate flooring Johannesburg, vinyl flooring Johannesburg, deck installation Sandton, flooring installation Randburg, outdoor decking Johannesburg South, composite decking Johannesburg, hardwood flooring Johannesburg, deck builders Johannesburg, flooring contractors Johannesburg, wooden deck construction Johannesburg, laminate floor installation Johannesburg, deck repair Johannesburg, flooring renovation Johannesburg",
+    "decking installation Johannesburg, wooden decking Johannesburg, flooring installation Sandton, laminate flooring Johannesburg, vinyl flooring Randburg, outdoor decking Midrand, deck builders Johannesburg, flooring contractors Sandton, wooden floors Johannesburg, composite decking installation, deck construction Johannesburg, flooring services Randburg, outdoor living spaces Johannesburg, deck repair Johannesburg, flooring renovation Sandton",
   openGraph: {
-    title: "Decking & Flooring Installation Johannesburg 2025 | Wooden Decks & Laminate Floors",
+    title: "Decking & Flooring Johannesburg 2025 | Professional Installation Services",
     description:
-      "Professional decking & flooring installation Johannesburg. Wooden decks, laminate flooring, vinyl floors. 5-star service, 24-month warranty.",
-    images: [{ url: "/beautiful-decking.jpg", width: 1200, height: 630 }],
+      "Professional decking & flooring installation in Johannesburg. 5-star service, 24-month warranty, free quotes available.",
+    images: [{ url: "/decking-flooring.jpg", width: 1200, height: 630 }],
   },
   alternates: {
     canonical: "https://granitecarpentry.co.za/services/decking-flooring",
@@ -36,8 +24,110 @@ export const metadata: Metadata = {
 }
 
 export default function DeckingFlooringPage() {
+  const services = [
+    {
+      title: "Wooden Decking",
+      description: "Premium wooden decking for outdoor entertainment and relaxation spaces",
+      features: [
+        "Treated pine and hardwood options",
+        "Weather-resistant finishes",
+        "Custom designs and sizes",
+        "Professional installation",
+      ],
+      price: "From R450/m²",
+      image: "/decking-flooring.jpg",
+    },
+    {
+      title: "Composite Decking",
+      description: "Low-maintenance composite decking that looks like wood without the upkeep",
+      features: ["Fade and stain resistant", "No annual maintenance", "Slip-resistant surface", "25-year warranty"],
+      price: "From R650/m²",
+      image: "/beautiful-decking.jpg",
+    },
+    {
+      title: "Laminate Flooring",
+      description: "High-quality laminate flooring for modern homes and offices",
+      features: ["Water-resistant options", "Easy maintenance", "Wide range of styles", "Quick installation"],
+      price: "From R180/m²",
+      image: "/carpenter-installing-deck-joists-johannesburg.jpg",
+    },
+    {
+      title: "Vinyl Flooring",
+      description: "Durable vinyl flooring perfect for high-traffic areas and wet spaces",
+      features: [
+        "100% waterproof",
+        "Comfortable underfoot",
+        "Realistic wood and stone looks",
+        "Commercial grade options",
+      ],
+      price: "From R120/m²",
+      image: "/professional-carpenter-midrand.jpeg",
+    },
+  ]
+
+  const process = [
+    {
+      step: "1",
+      title: "Site Assessment",
+      description: "Comprehensive evaluation of your space, ground conditions, and design requirements.",
+    },
+    {
+      step: "2",
+      title: "Design & Planning",
+      description: "Custom design creation with material selection and detailed project planning.",
+    },
+    {
+      step: "3",
+      title: "Preparation",
+      description: "Site preparation, ground leveling, and foundation work for optimal results.",
+    },
+    {
+      step: "4",
+      title: "Installation",
+      description: "Professional installation with quality control and thorough cleanup.",
+    },
+  ]
+
+  const areas = [
+    "Johannesburg South",
+    "Sandton",
+    "Randburg",
+    "Kempton Park",
+    "Midrand",
+    "Fourways",
+    "Boksburg",
+    "Centurion",
+    "Pretoria",
+    "Alberton",
+    "Edenvale",
+    "Roodepoort",
+  ]
+
+  const faqs = [
+    {
+      question: "What type of decking is best for Johannesburg's climate?",
+      answer:
+        "For Johannesburg's climate with hot summers and mild winters, we recommend treated pine or hardwood decking with proper weather-resistant finishes. Composite decking is also excellent as it doesn't warp, crack, or fade in UV exposure. Treated pine costs R450-R650/m² while composite ranges R650-R950/m². Both options handle temperature fluctuations well. We apply UV-resistant stains and sealers to protect wooden decking from sun damage and ensure longevity in Johannesburg's conditions.",
+    },
+    {
+      question: "How long does decking installation take in Sandton and Randburg?",
+      answer:
+        "Decking installation timeframes depend on size and complexity. Small residential decks (20-40m²) typically take 3-5 days, while larger entertainment areas (60-100m²) require 1-2 weeks. The process includes site preparation (1-2 days), foundation work (1-2 days), and decking installation (2-4 days). Weather conditions can affect outdoor work schedules. We provide accurate timelines during consultation and coordinate with your schedule for minimal disruption to your Sandton or Randburg property.",
+    },
+    {
+      question: "Do you provide flooring installation for commercial properties in Johannesburg?",
+      answer:
+        "Yes, we provide comprehensive commercial flooring services throughout Johannesburg including offices, retail spaces, restaurants, and industrial facilities. Our commercial-grade vinyl, laminate, and specialized flooring options meet high-traffic requirements. We work after hours and weekends to minimize business disruption. Commercial projects include detailed planning, phased installation, and extended warranties. Our team handles large-scale projects with professional project management and quality assurance.",
+    },
+    {
+      question: "What maintenance is required for wooden decking in Johannesburg?",
+      answer:
+        "Wooden decking in Johannesburg requires annual cleaning and re-staining every 2-3 years to maintain appearance and protection. We recommend pressure washing in spring, followed by UV-resistant stain application. Regular inspection for loose boards, protruding nails, and structural issues ensures safety. Composite decking requires only occasional cleaning with soap and water. We provide maintenance services including cleaning, re-staining, repairs, and board replacement to keep your deck looking perfect year-round.",
+    },
+  ]
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen">
       {/* Structured Data */}
       <script
         type="application/ld+json"
@@ -47,12 +137,12 @@ export default function DeckingFlooringPage() {
             "@type": "Service",
             name: "Decking & Flooring Installation Johannesburg",
             description:
-              "Professional decking and flooring installation in Johannesburg. Wooden decks, laminate flooring, and vinyl floor installations.",
+              "Professional decking and flooring installation services in Johannesburg including wooden decking, composite decking, laminate and vinyl flooring.",
             provider: {
               "@type": "LocalBusiness",
               name: "Granite Carpentry",
               telephone: "+27676014490",
-              email: "granitecarpentry5@gmail.com",
+              email: "info@granitecarpentry.co.za",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Johannesburg",
@@ -60,12 +150,12 @@ export default function DeckingFlooringPage() {
                 addressCountry: "ZA",
               },
             },
-            areaServed: ["Johannesburg", "Sandton", "Randburg", "Pretoria", "Centurion"],
+            areaServed: ["Johannesburg", "Sandton", "Randburg", "Midrand", "Centurion"],
             serviceType: "Decking & Flooring Installation",
             offers: {
               "@type": "Offer",
               priceCurrency: "ZAR",
-              priceRange: "R350-R1200",
+              priceRange: "R120-R950",
               availability: "https://schema.org/InStock",
             },
           }),
@@ -73,75 +163,86 @@ export default function DeckingFlooringPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-green-600/10 to-emerald-600/10" />
-        <div className="relative max-w-7xl mx-auto">
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-black/20" />
+        <div className="relative container mx-auto px-4 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge variant="secondary" className="bg-green-100 text-green-800 border-green-200">
-                  <Star className="w-4 h-4 mr-1 fill-current" />
-                  5-Star Rated Service
+                <Badge className="bg-amber-600 hover:bg-amber-700 text-white">
+                  <Home className="h-3 w-3 mr-1" />
+                  Decking & Flooring Specialists
                 </Badge>
-                <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Decking & Flooring
-                  <span className="block text-green-600">Installation 2025</span>
+                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+                  Professional <span className="text-amber-400">Decking & Flooring</span> Johannesburg
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
-                  Transform your outdoor and indoor spaces with professional decking and flooring installation. Wooden
-                  decks, laminate floors, and vinyl installations with 24-month warranty.
+                <p className="text-xl text-slate-300 leading-relaxed">
+                  Transform your indoor and outdoor spaces with premium decking and flooring solutions. From wooden
+                  decks to luxury vinyl flooring, we deliver exceptional quality and professional installation
+                  throughout Johannesburg.
                 </p>
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call 067 601 4490
+                <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-8">
+                  <Link href="/contact">
+                    Get Free Quote
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
                 </Button>
                 <Button
-                  size="lg"
+                  asChild
                   variant="outline"
-                  className="border-green-600 text-green-600 hover:bg-green-50 bg-transparent"
+                  size="lg"
+                  className="text-lg px-8 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  Free Quote
-                  <ArrowRight className="w-5 h-5 ml-2" />
+                  <Link href="tel:+27676014490">
+                    <Phone className="mr-2 h-5 w-5" />
+                    067 601 4490
+                  </Link>
                 </Button>
               </div>
 
-              <div className="grid grid-cols-3 gap-6 pt-8">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-green-600">47+</div>
-                  <div className="text-sm text-gray-600">Projects Completed</div>
+              <div className="flex flex-wrap gap-6 text-sm">
+                <div className="flex items-center space-x-2">
+                  <Star className="h-4 w-4 text-amber-400 fill-current" />
+                  <span>5.0 Rating • 47+ Projects</span>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-green-600">24</div>
-                  <div className="text-sm text-gray-600">Month Warranty</div>
+                <div className="flex items-center space-x-2">
+                  <Shield className="h-4 w-4 text-green-400" />
+                  <span>Licensed & Insured</span>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-green-600">5.0</div>
-                  <div className="text-sm text-gray-600">Star Rating</div>
+                <div className="flex items-center space-x-2">
+                  <Award className="h-4 w-4 text-blue-400" />
+                  <span>24-Month Warranty</span>
                 </div>
               </div>
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/beautiful-decking.jpg"
-                  alt="Professional decking and flooring installation in Johannesburg"
-                  fill
-                  className="object-cover"
+                  src="/decking-flooring.jpg"
+                  alt="Professional Decking & Flooring Installation Johannesburg"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
                   priority
                 />
-              </div>
-              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-green-600" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-gray-900">Quality Materials</div>
-                    <div className="text-sm text-gray-600">Professional Installation</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="font-semibold text-slate-900">Latest Project</p>
+                        <p className="text-sm text-slate-600">Wooden Decking - Sandton</p>
+                      </div>
+                      <div className="flex items-center space-x-1">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="h-4 w-4 text-amber-400 fill-current" />
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -150,89 +251,117 @@ export default function DeckingFlooringPage() {
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Decking & Flooring Services</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From outdoor wooden decks to indoor laminate flooring, we provide comprehensive installation services for
-              all your flooring needs.
+      {/* Expanded Content Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-8">
+              Professional Decking and Flooring Services in Johannesburg
+            </h2>
+
+            <div className="prose prose-lg max-w-none text-slate-600 space-y-6">
+              <p>
+                Decking and flooring installation in Johannesburg requires expertise in materials that can withstand our
+                unique climate conditions while providing lasting beauty and functionality. Our professional
+                installation services cater to homeowners throughout Johannesburg, Sandton, Randburg, and surrounding
+                areas who want to enhance their indoor and outdoor living spaces. With over 47 successful projects, we
+                understand the importance of quality materials, proper installation techniques, and attention to detail
+                that ensures long-lasting results.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
+                Wooden Decking Solutions for Johannesburg Homes
+              </h3>
+              <p>
+                Wooden decking remains the most popular choice for Johannesburg homeowners seeking to create beautiful
+                outdoor entertainment spaces. We specialize in treated pine and hardwood decking options that are
+                specifically selected for their durability in South African conditions. Our decking installations
+                include proper foundation preparation, structural support systems, and weather-resistant finishes that
+                protect against UV damage, moisture, and temperature fluctuations common in the Johannesburg area.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">Composite Decking: Low-Maintenance Luxury</h3>
+              <p>
+                Composite decking has gained popularity among Sandton and Randburg homeowners who want the beauty of
+                wood without the maintenance requirements. Our composite decking options combine recycled wood fibers
+                with polymer materials to create surfaces that resist fading, staining, and weathering. These products
+                are ideal for busy families and commercial properties where minimal maintenance is essential while
+                maintaining an attractive appearance year-round.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
+                Indoor Flooring Solutions for Modern Living
+              </h3>
+              <p>
+                Our indoor flooring services include laminate and vinyl flooring installation for residential and
+                commercial properties throughout Johannesburg. Modern laminate flooring offers the appearance of
+                hardwood, stone, or tile at a fraction of the cost, while luxury vinyl plank (LVP) and luxury vinyl tile
+                (LVT) provide 100% waterproof solutions perfect for kitchens, bathrooms, and high-traffic areas.
+                Professional installation ensures proper subfloor preparation, moisture barriers, and seamless
+                transitions between rooms.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
+                Quality Installation and Long-term Durability
+              </h3>
+              <p>
+                Professional installation is crucial for the longevity and performance of both decking and flooring
+                projects. Our certified installers follow manufacturer specifications and industry best practices to
+                ensure proper expansion gaps, moisture management, and structural integrity. Every project includes
+                comprehensive site preparation, quality materials from trusted suppliers, and thorough cleanup. Our
+                24-month warranty covers both materials and workmanship, providing peace of mind for your investment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 mb-16">
+            <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Our Services</Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">Decking & Flooring Solutions</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              From outdoor wooden decking to indoor luxury flooring, we provide comprehensive installation services with
+              premium materials and expert craftsmanship.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <TreePine className="w-8 h-8" />,
-                title: "Wooden Decking",
-                description: "Premium wooden deck installation with treated timber and professional finishing.",
-                features: ["Treated timber", "Waterproof sealing", "Custom designs", "Balustrade options"],
-                image: "/beautiful-decking.jpg",
-              },
-              {
-                icon: <Hammer className="w-8 h-8" />,
-                title: "Laminate Flooring",
-                description:
-                  "High-quality laminate flooring installation with moisture barriers and precision fitting.",
-                features: ["Moisture barriers", "Precision fitting", "Underlay included", "Skirting installation"],
-                image: "/decking-flooring.jpg",
-              },
-              {
-                icon: <Palette className="w-8 h-8" />,
-                title: "Vinyl Flooring",
-                description: "Durable vinyl flooring installation for kitchens, bathrooms, and high-traffic areas.",
-                features: ["Waterproof options", "Easy maintenance", "Wide selection", "Professional fitting"],
-                image: "/carpenter-installing-deck-joists-johannesburg.jpg",
-              },
-              {
-                icon: <Wrench className="w-8 h-8" />,
-                title: "Composite Decking",
-                description: "Low-maintenance composite decking with long-lasting durability and modern aesthetics.",
-                features: ["Low maintenance", "Weather resistant", "Modern aesthetics", "Eco-friendly options"],
-                image: "/beautiful-decking.jpg",
-              },
-              {
-                icon: <CheckCircle className="w-8 h-8" />,
-                title: "Hardwood Flooring",
-                description: "Premium hardwood flooring installation with sanding, staining, and protective finishes.",
-                features: ["Premium hardwood", "Professional sanding", "Custom staining", "Protective finishes"],
-                image: "/decking-flooring.jpg",
-              },
-              {
-                icon: <Shield className="w-8 h-8" />,
-                title: "Floor Restoration",
-                description: "Professional floor restoration services including sanding, refinishing, and repair work.",
-                features: ["Floor sanding", "Refinishing", "Repair work", "Protective coatings"],
-                image: "/carpenter-installing-deck-joists-johannesburg.jpg",
-              },
-            ].map((service, index) => (
+          <div className="grid md:grid-cols-2 gap-8">
+            {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <CardHeader className="pb-4">
-                  <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center text-green-600 mb-4 group-hover:bg-green-600 group-hover:text-white transition-colors">
-                    {service.icon}
+                <div className="relative overflow-hidden rounded-t-lg">
+                  <Image
+                    src={service.image || "/placeholder.svg"}
+                    alt={service.title}
+                    width={500}
+                    height={300}
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-amber-600 text-white">{service.price}</Badge>
                   </div>
-                  <CardTitle className="text-xl font-bold text-gray-900">{service.title}</CardTitle>
-                  <CardDescription className="text-gray-600">{service.description}</CardDescription>
+                </div>
+                <CardHeader className="space-y-3">
+                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                  <CardDescription className="text-slate-600">{service.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                    <Image
-                      src={service.image || "/placeholder.svg"}
-                      alt={service.title}
-                      width={400}
-                      height={300}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-sm text-gray-600">
-                        <CheckCircle className="w-4 h-4 text-green-600 mr-2 flex-shrink-0" />
-                        {feature}
-                      </li>
+                  <div className="space-y-2">
+                    {service.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className="flex items-center space-x-2">
+                        <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-slate-600">{feature}</span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
+                  <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
+                    <Link href="/contact">
+                      Get Quote
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
                 </CardContent>
               </Card>
             ))}
@@ -240,208 +369,182 @@ export default function DeckingFlooringPage() {
         </div>
       </section>
 
-      {/* Material Options */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Flooring Material Options</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose from our extensive range of quality flooring materials, each with unique benefits for different
-              applications.
+      {/* Process Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 mb-16">
+            <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Our Process</Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">Professional Installation Process</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              From initial assessment to final installation, our systematic approach ensures exceptional results and
+              complete customer satisfaction.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                title: "Laminate Flooring",
-                price: "R350 - R650/m²",
-                description: "Durable and affordable with wood-look finishes",
-                features: ["Water resistant", "Easy installation", "Wide selection", "Cost effective"],
-                image: "/decking-flooring.jpg",
-              },
-              {
-                title: "Vinyl Flooring",
-                price: "R280 - R550/m²",
-                description: "Waterproof and versatile for any room",
-                features: ["100% waterproof", "Soft underfoot", "Easy maintenance", "Realistic textures"],
-                image: "/decking-flooring.jpg",
-              },
-              {
-                title: "Wooden Decking",
-                price: "R450 - R850/m²",
-                description: "Natural beauty for outdoor spaces",
-                features: ["Natural timber", "Weather treated", "Custom designs", "Long lasting"],
-                image: "/beautiful-decking.jpg",
-              },
-              {
-                title: "Composite Decking",
-                price: "R650 - R1200/m²",
-                description: "Low maintenance alternative to wood",
-                features: ["No maintenance", "Weather proof", "Eco friendly", "Modern look"],
-                image: "/beautiful-decking.jpg",
-              },
-            ].map((material, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="text-center pb-4">
-                  <div className="aspect-[4/3] rounded-lg overflow-hidden mb-4">
-                    <Image
-                      src={material.image || "/placeholder.svg"}
-                      alt={material.title}
-                      width={300}
-                      height={225}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <CardTitle className="text-xl font-bold text-gray-900">{material.title}</CardTitle>
-                  <div className="text-2xl font-bold text-green-600 mt-2">{material.price}</div>
-                  <CardDescription className="text-gray-600">{material.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2">
-                    {material.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-sm text-gray-600">
-                        <CheckCircle className="w-4 h-4 text-green-600 mr-2 flex-shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+            {process.map((step, index) => (
+              <div key={index} className="text-center space-y-4">
+                <div className="mx-auto w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                  {step.step}
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-slate-900 mb-2">{step.title}</h3>
+                  <p className="text-slate-600">{step.description}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Installation Process */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Professional Installation Process</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our systematic approach ensures quality installation with attention to detail and long-lasting results.
-            </p>
-          </div>
+      {/* FAQ Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
+              <p className="text-xl text-slate-600">Common questions about decking and flooring in Johannesburg</p>
+            </div>
 
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              {
-                step: "01",
-                title: "Site Assessment",
-                description: "Thorough assessment of the installation area and subfloor preparation requirements.",
-                icon: <MapPin className="w-6 h-6" />,
-              },
-              {
-                step: "02",
-                title: "Material Selection",
-                description: "Choose from our extensive range of quality flooring materials and finishes.",
-                icon: <Palette className="w-6 h-6" />,
-              },
-              {
-                step: "03",
-                title: "Preparation Work",
-                description: "Professional subfloor preparation, leveling, and moisture barrier installation.",
-                icon: <Hammer className="w-6 h-6" />,
-              },
-              {
-                step: "04",
-                title: "Expert Installation",
-                description: "Precision installation with quality finishing and final inspection.",
-                icon: <CheckCircle className="w-6 h-6" />,
-              },
-            ].map((process, index) => (
-              <div key={index} className="text-center group">
-                <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center text-white mx-auto group-hover:bg-green-700 transition-colors">
-                    {process.icon}
-                  </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center text-green-600 font-bold text-sm border-2 border-green-600">
-                    {process.step}
-                  </div>
+            <div className="space-y-8">
+              {faqs.map((faq, index) => (
+                <div key={index} className="border-b border-slate-200 pb-8">
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">{faq.question}</h3>
+                  <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{process.title}</h3>
-                <p className="text-gray-600">{process.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Areas Served */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Decking & Flooring Installation Areas</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Professional decking and flooring installation throughout the Greater Johannesburg area.
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 mb-16">
+            <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Service Areas</Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">
+              Decking & Flooring Throughout Johannesburg
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Professional decking and flooring installation services throughout Greater Johannesburg and surrounding
+              areas.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              "Johannesburg South",
-              "Sandton",
-              "Randburg",
-              "Pretoria",
-              "Centurion",
-              "Midrand",
-              "Edenvale",
-              "Kempton Park",
-              "Boksburg",
-              "Roodepoort",
-              "Fourways",
-              "Alberton",
-            ].map((area, index) => (
-              <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
-                <MapPin className="w-8 h-8 text-green-600 mx-auto mb-3" />
-                <h3 className="font-semibold text-gray-900">{area}</h3>
-                <p className="text-sm text-gray-600 mt-1">Decking & Flooring</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+            {areas.map((area, index) => (
+              <Card
+                key={index}
+                className="border-0 shadow-md hover:shadow-lg transition-all duration-300 hover:border-amber-200"
+              >
+                <CardContent className="p-4 text-center">
+                  <div className="flex items-center justify-center space-x-2">
+                    <MapPin className="h-4 w-4 text-amber-600" />
+                    <span className="font-medium text-slate-900">{area}</span>
+                  </div>
+                </CardContent>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-emerald-600">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Ready for Professional Flooring Installation?
-          </h2>
-          <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
-            Transform your spaces with quality decking and flooring. Get your free consultation and quote today.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
-              <Phone className="w-5 h-5 mr-2" />
-              Call 067 601 4490
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-green-600 bg-transparent"
-            >
-              <Mail className="w-5 h-5 mr-2" />
-              Email Quote
-            </Button>
+      {/* Related Services */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Related Services</h2>
+            <p className="text-xl text-slate-600">Complete your renovation with our additional services</p>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <Clock className="w-8 h-8 text-green-200 mx-auto mb-3" />
-              <div className="text-white font-semibold">Quick Installation</div>
-              <div className="text-green-100 text-sm">5-10 working days</div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Kitchen Renovations</h3>
+                <p className="text-slate-600 mb-6">
+                  Complete kitchen renovations with custom cabinets and premium finishes.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/services/kitchen-renovations">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Built-in Cupboards</h3>
+                <p className="text-slate-600 mb-6">
+                  Custom built-in storage solutions to complement your flooring renovation.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/services/built-in-cupboards">View Options</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Drywall & Ceilings</h3>
+                <p className="text-slate-600 mb-6">
+                  Professional drywall and ceiling installation for complete renovations.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/services/drywall-ceilings">Explore Services</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-br from-amber-600 to-amber-700 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-4xl mx-auto space-y-8">
+            <h2 className="text-3xl lg:text-4xl font-bold">Ready for Professional Decking & Flooring?</h2>
+            <p className="text-xl text-amber-100">
+              Transform your indoor and outdoor spaces with premium decking and flooring solutions. Get a free
+              consultation and detailed quote from Johannesburg's most trusted installation specialists.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" variant="secondary" className="text-lg px-8">
+                <Link href="/contact">
+                  Get Free Quote
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="text-lg px-8 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent"
+              >
+                <Link href="tel:+27676014490">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call: 067 601 4490
+                </Link>
+              </Button>
             </div>
-            <div>
-              <Shield className="w-8 h-8 text-green-200 mx-auto mb-3" />
-              <div className="text-white font-semibold">24-Month Warranty</div>
-              <div className="text-green-100 text-sm">Full coverage included</div>
-            </div>
-            <div>
-              <Star className="w-8 h-8 text-green-200 mx-auto mb-3" />
-              <div className="text-white font-semibold">5-Star Service</div>
-              <div className="text-green-100 text-sm">47+ satisfied customers</div>
+
+            <div className="flex flex-wrap justify-center gap-8 text-sm text-amber-100">
+              <div className="flex items-center space-x-2">
+                <Clock className="h-4 w-4" />
+                <span>Free Consultation</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Users className="h-4 w-4" />
+                <span>Expert Installation</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Wrench className="h-4 w-4" />
+                <span>Premium Materials</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Award className="h-4 w-4" />
+                <span>24-Month Warranty</span>
+              </div>
             </div>
           </div>
         </div>

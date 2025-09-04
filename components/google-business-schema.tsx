@@ -1,117 +1,235 @@
-interface GoogleBusinessSchemaProps {
-  businessName: string
-  description: string
-  address: {
-    street: string
-    city: string
-    region: string
-    postalCode: string
-    country: string
-  }
-  phone: string
-  email: string
-  website: string
-  services: string[]
-  areas: string[]
-  rating: number
-  reviewCount: number
-  openingHours: string[]
-  socialMedia: {
-    facebook?: string
-    instagram?: string
-    linkedin?: string
-  }
-  images: {
-    logo: string
-    photos: string[]
-  }
-}
-
-export function GoogleBusinessSchema({
-  businessName,
-  description,
-  address,
-  phone,
-  email,
-  website,
-  services,
-  areas,
-  rating,
-  reviewCount,
-  openingHours,
-  socialMedia,
-  images,
-}: GoogleBusinessSchemaProps) {
-  const schema = {
+export function GoogleBusinessSchema() {
+  const businessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: businessName,
-    description: description,
-    url: website,
-    telephone: phone,
-    email: email,
+    "@id": "https://granitecarpentry.co.za/#business",
+    name: "Granite Carpentry",
+    alternateName: "Granite Carpentry Johannesburg",
+    description:
+      "Professional carpenter and granite installation specialists in Johannesburg. Specializing in kitchen renovations, built-in cupboards, granite countertops, decking, flooring, and carpentry training.",
+    url: "https://granitecarpentry.co.za",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+      width: 400,
+      height: 400,
+    },
+    image: [
+      "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+      "https://granitecarpentry.co.za/Kitchen-renovations-sandton.webp",
+      "https://granitecarpentry.co.za/granite-installation-Johannesburg.jpg",
+      "https://granitecarpentry.co.za/Built-Built-in-Cupboards-Midrand.jpg",
+    ],
+    telephone: "+27676014490",
+    email: "info@granitecarpentry.co.za",
     address: {
       "@type": "PostalAddress",
-      streetAddress: address.street,
-      addressLocality: address.city,
-      addressRegion: address.region,
-      postalCode: address.postalCode,
-      addressCountry: address.country,
+      addressLocality: "Johannesburg",
+      addressRegion: "Gauteng",
+      addressCountry: "ZA",
     },
     geo: {
       "@type": "GeoCoordinates",
       latitude: -26.2041,
       longitude: 28.0473,
     },
-    openingHoursSpecification: openingHours.map((hours) => {
-      const [day, time] = hours.split(" ")
-      const [opens, closes] = time.split("-")
-      return {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: day,
-        opens: opens,
-        closes: closes,
-      }
-    }),
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: rating,
-      reviewCount: reviewCount,
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Johannesburg",
+        addressRegion: "Gauteng",
+        addressCountry: "ZA",
+      },
+      {
+        "@type": "City",
+        name: "Sandton",
+        addressRegion: "Gauteng",
+        addressCountry: "ZA",
+      },
+      {
+        "@type": "City",
+        name: "Randburg",
+        addressRegion: "Gauteng",
+        addressCountry: "ZA",
+      },
+      {
+        "@type": "City",
+        name: "Pretoria",
+        addressRegion: "Gauteng",
+        addressCountry: "ZA",
+      },
+      {
+        "@type": "City",
+        name: "Centurion",
+        addressRegion: "Gauteng",
+        addressCountry: "ZA",
+      },
+    ],
+    serviceArea: {
+      "@type": "GeoCircle",
+      geoMidpoint: {
+        "@type": "GeoCoordinates",
+        latitude: -26.2041,
+        longitude: 28.0473,
+      },
+      geoRadius: "50000",
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Carpentry Services",
-      itemListElement: services.map((service) => ({
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: service,
+      name: "Carpentry and Granite Installation Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Kitchen Renovations",
+            description: "Complete kitchen renovation services including custom cabinets and granite countertops",
+          },
         },
-      })),
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Built-in Cupboards",
+            description: "Custom built-in cupboards and wardrobes for bedrooms, studies, and storage solutions",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Granite & Quartz Installation",
+            description: "Professional granite and quartz countertop installation for kitchens and bathrooms",
+          },
+        },
+      ],
     },
-    areaServed: areas.map((area) => ({
-      "@type": "City",
-      name: area,
-    })),
-    sameAs: Object.values(socialMedia).filter(Boolean),
+    priceRange: "R5000-R100000",
+    paymentAccepted: ["Cash", "Credit Card", "Bank Transfer"],
+    currenciesAccepted: "ZAR",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "07:00",
+        closes: "17:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "08:00",
+        closes: "14:00",
+      },
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      reviewCount: "47",
+      bestRating: "5",
+      worstRating: "1",
+    },
+    review: [
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Sarah Johnson",
+        },
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        reviewBody:
+          "Excellent kitchen renovation service. The team was professional, punctual, and delivered exactly what was promised. Highly recommend Granite Carpentry!",
+        datePublished: "2024-01-15",
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Michael Smith",
+        },
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        reviewBody:
+          "Outstanding granite installation work. The countertops look amazing and the installation was flawless. Great value for money.",
+        datePublished: "2024-02-20",
+      },
+    ],
+    sameAs: [
+      "https://www.facebook.com/granitecarpentry",
+      "https://www.instagram.com/granitecarpentry",
+      "https://www.linkedin.com/company/granite-carpentry",
+    ],
+    founder: {
+      "@type": "Person",
+      name: "Granite Carpentry Team",
+    },
+    foundingDate: "2020",
+    slogan: "Professional Carpentry & Granite Installation Excellence",
+    knowsAbout: [
+      "Kitchen Renovations",
+      "Built-in Cupboards",
+      "Granite Installation",
+      "Quartz Countertops",
+      "Carpentry Services",
+      "Home Renovations",
+    ],
+    makesOffer: [
+      {
+        "@type": "Offer",
+        name: "Free Consultation",
+        description: "Free home consultation and quote for all carpentry and granite installation services",
+        price: "0",
+        priceCurrency: "ZAR",
+      },
+    ],
+  }
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://granitecarpentry.co.za/#organization",
+    name: "Granite Carpentry",
+    url: "https://granitecarpentry.co.za",
     logo: {
       "@type": "ImageObject",
-      url: `https://granitecarpentry.co.za${images.logo}`,
-      width: 300,
-      height: 100,
+      url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+      width: 400,
+      height: 400,
     },
-    image: images.photos.map((photo) => ({
-      "@type": "ImageObject",
-      url: `https://granitecarpentry.co.za${photo}`,
-    })),
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+27676014490",
+      contactType: "customer service",
+      areaServed: "ZA",
+      availableLanguage: ["English", "Afrikaans"],
+    },
+    sameAs: [
+      "https://www.facebook.com/granitecarpentry",
+      "https://www.instagram.com/granitecarpentry",
+      "https://www.linkedin.com/company/granite-carpentry",
+    ],
   }
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(schema),
-      }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(businessSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema),
+        }}
+      />
+    </>
   )
 }

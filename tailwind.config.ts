@@ -53,7 +53,6 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom colors for granite/stone theme
         amber: {
           50: "#fffbeb",
           100: "#fef3c7",
@@ -91,6 +90,7 @@ const config = {
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {

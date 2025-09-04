@@ -21,7 +21,7 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Built-in Cupboards Johannesburg 2025 | Custom Wardrobes & Storage Solutions",
+  title: "Built-in Cupboards Johannesburg 2025 | Custom Wardrobes & Storage",
   description:
     "Professional built-in cupboards & custom wardrobes in Johannesburg. Bedroom cupboards, study units, kitchen pantries. 5-star service, 24-month warranty. Free quotes. Call 067 601 4490.",
   keywords:
@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     description:
       "Professional built-in cupboards & custom wardrobes in Johannesburg. 5-star service, 24-month warranty. Free quotes available.",
     images: [{ url: "/Built-Built-in-Cupboards-Midrand.jpg", width: 1200, height: 630 }],
+  },
+  alternates: {
+    canonical: "https://granitecarpentry.co.za/services/built-in-cupboards",
   },
 }
 
@@ -127,8 +130,65 @@ export default function BuiltInCupboardsPage() {
     "Roodepoort",
   ]
 
+  const faqs = [
+    {
+      question: "How much do built-in cupboards cost in Johannesburg?",
+      answer:
+        "Built-in cupboard costs in Johannesburg vary based on size, materials, and complexity. Basic melamine wardrobes start from R15,000, while premium solid wood units can cost R45,000+. Factors affecting price include dimensions, internal fittings, door styles, and hardware quality. We provide detailed quotes with transparent pricing and no hidden costs.",
+    },
+    {
+      question: "What materials do you use for built-in cupboards in Sandton and Randburg?",
+      answer:
+        "We use premium materials including high-quality melamine boards, solid wood options, and durable hardware. Our melamine finishes are moisture-resistant and available in various colors and wood-grain patterns. For luxury projects, we offer solid wood construction with custom staining and finishing. All hardware includes soft-close hinges and drawer slides for smooth operation.",
+    },
+    {
+      question: "How long does it take to install built-in cupboards?",
+      answer:
+        "Installation time depends on the project scope. Simple bedroom wardrobes typically take 2-3 days, while complex multi-room projects may require 1-2 weeks. Our process includes consultation (1 day), manufacturing (1-2 weeks), and installation (2-5 days). We provide accurate timelines during consultation and keep you informed throughout the process.",
+    },
+    {
+      question: "Do you provide built-in cupboard design services in Midrand?",
+      answer:
+        "Yes, we provide comprehensive design services throughout Johannesburg, including Midrand, Sandton, and surrounding areas. Our design team creates detailed plans, 3D renderings, and helps optimize space utilization. We consider your storage needs, room layout, and aesthetic preferences to create functional and beautiful built-in storage solutions.",
+    },
+  ]
+
   return (
     <div className="min-h-screen">
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Built-in Cupboards Johannesburg",
+            description:
+              "Professional built-in cupboards and custom wardrobes in Johannesburg including bedroom cupboards, study units, and storage solutions.",
+            provider: {
+              "@type": "LocalBusiness",
+              name: "Granite Carpentry",
+              telephone: "+27676014490",
+              email: "info@granitecarpentry.co.za",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Johannesburg",
+                addressRegion: "Gauteng",
+                addressCountry: "ZA",
+              },
+            },
+            areaServed: ["Johannesburg", "Sandton", "Randburg", "Midrand", "Centurion"],
+            serviceType: "Built-in Cupboards & Custom Storage",
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "ZAR",
+              priceRange: "R8000-R50000",
+              availability: "https://schema.org/InStock",
+            },
+          }),
+        }}
+      />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black/20" />
@@ -237,8 +297,60 @@ export default function BuiltInCupboardsPage() {
         </div>
       </section>
 
+      {/* Expanded Content Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-8">
+              Professional Built-in Cupboards in Johannesburg
+            </h2>
+
+            <div className="prose prose-lg max-w-none text-slate-600 space-y-6">
+              <p>
+                Built-in cupboards have become an essential feature in modern Johannesburg homes, offering both
+                functionality and aesthetic appeal. Our professional built-in cupboard services cater to homeowners
+                throughout Johannesburg, Sandton, Randburg, and surrounding areas who want to maximize their storage
+                space while maintaining a clean, organized living environment. Custom built-in cupboards are
+                particularly valuable in South African homes where space optimization is crucial.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
+                Custom Wardrobe Solutions for Johannesburg Homes
+              </h3>
+              <p>
+                Our custom wardrobe solutions are designed to accommodate the unique storage needs of Johannesburg
+                residents. Whether you're looking for spacious bedroom wardrobes in Sandton, compact storage solutions
+                in Randburg apartments, or luxury walk-in closets in Midrand, our team creates built-in cupboards that
+                perfectly fit your space and lifestyle. We understand the importance of quality craftsmanship and use
+                only premium materials sourced from trusted suppliers throughout Gauteng.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">Built-in Storage Solutions for Every Room</h3>
+              <p>
+                Beyond bedroom wardrobes, our built-in cupboard expertise extends to every room in your home. Kitchen
+                pantry cupboards help organize your cooking essentials, while study units combine workspace
+                functionality with storage efficiency. Entertainment units provide stylish media storage, and linen
+                cupboards ensure your household items are neatly organized. Each built-in cupboard is custom-designed to
+                maximize your available space while complementing your home's interior design.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
+                Quality Materials and Professional Installation
+              </h3>
+              <p>
+                We pride ourselves on using high-quality materials including premium melamine boards, solid wood
+                options, and durable hardware systems. Our built-in cupboards feature soft-close hinges,
+                smooth-operating drawer slides, and adjustable shelving systems. Professional installation ensures
+                perfect alignment, secure mounting, and flawless finishing that will last for years to come. Every
+                project includes our comprehensive 24-month warranty covering both materials and workmanship.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Cupboard Types Section */}
-      <section className="py-20">
+      <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Our Services</Badge>
@@ -291,7 +403,7 @@ export default function BuiltInCupboardsPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Our Process</Badge>
@@ -320,8 +432,29 @@ export default function BuiltInCupboardsPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
+              <p className="text-xl text-slate-600">Common questions about built-in cupboards in Johannesburg</p>
+            </div>
+
+            <div className="space-y-8">
+              {faqs.map((faq, index) => (
+                <div key={index} className="border-b border-slate-200 pb-8">
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">{faq.question}</h3>
+                  <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Section */}
-      <section className="py-20">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Pricing</Badge>
@@ -476,6 +609,54 @@ export default function BuiltInCupboardsPage() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Related Services</h2>
+            <p className="text-xl text-slate-600">Complete your home renovation with our additional services</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Kitchen Renovations</h3>
+                <p className="text-slate-600 mb-6">
+                  Transform your kitchen with custom cabinets and complete renovation services.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/services/kitchen-renovations">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Granite Countertops</h3>
+                <p className="text-slate-600 mb-6">
+                  Premium granite and quartz countertops for your renovation project.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/services/quartz-granite">View Options</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Decking & Flooring</h3>
+                <p className="text-slate-600 mb-6">
+                  Professional flooring installation and decking services for your home.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/services/decking-flooring">Explore Flooring</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

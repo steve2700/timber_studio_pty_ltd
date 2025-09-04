@@ -1,34 +1,21 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import {
-  CheckCircle,
-  Star,
-  Clock,
-  Shield,
-  Phone,
-  Mail,
-  MapPin,
-  ArrowRight,
-  Gem,
-  Hammer,
-  Palette,
-  Wrench,
-  Ruler,
-} from "lucide-react"
+import { Phone, Star, CheckCircle, ArrowRight, Shield, Award, Clock, Users, MapPin, Wrench, Gem } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Quartz & Granite Countertops Johannesburg 2025 | Kitchen & Bathroom Installation | 5-Star Rated",
+  title: "Granite & Quartz Countertops Johannesburg 2025 | Professional Installation",
   description:
-    "Professional quartz & granite countertop installation Johannesburg. Kitchen countertops, bathroom vanities, island tops. 5-star service, 12-month warranty. Licensed installers. Free quotes. Call 067 601 4490.",
+    "Premium granite & quartz countertops in Johannesburg. Kitchen countertops, bathroom vanities, custom stone work. 5-star service, 24-month warranty. Free quotes. Call 067 601 4490.",
   keywords:
-    "quartz countertops Johannesburg 2025, granite countertops Johannesburg, kitchen countertops Johannesburg, granite installation Sandton, quartz installation Randburg, bathroom countertops Johannesburg, granite kitchen island Johannesburg, quartz bathroom vanity Johannesburg, stone countertops Johannesburg South, granite specialists Johannesburg, quartz fabrication Johannesburg, kitchen renovation countertops Johannesburg, granite installation company Johannesburg, quartz stone installation Johannesburg, countertop replacement Johannesburg",
+    "granite countertops Johannesburg, quartz countertops Johannesburg, kitchen countertops Sandton, granite installation Johannesburg, quartz installation Randburg, bathroom vanities granite, granite suppliers Johannesburg, quartz suppliers Sandton, stone countertops Midrand, granite kitchen tops, quartz kitchen counters, granite bathroom vanities, stone fabrication Johannesburg, granite cutting Johannesburg, quartz cutting services",
   openGraph: {
-    title: "Quartz & Granite Countertops Johannesburg 2025 | Kitchen & Bathroom Installation",
+    title: "Granite & Quartz Countertops Johannesburg 2025 | Professional Installation",
     description:
-      "Professional quartz & granite countertop installation Johannesburg. Kitchen countertops, bathroom vanities, and stone installations.",
+      "Premium granite & quartz countertops in Johannesburg. Professional installation, 5-star service, 24-month warranty.",
     images: [{ url: "/granite-countertop.jpg", width: 1200, height: 630 }],
   },
   alternates: {
@@ -37,8 +24,105 @@ export const metadata: Metadata = {
 }
 
 export default function QuartzGranitePage() {
+  const stoneTypes = [
+    {
+      title: "Granite Countertops",
+      description: "Natural granite stone with unique patterns and exceptional durability",
+      features: [
+        "Heat resistant up to 1200°F",
+        "Scratch resistant surface",
+        "Unique natural patterns",
+        "Long-lasting investment",
+      ],
+      price: "From R1,200/m²",
+      image: "/granite-countertop.jpg",
+    },
+    {
+      title: "Quartz Countertops",
+      description: "Engineered quartz with consistent patterns and non-porous surface",
+      features: ["Non-porous surface", "Stain resistant", "Consistent patterns", "Low maintenance"],
+      price: "From R1,500/m²",
+      image: "/granite-installation-Johannesburg.jpg",
+    },
+    {
+      title: "Bathroom Vanities",
+      description: "Custom granite and quartz vanity tops for luxury bathroom renovations",
+      features: ["Water resistant", "Custom edge profiles", "Integrated sinks", "Luxury finishes"],
+      price: "From R2,500",
+      image: "/bathroom-vanity (1).webp",
+    },
+    {
+      title: "Kitchen Islands",
+      description: "Statement granite and quartz surfaces for kitchen islands and bars",
+      features: ["Waterfall edges", "Custom shapes", "Integrated features", "Premium finishes"],
+      price: "From R8,000",
+      image: "/granite-installation-sandton.jpg",
+    },
+  ]
+
+  const process = [
+    {
+      step: "1",
+      title: "Site Measurement",
+      description: "Precise templating and measurement of your countertop space for perfect fitting.",
+    },
+    {
+      step: "2",
+      title: "Stone Selection",
+      description: "Choose from our extensive range of granite and quartz slabs at our showroom.",
+    },
+    {
+      step: "3",
+      title: "Fabrication",
+      description: "Professional cutting, polishing, and edge profiling in our workshop.",
+    },
+    {
+      step: "4",
+      title: "Installation",
+      description: "Expert installation with seamless joints and perfect alignment.",
+    },
+  ]
+
+  const areas = [
+    "Johannesburg South",
+    "Sandton",
+    "Randburg",
+    "Kempton Park",
+    "Midrand",
+    "Fourways",
+    "Boksburg",
+    "Centurion",
+    "Pretoria",
+    "Alberton",
+    "Edenvale",
+    "Roodepoort",
+  ]
+
+  const faqs = [
+    {
+      question: "What's the difference between granite and quartz countertops in Johannesburg?",
+      answer:
+        "Granite is a natural stone with unique patterns and requires periodic sealing, while quartz is engineered stone that's non-porous and maintenance-free. Granite offers natural beauty and heat resistance, while quartz provides consistent patterns and stain resistance. Both are excellent choices for Johannesburg kitchens, with granite typically costing R1,200-R2,000/m² and quartz R1,500-R2,500/m². Our team helps you choose based on your lifestyle, budget, and design preferences.",
+    },
+    {
+      question: "How long does granite countertop installation take in Sandton and Randburg?",
+      answer:
+        "Granite and quartz installation typically takes 1-2 days after templating. The complete process includes: initial consultation (1 day), templating (1 day), fabrication (3-5 days), and installation (1-2 days). Total timeline is usually 1-2 weeks from measurement to completion. We coordinate with your kitchen renovation schedule and provide accurate timelines. Emergency installations can be expedited for urgent projects in Sandton, Randburg, and surrounding areas.",
+    },
+    {
+      question: "Do you provide granite countertop maintenance services in Johannesburg?",
+      answer:
+        "Yes, we provide comprehensive maintenance services including granite sealing, polishing, chip repairs, and cleaning guidance. Granite should be sealed annually to maintain stain resistance, while quartz requires minimal maintenance. We offer maintenance packages for residential and commercial clients throughout Johannesburg. Our team provides detailed care instructions and can schedule regular maintenance visits to keep your countertops looking perfect for years.",
+    },
+    {
+      question: "What granite and quartz colors are popular in Johannesburg homes?",
+      answer:
+        "Popular granite colors in Johannesburg include Black Galaxy, Absolute Black, Kashmir White, and Tan Brown. For quartz, clients prefer Calacatta, Carrara, Pure White, and Grey options. We stock over 50 granite and quartz varieties at our showroom. Color selection depends on your kitchen design, lighting, and personal preference. Our design team provides samples and helps coordinate with your cabinetry and overall kitchen aesthetic for the perfect match.",
+    },
+  ]
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-stone-50 to-white">
+    <div className="min-h-screen">
       {/* Structured Data */}
       <script
         type="application/ld+json"
@@ -46,9 +130,9 @@ export default function QuartzGranitePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            name: "Quartz & Granite Countertops Johannesburg",
+            name: "Granite & Quartz Countertops Johannesburg",
             description:
-              "Professional quartz and granite countertop installation in Johannesburg. Kitchen countertops, bathroom vanities, and stone installations.",
+              "Professional granite and quartz countertop installation in Johannesburg including kitchen countertops, bathroom vanities, and custom stone work.",
             provider: {
               "@type": "LocalBusiness",
               name: "Granite Carpentry",
@@ -61,12 +145,12 @@ export default function QuartzGranitePage() {
                 addressCountry: "ZA",
               },
             },
-            areaServed: ["Johannesburg", "Sandton", "Randburg", "Pretoria", "Centurion"],
-            serviceType: "Quartz & Granite Installation",
+            areaServed: ["Johannesburg", "Sandton", "Randburg", "Midrand", "Centurion"],
+            serviceType: "Granite & Quartz Countertops",
             offers: {
               "@type": "Offer",
               priceCurrency: "ZAR",
-              priceRange: "R8000-R25000",
+              priceRange: "R1200-R5000",
               availability: "https://schema.org/InStock",
             },
           }),
@@ -74,75 +158,86 @@ export default function QuartzGranitePage() {
       />
 
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-stone-600/10 to-gray-600/10" />
-        <div className="relative max-w-7xl mx-auto">
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-black/20" />
+        <div className="relative container mx-auto px-4 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge variant="secondary" className="bg-stone-100 text-stone-800 border-stone-200">
-                  <Star className="w-4 h-4 mr-1 fill-current" />
-                  5-Star Rated Service
+                <Badge className="bg-amber-600 hover:bg-amber-700 text-white">
+                  <Gem className="h-3 w-3 mr-1" />
+                  Premium Stone Specialists
                 </Badge>
-                <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Quartz & Granite
-                  <span className="block text-stone-600">Countertops 2025</span>
+                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+                  Granite & <span className="text-amber-400">Quartz Countertops</span> Johannesburg
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
-                  Transform your kitchen and bathroom with premium quartz and granite countertops. Professional
-                  installation with precision templating and 12-month warranty.
+                <p className="text-xl text-slate-300 leading-relaxed">
+                  Transform your kitchen and bathroom with premium granite and quartz countertops. Professional
+                  installation, extensive stone selection, and guaranteed quality from Johannesburg's most trusted stone
+                  specialists.
                 </p>
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-stone-600 hover:bg-stone-700 text-white">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call 067 601 4490
+                <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-8">
+                  <Link href="/contact">
+                    Get Free Quote
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
                 </Button>
                 <Button
-                  size="lg"
+                  asChild
                   variant="outline"
-                  className="border-stone-600 text-stone-600 hover:bg-stone-50 bg-transparent"
+                  size="lg"
+                  className="text-lg px-8 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  Free Quote
-                  <ArrowRight className="w-5 h-5 ml-2" />
+                  <Link href="tel:+27676014490">
+                    <Phone className="mr-2 h-5 w-5" />
+                    067 601 4490
+                  </Link>
                 </Button>
               </div>
 
-              <div className="grid grid-cols-3 gap-6 pt-8">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-stone-600">47+</div>
-                  <div className="text-sm text-gray-600">Installations</div>
+              <div className="flex flex-wrap gap-6 text-sm">
+                <div className="flex items-center space-x-2">
+                  <Star className="h-4 w-4 text-amber-400 fill-current" />
+                  <span>5.0 Rating • 47+ Projects</span>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-stone-600">12</div>
-                  <div className="text-sm text-gray-600">Month Warranty</div>
+                <div className="flex items-center space-x-2">
+                  <Shield className="h-4 w-4 text-green-400" />
+                  <span>Licensed & Insured</span>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-stone-600">5.0</div>
-                  <div className="text-sm text-gray-600">Star Rating</div>
+                <div className="flex items-center space-x-2">
+                  <Award className="h-4 w-4 text-blue-400" />
+                  <span>24-Month Warranty</span>
                 </div>
               </div>
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/granite-countertop.jpg"
-                  alt="Professional quartz and granite countertop installation in Johannesburg"
-                  fill
-                  className="object-cover"
+                  alt="Premium Granite Countertops Johannesburg - Professional Installation"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
                   priority
                 />
-              </div>
-              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-stone-600" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-gray-900">Precision Installation</div>
-                    <div className="text-sm text-gray-600">Professional Templating</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="font-semibold text-slate-900">Latest Project</p>
+                        <p className="text-sm text-slate-600">Granite Kitchen - Sandton</p>
+                      </div>
+                      <div className="flex items-center space-x-1">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="h-4 w-4 text-amber-400 fill-current" />
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -151,92 +246,118 @@ export default function QuartzGranitePage() {
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Quartz & Granite Installation Services
+      {/* Expanded Content Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-8">
+              Premium Granite and Quartz Countertops in Johannesburg
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From kitchen countertops to bathroom vanities, we provide professional stone installation with precision
-              templating and expert craftsmanship.
+
+            <div className="prose prose-lg max-w-none text-slate-600 space-y-6">
+              <p>
+                Granite and quartz countertops have become the gold standard for luxury kitchens and bathrooms
+                throughout Johannesburg, Sandton, and Randburg. Our professional stone installation services cater to
+                homeowners who demand the perfect combination of beauty, durability, and functionality. With over 47
+                successful installations across the Greater Johannesburg area, we understand the unique requirements of
+                South African homes and the importance of quality craftsmanship that withstands our climate.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
+                Granite Countertops: Natural Beauty for Johannesburg Kitchens
+              </h3>
+              <p>
+                Granite countertops offer unmatched natural beauty with unique patterns that make each installation
+                truly one-of-a-kind. Popular granite varieties in Johannesburg include Black Galaxy, Absolute Black,
+                Kashmir White, and Tan Brown, each offering distinct characteristics that complement different kitchen
+                designs. Our granite sourcing network ensures access to premium slabs from quarries worldwide, while our
+                local fabrication facility in Johannesburg provides custom cutting, edge profiling, and polishing
+                services.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
+                Quartz Countertops: Engineered Perfection for Modern Homes
+              </h3>
+              <p>
+                Engineered quartz countertops provide consistent patterns, non-porous surfaces, and exceptional
+                durability that's perfect for busy Johannesburg households. Leading quartz brands like Caesarstone,
+                Silestone, and Compac offer extensive color selections that coordinate beautifully with contemporary
+                kitchen designs. Quartz countertops require minimal maintenance while providing superior stain and
+                scratch resistance, making them ideal for families in Sandton, Randburg, and Midrand.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
+                Professional Installation Process and Quality Assurance
+              </h3>
+              <p>
+                Our comprehensive installation process begins with precise templating using advanced measuring
+                technology to ensure perfect fit and alignment. Professional fabrication includes custom edge profiles,
+                sink cutouts, and specialized features like waterfall edges for kitchen islands. Installation is
+                performed by certified technicians who ensure seamless joints, proper support, and thorough cleanup.
+                Every project includes our 24-month warranty covering both materials and workmanship.
+              </p>
+
+              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
+                Maintenance and Care for Long-lasting Beauty
+              </h3>
+              <p>
+                Proper maintenance ensures your granite or quartz countertops maintain their beauty for decades. Granite
+                requires annual sealing to maintain stain resistance, while quartz surfaces need only regular cleaning
+                with mild soap and water. We provide detailed care instructions and offer maintenance services
+                throughout Johannesburg. Our team can perform granite resealing, polishing, and minor repairs to keep
+                your investment looking perfect.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stone Types Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 mb-16">
+            <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Our Services</Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">Premium Stone Solutions</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              From kitchen countertops to bathroom vanities, we provide comprehensive stone installation services with
+              premium materials and expert craftsmanship.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Gem className="w-8 h-8" />,
-                title: "Kitchen Countertops",
-                description:
-                  "Premium quartz and granite kitchen countertops with precision cutting and seamless installation.",
-                features: ["Precision templating", "Seamless joints", "Undermount sinks", "Edge profiling"],
-                image: "/granite-installation-Johannesburg.jpg",
-              },
-              {
-                icon: <Hammer className="w-8 h-8" />,
-                title: "Bathroom Vanities",
-                description: "Custom bathroom vanity tops with integrated basins and waterproof sealing.",
-                features: ["Integrated basins", "Waterproof sealing", "Custom sizing", "Modern finishes"],
-                image: "/bathroom-vanity (1).webp",
-              },
-              {
-                icon: <Palette className="w-8 h-8" />,
-                title: "Kitchen Islands",
-                description: "Stunning kitchen island tops with overhang support and premium stone selection.",
-                features: ["Overhang support", "Premium stones", "Custom shapes", "Breakfast bars"],
-                image: "/granitecarpentry.webp",
-              },
-              {
-                icon: <Wrench className="w-8 h-8" />,
-                title: "Granite Installation",
-                description: "Natural granite installation with professional sealing and lifetime beauty.",
-                features: ["Natural stone", "Professional sealing", "Heat resistant", "Unique patterns"],
-                image: "/granite-installation-sandton.jpg",
-              },
-              {
-                icon: <CheckCircle className="w-8 h-8" />,
-                title: "Quartz Installation",
-                description: "Engineered quartz countertops with consistent patterns and non-porous surfaces.",
-                features: ["Non-porous surface", "Consistent patterns", "Stain resistant", "Low maintenance"],
-                image: "/kitchen-renovation-granite-installation-johannesburg.jpg",
-              },
-              {
-                icon: <Shield className="w-8 h-8" />,
-                title: "Stone Restoration",
-                description:
-                  "Professional stone restoration, polishing, and sealing services for existing countertops.",
-                features: ["Stone polishing", "Chip repair", "Re-sealing", "Color restoration"],
-                image: "/modern-kitchen renovation.webp",
-              },
-            ].map((service, index) => (
+          <div className="grid md:grid-cols-2 gap-8">
+            {stoneTypes.map((type, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <CardHeader className="pb-4">
-                  <div className="w-16 h-16 bg-stone-100 rounded-xl flex items-center justify-center text-stone-600 mb-4 group-hover:bg-stone-600 group-hover:text-white transition-colors">
-                    {service.icon}
+                <div className="relative overflow-hidden rounded-t-lg">
+                  <Image
+                    src={type.image || "/placeholder.svg"}
+                    alt={type.title}
+                    width={500}
+                    height={300}
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-amber-600 text-white">{type.price}</Badge>
                   </div>
-                  <CardTitle className="text-xl font-bold text-gray-900">{service.title}</CardTitle>
-                  <CardDescription className="text-gray-600">{service.description}</CardDescription>
+                </div>
+                <CardHeader className="space-y-3">
+                  <CardTitle className="text-xl">{type.title}</CardTitle>
+                  <CardDescription className="text-slate-600">{type.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                    <Image
-                      src={service.image || "/placeholder.svg"}
-                      alt={service.title}
-                      width={400}
-                      height={300}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-sm text-gray-600">
-                        <CheckCircle className="w-4 h-4 text-stone-600 mr-2 flex-shrink-0" />
-                        {feature}
-                      </li>
+                  <div className="space-y-2">
+                    {type.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className="flex items-center space-x-2">
+                        <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-slate-600">{feature}</span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
+                  <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
+                    <Link href="/contact">
+                      Get Quote
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
                 </CardContent>
               </Card>
             ))}
@@ -244,245 +365,183 @@ export default function QuartzGranitePage() {
         </div>
       </section>
 
-      {/* Material Comparison */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Quartz vs Granite Comparison</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose the perfect stone for your project. Both materials offer unique benefits for different
-              applications.
+      {/* Process Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 mb-16">
+            <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Our Process</Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">Professional Stone Installation Process</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              From initial measurement to final installation, our streamlined process ensures perfect results and
+              complete customer satisfaction.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-0 shadow-lg">
-              <CardHeader className="text-center pb-6">
-                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Gem className="w-10 h-10 text-blue-600" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {process.map((step, index) => (
+              <div key={index} className="text-center space-y-4">
+                <div className="mx-auto w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                  {step.step}
                 </div>
-                <CardTitle className="text-2xl font-bold text-gray-900">Engineered Quartz</CardTitle>
-                <CardDescription className="text-gray-600">
-                  Modern engineered stone with consistent patterns
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                  <Image
-                    src="/kitchen-renovation-granite-installation-johannesburg.jpg"
-                    alt="Quartz countertop installation"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
+                <div>
+                  <h3 className="font-semibold text-lg text-slate-900 mb-2">{step.title}</h3>
+                  <p className="text-slate-600">{step.description}</p>
                 </div>
-                <div className="space-y-4">
-                  <h4 className="font-semibold text-gray-900">Benefits:</h4>
-                  <ul className="space-y-2">
-                    {[
-                      "Non-porous surface",
-                      "Consistent patterns",
-                      "Stain resistant",
-                      "Low maintenance",
-                      "Wide color selection",
-                      "Uniform thickness",
-                    ].map((benefit, idx) => (
-                      <li key={idx} className="flex items-center text-gray-600">
-                        <CheckCircle className="w-4 h-4 text-blue-600 mr-2 flex-shrink-0" />
-                        {benefit}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="pt-4">
-                    <div className="text-2xl font-bold text-blue-600">R450 - R850/m²</div>
-                    <div className="text-sm text-gray-600">Including installation</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg">
-              <CardHeader className="text-center pb-6">
-                <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Gem className="w-10 h-10 text-amber-600" />
-                </div>
-                <CardTitle className="text-2xl font-bold text-gray-900">Natural Granite</CardTitle>
-                <CardDescription className="text-gray-600">
-                  Natural stone with unique patterns and character
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                  <Image
-                    src="/granite-installation-sandton.jpg"
-                    alt="Granite countertop installation"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="space-y-4">
-                  <h4 className="font-semibold text-gray-900">Benefits:</h4>
-                  <ul className="space-y-2">
-                    {[
-                      "Natural beauty",
-                      "Heat resistant",
-                      "Unique patterns",
-                      "Durable surface",
-                      "Adds property value",
-                      "Timeless appeal",
-                    ].map((benefit, idx) => (
-                      <li key={idx} className="flex items-center text-gray-600">
-                        <CheckCircle className="w-4 h-4 text-amber-600 mr-2 flex-shrink-0" />
-                        {benefit}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="pt-4">
-                    <div className="text-2xl font-bold text-amber-600">R350 - R650/m²</div>
-                    <div className="text-sm text-gray-600">Including installation</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Installation Process */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Professional Installation Process</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our precision installation process ensures perfect fit and finish for your stone countertops.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-5 gap-8">
-            {[
-              {
-                step: "01",
-                title: "Site Measurement",
-                description: "Precise measurements and site assessment for accurate templating.",
-                icon: <Ruler className="w-6 h-6" />,
-              },
-              {
-                step: "02",
-                title: "Stone Selection",
-                description: "Choose from our extensive selection of premium quartz and granite slabs.",
-                icon: <Palette className="w-6 h-6" />,
-              },
-              {
-                step: "03",
-                title: "Template Creation",
-                description: "Create precise templates for perfect fit and seamless installation.",
-                icon: <Hammer className="w-6 h-6" />,
-              },
-              {
-                step: "04",
-                title: "Fabrication",
-                description: "Professional cutting, polishing, and edge profiling in our workshop.",
-                icon: <Wrench className="w-6 h-6" />,
-              },
-              {
-                step: "05",
-                title: "Installation",
-                description: "Expert installation with sealing and final quality inspection.",
-                icon: <CheckCircle className="w-6 h-6" />,
-              },
-            ].map((process, index) => (
-              <div key={index} className="text-center group">
-                <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-stone-600 rounded-full flex items-center justify-center text-white mx-auto group-hover:bg-stone-700 transition-colors">
-                    {process.icon}
-                  </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center text-stone-600 font-bold text-sm border-2 border-stone-600">
-                    {process.step}
-                  </div>
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">{process.title}</h3>
-                <p className="text-gray-600 text-sm">{process.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
+              <p className="text-xl text-slate-600">
+                Common questions about granite and quartz countertops in Johannesburg
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              {faqs.map((faq, index) => (
+                <div key={index} className="border-b border-slate-200 pb-8">
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">{faq.question}</h3>
+                  <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Areas Served */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Stone Installation Areas</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Professional quartz and granite installation throughout the Greater Johannesburg area.
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 mb-16">
+            <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Service Areas</Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">
+              Granite & Quartz Installation Throughout Johannesburg
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Professional stone installation services throughout Greater Johannesburg and surrounding areas in Gauteng.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              "Johannesburg South",
-              "Sandton",
-              "Randburg",
-              "Pretoria",
-              "Centurion",
-              "Midrand",
-              "Edenvale",
-              "Kempton Park",
-              "Boksburg",
-              "Roodepoort",
-              "Fourways",
-              "Alberton",
-            ].map((area, index) => (
-              <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
-                <MapPin className="w-8 h-8 text-stone-600 mx-auto mb-3" />
-                <h3 className="font-semibold text-gray-900">{area}</h3>
-                <p className="text-sm text-gray-600 mt-1">Quartz & Granite</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+            {areas.map((area, index) => (
+              <Card
+                key={index}
+                className="border-0 shadow-md hover:shadow-lg transition-all duration-300 hover:border-amber-200"
+              >
+                <CardContent className="p-4 text-center">
+                  <div className="flex items-center justify-center space-x-2">
+                    <MapPin className="h-4 w-4 text-amber-600" />
+                    <span className="font-medium text-slate-900">{area}</span>
+                  </div>
+                </CardContent>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-stone-600 to-gray-600">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Ready for Premium Stone Countertops?</h2>
-          <p className="text-xl text-stone-100 mb-8 max-w-2xl mx-auto">
-            Transform your kitchen and bathroom with professional quartz and granite installation. Get your free
-            consultation today.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-stone-600 hover:bg-gray-100">
-              <Phone className="w-5 h-5 mr-2" />
-              Call 067 601 4490
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-stone-600 bg-transparent"
-            >
-              <Mail className="w-5 h-5 mr-2" />
-              Email Quote
-            </Button>
+      {/* Related Services */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Related Services</h2>
+            <p className="text-xl text-slate-600">Complete your renovation with our additional services</p>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <Clock className="w-8 h-8 text-stone-200 mx-auto mb-3" />
-              <div className="text-white font-semibold">Quick Installation</div>
-              <div className="text-stone-100 text-sm">2-5 working days</div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Kitchen Renovations</h3>
+                <p className="text-slate-600 mb-6">
+                  Complete kitchen renovations with custom cabinets and granite countertops.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/services/kitchen-renovations">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Built-in Cupboards</h3>
+                <p className="text-slate-600 mb-6">
+                  Custom built-in cupboards and wardrobes to complement your stone surfaces.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/services/built-in-cupboards">View Options</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Decking & Flooring</h3>
+                <p className="text-slate-600 mb-6">
+                  Professional flooring installation to complete your home renovation.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/services/decking-flooring">Explore Flooring</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-br from-amber-600 to-amber-700 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-4xl mx-auto space-y-8">
+            <h2 className="text-3xl lg:text-4xl font-bold">Ready for Premium Stone Countertops?</h2>
+            <p className="text-xl text-amber-100">
+              Transform your kitchen or bathroom with premium granite and quartz countertops. Get a free consultation
+              and detailed quote from Johannesburg's most trusted stone specialists.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" variant="secondary" className="text-lg px-8">
+                <Link href="/contact">
+                  Get Free Quote
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="text-lg px-8 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent"
+              >
+                <Link href="tel:+27676014490">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call: 067 601 4490
+                </Link>
+              </Button>
             </div>
-            <div>
-              <Shield className="w-8 h-8 text-stone-200 mx-auto mb-3" />
-              <div className="text-white font-semibold">12-Month Warranty</div>
-              <div className="text-stone-100 text-sm">Installation guarantee</div>
-            </div>
-            <div>
-              <Star className="w-8 h-8 text-stone-200 mx-auto mb-3" />
-              <div className="text-white font-semibold">5-Star Service</div>
-              <div className="text-stone-100 text-sm">47+ satisfied customers</div>
+
+            <div className="flex flex-wrap justify-center gap-8 text-sm text-amber-100">
+              <div className="flex items-center space-x-2">
+                <Clock className="h-4 w-4" />
+                <span>Free Consultation</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Users className="h-4 w-4" />
+                <span>Expert Installation</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Wrench className="h-4 w-4" />
+                <span>Premium Materials</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Award className="h-4 w-4" />
+                <span>24-Month Warranty</span>
+              </div>
             </div>
           </div>
         </div>

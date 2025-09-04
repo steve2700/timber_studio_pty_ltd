@@ -281,9 +281,9 @@ export default function QuartzGranitePage() {
               <p>
                 Engineered quartz countertops provide consistent patterns, non-porous surfaces, and exceptional
                 durability that's perfect for busy Johannesburg households. Leading quartz brands like Caesarstone,
-                Silestone, and Compac offer extensive color selections that coordinate beautifully with contemporary
-                kitchen designs. Quartz countertops require minimal maintenance while providing superior stain and
-                scratch resistance, making them ideal for families in Sandton, Randburg, and Midrand.
+                Silestone, Compac, and Quantum Quartz offer extensive color selections that coordinate beautifully with
+                contemporary kitchen designs. Quartz countertops require minimal maintenance while providing superior
+                stain and scratch resistance, making them ideal for families in Sandton, Randburg, and Midrand.
               </p>
 
               <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
@@ -307,6 +307,196 @@ export default function QuartzGranitePage() {
                 throughout Johannesburg. Our team can perform granite resealing, polishing, and minor repairs to keep
                 your investment looking perfect.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Comprehensive Service Details */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-12 text-center">
+              Complete Granite and Quartz Services in Johannesburg
+            </h2>
+
+            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+              <div>
+                <h3 className="text-2xl font-bold text-slate-800 mb-6">Kitchen Countertop Specialists</h3>
+                <div className="prose prose-lg text-slate-600 space-y-4">
+                  <p>
+                    Our kitchen countertop services encompass everything from initial design consultation to final
+                    installation and aftercare. We understand that the kitchen is the heart of your Johannesburg home,
+                    which is why we offer comprehensive solutions that combine functionality with stunning aesthetics.
+                    Our team works with leading granite suppliers and quartz manufacturers to provide the widest
+                    selection of premium materials.
+                  </p>
+                  <p>
+                    Popular granite options for Johannesburg kitchens include Black Galaxy with its distinctive golden
+                    speckles, Absolute Black for modern minimalist designs, Kashmir White for traditional elegance, and
+                    Tan Brown for warm, inviting spaces. Each granite slab is unique, offering natural variations that
+                    make your countertop truly one-of-a-kind. Our experienced team helps you select the perfect slab
+                    that complements your kitchen design and lifestyle requirements.
+                  </p>
+                  <p>
+                    For quartz countertops, we partner with premium brands like Caesarstone, Silestone, Compac, and
+                    Quantum Quartz. These engineered surfaces offer consistent patterns, superior durability, and
+                    non-porous properties that make them ideal for busy family kitchens. Popular quartz colors in
+                    Johannesburg include Calacatta Gold, Pure White, Concrete, and various marble-look patterns that
+                    provide the beauty of natural stone without the maintenance requirements.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-slate-800 mb-6">Bathroom Vanity Excellence</h3>
+                <div className="prose prose-lg text-slate-600 space-y-4">
+                  <p>
+                    Bathroom vanity installations require specialized expertise due to the unique challenges of
+                    moisture, humidity, and daily use. Our bathroom granite and quartz solutions are designed to
+                    withstand the demanding South African climate while providing luxury and functionality. We offer
+                    custom edge profiles, integrated sink options, and specialized sealing treatments for bathroom
+                    applications.
+                  </p>
+                  <p>
+                    Granite bathroom vanities are particularly popular in Sandton and Randburg homes due to their
+                    natural beauty and heat resistance. We recommend specific granite varieties that perform
+                    exceptionally well in bathroom environments, including Absolute Black, Kashmir White, and Baltic
+                    Brown. These stones are naturally resistant to moisture and can be sealed with premium products for
+                    enhanced protection.
+                  </p>
+                  <p>
+                    Quartz bathroom vanities offer superior performance in high-moisture environments due to their
+                    non-porous nature. Unlike natural stone, quartz doesn't require sealing and is naturally resistant
+                    to bacteria and mold growth. This makes it an excellent choice for family bathrooms in Midrand,
+                    Fourways, and other Johannesburg suburbs where hygiene and low maintenance are priorities.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">
+                Advanced Fabrication and Installation Techniques
+              </h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="text-xl font-semibold text-slate-800 mb-4">Precision Templating Process</h4>
+                  <p className="text-slate-600 mb-4">
+                    Our templating process uses advanced laser measuring technology to create precise templates of your
+                    countertop space. This ensures perfect fit and eliminates costly mistakes during fabrication. We
+                    create detailed templates that account for appliance placement, plumbing fixtures, electrical
+                    outlets, and any architectural features that affect the installation.
+                  </p>
+                  <p className="text-slate-600">
+                    Digital templating allows us to provide accurate material calculations, reducing waste and ensuring
+                    cost-effective solutions for our Johannesburg clients. The precision of our templates enables
+                    seamless joints, perfect overhangs, and proper support placement for long-lasting installations.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-xl font-semibold text-slate-800 mb-4">Custom Edge Profiles and Features</h4>
+                  <p className="text-slate-600 mb-4">
+                    We offer extensive edge profile options including bullnose, beveled, ogee, waterfall, and custom
+                    profiles designed to complement your kitchen or bathroom design. Waterfall edges are particularly
+                    popular in modern Sandton homes, creating dramatic visual impact and showcasing the beauty of the
+                    stone material.
+                  </p>
+                  <p className="text-slate-600">
+                    Additional custom features include integrated drainboards, decorative inlays, custom cutouts for
+                    specialized appliances, and undermount sink preparations. Our fabrication facility is equipped with
+                    CNC machinery that enables precise cutting and shaping for even the most complex designs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location-Specific Services */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-12 text-center">
+              Serving Greater Johannesburg and Surrounding Areas
+            </h2>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              <div className="bg-slate-50 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Johannesburg Central & South</h3>
+                <p className="text-slate-600 mb-4">
+                  Serving the heart of Johannesburg with premium granite and quartz installations. Our central location
+                  enables quick response times and efficient service delivery throughout the CBD and southern suburbs.
+                </p>
+                <ul className="text-sm text-slate-600 space-y-1">
+                  <li>• Same-day consultations available</li>
+                  <li>• Emergency repair services</li>
+                  <li>• Commercial and residential projects</li>
+                  <li>• Heritage home specialists</li>
+                </ul>
+              </div>
+
+              <div className="bg-slate-50 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Sandton & Northern Suburbs</h3>
+                <p className="text-slate-600 mb-4">
+                  Luxury granite and quartz solutions for Sandton's premium properties. We understand the high standards
+                  expected in these areas and deliver accordingly with premium materials and flawless execution.
+                </p>
+                <ul className="text-sm text-slate-600 space-y-1">
+                  <li>• Luxury home specialists</li>
+                  <li>• Premium material selection</li>
+                  <li>• White-glove service</li>
+                  <li>• Architect and designer partnerships</li>
+                </ul>
+              </div>
+
+              <div className="bg-slate-50 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">East Rand & Pretoria</h3>
+                <p className="text-slate-600 mb-4">
+                  Comprehensive coverage extending to Kempton Park, Boksburg, Centurion, and Pretoria. Our mobile
+                  service ensures the same quality and professionalism regardless of location.
+                </p>
+                <ul className="text-sm text-slate-600 space-y-1">
+                  <li>• Extended service area coverage</li>
+                  <li>• Mobile consultation services</li>
+                  <li>• Flexible scheduling options</li>
+                  <li>• Local supplier partnerships</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-6">Why Choose Our Granite and Quartz Services?</h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div>
+                  <h4 className="font-semibold mb-2">Local Expertise</h4>
+                  <p className="text-slate-300 text-sm">
+                    Deep understanding of Johannesburg's architectural styles, climate considerations, and local
+                    preferences.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Quality Materials</h4>
+                  <p className="text-slate-300 text-sm">
+                    Direct relationships with premium suppliers ensure access to the finest granite and quartz
+                    materials.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Skilled Craftsmen</h4>
+                  <p className="text-slate-300 text-sm">
+                    Experienced fabricators and installers with years of specialized training in stone work.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Complete Service</h4>
+                  <p className="text-slate-300 text-sm">
+                    From design consultation to final installation and ongoing maintenance support.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

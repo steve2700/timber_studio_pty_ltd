@@ -1,66 +1,374 @@
 import type { Metadata } from "next"
-import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, ArrowRight, Phone, Star, Award, Shield, Clock, Users } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { CheckCircle, Star, Shield, Award, Phone } from "lucide-react"
+import { FAQAccordion } from "@/components/faq-accordion"
 
 export const metadata: Metadata = {
-  title: "Kitchen Renovations Johannesburg 2025 | #1 Rated Kitchen Renovation Company",
+  title: "Kitchen Renovations Johannesburg | Expert Kitchen Remodeling Services",
   description:
-    "Transform your kitchen with Johannesburg's #1 kitchen renovation company. Professional kitchen remodeling, custom cabinets, granite countertops. 5-star rated with 47+ projects. Free quotes. Call 067 601 4490.",
+    "Transform your kitchen with our expert renovation services in Johannesburg, Sandton, Randburg & Midrand. Custom designs, quality materials, professional installation.",
   keywords:
-    "kitchen renovations Johannesburg 2025, kitchen renovation company Johannesburg, kitchen remodeling Johannesburg, custom kitchen cabinets Johannesburg, granite countertops kitchen, kitchen makeover Johannesburg, affordable kitchen renovation, professional kitchen renovation Sandton, kitchen renovation Randburg, modern kitchen design Johannesburg",
-  robots: "index, follow",
+    "kitchen renovations johannesburg, kitchen remodeling sandton, kitchen renovation randburg, kitchen design midrand, custom kitchens gauteng",
   openGraph: {
-    title: "Kitchen Renovations Johannesburg 2025 | #1 Rated Company",
+    title: "Kitchen Renovations Johannesburg | Expert Kitchen Remodeling Services",
     description:
-      "Transform your kitchen with Johannesburg's #1 kitchen renovation company. Custom cabinets, granite countertops, professional installation. 5-star rated service.",
-    url: "https://granitecarpentry.co.za/services/kitchen-renovations",
-    siteName: "Granite Carpentry",
-    images: [
-      {
-        url: "https://granitecarpentry.co.za/Kitchen-renovations-sandton.webp",
-        width: 1200,
-        height: 630,
-        alt: "Kitchen Renovations Johannesburg - Professional Kitchen Remodeling",
-      },
-    ],
-    locale: "en_ZA",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://granitecarpentry.co.za/services/kitchen-renovations",
+      "Transform your kitchen with our expert renovation services in Johannesburg, Sandton, Randburg & Midrand. Custom designs, quality materials, professional installation.",
+    images: ["/Kitchen-renovations-sandton.webp"],
   },
 }
 
-export default function KitchenRenovationsPage() {
-  const faqs = [
-    {
-      question: "How long does a kitchen renovation take in Johannesburg?",
-      answer:
-        "A typical kitchen renovation in Johannesburg takes 2-4 weeks depending on the scope of work. Simple cabinet replacements can be completed in 1-2 weeks, while full renovations with granite countertops, plumbing, and electrical work may take 3-4 weeks. We provide detailed timelines during our free consultation and keep you informed throughout the process.",
-    },
-    {
-      question: "What is the average cost of kitchen renovations in Johannesburg?",
-      answer:
-        "Kitchen renovation costs in Johannesburg vary based on size and materials. Basic renovations start from R45,000, mid-range renovations range from R80,000-R150,000, and luxury kitchen renovations can cost R200,000+. This includes custom cabinets, granite countertops, appliances, and professional installation. We provide detailed quotes with no hidden costs.",
-    },
-    {
-      question: "Do you provide kitchen design services in Sandton and Randburg?",
-      answer:
-        "Yes, we provide comprehensive kitchen design services throughout Johannesburg, including Sandton, Randburg, Midrand, and surrounding areas. Our design team creates 3D renderings, helps with material selection, and ensures optimal space utilization. Design consultation is included free with every kitchen renovation project.",
-    },
-    {
-      question: "What warranty do you offer on kitchen renovations?",
-      answer:
-        "We provide a comprehensive 24-month warranty on all kitchen renovation work, including cabinets, granite countertops, and installation. This covers workmanship defects and ensures your investment is protected. We also provide ongoing support and maintenance advice to keep your kitchen looking perfect for years to come.",
-    },
-  ]
+const kitchenFAQs = [
+  {
+    question: "How long does a typical kitchen renovation take in Johannesburg?",
+    answer:
+      "A complete kitchen renovation typically takes 3-6 weeks depending on the scope of work. Simple updates like cabinet refacing and countertop replacement can be completed in 1-2 weeks, while full renovations with plumbing and electrical work may take 6-8 weeks. We provide detailed timelines during our initial consultation and keep you updated throughout the process.",
+  },
+  {
+    question: "What's included in your kitchen renovation services?",
+    answer:
+      "Our comprehensive kitchen renovation services include design consultation, custom cabinetry, countertop installation (granite, quartz, marble), plumbing and electrical work, flooring installation, painting, lighting installation, and project management. We handle everything from initial design to final cleanup, ensuring a seamless renovation experience.",
+  },
+  {
+    question: "Do you provide kitchen design services in Sandton and Randburg?",
+    answer:
+      "Yes, we provide complete kitchen design services throughout Johannesburg, including Sandton, Randburg, Midrand, and surrounding areas. Our experienced designers work with you to create functional, beautiful kitchens that match your lifestyle and budget. We use 3D modeling to help you visualize your new kitchen before construction begins.",
+  },
+  {
+    question: "What types of kitchen countertops do you install?",
+    answer:
+      "We specialize in premium countertop materials including granite, quartz, marble, and engineered stone. Each material offers unique benefits - granite provides natural beauty and durability, quartz offers low maintenance and consistency, while marble adds luxury and elegance. We help you choose the best option based on your cooking habits, maintenance preferences, and budget.",
+  },
+]
 
+export default function KitchenRenovationsPage() {
   return (
-    <>
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      {/* Hero Section */}
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">Kitchen Renovation Specialists</Badge>
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                Transform Your Kitchen with Expert Renovations in Johannesburg
+              </h1>
+              <p className="text-xl text-gray-600 mb-8">
+                Create the kitchen of your dreams with our comprehensive renovation services. From custom cabinetry to
+                premium countertops, we deliver exceptional results throughout Johannesburg, Sandton, Randburg, and
+                Midrand.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Get Free Quote
+                </Button>
+                <Button variant="outline" size="lg" asChild>
+                  <Link href="/portfolio">View Our Work</Link>
+                </Button>
+              </div>
+              <div className="flex items-center gap-6 text-sm text-gray-600">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="h-5 w-5 text-green-600" />
+                  <span>15+ Years Experience</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Shield className="h-5 w-5 text-blue-600" />
+                  <span>Fully Insured</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Award className="h-5 w-5 text-yellow-600" />
+                  <span>Quality Guaranteed</span>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                src="/Kitchen-renovations-sandton.webp"
+                alt="Modern kitchen renovation in Sandton showing custom cabinetry and granite countertops"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-2xl"
+                priority
+              />
+              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
+                <div className="flex items-center gap-2 mb-2">
+                  <Star className="h-5 w-5 text-yellow-500 fill-current" />
+                  <Star className="h-5 w-5 text-yellow-500 fill-current" />
+                  <Star className="h-5 w-5 text-yellow-500 fill-current" />
+                  <Star className="h-5 w-5 text-yellow-500 fill-current" />
+                  <Star className="h-5 w-5 text-yellow-500 fill-current" />
+                </div>
+                <p className="text-sm font-semibold">500+ Happy Customers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Complete Kitchen Renovation Services</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              From initial design to final installation, we handle every aspect of your kitchen renovation with
+              precision and care. Our experienced team delivers exceptional results that exceed expectations.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-blue-600" />
+                  Custom Kitchen Design
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Personalized kitchen designs that maximize space, functionality, and style. Our designers work closely
+                  with you to create the perfect layout for your lifestyle.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-blue-600" />
+                  Premium Cabinetry
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Custom-built cabinets using high-quality materials and hardware. Choose from various styles, finishes,
+                  and storage solutions to suit your needs.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-blue-600" />
+                  Countertop Installation
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Professional installation of granite, quartz, and marble countertops. Precision cutting and seamless
+                  installation for a flawless finish.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-blue-600" />
+                  Plumbing & Electrical
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Complete plumbing and electrical services for your kitchen renovation. Licensed professionals ensure
+                  all work meets safety standards and building codes.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-blue-600" />
+                  Flooring Installation
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Professional installation of tiles, hardwood, laminate, and luxury vinyl flooring. Durable, beautiful
+                  floors that complement your kitchen design.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-blue-600" />
+                  Project Management
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Comprehensive project management from start to finish. We coordinate all trades, manage timelines, and
+                  ensure quality at every stage.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Kitchen Renovation Process</h2>
+            <p className="text-lg text-gray-600">
+              A streamlined approach that ensures your kitchen renovation is completed on time, within budget, and to
+              the highest standards.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                1
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Consultation & Design</h3>
+              <p className="text-gray-600">
+                Initial consultation to understand your needs, preferences, and budget. Our designers create detailed
+                plans and 3D renderings.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                2
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Planning & Permits</h3>
+              <p className="text-gray-600">
+                Detailed project planning, material selection, and obtaining necessary permits. We handle all the
+                paperwork and approvals.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                3
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Construction</h3>
+              <p className="text-gray-600">
+                Professional construction and installation by our experienced team. Regular updates and quality checks
+                throughout the process.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                4
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Final Inspection</h3>
+              <p className="text-gray-600">
+                Thorough final inspection, cleanup, and walkthrough. We ensure everything meets our high standards
+                before completion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Recent Kitchen Renovations</h2>
+            <p className="text-lg text-gray-600">
+              See some of our recent kitchen renovation projects in Johannesburg and surrounding areas.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="relative group overflow-hidden rounded-lg">
+              <Image
+                src="/modern-kitchen renovation.webp"
+                alt="Modern kitchen renovation with white cabinets and granite countertops"
+                width={400}
+                height={300}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <p className="text-white font-semibold">Modern Kitchen - Sandton</p>
+              </div>
+            </div>
+
+            <div className="relative group overflow-hidden rounded-lg">
+              <Image
+                src="/kitchen-renovation-granite-installation-johannesburg.jpg"
+                alt="Kitchen renovation with granite installation in Johannesburg"
+                width={400}
+                height={300}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <p className="text-white font-semibold">Granite Kitchen - Johannesburg</p>
+              </div>
+            </div>
+
+            <div className="relative group overflow-hidden rounded-lg">
+              <Image
+                src="/carpenter-johannesburg-installing-kitchen-cupboards.jpg"
+                alt="Professional carpenter installing kitchen cupboards in Johannesburg"
+                width={400}
+                height={300}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <p className="text-white font-semibold">Custom Cupboards - Randburg</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <Button variant="outline" size="lg" asChild>
+              <Link href="/portfolio">View Complete Portfolio</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-lg text-gray-600">
+              Get answers to common questions about our kitchen renovation services.
+            </p>
+          </div>
+          <FAQAccordion faqs={kitchenFAQs} />
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-600">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">Ready to Transform Your Kitchen?</h2>
+          <p className="text-xl text-blue-100 mb-8">
+            Contact us today for a free consultation and quote. Let's create the kitchen of your dreams together.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" variant="secondary">
+              <Phone className="mr-2 h-5 w-5" />
+              Call (011) 234-5678
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-white border-white hover:bg-white hover:text-blue-600 bg-transparent"
+              asChild
+            >
+              <Link href="/contact">Get Free Quote</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Structured Data */}
       <script
         type="application/ld+json"
@@ -70,630 +378,17 @@ export default function KitchenRenovationsPage() {
             "@type": "Service",
             name: "Kitchen Renovations Johannesburg",
             description:
-              "Professional kitchen renovation services in Johannesburg including custom cabinets, granite countertops, and complete kitchen remodeling.",
+              "Expert kitchen renovation services in Johannesburg, Sandton, Randburg, and Midrand. Custom designs, quality materials, professional installation.",
             provider: {
-              "@type": "LocalBusiness",
-              name: "Granite Carpentry",
-              telephone: "+27676014490",
-              email: "info@granitecarpentry.co.za",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Johannesburg",
-                addressRegion: "Gauteng",
-                addressCountry: "ZA",
-              },
+              "@type": "Organization",
+              name: "Granite Carpentry & Joinery Experts",
+              url: "https://granitejoineryexperts.co.za",
             },
-            areaServed: ["Johannesburg", "Sandton", "Randburg", "Pretoria", "Centurion"],
+            areaServed: ["Johannesburg", "Sandton", "Randburg", "Midrand", "Gauteng"],
             serviceType: "Kitchen Renovation",
-            offers: {
-              "@type": "Offer",
-              priceCurrency: "ZAR",
-              priceRange: "R45000-R300000",
-              availability: "https://schema.org/InStock",
-            },
           }),
         }}
       />
-
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-50 to-slate-100 py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="flex items-center mb-4">
-                <Badge variant="secondary" className="bg-amber-100 text-amber-800 px-3 py-1">
-                  #1 Kitchen Renovation Company
-                </Badge>
-              </div>
-              <div className="flex items-center mb-4">
-                <div className="flex text-amber-400 mr-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-current" />
-                  ))}
-                </div>
-                <span className="text-slate-600 font-medium">5.0 Rating • 47+ Kitchen Projects</span>
-              </div>
-
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-800 mb-6 leading-tight">
-                Kitchen <span className="text-amber-600">Renovations</span> Johannesburg 2025
-              </h1>
-
-              <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                Transform your kitchen into the heart of your home with Johannesburg's most trusted kitchen renovation
-                specialists. Custom cabinets, granite countertops, and complete kitchen makeovers with guaranteed
-                results.
-              </p>
-
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-slate-700 font-medium">Free Design Consultation</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-slate-700 font-medium">24-Month Warranty</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-slate-700 font-medium">Licensed & Insured</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-slate-700 font-medium">5-Star Rated Service</span>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4">
-                  <Link href="/contact">
-                    Get Free Kitchen Quote
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                </Button>
-                <Button size="lg" variant="outline" asChild className="text-lg px-8 py-4 bg-transparent">
-                  <a href="tel:+27676014490">
-                    <Phone className="mr-2 w-5 h-5" />
-                    Call: 067 601 4490
-                  </a>
-                </Button>
-              </div>
-
-              <div className="flex items-center space-x-6 text-slate-600">
-                <div className="flex items-center">
-                  <Award className="w-5 h-5 text-amber-600 mr-2" />
-                  <span className="text-sm">Award-Winning Design</span>
-                </div>
-                <div className="flex items-center">
-                  <Shield className="w-5 h-5 text-green-600 mr-2" />
-                  <span className="text-sm">Fully Insured</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <Image
-                src="/Kitchen-renovations-sandton.webp"
-                alt="Professional kitchen renovations Johannesburg - modern kitchen design with granite countertops"
-                width={800}
-                height={600}
-                className="rounded-lg shadow-2xl w-full h-auto"
-                priority
-              />
-              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white p-4 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold text-slate-800">47+</div>
-                <div className="text-slate-600 text-sm">Kitchen Projects</div>
-              </div>
-              <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 bg-amber-600 text-white p-3 rounded-lg shadow-lg">
-                <div className="text-lg font-bold">#1</div>
-                <div className="text-xs">Rated Company</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Kitchen Renovation Services */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Complete Kitchen Renovation Services</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              From design to installation, we handle every aspect of your kitchen renovation with professional expertise
-              and attention to detail.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-shadow border-2 hover:border-amber-200">
-              <CardHeader>
-                <CardTitle className="text-xl text-slate-800">Custom Kitchen Cabinets</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/carpenter-johannesburg-installing-kitchen-cupboards.jpg"
-                  alt="Custom kitchen cabinets installation Johannesburg"
-                  width={400}
-                  height={250}
-                  className="rounded-lg mb-4 w-full h-48 object-cover"
-                />
-                <p className="text-slate-600 mb-4">
-                  Bespoke kitchen cabinets designed and built to maximize your space and match your style perfectly.
-                </p>
-                <ul className="space-y-2 text-slate-600 mb-6">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Soft-close hinges and drawers
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Premium quality materials
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Custom storage solutions
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Modern and traditional styles
-                  </li>
-                </ul>
-                <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="/contact">Get Cabinet Quote</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-shadow border-2 hover:border-amber-200">
-              <CardHeader>
-                <CardTitle className="text-xl text-slate-800">Granite Countertops</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/granitecarpentry.webp"
-                  alt="Granite countertops installation kitchen renovation Johannesburg"
-                  width={400}
-                  height={250}
-                  className="rounded-lg mb-4 w-full h-48 object-cover"
-                />
-                <p className="text-slate-600 mb-4">
-                  Premium granite and quartz countertops that combine beauty with durability for your dream kitchen.
-                </p>
-                <ul className="space-y-2 text-slate-600 mb-6">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Wide selection of colors
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Professional templating
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Precision cutting and fitting
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Heat and stain resistant
-                  </li>
-                </ul>
-                <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="/services/quartz-granite">View Stone Options</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-shadow border-2 hover:border-amber-200">
-              <CardHeader>
-                <CardTitle className="text-xl text-slate-800">Kitchen Islands & Bars</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/modern-kitchen renovation.webp"
-                  alt="Kitchen island installation Johannesburg - custom kitchen renovation"
-                  width={400}
-                  height={250}
-                  className="rounded-lg mb-4 w-full h-48 object-cover"
-                />
-                <p className="text-slate-600 mb-4">
-                  Custom kitchen islands and breakfast bars that become the centerpiece of your renovated kitchen.
-                </p>
-                <ul className="space-y-2 text-slate-600 mb-6">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Additional storage space
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Integrated electrical outlets
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Seating and dining options
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Custom size and design
-                  </li>
-                </ul>
-                <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="/contact">Design My Island</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Expanded Content Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-8">
-              Why Choose Professional Kitchen Renovations in Johannesburg?
-            </h2>
-
-            <div className="prose prose-lg max-w-none text-slate-600 space-y-6">
-              <p>
-                Kitchen renovations in Johannesburg have become increasingly popular as homeowners recognize the value
-                of investing in their most important living space. A well-designed kitchen renovation not only enhances
-                your daily cooking experience but also significantly increases your property value. Our team of
-                experienced kitchen renovation specialists understands the unique challenges and opportunities that come
-                with renovating kitchens in Johannesburg's diverse architectural styles.
-              </p>
-
-              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
-                Modern Kitchen Design Trends in Johannesburg
-              </h3>
-              <p>
-                Contemporary kitchen renovations in Johannesburg are embracing open-plan designs that seamlessly
-                integrate with living areas. Popular trends include waterfall granite countertops, handleless cabinet
-                designs, and smart storage solutions that maximize space efficiency. Our kitchen renovation team stays
-                current with international design trends while incorporating elements that suit South African lifestyles
-                and climate considerations.
-              </p>
-
-              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">Kitchen Renovation Process and Timeline</h3>
-              <p>
-                Our comprehensive kitchen renovation process begins with a detailed consultation where we assess your
-                current space, discuss your vision, and provide expert recommendations. The typical kitchen renovation
-                timeline in Johannesburg ranges from 2-4 weeks, depending on the scope of work. We coordinate all
-                aspects including plumbing, electrical work, cabinet installation, and granite countertop fitting to
-                ensure minimal disruption to your daily routine.
-              </p>
-
-              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">Quality Materials and Craftsmanship</h3>
-              <p>
-                We source premium materials from trusted suppliers throughout Johannesburg and Gauteng. Our kitchen
-                cabinets are manufactured using high-quality melamine and solid wood options, while our granite and
-                quartz countertops are selected from the finest stone suppliers in the region. Every kitchen renovation
-                project includes professional installation with attention to detail that ensures lasting quality and
-                customer satisfaction.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Kitchen Renovation Process */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Our Kitchen Renovation Process</h2>
-            <p className="text-xl text-slate-600">
-              From initial consultation to final installation, we guide you through every step
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-amber-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
-                1
-              </div>
-              <h3 className="text-xl font-bold text-slate-800 mb-4">Free Consultation</h3>
-              <p className="text-slate-600">
-                We visit your home to assess your space, discuss your vision, and provide expert recommendations for
-                your kitchen renovation.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-20 h-20 bg-amber-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
-                2
-              </div>
-              <h3 className="text-xl font-bold text-slate-800 mb-4">Design & Quote</h3>
-              <p className="text-slate-600">
-                Our team creates detailed designs and provides transparent pricing for your complete kitchen renovation
-                project.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-20 h-20 bg-amber-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
-                3
-              </div>
-              <h3 className="text-xl font-bold text-slate-800 mb-4">Professional Installation</h3>
-              <p className="text-slate-600">
-                Our skilled craftsmen handle all aspects of installation, from cabinets to countertops, with minimal
-                disruption to your home.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-20 h-20 bg-amber-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
-                4
-              </div>
-              <h3 className="text-xl font-bold text-slate-800 mb-4">Final Inspection</h3>
-              <p className="text-slate-600">
-                We conduct a thorough inspection with you to ensure every detail meets our high standards and your
-                complete satisfaction.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-6">
-                Why Choose Granite Carpentry for Your Kitchen Renovation?
-              </h2>
-              <p className="text-xl text-slate-600 mb-8">
-                With 47+ successful kitchen renovations across Johannesburg, we're the trusted choice for homeowners who
-                demand excellence.
-              </p>
-
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Star className="w-6 h-6 text-green-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-800 mb-2">5-Star Customer Satisfaction</h3>
-                    <p className="text-slate-600">
-                      Every kitchen renovation project is completed to the highest standards, earning us consistent
-                      5-star reviews from satisfied customers.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Users className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-800 mb-2">Expert Kitchen Specialists</h3>
-                    <p className="text-slate-600">
-                      Our team specializes exclusively in kitchen renovations, bringing years of experience and
-                      expertise to every project.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-amber-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-800 mb-2">On-Time Project Completion</h3>
-                    <p className="text-slate-600">
-                      We understand the importance of your kitchen, which is why we complete renovations on schedule
-                      with minimal disruption.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Shield className="w-6 h-6 text-purple-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-800 mb-2">Comprehensive Warranty</h3>
-                    <p className="text-slate-600">
-                      All kitchen renovation work comes with our 24-month warranty, giving you peace of mind and
-                      protection for your investment.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <Image
-                src="/kitchen-renovation-granite-installation-johannesburg.jpg"
-                alt="Professional kitchen renovation team Johannesburg - expert installation"
-                width={600}
-                height={500}
-                className="rounded-lg shadow-xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <div className="text-3xl font-bold">47+</div>
-                <div className="text-lg">Kitchen Renovations Completed</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Frequently Asked Questions</h2>
-              <p className="text-xl text-slate-600">Common questions about kitchen renovations in Johannesburg</p>
-            </div>
-
-            <div className="space-y-8">
-              {faqs.map((faq, index) => (
-                <div key={index} className="border-b border-slate-200 pb-8">
-                  <h3 className="text-xl font-bold text-slate-800 mb-4">{faq.question}</h3>
-                  <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Areas */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
-              Kitchen Renovations Across Johannesburg
-            </h2>
-            <p className="text-xl text-slate-600">
-              Professional kitchen renovation services throughout the Greater Johannesburg area
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {[
-              "Johannesburg South",
-              "Sandton",
-              "Rosebank",
-              "Randburg",
-              "Fourways",
-              "Kempton Park",
-              "Boksburg",
-              "Pretoria",
-              "Centurion",
-              "Midrand",
-              "Edenvale",
-              "Roodepoort",
-              "Alberton",
-              "Benoni",
-              "Germiston",
-              "Bedfordview",
-              "Bryanston",
-              "Hyde Park",
-              "Illovo",
-              "Melrose",
-              "Morningside",
-              "Rivonia",
-              "Sunninghill",
-              "Woodmead",
-            ].map((area) => (
-              <Card key={area} className="text-center hover:shadow-lg transition-shadow p-3">
-                <CardContent className="p-2">
-                  <h3 className="font-semibold text-slate-800 text-sm">{area}</h3>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <p className="text-slate-600 mb-6">
-              Don't see your area listed? We serve the entire Greater Johannesburg region.
-            </p>
-            <Button asChild variant="outline" size="lg">
-              <Link href="/contact">Check Service Availability</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Services */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Related Services</h2>
-            <p className="text-xl text-slate-600">Complete your kitchen renovation with our additional services</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-slate-800 mb-4">Built-in Cupboards</h3>
-                <p className="text-slate-600 mb-6">
-                  Maximize your kitchen storage with custom built-in cupboards and pantry solutions.
-                </p>
-                <Button asChild variant="outline">
-                  <Link href="/services/built-in-cupboards">Learn More</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-slate-800 mb-4">Granite Countertops</h3>
-                <p className="text-slate-600 mb-6">
-                  Premium granite and quartz countertops for your kitchen renovation project.
-                </p>
-                <Button asChild variant="outline">
-                  <Link href="/services/quartz-granite">View Options</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-slate-800 mb-4">Decking & Flooring</h3>
-                <p className="text-slate-600 mb-6">
-                  Complete your home renovation with professional flooring installation services.
-                </p>
-                <Button asChild variant="outline">
-                  <Link href="/services/decking-flooring">Explore Flooring</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ready to Transform Your Kitchen?</h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Join 47+ satisfied customers who chose Granite Carpentry for their kitchen renovation. Get your free
-            consultation and quote today.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto mb-8">
-            <Button size="lg" asChild className="bg-white text-amber-600 hover:bg-slate-50 text-lg px-8">
-              <Link href="/contact">
-                Get Free Kitchen Quote
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-            </Button>
-            <Button
-              size="lg"
-              asChild
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 bg-transparent"
-            >
-              <a href="tel:+27676014490">
-                <Phone className="mr-2 w-5 h-5" />
-                Call: 067 601 4490
-              </a>
-            </Button>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto text-center">
-            <div>
-              <div className="text-2xl font-bold">47+</div>
-              <div className="text-amber-100 text-sm">Kitchen Projects</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold">5.0</div>
-              <div className="text-amber-100 text-sm">Star Rating</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold">24</div>
-              <div className="text-amber-100 text-sm">Month Warranty</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold">100%</div>
-              <div className="text-amber-100 text-sm">Satisfaction</div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+    </div>
   )
 }

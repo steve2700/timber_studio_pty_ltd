@@ -1,160 +1,441 @@
 import type { Metadata } from "next"
-import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import Link from "next/link"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import {
-  Phone,
-  Star,
-  CheckCircle,
-  ArrowRight,
-  Ruler,
-  Palette,
-  Shield,
-  Clock,
-  Award,
-  MapPin,
-  Calculator,
-  Users,
-  Wrench,
-} from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { CheckCircle, Star, Shield, Award, Phone } from "lucide-react"
+import { FAQAccordion } from "@/components/faq-accordion"
 
 export const metadata: Metadata = {
-  title: "Built-in Cupboards Johannesburg 2025 | Custom Wardrobes & Storage",
+  title: "Built-in Cupboards Johannesburg | Custom Wardrobes & Storage Solutions",
   description:
-    "Professional built-in cupboards & custom wardrobes in Johannesburg. Bedroom cupboards, study units, kitchen pantries. 5-star service, 24-month warranty. Free quotes. Call 067 601 4490.",
+    "Expert built-in cupboard installation in Johannesburg, Sandton, Randburg & Midrand. Custom wardrobes, bedroom cupboards, and storage solutions. Quality guaranteed.",
   keywords:
-    "built-in cupboards Johannesburg, custom wardrobes Johannesburg, bedroom cupboards Johannesburg, built-in wardrobes Sandton, custom cupboards Randburg, study units Johannesburg, kitchen pantry cupboards, walk-in closets Johannesburg, built-in storage solutions, custom furniture Johannesburg, wardrobe installation Johannesburg, cupboard makers Johannesburg, built-in bedroom furniture, custom storage Johannesburg, wardrobe designers Johannesburg",
+    "built-in cupboards johannesburg, custom wardrobes sandton, bedroom cupboards randburg, built-in storage midrand, fitted wardrobes gauteng",
   openGraph: {
-    title: "Built-in Cupboards Johannesburg 2025 | Custom Wardrobes & Storage Solutions",
+    title: "Built-in Cupboards Johannesburg | Custom Wardrobes & Storage Solutions",
     description:
-      "Professional built-in cupboards & custom wardrobes in Johannesburg. 5-star service, 24-month warranty. Free quotes available.",
-    images: [{ url: "/Built-Built-in-Cupboards-Midrand.jpg", width: 1200, height: 630 }],
-  },
-  alternates: {
-    canonical: "https://granitecarpentry.co.za/services/built-in-cupboards",
+      "Expert built-in cupboard installation in Johannesburg, Sandton, Randburg & Midrand. Custom wardrobes, bedroom cupboards, and storage solutions. Quality guaranteed.",
+    images: ["/Custom-Bedroom-Built-In-Cupboards-and-Wardrobes-JHB.png"],
   },
 }
 
+const cupboardFAQs = [
+  {
+    question: "What types of built-in cupboards do you install in Johannesburg?",
+    answer:
+      "We specialize in all types of built-in storage solutions including bedroom wardrobes, walk-in closets, study cupboards, linen cupboards, entertainment units, and custom storage solutions. Our designs are tailored to maximize space utilization while complementing your home's aesthetic. We work with various materials including melamine, wood veneer, and solid wood finishes.",
+  },
+  {
+    question: "How long does it take to install built-in cupboards?",
+    answer:
+      "Installation time varies depending on the size and complexity of the project. Simple bedroom wardrobes typically take 2-3 days, while larger walk-in closets or multiple room installations may take 1-2 weeks. We provide accurate timelines during our initial consultation and work efficiently to minimize disruption to your daily routine.",
+  },
+  {
+    question: "Do you provide design services for custom wardrobes in Sandton?",
+    answer:
+      "Yes, we offer comprehensive design services throughout Johannesburg, including Sandton, Randburg, and Midrand. Our experienced designers visit your home to assess the space, understand your storage needs, and create custom solutions that maximize functionality. We provide detailed drawings and 3D visualizations to help you see the final result before installation begins.",
+  },
+  {
+    question: "What materials and finishes are available for built-in cupboards?",
+    answer:
+      "We offer a wide range of materials and finishes including melamine in various colors and wood grains, natural wood veneers, painted MDF, and solid wood options. Hardware choices include soft-close hinges, drawer slides, handles, and internal accessories like shoe racks, tie holders, and jewelry drawers. We help you select the best combination based on your budget, style preferences, and functional requirements.",
+  },
+]
+
 export default function BuiltInCupboardsPage() {
-  const cupboardTypes = [
-    {
-      title: "Bedroom Wardrobes",
-      description: "Custom built-in wardrobes with hanging space, shelving, and drawers",
-      features: ["Sliding or hinged doors", "Internal organizers", "LED lighting options", "Mirror integration"],
-      price: "From R15,000",
-      image: "/Custom-Bedroom-Built-In-Cupboards-and-Wardrobes-JHB.png",
-    },
-    {
-      title: "Study Units",
-      description: "Built-in study desks with storage, shelving, and filing solutions",
-      features: ["Integrated desk space", "Book shelving", "Filing drawers", "Cable management"],
-      price: "From R12,000",
-      image: "/built-in-study-1 (1).webp",
-    },
-    {
-      title: "Kitchen Pantries",
-      description: "Custom pantry cupboards with adjustable shelving and storage",
-      features: ["Adjustable shelving", "Pull-out drawers", "Spice racks", "Soft-close doors"],
-      price: "From R8,000",
-      image: "/Kitchen-renovations-sandton.webp",
-    },
-    {
-      title: "Entertainment Units",
-      description: "Built-in TV units with media storage and display shelving",
-      features: ["TV mounting space", "Media storage", "Display shelves", "Cable management"],
-      price: "From R10,000",
-      image: "/entertainment unit.jpg",
-    },
-  ]
-
-  const process = [
-    {
-      step: "1",
-      title: "Free Consultation",
-      description: "We visit your home to assess the space and discuss your storage needs and design preferences.",
-    },
-    {
-      step: "2",
-      title: "Design & Quote",
-      description: "Our team creates detailed designs and provides a comprehensive quote with no hidden costs.",
-    },
-    {
-      step: "3",
-      title: "Manufacturing",
-      description: "We manufacture your custom cupboards using premium materials and precision craftsmanship.",
-    },
-    {
-      step: "4",
-      title: "Installation",
-      description: "Professional installation with minimal disruption to your daily routine and thorough cleanup.",
-    },
-  ]
-
-  const features = [
-    {
-      icon: Ruler,
-      title: "Custom Measurements",
-      description: "Perfectly fitted to your space with precise measurements and professional installation",
-    },
-    {
-      icon: Palette,
-      title: "Design Options",
-      description: "Wide range of finishes, colors, and hardware to match your home's aesthetic",
-    },
-    {
-      icon: Shield,
-      title: "Quality Materials",
-      description: "Premium melamine, solid wood, and hardware from trusted suppliers",
-    },
-    {
-      icon: Award,
-      title: "24-Month Warranty",
-      description: "Comprehensive warranty on all workmanship and materials for peace of mind",
-    },
-  ]
-
-  const areas = [
-    "Johannesburg South",
-    "Sandton",
-    "Randburg",
-    "Kempton Park",
-    "Midrand",
-    "Fourways",
-    "Boksburg",
-    "Centurion",
-    "Pretoria",
-    "Alberton",
-    "Edenvale",
-    "Roodepoort",
-  ]
-
-  const faqs = [
-    {
-      question: "How much do built-in cupboards cost in Johannesburg?",
-      answer:
-        "Built-in cupboard costs in Johannesburg vary based on size, materials, and complexity. Basic melamine wardrobes start from R15,000, while premium solid wood units can cost R45,000+. Factors affecting price include dimensions, internal fittings, door styles, and hardware quality. We provide detailed quotes with transparent pricing and no hidden costs.",
-    },
-    {
-      question: "What materials do you use for built-in cupboards in Sandton and Randburg?",
-      answer:
-        "We use premium materials including high-quality melamine boards, solid wood options, and durable hardware. Our melamine finishes are moisture-resistant and available in various colors and wood-grain patterns. For luxury projects, we offer solid wood construction with custom staining and finishing. All hardware includes soft-close hinges and drawer slides for smooth operation.",
-    },
-    {
-      question: "How long does it take to install built-in cupboards?",
-      answer:
-        "Installation time depends on the project scope. Simple bedroom wardrobes typically take 2-3 days, while complex multi-room projects may require 1-2 weeks. Our process includes consultation (1 day), manufacturing (1-2 weeks), and installation (2-5 days). We provide accurate timelines during consultation and keep you informed throughout the process.",
-    },
-    {
-      question: "Do you provide built-in cupboard design services in Midrand?",
-      answer:
-        "Yes, we provide comprehensive design services throughout Johannesburg, including Midrand, Sandton, and surrounding areas. Our design team creates detailed plans, 3D renderings, and helps optimize space utilization. We consider your storage needs, room layout, and aesthetic preferences to create functional and beautiful built-in storage solutions.",
-    },
-  ]
-
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      {/* Hero Section */}
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-200">Custom Storage Solutions</Badge>
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                Built-in Cupboards & Custom Wardrobes in Johannesburg
+              </h1>
+              <p className="text-xl text-gray-600 mb-8">
+                Maximize your space with our expertly crafted built-in cupboards and wardrobes. Custom designs, quality
+                materials, and professional installation throughout Johannesburg, Sandton, Randburg, and Midrand.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <Button size="lg" className="bg-green-600 hover:bg-green-700">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Get Free Measure
+                </Button>
+                <Button variant="outline" size="lg" asChild>
+                  <Link href="/portfolio">View Our Designs</Link>
+                </Button>
+              </div>
+              <div className="flex items-center gap-6 text-sm text-gray-600">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="h-5 w-5 text-green-600" />
+                  <span>Custom Designs</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Shield className="h-5 w-5 text-blue-600" />
+                  <span>Quality Materials</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Award className="h-5 w-5 text-yellow-600" />
+                  <span>Expert Installation</span>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                src="/Custom-Bedroom-Built-In-Cupboards-and-Wardrobes-JHB.png"
+                alt="Custom bedroom built-in cupboards and wardrobes in Johannesburg"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-2xl"
+                priority
+              />
+              <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg">
+                <div className="flex items-center gap-2 mb-2">
+                  <Star className="h-5 w-5 text-yellow-500 fill-current" />
+                  <Star className="h-5 w-5 text-yellow-500 fill-current" />
+                  <Star className="h-5 w-5 text-yellow-500 fill-current" />
+                  <Star className="h-5 w-5 text-yellow-500 fill-current" />
+                  <Star className="h-5 w-5 text-yellow-500 fill-current" />
+                </div>
+                <p className="text-sm font-semibold">Premium Quality</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Custom Built-in Storage Solutions</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              From bedroom wardrobes to walk-in closets, we create custom storage solutions that maximize space and
+              enhance your home's functionality and value.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-green-600" />
+                  Bedroom Wardrobes
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Custom bedroom wardrobes designed to fit your space perfectly. Multiple compartments, hanging space,
+                  and drawers for optimal organization.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-green-600" />
+                  Walk-in Closets
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Luxurious walk-in closets with custom shelving, hanging rails, and specialized storage for shoes,
+                  accessories, and clothing.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-green-600" />
+                  Study Cupboards
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Built-in study and office storage solutions with desks, bookshelves, and filing systems for a
+                  productive workspace.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-green-600" />
+                  Entertainment Units
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Custom entertainment centers with TV mounting, media storage, and cable management for a clean,
+                  organized living space.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-green-600" />
+                  Linen Cupboards
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Efficient linen and bathroom storage with adjustable shelving and specialized compartments for towels,
+                  bedding, and toiletries.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-green-600" />
+                  Custom Storage
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Bespoke storage solutions for unique spaces and requirements. Under-stair storage, alcove cupboards,
+                  and specialized units.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Materials & Features */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Premium Materials & Features</h2>
+            <p className="text-lg text-gray-600">
+              We use only the finest materials and hardware to ensure your built-in cupboards are both beautiful and
+              built to last.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <Image
+                src="/Built-Built-in-Cupboards-Midrand.jpg"
+                alt="High-quality built-in cupboards installation in Midrand"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Premium Melamine Finishes</h3>
+                  <p className="text-gray-600">
+                    Durable melamine boards in various colors and wood grain patterns. Scratch-resistant, easy to clean,
+                    and available in modern and classic styles.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Soft-Close Hardware</h3>
+                  <p className="text-gray-600">
+                    Premium Blum and Hettich hardware with soft-close hinges and drawer slides. Quiet operation and
+                    extended lifespan for daily use.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Custom Internal Fittings</h3>
+                  <p className="text-gray-600">
+                    Specialized internal accessories including shoe racks, tie holders, jewelry drawers, and adjustable
+                    shelving systems.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">LED Lighting Options</h3>
+                  <p className="text-gray-600">
+                    Integrated LED lighting systems with motion sensors and dimming controls. Energy-efficient
+                    illumination for better visibility and ambiance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Installation Process</h2>
+            <p className="text-lg text-gray-600">
+              From initial consultation to final installation, we ensure a smooth and professional experience every step
+              of the way.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                1
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Free Consultation</h3>
+              <p className="text-gray-600">
+                Home visit to assess your space, discuss requirements, and provide design recommendations tailored to
+                your needs.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                2
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Design & Quote</h3>
+              <p className="text-gray-600">
+                Detailed design drawings, material selection, and comprehensive quote with no hidden costs or surprises.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                3
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Manufacturing</h3>
+              <p className="text-gray-600">
+                Precision manufacturing in our workshop using advanced machinery and quality control processes.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                4
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Professional Installation</h3>
+              <p className="text-gray-600">
+                Expert installation by our skilled craftsmen with minimal disruption to your home and complete cleanup.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Recent Built-in Cupboard Projects</h2>
+            <p className="text-lg text-gray-600">
+              Browse our portfolio of custom built-in cupboards and wardrobes installed throughout Johannesburg and
+              surrounding areas.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="relative group overflow-hidden rounded-lg">
+              <Image
+                src="/built-in-wardrobes-sliding (1) (1).webp"
+                alt="Built-in wardrobes with sliding doors"
+                width={400}
+                height={300}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <p className="text-white font-semibold">Sliding Wardrobes - Sandton</p>
+              </div>
+            </div>
+
+            <div className="relative group overflow-hidden rounded-lg">
+              <Image
+                src="/built-in-study-1 (1).webp"
+                alt="Built-in study cupboards and desk"
+                width={400}
+                height={300}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <p className="text-white font-semibold">Study Unit - Randburg</p>
+              </div>
+            </div>
+
+            <div className="relative group overflow-hidden rounded-lg">
+              <Image
+                src="/entertainment unit.jpg"
+                alt="Custom entertainment unit with storage"
+                width={400}
+                height={300}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <p className="text-white font-semibold">Entertainment Unit - Midrand</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <Button variant="outline" size="lg" asChild>
+              <Link href="/portfolio">View All Projects</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-lg text-gray-600">
+              Get answers to common questions about our built-in cupboard services.
+            </p>
+          </div>
+          <FAQAccordion faqs={cupboardFAQs} />
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-green-600">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">Ready to Maximize Your Storage Space?</h2>
+          <p className="text-xl text-green-100 mb-8">
+            Contact us today for a free consultation and quote. Let's create the perfect storage solution for your home.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" variant="secondary">
+              <Phone className="mr-2 h-5 w-5" />
+              Call (011) 234-5678
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-white border-white hover:bg-white hover:text-green-600 bg-transparent"
+              asChild
+            >
+              <Link href="/contact">Get Free Measure</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Structured Data */}
       <script
         type="application/ld+json"
@@ -164,554 +445,17 @@ export default function BuiltInCupboardsPage() {
             "@type": "Service",
             name: "Built-in Cupboards Johannesburg",
             description:
-              "Professional built-in cupboards and custom wardrobes in Johannesburg including bedroom cupboards, study units, and storage solutions.",
+              "Expert built-in cupboard installation in Johannesburg, Sandton, Randburg, and Midrand. Custom wardrobes, bedroom cupboards, and storage solutions.",
             provider: {
-              "@type": "LocalBusiness",
-              name: "Granite Carpentry",
-              telephone: "+27676014490",
-              email: "info@granitecarpentry.co.za",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Johannesburg",
-                addressRegion: "Gauteng",
-                addressCountry: "ZA",
-              },
+              "@type": "Organization",
+              name: "Granite Carpentry & Joinery Experts",
+              url: "https://granitejoineryexperts.co.za",
             },
-            areaServed: ["Johannesburg", "Sandton", "Randburg", "Midrand", "Centurion"],
-            serviceType: "Built-in Cupboards & Custom Storage",
-            offers: {
-              "@type": "Offer",
-              priceCurrency: "ZAR",
-              priceRange: "R8000-R50000",
-              availability: "https://schema.org/InStock",
-            },
+            areaServed: ["Johannesburg", "Sandton", "Randburg", "Midrand", "Gauteng"],
+            serviceType: "Built-in Cupboards",
           }),
         }}
       />
-
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
-        <div className="relative container mx-auto px-4 py-20 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge className="bg-amber-600 hover:bg-amber-700 text-white">
-                  <Star className="h-3 w-3 mr-1 fill-current" />
-                  Built-in Cupboard Specialists
-                </Badge>
-                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  Custom Built-in Cupboards &<span className="text-amber-400"> Wardrobes</span>
-                  Johannesburg
-                </h1>
-                <p className="text-xl text-slate-300 leading-relaxed">
-                  Transform your home with custom built-in cupboards and wardrobes designed specifically for your space.
-                  Professional installation, premium materials, and 24-month warranty on all workmanship.
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-4">
-                <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-8">
-                  <Link href="/contact">
-                    Get Free Quote
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="lg"
-                  className="text-lg px-8 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
-                >
-                  <Link href="tel:+27676014490">
-                    <Phone className="mr-2 h-5 w-5" />
-                    067 601 4490
-                  </Link>
-                </Button>
-              </div>
-
-              <div className="flex flex-wrap gap-6 text-sm">
-                <div className="flex items-center space-x-2">
-                  <Star className="h-4 w-4 text-amber-400 fill-current" />
-                  <span>5.0 Rating • 47+ Projects</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Shield className="h-4 w-4 text-green-400" />
-                  <span>Licensed & Insured</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Award className="h-4 w-4 text-blue-400" />
-                  <span>24-Month Warranty</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/Built-Built-in-Cupboards-Midrand.jpg"
-                  alt="Custom Built-in Cupboards Johannesburg - Professional Installation"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="font-semibold text-slate-900">Latest Project</p>
-                        <p className="text-sm text-slate-600">Built-in Wardrobes - Midrand</p>
-                      </div>
-                      <div className="flex items-center space-x-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 text-amber-400 fill-current" />
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-12 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="text-center space-y-3">
-                <div className="mx-auto w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
-                  <feature.icon className="h-6 w-6 text-amber-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-900">{feature.title}</h3>
-                  <p className="text-sm text-slate-600 mt-1">{feature.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Expanded Content Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-8">
-              Professional Built-in Cupboards in Johannesburg
-            </h2>
-
-            <div className="prose prose-lg max-w-none text-slate-600 space-y-6">
-              <p>
-                Built-in cupboards have become an essential feature in modern Johannesburg homes, offering both
-                functionality and aesthetic appeal. Our professional built-in cupboard services cater to homeowners
-                throughout Johannesburg, Sandton, Randburg, and surrounding areas who want to maximize their storage
-                space while maintaining a clean, organized living environment. Custom built-in cupboards are
-                particularly valuable in South African homes where space optimization is crucial.
-              </p>
-
-              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
-                Custom Wardrobe Solutions for Johannesburg Homes
-              </h3>
-              <p>
-                Our custom wardrobe solutions are designed to accommodate the unique storage needs of Johannesburg
-                residents. Whether you're looking for spacious bedroom wardrobes in Sandton, compact storage solutions
-                in Randburg apartments, or luxury walk-in closets in Midrand, our team creates built-in cupboards that
-                perfectly fit your space and lifestyle. We understand the importance of quality craftsmanship and use
-                only premium materials sourced from trusted suppliers throughout Gauteng.
-              </p>
-
-              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">Built-in Storage Solutions for Every Room</h3>
-              <p>
-                Beyond bedroom wardrobes, our built-in cupboard expertise extends to every room in your home. Kitchen
-                pantry cupboards help organize your cooking essentials, while study units combine workspace
-                functionality with storage efficiency. Entertainment units provide stylish media storage, and linen
-                cupboards ensure your household items are neatly organized. Each built-in cupboard is custom-designed to
-                maximize your available space while complementing your home's interior design.
-              </p>
-
-              <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
-                Quality Materials and Professional Installation
-              </h3>
-              <p>
-                We pride ourselves on using high-quality materials including premium melamine boards, solid wood
-                options, and durable hardware systems. Our built-in cupboards feature soft-close hinges,
-                smooth-operating drawer slides, and adjustable shelving systems. Professional installation ensures
-                perfect alignment, secure mounting, and flawless finishing that will last for years to come. Every
-                project includes our comprehensive 24-month warranty covering both materials and workmanship.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cupboard Types Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
-            <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Our Services</Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">Custom Built-in Cupboard Solutions</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              From bedroom wardrobes to study units and kitchen pantries, we create custom storage solutions that
-              maximize your space and complement your home's design.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {cupboardTypes.map((type, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <div className="relative overflow-hidden rounded-t-lg">
-                  <Image
-                    src={type.image || "/placeholder.svg"}
-                    alt={type.title}
-                    width={500}
-                    height={300}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-amber-600 text-white">{type.price}</Badge>
-                  </div>
-                </div>
-                <CardHeader className="space-y-3">
-                  <CardTitle className="text-xl">{type.title}</CardTitle>
-                  <CardDescription className="text-slate-600">{type.description}</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="space-y-2">
-                    {type.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center space-x-2">
-                        <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
-                        <span className="text-sm text-slate-600">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
-                    <Link href="/contact">
-                      Get Quote
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
-            <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Our Process</Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">
-              How We Create Your Perfect Storage Solution
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              From initial consultation to final installation, our streamlined process ensures your built-in cupboards
-              are delivered on time and to your exact specifications.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {process.map((step, index) => (
-              <div key={index} className="text-center space-y-4">
-                <div className="mx-auto w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
-                  {step.step}
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg text-slate-900 mb-2">{step.title}</h3>
-                  <p className="text-slate-600">{step.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
-              <p className="text-xl text-slate-600">Common questions about built-in cupboards in Johannesburg</p>
-            </div>
-
-            <div className="space-y-8">
-              {faqs.map((faq, index) => (
-                <div key={index} className="border-b border-slate-200 pb-8">
-                  <h3 className="text-xl font-bold text-slate-800 mb-4">{faq.question}</h3>
-                  <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
-            <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Pricing</Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">Transparent Built-in Cupboard Pricing</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Our pricing is transparent with no hidden costs. All quotes include materials, installation, and our
-              comprehensive warranty.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="border-2 border-slate-200 hover:border-amber-200 transition-colors">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Basic Package</CardTitle>
-                <div className="text-3xl font-bold text-amber-600">R15,000 - R25,000</div>
-                <CardDescription>Standard built-in wardrobes</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">Melamine finish</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">Standard hardware</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">Basic internal fittings</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">24-month warranty</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 border-amber-200 shadow-lg relative">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-amber-600 text-white">Most Popular</Badge>
-              </div>
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Premium Package</CardTitle>
-                <div className="text-3xl font-bold text-amber-600">R25,000 - R45,000</div>
-                <CardDescription>High-quality custom solutions</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">Premium finishes</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">Soft-close mechanisms</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">Custom internal organizers</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">LED lighting options</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">24-month warranty</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 border-slate-200 hover:border-amber-200 transition-colors">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Luxury Package</CardTitle>
-                <div className="text-3xl font-bold text-amber-600">R45,000+</div>
-                <CardDescription>Bespoke luxury solutions</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">Solid wood options</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">Designer hardware</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">Integrated mirrors</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">Smart storage solutions</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm">24-month warranty</span>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-12">
-            <p className="text-slate-600 mb-6">
-              All prices include materials, professional installation, and cleanup. Final pricing depends on size,
-              materials, and complexity.
-            </p>
-            <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700">
-              <Link href="/contact">
-                Get Detailed Quote
-                <Calculator className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Areas Served */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
-            <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200">Service Areas</Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">
-              Built-in Cupboards Throughout Johannesburg
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              We provide professional built-in cupboard installation services throughout Greater Johannesburg and
-              surrounding areas in Gauteng.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
-            {areas.map((area, index) => (
-              <Link key={index} href={`/areas/${area.toLowerCase().replace(/\s+/g, "-")}`} className="group">
-                <Card className="border-0 shadow-md hover:shadow-lg transition-all duration-300 group-hover:border-amber-200">
-                  <CardContent className="p-4 text-center">
-                    <div className="flex items-center justify-center space-x-2">
-                      <MapPin className="h-4 w-4 text-amber-600" />
-                      <span className="font-medium text-slate-900 group-hover:text-amber-600 transition-colors">
-                        {area}
-                      </span>
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <Button asChild variant="outline" size="lg">
-              <Link href="/areas">
-                View All Service Areas
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Services */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Related Services</h2>
-            <p className="text-xl text-slate-600">Complete your home renovation with our additional services</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-slate-800 mb-4">Kitchen Renovations</h3>
-                <p className="text-slate-600 mb-6">
-                  Transform your kitchen with custom cabinets and complete renovation services.
-                </p>
-                <Button asChild variant="outline">
-                  <Link href="/services/kitchen-renovations">Learn More</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-slate-800 mb-4">Granite Countertops</h3>
-                <p className="text-slate-600 mb-6">
-                  Premium granite and quartz countertops for your renovation project.
-                </p>
-                <Button asChild variant="outline">
-                  <Link href="/services/quartz-granite">View Options</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-slate-800 mb-4">Decking & Flooring</h3>
-                <p className="text-slate-600 mb-6">
-                  Professional flooring installation and decking services for your home.
-                </p>
-                <Button asChild variant="outline">
-                  <Link href="/services/decking-flooring">Explore Flooring</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-amber-600 to-amber-700 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h2 className="text-3xl lg:text-4xl font-bold">Ready for Custom Built-in Cupboards?</h2>
-            <p className="text-xl text-amber-100">
-              Transform your home with custom storage solutions designed specifically for your space. Get a free
-              consultation and detailed quote from Johannesburg's most trusted cupboard specialists.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="text-lg px-8">
-                <Link href="/contact">
-                  Get Free Quote
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="text-lg px-8 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent"
-              >
-                <Link href="tel:+27676014490">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call: 067 601 4490
-                </Link>
-              </Button>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-8 text-sm text-amber-100">
-              <div className="flex items-center space-x-2">
-                <Clock className="h-4 w-4" />
-                <span>Free Consultation</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Users className="h-4 w-4" />
-                <span>Expert Installation</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Wrench className="h-4 w-4" />
-                <span>Premium Materials</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Award className="h-4 w-4" />
-                <span>24-Month Warranty</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

@@ -175,37 +175,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog posts - good for content marketing
   const blogPosts = [
     {
-      url: `${baseUrl}/blog/kitchen-renovation-trends-2025-johannesburg`,
+      url: `${baseUrl}/blog/kitchen-renovation-guide-2025`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/built-in-cupboards-design-ideas-2025`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/granite-vs-quartz-countertops-2025`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/blog/granite-vs-quartz-kitchen-countertops`,
+      url: `${baseUrl}/blog/home-office-carpentry-solutions-2025`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/blog/maximizing-small-spaces-built-in-cupboards`,
+      url: `${baseUrl}/blog/bathroom-renovation-carpentry-2025`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/blog/complete-guide-outdoor-decking-south-africa`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/drywall-installation-professional-tips`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/starting-carpentry-career-training-opportunities`,
+      url: `${baseUrl}/blog/decking-installation-maintenance-2025`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
       priority: 0.7,

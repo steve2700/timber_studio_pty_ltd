@@ -19,25 +19,26 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Best Carpenter Midrand 2024 | Kitchen Renovations & Commercial Carpentry | Free Quotes",
+  title:
+    "Best Carpenter & Plumber Midrand 2024 | Kitchen Renovations, Commercial Carpentry & Business Plumbing | Free Quotes",
   description:
-    "★★★★★ #1 Rated Carpenter in Midrand business hub. Expert kitchen renovations, commercial carpentry, built-in cupboards. Serving Fourways, Waterfall City, Grand Central. Licensed & insured. Call 067 601 4490",
+    "★★★★★ #1 Rated Carpenter & Plumber in Midrand business hub. Expert kitchen renovations, commercial carpentry, built-in solutions & business plumbing services. Serving Fourways, Waterfall City, Grand Central. Licensed & insured. Call 067 601 4490",
   keywords:
-    "carpenter Midrand, kitchen renovation Midrand, commercial carpentry Midrand, built-in cupboards Midrand, carpenter Fourways, carpenter Waterfall City, kitchen cabinets Midrand, office carpentry Midrand, best carpenter Midrand, affordable carpenter Midrand, Midrand kitchen contractor, business carpentry Midrand",
+    "carpenter Midrand, plumber Midrand, kitchen renovation Midrand, commercial carpentry Midrand, built-in cupboards Midrand, business plumbing Midrand, carpenter Fourways, carpenter Waterfall City, kitchen cabinets Midrand, office carpentry Midrand, best carpenter Midrand, affordable carpenter Midrand, Midrand kitchen contractor, business carpentry Midrand, commercial plumbing Midrand",
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/midrand",
   },
   openGraph: {
-    title: "Best Carpenter Midrand 2024 | Kitchen Renovations & Commercial Carpentry",
+    title: "Best Carpenter & Plumber Midrand 2024 | Kitchen Renovations & Commercial Carpentry",
     description:
-      "★★★★★ #1 Rated Carpenter in Midrand. Expert kitchen renovations, commercial carpentry. Free quotes. Call 067 601 4490",
+      "★★★★★ #1 Rated Carpenter & Plumber in Midrand. Expert kitchen renovations, commercial carpentry & business plumbing services. Free quotes. Call 067 601 4490",
     url: "https://granitecarpentry.co.za/areas/midrand",
     images: [
       {
         url: "https://granitecarpentry.co.za/professional-carpenter-midrand.jpeg",
         width: 1200,
         height: 630,
-        alt: "Best Carpenter Midrand - Kitchen Renovation & Commercial Carpentry",
+        alt: "Best Carpenter & Plumber Midrand - Kitchen Renovation & Commercial Carpentry Services",
       },
     ],
   },
@@ -55,18 +56,19 @@ export default function MidrandPage() {
               <div className="flex items-center mb-4">
                 <MapPin className="w-5 h-5 text-amber-400 mr-2" />
                 <Badge variant="secondary" className="bg-amber-600/20 text-amber-100 border-amber-300">
-                  Midrand's #1 Carpenter
+                  Midrand's #1 Carpenter & Plumber
                 </Badge>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Best <span className="text-amber-400">Carpenter</span> in{" "}
+                Best <span className="text-amber-400">Carpenter & Plumber</span> in{" "}
                 <span className="text-amber-400 underline decoration-amber-500/60">Midrand</span>
               </h1>
 
               <p className="text-xl sm:text-2xl text-slate-200 mb-8 leading-relaxed">
-                ★★★★★ Rated #1 Carpenter in Midrand business hub. Expert kitchen renovations, commercial carpentry, and
-                built-in solutions. Serving Fourways, Waterfall City, Grand Central & all Midrand areas.
+                ★★★★★ Rated #1 Carpenter & Plumber in Midrand business hub. Expert kitchen renovations, commercial
+                carpentry, built-in solutions & business plumbing services. Serving Fourways, Waterfall City, Grand
+                Central & all Midrand areas.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -112,7 +114,7 @@ export default function MidrandPage() {
             <div className="relative">
               <Image
                 src="/professional-carpenter-midrand.jpeg"
-                alt="Best Carpenter Midrand - Professional Commercial & Residential Carpentry Services"
+                alt="Best Carpenter & Plumber Midrand - Professional Commercial & Residential Carpentry Services"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-2xl w-full h-auto"
@@ -120,7 +122,7 @@ export default function MidrandPage() {
               />
               <div className="absolute -bottom-4 -left-4 bg-amber-600 text-white p-4 rounded-lg shadow-lg">
                 <div className="text-2xl font-bold">#1 Rated</div>
-                <div className="text-sm">Midrand Carpenter</div>
+                <div className="text-sm">Midrand Carpenter & Plumber</div>
               </div>
             </div>
           </div>
@@ -173,14 +175,14 @@ export default function MidrandPage() {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
-              Professional Carpentry Services in Midrand
+              Professional Carpentry & Plumbing Services in Midrand
             </h2>
             <p className="text-xl text-slate-600">
-              Residential and commercial carpentry solutions for Midrand's business community
+              Residential and commercial carpentry and plumbing solutions for Midrand's business community
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="hover:shadow-xl transition-shadow">
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
@@ -284,6 +286,41 @@ export default function MidrandPage() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Building className="w-6 h-6 text-amber-600 mr-2" />
+                  Commercial Plumbing Midrand
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Professional plumbing services for Midrand's business hub. Commercial and residential plumbing
+                  solutions.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Commercial plumbing systems
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Office bathroom installations
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Emergency business repairs
+                  </li>
+                </ul>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R390/hour</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/services/plumbing">View Details</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -293,7 +330,9 @@ export default function MidrandPage() {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Why Midrand Chooses Us</h2>
-            <p className="text-xl text-slate-600">The most trusted carpenter in Midrand with 300+ completed projects</p>
+            <p className="text-xl text-slate-600">
+              The most trusted carpenter and plumber in Midrand with 300+ completed projects
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -310,7 +349,9 @@ export default function MidrandPage() {
                 <Shield className="w-8 h-8 text-amber-600" />
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-2">Licensed & Insured</h3>
-              <p className="text-slate-600">Fully licensed carpenter with comprehensive insurance coverage</p>
+              <p className="text-slate-600">
+                Fully licensed carpenter and plumber with comprehensive insurance coverage
+              </p>
             </div>
 
             <div className="text-center">
@@ -326,7 +367,7 @@ export default function MidrandPage() {
                 <Building className="w-8 h-8 text-amber-600" />
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-2">Business Specialist</h3>
-              <p className="text-slate-600">Specialized in both residential and commercial carpentry</p>
+              <p className="text-slate-600">Specialized in both residential and commercial carpentry and plumbing</p>
             </div>
           </div>
         </div>
@@ -337,8 +378,8 @@ export default function MidrandPage() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Midrand Property?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Join 300+ satisfied Midrand clients. Get your FREE quote today from Midrand's #1 rated carpenter. Licensed,
-            insured, and guaranteed.
+            Join 300+ satisfied Midrand clients. Get your FREE quote today from Midrand's #1 rated carpenter and
+            plumber. Licensed, insured, and guaranteed.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
@@ -367,7 +408,8 @@ export default function MidrandPage() {
 
           <div className="mt-8 text-center">
             <p className="text-lg opacity-90">
-              ⭐⭐⭐⭐⭐ "Professional commercial carpentry! Great office fit-out." - David L., Waterfall City
+              ⭐⭐⭐⭐⭐ "Professional commercial carpentry and plumbing! Great office fit-out and bathroom
+              installations." - David L., Waterfall City
             </p>
           </div>
         </div>

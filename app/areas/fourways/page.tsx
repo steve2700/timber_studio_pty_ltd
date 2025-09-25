@@ -6,15 +6,16 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Gem } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Best Carpenter Fourways 2024 | #1 Luxury Kitchen Renovations & Built-in Cupboards",
+  title:
+    "★★★★★ Best Carpenter & Plumber Fourways 2024 | #1 Luxury Kitchen Renovations, Built-in Cupboards & Premium Plumbing",
   description:
-    "★★★★★ #1 luxury carpenter in Fourways 2024. Premium kitchen renovations, custom built-in cupboards, granite installations. 600+ upmarket projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
+    "★★★★★ #1 luxury carpenter & plumber in Fourways 2024. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 600+ upmarket projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
   keywords:
-    "best carpenter Fourways, luxury carpenter Fourways 2024, kitchen renovation Fourways, built-in cupboards Fourways, granite installation Fourways, premium carpenter Fourways, professional carpentry Fourways, #1 carpenter Fourways, upmarket carpenter Fourways, carpenter near me Fourways, Dainfern carpenter, Bryanston carpenter",
+    "best carpenter Fourways, luxury plumber Fourways 2024, kitchen renovation Fourways, built-in cupboards Fourways, granite installation Fourways, premium plumbing Fourways, professional carpentry Fourways, #1 carpenter Fourways, upmarket carpenter Fourways, carpenter near me Fourways, Dainfern carpenter, Bryanston carpenter, luxury plumbing Fourways",
   openGraph: {
-    title: "★★★★★ Best Carpenter Fourways 2024 | #1 Luxury Services",
+    title: "★★★★★ Best Carpenter & Plumber Fourways 2024 | #1 Luxury Services",
     description:
-      "★★★★★ #1 luxury carpenter in Fourways. Premium kitchen renovations, custom built-in cupboards, granite installations. 600+ upmarket projects. FREE quotes.",
+      "★★★★★ #1 luxury carpenter & plumber in Fourways. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 600+ upmarket projects. FREE quotes.",
     url: "https://granitecarpentry.co.za/areas/fourways",
   },
   alternates: {
@@ -33,17 +34,17 @@ export default function FourwaysPage() {
             <div className="flex items-center justify-center gap-2 mb-6">
               <MapPin className="w-6 h-6 text-amber-400" />
               <Badge variant="secondary" className="bg-amber-600/20 text-amber-200 border-amber-400/30">
-                ★★★★★ #1 Luxury Carpenter Fourways
+                ★★★★★ #1 Luxury Carpenter & Plumber Fourways
               </Badge>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Best Luxury Carpenter
+              Best Luxury Carpenter & Plumber
               <span className="block text-amber-400">Fourways 2024</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 leading-relaxed">
-              ★★★★★ #1 luxury carpenter in Fourways. Premium kitchen renovations, custom built-in cupboards, and granite
-              installations for upmarket homes. 600+ completed projects with 5-year warranty. FREE quotes & flexible
-              scheduling.
+              ★★★★★ #1 luxury carpenter & plumber in Fourways. Premium kitchen renovations, custom built-in cupboards,
+              granite installations, and luxury plumbing services for upmarket homes. 600+ completed projects with
+              5-year warranty. FREE quotes & flexible scheduling.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4">
@@ -83,13 +84,16 @@ export default function FourwaysPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Luxury Carpentry Services Fourways</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
+              Luxury Carpentry & Plumbing Services Fourways
+            </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Serving Fourways, Dainfern, Bryanston, Lonehill, and upmarket areas with premium carpentry solutions
+              Serving Fourways, Dainfern, Bryanston, Lonehill, and upmarket areas with premium carpentry and plumbing
+              solutions
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
@@ -194,6 +198,41 @@ export default function FourwaysPage() {
                 </Button>
               </CardContent>
             </Card>
+
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
+                    <Gem className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-800">Luxury Plumbing Services</h3>
+                    <p className="text-sm text-amber-600">Starting from R450/hour</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-sm mb-4">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    High-end bathroom installations
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Luxury kitchen plumbing
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Premium geyser systems
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    24/7 emergency service
+                  </li>
+                </ul>
+                <Button asChild className="w-full">
+                  <Link href="/services/plumbing">View Plumbing Services</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -269,7 +308,7 @@ export default function FourwaysPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Fourways Luxury Area Coverage</h2>
             <p className="text-xl text-slate-600 mb-12">
-              Premium carpentry services throughout Fourways and surrounding upmarket areas
+              Premium carpentry and plumbing services throughout Fourways and surrounding upmarket areas
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
@@ -381,8 +420,8 @@ export default function FourwaysPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Luxury Fourways Project?</h2>
           <p className="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
-            Contact Fourways' #1 luxury carpenter today. Premium materials, exceptional craftsmanship, and 5-year
-            warranty. FREE consultation and detailed quotes.
+            Contact Fourways' #1 luxury carpenter & plumber today. Premium materials, exceptional craftsmanship, and
+            5-year warranty. FREE consultation and detailed quotes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button

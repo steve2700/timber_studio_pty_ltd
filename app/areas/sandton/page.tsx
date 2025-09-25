@@ -7,25 +7,26 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, Shield, Users } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Best Carpenter Sandton 2024 | Kitchen Renovations & Granite Installation | Free Quotes",
+  title:
+    "Best Carpenter & Plumber Sandton 2024 | Kitchen Renovations, Built-in Cupboards & Emergency Plumbing | Free Quotes",
   description:
-    "★★★★★ #1 Rated Carpenter in Sandton. Expert kitchen renovations, built-in cupboards, granite countertops. Serving Rosebank, Hyde Park, Illovo. Licensed & insured. Free quotes. Call 067 601 4490",
+    "★★★★★ #1 Rated Carpenter & Plumber in Sandton. Expert kitchen renovations, luxury built-in cupboards, premium granite installations & 24/7 emergency plumbing. Serving Rosebank, Hyde Park, Illovo. Licensed & insured. Free quotes. Call 067 601 4490",
   keywords:
-    "carpenter Sandton, kitchen renovation Sandton, granite installation Sandton, built-in cupboards Sandton, carpenter Rosebank, carpenter Hyde Park, kitchen cabinets Sandton, quartz countertops Sandton, custom carpentry Sandton, best carpenter Sandton, affordable carpenter Sandton, Sandton kitchen contractor, granite Sandton, cupboards Sandton",
+    "carpenter Sandton, plumber Sandton, kitchen renovation Sandton, granite installation Sandton, built-in cupboards Sandton, emergency plumbing Sandton, carpenter Rosebank, carpenter Hyde Park, kitchen cabinets Sandton, quartz countertops Sandton, custom carpentry Sandton, best carpenter Sandton, affordable carpenter Sandton, Sandton kitchen contractor, granite Sandton, cupboards Sandton, 24/7 plumber Sandton",
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/sandton",
   },
   openGraph: {
-    title: "Best Carpenter Sandton 2024 | Kitchen Renovations & Granite Installation",
+    title: "Best Carpenter & Plumber Sandton 2024 | Kitchen Renovations, Built-in Cupboards & Emergency Plumbing",
     description:
-      "★★★★★ #1 Rated Carpenter in Sandton. Expert kitchen renovations, granite installation. Free quotes. Call 067 601 4490",
+      "★★★★★ #1 Rated Carpenter & Plumber in Sandton. Expert kitchen renovations, luxury built-in cupboards, premium granite installations & 24/7 emergency plumbing. Free quotes. Call 067 601 4490",
     url: "https://granitecarpentry.co.za/areas/sandton",
     images: [
       {
         url: "https://granitecarpentry.co.za/granite-installation-sandton.jpg",
         width: 1200,
         height: 630,
-        alt: "Best Carpenter Sandton - Kitchen Renovation & Granite Installation",
+        alt: "Best Carpenter & Plumber Sandton - Kitchen Renovation & Granite Installation",
       },
     ],
   },
@@ -43,18 +44,19 @@ export default function SandtonPage() {
               <div className="flex items-center mb-4">
                 <MapPin className="w-5 h-5 text-amber-400 mr-2" />
                 <Badge variant="secondary" className="bg-amber-600/20 text-amber-100 border-amber-300">
-                  Sandton's #1 Carpenter
+                  Sandton's #1 Carpenter & Plumber
                 </Badge>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Best <span className="text-amber-400">Carpenter</span> in{" "}
+                Best <span className="text-amber-400">Carpenter & Plumber</span> in{" "}
                 <span className="text-amber-400 underline decoration-amber-500/60">Sandton</span>
               </h1>
 
               <p className="text-xl sm:text-2xl text-slate-200 mb-8 leading-relaxed">
-                ★★★★★ Rated #1 Carpenter in Sandton. Expert kitchen renovations, luxury built-in cupboards, and premium
-                granite installations. Serving Rosebank, Hyde Park, Illovo & all Sandton areas.
+                ★★★★★ Rated #1 Carpenter & Plumber in Sandton. Expert kitchen renovations, luxury built-in cupboards,
+                premium granite installations & 24/7 emergency plumbing services. Serving Rosebank, Hyde Park, Illovo &
+                all Sandton areas.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -100,7 +102,7 @@ export default function SandtonPage() {
             <div className="relative">
               <Image
                 src="/granite-installation-sandton.jpg"
-                alt="Best Carpenter Sandton - Premium Kitchen Renovation & Granite Installation"
+                alt="Best Carpenter & Plumber Sandton - Premium Kitchen Renovation & Granite Installation"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-2xl w-full h-auto"
@@ -108,7 +110,7 @@ export default function SandtonPage() {
               />
               <div className="absolute -bottom-4 -left-4 bg-amber-600 text-white p-4 rounded-lg shadow-lg">
                 <div className="text-2xl font-bold">#1 Rated</div>
-                <div className="text-sm">Sandton Carpenter</div>
+                <div className="text-sm">Sandton Carpenter & Plumber</div>
               </div>
             </div>
           </div>
@@ -161,12 +163,14 @@ export default function SandtonPage() {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
-              Premium Carpentry Services in Sandton
+              Premium Carpentry & Plumbing Services in Sandton
             </h2>
-            <p className="text-xl text-slate-600">Luxury carpentry solutions for Sandton's finest homes and offices</p>
+            <p className="text-xl text-slate-600">
+              Luxury carpentry and plumbing solutions for Sandton's finest homes and offices
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="hover:shadow-xl transition-shadow">
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
@@ -269,6 +273,41 @@ export default function SandtonPage() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Star className="w-6 h-6 text-amber-600 mr-2" />
+                  Premium Plumbing Sandton
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Luxury plumbing services for Sandton's premium properties. Emergency repairs, installations, and
+                  maintenance.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    24/7 emergency plumbing services
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Luxury bathroom & kitchen plumbing
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Geyser installations & repairs
+                  </li>
+                </ul>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R400/hour</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/services/plumbing">View Details</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -278,7 +317,9 @@ export default function SandtonPage() {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Why Sandton Chooses Us</h2>
-            <p className="text-xl text-slate-600">The most trusted carpenter in Sandton with 500+ completed projects</p>
+            <p className="text-xl text-slate-600">
+              The most trusted carpenter and plumber in Sandton with 500+ completed projects
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -295,7 +336,9 @@ export default function SandtonPage() {
                 <Shield className="w-8 h-8 text-amber-600" />
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-2">Licensed & Insured</h3>
-              <p className="text-slate-600">Fully licensed carpenter with comprehensive insurance coverage</p>
+              <p className="text-slate-600">
+                Fully licensed carpenter and plumber with comprehensive insurance coverage
+              </p>
             </div>
 
             <div className="text-center">
@@ -322,8 +365,8 @@ export default function SandtonPage() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Sandton Property?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Join 500+ satisfied Sandton clients. Get your FREE quote today from Sandton's #1 rated carpenter. Licensed,
-            insured, and guaranteed.
+            Join 500+ satisfied Sandton clients. Get your FREE quote today from Sandton's #1 rated carpenter and
+            plumber. Licensed, insured, and guaranteed.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
@@ -352,7 +395,8 @@ export default function SandtonPage() {
 
           <div className="mt-8 text-center">
             <p className="text-lg opacity-90">
-              ⭐⭐⭐⭐⭐ "Best carpenter in Sandton! Excellent work on our kitchen renovation." - Sarah M., Hyde Park
+              ⭐⭐⭐⭐⭐ "Best carpenter and plumber in Sandton! Excellent work on our kitchen renovation." - Sarah M.,
+              Hyde Park
             </p>
           </div>
         </div>

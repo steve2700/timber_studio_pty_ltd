@@ -6,11 +6,11 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowRight, Phone, Star, Award, Mountain } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Quality Carpenter Roodepoort | Kitchen Renovations & Granite Installation",
+  title: "Quality Carpenter & Plumber Roodepoort | Kitchen Renovations, Granite Installation & Emergency Plumbing",
   description:
-    "Quality carpenter in Roodepoort with affordable rates. Expert kitchen renovations, built-in cupboards, granite installation for Roodepoort, Krugersdorp, Florida. Professional carpentry services.",
+    "Quality carpenter & plumber in Roodepoort with affordable rates. Expert kitchen renovations, built-in cupboards, granite installation & emergency plumbing for Roodepoort, Krugersdorp, Florida. Professional carpentry & plumbing services.",
   keywords:
-    "carpenter Roodepoort, kitchen renovation Roodepoort, granite installation Roodepoort, built-in cupboards Roodepoort, carpenter Krugersdorp, kitchen cabinets Florida, affordable carpenter Roodepoort, quality carpenter Roodepoort, custom carpentry Roodepoort",
+    "carpenter Roodepoort, plumber Roodepoort, kitchen renovation Roodepoort, granite installation Roodepoort, built-in cupboards Roodepoort, emergency plumbing Roodepoort, carpenter Krugersdorp, kitchen cabinets Florida, affordable carpenter Roodepoort, quality carpenter Roodepoort, custom carpentry Roodepoort, 24/7 plumber Roodepoort",
 }
 
 export default function RoodepoortPage() {
@@ -27,17 +27,20 @@ export default function RoodepoortPage() {
                     <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
                   ))}
                 </div>
-                <span className="text-slate-600 font-medium text-sm sm:text-base">Quality Roodepoort Carpenter</span>
+                <span className="text-slate-600 font-medium text-sm sm:text-base">
+                  Quality Roodepoort Carpenter & Plumber
+                </span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 sm:mb-6 leading-tight">
-                Quality <span className="text-amber-600">Carpenter</span> in{" "}
+                Quality <span className="text-amber-600">Carpenter & Plumber</span> in{" "}
                 <span className="text-amber-600">Roodepoort</span>
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-600 mb-6 sm:mb-8 leading-relaxed">
-                Professional carpentry services in Roodepoort, Krugersdorp, and Florida. Quality kitchen renovations,
-                built-in cupboards, and granite installations at affordable rates for West Rand families.
+                Professional carpentry and plumbing services in Roodepoort, Krugersdorp, and Florida. Quality kitchen
+                renovations, built-in cupboards, granite installations, and emergency plumbing at affordable rates for
+                West Rand families.
               </p>
 
               <div className="flex flex-col gap-3 sm:gap-4 mb-6 sm:mb-8">
@@ -154,14 +157,14 @@ export default function RoodepoortPage() {
         <div className="container mx-auto">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
-              Quality Carpentry Services in Roodepoort
+              Quality Carpentry & Plumbing Services in Roodepoort
             </h2>
             <p className="text-lg sm:text-xl text-slate-600">
               Affordable quality carpentry and stone installation for West Rand homeowners
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 sm:p-8">
                 <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">Granite & Stone Installation</h3>
@@ -215,6 +218,33 @@ export default function RoodepoortPage() {
                 </Button>
               </CardContent>
             </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">Quality Plumbing Services</h3>
+                <p className="text-slate-600 mb-4 text-sm sm:text-base">
+                  Reliable plumbing services for Roodepoort homes at affordable rates. Emergency repairs and
+                  installations.
+                </p>
+                <ul className="space-y-2 text-slate-600 mb-6 text-sm sm:text-base">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Emergency plumbing repairs
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Geyser installations
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Bathroom & kitchen plumbing
+                  </li>
+                </ul>
+                <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
+                  <Link href="/services/plumbing">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -226,8 +256,8 @@ export default function RoodepoortPage() {
             Ready for Quality Roodepoort Service?
           </h2>
           <p className="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
-            Contact Roodepoort's quality carpentry specialists today. Affordable rates, professional service, and
-            guaranteed quality for all your home improvement needs.
+            Contact Roodepoort's quality carpentry and plumbing specialists today. Affordable rates, professional
+            service, and guaranteed quality for all your home improvement needs.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-lg mx-auto">

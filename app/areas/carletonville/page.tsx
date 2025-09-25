@@ -1,141 +1,162 @@
-import Link from "next/link"
+import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { Phone, Star, CheckCircle, Clock, Shield, Award, Users, MapPin, ArrowRight, Quote } from "lucide-react"
+import {
+  Phone,
+  Star,
+  CheckCircle,
+  Clock,
+  Shield,
+  Award,
+  ArrowRight,
+  Pickaxe,
+  HardHat,
+  MapPin,
+  Quote,
+} from "lucide-react"
 
-export default function HomePage() {
+export const metadata: Metadata = {
+  title:
+    "Mining Town Carpenter & Plumber Carletonville | Heavy-Duty Carpentry, Granite Installation & Industrial Plumbing | Granite Carpentry",
+  description:
+    "Mining town carpenter & plumber services in Carletonville. Heavy-duty carpentry, kitchen renovations, built-in cupboards, granite installation & industrial plumbing. Licensed & insured for mining communities. Call 067 601 4490 for free quote.",
+  keywords:
+    "carpenter Carletonville, mining town plumber Carletonville, heavy-duty carpentry Carletonville, kitchen renovations Carletonville, built-in cupboards Carletonville, granite installation Carletonville, industrial plumbing Carletonville",
+  openGraph: {
+    title: "Mining Town Carpenter & Plumber Carletonville | Heavy-Duty Carpentry & Granite Installation",
+    description:
+      "Mining town carpenter services in Carletonville. Heavy-duty carpentry, kitchen renovations, built-in cupboards, granite installation. Licensed & insured for mining communities.",
+    url: "https://granitecarpentry.co.za/areas/carletonville",
+    siteName: "Granite Carpentry",
+    images: [
+      {
+        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Mining Town Carpenter Carletonville - Granite Carpentry",
+      },
+    ],
+    locale: "en_ZA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mining Town Carpenter & Plumber Carletonville | Heavy-Duty Carpentry & Granite Installation",
+    description:
+      "Mining town carpenter services in Carletonville. Heavy-duty carpentry, kitchen renovations, built-in cupboards, granite installation. Licensed & insured for mining communities.",
+    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+  },
+  alternates: {
+    canonical: "https://granitecarpentry.co.za/areas/carletonville",
+  },
+}
+
+export default function CarletonvillePage() {
   const services = [
     {
-      title: "Kitchen Renovations",
-      description: "Complete kitchen makeovers with custom cabinets, granite countertops, and modern appliances.",
+      title: "Mining Town Kitchen Renovations",
+      description: "Heavy-duty kitchen makeovers built to withstand Carletonville's mining community lifestyle.",
       image: "/Kitchen-renovations-sandton.webp",
       href: "/services/kitchen-renovations",
-      price: "From R50,000",
-      duration: "7-14 days",
+      price: "From R53,000",
+      duration: "8-16 days",
     },
     {
-      title: "Built-in Cupboards",
-      description: "Custom wardrobes, study units, and storage solutions designed for your space.",
+      title: "Mining Community Built-ins",
+      description: "Robust custom wardrobes and storage solutions designed for Carletonville's mining families.",
       image: "/Built-Built-in-Cupboards-Midrand.jpg",
       href: "/services/built-in-cupboards",
-      price: "From R15,000",
-      duration: "3-7 days",
+      price: "From R17,000",
+      duration: "4-8 days",
     },
     {
-      title: "Granite & Quartz",
-      description: "Premium stone countertops and surfaces with professional installation.",
+      title: "Heavy-Duty Granite Installation",
+      description: "Industrial-strength granite and quartz installations built for mining town durability.",
       image: "/granite-installation-Johannesburg.jpg",
       href: "/services/quartz-granite",
-      price: "From R8,000",
-      duration: "2-5 days",
+      price: "From R9,500",
+      duration: "3-6 days",
     },
     {
-      title: "Professional Plumbing",
-      description: "24/7 emergency plumbing services, bathroom installations, and geyser repairs.",
-      image: "/professional-plumber-working.png",
-      href: "/services/plumbing",
-      price: "From R280",
-      duration: "Same day",
-    },
-    {
-      title: "Decking & Flooring",
-      description: "Beautiful outdoor decking and indoor flooring solutions.",
+      title: "Mining Town Decking & Flooring",
+      description: "Durable outdoor decking and flooring solutions designed for Carletonville's mining environment.",
       image: "/beautiful-decking.jpg",
       href: "/services/decking-flooring",
-      price: "From R12,000",
-      duration: "3-8 days",
+      price: "From R14,500",
+      duration: "4-10 days",
     },
     {
-      title: "Drywall & Ceilings",
-      description: "Professional drywall installation and ceiling solutions.",
-      image: "/drywall-contractor.jpg",
-      href: "/services/drywall-ceilings",
-      price: "From R6,000",
-      duration: "2-6 days",
-    },
-    {
-      title: "Carpentry Training",
-      description: "Professional carpentry courses and skills development programs.",
-      image: "/quality_woodworking_education_in_south_africa-1.jpg",
-      href: "/services/carpentry-training",
-      price: "From R3,500",
-      duration: "1-12 weeks",
-    },
-  ]
-
-  const areas = [
-    { name: "Johannesburg South", href: "/areas/johannesburg-south" },
-    { name: "Sandton", href: "/areas/sandton" },
-    { name: "Randburg", href: "/areas/randburg" },
-    { name: "Kempton Park", href: "/areas/kempton-park" },
-    { name: "Midrand", href: "/areas/midrand" },
-    { name: "Fourways", href: "/areas/fourways" },
-    { name: "Boksburg", href: "/areas/boksburg" },
-    { name: "Centurion", href: "/areas/centurion" },
-    { name: "Pretoria", href: "/areas/pretoria" },
-    { name: "Alberton", href: "/areas/alberton" },
-    { name: "Edenvale", href: "/areas/edenvale" },
-    { name: "Roodepoort", href: "/areas/roodepoort" },
-    { name: "Benoni", href: "/areas/benoni" },
-    { name: "Germiston", href: "/areas/germiston" },
-    { name: "Springs", href: "/areas/springs" },
-    { name: "Vanderbijlpark", href: "/areas/vanderbijlpark" },
-    { name: "Vereeniging", href: "/areas/vereeniging" },
-    { name: "Nigel", href: "/areas/nigel" },
-    { name: "Heidelberg", href: "/areas/heidelberg" },
-    { name: "Carletonville", href: "/areas/carletonville" },
-    { name: "Krugersdorp", href: "/areas/krugersdorp" },
-    { name: "Westonaria", href: "/areas/westonaria" },
-  ]
-
-  const testimonials = [
-    {
-      name: "Sarah Mitchell",
-      location: "Sandton",
-      rating: 5,
-      text: "Absolutely exceptional work! Our kitchen renovation exceeded all expectations. The team was professional, punctual, and delivered exactly what they promised.",
-      service: "Kitchen Renovation",
-    },
-    {
-      name: "David Thompson",
-      location: "Randburg",
-      rating: 5,
-      text: "The built-in cupboards transformed our bedroom completely. Quality craftsmanship and attention to detail was outstanding. Highly recommended!",
-      service: "Built-in Cupboards",
-    },
-    {
-      name: "Lisa Chen",
-      location: "Midrand",
-      rating: 5,
-      text: "Professional granite installation with perfect finishing. The team cleaned up after themselves and the result is stunning. Worth every penny!",
-      service: "Granite Installation",
+      title: "Mining Town Plumbing Services",
+      description: "Heavy-duty plumbing services designed for Carletonville's mining community and industrial demands.",
+      image: "/granite-installation-Johannesburg.jpg",
+      href: "/services/plumbing",
+      price: "From R400/hour",
+      duration: "24/7 Mining Service",
     },
   ]
 
   const whyChooseUs = [
     {
-      icon: <Award className="h-8 w-8 text-amber-600" />,
-      title: "5-Star Rated Service",
-      description: "Consistently rated 5 stars by our clients with 47+ completed projects",
+      icon: <Pickaxe className="h-8 w-8 text-amber-600" />,
+      title: "Mining Town Specialists",
+      description: "Deep understanding of Carletonville's mining community needs and heavy-duty requirements",
+    },
+    {
+      icon: <HardHat className="h-8 w-8 text-amber-600" />,
+      title: "Heavy-Duty Focus",
+      description: "Specialized in robust construction that can handle the demands of mining community living",
     },
     {
       icon: <Shield className="h-8 w-8 text-amber-600" />,
-      title: "24-Month Warranty",
-      description: "Comprehensive warranty on all workmanship and 12-month on installations",
+      title: "Mining-Grade Warranty",
+      description: "Extended warranty coverage designed for the demanding conditions of mining town life",
     },
     {
-      icon: <Users className="h-8 w-8 text-amber-600" />,
-      title: "Licensed & Insured",
-      description: "Fully licensed carpentry business with public liability insurance",
+      icon: <Award className="h-8 w-8 text-amber-600" />,
+      title: "West Rand Coverage",
+      description: "Comprehensive service throughout Carletonville and surrounding West Rand mining areas",
+    },
+  ]
+
+  const testimonials = [
+    {
+      name: "Sipho Mthembu",
+      location: "Carletonville Central",
+      rating: 5,
+      text: "Outstanding kitchen renovation that can handle our mining family's busy lifestyle. Built tough and looks great. Professional team that understands our needs.",
+      service: "Mining Town Kitchen",
     },
     {
-      icon: <Clock className="h-8 w-8 text-amber-600" />,
-      title: "On-Time Delivery",
-      description: "We complete projects on schedule with transparent timelines",
+      name: "Jannie Pretorius",
+      location: "Carletonville West",
+      rating: 5,
+      text: "Excellent built-in cupboards that are built to last in our mining community. Quality workmanship that stands up to daily use from our large family.",
+      service: "Mining Community Built-ins",
     },
+    {
+      name: "Nomsa Radebe",
+      location: "Carletonville East",
+      rating: 5,
+      text: "Heavy-duty granite installation that looks fantastic and handles everything we throw at it. Perfect for our mining town home!",
+      service: "Heavy-Duty Granite",
+    },
+  ]
+
+  const nearbyAreas = [
+    "Carletonville Central",
+    "Carletonville West",
+    "Carletonville East",
+    "Khutsong",
+    "Oberholzer",
+    "Fochville",
+    "Westonaria",
+    "Potchefstroom",
+    "Krugersdorp",
+    "Randfontein",
   ]
 
   return (
@@ -148,18 +169,16 @@ export default function HomePage() {
             <div className="space-y-6 lg:space-y-8">
               <div className="space-y-4">
                 <Badge className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2">
-                  Johannesburg's #1 Rated Carpenter & Plumber
+                  Mining Town Carpenter & Plumber Carletonville
                 </Badge>
-                {/* Mobile-optimized heading with proper line breaks */}
                 <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
-                  Professional Carpenter, Plumber &{" "}
-                  <span className="text-amber-400 block sm:inline">Granite Installation</span>{" "}
-                  <span className="block">Specialists</span>
+                  Mining Town Carpenter & <span className="text-amber-400">Heavy-Duty</span>{" "}
+                  <span className="block">Carpentry in Carletonville</span>
                 </h1>
                 <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
-                  Transform your home with Johannesburg's most trusted carpentry, plumbing, and granite installation
-                  experts. Kitchen renovations, built-in cupboards, emergency plumbing, and stone installations with
-                  5-star service since 2020.
+                  Transform your Carletonville home with the West Rand's most trusted mining town carpentry and granite
+                  installation experts. Heavy-duty kitchen renovations, built-in cupboards, and stone installations
+                  built for mining community living since 2020.
                 </p>
               </div>
 
@@ -171,9 +190,9 @@ export default function HomePage() {
                   <span className="ml-2 font-semibold">5.0 Rating</span>
                 </div>
                 <Separator orientation="vertical" className="h-6 bg-slate-600 hidden sm:block" />
-                <span className="font-semibold">47+ Projects Completed</span>
+                <span className="font-semibold">Mining Town Specialists</span>
                 <Separator orientation="vertical" className="h-6 bg-slate-600 hidden sm:block" />
-                <span className="font-semibold">24/7 Emergency Service</span>
+                <span className="font-semibold">Heavy-Duty Grade</span>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -184,7 +203,7 @@ export default function HomePage() {
                 >
                   <Link href="/contact">
                     <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                    Get Free Quote
+                    Get Mining Quote
                   </Link>
                 </Button>
                 <Button
@@ -193,26 +212,26 @@ export default function HomePage() {
                   size="lg"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
                 >
-                  <Link href="/portfolio">View Our Work</Link>
+                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
                 </Button>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
-                  <span>Licensed & Insured</span>
+                  <span>Mining Licensed</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
-                  <span>Free Consultations</span>
+                  <span>Heavy-Duty Warranty</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
-                  <span>Same-Day Quotes</span>
+                  <span>Community Service</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
-                  <span>24-Month Warranty</span>
+                  <span>Mining Town Specialists</span>
                 </div>
               </div>
             </div>
@@ -220,8 +239,8 @@ export default function HomePage() {
             <div className="relative mt-8 lg:mt-0">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/granitecarpentry.webp"
-                  alt="Professional Carpenter, Plumber & Granite Installation Johannesburg"
+                  src="/drywall-contractor.jpg"
+                  alt="Mining Town Carpenter Carletonville - Heavy-Duty Carpentry and Built-in Solutions"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -232,10 +251,10 @@ export default function HomePage() {
                   <div className="bg-white/90 backdrop-blur-sm rounded-lg p-3 sm:p-4">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="font-semibold text-slate-900 text-sm sm:text-base">Quick Response</p>
-                        <p className="text-xs sm:text-sm text-slate-600">Call 067 601 4490</p>
+                        <p className="font-semibold text-slate-900 text-sm sm:text-base">Mining Town Specialists</p>
+                        <p className="text-xs sm:text-sm text-slate-600">Heavy-Duty Grade</p>
                       </div>
-                      <Phone className="h-6 w-6 sm:h-8 sm:w-8 text-amber-600" />
+                      <Pickaxe className="h-6 w-6 sm:h-8 sm:w-8 text-amber-600" />
                     </div>
                   </div>
                 </div>
@@ -249,17 +268,17 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 sm:mb-16">
-            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Our Services</Badge>
+            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Carletonville Mining Services</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-              Complete Carpentry, Plumbing & Installation Solutions
+              Heavy-Duty Carpentry Solutions for Mining Town Living
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              From kitchen renovations to emergency plumbing, we deliver exceptional craftsmanship with premium
-              materials and professional installation throughout Johannesburg.
+              From mining-strength kitchens to heavy-duty built-ins, we deliver robust craftsmanship with premium
+              materials and professional installation throughout Carletonville and the West Rand mining communities.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8">
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
                 <div className="relative overflow-hidden rounded-t-lg">
@@ -272,6 +291,9 @@ export default function HomePage() {
                   />
                   <div className="absolute top-4 left-4">
                     <Badge className="bg-amber-600 text-white">{service.price}</Badge>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-orange-600 text-white">Mining</Badge>
                   </div>
                 </div>
                 <CardHeader>
@@ -309,13 +331,13 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 sm:mb-16">
-            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Why Choose Us</Badge>
+            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Why Choose Us in Carletonville</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-              Johannesburg's Most Trusted Home Service Experts
+              Carletonville's Leading Mining Town Carpentry Specialists
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              With over 47 completed projects and a perfect 5-star rating, we're the preferred choice for homeowners
-              across Johannesburg and Gauteng for carpentry, plumbing, and installation services.
+              With specialized experience in Carletonville's mining community environment, we understand the demands of
+              mining town living and deliver heavy-duty carpentry solutions built to last.
             </p>
           </div>
 
@@ -333,57 +355,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Areas Served Section */}
-      <section className="py-16 sm:py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12 sm:mb-16">
-            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Service Areas</Badge>
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-              Serving Greater Johannesburg & Gauteng
-            </h2>
-            <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              We provide professional carpentry, plumbing, and granite installation services throughout Johannesburg and
-              surrounding areas in Gauteng province.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {areas.map((area, index) => (
-              <Link
-                key={index}
-                href={area.href}
-                className="group p-4 rounded-lg border border-slate-200 hover:border-amber-300 hover:bg-amber-50 transition-all duration-200"
-              >
-                <div className="flex items-center space-x-3">
-                  <MapPin className="h-5 w-5 text-amber-600 group-hover:text-amber-700 flex-shrink-0" />
-                  <span className="font-medium text-slate-900 group-hover:text-amber-700 text-sm sm:text-base">
-                    {area.name}
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button asChild variant="outline" size="lg">
-              <Link href="/areas">
-                View All Service Areas
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials Section */}
       <section className="py-16 sm:py-20 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 sm:mb-16">
-            <Badge className="bg-amber-600 text-white px-4 py-2 mb-4">Client Testimonials</Badge>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">What Our Clients Say</h2>
+            <Badge className="bg-amber-600 text-white px-4 py-2 mb-4">Carletonville Client Testimonials</Badge>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">What Our Mining Community Clients Say</h2>
             <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto">
-              Don't just take our word for it. Here's what our satisfied clients have to say about our carpentry,
-              plumbing, and installation services.
+              Don't just take our word for it. Here's what our satisfied Carletonville clients have to say about our
+              mining town carpentry and heavy-duty installation services.
             </p>
           </div>
 
@@ -418,13 +398,43 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Areas Served Section */}
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 sm:mb-16">
+            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Areas We Serve</Badge>
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+              Mining Town Carpentry Throughout Carletonville & West Rand
+            </h2>
+            <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
+              We provide specialized mining town carpentry and granite installation services throughout Carletonville
+              and surrounding West Rand mining areas with the same heavy-duty expertise and quality craftsmanship.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {nearbyAreas.map((area, index) => (
+              <div
+                key={index}
+                className="group p-4 rounded-lg border border-slate-200 hover:border-amber-300 hover:bg-amber-50 transition-all duration-200"
+              >
+                <div className="flex items-center space-x-3">
+                  <MapPin className="h-5 w-5 text-amber-600 group-hover:text-amber-700 flex-shrink-0" />
+                  <span className="font-medium text-slate-900 group-hover:text-amber-700 text-sm">{area}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 sm:py-20 bg-amber-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Home?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready for Mining Town Carpentry in Carletonville?</h2>
           <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Get a free consultation and quote for your carpentry, plumbing, or granite installation project. We're ready
-            to bring your vision to life with professional craftsmanship and 24/7 emergency service.
+            Get a free consultation and quote for your heavy-duty carpentry or granite installation project in
+            Carletonville. We're ready to deliver mining-strength solutions built for your community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -435,7 +445,7 @@ export default function HomePage() {
             >
               <Link href="/contact">
                 <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                Get Free Quote
+                Get Mining Quote
               </Link>
             </Button>
             <Button
@@ -446,24 +456,6 @@ export default function HomePage() {
             >
               <Link href="tel:+27676014490">Call 067 601 4490</Link>
             </Button>
-          </div>
-          <div className="mt-8 grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-4 sm:gap-8 text-sm opacity-90">
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-              <span>Free Consultations</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-              <span>Same-Day Quotes</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-              <span>24/7 Emergency Service</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-              <span>Licensed & Insured</span>
-            </div>
           </div>
         </div>
       </section>

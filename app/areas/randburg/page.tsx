@@ -6,11 +6,11 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowRight, Phone, Star, Award, Home } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Trusted Carpenter Randburg | Kitchen Renovations & Built-in Cupboards",
+  title: "Trusted Carpenter & Plumber Randburg | Kitchen Renovations, Built-in Cupboards & Emergency Plumbing",
   description:
-    "Trusted carpenter in Randburg with 5-star rating. Expert kitchen renovations, built-in cupboards, granite installation for Randburg, Northcliff, Ferndale. Affordable quality carpentry. Free quotes.",
+    "Trusted carpenter & plumber in Randburg with 5-star rating. Expert kitchen renovations, built-in cupboards, granite installation & emergency plumbing for Randburg, Northcliff, Ferndale. Affordable quality carpentry & plumbing. Free quotes.",
   keywords:
-    "carpenter Randburg, kitchen renovation Randburg, built-in cupboards Randburg, granite installation Randburg, carpenter Northcliff, kitchen cabinets Ferndale, affordable carpenter Randburg, trusted carpenter Randburg, best carpenter Randburg, custom carpentry Randburg",
+    "carpenter Randburg, plumber Randburg, kitchen renovation Randburg, built-in cupboards Randburg, granite installation Randburg, emergency plumbing Randburg, carpenter Northcliff, kitchen cabinets Ferndale, affordable carpenter Randburg, trusted carpenter Randburg, best carpenter Randburg, custom carpentry Randburg, 24/7 plumber Randburg",
 }
 
 export default function RandburgPage() {
@@ -27,18 +27,20 @@ export default function RandburgPage() {
                     <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
                   ))}
                 </div>
-                <span className="text-slate-600 font-medium text-sm sm:text-base">Trusted Randburg Carpenter</span>
+                <span className="text-slate-600 font-medium text-sm sm:text-base">
+                  Trusted Randburg Carpenter & Plumber
+                </span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 sm:mb-6 leading-tight">
-                Trusted <span className="text-amber-600">Carpenter</span> in{" "}
+                Trusted <span className="text-amber-600">Carpenter & Plumber</span> in{" "}
                 <span className="text-amber-600">Randburg</span>
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-600 mb-6 sm:mb-8 leading-relaxed">
-                Professional carpentry services in Randburg, Northcliff, and Ferndale. Specializing in kitchen
-                renovations, built-in cupboards, and granite installations for Randburg families. Quality workmanship at
-                affordable prices.
+                Professional carpentry and plumbing services in Randburg, Northcliff, and Ferndale. Specializing in
+                kitchen renovations, built-in cupboards, granite installations, and emergency plumbing for Randburg
+                families. Quality workmanship at affordable prices.
               </p>
 
               <div className="flex flex-col gap-3 sm:gap-4 mb-6 sm:mb-8">
@@ -117,7 +119,7 @@ export default function RandburgPage() {
               Serving All Randburg Areas
             </h2>
             <p className="text-lg sm:text-xl text-slate-600">
-              Professional carpentry services throughout Randburg and surrounding areas
+              Professional carpentry and plumbing services throughout Randburg and surrounding areas
             </p>
           </div>
 
@@ -155,14 +157,14 @@ export default function RandburgPage() {
         <div className="container mx-auto">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
-              Carpentry Services in Randburg
+              Carpentry & Plumbing Services in Randburg
             </h2>
             <p className="text-lg sm:text-xl text-slate-600">
-              Quality carpentry and renovation services for Randburg homeowners
+              Quality carpentry and plumbing services for Randburg homeowners
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 sm:p-8">
                 <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">Kitchen Renovations</h3>
@@ -215,6 +217,33 @@ export default function RandburgPage() {
                 </Button>
               </CardContent>
             </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">Trusted Plumbing Services</h3>
+                <p className="text-slate-600 mb-4 text-sm sm:text-base">
+                  Professional plumbing services for Randburg families. Reliable repairs and installations at fair
+                  prices.
+                </p>
+                <ul className="space-y-2 text-slate-600 mb-6 text-sm sm:text-base">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Family plumbing services
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Emergency repairs 24/7
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Bathroom renovations
+                  </li>
+                </ul>
+                <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
+                  <Link href="/services/plumbing">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -226,8 +255,8 @@ export default function RandburgPage() {
             Ready to Start Your Randburg Project?
           </h2>
           <p className="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
-            Contact Randburg's trusted carpentry specialists today. Quality workmanship, fair pricing, and reliable
-            service for your home improvement needs.
+            Contact Randburg's trusted carpentry and plumbing specialists today. Quality workmanship, fair pricing, and
+            reliable service for your home improvement needs.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-lg mx-auto">

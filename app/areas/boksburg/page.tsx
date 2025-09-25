@@ -6,15 +6,16 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Wrench } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Best Carpenter Boksburg 2024 | #1 Reliable Kitchen Renovations & Built-in Cupboards",
+  title:
+    "★★★★★ Best Carpenter & Plumber Boksburg 2024 | #1 Reliable Kitchen Renovations, Built-in Cupboards & Emergency Plumbing",
   description:
-    "★★★★★ #1 reliable carpenter in Boksburg 2024. Professional kitchen renovations, built-in cupboards, granite installations. 400+ East Rand projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
+    "★★★★★ #1 reliable carpenter & plumber in Boksburg 2024. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 400+ East Rand projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
   keywords:
-    "best carpenter Boksburg, reliable carpenter Boksburg 2024, kitchen renovation Boksburg, built-in cupboards Boksburg, granite installation Boksburg, affordable carpenter Boksburg, professional carpentry Boksburg, #1 carpenter Boksburg, carpenter near me Boksburg, Benoni carpenter, Germiston carpenter, East Rand carpenter",
+    "best carpenter Boksburg, reliable plumber Boksburg 2024, kitchen renovation Boksburg, built-in cupboards Boksburg, granite installation Boksburg, emergency plumbing Boksburg, affordable carpenter Boksburg, professional carpentry Boksburg, #1 carpenter Boksburg, carpenter near me Boksburg, Benoni carpenter, Germiston carpenter, East Rand carpenter, 24/7 plumber Boksburg",
   openGraph: {
-    title: "★★★★★ Best Carpenter Boksburg 2024 | #1 Reliable Services",
+    title: "★★★★★ Best Carpenter & Plumber Boksburg 2024 | #1 Reliable Services",
     description:
-      "★★★★★ #1 reliable carpenter in Boksburg. Professional kitchen renovations, built-in cupboards, granite installations. 400+ East Rand projects. FREE quotes.",
+      "★★★★★ #1 reliable carpenter & plumber in Boksburg. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 400+ East Rand projects. FREE quotes.",
     url: "https://granitecarpentry.co.za/areas/boksburg",
   },
   alternates: {
@@ -33,17 +34,17 @@ export default function BoksburgPage() {
             <div className="flex items-center justify-center gap-2 mb-6">
               <MapPin className="w-6 h-6 text-amber-400" />
               <Badge variant="secondary" className="bg-amber-600/20 text-amber-200 border-amber-400/30">
-                ★★★★★ #1 Reliable Carpenter Boksburg
+                ★★★★★ #1 Reliable Carpenter & Plumber Boksburg
               </Badge>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Best Reliable Carpenter
+              Best Reliable Carpenter & Plumber
               <span className="block text-amber-400">Boksburg 2024</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 leading-relaxed">
-              ★★★★★ #1 reliable carpenter in Boksburg. Professional kitchen renovations, built-in cupboards, and granite
-              installations for East Rand homes. 400+ completed projects with 5-year warranty. FREE quotes & dependable
-              service.
+              ★★★★★ #1 reliable carpenter & plumber in Boksburg. Professional kitchen renovations, built-in cupboards,
+              granite installations, and emergency plumbing services for East Rand homes. 400+ completed projects with
+              5-year warranty. FREE quotes & dependable service.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4">
@@ -83,13 +84,15 @@ export default function BoksburgPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Reliable Carpentry Services Boksburg</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
+              Reliable Carpentry & Plumbing Services Boksburg
+            </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Serving Boksburg, Benoni, Germiston, and East Rand areas with dependable carpentry solutions
+              Serving Boksburg, Benoni, Germiston, and East Rand areas with dependable carpentry and plumbing solutions
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
@@ -191,6 +194,41 @@ export default function BoksburgPage() {
                 </ul>
                 <Button asChild className="w-full">
                   <Link href="/services/quartz-granite">View Stone Services</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
+                    <Shield className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-800">Reliable Plumbing Services</h3>
+                    <p className="text-sm text-amber-600">Starting from R370/hour</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-sm mb-4">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Reliable emergency plumbing
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Professional installations
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Geyser repairs & replacements
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Dependable service guarantee
+                  </li>
+                </ul>
+                <Button asChild className="w-full">
+                  <Link href="/services/plumbing">View Plumbing Services</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -381,8 +419,8 @@ export default function BoksburgPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Reliable Boksburg Project?</h2>
           <p className="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
-            Contact Boksburg's #1 reliable carpenter today. Dependable service, quality workmanship, and 5-year
-            warranty. FREE consultation and competitive quotes.
+            Contact Boksburg's #1 reliable carpenter & plumber today. Dependable service, quality workmanship, and
+            5-year warranty. FREE consultation and competitive quotes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button

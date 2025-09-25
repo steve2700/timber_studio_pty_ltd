@@ -19,25 +19,26 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Best Carpenter Kempton Park 2024 | Kitchen Renovations & Joinery Services | Free Quotes",
+  title:
+    "Best Carpenter & Plumber Kempton Park 2024 | Kitchen Renovations, Joinery Services & Airport Area Plumbing | Free Quotes",
   description:
-    "★★★★★ #1 Rated Carpenter in Kempton Park near OR Tambo. Expert kitchen renovations, built-in cupboards, granite installation. Serving Edenvale, Bedfordview, Boksburg. Licensed & insured. Call 067 601 4490",
+    "★★★★★ #1 Rated Carpenter & Plumber in Kempton Park near OR Tambo. Expert kitchen renovations, professional joinery, built-in cupboards & airport area plumbing. Serving Edenvale, Bedfordview, Boksburg. Licensed & insured. Call 067 601 4490",
   keywords:
-    "carpenter Kempton Park, kitchen renovation Kempton Park, built-in cupboards Kempton Park, granite installation Kempton Park, carpenter Edenvale, carpenter Bedfordview, joinery Kempton Park, kitchen cabinets Kempton Park, best carpenter Kempton Park, affordable carpenter Kempton Park, OR Tambo carpenter, East Rand carpenter",
+    "carpenter Kempton Park, plumber Kempton Park, kitchen renovation Kempton Park, built-in cupboards Kempton Park, granite installation Kempton Park, airport plumbing Kempton Park, carpenter Edenvale, carpenter Bedfordview, joinery Kempton Park, kitchen cabinets Kempton Park, best carpenter Kempton Park, affordable carpenter Kempton Park, OR Tambo carpenter, East Rand carpenter, emergency plumbing Kempton Park",
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/kempton-park",
   },
   openGraph: {
-    title: "Best Carpenter Kempton Park 2024 | Kitchen Renovations & Joinery Services",
+    title: "Best Carpenter & Plumber Kempton Park 2024 | Kitchen Renovations & Joinery Services",
     description:
-      "★★★★★ #1 Rated Carpenter in Kempton Park. Expert kitchen renovations, joinery services. Free quotes. Call 067 601 4490",
+      "★★★★★ #1 Rated Carpenter & Plumber in Kempton Park. Expert kitchen renovations, joinery services & airport area plumbing. Free quotes. Call 067 601 4490",
     url: "https://granitecarpentry.co.za/areas/kempton-park",
     images: [
       {
         url: "https://granitecarpentry.co.za/granitecarpentry.webp",
         width: 1200,
         height: 630,
-        alt: "Best Carpenter Kempton Park - Kitchen Renovation & Joinery Services",
+        alt: "Best Carpenter & Plumber Kempton Park - Kitchen Renovation & Joinery Services",
       },
     ],
   },
@@ -55,18 +56,19 @@ export default function KemptonParkPage() {
               <div className="flex items-center mb-4">
                 <MapPin className="w-5 h-5 text-amber-400 mr-2" />
                 <Badge variant="secondary" className="bg-amber-600/20 text-amber-100 border-amber-300">
-                  Kempton Park's #1 Carpenter
+                  Kempton Park's #1 Carpenter & Plumber
                 </Badge>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Best <span className="text-amber-400">Carpenter</span> in{" "}
+                Best <span className="text-amber-400">Carpenter & Plumber</span> in{" "}
                 <span className="text-amber-400 underline decoration-amber-500/60">Kempton Park</span>
               </h1>
 
               <p className="text-xl sm:text-2xl text-slate-200 mb-8 leading-relaxed">
-                ★★★★★ Rated #1 Carpenter in Kempton Park near OR Tambo Airport. Expert kitchen renovations, professional
-                joinery, and built-in cupboards. Serving Edenvale, Bedfordview, Boksburg & East Rand.
+                ★★★★★ Rated #1 Carpenter & Plumber in Kempton Park near OR Tambo Airport. Expert kitchen renovations,
+                professional joinery, built-in cupboards & airport area plumbing. Serving Edenvale, Bedfordview,
+                Boksburg & East Rand.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -112,7 +114,7 @@ export default function KemptonParkPage() {
             <div className="relative">
               <Image
                 src="/granitecarpentry.webp"
-                alt="Best Carpenter Kempton Park - Expert Joinery & Kitchen Renovation near OR Tambo"
+                alt="Best Carpenter & Plumber Kempton Park - Expert Joinery & Kitchen Renovation near OR Tambo"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-2xl w-full h-auto"
@@ -120,7 +122,7 @@ export default function KemptonParkPage() {
               />
               <div className="absolute -bottom-4 -left-4 bg-amber-600 text-white p-4 rounded-lg shadow-lg">
                 <div className="text-2xl font-bold">#1 Rated</div>
-                <div className="text-sm">Kempton Park Carpenter</div>
+                <div className="text-sm">Kempton Park Carpenter & Plumber</div>
               </div>
             </div>
           </div>
@@ -175,14 +177,14 @@ export default function KemptonParkPage() {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
-              Expert Carpentry Services in Kempton Park
+              Expert Carpentry & Plumbing Services in Kempton Park
             </h2>
             <p className="text-xl text-slate-600">
               Professional joinery and renovation services for East Rand homeowners
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="hover:shadow-xl transition-shadow">
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
@@ -285,6 +287,41 @@ export default function KemptonParkPage() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Plane className="w-6 h-6 text-amber-600 mr-2" />
+                  Airport Area Plumbing Kempton Park
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Expert plumbing services near OR Tambo Airport. Residential and commercial plumbing for Kempton Park
+                  properties.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Airport area plumbing services
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Residential & commercial repairs
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Emergency plumbing 24/7
+                  </li>
+                </ul>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R360/hour</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/services/plumbing">View Details</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -295,7 +332,7 @@ export default function KemptonParkPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Why Kempton Park Chooses Us</h2>
             <p className="text-xl text-slate-600">
-              The most trusted carpenter in Kempton Park with 350+ completed projects
+              The most trusted carpenter & plumber in Kempton Park with 350+ completed projects
             </p>
           </div>
 
@@ -313,7 +350,7 @@ export default function KemptonParkPage() {
                 <Shield className="w-8 h-8 text-amber-600" />
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-2">Licensed & Insured</h3>
-              <p className="text-slate-600">Fully licensed carpenter with comprehensive insurance coverage</p>
+              <p className="text-slate-600">Fully licensed carpenter & plumber with comprehensive insurance coverage</p>
             </div>
 
             <div className="text-center">
@@ -340,8 +377,8 @@ export default function KemptonParkPage() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Kempton Park Property?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Join 350+ satisfied Kempton Park clients. Get your FREE quote today from Kempton Park's #1 rated carpenter.
-            Licensed, insured, and guaranteed.
+            Join 350+ satisfied Kempton Park clients. Get your FREE quote today from Kempton Park's #1 rated carpenter &
+            plumber. Licensed, insured, and guaranteed.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">

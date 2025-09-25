@@ -17,6 +17,7 @@ export function Header() {
     { name: "Decking & Flooring", href: "/services/decking-flooring" },
     { name: "Drywall & Ceilings", href: "/services/drywall-ceilings" },
     { name: "Carpentry Training", href: "/services/carpentry-training" },
+    { name: "Professional Plumbing", href: "/services/plumbing" },
   ]
 
   const areas = [
@@ -32,6 +33,16 @@ export function Header() {
     { name: "Edenvale", href: "/areas/edenvale" },
     { name: "Boksburg", href: "/areas/boksburg" },
     { name: "Alberton", href: "/areas/alberton" },
+    { name: "Benoni", href: "/areas/benoni" },
+    { name: "Germiston", href: "/areas/germiston" },
+    { name: "Springs", href: "/areas/springs" },
+    { name: "Vanderbijlpark", href: "/areas/vanderbijlpark" },
+    { name: "Vereeniging", href: "/areas/vereeniging" },
+    { name: "Nigel", href: "/areas/nigel" },
+    { name: "Heidelberg", href: "/areas/heidelberg" },
+    { name: "Carletonville", href: "/areas/carletonville" },
+    { name: "Krugersdorp", href: "/areas/krugersdorp" },
+    { name: "Westonaria", href: "/areas/westonaria" },
   ]
 
   return (

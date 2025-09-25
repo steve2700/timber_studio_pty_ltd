@@ -11,6 +11,7 @@ export function Footer() {
     { name: "Kitchen Renovations", href: "/services/kitchen-renovations" },
     { name: "Built-in Cupboards", href: "/services/built-in-cupboards" },
     { name: "Granite & Quartz", href: "/services/quartz-granite" },
+    { name: "Professional Plumbing", href: "/services/plumbing" },
     { name: "Drywall & Ceilings", href: "/services/drywall-ceilings" },
     { name: "Decking & Flooring", href: "/services/decking-flooring" },
     { name: "Carpentry Training", href: "/services/carpentry-training" },
@@ -23,6 +24,8 @@ export function Footer() {
     { name: "Pretoria", href: "/areas/pretoria" },
     { name: "Centurion", href: "/areas/centurion" },
     { name: "Midrand", href: "/areas/midrand" },
+    { name: "Krugersdorp", href: "/areas/krugersdorp" },
+    { name: "Benoni", href: "/areas/benoni" },
   ]
 
   const company = [
@@ -96,8 +99,8 @@ export function Footer() {
                 </div>
               </div>
               <p className="text-slate-300 leading-relaxed">
-                Johannesburg's #1 rated carpenter with over 1000+ completed projects. Professional kitchen renovations,
-                built-in cupboards, and granite installations with 24-month warranty.
+                Johannesburg's #1 rated carpenter and plumber with over 1000+ completed projects. Professional kitchen
+                renovations, built-in cupboards, emergency plumbing, and granite installations with 24-month warranty.
               </p>
             </div>
 
@@ -203,8 +206,8 @@ export function Footer() {
             <div className="mt-6 p-4 bg-slate-800 rounded-lg">
               <h5 className="font-semibold text-amber-400 mb-2">Free Service Areas</h5>
               <p className="text-sm text-slate-300">
-                We provide free quotes and consultations throughout Johannesburg, Sandton, Randburg, Pretoria, and
-                surrounding areas.
+                We provide free quotes and consultations throughout Johannesburg, Sandton, Randburg, Pretoria,
+                Centurion, Midrand, Krugersdorp, and Benoni. Emergency plumbing available 24/7.
               </p>
             </div>
           </div>
@@ -213,7 +216,7 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-amber-400 mb-6">Stay Updated</h4>
             <p className="text-slate-300 mb-4">
-              Get expert carpentry tips, project ideas, and special offers delivered to your inbox.
+              Get expert carpentry tips, plumbing advice, project ideas, and special offers delivered to your inbox.
             </p>
 
             <div className="space-y-3 mb-6">
@@ -249,7 +252,7 @@ export function Footer() {
           <div className="text-slate-400 text-sm text-center md:text-left">
             <p>© {currentYear} Granite Carpentry & Joinery Experts. All rights reserved.</p>
             <p className="mt-1">
-              Professional carpentry services in Johannesburg | Licensed & Insured | 24-Month Warranty
+              Professional carpentry & plumbing services in Johannesburg | Licensed & Insured | 24-Month Warranty
             </p>
           </div>
 
@@ -271,7 +274,7 @@ export function Footer() {
       <div className="bg-amber-600 text-white py-2">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <span className="font-semibold">24/7 Emergency Carpentry Service Available</span>
+            <span className="font-semibold">24/7 Emergency Carpentry & Plumbing Service Available</span>
             <span className="mx-2">|</span>
             <a href="tel:+27676014490" className="hover:underline font-semibold">
               Call 067 601 4490 Now

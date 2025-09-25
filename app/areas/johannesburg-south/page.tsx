@@ -6,15 +6,16 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Best Carpenter Johannesburg South 2024 | #1 Rated Kitchen Renovations & Built-in Cupboards",
+  title:
+    "★★★★★ Best Carpenter & Plumber Johannesburg South 2024 | #1 Rated Kitchen Renovations, Built-in Cupboards & Plumbing Services",
   description:
-    "★★★★★ #1 rated carpenter in Johannesburg South 2024. Professional kitchen renovations, built-in cupboards, granite installations. 500+ completed jobs. FREE quotes. Licensed & insured. Call 067 601 4490.",
+    "★★★★★ #1 rated carpenter & plumber in Johannesburg South 2024. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 500+ completed jobs. FREE quotes. Licensed & insured. Call 067 601 4490.",
   keywords:
-    "best carpenter Johannesburg South, carpenter Johannesburg South 2024, kitchen renovation Johannesburg South, built-in cupboards Johannesburg South, granite installation Johannesburg South, affordable carpenter Johannesburg South, professional carpentry Johannesburg South, #1 carpenter Johannesburg South, cheap carpenter Johannesburg South, carpenter near me Johannesburg South",
+    "best carpenter Johannesburg South, plumber Johannesburg South 2024, kitchen renovation Johannesburg South, built-in cupboards Johannesburg South, granite installation Johannesburg South, emergency plumbing Johannesburg South, professional carpentry Johannesburg South, #1 carpenter Johannesburg South, cheap carpenter Johannesburg South, carpenter near me Johannesburg South, 24/7 plumber Johannesburg South",
   openGraph: {
-    title: "★★★★★ Best Carpenter Johannesburg South 2024 | #1 Rated",
+    title: "★★★★★ Best Carpenter & Plumber Johannesburg South 2024 | #1 Rated",
     description:
-      "★★★★★ #1 rated carpenter in Johannesburg South. Professional kitchen renovations, built-in cupboards, granite installations. 500+ jobs completed. FREE quotes.",
+      "★★★★★ #1 rated carpenter & plumber in Johannesburg South. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 500+ jobs completed. FREE quotes.",
     url: "https://granitecarpentry.co.za/areas/johannesburg-south",
   },
   alternates: {
@@ -41,8 +42,9 @@ export default function JohannesburgSouthPage() {
               <span className="block text-amber-400">Johannesburg South 2024</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 leading-relaxed">
-              ★★★★★ #1 rated carpenter in Johannesburg South. Professional kitchen renovations, built-in cupboards, and
-              granite installations. 500+ completed jobs with 5-year warranty. FREE quotes & same-day service available.
+              ★★★★★ #1 rated carpenter & plumber in Johannesburg South. Professional kitchen renovations, built-in
+              cupboards, granite installations & emergency plumbing services. 500+ completed jobs with 5-year warranty.
+              FREE quotes & same-day service available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4">
@@ -83,15 +85,15 @@ export default function JohannesburgSouthPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-              Professional Carpentry Services Johannesburg South
+              Professional Carpentry & Plumbing Services Johannesburg South
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Serving Johannesburg South, Alberton, Bassonia, Glenvista, and surrounding areas with premium carpentry
-              solutions
+              solutions & emergency plumbing services
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
@@ -196,6 +198,41 @@ export default function JohannesburgSouthPage() {
                 </Button>
               </CardContent>
             </Card>
+
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
+                    <Star className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-800">Professional Plumbing Services</h3>
+                    <p className="text-sm text-amber-600">Starting from R350/hour</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-sm mb-4">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Emergency plumbing repairs 24/7
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Kitchen & bathroom installations
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Geyser repairs & replacements
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Leak detection & pipe repairs
+                  </li>
+                </ul>
+                <Button asChild className="w-full">
+                  <Link href="/services/plumbing">View Plumbing Services</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -205,7 +242,7 @@ export default function JohannesburgSouthPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">
-              Why We're Johannesburg South's #1 Rated Carpenter
+              Why We're Johannesburg South's #1 Rated Carpenter & Plumber
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
@@ -271,7 +308,7 @@ export default function JohannesburgSouthPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Johannesburg South Area Coverage</h2>
             <p className="text-xl text-slate-600 mb-12">
-              Professional carpentry services throughout Johannesburg South and surrounding areas
+              Professional carpentry & plumbing services throughout Johannesburg South and surrounding areas
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
@@ -385,8 +422,8 @@ export default function JohannesburgSouthPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Johannesburg South Project?</h2>
           <p className="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
-            Contact Johannesburg South's #1 rated carpenter today. FREE quotes, professional service, and 5-year
-            warranty on all work. Same-day service available.
+            Contact Johannesburg South's #1 rated carpenter & plumber today. FREE quotes, professional service, and
+            5-year warranty on all work. Same-day service available.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button

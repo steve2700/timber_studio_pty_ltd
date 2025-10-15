@@ -16,8 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/plumbing",
   ]
 
-  // Area pages - all 23 areas including new Johannesburg
+  // Area pages - all 23 areas including new Johannesburg + areas hub page
   const areaPages = [
+    "/areas", // Hub page for all service areas
     "/areas/johannesburg",
     "/areas/johannesburg-south",
     "/areas/sandton",
@@ -60,10 +61,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? "daily"
         : page.startsWith("/blog")
           ? "weekly"
-          : page.startsWith("/areas")
+          : // Set /areas hub page to weekly updates with high priority
+            page === "/areas" || page.startsWith("/areas/")
             ? "weekly"
-            : // Updated condition to check for service pages without /services/ prefix
-              page === "/kitchen-renovations" ||
+            : page === "/kitchen-renovations" ||
                 page === "/built-in-cupboards" ||
                 page === "/quartz-granite" ||
                 page === "/plumbing" ||
@@ -75,19 +76,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority:
       page === ""
         ? 1
-        : page.startsWith("/areas")
+        : // Set /areas hub page to 0.9 priority (same as individual area pages)
+          page === "/areas"
           ? 0.9
-          : // Updated priority condition for service pages
-            page === "/kitchen-renovations" ||
-              page === "/built-in-cupboards" ||
-              page === "/quartz-granite" ||
-              page === "/plumbing" ||
-              page === "/decking-flooring" ||
-              page === "/drywall-ceilings" ||
-              page === "/carpentry-training"
-            ? 0.8
-            : page.startsWith("/blog")
-              ? 0.7
-              : 0.6,
+          : page.startsWith("/areas/")
+            ? 0.9
+            : page === "/kitchen-renovations" ||
+                page === "/built-in-cupboards" ||
+                page === "/quartz-granite" ||
+                page === "/plumbing" ||
+                page === "/decking-flooring" ||
+                page === "/drywall-ceilings" ||
+                page === "/carpentry-training"
+              ? 0.8
+              : page.startsWith("/blog")
+                ? 0.7
+                : 0.6,
   }))
 }

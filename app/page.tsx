@@ -12,7 +12,7 @@ export default function HomePage() {
       title: "Kitchen Renovations",
       description: "Complete kitchen makeovers with custom cabinets, granite countertops, and modern appliances.",
       image: "/Kitchen-renovations-sandton.webp",
-      href: "/services/kitchen-renovations",
+      href: "/kitchen-renovations",
       price: "From R50,000",
       duration: "7-14 days",
     },
@@ -20,7 +20,7 @@ export default function HomePage() {
       title: "Built-in Cupboards",
       description: "Custom wardrobes, study units, and storage solutions designed for your space.",
       image: "/Built-Built-in-Cupboards-Midrand.jpg",
-      href: "/services/built-in-cupboards",
+      href: "/built-in-cupboards",
       price: "From R15,000",
       duration: "3-7 days",
     },
@@ -28,7 +28,7 @@ export default function HomePage() {
       title: "Granite & Quartz",
       description: "Premium stone countertops and surfaces with professional installation.",
       image: "/granite-installation-Johannesburg.jpg",
-      href: "/services/quartz-granite",
+      href: "/quartz-granite",
       price: "From R8,000",
       duration: "2-5 days",
     },
@@ -36,7 +36,7 @@ export default function HomePage() {
       title: "Professional Plumbing",
       description: "24/7 emergency plumbing services, bathroom installations, and geyser repairs.",
       image: "/professional-plumber-working.png",
-      href: "/services/plumbing",
+      href: "/plumbing",
       price: "From R280",
       duration: "Same day",
     },
@@ -44,7 +44,7 @@ export default function HomePage() {
       title: "Decking & Flooring",
       description: "Beautiful outdoor decking and indoor flooring solutions.",
       image: "/beautiful-decking.jpg",
-      href: "/services/decking-flooring",
+      href: "/decking-flooring",
       price: "From R12,000",
       duration: "3-8 days",
     },
@@ -52,7 +52,7 @@ export default function HomePage() {
       title: "Drywall & Ceilings",
       description: "Professional drywall installation and ceiling solutions.",
       image: "/drywall-contractor.jpg",
-      href: "/services/drywall-ceilings",
+      href: "/drywall-ceilings",
       price: "From R6,000",
       duration: "2-6 days",
     },
@@ -60,7 +60,7 @@ export default function HomePage() {
       title: "Carpentry Training",
       description: "Professional carpentry courses and skills development programs.",
       image: "/quality_woodworking_education_in_south_africa-1.jpg",
-      href: "/services/carpentry-training",
+      href: "/carpentry-training",
       price: "From R3,500",
       duration: "1-12 weeks",
     },
@@ -440,8 +440,8 @@ export default function HomePage() {
             </Button>
             <Button
               asChild
-              size="lg"
               variant="outline"
+              size="lg"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
               <Link href="tel:+27676014490">Call 067 601 4490</Link>

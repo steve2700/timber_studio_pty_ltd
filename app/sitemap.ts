@@ -6,15 +6,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Static pages
   const staticPages = ["", "/about", "/contact", "/portfolio", "/blog", "/faq", "/privacy", "/terms"]
 
-  // Service pages
   const servicePages = [
-    "/services/kitchen-renovations",
-    "/services/built-in-cupboards",
-    "/services/quartz-granite",
-    "/services/decking-flooring",
-    "/services/drywall-ceilings",
-    "/services/carpentry-training",
-    "/services/plumbing",
+    "/kitchen-renovations",
+    "/built-in-cupboards",
+    "/quartz-granite",
+    "/decking-flooring",
+    "/drywall-ceilings",
+    "/carpentry-training",
+    "/plumbing",
   ]
 
   // Area pages - all 23 areas including new Johannesburg
@@ -63,7 +62,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
           ? "weekly"
           : page.startsWith("/areas")
             ? "weekly"
-            : page.startsWith("/services")
+            : // Updated condition to check for service pages without /services/ prefix
+              page === "/kitchen-renovations" ||
+                page === "/built-in-cupboards" ||
+                page === "/quartz-granite" ||
+                page === "/plumbing" ||
+                page === "/decking-flooring" ||
+                page === "/drywall-ceilings" ||
+                page === "/carpentry-training"
               ? "monthly"
               : "yearly",
     priority:
@@ -71,7 +77,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? 1
         : page.startsWith("/areas")
           ? 0.9
-          : page.startsWith("/services")
+          : // Updated priority condition for service pages
+            page === "/kitchen-renovations" ||
+              page === "/built-in-cupboards" ||
+              page === "/quartz-granite" ||
+              page === "/plumbing" ||
+              page === "/decking-flooring" ||
+              page === "/drywall-ceilings" ||
+              page === "/carpentry-training"
             ? 0.8
             : page.startsWith("/blog")
               ? 0.7

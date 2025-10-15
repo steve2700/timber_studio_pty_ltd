@@ -8,13 +8,13 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const services = [
-    { name: "Kitchen Renovations", href: "/services/kitchen-renovations" },
-    { name: "Built-in Cupboards", href: "/services/built-in-cupboards" },
-    { name: "Granite & Quartz", href: "/services/quartz-granite" },
-    { name: "Professional Plumbing", href: "/services/plumbing" },
-    { name: "Drywall & Ceilings", href: "/services/drywall-ceilings" },
-    { name: "Decking & Flooring", href: "/services/decking-flooring" },
-    { name: "Carpentry Training", href: "/services/carpentry-training" },
+    { name: "Kitchen Renovations", href: "/kitchen-renovations" },
+    { name: "Built-in Cupboards", href: "/built-in-cupboards" },
+    { name: "Granite & Quartz", href: "/quartz-granite" },
+    { name: "Professional Plumbing", href: "/plumbing" },
+    { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
+    { name: "Decking & Flooring", href: "/decking-flooring" },
+    { name: "Carpentry Training", href: "/carpentry-training" },
   ]
 
   const areas = [

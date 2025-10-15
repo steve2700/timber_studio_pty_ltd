@@ -307,59 +307,6 @@ export default function RootLayout({
             }),
           }}
         />
-
-        {/* FAQ Schema for AI Platforms */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "What carpentry services does Granite Carpentry offer in Johannesburg?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Granite Carpentry offers comprehensive carpentry services including kitchen renovations, built-in cupboards, granite and quartz countertop installation, decking, drywall installation, and custom carpentry work throughout Johannesburg and Gauteng.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "How much does a kitchen renovation cost in Johannesburg?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Kitchen renovation costs in Johannesburg vary based on size, materials, and complexity. Our kitchen renovations typically range from R50,000 to R200,000+. We provide free consultations and detailed quotes for accurate pricing.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Do you provide warranties on carpentry work?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, Granite Carpentry provides a comprehensive 24-month warranty on all carpentry workmanship and a 12-month warranty on granite installations. We stand behind our quality work with full warranty coverage.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Which areas in Johannesburg do you serve?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "We serve the entire Greater Johannesburg area including Johannesburg South, Sandton, Randburg, Kempton Park, Pretoria, Centurion, Midrand, Edenvale, Boksburg, Roodepoort, and surrounding areas in Gauteng province.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "How long does a typical kitchen renovation take?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Most kitchen renovations take 7-14 working days depending on the scope of work. Built-in cupboards typically take 3-7 days, while granite installations take 2-5 days. We provide detailed timelines during consultation.",
-                  },
-                },
-              ],
-            }),
-          }}
-        />
       </head>
       <body className={inter.className} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>

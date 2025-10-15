@@ -25,6 +25,45 @@ const nextConfig = {
     ],
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/services/kitchen-renovations',
+        destination: '/kitchen-renovations',
+        permanent: true,
+      },
+      {
+        source: '/services/built-in-cupboards',
+        destination: '/built-in-cupboards',
+        permanent: true,
+      },
+      {
+        source: '/services/quartz-granite',
+        destination: '/quartz-granite',
+        permanent: true,
+      },
+      {
+        source: '/services/plumbing',
+        destination: '/plumbing',
+        permanent: true,
+      },
+      {
+        source: '/services/decking-flooring',
+        destination: '/decking-flooring',
+        permanent: true,
+      },
+      {
+        source: '/services/drywall-ceilings',
+        destination: '/drywall-ceilings',
+        permanent: true,
+      },
+      {
+        source: '/services/carpentry-training',
+        destination: '/carpentry-training',
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     return [
       {

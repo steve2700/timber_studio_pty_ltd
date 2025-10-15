@@ -11,13 +11,13 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const services = [
-    { name: "Kitchen Renovations", href: "/services/kitchen-renovations" },
-    { name: "Built-in Cupboards", href: "/services/built-in-cupboards" },
-    { name: "Quartz & Granite", href: "/services/quartz-granite" },
-    { name: "Decking & Flooring", href: "/services/decking-flooring" },
-    { name: "Drywall & Ceilings", href: "/services/drywall-ceilings" },
-    { name: "Carpentry Training", href: "/services/carpentry-training" },
-    { name: "Professional Plumbing", href: "/services/plumbing" },
+    { name: "Kitchen Renovations", href: "/kitchen-renovations" },
+    { name: "Built-in Cupboards", href: "/built-in-cupboards" },
+    { name: "Quartz & Granite", href: "/quartz-granite" },
+    { name: "Decking & Flooring", href: "/decking-flooring" },
+    { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
+    { name: "Carpentry Training", href: "/carpentry-training" },
+    { name: "Professional Plumbing", href: "/plumbing" },
   ]
 
   const areas = [

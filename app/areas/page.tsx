@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { MapPin, Phone, Star, ArrowRight, CheckCircle, Award, Users, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -228,6 +229,49 @@ export default function AreasPage() {
       title: "Emergency Plumbing",
       description: "24/7 plumbing services across all areas",
       icon: "🔧",
+    },
+  ]
+
+  const faqs = [
+    {
+      question: "Which areas in Gauteng do you serve?",
+      answer:
+        "We serve 23+ areas across Gauteng including Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways, Roodepoort, Krugersdorp, Kempton Park, Boksburg, Benoni, Edenvale, Germiston, Springs, Nigel, Alberton, Vereeniging, Vanderbijlpark, Heidelberg, Carletonville, Westonaria, and Johannesburg South. We cover Central Gauteng, Northern Suburbs, Pretoria & Centurion, East Rand, West Rand, and South Rand regions.",
+    },
+    {
+      question: "Do you charge extra for traveling to different areas?",
+      answer:
+        "No, we do not charge travel fees for any of our 23+ service areas across Gauteng. Our quoted prices include all travel costs within our coverage areas. Whether you're in Sandton, Pretoria, or Vereeniging, you'll receive the same competitive pricing and professional service.",
+    },
+    {
+      question: "How quickly can you respond to service requests in my area?",
+      answer:
+        "We offer same-day quotes for all areas across Gauteng. For emergency plumbing services, we provide 24/7 response with typical arrival times of 2-4 hours depending on your location and the urgency of the situation. For scheduled carpentry and renovation projects, we can usually start within 3-7 days of quote approval.",
+    },
+    {
+      question: "Are your services the same quality across all areas?",
+      answer:
+        "Yes, absolutely. We maintain the same high standards of quality, professionalism, and craftsmanship across all 23+ areas we serve. All our technicians are licensed, insured, and trained to deliver consistent 5-star service whether you're in Johannesburg CBD, Centurion, or any other Gauteng location. We use the same premium materials and follow the same quality control processes everywhere.",
+    },
+    {
+      question: "Do you have experience with local building codes in different areas?",
+      answer:
+        "Yes, our team has extensive knowledge of local building codes, architectural styles, and area-specific requirements across all Gauteng regions. We ensure all our carpentry, plumbing, and installation work complies with local municipal regulations and SANS standards. We handle all necessary permits and inspections for your area.",
+    },
+    {
+      question: "Can I see examples of work you've done in my specific area?",
+      answer:
+        "Yes! We've completed 3,000+ projects across Gauteng with area-specific portfolios. Visit our individual area pages (e.g., /areas/sandton, /areas/pretoria) to see projects, testimonials, and case studies from your specific location. You can also contact us directly - we likely still serve your area as we cover the entire Gauteng province. Our team can confirm coverage and provide area-specific information during your free consultation.",
+    },
+    {
+      question: "What services are available in all areas?",
+      answer:
+        "All our core services are available across every area we serve: kitchen renovations, built-in cupboards, granite and quartz countertop installation, custom carpentry, wardrobes, vanities, and comprehensive plumbing services including emergency repairs, installations, and maintenance. We also offer 24/7 emergency plumbing in all areas.",
+    },
+    {
+      question: "How do I know which area page to visit for my location?",
+      answer:
+        "We have dedicated pages for 23 major areas across Gauteng. Simply find your area in the list above or use our area selector. If your specific suburb isn't listed, contact us directly - we likely still serve your area as we cover the entire Gauteng province. Our team can confirm coverage and provide area-specific information during your free consultation.",
     },
   ]
 
@@ -483,6 +527,33 @@ export default function AreasPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+                Frequently Asked Questions About Our Service Areas
+              </h2>
+              <p className="text-lg text-slate-600">
+                Common questions about our coverage, response times, and services across Gauteng
+              </p>
+            </div>
+
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-semibold text-slate-900 hover:text-amber-600">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-600 leading-relaxed">{faq.answer}</AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 sm:py-20 bg-amber-600 text-white">
         <div className="container mx-auto px-4 text-center">
@@ -665,6 +736,25 @@ export default function AreasPage() {
               "Plumbing Services",
               "Carpentry Services",
             ],
+          }),
+        }}
+      />
+
+      {/* FAQPage schema for rich results */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+              },
+            })),
           }),
         }}
       />

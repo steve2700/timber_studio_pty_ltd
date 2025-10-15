@@ -103,6 +103,18 @@ export default function RootLayout({
   return (
     <html lang="en-ZA" suppressHydrationWarning>
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6B51FH166"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-H6B51FH166');
+            `,
+          }}
+        />
+
         {/* Updated Favicon and Icon References */}
         <link rel="icon" href="/granitecarpentry-logo.png" sizes="16x16" type="image/png" />
         <link rel="icon" href="/granitecarpentry-logo.png" sizes="32x32" type="image/png" />

@@ -505,8 +505,8 @@ export default function AreasPage() {
             </Button>
             <Button
               asChild
-              size="lg"
               variant="outline"
+              size="lg"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
               <Link href="tel:+27676014490">Call 067 601 4490</Link>
@@ -541,15 +541,29 @@ export default function AreasPage() {
             "@context": "https://schema.org",
             "@type": "Service",
             name: "Professional Carpenter & Plumber Services Gauteng",
+            description:
+              "Comprehensive carpentry, plumbing, and granite installation services across Johannesburg, Pretoria, East Rand, West Rand, and South Rand",
             provider: {
               "@type": "LocalBusiness",
+              "@id": "https://granitecarpentry.co.za/#localbusiness",
               name: "Granite Carpentry",
               telephone: "+27676014490",
+              email: "info@granitecarpentry.co.za",
               url: "https://granitecarpentry.co.za",
+              image: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
               address: {
                 "@type": "PostalAddress",
+                addressLocality: "Johannesburg",
                 addressRegion: "Gauteng",
                 addressCountry: "ZA",
+                postalCode: "2000",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "5.0",
+                reviewCount: "3000",
+                bestRating: "5",
+                worstRating: "1",
               },
             },
             areaServed: Object.values(areasByRegion)
@@ -569,11 +583,6 @@ export default function AreasPage() {
               "Plumbing Services",
               "Carpentry Services",
             ],
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "5.0",
-              reviewCount: "3000",
-            },
           }),
         }}
       />

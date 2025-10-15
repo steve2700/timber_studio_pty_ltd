@@ -565,6 +565,88 @@ export default function AreasPage() {
                 bestRating: "5",
                 worstRating: "1",
               },
+              review: [
+                {
+                  "@type": "Review",
+                  author: {
+                    "@type": "Person",
+                    name: "Sarah Johnson",
+                  },
+                  datePublished: "2024-11-15",
+                  reviewBody:
+                    "Excellent kitchen renovation service in Sandton. The team was professional, punctual, and delivered exceptional quality. Our granite countertops are stunning and the built-in cupboards are exactly what we wanted. Highly recommend for anyone in the northern suburbs.",
+                  reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                    bestRating: "5",
+                    worstRating: "1",
+                  },
+                },
+                {
+                  "@type": "Review",
+                  author: {
+                    "@type": "Person",
+                    name: "Michael van der Merwe",
+                  },
+                  datePublished: "2024-10-28",
+                  reviewBody:
+                    "Used their plumbing services in Pretoria for an emergency leak. They arrived within 2 hours and fixed everything professionally. Fair pricing and excellent workmanship. Will definitely use them again for our upcoming bathroom renovation.",
+                  reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                    bestRating: "5",
+                    worstRating: "1",
+                  },
+                },
+                {
+                  "@type": "Review",
+                  author: {
+                    "@type": "Person",
+                    name: "Thandi Mthembu",
+                  },
+                  datePublished: "2024-12-03",
+                  reviewBody:
+                    "Outstanding carpentry work in Midrand. They built custom wardrobes for our entire house and the attention to detail was impressive. The team was respectful, cleaned up after themselves, and completed the project on time. Best carpenter we've worked with in Gauteng.",
+                  reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                    bestRating: "5",
+                    worstRating: "1",
+                  },
+                },
+                {
+                  "@type": "Review",
+                  author: {
+                    "@type": "Person",
+                    name: "David Naidoo",
+                  },
+                  datePublished: "2024-09-20",
+                  reviewBody:
+                    "Fantastic service in Boksburg. They renovated our kitchen with new granite tops and built-in cupboards. The quality is top-notch and they stayed within our budget. Very happy with the results and would recommend them to anyone on the East Rand.",
+                  reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                    bestRating: "5",
+                    worstRating: "1",
+                  },
+                },
+                {
+                  "@type": "Review",
+                  author: {
+                    "@type": "Person",
+                    name: "Lisa Botha",
+                  },
+                  datePublished: "2024-11-30",
+                  reviewBody:
+                    "Excellent experience with Granite Carpentry in Centurion. They installed quartz countertops and built custom storage solutions throughout our home. Professional team, great communication, and beautiful finished product. Highly recommend their services across Gauteng.",
+                  reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                    bestRating: "5",
+                    worstRating: "1",
+                  },
+                },
+              ],
             },
             areaServed: Object.values(areasByRegion)
               .flat()

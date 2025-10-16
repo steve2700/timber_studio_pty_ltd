@@ -7,13 +7,13 @@ import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Wrench }
 
 export const metadata: Metadata = {
   title:
-    "★★★★★ Best Carpenter & Plumber Boksburg 2024 | #1 Reliable Kitchen Renovations, Built-in Cupboards & Emergency Plumbing",
+    "★★★★★ Best Carpenter & Plumber Boksburg 2025 | #1 Reliable Kitchen Renovations, Built-in Cupboards & Emergency Plumbing",
   description:
-    "★★★★★ #1 reliable carpenter & plumber in Boksburg 2024. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 400+ East Rand projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
+    "★★★★★ #1 reliable carpenter & plumber in Boksburg 2025. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 400+ East Rand projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
   keywords:
-    "best carpenter Boksburg, reliable plumber Boksburg 2024, kitchen renovation Boksburg, built-in cupboards Boksburg, granite installation Boksburg, emergency plumbing Boksburg, affordable carpenter Boksburg, professional carpentry Boksburg, #1 carpenter Boksburg, carpenter near me Boksburg, Benoni carpenter, Germiston carpenter, East Rand carpenter, 24/7 plumber Boksburg",
+    "best carpenter Boksburg, reliable plumber Boksburg 2025, kitchen renovation Boksburg, built-in cupboards Boksburg, granite installation Boksburg, emergency plumbing Boksburg, affordable carpenter Boksburg, professional carpentry Boksburg, #1 carpenter Boksburg, carpenter near me Boksburg, Benoni carpenter, Germiston carpenter, East Rand carpenter, 24/7 plumber Boksburg, Boksburg kitchen renovations 2025, Boksburg plumber 2025",
   openGraph: {
-    title: "★★★★★ Best Carpenter & Plumber Boksburg 2024 | #1 Reliable Services",
+    title: "★★★★★ Best Carpenter & Plumber Boksburg 2025 | #1 Reliable Services",
     description:
       "★★★★★ #1 reliable carpenter & plumber in Boksburg. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 400+ East Rand projects. FREE quotes.",
     url: "https://granitecarpentry.co.za/areas/boksburg",
@@ -39,12 +39,13 @@ export default function BoksburgPage() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Best Reliable Carpenter & Plumber
-              <span className="block text-amber-400">Boksburg 2024</span>
+              <span className="block text-amber-400">Boksburg 2025</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 leading-relaxed">
-              ★★★★★ #1 reliable carpenter & plumber in Boksburg. Professional kitchen renovations, built-in cupboards,
-              granite installations, and emergency plumbing services for East Rand homes. 400+ completed projects with
-              5-year warranty. FREE quotes & dependable service.
+              ★★★★★ #1 reliable carpenter & plumber in Boksburg for 2025. Professional kitchen renovations, built-in
+              cupboards, granite installations, and emergency plumbing services for East Rand homes. 400+ completed
+              projects with 5-year warranty. FREE quotes & dependable service. Serving Boksburg, Benoni, Germiston, and
+              all East Rand areas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4">
@@ -85,10 +86,12 @@ export default function BoksburgPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-              Reliable Carpentry & Plumbing Services Boksburg
+              Reliable Carpentry & Plumbing Services Boksburg 2025
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Serving Boksburg, Benoni, Germiston, and East Rand areas with dependable carpentry and plumbing solutions
+              Serving Boksburg, Benoni, Germiston, and East Rand areas with dependable carpentry and plumbing solutions.
+              Expert kitchen renovations, custom built-in cupboards, granite installations, and 24/7 emergency plumbing
+              services available.
             </p>
           </div>
 
@@ -241,7 +244,7 @@ export default function BoksburgPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">
-              Why Boksburg Residents Trust Us
+              Why Boksburg Residents Trust Us in 2025
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
@@ -305,9 +308,26 @@ export default function BoksburgPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Boksburg Area Coverage</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Boksburg Area Coverage 2025</h2>
             <p className="text-xl text-slate-600 mb-12">
-              Reliable carpentry services throughout Boksburg and the greater East Rand region
+              Reliable carpentry and plumbing services throughout Boksburg and the greater East Rand region. We also
+              serve{" "}
+              <Link href="/areas/benoni" className="text-amber-600 hover:underline">
+                Benoni
+              </Link>
+              ,{" "}
+              <Link href="/areas/germiston" className="text-amber-600 hover:underline">
+                Germiston
+              </Link>
+              ,{" "}
+              <Link href="/areas/alberton" className="text-amber-600 hover:underline">
+                Alberton
+              </Link>
+              , and{" "}
+              <Link href="/areas/edenvale" className="text-amber-600 hover:underline">
+                Edenvale
+              </Link>
+              .
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
@@ -417,10 +437,10 @@ export default function BoksburgPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Reliable Boksburg Project?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Reliable Boksburg Project in 2025?</h2>
           <p className="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
             Contact Boksburg's #1 reliable carpenter & plumber today. Dependable service, quality workmanship, and
-            5-year warranty. FREE consultation and competitive quotes.
+            5-year warranty. FREE consultation and competitive quotes. Available 24/7 for emergency plumbing services.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button

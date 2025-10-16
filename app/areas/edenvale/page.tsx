@@ -7,13 +7,13 @@ import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Gem } fr
 
 export const metadata: Metadata = {
   title:
-    "★★★★★ Best Carpenter & Plumber Edenvale 2024 | #1 Quality Kitchen Renovations, Built-in Cupboards & Professional Plumbing",
+    "★★★★★ Best Carpenter & Plumber Edenvale 2025 | #1 Quality Kitchen Renovations, Built-in Cupboards & Professional Plumbing",
   description:
-    "★★★★★ #1 quality carpenter & plumber in Edenvale 2024. Premium kitchen renovations, built-in cupboards, granite installations & professional plumbing services. 450+ East Rand projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
+    "★★★★★ #1 quality carpenter & plumber in Edenvale 2025. Premium kitchen renovations, built-in cupboards, granite installations & professional plumbing services. 450+ East Rand projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
   keywords:
-    "best carpenter Edenvale, quality plumber Edenvale 2024, kitchen renovation Edenvale, built-in cupboards Edenvale, granite installation Edenvale, professional plumbing Edenvale, premium carpenter Edenvale, professional carpentry Edenvale, #1 carpenter Edenvale, carpenter near me Edenvale, Bedfordview carpenter, Germiston carpenter, East Rand carpenter, emergency plumbing Edenvale",
+    "best carpenter Edenvale, quality plumber Edenvale 2025, kitchen renovation Edenvale, built-in cupboards Edenvale, granite installation Edenvale, professional plumbing Edenvale, premium carpenter Edenvale, professional carpentry Edenvale, #1 carpenter Edenvale, carpenter near me Edenvale, Bedfordview carpenter, Germiston carpenter, East Rand carpenter, emergency plumbing Edenvale, Edenvale kitchen renovations 2025, Edenvale plumber 2025",
   openGraph: {
-    title: "★★★★★ Best Carpenter & Plumber Edenvale 2024 | #1 Quality Services",
+    title: "★★★★★ Best Carpenter & Plumber Edenvale 2025 | #1 Quality Services",
     description:
       "★★★★★ #1 quality carpenter & plumber in Edenvale. Premium kitchen renovations, built-in cupboards, granite installations & professional plumbing services. 450+ East Rand projects. FREE quotes.",
     url: "https://granitecarpentry.co.za/areas/edenvale",
@@ -39,12 +39,13 @@ export default function EdenvalePage() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Best Quality Carpenter & Plumber
-              <span className="block text-amber-400">Edenvale 2024</span>
+              <span className="block text-amber-400">Edenvale 2025</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 leading-relaxed">
-              ★★★★★ #1 quality carpenter & plumber in Edenvale. Premium kitchen renovations, built-in cupboards, granite
-              installations, and professional plumbing services for East Rand's upmarket areas. 450+ completed projects
-              with 5-year warranty. FREE quotes & professional service.
+              ★★★★★ #1 quality carpenter & plumber in Edenvale for 2025. Premium kitchen renovations, built-in
+              cupboards, granite installations, and professional plumbing services for East Rand's upmarket areas. 450+
+              completed projects with 5-year warranty. FREE quotes & professional service. Serving Edenvale,
+              Bedfordview, Germiston, and all East Rand areas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4">
@@ -85,11 +86,12 @@ export default function EdenvalePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-              Quality Carpentry & Plumbing Services Edenvale
+              Quality Carpentry & Plumbing Services Edenvale 2025
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Serving Edenvale, Bedfordview, Germiston, and East Rand upmarket areas with premium carpentry and plumbing
-              solutions
+              solutions. Expert kitchen renovations, custom built-in cupboards, granite installations, and 24/7
+              emergency plumbing services available.
             </p>
           </div>
 
@@ -242,7 +244,7 @@ export default function EdenvalePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">
-              Why Edenvale Homeowners Choose Us
+              Why Edenvale Homeowners Choose Us in 2025
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
@@ -306,9 +308,25 @@ export default function EdenvalePage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Edenvale Area Coverage</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Edenvale Area Coverage 2025</h2>
             <p className="text-xl text-slate-600 mb-12">
-              Quality carpentry and plumbing services throughout Edenvale and East Rand upmarket areas
+              Quality carpentry and plumbing services throughout Edenvale and East Rand upmarket areas. We also serve{" "}
+              <Link href="/areas/bedfordview" className="text-amber-600 hover:underline">
+                Bedfordview
+              </Link>
+              ,{" "}
+              <Link href="/areas/germiston" className="text-amber-600 hover:underline">
+                Germiston
+              </Link>
+              ,{" "}
+              <Link href="/areas/boksburg" className="text-amber-600 hover:underline">
+                Boksburg
+              </Link>
+              , and{" "}
+              <Link href="/areas/benoni" className="text-amber-600 hover:underline">
+                Benoni
+              </Link>
+              .
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
@@ -418,10 +436,10 @@ export default function EdenvalePage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Quality Edenvale Project?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Quality Edenvale Project in 2025?</h2>
           <p className="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
             Contact Edenvale's #1 quality carpenter and plumber today. Premium materials, exceptional craftsmanship, and
-            5-year warranty. FREE consultation and detailed quotes.
+            5-year warranty. FREE consultation and detailed quotes. Available 24/7 for emergency plumbing services.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button

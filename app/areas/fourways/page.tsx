@@ -7,15 +7,15 @@ import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Gem } fr
 
 export const metadata: Metadata = {
   title:
-    "★★★★★ Best Carpenter & Plumber Fourways 2024 | #1 Luxury Kitchen Renovations, Built-in Cupboards & Premium Plumbing",
+    "★★★★★ Best Carpenter & Plumber Fourways 2025 | #1 Luxury Kitchen Renovations, Built-in Cupboards & Premium Plumbing Services",
   description:
-    "★★★★★ #1 luxury carpenter & plumber in Fourways 2024. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 600+ upmarket projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
+    "★★★★★ #1 luxury carpenter & plumber in Fourways 2025. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 700+ upmarket projects completed. FREE quotes & flexible scheduling. Licensed & insured. Call 067 601 4490.",
   keywords:
-    "best carpenter Fourways, luxury plumber Fourways 2024, kitchen renovation Fourways, built-in cupboards Fourways, granite installation Fourways, premium plumbing Fourways, professional carpentry Fourways, #1 carpenter Fourways, upmarket carpenter Fourways, carpenter near me Fourways, Dainfern carpenter, Bryanston carpenter, luxury plumbing Fourways",
+    "best carpenter Fourways 2025, luxury plumber Fourways, kitchen renovation Fourways, built-in cupboards Fourways, granite installation Fourways, premium plumbing Fourways, professional carpentry Fourways, #1 carpenter Fourways, upmarket carpenter Fourways, carpenter near me Fourways, Dainfern carpenter, Bryanston carpenter, Steyn City carpenter, luxury plumbing Fourways, emergency plumber Fourways, kitchen cabinets Fourways, custom cupboards Fourways",
   openGraph: {
-    title: "★★★★★ Best Carpenter & Plumber Fourways 2024 | #1 Luxury Services",
+    title: "★★★★★ Best Carpenter & Plumber Fourways 2025 | #1 Luxury Services",
     description:
-      "★★★★★ #1 luxury carpenter & plumber in Fourways. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 600+ upmarket projects. FREE quotes.",
+      "★★★★★ #1 luxury carpenter & plumber in Fourways 2025. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 700+ upmarket projects. FREE quotes.",
     url: "https://granitecarpentry.co.za/areas/fourways",
   },
   alternates: {
@@ -39,12 +39,13 @@ export default function FourwaysPage() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Best Luxury Carpenter & Plumber
-              <span className="block text-amber-400">Fourways 2024</span>
+              <span className="block text-amber-400">Fourways 2025</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 leading-relaxed">
-              ★★★★★ #1 luxury carpenter & plumber in Fourways. Premium kitchen renovations, custom built-in cupboards,
-              granite installations, and luxury plumbing services for upmarket homes. 600+ completed projects with
-              5-year warranty. FREE quotes & flexible scheduling.
+              ★★★★★ #1 luxury carpenter & plumber in Fourways 2025. Specializing in premium kitchen renovations, custom
+              built-in cupboards, granite & Caesarstone installations, and luxury plumbing services for upmarket homes
+              in Fourways, Dainfern, Steyn City, and Bryanston. 700+ completed projects with 5-year warranty. FREE
+              quotes, flexible scheduling & same-day emergency plumbing available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4">
@@ -58,7 +59,7 @@ export default function FourwaysPage() {
                 067 601 4490
               </a>
             </div>
-            <div className="flex items-center justify-center gap-6 text-sm">
+            <div className="flex items-center justify-center gap-6 text-sm flex-wrap">
               <div className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-amber-400 fill-current" />
                 <span>★★★★★ 5.0 Rating</span>
@@ -69,7 +70,7 @@ export default function FourwaysPage() {
               </div>
               <div className="flex items-center gap-2">
                 <Users className="w-5 h-5 text-amber-400" />
-                <span>600+ Luxury Projects</span>
+                <span>700+ Luxury Projects</span>
               </div>
               <div className="flex items-center gap-2">
                 <Gem className="w-5 h-5 text-amber-400" />
@@ -85,11 +86,11 @@ export default function FourwaysPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-              Luxury Carpentry & Plumbing Services Fourways
+              Luxury Carpentry & Plumbing Services Fourways 2025
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Serving Fourways, Dainfern, Bryanston, Lonehill, and upmarket areas with premium carpentry and plumbing
-              solutions
+              Serving Fourways, Dainfern Golf Estate, Steyn City, Bryanston, Lonehill, Broadacres, and all upmarket
+              areas with premium carpentry and plumbing solutions. Trusted by Fourways' most discerning homeowners.
             </p>
           </div>
 
@@ -108,19 +109,23 @@ export default function FourwaysPage() {
                 <ul className="space-y-2 text-sm mb-4">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    High-end custom cabinetry
+                    High-end custom cabinetry & soft-close hinges
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    Premium granite & Caesarstone
+                    Premium granite, Caesarstone & Silestone
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    Designer kitchen islands
+                    Designer kitchen islands & breakfast bars
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    Complete luxury makeovers
+                    Complete luxury makeovers & renovations
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Integrated appliances & smart storage
                   </li>
                 </ul>
                 <Button asChild className="w-full">
@@ -143,19 +148,23 @@ export default function FourwaysPage() {
                 <ul className="space-y-2 text-sm mb-4">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    Walk-in wardrobes & dressing rooms
+                    Walk-in wardrobes & luxury dressing rooms
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    Executive study & office built-ins
+                    Executive study & home office built-ins
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    Entertainment centers & TV units
+                    Entertainment centers & media walls
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    Luxury storage solutions
+                    Luxury storage solutions & organizers
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Custom finishes & premium hardware
                   </li>
                 </ul>
                 <Button asChild className="w-full">
@@ -182,15 +191,19 @@ export default function FourwaysPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    Natural granite installations
+                    Natural granite & marble installations
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    Marble vanity tops & surfaces
+                    Luxury vanity tops & bathroom surfaces
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    Precision templating & fitting
+                    Precision templating & expert fitting
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Waterfall edges & custom designs
                   </li>
                 </ul>
                 <Button asChild className="w-full">
@@ -213,19 +226,23 @@ export default function FourwaysPage() {
                 <ul className="space-y-2 text-sm mb-4">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    High-end bathroom installations
+                    High-end bathroom & spa installations
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    Luxury kitchen plumbing
+                    Luxury kitchen plumbing & fixtures
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    Premium geyser systems
+                    Premium geyser systems & solar
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    24/7 emergency service
+                    24/7 emergency plumbing service
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Water filtration & purification systems
                   </li>
                 </ul>
                 <Button asChild className="w-full">
@@ -242,7 +259,7 @@ export default function FourwaysPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">
-              Why Fourways Homeowners Choose Us
+              Why Fourways Homeowners Choose Us in 2025
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
@@ -254,7 +271,8 @@ export default function FourwaysPage() {
                     <h3 className="text-xl font-semibold text-slate-800 mb-2">Luxury Market Specialists</h3>
                     <p className="text-slate-600">
                       Extensive experience in Fourways' upmarket properties including Dainfern Golf Estate, Steyn City,
-                      and luxury developments. Understanding of high-end finishes and quality expectations.
+                      Broadacres, and luxury developments. Deep understanding of high-end finishes, quality
+                      expectations, and sophisticated design requirements for executive homes.
                     </p>
                   </div>
                 </div>
@@ -266,7 +284,8 @@ export default function FourwaysPage() {
                     <h3 className="text-xl font-semibold text-slate-800 mb-2">Premium Materials Only</h3>
                     <p className="text-slate-600">
                       We source only the finest materials from trusted suppliers. Caesarstone, Silestone, natural
-                      granite, and high-grade timber ensure lasting beauty and value.
+                      granite, high-grade timber, and premium fixtures ensure lasting beauty, durability, and value for
+                      your Fourways property.
                     </p>
                   </div>
                 </div>
@@ -280,7 +299,8 @@ export default function FourwaysPage() {
                     <h3 className="text-xl font-semibold text-slate-800 mb-2">Flexible Scheduling</h3>
                     <p className="text-slate-600">
                       We understand busy executive lifestyles and offer flexible scheduling including evenings and
-                      weekends to minimize disruption to your routine.
+                      weekends to minimize disruption to your routine. Professional project management ensures timely
+                      completion without compromising quality.
                     </p>
                   </div>
                 </div>
@@ -292,7 +312,8 @@ export default function FourwaysPage() {
                     <h3 className="text-xl font-semibold text-slate-800 mb-2">5-Year Warranty & Insurance</h3>
                     <p className="text-slate-600">
                       All work backed by comprehensive 5-year warranty. Fully licensed and insured with R2 million
-                      public liability coverage for complete peace of mind.
+                      public liability coverage for complete peace of mind. Professional indemnity insurance protects
+                      your investment.
                     </p>
                   </div>
                 </div>
@@ -306,9 +327,10 @@ export default function FourwaysPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Fourways Luxury Area Coverage</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Fourways Luxury Area Coverage 2025</h2>
             <p className="text-xl text-slate-600 mb-12">
-              Premium carpentry and plumbing services throughout Fourways and surrounding upmarket areas
+              Premium carpentry and plumbing services throughout Fourways and surrounding upmarket areas. Trusted by
+              homeowners in Gauteng's most prestigious estates and suburbs.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
@@ -344,6 +366,30 @@ export default function FourwaysPage() {
                 <p className="text-sm text-slate-600">Airport Area</p>
               </div>
             </div>
+            <div className="mt-12 p-6 bg-amber-50 rounded-lg">
+              <h3 className="text-lg font-semibold text-slate-800 mb-4">We Also Serve Nearby Areas:</h3>
+              <div className="flex flex-wrap justify-center gap-3">
+                <Link href="/areas/sandton" className="text-amber-600 hover:text-amber-700 font-medium">
+                  Sandton
+                </Link>
+                <span className="text-slate-400">•</span>
+                <Link href="/areas/randburg" className="text-amber-600 hover:text-amber-700 font-medium">
+                  Randburg
+                </Link>
+                <span className="text-slate-400">•</span>
+                <Link href="/areas/roodepoort" className="text-amber-600 hover:text-amber-700 font-medium">
+                  Roodepoort
+                </Link>
+                <span className="text-slate-400">•</span>
+                <Link href="/areas/midrand" className="text-amber-600 hover:text-amber-700 font-medium">
+                  Midrand
+                </Link>
+                <span className="text-slate-400">•</span>
+                <Link href="/areas/centurion" className="text-amber-600 hover:text-amber-700 font-medium">
+                  Centurion
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -373,7 +419,7 @@ export default function FourwaysPage() {
                 </div>
                 <p className="text-slate-600 mb-4">
                   "Exceptional luxury kitchen renovation in Dainfern. The Caesarstone countertops and custom cabinetry
-                  exceeded our expectations. True craftsmanship!"
+                  exceeded our expectations. True craftsmanship and attention to detail!"
                 </p>
                 <div className="font-semibold text-slate-800">David & Emma R.</div>
                 <div className="text-sm text-slate-600">Dainfern Golf Estate</div>
@@ -389,7 +435,7 @@ export default function FourwaysPage() {
                 </div>
                 <p className="text-slate-600 mb-4">
                   "Best carpenter in Fourways! Walk-in wardrobe and study built-ins are absolutely stunning.
-                  Professional service throughout."
+                  Professional service throughout and completed on time."
                 </p>
                 <div className="font-semibold text-slate-800">Amanda K.</div>
                 <div className="text-sm text-slate-600">Bryanston, Fourways</div>
@@ -405,7 +451,7 @@ export default function FourwaysPage() {
                 </div>
                 <p className="text-slate-600 mb-4">
                   "Outstanding attention to detail and premium materials. The granite installation was flawless. Highly
-                  recommend for luxury projects."
+                  recommend for luxury projects in Steyn City!"
                 </p>
                 <div className="font-semibold text-slate-800">Robert M.</div>
                 <div className="text-sm text-slate-600">Steyn City, Fourways</div>
@@ -418,10 +464,10 @@ export default function FourwaysPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Luxury Fourways Project?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Luxury Fourways Project in 2025?</h2>
           <p className="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
             Contact Fourways' #1 luxury carpenter & plumber today. Premium materials, exceptional craftsmanship, and
-            5-year warranty. FREE consultation and detailed quotes.
+            5-year warranty. FREE consultation and detailed quotes for all services.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button

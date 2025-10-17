@@ -15,6 +15,7 @@ export default function HomePage() {
       href: "/kitchen-renovations",
       price: "From R50,000",
       duration: "7-14 days",
+      linkText: "Explore Kitchen Renovations",
     },
     {
       title: "Built-in Cupboards",
@@ -23,6 +24,7 @@ export default function HomePage() {
       href: "/built-in-cupboards",
       price: "From R15,000",
       duration: "3-7 days",
+      linkText: "View Built-in Cupboard Options",
     },
     {
       title: "Granite & Quartz",
@@ -31,6 +33,7 @@ export default function HomePage() {
       href: "/quartz-granite",
       price: "From R8,000",
       duration: "2-5 days",
+      linkText: "Discover Granite & Quartz Services",
     },
     {
       title: "Professional Plumbing",
@@ -39,6 +42,7 @@ export default function HomePage() {
       href: "/plumbing",
       price: "From R280",
       duration: "Same day",
+      linkText: "Get Plumbing Services",
     },
     {
       title: "Decking & Flooring",
@@ -47,6 +51,7 @@ export default function HomePage() {
       href: "/decking-flooring",
       price: "From R12,000",
       duration: "3-8 days",
+      linkText: "See Decking & Flooring Work",
     },
     {
       title: "Drywall & Ceilings",
@@ -55,6 +60,7 @@ export default function HomePage() {
       href: "/drywall-ceilings",
       price: "From R6,000",
       duration: "2-6 days",
+      linkText: "Learn About Drywall Services",
     },
     {
       title: "Carpentry Training",
@@ -63,6 +69,7 @@ export default function HomePage() {
       href: "/carpentry-training",
       price: "From R3,500",
       duration: "1-12 weeks",
+      linkText: "View Training Programs",
     },
   ]
 
@@ -294,7 +301,7 @@ export default function HomePage() {
                   </div>
                   <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
                     <Link href={service.href}>
-                      Learn More
+                      {service.linkText}
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>

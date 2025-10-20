@@ -96,6 +96,7 @@ export default function HomePage() {
     { name: "Carletonville", href: "/areas/carletonville" },
     { name: "Krugersdorp", href: "/areas/krugersdorp" },
     { name: "Westonaria", href: "/areas/westonaria" },
+    { name: "Bedfordview", href: "/areas/bedfordview" },
   ]
 
   const testimonials = [

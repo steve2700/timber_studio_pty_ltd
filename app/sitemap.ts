@@ -42,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/areas/carletonville",
     "/areas/krugersdorp",
     "/areas/westonaria",
+    "/areas/bedfordview",
   ]
 
   // Blog pages

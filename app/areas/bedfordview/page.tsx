@@ -1,4 +1,5 @@
-import type { Metadata } from "next"
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -6,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Gem, ChevronDown } from "lucide-react"
 import { useState } from "react"
 
-export const metadata: Metadata = {
+const metadata = {
   title:
     "★★★★★ Best Carpenter & Plumber Bedfordview 2025 | #1 Kitchen Renovations, Built-in Cupboards & Plumbing",
   description:

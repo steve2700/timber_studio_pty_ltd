@@ -16,6 +16,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/plumbing",
   ]
 
+  const drywallLocationPages = [
+    "/drywall-sandton",
+    "/ceiling-repairs-randburg",
+    "/drywall-rosebank",
+    "/suspended-ceilings-johannesburg",
+    "/drywalling-contractors-johannesburg",
+    "/drywall-fourways",
+    "/ceiling-repairs-sandton",
+    "/drywall-midrand",
+    "/ceiling-repairs-vereeniging",
+    "/drywall-johannesburg-south",
+  ]
+
   // Area pages - all 23 areas including new Johannesburg + areas hub page
   const areaPages = [
     "/areas", // Hub page for all service areas
@@ -52,7 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/built-in-cupboard-design-ideas",
   ]
 
-  const allPages = [...staticPages, ...servicePages, ...areaPages, ...blogPages]
+  const allPages = [...staticPages, ...servicePages, ...drywallLocationPages, ...areaPages, ...blogPages]
 
   return allPages.map((page) => ({
     url: `${baseUrl}${page}`,
@@ -65,15 +78,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
           : // Set /areas hub page to weekly updates with high priority
             page === "/areas" || page.startsWith("/areas/")
             ? "weekly"
-            : page === "/kitchen-renovations" ||
-                page === "/built-in-cupboards" ||
-                page === "/quartz-granite" ||
-                page === "/plumbing" ||
-                page === "/decking-flooring" ||
-                page === "/drywall-ceilings" ||
-                page === "/carpentry-training"
-              ? "monthly"
-              : "yearly",
+            : // Set drywall location pages to weekly updates
+              page.startsWith("/drywall-") ||
+                page.startsWith("/ceiling-repairs-") ||
+                page.startsWith("/suspended-ceilings-") ||
+                page.startsWith("/drywalling-contractors-")
+              ? "weekly"
+              : page === "/kitchen-renovations" ||
+                  page === "/built-in-cupboards" ||
+                  page === "/quartz-granite" ||
+                  page === "/plumbing" ||
+                  page === "/decking-flooring" ||
+                  page === "/drywall-ceilings" ||
+                  page === "/carpentry-training"
+                ? "monthly"
+                : "yearly",
     priority:
       page === ""
         ? 1
@@ -82,16 +101,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
           ? 0.9
           : page.startsWith("/areas/")
             ? 0.9
-            : page === "/kitchen-renovations" ||
-                page === "/built-in-cupboards" ||
-                page === "/quartz-granite" ||
-                page === "/plumbing" ||
-                page === "/decking-flooring" ||
-                page === "/drywall-ceilings" ||
-                page === "/carpentry-training"
-              ? 0.8
-              : page.startsWith("/blog")
-                ? 0.7
-                : 0.6,
+            : // Set drywall location pages to 0.85 priority (high priority for local SEO)
+              page.startsWith("/drywall-") ||
+                page.startsWith("/ceiling-repairs-") ||
+                page.startsWith("/suspended-ceilings-") ||
+                page.startsWith("/drywalling-contractors-")
+              ? 0.85
+              : page === "/kitchen-renovations" ||
+                  page === "/built-in-cupboards" ||
+                  page === "/quartz-granite" ||
+                  page === "/plumbing" ||
+                  page === "/decking-flooring" ||
+                  page === "/drywall-ceilings" ||
+                  page === "/carpentry-training"
+                ? 0.8
+                : page.startsWith("/blog")
+                  ? 0.7
+                  : 0.6,
   }))
 }

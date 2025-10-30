@@ -310,6 +310,162 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
+
+          {/* Drywall location services section */}
+          <div className="mt-16 pt-16 border-t border-slate-200">
+            <div className="text-center mb-12">
+              <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
+                Drywall & Ceiling Services by Location
+              </h3>
+              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                Professional drywall installation and ceiling services available in key Johannesburg areas
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Sandton</h4>
+                  <p className="text-slate-600 mb-4">
+                    Premium drywall installation services in Sandton's residential and commercial properties.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/drywall-sandton">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Repairs Randburg</h4>
+                  <p className="text-slate-600 mb-4">
+                    Expert ceiling repair and restoration services throughout Randburg area.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/ceiling-repairs-randburg">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Rosebank</h4>
+                  <p className="text-slate-600 mb-4">
+                    Professional drywall solutions for Rosebank's modern homes and offices.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/drywall-rosebank">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Suspended Ceilings Johannesburg</h4>
+                  <p className="text-slate-600 mb-4">
+                    Commercial suspended ceiling systems for Johannesburg businesses.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/suspended-ceilings-johannesburg">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywalling Contractors Johannesburg</h4>
+                  <p className="text-slate-600 mb-4">Licensed drywalling contractors serving all of Johannesburg.</p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/drywalling-contractors-johannesburg">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Fourways</h4>
+                  <p className="text-slate-600 mb-4">
+                    Expert drywall installation for Fourways residential and commercial properties.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/drywall-fourways">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Repairs Sandton</h4>
+                  <p className="text-slate-600 mb-4">
+                    Professional ceiling repair services for Sandton homes and offices.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/ceiling-repairs-sandton">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Midrand</h4>
+                  <p className="text-slate-600 mb-4">Quality drywall installation services throughout Midrand area.</p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/drywall-midrand">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Repairs Vereeniging</h4>
+                  <p className="text-slate-600 mb-4">Emergency ceiling repair services available in Vereeniging.</p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/ceiling-repairs-vereeniging">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Johannesburg South</h4>
+                  <p className="text-slate-600 mb-4">Professional drywalling for all Johannesburg South communities.</p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/drywall-johannesburg-south">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </section>
 

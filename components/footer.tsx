@@ -17,6 +17,19 @@ export function Footer() {
     { name: "Carpentry Training", href: "/carpentry-training" },
   ]
 
+  const drywallServices = [
+    { name: "Drywall Sandton", href: "/drywall-sandton" },
+    { name: "Ceiling Repairs Randburg", href: "/ceiling-repairs-randburg" },
+    { name: "Drywall Rosebank", href: "/drywall-rosebank" },
+    { name: "Suspended Ceilings JHB", href: "/suspended-ceilings-johannesburg" },
+    { name: "Drywalling Contractors", href: "/drywalling-contractors-johannesburg" },
+    { name: "Drywall Fourways", href: "/drywall-fourways" },
+    { name: "Ceiling Repairs Sandton", href: "/ceiling-repairs-sandton" },
+    { name: "Drywall Midrand", href: "/drywall-midrand" },
+    { name: "Ceiling Repairs Vereeniging", href: "/ceiling-repairs-vereeniging" },
+    { name: "Drywall JHB South", href: "/drywall-johannesburg-south" },
+  ]
+
   const areas = [
     { name: "Johannesburg", href: "/areas/johannesburg-south" },
     { name: "Sandton", href: "/areas/sandton" },
@@ -85,7 +98,7 @@ export function Footer() {
 
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
             <div>
@@ -174,6 +187,23 @@ export function Footer() {
             <h4 className="text-lg font-semibold text-amber-400 mb-6">Our Services</h4>
             <ul className="space-y-3">
               {services.map((service) => (
+                <li key={service.name}>
+                  <Link
+                    href={service.href}
+                    className="text-slate-300 hover:text-amber-400 transition-colors flex items-center group"
+                  >
+                    <span className="w-2 h-2 bg-amber-600 rounded-full mr-3 group-hover:bg-amber-400 transition-colors"></span>
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold text-amber-400 mb-6">Drywall Locations</h4>
+            <ul className="space-y-3">
+              {drywallServices.map((service) => (
                 <li key={service.name}>
                   <Link
                     href={service.href}

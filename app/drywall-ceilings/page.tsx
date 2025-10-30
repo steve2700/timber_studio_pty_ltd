@@ -463,46 +463,178 @@ export default function DrywallCeilingsPage() {
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Related Services</h2>
-            <p className="text-xl text-slate-600">Complete your renovation with our additional services</p>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Drywall Services by Location</h2>
+            <p className="text-xl text-slate-600">
+              Professional drywall and ceiling services available in key Johannesburg areas
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-slate-800 mb-4">Kitchen Renovations</h3>
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Drywall Sandton</h3>
                 <p className="text-slate-600 mb-6">
-                  Complete kitchen renovations with custom cabinets and professional finishes.
+                  Premium drywall installation services for Sandton's residential and commercial properties.
                 </p>
                 <Button asChild variant="outline">
-                  <Link href="/services/kitchen-renovations">Learn More</Link>
+                  <Link href="/drywall-sandton">View Services</Link>
                 </Button>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-slate-800 mb-4">Built-in Cupboards</h3>
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Ceiling Repairs Randburg</h3>
                 <p className="text-slate-600 mb-6">
-                  Custom built-in storage solutions to complement your interior renovations.
+                  Expert ceiling repair and restoration services throughout Randburg area.
                 </p>
                 <Button asChild variant="outline">
-                  <Link href="/services/built-in-cupboards">View Options</Link>
+                  <Link href="/ceiling-repairs-randburg">View Services</Link>
                 </Button>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-slate-800 mb-4">Decking & Flooring</h3>
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Drywall Rosebank</h3>
                 <p className="text-slate-600 mb-6">
-                  Professional flooring installation to complete your renovation project.
+                  Professional drywall solutions for Rosebank's modern homes and offices.
                 </p>
                 <Button asChild variant="outline">
-                  <Link href="/services/decking-flooring">Explore Services</Link>
+                  <Link href="/drywall-rosebank">View Services</Link>
                 </Button>
               </CardContent>
             </Card>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Suspended Ceilings Johannesburg</h3>
+                <p className="text-slate-600 mb-6">
+                  Commercial suspended ceiling systems for Johannesburg businesses and offices.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/suspended-ceilings-johannesburg">View Services</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Drywalling Contractors Johannesburg</h3>
+                <p className="text-slate-600 mb-6">
+                  Licensed drywalling contractors serving all of Johannesburg and surrounding areas.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/drywalling-contractors-johannesburg">View Services</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Drywall Fourways</h3>
+                <p className="text-slate-600 mb-6">
+                  Expert drywall installation for Fourways residential and commercial properties.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/drywall-fourways">View Services</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Ceiling Repairs Sandton</h3>
+                <p className="text-slate-600 mb-6">
+                  Professional ceiling repair services for Sandton homes and offices.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/ceiling-repairs-sandton">View Services</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Drywall Midrand</h3>
+                <p className="text-slate-600 mb-6">Quality drywall installation services throughout Midrand area.</p>
+                <Button asChild variant="outline">
+                  <Link href="/drywall-midrand">View Services</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Ceiling Repairs Vereeniging</h3>
+                <p className="text-slate-600 mb-6">Emergency ceiling repair services available 24/7 in Vereeniging.</p>
+                <Button asChild variant="outline">
+                  <Link href="/ceiling-repairs-vereeniging">View Services</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Drywall Johannesburg South</h3>
+                <p className="text-slate-600 mb-6">Professional drywalling for all Johannesburg South communities.</p>
+                <Button asChild variant="outline">
+                  <Link href="/drywall-johannesburg-south">View Services</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Other Services Section */}
+          <div className="mt-16 pt-16 border-t border-slate-200">
+            <div className="text-center mb-12">
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Other Services</h3>
+              <p className="text-lg text-slate-600">Complete your renovation with our additional services</p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="hover:shadow-xl transition-shadow">
+                <CardContent className="p-6 text-center">
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">Kitchen Renovations</h3>
+                  <p className="text-slate-600 mb-6">
+                    Complete kitchen renovations with custom cabinets and professional finishes.
+                  </p>
+                  <Button asChild variant="outline">
+                    <Link href="/kitchen-renovations">Learn More</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-xl transition-shadow">
+                <CardContent className="p-6 text-center">
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">Built-in Cupboards</h3>
+                  <p className="text-slate-600 mb-6">
+                    Custom built-in storage solutions to complement your interior renovations.
+                  </p>
+                  <Button asChild variant="outline">
+                    <Link href="/built-in-cupboards">View Options</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-xl transition-shadow">
+                <CardContent className="p-6 text-center">
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">Decking & Flooring</h3>
+                  <p className="text-slate-600 mb-6">
+                    Professional flooring installation to complete your renovation project.
+                  </p>
+                  <Button asChild variant="outline">
+                    <Link href="/decking-flooring">Explore Services</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>

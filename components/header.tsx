@@ -31,6 +31,16 @@ export function Header() {
     { name: "Drywall Midrand", href: "/drywall-midrand" },
     { name: "Ceiling Repairs Vereeniging", href: "/ceiling-repairs-vereeniging" },
     { name: "Drywall JHB South", href: "/drywall-johannesburg-south" },
+    { name: "Drywall Bryanston", href: "/drywall-bryanston" },
+    { name: "Suspended Ceilings Sandton", href: "/suspended-ceilings-sandton" },
+    { name: "Drywall Centurion", href: "/drywall-centurion" },
+    { name: "Ceiling Repairs Pretoria", href: "/ceiling-repairs-pretoria" },
+    { name: "Drywall Edenvale", href: "/drywall-edenvale" },
+    { name: "Ceiling Installation Bryanston", href: "/ceiling-installation-bryanston" },
+    { name: "Drywall Pretoria", href: "/drywall-pretoria" },
+    { name: "Ceiling Repairs Centurion", href: "/ceiling-repairs-centurion" },
+    { name: "Drywall Boksburg", href: "/drywall-boksburg" },
+    { name: "Ceiling Installation Edenvale", href: "/ceiling-installation-edenvale" },
   ]
 
   const areas = [

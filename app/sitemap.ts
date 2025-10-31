@@ -27,6 +27,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/drywall-midrand",
     "/ceiling-repairs-vereeniging",
     "/drywall-johannesburg-south",
+    "/drywall-bryanston",
+    "/suspended-ceilings-sandton",
+    "/drywall-centurion",
+    "/ceiling-repairs-pretoria",
+    "/drywall-edenvale",
+    "/ceiling-installation-bryanston",
+    "/drywall-pretoria",
+    "/ceiling-repairs-centurion",
+    "/drywall-boksburg",
+    "/ceiling-installation-edenvale",
   ]
 
   // Area pages - all 23 areas including new Johannesburg + areas hub page

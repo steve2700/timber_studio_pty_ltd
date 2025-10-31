@@ -464,6 +464,148 @@ export default function HomePage() {
                   </Button>
                 </CardContent>
               </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Bryanston</h4>
+                  <p className="text-slate-600 mb-4">
+                    Premium drywall installation for Bryanston's luxury homes and estates.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/drywall-bryanston">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Suspended Ceilings Sandton</h4>
+                  <p className="text-slate-600 mb-4">
+                    Commercial suspended ceiling systems for Sandton business district.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/suspended-ceilings-sandton">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Centurion</h4>
+                  <p className="text-slate-600 mb-4">
+                    Expert drywall installation for Centurion residential and commercial properties.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/drywall-centurion">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Repairs Pretoria</h4>
+                  <p className="text-slate-600 mb-4">Professional ceiling repair services throughout Pretoria area.</p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/ceiling-repairs-pretoria">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Edenvale</h4>
+                  <p className="text-slate-600 mb-4">
+                    Quality drywall installation services for Edenvale homes and businesses.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/drywall-edenvale">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Installation Bryanston</h4>
+                  <p className="text-slate-600 mb-4">Professional ceiling installation for Bryanston properties.</p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/ceiling-installation-bryanston">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Pretoria</h4>
+                  <p className="text-slate-600 mb-4">
+                    Expert drywall solutions for Pretoria residential and commercial spaces.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/drywall-pretoria">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Repairs Centurion</h4>
+                  <p className="text-slate-600 mb-4">Emergency ceiling repair services available in Centurion.</p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/ceiling-repairs-centurion">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Boksburg</h4>
+                  <p className="text-slate-600 mb-4">
+                    Professional drywall installation for Boksburg homes and businesses.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/drywall-boksburg">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Installation Edenvale</h4>
+                  <p className="text-slate-600 mb-4">Expert ceiling installation services throughout Edenvale area.</p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/ceiling-installation-edenvale">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

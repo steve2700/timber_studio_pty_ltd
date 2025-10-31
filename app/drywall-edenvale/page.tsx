@@ -47,7 +47,7 @@ export default function DrywallEdenvalePage() {
               >
                 <a href="tel:+27123456789">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Now: 012 345 6789
+                  Call Now: 0676014490
                 </a>
               </Button>
             </div>
@@ -468,9 +468,9 @@ export default function DrywallEdenvalePage() {
                 asChild
                 className="bg-white/10 hover:bg-white/20 text-white border-white/20"
               >
-                <a href="tel:+27123456789">
+                <a href="tel:+27676014490">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call: 012 345 6789
+                  Call: 0676014490
                 </a>
               </Button>
             </div>

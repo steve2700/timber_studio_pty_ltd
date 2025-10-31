@@ -38,7 +38,7 @@ export default function DrywallRosebank() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700 text-white">
-                <Link href="tel:+27123456789">
+                <Link href="tel:+27676014490">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Now for Free Quote
                 </Link>
@@ -398,7 +398,7 @@ export default function DrywallRosebank() {
               <Button size="lg" asChild className="bg-white text-amber-600 hover:bg-slate-100">
                 <Link href="tel:+27123456789">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Now: 012 345 6789
+                  Call Now: 0676014490
                 </Link>
               </Button>
               <Button
@@ -421,7 +421,7 @@ export default function DrywallRosebank() {
             <div>
               <Phone className="h-8 w-8 mx-auto mb-3 text-amber-600" />
               <h3 className="font-semibold mb-2">Call Us</h3>
-              <p className="text-slate-600">012 345 6789</p>
+              <p className="text-slate-600">0676014490</p>
             </div>
             <div>
               <Mail className="h-8 w-8 mx-auto mb-3 text-amber-600" />

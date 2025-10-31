@@ -396,7 +396,7 @@ export default function DrywallRosebank() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="bg-white text-amber-600 hover:bg-slate-100">
-                <Link href="tel:+27123456789">
+                <Link href="tel:+27676014490">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Now: 0676014490
                 </Link>

@@ -12,17 +12,17 @@ export function FloatingWhatsApp() {
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace("+", "")}?text=${encodeURIComponent(message)}`
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50">
       <div className="relative group">
         {/* Tooltip */}
         {showTooltip && (
-          <div className="absolute bottom-16 right-0 mb-2 px-3 py-2 bg-slate-900 text-white text-sm rounded-lg whitespace-nowrap shadow-lg max-w-[200px] text-center">
+          <div className="absolute bottom-16 left-0 mb-2 px-3 py-2 bg-slate-900 text-white text-sm rounded-lg whitespace-nowrap shadow-lg max-w-[200px] text-center">
             Chat with us on WhatsApp!
-            <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-slate-900"></div>
+            <div className="absolute top-full left-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-slate-900"></div>
           </div>
         )}
 
-        {/* WhatsApp Button - Clean design without close button */}
+        {/* WhatsApp Button - Clean design */}
         <Button
           asChild
           size="lg"

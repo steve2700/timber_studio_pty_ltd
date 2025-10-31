@@ -278,6 +278,16 @@ body {
     backface-visibility: hidden;
     perspective: 1000px;
   }
+
+  /* Added scrollbar-hide utility for horizontal scrolling elements */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Floating WhatsApp animation - optimized for mobile */

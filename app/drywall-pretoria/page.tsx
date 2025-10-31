@@ -41,7 +41,7 @@ export default function DrywallPretoriaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="text-lg">
-                <Link href="tel:0794687537">
+                <Link href="tel:0676014490>
                   <Phone className="mr-2 h-5 w-5" />
                   Call 0676014490
                 </Link>

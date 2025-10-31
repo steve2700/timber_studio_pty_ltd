@@ -7,7 +7,7 @@ import { CheckCircle2, Phone, Clock, Shield, Award, MapPin, Star } from "lucide-
 export const metadata: Metadata = {
   title: "Drywall Installation Pretoria | Professional Drywalling Services 2025",
   description:
-    "Expert drywall installation in Pretoria. Residential & commercial drywalling, partitions, ceilings. Licensed contractors, 5-year warranty. Call 079 468 7537 for free quotes.",
+    "Expert drywall installation in Pretoria. Residential & commercial drywalling, partitions, ceilings. Licensed contractors, 5-year warranty. Call 067 601 4490 free quotes.",
   keywords:
     "drywall Pretoria, drywalling Pretoria, drywall installation Pretoria, drywall contractors Pretoria, partition walls Pretoria, gypsum board installation",
   openGraph: {
@@ -41,7 +41,7 @@ export default function DrywallPretoriaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="text-lg">
-                <Link href="tel:0676014490>
+                <Link href="tel:0676014490">
                   <Phone className="mr-2 h-5 w-5" />
                   Call 0676014490
                 </Link>

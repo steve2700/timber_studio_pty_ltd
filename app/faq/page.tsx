@@ -28,7 +28,7 @@ export default function FAQPage() {
     {
       question: "Do you provide free quotes for all services?",
       answer:
-        "Yes! We provide completely free, no-obligation quotes for all our services including kitchen renovations, built-in cupboards, granite installations, decking, drywall, and carpentry training. Contact us at 067 601 4490 to schedule your free consultation.",
+        "Yes! We provide completely free, no-obligation quotes for all our services including kitchen renovations, built-in cupboards, granite installations, decking, and drywall. Contact us at 067 601 4490 to schedule your free consultation.",
     },
     {
       question: "What areas in Gauteng do you service?",
@@ -54,11 +54,6 @@ export default function FAQPage() {
       question: "What makes you different from other carpenters in Johannesburg?",
       answer:
         "We're 5-star rated with 47+ satisfied customers, offer transparent pricing, use quality materials, provide comprehensive warranties, and specialize in both carpentry and stone installations. We're local Johannesburg experts who understand the market and deliver exceptional value.",
-    },
-    {
-      question: "Do you provide carpentry training courses?",
-      answer:
-        "Yes! We offer professional carpentry training courses including basic carpentry, kitchen installation specialist training, and master craftsman programs. All courses include hands-on experience and we guarantee job placement after successful completion.",
     },
     {
       question: "How do I get started with my project?",
@@ -116,7 +111,7 @@ export default function FAQPage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+                className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto bg-transparent"
               >
                 <a href="tel:+27676014490">
                   <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />

@@ -162,10 +162,6 @@ export function AIChatWidget() {
       return "🚨 EMERGENCY SERVICE\n\nWe're here to help 24/7!\n\n📞 CALL NOW: 067 601 4490\n\n✅ Emergency Services:\n• Plumbing leaks & bursts\n• Geyser failures\n• Urgent repairs\n• Same-day service\n\n⚡ Response Time:\n• Emergency callout: 1-2 hours\n• Standard service: Same/next day\n\nDon't wait - call us immediately!"
     }
 
-    if (text.includes("train") || text.includes("course") || text.includes("learn") || text.includes("skill")) {
-      return "🎓 CARPENTRY TRAINING\n\nLearn professional carpentry skills!\n\n💰 Pricing: From R3,500\n\n✅ Courses Available:\n• Basic Carpentry (1-4 weeks)\n• Advanced Techniques (8-12 weeks)\n• Kitchen Installation\n• Built-in Cupboards\n• Hands-on training\n\n📞 Call 067 601 4490 for course details!"
-    }
-
     return "Thanks for your message! 😊\n\nI can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n💎 Granite & Quartz\n🔧 Plumbing Services\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n💰 Pricing Information\n📍 Service Areas\n\nJust ask about any service, or:\n📞 Call 067 601 4490\n📧 info@granitecarpentry.co.za\n\nWe offer FREE consultations & quotes!"
   }
 

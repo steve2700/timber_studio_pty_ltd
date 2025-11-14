@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { Phone, Star, CheckCircle, Clock, Shield, Award, MapPin, ArrowRight, Quote, TreePine, Leaf } from "lucide-react"
+import { Phone, Star, CheckCircle, Clock, Shield, Award, MapPin, ArrowRight, Quote, TreePine, Leaf } from 'lucide-react'
 
 export const metadata: Metadata = {
   title:
@@ -145,6 +145,59 @@ export default function NigelPage() {
     "Benoni",
     "Boksburg",
     "Germiston",
+  ]
+
+  const faqs = [
+    {
+      question: "What carpentry services do you offer in Nigel?",
+      answer:
+        "We provide comprehensive carpentry services throughout Nigel and the East Rand including custom kitchen renovations, built-in cupboards and wardrobes, granite and Caesarstone countertop installations, outdoor decking and patios, indoor flooring, and specialized rural carpentry for country properties. Our Nigel team understands the unique needs of East Rand homeowners and rural properties.",
+    },
+    {
+      question: "How much does a kitchen renovation cost in Nigel?",
+      answer:
+        "Kitchen renovation costs in Nigel typically range from R48,000 for basic renovations to R120,000+ for comprehensive makeovers. Rural and country properties may have additional considerations for access and logistics. Costs depend on kitchen size, material selection (granite vs quartz), cabinet complexity, and plumbing requirements. We provide detailed free quotes specific to your Nigel property.",
+    },
+    {
+      question: "Do you serve rural areas around Nigel?",
+      answer:
+        "Yes, we specialize in rural carpentry and country property services throughout Nigel and surrounding areas. Our team has experience with rural access challenges, country home designs, farm properties, and the unique requirements of East Rand rural living. We serve Nigel Central, rural Nigel, Duduza, Dunnottar, and all surrounding farming areas.",
+    },
+    {
+      question: "What areas around Nigel do you cover?",
+      answer:
+        "We proudly serve all Nigel areas including Nigel Central, Nigel Estates, rural Nigel, Duduza, and Dunnottar. We also cover surrounding East Rand towns including Heidelberg, Springs, Benoni, Boksburg, Germiston, and Brakpan. Our country service extends to all rural properties within 50km of Nigel.",
+    },
+    {
+      question: "How long does a built-in cupboard installation take in Nigel?",
+      answer:
+        "Built-in cupboard installations in Nigel typically take 3-7 days depending on project complexity. Simple bedroom wardrobes may be completed in 2-4 days, while extensive walk-in closets and multi-room storage solutions can take 5-10 days. Rural properties may require additional time for access and logistics. We provide accurate timelines during our free consultation.",
+    },
+    {
+      question: "What granite and stone materials do you use?",
+      answer:
+        "We exclusively use premium materials including Caesarstone, Silestone, natural granite, marble, and engineered quartz. All stone is sourced from trusted suppliers and backed by manufacturer warranties. Our Nigel team helps you select the perfect material based on durability requirements, country lifestyle needs, aesthetics, and budget considerations.",
+    },
+    {
+      question: "Do you offer emergency plumbing services in Nigel?",
+      answer:
+        "Yes, we provide 24/7 emergency plumbing services throughout Nigel and the East Rand. Burst pipes, major leaks, geyser failures, and urgent drainage issues are handled promptly by our licensed plumbers. Rural and country property emergencies are prioritized. Call 067 601 4490 for immediate assistance.",
+    },
+    {
+      question: "Are you licensed and insured for work in Nigel?",
+      answer:
+        "Absolutely. We hold full trade licenses for carpentry and plumbing with specialization in residential and rural properties. We carry R2 million public liability insurance covering all Nigel and East Rand projects. All work is backed by our comprehensive 5-year warranty, ensuring complete peace of mind for your country property investment.",
+    },
+    {
+      question: "What makes you the best choice for Nigel projects?",
+      answer:
+        "We combine 15+ years of East Rand experience, rural property expertise, 600+ completed projects, premium materials only, country service understanding, extended warranty coverage, and deep knowledge of Nigel's unique requirements. Our team delivers exceptional craftsmanship that complements rural living with modern functionality.",
+    },
+    {
+      question: "Can you handle large country properties in Nigel?",
+      answer:
+        "Yes, we specialize in country properties and large rural homes throughout Nigel and the East Rand. From farmhouse kitchens to extensive barn conversions, multi-room built-ins to outdoor entertainment areas, our team has the expertise and capacity to deliver professional results for any size country property on schedule and within budget.",
+    },
   ]
 
   return (
@@ -343,6 +396,77 @@ export default function NigelPage() {
         </div>
       </section>
 
+      {/* Comprehensive Service Details Section */}
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Nigel Service Excellence</Badge>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                Comprehensive Country Carpentry Solutions for Nigel & East Rand
+              </h2>
+              <p className="text-lg text-slate-600">
+                Serving Nigel since 2020 with specialized rural carpentry, country-style granite installations, and professional plumbing services designed for East Rand's unique country living environment.
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              <div className="bg-slate-50 rounded-lg p-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Country Kitchen Renovations in Nigel</h3>
+                <p className="text-slate-600 mb-4">
+                  Transform your Nigel country home with our specialized kitchen renovation services. We understand the unique character of East Rand rural properties and deliver custom solutions that blend modern functionality with country charm, built to complement your lifestyle while adding lasting value.
+                </p>
+                <p className="text-slate-600 mb-4">
+                  Our Nigel kitchen renovation services include custom country-style cabinetry with rustic or modern finishes, premium granite and Caesarstone countertops designed for country kitchens, farmhouse sinks and country plumbing fixtures, walk-in pantry installations perfect for country living, and traditional or contemporary lighting that suits your home's character.
+                </p>
+                <p className="text-slate-600">
+                  Popular areas in Nigel we serve include Nigel Central, Nigel Estates, rural farmhouses, Duduza, and Dunnottar. Every kitchen renovation is designed to handle the demands of country living while creating a beautiful heart for your East Rand home. All work is backed by our comprehensive 5-year warranty.
+                </p>
+              </div>
+
+              <div className="bg-slate-50 rounded-lg p-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Rural Built-in Cupboards Throughout Nigel</h3>
+                <p className="text-slate-600 mb-4">
+                  Maximize your Nigel country home space with our custom built-in storage solutions. From bedroom wardrobes to walk-in closets, home office storage to entertainment centers, we design and install quality cupboards that deliver functionality and beauty for East Rand country properties.
+                </p>
+                <p className="text-slate-600 mb-4">
+                  Our built-in solutions feature solid construction designed for longevity, premium materials including solid wood, melamine, and modern laminates, soft-close hinges and quality hardware throughout, customized interior layouts for optimal storage, and finishes that complement your country home's aesthetic from rustic to contemporary.
+                </p>
+                <p className="text-slate-600">
+                  Whether you're in central Nigel, on a rural farm, or in any East Rand country location, our team delivers storage solutions that maximize space while enhancing your home's character. We work with homeowners throughout Nigel's residential and rural areas to create beautiful, functional built-in storage.
+                </p>
+              </div>
+
+              <div className="bg-slate-50 rounded-lg p-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Premium Stone Installations in Nigel</h3>
+                <p className="text-slate-600 mb-4">
+                  Our Nigel granite and stone installation services deliver premium surfaces designed for country kitchens, bathrooms, and entertainment areas. We exclusively use quality materials that withstand the demands of East Rand country living while adding elegance and value to your rural property.
+                </p>
+                <p className="text-slate-600 mb-4">
+                  Stone options include natural granite with unique patterns perfect for country kitchens, Caesarstone engineered quartz with lifetime warranties, Silestone antibacterial surfaces ideal for food preparation, marble for luxury bathrooms and vanities, and custom edge profiles from simple to sophisticated. All installations include professional templating, precise cutting, expert fitting, and comprehensive warranties.
+                </p>
+                <p className="text-slate-600">
+                  Nigel homeowners choose us for kitchen countertops that become the centerpiece of country entertaining, bathroom vanity tops that add spa-like luxury, outdoor entertainment area surfaces built for braais and gatherings, and laundry room counters designed for functionality. Our team understands the unique requirements of East Rand rural properties.
+                </p>
+              </div>
+
+              <div className="bg-slate-50 rounded-lg p-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Rural Plumbing Services for Nigel Properties</h3>
+                <p className="text-slate-600 mb-4">
+                  Keep your Nigel country property running smoothly with our professional rural plumbing services. From borehole connections to geyser installations, bathroom renovations to emergency repairs, our licensed plumbers deliver reliable solutions for East Rand residential and rural properties.
+                </p>
+                <p className="text-slate-600 mb-4">
+                  Services include country bathroom installations with modern fixtures, farmhouse kitchen plumbing systems, borehole pump installations and maintenance, solar geyser systems perfect for rural properties, rainwater harvesting system plumbing, septic tank connections and maintenance, pressure pump installations for rural water systems, and 24/7 emergency repair services. All work complies with Johannesburg building regulations and SANS plumbing standards.
+                </p>
+                <p className="text-slate-600">
+                  Our Nigel plumbing team understands rural property challenges including water pressure issues, borehole integration, off-grid living solutions, and country property access. We serve all East Rand areas including remote rural properties, providing the same professional service and expertise regardless of location.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-16 sm:py-20 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
@@ -416,6 +540,53 @@ export default function NigelPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 sm:py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Nigel FAQs</Badge>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                Frequently Asked Questions - Nigel Carpentry & Plumbing
+              </h2>
+              <p className="text-lg text-slate-600">
+                Get answers to common questions about our country carpentry, rural built-ins, granite installations, and plumbing services in Nigel and the East Rand.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg border border-slate-200 p-6 hover:shadow-md transition-shadow"
+                >
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">{faq.question}</h3>
+                  <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 bg-amber-50 rounded-lg p-6 border-l-4 border-amber-600">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Still Have Questions?</h3>
+              <p className="text-slate-600 mb-4">
+                Our Nigel team is ready to answer your questions about country carpentry, rural plumbing, or any East Rand renovation project. Contact us for personalized advice and free detailed quotes for your country property.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700">
+                  <Link href="/contact">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Request Free Consultation
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 sm:py-20 bg-amber-600 text-white">
         <div className="container mx-auto px-4 text-center">
@@ -432,14 +603,14 @@ export default function NigelPage() {
               className="bg-white text-amber-600 hover:bg-slate-100 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
             >
               <Link href="/contact">
-                <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                <Phone className="mr-2 h-5 w-5" />
                 Get Country Quote
               </Link>
             </Button>
             <Button
               asChild
-              size="lg"
               variant="outline"
+              size="lg"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
               <Link href="tel:+27676014490">Call 067 601 4490</Link>

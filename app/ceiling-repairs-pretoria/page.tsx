@@ -7,9 +7,9 @@ import { CheckCircle2, Clock, Shield, Star, Phone, MapPin, Award, Users } from "
 export const metadata: Metadata = {
   title: "Ceiling Repairs Pretoria | Expert Ceiling Repair Services 2025",
   description:
-    "Professional ceiling repair services in Pretoria. Expert repairs for cracks, water damage, sagging ceilings & more. 24/7 emergency service. Free quotes. Call now!",
+    "★★★★★ Professional ceiling repair services in Pretoria. Expert repairs for cracks, water damage, sagging ceilings, gypsum repairs & more. 24/7 emergency service. 500+ repairs completed. Free quotes. Licensed & insured. Call 067 601 4490!",
   keywords:
-    "ceiling repairs Pretoria, ceiling repair services Pretoria, ceiling crack repair Pretoria, water damaged ceiling repair Pretoria, sagging ceiling repair Pretoria, ceiling contractors Pretoria 2025",
+    "ceiling repairs Pretoria, ceiling repair services Pretoria, ceiling crack repair Pretoria, water damaged ceiling repair Pretoria, sagging ceiling repair Pretoria, gypsum ceiling repair Pretoria, ceiling contractors Pretoria 2025, ceiling repair cost Pretoria, emergency ceiling repair Pretoria, professional ceiling repair Pretoria, ceiling board replacement Pretoria, ceiling texture matching Pretoria",
   openGraph: {
     title: "Ceiling Repairs Pretoria | Expert Ceiling Repair Services 2025",
     description:
@@ -29,11 +29,11 @@ export default function CeilingRepairsPretoriaPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
-              Expert Ceiling Repairs in Pretoria
+              Expert Ceiling Repairs in Pretoria | Professional Gypsum & Water Damage Repair
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 text-balance">
-              Professional ceiling repair services for homes and businesses across Pretoria. Fast, reliable, and
-              guaranteed quality repairs.
+              Professional ceiling repair services for homes and businesses across Pretoria, Centurion, and Tshwane.
+              Fast, reliable, and guaranteed quality repairs for all ceiling types. 500+ successful repairs completed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="bg-orange-600 hover:bg-orange-700 text-white">
@@ -96,6 +96,71 @@ export default function CeilingRepairsPretoriaPage() {
               we've repaired thousands of ceilings across the capital city. Our team understands the specific challenges
               that Pretoria properties face, from thermal expansion issues to water damage from summer thunderstorms.
             </p>
+
+            {/* Ceiling Repair Pricing in Pretoria */}
+            <h3 className="text-2xl font-bold mb-4 mt-8">Ceiling Repair Pricing in Pretoria</h3>
+            <p className="text-lg text-muted-foreground mb-6">
+              We believe in transparent pricing for all our ceiling repair services in Pretoria. Here's a comprehensive
+              breakdown of our ceiling repair costs to help you budget for your project:
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card>
+                <CardContent className="pt-6">
+                  <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-orange-600" />
+                    Minor Ceiling Repairs
+                  </h4>
+                  <p className="text-muted-foreground mb-3">
+                    Small cracks, minor holes, and cosmetic damage repairs throughout Pretoria.
+                  </p>
+                  <p className="text-2xl font-bold text-orange-600">R350 - R800</p>
+                  <p className="text-sm text-muted-foreground">Per repair | 1-2 hours</p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-orange-600" />
+                    Water Damage Repairs
+                  </h4>
+                  <p className="text-muted-foreground mb-3">
+                    Water-damaged ceiling repairs including stain removal and moisture treatment in Pretoria homes.
+                  </p>
+                  <p className="text-2xl font-bold text-orange-600">R1,200 - R4,500</p>
+                  <p className="text-sm text-muted-foreground">Per section | 1-3 days</p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-orange-600" />
+                    Ceiling Board Replacement
+                  </h4>
+                  <p className="text-muted-foreground mb-3">
+                    Complete ceiling board replacement for extensively damaged sections in Pretoria properties.
+                  </p>
+                  <p className="text-2xl font-bold text-orange-600">R95 - R180/m²</p>
+                  <p className="text-sm text-muted-foreground">Materials & labor included</p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-orange-600" />
+                    Emergency Repairs
+                  </h4>
+                  <p className="text-muted-foreground mb-3">
+                    24/7 emergency ceiling repair services for urgent situations across Pretoria and Centurion.
+                  </p>
+                  <p className="text-2xl font-bold text-orange-600">From R1,500</p>
+                  <p className="text-sm text-muted-foreground">Call-out fee + repairs</p>
+                </CardContent>
+              </Card>
+            </div>
 
             <h3 className="text-2xl font-bold mb-4 mt-8">Common Ceiling Problems We Fix in Pretoria</h3>
             <p className="text-lg text-muted-foreground mb-6">
@@ -299,105 +364,124 @@ export default function CeilingRepairsPretoriaPage() {
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold mb-4 mt-8">Serving All Pretoria Suburbs</h3>
+            {/* Comprehensive Ceiling Repair Coverage Across Pretoria */}
+            <h3 className="text-2xl font-bold mb-4 mt-8">Comprehensive Ceiling Repair Coverage Across Pretoria</h3>
             <p className="text-lg text-muted-foreground mb-6">
-              We provide professional ceiling repair services throughout Pretoria and surrounding areas, including:
+              We provide professional ceiling repair services throughout Pretoria, Centurion, and the greater Tshwane
+              metropolitan area. Our experienced team serves over 50 suburbs across Pretoria, ensuring fast response
+              times and local expertise wherever you are in the capital city.
             </p>
-            <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-orange-600" />
-                  <span>Arcadia</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-orange-600" />
-                  <span>Hatfield</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-orange-600" />
-                  <span>Waterkloof</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-orange-600" />
-                  <span>Menlyn</span>
-                </li>
-              </ul>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-orange-600" />
-                  <span>Brooklyn</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-orange-600" />
-                  <span>Lynnwood</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-orange-600" />
-                  <span>Centurion</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-orange-600" />
-                  <span>Faerie Glen</span>
-                </li>
-              </ul>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-orange-600" />
-                  <span>Garsfontein</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-orange-600" />
-                  <span>Moreleta Park</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-orange-600" />
-                  <span>Silverton</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-orange-600" />
-                  <span>Montana</span>
-                </li>
-              </ul>
+
+            <div className="grid md:grid-cols-4 gap-4 mb-8">
+              <div>
+                <h4 className="font-semibold mb-3 text-orange-600">Central Pretoria</h4>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Arcadia</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Hatfield</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Brooklyn</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Sunnyside</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Groenkloof</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold mb-3 text-orange-600">East Pretoria</h4>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Menlyn</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Lynnwood</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Faerie Glen</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Garsfontein</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Moreleta Park</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold mb-3 text-orange-600">South Pretoria</h4>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Waterkloof</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Centurion</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Irene</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Highveld</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Lyttelton</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold mb-3 text-orange-600">North Pretoria</h4>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Montana</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Sinoville</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Wonderboom</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Akasia</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-orange-600" />
+                    <span>Mabopane</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <h3 className="text-2xl font-bold mb-4 mt-8">Related Ceiling Services in Pretoria</h3>
-            <p className="text-lg text-muted-foreground mb-6">
-              In addition to ceiling repairs, we offer comprehensive ceiling services across Pretoria:
-            </p>
-            <div className="grid md:grid-cols-2 gap-4 mb-8">
-              <Link
-                href="/ceiling-installation-pretoria"
-                className="block p-4 border rounded-lg hover:border-orange-600 transition-colors"
-              >
-                <h4 className="font-semibold mb-2">Ceiling Installation Pretoria</h4>
-                <p className="text-sm text-muted-foreground">
-                  Professional new ceiling installations for homes and businesses
-                </p>
-              </Link>
-              <Link
-                href="/drywall-pretoria"
-                className="block p-4 border rounded-lg hover:border-orange-600 transition-colors"
-              >
-                <h4 className="font-semibold mb-2">Drywall Pretoria</h4>
-                <p className="text-sm text-muted-foreground">Expert drywall installation and partition services</p>
-              </Link>
-              <Link
-                href="/drywall-centurion"
-                className="block p-4 border rounded-lg hover:border-orange-600 transition-colors"
-              >
-                <h4 className="font-semibold mb-2">Drywall Centurion</h4>
-                <p className="text-sm text-muted-foreground">Comprehensive drywall services in nearby Centurion</p>
-              </Link>
-              <Link
-                href="/ceiling-repairs-centurion"
-                className="block p-4 border rounded-lg hover:border-orange-600 transition-colors"
-              >
-                <h4 className="font-semibold mb-2">Ceiling Repairs Centurion</h4>
-                <p className="text-sm text-muted-foreground">Expert ceiling repair services in Centurion area</p>
-              </Link>
-            </div>
-
-            <h3 className="text-2xl font-bold mb-4 mt-8">Frequently Asked Questions</h3>
+            {/* Frequently Asked Questions About Ceiling Repairs in Pretoria */}
+            <h3 className="text-2xl font-bold mb-4 mt-8">
+              Frequently Asked Questions About Ceiling Repairs in Pretoria
+            </h3>
             <div className="space-y-4 mb-8">
               <div className="border-b pb-4">
                 <h4 className="font-semibold mb-2">How much do ceiling repairs cost in Pretoria?</h4>
@@ -451,6 +535,143 @@ export default function CeilingRepairsPretoriaPage() {
                   quality of our repairs and will address any issues that arise from our workmanship.
                 </p>
               </div>
+
+              <div className="border-b pb-4">
+                <h4 className="font-semibold mb-2">What causes ceiling cracks in Pretoria homes?</h4>
+                <p className="text-muted-foreground">
+                  Ceiling cracks in Pretoria are commonly caused by structural settling, temperature fluctuations
+                  (Pretoria's hot summers cause expansion), roof movement, water damage from leaks, or poor initial
+                  installation. Pretoria's clay-rich soil can also cause foundation movement that leads to ceiling
+                  cracks. We assess the root cause and provide lasting solutions.
+                </p>
+              </div>
+
+              <div className="border-b pb-4">
+                <h4 className="font-semibold mb-2">Can you match my existing ceiling texture in Pretoria?</h4>
+                <p className="text-muted-foreground">
+                  Yes! We specialize in texture matching for all ceiling types common in Pretoria homes - from smooth
+                  finishes to stipple, knockdown, and decorative textures. Our craftsmen have years of experience
+                  matching textures so repairs blend seamlessly. We bring samples to ensure perfect matching before
+                  starting work.
+                </p>
+              </div>
+
+              <div className="border-b pb-4">
+                <h4 className="font-semibold mb-2">Do you handle insurance claims for ceiling damage in Pretoria?</h4>
+                <p className="text-muted-foreground">
+                  Yes, we regularly work with insurance companies for ceiling damage claims in Pretoria. We provide
+                  detailed quotes, photographic documentation, and professional reports for your insurance claim. We can
+                  communicate directly with your insurer and ensure all repairs meet insurance requirements and building
+                  standards.
+                </p>
+              </div>
+
+              <div className="border-b pb-4">
+                <h4 className="font-semibold mb-2">How long does ceiling repair take in Pretoria?</h4>
+                <p className="text-muted-foreground">
+                  Most ceiling repairs in Pretoria are completed within 1-3 days depending on damage extent. Minor crack
+                  repairs can be done in a few hours, while extensive water damage repairs may take 2-3 days including
+                  drying time. We provide accurate timelines during our free assessment and work efficiently to minimize
+                  disruption to your Pretoria home or business.
+                </p>
+              </div>
+
+              <div className="border-b pb-4">
+                <h4 className="font-semibold mb-2">What areas of Pretoria do you serve for ceiling repairs?</h4>
+                <p className="text-muted-foreground">
+                  We provide ceiling repair services throughout greater Pretoria including Arcadia, Hatfield,
+                  Waterkloof, Menlyn, Brooklyn, Lynnwood, Centurion, Faerie Glen, Garsfontein, Moreleta Park, Montana,
+                  Silverton, and all surrounding suburbs. We offer fast response times across all Pretoria areas with
+                  same-day emergency service available.
+                </p>
+              </div>
+
+              <div className="border-b pb-4">
+                <h4 className="font-semibold mb-2">Do you repair both gypsum and plaster ceilings in Pretoria?</h4>
+                <p className="text-muted-foreground">
+                  Yes, we repair all ceiling types in Pretoria including gypsum board (drywall), plaster ceilings,
+                  suspended ceilings, acoustic tiles, and decorative ceilings. Our team has specialized experience with
+                  both modern gypsum installations and older plaster ceilings common in Pretoria's heritage homes. We
+                  use appropriate techniques and materials for each ceiling type.
+                </p>
+              </div>
+
+              <div className="border-b pb-4">
+                <h4 className="font-semibold mb-2">Can you fix sagging ceilings in Pretoria homes?</h4>
+                <p className="text-muted-foreground">
+                  Yes, sagging ceilings require immediate attention as they pose safety risks. We repair sagging
+                  ceilings in Pretoria by reinforcing ceiling joists, replacing damaged boards, and addressing
+                  underlying structural issues. Sagging is often caused by water damage, inadequate support, or age. We
+                  provide comprehensive solutions that restore safety and appearance.
+                </p>
+              </div>
+
+              <div className="border-b pb-4">
+                <h4 className="font-semibold mb-2">What's included in your ceiling repair warranty in Pretoria?</h4>
+                <p className="text-muted-foreground">
+                  All our ceiling repairs in Pretoria come with a comprehensive workmanship warranty covering materials
+                  and labor. We guarantee our repairs against defects, cracking, or failure due to workmanship issues.
+                  The warranty period varies by repair type but typically ranges from 12-24 months. We stand behind our
+                  work and will address any warranty issues promptly.
+                </p>
+              </div>
+
+              <div className="border-b pb-4">
+                <h4 className="font-semibold mb-2">Do you provide free quotes for ceiling repairs in Pretoria?</h4>
+                <p className="text-muted-foreground">
+                  Yes! We provide completely free, no-obligation quotes for all ceiling repair work in Pretoria. Our
+                  experienced team will visit your property, assess the damage, explain the repair process, and provide
+                  a detailed written quote. There's no pressure to proceed - we want you to make an informed decision.
+                  Call 067 601 4490 to schedule your free assessment.
+                </p>
+              </div>
+
+              <div className="border-b pb-4">
+                <h4 className="font-semibold mb-2">Can you repair water-damaged ceilings in Pretoria?</h4>
+                <p className="text-muted-foreground">
+                  Yes, water damage is one of our specialties in Pretoria. We repair water-damaged ceilings by first
+                  addressing the moisture source, then removing damaged materials, treating for mold if necessary,
+                  replacing ceiling boards, and finishing with seamless texture matching and painting. Pretoria's summer
+                  storms often cause roof leaks - we provide comprehensive water damage solutions.
+                </p>
+              </div>
+            </div>
+
+            <h3 className="text-2xl font-bold mb-4 mt-8">Related Ceiling Services in Pretoria</h3>
+            <p className="text-lg text-muted-foreground mb-6">
+              In addition to ceiling repairs, we offer comprehensive ceiling services across Pretoria:
+            </p>
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+              <Link
+                href="/ceiling-installation-pretoria"
+                className="block p-4 border rounded-lg hover:border-orange-600 transition-colors"
+              >
+                <h4 className="font-semibold mb-2">Ceiling Installation Pretoria</h4>
+                <p className="text-sm text-muted-foreground">
+                  Professional new ceiling installations for homes and businesses
+                </p>
+              </Link>
+              <Link
+                href="/drywall-pretoria"
+                className="block p-4 border rounded-lg hover:border-orange-600 transition-colors"
+              >
+                <h4 className="font-semibold mb-2">Drywall Pretoria</h4>
+                <p className="text-sm text-muted-foreground">Expert drywall installation and partition services</p>
+              </Link>
+              <Link
+                href="/drywall-centurion"
+                className="block p-4 border rounded-lg hover:border-orange-600 transition-colors"
+              >
+                <h4 className="font-semibold mb-2">Drywall Centurion</h4>
+                <p className="text-sm text-muted-foreground">Comprehensive drywall services in nearby Centurion</p>
+              </Link>
+              <Link
+                href="/ceiling-repairs-centurion"
+                className="block p-4 border rounded-lg hover:border-orange-600 transition-colors"
+              >
+                <h4 className="font-semibold mb-2">Ceiling Repairs Centurion</h4>
+                <p className="text-sm text-muted-foreground">Expert ceiling repair services in Centurion area</p>
+              </Link>
             </div>
           </div>
         </div>

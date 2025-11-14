@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { Phone, Star, CheckCircle, Clock, Shield, Award, MapPin, ArrowRight, Quote, Building2, Zap } from "lucide-react"
+import { Phone, Star, CheckCircle, Clock, Shield, Award, MapPin, ArrowRight, Quote, Building2, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
   title:
@@ -145,6 +145,59 @@ export default function KrugersdorpPage() {
     "Westonaria",
     "Carletonville",
     "Roodepoort",
+  ]
+
+  const faqs = [
+    {
+      question: "What carpentry services do you offer in Krugersdorp?",
+      answer:
+        "We provide comprehensive carpentry services throughout Krugersdorp including custom kitchen renovations, built-in cupboards, granite and quartz countertop installations, outdoor decking, indoor flooring, and commercial carpentry for industrial properties. Our Krugersdorp team specializes in both residential and commercial-grade projects designed for the West Rand's unique industrial environment.",
+    },
+    {
+      question: "How much does a kitchen renovation cost in Krugersdorp?",
+      answer:
+        "Kitchen renovation costs in Krugersdorp typically range from R55,000 for basic renovations to R150,000+ for comprehensive luxury makeovers. Factors affecting cost include kitchen size, material selection (granite vs Caesarstone), cabinet complexity, appliance integration, and plumbing requirements. We provide detailed free quotes specific to your Krugersdorp project.",
+    },
+    {
+      question: "Do you serve industrial and commercial properties in Krugersdorp?",
+      answer:
+        "Yes, we specialize in industrial and commercial carpentry throughout Krugersdorp. Our team has extensive experience with commercial-grade installations, industrial kitchens, factory storage solutions, office built-ins, and heavy-duty granite surfaces that meet the demands of Krugersdorp's industrial sector.",
+    },
+    {
+      question: "What areas around Krugersdorp do you cover?",
+      answer:
+        "We proudly serve all Krugersdorp suburbs including Krugersdorp Central, Monument, Mindalore, Silverfields, Kenmare, Noordheuwel, Wilro Park, Kagiso, and Munsieville. We also cover surrounding West Rand areas including Randfontein, Westonaria, Carletonville, and Roodepoort with the same commercial-grade expertise.",
+    },
+    {
+      question: "How long does a built-in cupboard installation take in Krugersdorp?",
+      answer:
+        "Built-in cupboard installations in Krugersdorp typically take 5-9 days depending on project complexity. Simple bedroom wardrobes may be completed in 3-5 days, while extensive walk-in closets and multi-room storage solutions can take 7-12 days. We provide accurate timelines during our free consultation and maintain flexible scheduling to minimize disruption.",
+    },
+    {
+      question: "What granite and stone materials do you use?",
+      answer:
+        "We exclusively use premium materials including Caesarstone, Silestone, natural granite, marble, and engineered quartz. All stone is sourced from trusted suppliers and backed by manufacturer warranties. Our Krugersdorp team helps you select the perfect material based on durability requirements, aesthetics, and budget considerations for your industrial or residential project.",
+    },
+    {
+      question: "Do you offer emergency plumbing services in Krugersdorp?",
+      answer:
+        "Yes, we provide 24/7 emergency plumbing services throughout Krugersdorp and the West Rand. Burst pipes, major leaks, geyser failures, and urgent drainage issues are handled promptly by our licensed plumbers. Industrial and commercial emergency call-outs are prioritized. Call 067 601 4490 for immediate assistance.",
+    },
+    {
+      question: "Are you licensed and insured for industrial work in Krugersdorp?",
+      answer:
+        "Absolutely. We hold full trade licenses for carpentry and plumbing, with specialized certification for industrial and commercial projects. We carry R2 million public liability insurance covering all Krugersdorp projects. All work is backed by our comprehensive 5-year warranty, ensuring complete peace of mind for your industrial investment.",
+    },
+    {
+      question: "What makes you the best choice for Krugersdorp projects?",
+      answer:
+        "We combine 15+ years of West Rand experience, industrial-grade expertise, 600+ completed projects, premium materials only, commercial certifications, extended warranty coverage, and deep understanding of Krugersdorp's industrial environment. Our team delivers exceptional craftsmanship that meets the demanding standards of industrial and commercial applications.",
+    },
+    {
+      question: "Can you handle large commercial projects in Krugersdorp?",
+      answer:
+        "Yes, we specialize in large-scale commercial and industrial projects throughout Krugersdorp. From factory kitchens to office renovations, warehouse storage solutions to commercial plumbing installations, our team has the expertise, equipment, and capacity to deliver professional results on schedule and within budget for industrial clients.",
+    },
   ]
 
   return (
@@ -343,6 +396,77 @@ export default function KrugersdorpPage() {
         </div>
       </section>
 
+      {/* Service Details Section */}
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Krugersdorp Service Excellence</Badge>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                Comprehensive Carpentry Solutions for Industrial Krugersdorp
+              </h2>
+              <p className="text-lg text-slate-600">
+                Serving Krugersdorp since 2020 with specialized industrial carpentry, commercial-grade granite installations, and professional plumbing services designed for the West Rand's unique business environment.
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              <div className="bg-slate-50 rounded-lg p-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Industrial Kitchen Renovations in Krugersdorp</h3>
+                <p className="text-slate-600 mb-4">
+                  Transform your Krugersdorp industrial or commercial kitchen with our specialized renovation services. We understand the demanding requirements of West Rand businesses and deliver commercial-grade solutions built to withstand heavy use while maintaining professional aesthetics.
+                </p>
+                <p className="text-slate-600 mb-4">
+                  Our Krugersdorp kitchen renovation services include custom commercial cabinetry with reinforced construction, heavy-duty granite and Caesarstone countertops rated for industrial use, professional-grade plumbing installations, industrial lighting and electrical integration, and specialized ventilation systems for commercial kitchens.
+                </p>
+                <p className="text-slate-600">
+                  Popular areas in Krugersdorp we serve include Monument industrial area, Silverfields business district, Mindalore commercial zone, and Kenmare industrial park. Every kitchen renovation is backed by our extended industrial warranty and meets all commercial building standards for the West Rand region.
+                </p>
+              </div>
+
+              <div className="bg-slate-50 rounded-lg p-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Commercial Built-in Cupboards Throughout Krugersdorp</h3>
+                <p className="text-slate-600 mb-4">
+                  Maximize your Krugersdorp business space with our industrial-strength built-in storage solutions. From factory tool storage to office filing systems, retail display units to warehouse organization, we design and install commercial-grade cupboards that deliver functionality and durability for West Rand businesses.
+                </p>
+                <p className="text-slate-600 mb-4">
+                  Our built-in solutions feature heavy-duty construction materials rated for industrial environments, commercial-grade hardware and locking systems, customized designs for specialized storage needs, fire-resistant materials where required, and professional powder-coated finishes that resist industrial wear and tear.
+                </p>
+                <p className="text-slate-600">
+                  Whether you're in Krugersdorp Central, Noordheuwel, Wilro Park, or any other West Rand location, our team delivers storage solutions that meet your specific industrial requirements. We work with factories, warehouses, offices, and retail spaces throughout the Krugersdorp industrial corridor.
+                </p>
+              </div>
+
+              <div className="bg-slate-50 rounded-lg p-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Heavy-Duty Granite Installations in Krugersdorp</h3>
+                <p className="text-slate-600 mb-4">
+                  Our Krugersdorp granite and stone installation services deliver industrial-strength surfaces designed for commercial kitchens, factory workspaces, and high-traffic business environments. We exclusively use premium materials that withstand the demanding conditions of West Rand industrial operations.
+                </p>
+                <p className="text-slate-600 mb-4">
+                  Stone options include commercial-grade granite with sealed surfaces resistant to chemicals and heat, Caesarstone engineered quartz rated for industrial kitchens, Silestone antibacterial surfaces for food preparation areas, and custom edge profiles designed for safety in industrial settings. All installations include professional templating, precise cutting, and expert fitting backed by manufacturer warranties.
+                </p>
+                <p className="text-slate-600">
+                  Krugersdorp businesses choose us for workbenches, industrial kitchen counters, laboratory surfaces, retail countertops, and reception desks. Our team understands the unique requirements of West Rand commercial properties and delivers surfaces that combine functionality with professional aesthetics.
+                </p>
+              </div>
+
+              <div className="bg-slate-50 rounded-lg p-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Commercial Plumbing Services for Krugersdorp Businesses</h3>
+                <p className="text-slate-600 mb-4">
+                  Keep your Krugersdorp business running smoothly with our professional commercial plumbing services. From routine maintenance to emergency repairs, industrial installations to system upgrades, our licensed plumbers deliver reliable solutions for West Rand commercial and industrial properties.
+                </p>
+                <p className="text-slate-600 mb-4">
+                  Services include industrial bathroom installations, commercial kitchen plumbing systems, factory drainage solutions, high-capacity geyser installations, water filtration for industrial use, backflow prevention systems, and 24/7 emergency repair services. All work complies with Johannesburg building regulations and SANS plumbing standards.
+                </p>
+                <p className="text-slate-600">
+                  Our Krugersdorp plumbing team responds quickly to emergencies in all industrial areas including Kagiso, Munsieville, and throughout the West Rand corridor. We understand that plumbing downtime costs businesses money, which is why we prioritize rapid response and efficient solutions for commercial clients.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-16 sm:py-20 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
@@ -416,6 +540,53 @@ export default function KrugersdorpPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 sm:py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Krugersdorp FAQs</Badge>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                Frequently Asked Questions - Krugersdorp Carpentry & Plumbing
+              </h2>
+              <p className="text-lg text-slate-600">
+                Get answers to common questions about our industrial carpentry, commercial built-ins, granite installations, and plumbing services in Krugersdorp and the West Rand.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg border border-slate-200 p-6 hover:shadow-md transition-shadow"
+                >
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">{faq.question}</h3>
+                  <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 bg-amber-50 rounded-lg p-6 border-l-4 border-amber-600">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Still Have Questions?</h3>
+              <p className="text-slate-600 mb-4">
+                Our Krugersdorp team is ready to answer your questions about industrial carpentry, commercial plumbing, or any West Rand renovation project. Contact us for personalized advice and free detailed quotes.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700">
+                  <Link href="/contact">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Request Free Consultation
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 sm:py-20 bg-amber-600 text-white">
         <div className="container mx-auto px-4 text-center">
@@ -432,7 +603,7 @@ export default function KrugersdorpPage() {
               className="bg-white text-amber-600 hover:bg-slate-100 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
             >
               <Link href="/contact">
-                <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                <Phone className="mr-2 h-5 w-5" />
                 Get Industrial Quote
               </Link>
             </Button>

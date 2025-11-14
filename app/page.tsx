@@ -62,15 +62,6 @@ export default function HomePage() {
       duration: "2-6 days",
       linkText: "Learn About Drywall Services",
     },
-    {
-      title: "Carpentry Training",
-      description: "Professional carpentry courses and skills development programs.",
-      image: "/quality_woodworking_education_in_south_africa-1.jpg",
-      href: "/carpentry-training",
-      price: "From R3,500",
-      duration: "1-12 weeks",
-      linkText: "View Training Programs",
-    },
   ]
 
   const areas = [

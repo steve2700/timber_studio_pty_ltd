@@ -1,13 +1,11 @@
-"use client"
-
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Gem, ChevronDown } from "lucide-react"
-import { useState } from "react"
+import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Gem } from 'lucide-react'
+import type { Metadata } from "next"
 
-const metadata = {
+export const metadata: Metadata = {
   title:
     "★★★★★ Best Carpenter & Plumber Bedfordview 2025 | #1 Kitchen Renovations, Built-in Cupboards & Plumbing",
   description:
@@ -19,6 +17,24 @@ const metadata = {
     description:
       "★★★★★ #1 carpenter & plumber in Bedfordview. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 600+ upmarket projects. FREE quotes.",
     url: "https://granitecarpentry.co.za/areas/bedfordview",
+    siteName: "Granite Carpentry",
+    images: [
+      {
+        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Best Carpenter & Plumber Bedfordview - Granite Carpentry",
+      },
+    ],
+    locale: "en_ZA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "★★★★★ Best Carpenter & Plumber Bedfordview 2025 | Premium Services",
+    description:
+      "★★★★★ #1 carpenter & plumber in Bedfordview. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 600+ upmarket projects. FREE quotes.",
+    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
   },
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/bedfordview",
@@ -26,8 +42,6 @@ const metadata = {
 }
 
 export default function BedfordviewPage() {
-  const [expandedFaq, setExpandedFaq] = useState<number | null>(null)
-
   const faqs = [
     {
       question: "What areas in Bedfordview do you service?",
@@ -262,7 +276,7 @@ export default function BedfordviewPage() {
             <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Gem className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -516,28 +530,14 @@ export default function BedfordviewPage() {
               questions.
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-6">
               {faqs.map((faq, idx) => (
                 <div
                   key={idx}
-                  className="border border-slate-200 rounded-lg overflow-hidden hover:border-amber-400 transition-colors"
+                  className="bg-white rounded-lg border border-slate-200 p-6 hover:shadow-md transition-shadow"
                 >
-                  <button
-                    onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
-                    className="w-full px-6 py-4 flex items-center justify-between bg-slate-50 hover:bg-slate-100 transition-colors"
-                  >
-                    <h3 className="text-lg font-semibold text-slate-800 text-left">{faq.question}</h3>
-                    <ChevronDown
-                      className={`w-5 h-5 text-amber-600 transition-transform flex-shrink-0 ml-4 ${
-                        expandedFaq === idx ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
-                  {expandedFaq === idx && (
-                    <div className="px-6 py-4 bg-white border-t border-slate-200">
-                      <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
-                    </div>
-                  )}
+                  <h3 className="text-xl font-semibold text-slate-800 mb-3">{faq.question}</h3>
+                  <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
                 </div>
               ))}
             </div>

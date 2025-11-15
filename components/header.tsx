@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Menu, Phone, Mail, MapPin, ChevronDown, Star } from "lucide-react"
+import { Menu, Phone, Mail, MapPin, ChevronDown, Star } from 'lucide-react'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,7 +16,7 @@ export function Header() {
     { name: "Quartz & Granite", href: "/quartz-granite" },
     { name: "Decking & Flooring", href: "/decking-flooring" },
     { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
-    { name: "Carpentry Training", href: "/carpentry-training" },
+    { name: "Door Installation", href: "/door-installation" },
     { name: "Professional Plumbing", href: "/plumbing" },
   ]
 
@@ -41,6 +41,19 @@ export function Header() {
     { name: "Ceiling Repairs Centurion", href: "/ceiling-repairs-centurion" },
     { name: "Drywall Boksburg", href: "/drywall-boksburg" },
     { name: "Ceiling Installation Edenvale", href: "/ceiling-installation-edenvale" },
+  ]
+
+  const doorServices = [
+    { name: "Pivot Doors", href: "/pivot-doors" },
+    { name: "Barn Doors", href: "/barn-doors" },
+    { name: "Security Doors", href: "/security-doors" },
+    { name: "French Doors", href: "/french-doors" },
+    { name: "Wooden Doors", href: "/wooden-doors" },
+    { name: "Pivot Doors Sandton", href: "/pivot-doors-sandton" },
+    { name: "Barn Doors Cape Town", href: "/barn-doors-cape-town" },
+    { name: "Security Doors Johannesburg", href: "/security-doors-johannesburg" },
+    { name: "Solid Wood Doors Pretoria", href: "/solid-wood-doors-pretoria" },
+    { name: "French Doors Sandton", href: "/french-doors-sandton" },
   ]
 
   const areas = [
@@ -154,6 +167,17 @@ export function Header() {
                     </Link>
                   ))}
                   <div className="border-t border-slate-200 my-1"></div>
+                  <div className="px-4 py-2 text-xs font-semibold text-slate-500 uppercase">Door Services</div>
+                  {doorServices.map((door) => (
+                    <Link
+                      key={door.href}
+                      href={door.href}
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600"
+                    >
+                      {door.name}
+                    </Link>
+                  ))}
+                  <div className="border-t border-slate-200 my-1"></div>
                   <div className="px-4 py-2 text-xs font-semibold text-slate-500 uppercase">Drywall Locations</div>
                   {drywallLocations.map((location) => (
                     <Link
@@ -257,6 +281,19 @@ export function Header() {
                               {service.name}
                             </Link>
                           ))}
+                          <div className="pt-3 mt-3 border-t border-slate-200">
+                            <div className="text-xs font-semibold text-slate-500 uppercase mb-2">Door Services</div>
+                            {doorServices.map((door) => (
+                              <Link
+                                key={door.href}
+                                href={door.href}
+                                className="block text-sm text-slate-600 hover:text-amber-600 transition-colors py-1"
+                                onClick={() => setIsOpen(false)}
+                              >
+                                {door.name}
+                              </Link>
+                            ))}
+                          </div>
                           <div className="pt-3 mt-3 border-t border-slate-200">
                             <div className="text-xs font-semibold text-slate-500 uppercase mb-2">Drywall Locations</div>
                             {drywallLocations.map((location) => (

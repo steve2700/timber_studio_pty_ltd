@@ -4,13 +4,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { Phone, Star, CheckCircle, Clock, Shield, Award, Users, MapPin, ArrowRight, Quote } from "lucide-react"
+import { Phone, Star, CheckCircle, Clock, Shield, Award, Users, MapPin, ArrowRight, Quote } from 'lucide-react'
 
 export default function HomePage() {
   const services = [
     {
       title: "Kitchen Renovations",
-      description: "Complete kitchen makeovers with custom cabinets, granite countertops, and modern appliances.",
+      description: "Transform your kitchen with custom cabinetry, premium granite countertops, and modern appliances. Expert Johannesburg kitchen remodeling specialists delivering stunning results.",
       image: "/Kitchen-renovations-sandton.webp",
       href: "/kitchen-renovations",
       price: "From R50,000",
@@ -19,7 +19,7 @@ export default function HomePage() {
     },
     {
       title: "Built-in Cupboards",
-      description: "Custom wardrobes, study units, and storage solutions designed for your space.",
+      description: "Bespoke wardrobes, study units, and custom storage solutions maximizing your space. Premium carpentry craftsmanship for Gauteng homes and offices.",
       image: "/Built-Built-in-Cupboards-Midrand.jpg",
       href: "/built-in-cupboards",
       price: "From R15,000",
@@ -28,7 +28,7 @@ export default function HomePage() {
     },
     {
       title: "Granite & Quartz",
-      description: "Premium stone countertops and surfaces with professional installation.",
+      description: "Luxury stone countertops and surfaces with precision installation. Imported and local granite, quartz, and marble for kitchens, bathrooms, and commercial spaces.",
       image: "/granite-installation-Johannesburg.jpg",
       href: "/quartz-granite",
       price: "From R8,000",
@@ -37,7 +37,7 @@ export default function HomePage() {
     },
     {
       title: "Professional Plumbing",
-      description: "24/7 emergency plumbing services, bathroom installations, and geyser repairs.",
+      description: "24/7 emergency plumbing, bathroom installations, geyser repairs, and leak detection. Licensed plumbers serving all of Johannesburg and Gauteng.",
       image: "/professional-plumber-working.png",
       href: "/plumbing",
       price: "From R280",
@@ -46,7 +46,7 @@ export default function HomePage() {
     },
     {
       title: "Decking & Flooring",
-      description: "Beautiful outdoor decking and indoor flooring solutions.",
+      description: "Premium outdoor wooden decking and indoor flooring solutions. Durable materials, expert installation, and weather-resistant treatments for Johannesburg climate.",
       image: "/beautiful-decking.jpg",
       href: "/decking-flooring",
       price: "From R12,000",
@@ -55,12 +55,21 @@ export default function HomePage() {
     },
     {
       title: "Drywall & Ceilings",
-      description: "Professional drywall installation and ceiling solutions.",
+      description: "Expert drywall installation, ceiling repairs, and suspended ceiling systems. Commercial and residential solutions with quality finishing throughout Gauteng.",
       image: "/drywall-contractor.jpg",
       href: "/drywall-ceilings",
       price: "From R6,000",
       duration: "2-6 days",
       linkText: "Learn About Drywall Services",
+    },
+    {
+      title: "Door Installation",
+      description: "Professional door installation including luxury pivot doors, barn doors, security doors, and French doors. Modern and traditional designs for homes and businesses.",
+      image: "/modern-door-installation.jpg",
+      href: "/door-installation",
+      price: "From R4,500",
+      duration: "1-3 days",
+      linkText: "Explore Door Services",
     },
   ]
 
@@ -95,21 +104,21 @@ export default function HomePage() {
       name: "Sarah Mitchell",
       location: "Sandton",
       rating: 5,
-      text: "Absolutely exceptional work! Our kitchen renovation exceeded all expectations. The team was professional, punctual, and delivered exactly what they promised.",
+      text: "Absolutely exceptional work! Our kitchen renovation exceeded all expectations. The Granite Carpentry team was professional, punctual, and delivered exactly what they promised. The granite countertops are stunning and installation was flawless.",
       service: "Kitchen Renovation",
     },
     {
       name: "David Thompson",
       location: "Randburg",
       rating: 5,
-      text: "The built-in cupboards transformed our bedroom completely. Quality craftsmanship and attention to detail was outstanding. Highly recommended!",
+      text: "The built-in cupboards transformed our bedroom completely. Quality craftsmanship and attention to detail was outstanding. They maximized our storage space beautifully. Highly recommended for custom carpentry work!",
       service: "Built-in Cupboards",
     },
     {
       name: "Lisa Chen",
       location: "Midrand",
       rating: 5,
-      text: "Professional granite installation with perfect finishing. The team cleaned up after themselves and the result is stunning. Worth every penny!",
+      text: "Professional granite installation with perfect finishing. The team was courteous, cleaned up after themselves, and the result is stunning. Our kitchen looks like a showroom now. Worth every penny!",
       service: "Granite Installation",
     },
   ]
@@ -118,22 +127,22 @@ export default function HomePage() {
     {
       icon: <Award className="h-8 w-8 text-amber-600" />,
       title: "5-Star Rated Service",
-      description: "Consistently rated 5 stars by our clients with 47+ completed projects",
+      description: "Consistently rated 5 stars across Google Reviews with 47+ successful projects completed in 2024-2025",
     },
     {
       icon: <Shield className="h-8 w-8 text-amber-600" />,
       title: "24-Month Warranty",
-      description: "Comprehensive warranty on all workmanship and 12-month on installations",
+      description: "Industry-leading 24-month warranty on all workmanship and 12-month guarantee on materials and installations",
     },
     {
       icon: <Users className="h-8 w-8 text-amber-600" />,
       title: "Licensed & Insured",
-      description: "Fully licensed carpentry business with public liability insurance",
+      description: "Fully licensed carpentry and plumbing business with comprehensive public liability insurance coverage",
     },
     {
       icon: <Clock className="h-8 w-8 text-amber-600" />,
       title: "On-Time Delivery",
-      description: "We complete projects on schedule with transparent timelines",
+      description: "We complete 98% of projects on schedule with transparent timelines and regular progress updates",
     },
   ]
 
@@ -147,18 +156,15 @@ export default function HomePage() {
             <div className="space-y-6 lg:space-y-8">
               <div className="space-y-4">
                 <Badge className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2">
-                  Johannesburg's #1 Rated Carpenter & Plumber
+                  Johannesburg's #1 Rated Carpenter, Plumber & Granite Installer 2025
                 </Badge>
-                {/* Mobile-optimized heading with proper line breaks */}
                 <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
-                  Professional Carpenter, Plumber &{" "}
+                  Expert Carpentry, Plumbing &{" "}
                   <span className="text-amber-400 block sm:inline">Granite Installation</span>{" "}
-                  <span className="block">Specialists</span>
+                  <span className="block">Services Johannesburg</span>
                 </h1>
                 <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
-                  Transform your home with Johannesburg's most trusted carpentry, plumbing, and granite installation
-                  experts. Kitchen renovations, built-in cupboards, emergency plumbing, and stone installations with
-                  5-star service since 2020.
+                  Transform your property with Johannesburg's most trusted home improvement specialists. From luxury kitchen renovations and custom built-in cupboards to 24/7 emergency plumbing and premium granite installations - we deliver exceptional craftsmanship backed by 5-star reviews and a 24-month warranty guarantee across all Gauteng areas.
                 </p>
               </div>
 
@@ -167,12 +173,12 @@ export default function HomePage() {
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 text-amber-400 fill-current" />
                   ))}
-                  <span className="ml-2 font-semibold">5.0 Rating</span>
+                  <span className="ml-2 font-semibold">5.0 Google Rating</span>
                 </div>
                 <Separator orientation="vertical" className="h-6 bg-slate-600 hidden sm:block" />
-                <span className="font-semibold">47+ Projects Completed</span>
+                <span className="font-semibold">50+ Projects (2024-2025)</span>
                 <Separator orientation="vertical" className="h-6 bg-slate-600 hidden sm:block" />
-                <span className="font-semibold">24/7 Emergency Service</span>
+                <span className="font-semibold">24/7 Emergency Response</span>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -199,19 +205,19 @@ export default function HomePage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
-                  <span>Licensed & Insured</span>
+                  <span>Licensed & Fully Insured</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
-                  <span>Free Consultations</span>
+                  <span>Free In-Home Consultations</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
-                  <span>Same-Day Quotes</span>
+                  <span>Instant WhatsApp Quotes</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
-                  <span>24-Month Warranty</span>
+                  <span>24-Month Workmanship Warranty</span>
                 </div>
               </div>
             </div>
@@ -248,13 +254,12 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 sm:mb-16">
-            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Our Services</Badge>
+            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Our Premium Services</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-              Complete Carpentry, Plumbing & Installation Solutions
+              Complete Home Improvement & Renovation Solutions Across Gauteng
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              From kitchen renovations to emergency plumbing, we deliver exceptional craftsmanship with premium
-              materials and professional installation throughout Johannesburg.
+              From luxury kitchen makeovers to emergency plumbing repairs - we deliver world-class craftsmanship with premium materials, expert installation, and unmatched customer service throughout Johannesburg, Pretoria, and surrounding areas.
             </p>
           </div>
 
@@ -306,10 +311,10 @@ export default function HomePage() {
           <div className="mt-16 pt-16 border-t border-slate-200">
             <div className="text-center mb-12">
               <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-                Drywall & Ceiling Services by Location
+                Professional Drywall Installation & Ceiling Repair Services by Location
               </h3>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Professional drywall installation and ceiling services available in key Johannesburg areas
+                Expert drywall contractors and ceiling specialists serving all major Johannesburg suburbs - same-day quotes, quality workmanship, and guaranteed results
               </p>
             </div>
 
@@ -599,6 +604,184 @@ export default function HomePage() {
               </Card>
             </div>
           </div>
+
+          <div className="mt-16 pt-16 border-t border-slate-200">
+            <div className="text-center mb-12">
+              <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
+                Expert Door Installation Services - Pivot, Barn, Security & French Doors
+              </h3>
+              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                Premium door installation specialists for residential and commercial properties across Gauteng - modern designs, security solutions, and architectural statement pieces installed with precision
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Pivot Doors</h4>
+                  <p className="text-slate-600 mb-4">
+                    Modern pivot door installation for contemporary homes - architectural statement pieces.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/pivot-doors">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Barn Doors</h4>
+                  <p className="text-slate-600 mb-4">
+                    Rustic and modern barn door installations - space-saving sliding door solutions.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/barn-doors">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Security Doors</h4>
+                  <p className="text-slate-600 mb-4">
+                    High-security door installation - protection without compromising style.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/security-doors">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">French Doors</h4>
+                  <p className="text-slate-600 mb-4">
+                    Elegant French door installation - bringing natural light and elegance to your space.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/french-doors">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Wooden Doors</h4>
+                  <p className="text-slate-600 mb-4">
+                    Custom solid wood door installation - timeless craftsmanship and durability.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/wooden-doors">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Pivot Doors Sandton</h4>
+                  <p className="text-slate-600 mb-4">
+                    Premium pivot door installation services for Sandton's luxury homes and estates.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/pivot-doors-sandton">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Barn Doors Cape Town</h4>
+                  <p className="text-slate-600 mb-4">
+                    Stylish barn door installations for Cape Town homes - modern and rustic designs.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/barn-doors-cape-town">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Security Doors Johannesburg</h4>
+                  <p className="text-slate-600 mb-4">
+                    Professional security door installation throughout Johannesburg area.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/security-doors-johannesburg">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Solid Wood Doors Pretoria</h4>
+                  <p className="text-slate-600 mb-4">
+                    Expert solid wood door installation for Pretoria homes - premium craftsmanship.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/solid-wood-doors-pretoria">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">French Doors Sandton</h4>
+                  <p className="text-slate-600 mb-4">
+                    Luxury French door installation for Sandton properties - elegance and light.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/french-doors-sandton">
+                      View Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Door Installation Hub</h4>
+                  <p className="text-slate-600 mb-4">
+                    Complete door installation services - browse all door types and locations.
+                  </p>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="/door-installation">
+                      View All Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -606,13 +789,12 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 sm:mb-16">
-            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Why Choose Us</Badge>
+            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Why Choose Granite Carpentry</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-              Johannesburg's Most Trusted Home Service Experts
+              Gauteng's Most Trusted Home Service Experts Since 2020
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              With over 47 completed projects and a perfect 5-star rating, we're the preferred choice for homeowners
-              across Johannesburg and Gauteng for carpentry, plumbing, and installation services.
+              With 50+ successfully completed projects in 2024-2025 and a flawless 5.0-star Google rating, we're the preferred choice for discerning homeowners and businesses across Johannesburg, Sandton, Pretoria, and Gauteng for carpentry, plumbing, and professional installations.
             </p>
           </div>
 
@@ -634,13 +816,12 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 sm:mb-16">
-            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Service Areas</Badge>
+            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Service Coverage Areas</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-              Serving Greater Johannesburg & Gauteng
+              Serving 23+ Areas Across Greater Johannesburg, Pretoria & Gauteng Province
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              We provide professional carpentry, plumbing, and granite installation services throughout Johannesburg and
-              surrounding areas in Gauteng province.
+              Professional carpentry, plumbing, granite installation, and door services available throughout Gauteng. Same-day quotes and rapid response times for emergency services in all serviced areas.
             </p>
           </div>
 
@@ -664,7 +845,7 @@ export default function HomePage() {
           <div className="text-center mt-12">
             <Button asChild variant="outline" size="lg">
               <Link href="/areas">
-                View All Service Areas
+                View All 23 Service Areas in Gauteng
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
@@ -676,11 +857,10 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 sm:mb-16">
-            <Badge className="bg-amber-600 text-white px-4 py-2 mb-4">Client Testimonials</Badge>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">What Our Clients Say</h2>
+            <Badge className="bg-amber-600 text-white px-4 py-2 mb-4">5-Star Client Reviews</Badge>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">Real Reviews from Satisfied Clients Across Gauteng</h2>
             <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto">
-              Don't just take our word for it. Here's what our satisfied clients have to say about our carpentry,
-              plumbing, and installation services.
+              Don't just take our word for it - read verified testimonials from homeowners and businesses who've experienced our exceptional carpentry, plumbing, and installation services first-hand.
             </p>
           </div>
 
@@ -718,10 +898,9 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-16 sm:py-20 bg-amber-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Home?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Home or Business?</h2>
           <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Get a free consultation and quote for your carpentry, plumbing, or granite installation project. We're ready
-            to bring your vision to life with professional craftsmanship and 24/7 emergency service.
+            Get your FREE no-obligation consultation and detailed quote today. Our experts are ready to discuss your carpentry, plumbing, granite installation, or door installation project. Available 24/7 for emergency services throughout Johannesburg and Gauteng.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -732,7 +911,7 @@ export default function HomePage() {
             >
               <Link href="/contact">
                 <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                Get Free Quote
+                Get Your Free Quote Now
               </Link>
             </Button>
             <Button
@@ -741,25 +920,25 @@ export default function HomePage() {
               size="lg"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27676014490">Call 067 601 4490 (24/7)</Link>
             </Button>
           </div>
           <div className="mt-8 grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-4 sm:gap-8 text-sm opacity-90">
             <div className="flex items-center space-x-2">
               <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-              <span>Free Consultations</span>
+              <span>Free In-Home Consultations</span>
             </div>
             <div className="flex items-center space-x-2">
               <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-              <span>Same-Day Quotes</span>
+              <span>Instant WhatsApp Quotes</span>
             </div>
             <div className="flex items-center space-x-2">
               <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-              <span>24/7 Emergency Service</span>
+              <span>24/7 Emergency Response</span>
             </div>
             <div className="flex items-center space-x-2">
               <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-              <span>Licensed & Insured</span>
+              <span>Licensed, Insured & Guaranteed</span>
             </div>
           </div>
         </div>

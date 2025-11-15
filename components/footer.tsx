@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Star, Award, Shield, Users } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Star, Award, Shield, Users } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
@@ -14,7 +14,20 @@ export function Footer() {
     { name: "Professional Plumbing", href: "/plumbing" },
     { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
     { name: "Decking & Flooring", href: "/decking-flooring" },
-    { name: "Carpentry Training", href: "/carpentry-training" },
+    { name: "Door Installation", href: "/door-installation" },
+  ]
+
+  const doorServices = [
+    { name: "Pivot Doors", href: "/pivot-doors" },
+    { name: "Barn Doors", href: "/barn-doors" },
+    { name: "Security Doors", href: "/security-doors" },
+    { name: "French Doors", href: "/french-doors" },
+    { name: "Wooden Doors", href: "/wooden-doors" },
+    { name: "Pivot Doors Sandton", href: "/pivot-doors-sandton" },
+    { name: "French Doors Sandton", href: "/french-doors-sandton" },
+    { name: "Barn Doors Cape Town", href: "/barn-doors-cape-town" },
+    { name: "Security Doors JHB", href: "/security-doors-johannesburg" },
+    { name: "Wood Doors Pretoria", href: "/solid-wood-doors-pretoria" },
   ]
 
   const drywallServices = [
@@ -103,7 +116,7 @@ export function Footer() {
 
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
             <div>
@@ -192,6 +205,24 @@ export function Footer() {
             <h4 className="text-lg font-semibold text-amber-400 mb-6">Our Services</h4>
             <ul className="space-y-3">
               {services.map((service) => (
+                <li key={service.name}>
+                  <Link
+                    href={service.href}
+                    className="text-slate-300 hover:text-amber-400 transition-colors flex items-center group"
+                  >
+                    <span className="w-2 h-2 bg-amber-600 rounded-full mr-3 group-hover:bg-amber-400 transition-colors"></span>
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Door Services */}
+          <div>
+            <h4 className="text-lg font-semibold text-amber-400 mb-6">Door Services</h4>
+            <ul className="space-y-3">
+              {doorServices.map((service) => (
                 <li key={service.name}>
                   <Link
                     href={service.href}

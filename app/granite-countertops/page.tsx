@@ -161,28 +161,30 @@ export default function GraniteCountertopsPage() {
   ]
 
   const areas = [
-    "Johannesburg",
-    "Sandton",
-    "Rosebank",
-    "Melrose",
-    "Houghton",
-    "Bryanston",
-    "Fourways",
-    "Midrand",
-    "Randburg",
-    "Northcliff",
-    "Pretoria",
-    "Centurion",
-    "Brooklyn",
-    "Waterkloof",
-    "Menlyn",
-    "Bedfordview",
-    "Edenvale",
-    "Kempton Park",
-    "Boksburg",
-    "Benoni",
-    "Alberton",
-    "Roodepoort",
+    { name: "Johannesburg", slug: "johannesburg" },
+    { name: "Johannesburg South", slug: "johannesburg-south" },
+    { name: "Sandton", slug: "sandton" },
+    { name: "Randburg", slug: "randburg" },
+    { name: "Pretoria", slug: "pretoria" },
+    { name: "Centurion", slug: "centurion" },
+    { name: "Midrand", slug: "midrand" },
+    { name: "Kempton Park", slug: "kempton-park" },
+    { name: "Roodepoort", slug: "roodepoort" },
+    { name: "Fourways", slug: "fourways" },
+    { name: "Edenvale", slug: "edenvale" },
+    { name: "Boksburg", slug: "boksburg" },
+    { name: "Alberton", slug: "alberton" },
+    { name: "Benoni", slug: "benoni" },
+    { name: "Germiston", slug: "germiston" },
+    { name: "Springs", slug: "springs" },
+    { name: "Vanderbijlpark", slug: "vanderbijlpark" },
+    { name: "Vereeniging", slug: "vereeniging" },
+    { name: "Nigel", slug: "nigel" },
+    { name: "Heidelberg", slug: "heidelberg" },
+    { name: "Carletonville", slug: "carletonville" },
+    { name: "Krugersdorp", slug: "krugersdorp" },
+    { name: "Westonaria", slug: "westonaria" },
+    { name: "Bedfordview", slug: "bedfordview" },
   ]
 
   const faqs = [
@@ -256,7 +258,11 @@ export default function GraniteCountertopsPage() {
                     addressCountry: "ZA",
                   },
                 },
-                areaServed: areas.map((area) => area),
+                areaServed: areas.map((area) => ({
+                  "@type": "Place",
+                  name: area.name,
+                  "@id": `https://granitecarpentry.co.za/areas/${area.slug}`,
+                })),
                 serviceType: "Granite Countertop Installation",
                 offers: {
                   "@type": "Offer",
@@ -944,12 +950,16 @@ export default function GraniteCountertopsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            {areas.map((area, index) => (
-              <div key={index} className="flex items-center space-x-2 text-slate-700">
-                <MapPin className="h-4 w-4 text-amber-600 flex-shrink-0" />
-                <span>{area}</span>
-              </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+            {areas.map((area) => (
+              <Link
+                key={area.slug}
+                href={`/areas/${area.slug}`}
+                className="flex items-center space-x-2 p-3 rounded-lg hover:bg-white hover:shadow-md transition-all duration-200 group"
+              >
+                <MapPin className="h-4 w-4 text-amber-600 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <span className="text-slate-700 group-hover:text-amber-600 transition-colors">{area.name}</span>
+              </Link>
             ))}
           </div>
 

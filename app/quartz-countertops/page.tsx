@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Phone, Mail, MapPin, Clock, Award, Shield, CheckCircle2, Star } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Award, Shield, CheckCircle2, Star, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "★★★★★ Premium Quartz Countertops Installation Johannesburg | Granite Carpentry",
@@ -625,41 +625,63 @@ export default function QuartzCountertopsPage() {
       {/* Service Areas */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Service Areas</h2>
-          <div className="max-w-4xl mx-auto">
-            <Card className="p-8">
-              <p className="text-lg text-gray-700 mb-6 text-center">
-                Professional quartz countertop installation throughout Gauteng
-              </p>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="font-bold mb-3 text-gray-900">Johannesburg</h3>
-                  <p className="text-gray-700">
-                    Sandton, Rosebank, Melrose, Houghton, Hyde Park, Bryanston, Morningside, Parktown
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-bold mb-3 text-gray-900">Northern Suburbs</h3>
-                  <p className="text-gray-700">Fourways, Midrand, Randburg, Northcliff, Northgate, Douglasdale</p>
-                </div>
-                <div>
-                  <h3 className="font-bold mb-3 text-gray-900">Pretoria</h3>
-                  <p className="text-gray-700">Centurion, Brooklyn, Waterkloof, Menlyn, Silver Lakes, Lynnwood</p>
-                </div>
-                <div>
-                  <h3 className="font-bold mb-3 text-gray-900">East Rand</h3>
-                  <p className="text-gray-700">Bedfordview, Edenvale, Kempton Park, Boksburg, Benoni, Germiston</p>
-                </div>
-                <div>
-                  <h3 className="font-bold mb-3 text-gray-900">West Rand</h3>
-                  <p className="text-gray-700">Roodepoort, Krugersdorp</p>
-                </div>
-                <div>
-                  <h3 className="font-bold mb-3 text-gray-900">South</h3>
-                  <p className="text-gray-700">Johannesburg South, Alberton, Vereeniging</p>
-                </div>
-              </div>
-            </Card>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+            Quartz Countertops Throughout Gauteng
+          </h2>
+          <div className="max-w-6xl mx-auto">
+            <p className="text-lg text-gray-700 mb-8 text-center">
+              Professional quartz countertop installation and services across all major areas
+            </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {[
+                { name: "Johannesburg", slug: "johannesburg" },
+                { name: "Johannesburg South", slug: "johannesburg-south" },
+                { name: "Sandton", slug: "sandton" },
+                { name: "Randburg", slug: "randburg" },
+                { name: "Pretoria", slug: "pretoria" },
+                { name: "Centurion", slug: "centurion" },
+                { name: "Midrand", slug: "midrand" },
+                { name: "Kempton Park", slug: "kempton-park" },
+                { name: "Roodepoort", slug: "roodepoort" },
+                { name: "Fourways", slug: "fourways" },
+                { name: "Edenvale", slug: "edenvale" },
+                { name: "Boksburg", slug: "boksburg" },
+                { name: "Alberton", slug: "alberton" },
+                { name: "Benoni", slug: "benoni" },
+                { name: "Germiston", slug: "germiston" },
+                { name: "Springs", slug: "springs" },
+                { name: "Vanderbijlpark", slug: "vanderbijlpark" },
+                { name: "Vereeniging", slug: "vereeniging" },
+                { name: "Nigel", slug: "nigel" },
+                { name: "Heidelberg", slug: "heidelberg" },
+                { name: "Carletonville", slug: "carletonville" },
+                { name: "Krugersdorp", slug: "krugersdorp" },
+                { name: "Westonaria", slug: "westonaria" },
+                { name: "Bedfordview", slug: "bedfordview" },
+              ].map((area) => (
+                <Link
+                  key={area.slug}
+                  href={`/areas/${area.slug}`}
+                  className="flex items-center space-x-2 p-3 rounded-lg bg-white hover:bg-blue-50 hover:shadow-md transition-all duration-200 group border border-gray-200"
+                >
+                  <MapPin className="h-4 w-4 text-blue-600 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                  <span className="text-gray-700 group-hover:text-blue-600 transition-colors font-medium">
+                    {area.name}
+                  </span>
+                </Link>
+              ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <Link
+                href="/areas"
+                className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold hover:underline"
+              >
+                View all service areas
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -4,13 +4,14 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { Phone, Star, CheckCircle, Clock, Shield, Award, Users, MapPin, ArrowRight, Quote } from 'lucide-react'
+import { Phone, Star, CheckCircle, Clock, Shield, Award, Users, MapPin, ArrowRight, Quote } from "lucide-react"
 
 export default function HomePage() {
   const services = [
     {
       title: "Kitchen Renovations",
-      description: "Transform your kitchen with custom cabinetry, premium granite countertops, and modern appliances. Expert Johannesburg kitchen remodeling specialists delivering stunning results.",
+      description:
+        "Transform your kitchen with custom cabinetry, premium granite countertops, and modern appliances. Expert Johannesburg kitchen remodeling specialists delivering stunning results.",
       image: "/Kitchen-renovations-sandton.webp",
       href: "/kitchen-renovations",
       price: "From R50,000",
@@ -19,7 +20,8 @@ export default function HomePage() {
     },
     {
       title: "Built-in Cupboards",
-      description: "Bespoke wardrobes, study units, and custom storage solutions maximizing your space. Premium carpentry craftsmanship for Gauteng homes and offices.",
+      description:
+        "Bespoke wardrobes, study units, and custom storage solutions maximizing your space. Premium carpentry craftsmanship for Gauteng homes and offices.",
       image: "/Built-Built-in-Cupboards-Midrand.jpg",
       href: "/built-in-cupboards",
       price: "From R15,000",
@@ -28,7 +30,8 @@ export default function HomePage() {
     },
     {
       title: "Granite & Quartz",
-      description: "Luxury stone countertops and surfaces with precision installation. Imported and local granite, quartz, and marble for kitchens, bathrooms, and commercial spaces.",
+      description:
+        "Luxury stone countertops and surfaces with precision installation. Imported and local granite, quartz, and marble for kitchens, bathrooms, and commercial spaces.",
       image: "/granite-installation-Johannesburg.jpg",
       href: "/quartz-granite",
       price: "From R8,000",
@@ -36,8 +39,29 @@ export default function HomePage() {
       linkText: "Discover Granite & Quartz Services",
     },
     {
+      title: "Granite Countertops",
+      description:
+        "Premium natural granite countertops with unique patterns. Heat-resistant, scratch-resistant, and luxurious stone surfaces for kitchens and bathrooms.",
+      image: "/granite-installation-Johannesburg.jpg",
+      href: "/granite-countertops",
+      price: "From R1,200/m²",
+      duration: "1-2 weeks",
+      linkText: "View Granite Options",
+    },
+    {
+      title: "Quartz Countertops",
+      description:
+        "Engineered quartz surfaces with consistent patterns. Non-porous, stain-resistant, and low-maintenance countertops from Caesarstone, Silestone, and Compac.",
+      image: "/granite-installation-sandton.jpg",
+      href: "/quartz-countertops",
+      price: "From R3,500/m²",
+      duration: "1-2 weeks",
+      linkText: "Explore Quartz Designs",
+    },
+    {
       title: "Professional Plumbing",
-      description: "24/7 emergency plumbing, bathroom installations, geyser repairs, and leak detection. Licensed plumbers serving all of Johannesburg and Gauteng.",
+      description:
+        "24/7 emergency plumbing, bathroom installations, geyser repairs, and leak detection. Licensed plumbers serving all of Johannesburg and Gauteng.",
       image: "/professional-plumber-working.png",
       href: "/plumbing",
       price: "From R280",
@@ -46,7 +70,8 @@ export default function HomePage() {
     },
     {
       title: "Decking & Flooring",
-      description: "Premium outdoor wooden decking and indoor flooring solutions. Durable materials, expert installation, and weather-resistant treatments for Johannesburg climate.",
+      description:
+        "Premium outdoor wooden decking and indoor flooring solutions. Durable materials, expert installation, and weather-resistant treatments for Johannesburg climate.",
       image: "/beautiful-decking.jpg",
       href: "/decking-flooring",
       price: "From R12,000",
@@ -55,7 +80,8 @@ export default function HomePage() {
     },
     {
       title: "Drywall & Ceilings",
-      description: "Expert drywall installation, ceiling repairs, and suspended ceiling systems. Commercial and residential solutions with quality finishing throughout Gauteng.",
+      description:
+        "Expert drywall installation, ceiling repairs, and suspended ceiling systems. Commercial and residential solutions with quality finishing throughout Gauteng.",
       image: "/drywall-contractor.jpg",
       href: "/drywall-ceilings",
       price: "From R6,000",
@@ -64,7 +90,8 @@ export default function HomePage() {
     },
     {
       title: "Door Installation",
-      description: "Professional door installation including luxury pivot doors, barn doors, security doors, and French doors. Modern and traditional designs for homes and businesses.",
+      description:
+        "Professional door installation including luxury pivot doors, barn doors, security doors, and French doors. Modern and traditional designs for homes and businesses.",
       image: "/modern-door-installation.jpg",
       href: "/door-installation",
       price: "From R4,500",
@@ -127,17 +154,20 @@ export default function HomePage() {
     {
       icon: <Award className="h-8 w-8 text-amber-600" />,
       title: "5-Star Rated Service",
-      description: "Consistently rated 5 stars across Google Reviews with 47+ successful projects completed in 2024-2025",
+      description:
+        "Consistently rated 5 stars across Google Reviews with 47+ successful projects completed in 2024-2025",
     },
     {
       icon: <Shield className="h-8 w-8 text-amber-600" />,
       title: "24-Month Warranty",
-      description: "Industry-leading 24-month warranty on all workmanship and 12-month guarantee on materials and installations",
+      description:
+        "Industry-leading 24-month warranty on all workmanship and 12-month guarantee on materials and installations",
     },
     {
       icon: <Users className="h-8 w-8 text-amber-600" />,
       title: "Licensed & Insured",
-      description: "Fully licensed carpentry and plumbing business with comprehensive public liability insurance coverage",
+      description:
+        "Fully licensed carpentry and plumbing business with comprehensive public liability insurance coverage",
     },
     {
       icon: <Clock className="h-8 w-8 text-amber-600" />,
@@ -164,7 +194,10 @@ export default function HomePage() {
                   <span className="block">Services Johannesburg</span>
                 </h1>
                 <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
-                  Transform your property with Johannesburg's most trusted home improvement specialists. From luxury kitchen renovations and custom built-in cupboards to 24/7 emergency plumbing and premium granite installations - we deliver exceptional craftsmanship backed by 5-star reviews and a 24-month warranty guarantee across all Gauteng areas.
+                  Transform your property with Johannesburg's most trusted home improvement specialists. From luxury
+                  kitchen renovations and custom built-in cupboards to 24/7 emergency plumbing and premium granite
+                  installations - we deliver exceptional craftsmanship backed by 5-star reviews and a 24-month warranty
+                  guarantee across all Gauteng areas.
                 </p>
               </div>
 
@@ -259,7 +292,9 @@ export default function HomePage() {
               Complete Home Improvement & Renovation Solutions Across Gauteng
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              From luxury kitchen makeovers to emergency plumbing repairs - we deliver world-class craftsmanship with premium materials, expert installation, and unmatched customer service throughout Johannesburg, Pretoria, and surrounding areas.
+              From luxury kitchen makeovers to emergency plumbing repairs - we deliver world-class craftsmanship with
+              premium materials, expert installation, and unmatched customer service throughout Johannesburg, Pretoria,
+              and surrounding areas.
             </p>
           </div>
 
@@ -314,7 +349,8 @@ export default function HomePage() {
                 Professional Drywall Installation & Ceiling Repair Services by Location
               </h3>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Expert drywall contractors and ceiling specialists serving all major Johannesburg suburbs - same-day quotes, quality workmanship, and guaranteed results
+                Expert drywall contractors and ceiling specialists serving all major Johannesburg suburbs - same-day
+                quotes, quality workmanship, and guaranteed results
               </p>
             </div>
 
@@ -611,7 +647,8 @@ export default function HomePage() {
                 Expert Door Installation Services - Pivot, Barn, Security & French Doors
               </h3>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Premium door installation specialists for residential and commercial properties across Gauteng - modern designs, security solutions, and architectural statement pieces installed with precision
+                Premium door installation specialists for residential and commercial properties across Gauteng - modern
+                designs, security solutions, and architectural statement pieces installed with precision
               </p>
             </div>
 
@@ -794,7 +831,9 @@ export default function HomePage() {
               Gauteng's Most Trusted Home Service Experts Since 2020
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              With 50+ successfully completed projects in 2024-2025 and a flawless 5.0-star Google rating, we're the preferred choice for discerning homeowners and businesses across Johannesburg, Sandton, Pretoria, and Gauteng for carpentry, plumbing, and professional installations.
+              With 50+ successfully completed projects in 2024-2025 and a flawless 5.0-star Google rating, we're the
+              preferred choice for discerning homeowners and businesses across Johannesburg, Sandton, Pretoria, and
+              Gauteng for carpentry, plumbing, and professional installations.
             </p>
           </div>
 
@@ -821,7 +860,8 @@ export default function HomePage() {
               Serving 23+ Areas Across Greater Johannesburg, Pretoria & Gauteng Province
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              Professional carpentry, plumbing, granite installation, and door services available throughout Gauteng. Same-day quotes and rapid response times for emergency services in all serviced areas.
+              Professional carpentry, plumbing, granite installation, and door services available throughout Gauteng.
+              Same-day quotes and rapid response times for emergency services in all serviced areas.
             </p>
           </div>
 
@@ -860,7 +900,8 @@ export default function HomePage() {
             <Badge className="bg-amber-600 text-white px-4 py-2 mb-4">5-Star Client Reviews</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">Real Reviews from Satisfied Clients Across Gauteng</h2>
             <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto">
-              Don't just take our word for it - read verified testimonials from homeowners and businesses who've experienced our exceptional carpentry, plumbing, and installation services first-hand.
+              Don't just take our word for it - read verified testimonials from homeowners and businesses who've
+              experienced our exceptional carpentry, plumbing, and installation services first-hand.
             </p>
           </div>
 
@@ -900,7 +941,9 @@ export default function HomePage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Home or Business?</h2>
           <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Get your FREE no-obligation consultation and detailed quote today. Our experts are ready to discuss your carpentry, plumbing, granite installation, or door installation project. Available 24/7 for emergency services throughout Johannesburg and Gauteng.
+            Get your FREE no-obligation consultation and detailed quote today. Our experts are ready to discuss your
+            carpentry, plumbing, granite installation, or door installation project. Available 24/7 for emergency
+            services throughout Johannesburg and Gauteng.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

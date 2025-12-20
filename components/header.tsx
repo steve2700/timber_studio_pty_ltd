@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Menu, Phone, Mail, MapPin, ChevronDown, Star } from 'lucide-react'
+import { Menu, Phone, Mail, MapPin, ChevronDown, Star } from "lucide-react"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -14,6 +14,8 @@ export function Header() {
     { name: "Kitchen Renovations", href: "/kitchen-renovations" },
     { name: "Built-in Cupboards", href: "/built-in-cupboards" },
     { name: "Quartz & Granite", href: "/quartz-granite" },
+    { name: "Granite Countertops", href: "/granite-countertops" },
+    { name: "Quartz Countertops", href: "/quartz-countertops" },
     { name: "Decking & Flooring", href: "/decking-flooring" },
     { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
     { name: "Door Installation", href: "/door-installation" },

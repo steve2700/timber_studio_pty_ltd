@@ -10,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/kitchen-renovations",
     "/built-in-cupboards",
     "/quartz-granite",
+    "/granite-countertops",
+    "/quartz-countertops",
     "/decking-flooring",
     "/drywall-ceilings",
     "/plumbing",
@@ -122,7 +124,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
                     page === "/quartz-granite" ||
                     page === "/plumbing" ||
                     page === "/decking-flooring" ||
-                    page === "/drywall-ceilings"
+                    page === "/drywall-ceilings" ||
+                    page === "/granite-countertops" ||
+                    page === "/quartz-countertops"
                   ? "monthly"
                   : "yearly",
     priority:
@@ -154,7 +158,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
                     page === "/quartz-granite" ||
                     page === "/plumbing" ||
                     page === "/decking-flooring" ||
-                    page === "/drywall-ceilings"
+                    page === "/drywall-ceilings" ||
+                    page === "/granite-countertops" ||
+                    page === "/quartz-countertops"
                   ? 0.8
                   : page.startsWith("/blog")
                     ? 0.7

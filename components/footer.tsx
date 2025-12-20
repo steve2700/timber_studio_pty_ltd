@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Star, Award, Shield, Users } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Star, Award, Shield, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
@@ -11,6 +11,8 @@ export function Footer() {
     { name: "Kitchen Renovations", href: "/kitchen-renovations" },
     { name: "Built-in Cupboards", href: "/built-in-cupboards" },
     { name: "Granite & Quartz", href: "/quartz-granite" },
+    { name: "Granite Countertops", href: "/granite-countertops" },
+    { name: "Quartz Countertops", href: "/quartz-countertops" },
     { name: "Professional Plumbing", href: "/plumbing" },
     { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
     { name: "Decking & Flooring", href: "/decking-flooring" },

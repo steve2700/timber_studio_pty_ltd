@@ -396,7 +396,11 @@ export default function QuartzGranitePage() {
                 Kashmir White, and Tan Brown, each offering distinct characteristics that complement different kitchen
                 designs. Our granite sourcing network ensures access to premium slabs from quarries worldwide, while our
                 local fabrication facility in Johannesburg provides custom cutting, edge profiling, and polishing
-                services.
+                services.{" "}
+                <Link href="/granite-countertops" className="text-amber-600 hover:text-amber-700 font-medium">
+                  Learn more about our granite countertop services and pricing
+                </Link>
+                .
               </p>
 
               <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
@@ -407,7 +411,11 @@ export default function QuartzGranitePage() {
                 durability that's perfect for busy Johannesburg households. Leading quartz brands like Caesarstone,
                 Silestone, Compac, and Quantum Quartz offer extensive color selections that coordinate beautifully with
                 contemporary kitchen designs. Quartz countertops require minimal maintenance while providing superior
-                stain and scratch resistance, making them ideal for families in Sandton, Randburg, and Midrand.
+                stain and scratch resistance, making them ideal for families in Sandton, Randburg, and Midrand.{" "}
+                <Link href="/quartz-countertops" className="text-amber-600 hover:text-amber-700 font-medium">
+                  Explore our complete quartz countertop collection and installation process
+                </Link>
+                .
               </p>
 
               <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">

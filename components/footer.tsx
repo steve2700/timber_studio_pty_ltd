@@ -9,6 +9,8 @@ export function Footer() {
 
   const services = [
     { name: "Kitchen Renovations", href: "/kitchen-renovations" },
+    { name: "Kitchen Cupboards", href: "/kitchen-cupboards" }, // Added kitchen cupboards
+    { name: "Bathroom Renovations", href: "/bathroom-renovations" }, // Added bathroom renovations
     { name: "Built-in Cupboards", href: "/built-in-cupboards" },
     { name: "Granite & Quartz", href: "/quartz-granite" },
     { name: "Granite Countertops", href: "/granite-countertops" },

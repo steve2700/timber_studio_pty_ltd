@@ -19,6 +19,26 @@ export default function HomePage() {
       linkText: "Explore Kitchen Renovations",
     },
     {
+      title: "Kitchen Cupboards", // Added kitchen cupboards service card
+      description:
+        "Custom kitchen cabinetry with premium finishes. Shaker, modern, and contemporary designs with soft-close mechanisms and durable materials for lasting quality.",
+      image: "/Kitchen-renovations-sandton.webp",
+      href: "/kitchen-cupboards",
+      price: "From R35,000",
+      duration: "5-10 days",
+      linkText: "View Kitchen Cupboard Designs",
+    },
+    {
+      title: "Bathroom Renovations", // Added bathroom renovations service card
+      description:
+        "Complete bathroom makeovers with modern fixtures, tiling, waterproofing, and plumbing. Contemporary, classic, and luxury designs for Johannesburg homes.",
+      image: "/professional-plumber-working.png",
+      href: "/bathroom-renovations",
+      price: "From R45,000",
+      duration: "7-14 days",
+      linkText: "Explore Bathroom Renovations",
+    },
+    {
       title: "Built-in Cupboards",
       description:
         "Bespoke wardrobes, study units, and custom storage solutions maximizing your space. Premium carpentry craftsmanship for Gauteng homes and offices.",
@@ -646,7 +666,7 @@ export default function HomePage() {
               <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
                 Expert Door Installation Services - Pivot, Barn, Security & French Doors
               </h3>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
                 Premium door installation specialists for residential and commercial properties across Gauteng - modern
                 designs, security solutions, and architectural statement pieces installed with precision
               </p>

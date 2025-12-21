@@ -9,6 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const servicePages = [
     "/kitchen-renovations",
     "/built-in-cupboards",
+    "/kitchen-cupboards", // Added kitchen cupboards page
+    "/bathroom-renovations", // Added bathroom renovations page
     "/quartz-granite",
     "/granite-countertops",
     "/quartz-countertops",

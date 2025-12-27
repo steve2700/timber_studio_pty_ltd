@@ -15,6 +15,8 @@ export function Footer() {
     { name: "Granite & Quartz", href: "/quartz-granite" },
     { name: "Granite Countertops", href: "/granite-countertops" },
     { name: "Quartz Countertops", href: "/quartz-countertops" },
+    { name: "Granite Supply & Installation", href: "/granite-supply-and-installation" }, // Added two new granite service pages
+    { name: "Granite Installers Sandton", href: "/granite-installers-sandton" },
     { name: "Professional Plumbing", href: "/plumbing" },
     { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
     { name: "Decking & Flooring", href: "/decking-flooring" },

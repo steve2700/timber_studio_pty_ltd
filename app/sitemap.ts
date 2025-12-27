@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/quartz-granite",
     "/granite-countertops",
     "/quartz-countertops",
+    "/granite-supply-and-installation", // Added two new granite service pages
+    "/granite-installers-sandton",
     "/decking-flooring",
     "/drywall-ceilings",
     "/plumbing",
@@ -128,7 +130,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
                     page === "/decking-flooring" ||
                     page === "/drywall-ceilings" ||
                     page === "/granite-countertops" ||
-                    page === "/quartz-countertops"
+                    page === "/quartz-countertops" ||
+                    page === "/granite-supply-and-installation" || // Added two new granite service pages
+                    page === "/granite-installers-sandton"
                   ? "monthly"
                   : "yearly",
     priority:
@@ -162,7 +166,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
                     page === "/decking-flooring" ||
                     page === "/drywall-ceilings" ||
                     page === "/granite-countertops" ||
-                    page === "/quartz-countertops"
+                    page === "/quartz-countertops" ||
+                    page === "/granite-supply-and-installation" || // Added two new granite service pages
+                    page === "/granite-installers-sandton"
                   ? 0.8
                   : page.startsWith("/blog")
                     ? 0.7

@@ -118,6 +118,26 @@ export default function HomePage() {
       duration: "1-3 days",
       linkText: "Explore Door Services",
     },
+    {
+      title: "Granite Supply & Installation",
+      description:
+        "Complete granite supply and installation services. Premium imported and local granite slabs, expert fabrication, and professional installation throughout Gauteng.",
+      image: "/granite-installation-Johannesburg.jpg",
+      href: "/granite-supply-and-installation",
+      price: "From R900/m²",
+      duration: "10-14 days",
+      linkText: "View Supply & Installation",
+    },
+    {
+      title: "Granite Installers Sandton",
+      description:
+        "Expert granite installation in Sandton. Precision templating, professional fabrication, and flawless installation for residential and commercial projects.",
+      image: "/granite-installation-Johannesburg.jpg",
+      href: "/granite-installers-sandton",
+      price: "From R1,200/m²",
+      duration: "1-2 weeks",
+      linkText: "Sandton Installation Services",
+    },
   ]
 
   const areas = [

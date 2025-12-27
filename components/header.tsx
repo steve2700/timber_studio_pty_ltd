@@ -18,6 +18,8 @@ export function Header() {
     { name: "Quartz & Granite", href: "/quartz-granite" },
     { name: "Granite Countertops", href: "/granite-countertops" },
     { name: "Quartz Countertops", href: "/quartz-countertops" },
+    { name: "Granite Supply & Installation", href: "/granite-supply-and-installation" }, // Added granite supply & installation
+    { name: "Granite Installers Sandton", href: "/granite-installers-sandton" }, // Added granite installers sandton
     { name: "Decking & Flooring", href: "/decking-flooring" },
     { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
     { name: "Door Installation", href: "/door-installation" },

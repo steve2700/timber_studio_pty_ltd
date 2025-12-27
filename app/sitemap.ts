@@ -16,6 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/quartz-countertops",
     "/granite-supply-and-installation", // Added two new granite service pages
     "/granite-installers-sandton",
+    "/granite-installers-boksburg",
+    "/granite-installers-pretoria",
+    "/granite-installers-centurion",
+    "/granite-installers-fourways",
+    "/granite-installers-midrand",
     "/decking-flooring",
     "/drywall-ceilings",
     "/plumbing",
@@ -104,18 +109,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? "daily"
         : page.startsWith("/blog")
           ? "weekly"
-          : // Set /areas hub page to weekly updates with high priority
-            page === "/areas" || page.startsWith("/areas/")
+          : page === "/areas" || page.startsWith("/areas/")
             ? "weekly"
-            : // Set drywall location pages to weekly updates
-              page.startsWith("/drywall-") ||
+            : page.startsWith("/drywall-") ||
                 page.startsWith("/ceiling-repairs-") ||
                 page.startsWith("/suspended-ceilings-") ||
                 page.startsWith("/drywalling-contractors-") ||
                 page.startsWith("/ceiling-installation-")
               ? "weekly"
-              : // Set door pages to weekly updates for local SEO
-                page.startsWith("/door-") ||
+              : page.startsWith("/door-") ||
                   page.startsWith("/pivot-doors") ||
                   page.startsWith("/barn-doors") ||
                   page.startsWith("/security-doors") ||
@@ -131,20 +133,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
                     page === "/drywall-ceilings" ||
                     page === "/granite-countertops" ||
                     page === "/quartz-countertops" ||
-                    page === "/granite-supply-and-installation" || // Added two new granite service pages
-                    page === "/granite-installers-sandton"
+                    page === "/granite-supply-and-installation" ||
+                    page === "/granite-installers-sandton" ||
+                    page === "/granite-installers-boksburg" ||
+                    page === "/granite-installers-pretoria" ||
+                    page === "/granite-installers-centurion" ||
+                    page === "/granite-installers-fourways" ||
+                    page === "/granite-installers-midrand"
                   ? "monthly"
                   : "yearly",
     priority:
       page === ""
         ? 1
-        : // Set /areas hub page to 0.9 priority (same as individual area pages)
-          page === "/areas"
+        : page === "/areas"
           ? 0.9
           : page.startsWith("/areas/")
             ? 0.9
-            : // Set door pages to 0.85 priority (high priority for local SEO)
-              page.startsWith("/door-") ||
+            : page.startsWith("/door-") ||
                 page.startsWith("/pivot-doors") ||
                 page.startsWith("/barn-doors") ||
                 page.startsWith("/security-doors") ||
@@ -152,8 +157,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 page.startsWith("/wooden-doors") ||
                 page.startsWith("/solid-wood-doors")
               ? 0.85
-              : // Set drywall location pages to 0.85 priority (high priority for local SEO)
-                page.startsWith("/drywall-") ||
+              : page.startsWith("/drywall-") ||
                   page.startsWith("/ceiling-repairs-") ||
                   page.startsWith("/suspended-ceilings-") ||
                   page.startsWith("/drywalling-contractors-") ||
@@ -167,8 +171,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
                     page === "/drywall-ceilings" ||
                     page === "/granite-countertops" ||
                     page === "/quartz-countertops" ||
-                    page === "/granite-supply-and-installation" || // Added two new granite service pages
-                    page === "/granite-installers-sandton"
+                    page === "/granite-supply-and-installation" ||
+                    page === "/granite-installers-sandton" ||
+                    page === "/granite-installers-boksburg" ||
+                    page === "/granite-installers-pretoria" ||
+                    page === "/granite-installers-centurion" ||
+                    page === "/granite-installers-fourways" ||
+                    page === "/granite-installers-midrand"
                   ? 0.8
                   : page.startsWith("/blog")
                     ? 0.7

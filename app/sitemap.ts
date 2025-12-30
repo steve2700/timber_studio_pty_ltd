@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/granite-installers-midrand",
     "/decking-flooring",
     "/drywall-ceilings",
-    "/plumbing",
+    "/granite-countertops-prices-johannesburg",
   ]
 
   const doorPages = [

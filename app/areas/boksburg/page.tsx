@@ -167,6 +167,50 @@ export default function BoksburgPage() {
             </Card>
 
             <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
+            <CardContent className="p-6">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
+        <Shield className="w-6 h-6 text-white" />
+      </div>
+      <div>
+        <h3 className="text-xl font-bold text-slate-800">
+          Door Installation
+        </h3>
+        <p className="text-sm text-amber-600">
+          Starting from R1,500
+        </p>
+      </div>
+    </div>
+
+    <ul className="space-y-2 text-sm mb-4">
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Interior & exterior door installations
+      </li>
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Pivot, barn & sliding doors
+      </li>
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Wooden, security & glass doors
+      </li>
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Supply, fitting & alignment
+      </li>
+    </ul>
+
+    <Button asChild className="w-full">
+      <Link href="/door-installation">
+        View Door Installation
+      </Link>
+    </Button>
+  </CardContent>
+</Card>
+
+
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">

@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Shield, Lock, Eye, FileText, Phone, Mail } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Granite Carpentry - POPIA Compliant Data Protection 2025",
+  title: "Privacy Policy | Granite Carpentry - POPIA Compliant Data Protection 2026",
   description:
     "Granite Carpentry's comprehensive privacy policy. POPIA compliant data protection for South African customers. Learn how we protect your personal information and carpentry project details.",
   keywords:
@@ -30,7 +30,7 @@ export default function PrivacyPage() {
             </p>
             <div className="flex items-center justify-center text-slate-400">
               <FileText className="w-5 h-5 mr-2" />
-              <span>Last updated: January 2025</span>
+              <span>Last updated: January 2026</span>
             </div>
           </div>
         </div>

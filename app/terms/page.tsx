@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { FileText, Scale, Shield, AlertTriangle, Phone, Mail, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Granite Carpentry - Professional Carpentry Service Agreement 2025",
+  title: "Terms of Service | Granite Carpentry - Professional Carpentry Service Agreement 2026",
   description:
     "Granite Carpentry's comprehensive terms of service for kitchen renovations, built-in cupboards, and granite installations. Professional carpentry service agreements for Johannesburg customers.",
   keywords:
@@ -30,7 +30,7 @@ export default function TermsPage() {
             </p>
             <div className="flex items-center justify-center text-slate-400">
               <FileText className="w-5 h-5 mr-2" />
-              <span>Effective from: January 2025</span>
+              <span>Effective from: January 2026</span>
             </div>
           </div>
         </div>
@@ -366,7 +366,7 @@ export default function TermsPage() {
                         <Mail className="w-5 h-5 text-amber-600 mr-3" />
                         <div>
                           <p className="font-semibold">Email</p>
-                          <p className="text-slate-600">granitecarpentry5@gmail.com</p>
+                          <p className="text-slate-600">info@granitecarpentry.co.za</p>
                         </div>
                       </div>
                       <div className="flex items-center">
@@ -422,7 +422,7 @@ export default function TermsPage() {
                       <Link href="/contact">Get Your Free Quote</Link>
                     </Button>
                     <Button size="lg" variant="outline" asChild>
-                      <Link href="/services/kitchen-renovations">View Our Services</Link>
+                      <Link href="/kitchen-renovations">View Our Services</Link>
                     </Button>
                   </div>
                 </CardContent>

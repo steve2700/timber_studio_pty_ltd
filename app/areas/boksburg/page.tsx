@@ -199,8 +199,8 @@ export default function BoksburgPage() {
                   <Link href="/services/quartz-granite">View Stone Services</Link>
                 </Button>
               </CardContent>
-            </Card>
-
+              </Card>
+            
             <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
@@ -238,6 +238,49 @@ export default function BoksburgPage() {
           </div>
         </div>
       </section>
+      <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
+      <CardContent className="p-6">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
+        <Star className="w-6 h-6 text-white" />
+      </div>
+      <div>
+        <h3 className="text-xl font-bold text-slate-800">
+          Decking & Flooring
+        </h3>
+        <p className="text-sm text-amber-600">
+          Starting from R450/m²
+        </p>
+      </div>
+    </div>
+
+    <ul className="space-y-2 text-sm mb-4">
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Composite & timber decking installations
+      </li>
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Laminate, vinyl & wooden flooring
+      </li>
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Indoor & outdoor solutions
+      </li>
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Supply, installation & finishing
+      </li>
+    </ul>
+
+    <Button asChild className="w-full">
+      <Link href="/services/decking-flooring">
+        View Decking & Flooring
+      </Link>
+    </Button>
+  </CardContent>
+</Card>
+
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-slate-50">

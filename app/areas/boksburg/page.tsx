@@ -324,7 +324,6 @@ export default function BoksburgPage() {
               </CardContent>
             </Card>
           </div>
-        </div>
       </section>
       
 

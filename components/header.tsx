@@ -12,14 +12,15 @@ export function Header() {
 
   const services = [
     { name: "Kitchen Renovations", href: "/kitchen-renovations" },
-    { name: "Kitchen Cupboards", href: "/kitchen-cupboards" }, // Added kitchen cupboards
-    { name: "Bathroom Renovations", href: "/bathroom-renovations" }, // Added bathroom renovations
+     { name: "Kitchen Renovations Cost Johannesburg", href: "/kitchen-renovation-cost-johannesburg" },
+    { name: "Kitchen Cupboards", href: "/kitchen-cupboards" }, 
+    { name: "Bathroom Renovations", href: "/bathroom-renovations" }, 
     { name: "Built-in Cupboards", href: "/built-in-cupboards" },
     { name: "Quartz & Granite", href: "/quartz-granite" },
     { name: "Granite Countertops", href: "/granite-countertops" },
     { name: "Quartz Countertops", href: "/quartz-countertops" },
-    { name: "Granite Supply & Installation", href: "/granite-supply-and-installation" }, // Added granite supply & installation
-    { name: "Granite Installers Sandton", href: "/granite-installers-sandton" }, // Added granite installers sandton
+    { name: "Granite Supply & Installation", href: "/granite-supply-and-installation" },
+    { name: "Granite Installers Sandton", href: "/granite-installers-sandton" }, 
     { name: "Decking & Flooring", href: "/decking-flooring" },
     { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
     { name: "Door Installation", href: "/door-installation" },

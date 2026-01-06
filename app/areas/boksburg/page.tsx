@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Wrench } from "lucide-react"
+import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Wrench, Bath } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
@@ -288,6 +288,50 @@ export default function BoksburgPage() {
     </Button>
   </CardContent>
 </Card>
+
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
+  <CardContent className="p-6">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
+        <Bath className="w-6 h-6 text-white" />
+      </div>
+      <div>
+        <h3 className="text-xl font-bold text-slate-800">
+          Bathroom Renovations
+        </h3>
+        <p className="text-sm text-amber-600">
+          Starting from R25,000
+        </p>
+      </div>
+    </div>
+
+    <ul className="space-y-2 text-sm mb-4">
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Complete bathroom renovations
+      </li>
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Tiling, plumbing & waterproofing
+      </li>
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Showers, baths & vanities
+      </li>
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Modern & luxury finishes
+      </li>
+    </ul>
+
+    <Button asChild className="w-full">
+      <Link href="/bathroom-renovations">
+        View Bathroom Renovations
+      </Link>
+    </Button>
+  </CardContent>
+</Card>
+
             
             <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
   <CardContent className="p-6">

@@ -164,52 +164,8 @@ export default function BoksburgPage() {
                   <Link href="/built-in-cupboards">View Cupboard Services</Link>
                 </Button>
               </CardContent>
-              <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
-              <CardContent className="p-6">
-              <div className="flex items-center gap-3 mb-4">
-             <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
-        <Wrench className="w-6 h-6 text-white" />
-      </div>
-      <div>
-        <h3 className="text-xl font-bold text-slate-800">
-          Drywall & Ceilings
-        </h3>
-        <p className="text-sm text-amber-600">
-          Starting from R350/m²
-        </p>
-      </div>
-    </div>
+            </Card>
 
-    <ul className="space-y-2 text-sm mb-4">
-      <li className="flex items-center gap-2">
-        <CheckCircle className="w-4 h-4 text-green-600" />
-        Drywall partitions & room divisions
-      </li>
-      <li className="flex items-center gap-2">
-        <CheckCircle className="w-4 h-4 text-green-600" />
-        Rhino board & suspended ceilings
-      </li>
-      <li className="flex items-center gap-2">
-        <CheckCircle className="w-4 h-4 text-green-600" />
-        Bulkheads, cornices & finishes
-      </li>
-      <li className="flex items-center gap-2">
-        <CheckCircle className="w-4 h-4 text-green-600" />
-        Repairs, replacements & new installs
-      </li>
-    </ul>
-
-    <Button asChild className="w-full">
-      <Link href="/drywall-ceilings">
-        View Drywall & Ceiling Services
-      </Link>
-    </Button>
-  </CardContent>
-</Card>
-
-         
-
-            
             <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
@@ -290,6 +246,49 @@ export default function BoksburgPage() {
 </Card>
             
             <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
+  <CardContent className="p-6">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
+        <Wrench className="w-6 h-6 text-white" />
+      </div>
+      <div>
+        <h3 className="text-xl font-bold text-slate-800">
+          Drywall & Ceilings
+        </h3>
+        <p className="text-sm text-amber-600">
+          Starting from R350/m²
+        </p>
+      </div>
+    </div>
+
+    <ul className="space-y-2 text-sm mb-4">
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Drywall partitions & room divisions
+      </li>
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Rhino board & suspended ceilings
+      </li>
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Bulkheads, cornices & finishes
+      </li>
+      <li className="flex items-center gap-2">
+        <CheckCircle className="w-4 h-4 text-green-600" />
+        Repairs, replacements & new installs
+      </li>
+    </ul>
+
+    <Button asChild className="w-full">
+      <Link href="/drywall-ceilings">
+        View Drywall & Ceiling Services
+      </Link>
+    </Button>
+  </CardContent>
+</Card>
+
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
@@ -324,6 +323,7 @@ export default function BoksburgPage() {
               </CardContent>
             </Card>
           </div>
+        </div>
       </section>
       
 

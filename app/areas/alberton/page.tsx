@@ -7,13 +7,13 @@ import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Heart } 
 
 export const metadata: Metadata = {
   title:
-    "★★★★★ Best Carpenter & Plumber Alberton 2025 | #1 Trusted Kitchen Renovations, Built-in Cupboards & Family Plumbing",
+    "★★★★★ Best Carpenter & Plumber Alberton 2026 | #1 Trusted Kitchen Renovations, Built-in Cupboards & Family Plumbing",
   description:
-    "★★★★★ #1 trusted carpenter & plumber in Alberton 2025. Family-focused kitchen renovations, built-in cupboards, granite installations & family plumbing services. 350+ South Rand projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
+    "★★★★★ #1 trusted carpenter & plumber in Alberton 2026. Family-focused kitchen renovations, built-in cupboards, granite installations & family plumbing services. 350+ South Rand projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
   keywords:
-    "best carpenter Alberton, trusted plumber Alberton 2025, kitchen renovation Alberton, built-in cupboards Alberton, granite installation Alberton, family plumbing Alberton, professional carpentry Alberton, #1 carpenter Alberton, carpenter near me Alberton, Meyerton carpenter, Vereeniging carpenter, South Rand carpenter, family plumber Alberton, emergency plumber Alberton, affordable carpenter Alberton, Alberton kitchen renovations 2025",
+    "best carpenter Alberton, trusted plumber Alberton 2026, kitchen renovation Alberton, built-in cupboards Alberton, granite installation Alberton, family plumbing Alberton, professional carpentry Alberton, #1 carpenter Alberton, carpenter near me Alberton, Meyerton carpenter, Vereeniging carpenter, South Rand carpenter, family plumber Alberton, emergency plumber Alberton, affordable carpenter Alberton, Alberton kitchen renovations 2026",
   openGraph: {
-    title: "★★★★★ Best Carpenter & Plumber Alberton 2025 | #1 Trusted Family Services",
+    title: "★★★★★ Best Carpenter & Plumber Alberton 2026 | #1 Trusted Family Services",
     description:
       "★★★★★ #1 trusted carpenter & plumber in Alberton. Family-focused kitchen renovations, built-in cupboards, granite installations & family plumbing services. 350+ South Rand projects. FREE quotes.",
     url: "https://granitecarpentry.co.za/areas/alberton",
@@ -39,10 +39,10 @@ export default function AlbertonPage() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Best Trusted Carpenter & Plumber
-              <span className="block text-amber-400">Alberton 2025</span>
+              <span className="block text-amber-400">Alberton 2026</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 leading-relaxed">
-              ★★★★★ #1 trusted family carpenter & plumber in Alberton for 2025. Professional kitchen renovations, custom
+              ★★★★★ #1 trusted family carpenter & plumber in Alberton for 2026. Professional kitchen renovations, custom
               built-in cupboards, premium granite installations, and reliable family plumbing services for South Rand
               families. 350+ completed projects with 5-year warranty. FREE quotes & family-focused service. Serving
               Alberton, Meyerton, Vereeniging, and all South Rand areas.
@@ -86,7 +86,7 @@ export default function AlbertonPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-              Family Carpentry & Plumbing Services Alberton 2025
+              Family Carpentry & Plumbing Services Alberton 2026
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Serving Alberton, Meyerton, Vereeniging, and South Rand families with trusted carpentry and plumbing
@@ -309,14 +309,14 @@ export default function AlbertonPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">
-              Why Choose Our Alberton Carpentry & Plumbing Services in 2025?
+              Why Choose Our Alberton Carpentry & Plumbing Services in 2026?
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
                 <div>
                   <h3 className="text-xl font-semibold text-slate-800 mb-3">Local Alberton Expertise</h3>
                   <p className="text-slate-600">
-                    As Alberton's leading carpenter and plumber in 2025, we understand the unique needs of South Rand
+                    As Alberton's leading carpenter and plumber in 2026, we understand the unique needs of South Rand
                     families. Our team has completed over 350 projects in Alberton, Meyerton, and Vereeniging, making us
                     the most trusted choice for kitchen renovations, built-in cupboards, and plumbing services.
                   </p>
@@ -357,7 +357,7 @@ export default function AlbertonPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Alberton Family Area Coverage 2025</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Alberton Family Area Coverage 2026</h2>
             <p className="text-xl text-slate-600 mb-12">
               Trusted family carpentry and plumbing services throughout Alberton and South Rand areas. We also serve{" "}
               <Link href="/areas/johannesburg-south" className="text-amber-600 hover:underline">
@@ -486,7 +486,7 @@ export default function AlbertonPage() {
       <section className="py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready for Your Trusted Alberton Family Project in 2025?
+            Ready for Your Trusted Alberton Family Project in 2026?
           </h2>
           <p className="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
             Contact Alberton's #1 trusted family carpenter and plumber today. Family-focused service, safe materials,

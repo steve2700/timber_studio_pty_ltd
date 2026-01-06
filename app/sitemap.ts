@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const servicePages = [
     "/kitchen-renovations",
+    "/kitchen-renovation-cost-johannesburg",
     "/built-in-cupboards",
     "/kitchen-cupboards", // Added kitchen cupboards page
     "/bathroom-renovations", // Added bathroom renovations page

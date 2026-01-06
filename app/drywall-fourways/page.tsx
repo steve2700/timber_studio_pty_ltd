@@ -5,13 +5,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Phone, Mail, MapPin, Clock, Award, Shield, Users } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Drywall Installation Fourways | Expert Drywalling Contractors 2025",
+  title: "Drywall Installation Fourways | Expert Drywalling Contractors 2026",
   description:
     "Professional drywall installation in Fourways, Monte Casino & Dainfern. Expert drywalling contractors for new builds, extensions & renovations. Call 0676014490 for free quotes.",
   keywords:
     "drywall fourways, drywalling fourways, drywall installation fourways, drywall contractors fourways, fourways drywall, monte casino drywall, dainfern drywall",
   openGraph: {
-    title: "Drywall Installation Fourways | Expert Drywalling Contractors 2025",
+    title: "Drywall Installation Fourways | Expert Drywalling Contractors 2026",
     description:
       "Professional drywall installation in Fourways, Monte Casino & Dainfern. Expert drywalling contractors for new builds, extensions & renovations.",
     url: "https://granitecarpentry.co.za/drywall-fourways",
@@ -32,7 +32,7 @@ export default function DrywallFourwaysPage() {
               Professional Drywall Installation in Fourways
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 text-balance">
-              Expert Drywalling Services for Monte Casino, Dainfern & Fourways Estates | 2025
+              Expert Drywalling Services for Monte Casino, Dainfern & Fourways Estates | 2026
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700 text-white">
@@ -379,7 +379,7 @@ export default function DrywallFourwaysPage() {
               <CardContent className="p-8">
                 <p className="text-lg mb-6">
                   Drywall installation costs in Fourways vary based on project complexity, materials, and finishing
-                  requirements. Here's what you can expect for 2025:
+                  requirements. Here's what you can expect for 2026:
                 </p>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center border-b pb-3">

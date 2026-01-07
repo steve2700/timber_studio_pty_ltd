@@ -8,7 +8,7 @@ import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, 
 
 export const metadata: Metadata = {
   title:
-    "Best Carpenter Pretoria 2025 | Kitchen Renovations & Built-in Cupboards | Free Quote",
+    "Best Carpenter Pretoria 2026 | Kitchen Renovations & Built-in Cupboards | Free Quote",
   description:
     "★★★★★ #1 Carpenter & Plumber in Pretoria & Centurion. Expert kitchen renovations, built-in cupboards & 24/7 emergency plumbing. Licensed & insured. Call 067 601 4490 for same-day quotes.",
   keywords:
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://granitecarpentry.co.za/areas/pretoria",
   },
   openGraph: {
-    title: "Best Carpenter Pretoria 2025 | Kitchen Renovations & Built-in Cupboards",
+    title: "Best Carpenter Pretoria 2026 | Kitchen Renovations & Built-in Cupboards",
     description:
       "★★★★★ #1 Carpenter & Plumber serving Pretoria & Centurion. Expert kitchen renovations, granite installation & 24/7 emergency plumbing. Free quotes. Call 067 601 4490",
     url: "https://granitecarpentry.co.za/areas/pretoria",
@@ -558,7 +558,7 @@ export default function PretoriaPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Sarah M.</p>
                 <p className="text-sm text-slate-600">Waterkloof, Pretoria</p>
-                <p className="text-xs text-slate-500 mt-1">Built-in Cupboards - January 2025</p>
+                <p className="text-xs text-slate-500 mt-1">Built-in Cupboards - January 2026</p>
               </CardContent>
             </Card>
 
@@ -606,7 +606,7 @@ export default function PretoriaPage() {
                 </p>
                 <p className="font-semibold text-slate-800">David P.</p>
                 <p className="text-sm text-slate-600">Lynnwood, Pretoria</p>
-                <p className="text-xs text-slate-500 mt-1">Kitchen Cabinets - January 2025</p>
+                <p className="text-xs text-slate-500 mt-1">Kitchen Cabinets - January 2026</p>
               </CardContent>
             </Card>
 

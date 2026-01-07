@@ -406,7 +406,7 @@ export default function PretoriaPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R22,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/kitchen-renovations">View Details</Link>
+                    <Link href="/services/kitchen-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -440,7 +440,7 @@ export default function PretoriaPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R12,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/built-in-cupboards">View Details</Link>
+                    <Link href="/services/built-in-cupboards">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -474,7 +474,7 @@ export default function PretoriaPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R7,500</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/granite-installers-pretoria">View Details</Link>
+                    <Link href="/services/quartz-granite">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -538,6 +538,70 @@ export default function PretoriaPage() {
                   ))}
                 </div>
                 <p className="text-slate-700 mb-4 italic">
+                  "Outstanding work on our kitchen renovation! The team was professional, punctual, and the quality exceeded our expectations. Our Brooklyn kitchen looks absolutely stunning."
+                </p>
+                <p className="font-semibold text-slate-800">John D.</p>
+                <p className="text-sm text-slate-600">Brooklyn, Pretoria</p>
+                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - December 2024</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
+                  "Best carpenter in Waterkloof! They installed beautiful built-in cupboards in all three bedrooms. Excellent craftsmanship and very reasonable prices. Highly recommended!"
+                </p>
+                <p className="font-semibold text-slate-800">Sarah M.</p>
+                <p className="text-sm text-slate-600">Waterkloof, Pretoria</p>
+                <p className="text-xs text-slate-500 mt-1">Built-in Cupboards - January 2025</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
+                  "Fantastic granite installation in our Centurion home. The granite looks incredible and the installation was quick and clean. Great communication throughout the project."
+                </p>
+                <p className="font-semibold text-slate-800">Michael R.</p>
+                <p className="text-sm text-slate-600">Centurion</p>
+                <p className="text-xs text-slate-500 mt-1">Granite Countertops - November 2024</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
+                  "Emergency plumbing service at 2am in Menlyn - they arrived within 45 minutes! Fixed our burst pipe professionally and cleaned up perfectly. True lifesavers!"
+                </p>
+                <p className="font-semibold text-slate-800">Linda K.</p>
+                <p className="text-sm text-slate-600">Menlyn, Pretoria</p>
+                <p className="text-xs text-slate-500 mt-1">Emergency Plumbing - December 2024</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
                   "Transformed our Lynnwood kitchen with new cabinets and quartz countertops. The design advice was invaluable and the workmanship is top-notch. Worth every rand!"
                 </p>
                 <p className="font-semibold text-slate-800">David P.</p>
@@ -574,7 +638,7 @@ export default function PretoriaPage() {
         </div>
       </section>
 
-      {/* FAQ Section with Schema */}
+      {/* FAQ Section */}
       <section className="py-16 bg-slate-50">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
@@ -778,68 +842,4 @@ export default function PretoriaPage() {
       </section>
     </>
   )
-} italic">
-                  "Outstanding work on our kitchen renovation! The team was professional, punctual, and the quality exceeded our expectations. Our Brooklyn kitchen looks absolutely stunning."
-                </p>
-                <p className="font-semibold text-slate-800">John D.</p>
-                <p className="text-sm text-slate-600">Brooklyn, Pretoria</p>
-                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - December 2024</p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-slate-700 mb-4 italic">
-                  "Best carpenter in Waterkloof! They installed beautiful built-in cupboards in all three bedrooms. Excellent craftsmanship and very reasonable prices. Highly recommended!"
-                </p>
-                <p className="font-semibold text-slate-800">Sarah M.</p>
-                <p className="text-sm text-slate-600">Waterkloof, Pretoria</p>
-                <p className="text-xs text-slate-500 mt-1">Built-in Cupboards - January 2025</p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-slate-700 mb-4 italic">
-                  "Fantastic granite installation in our Centurion home. The granite looks incredible and the installation was quick and clean. Great communication throughout the project."
-                </p>
-                <p className="font-semibold text-slate-800">Michael R.</p>
-                <p className="text-sm text-slate-600">Centurion</p>
-                <p className="text-xs text-slate-500 mt-1">Granite Countertops - November 2024</p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-slate-700 mb-4 italic">
-                  "Emergency plumbing service at 2am in Menlyn - they arrived within 45 minutes! Fixed our burst pipe professionally and cleaned up perfectly. True lifesavers!"
-                </p>
-                <p className="font-semibold text-slate-800">Linda K.</p>
-                <p className="text-sm text-slate-600">Menlyn, Pretoria</p>
-                <p className="text-xs text-slate-500 mt-1">Emergency Plumbing - December 2024</p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-slate-700 mb-4
+}

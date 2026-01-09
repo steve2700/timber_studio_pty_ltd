@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Phone, Clock, Award, Home } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Drywall Installation Centurion | Professional Drywalling Services 2025",
+  title: "Drywall Installation Centurion | Professional Drywalling Services 2026",
   description:
     "Expert drywall installation in Centurion. Serving residential and commercial properties with quality finishes. Call 0676014490 for a free quote.",
   keywords:

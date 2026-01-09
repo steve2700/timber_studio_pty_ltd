@@ -20,7 +20,7 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Best Carpenter & Plumber Kempton Park 2024 | Kitchen Renovations, Joinery Services & Airport Area Plumbing | Free Quotes",
+    "Best Carpenter & Plumber Kempton Park 2026 | Kitchen Renovations, Joinery Services & Airport Area Plumbing | Free Quotes",
   description:
     "★★★★★ #1 Rated Carpenter & Plumber in Kempton Park near OR Tambo. Expert kitchen renovations, professional joinery, built-in cupboards & airport area plumbing. Serving Edenvale, Bedfordview, Boksburg. Licensed & insured. Call 067 601 4490",
   keywords:
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     canonical: "https://granitecarpentry.co.za/areas/kempton-park",
   },
   openGraph: {
-    title: "Best Carpenter & Plumber Kempton Park 2024 | Kitchen Renovations & Joinery Services",
+    title: "Best Carpenter & Plumber Kempton Park 2026 | Kitchen Renovations & Joinery Services",
     description:
       "★★★★★ #1 Rated Carpenter & Plumber in Kempton Park. Expert kitchen renovations, joinery services & airport area plumbing. Free quotes. Call 067 601 4490",
     url: "https://granitecarpentry.co.za/areas/kempton-park",

@@ -20,16 +20,16 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Ceiling Repairs Randburg 2025 | Water Damage, Cracks & Restoration | 24/7 Emergency Service",
+  title: "Ceiling Repairs Randburg 2026 | Water Damage, Cracks & Restoration | 24/7 Emergency Service",
   description:
     "★★★★★ Expert ceiling repairs in Randburg. Water damage restoration, crack repairs, sagging ceilings. Serving Cresta, Northcliff, Ferndale. 24/7 emergency service. Call 067 601 4490 for immediate assistance.",
   keywords:
-    "ceiling repairs Randburg, ceiling repair Randburg, water damage ceiling Randburg, ceiling cracks Randburg, sagging ceiling Randburg, ceiling restoration Randburg, emergency ceiling repairs Randburg, ceiling contractors Randburg, ceiling repair Cresta, ceiling repair Northcliff, ceiling repair Ferndale, ceiling water damage Randburg, ceiling leak repair Randburg 2025",
+    "ceiling repairs Randburg, ceiling repair Randburg, water damage ceiling Randburg, ceiling cracks Randburg, sagging ceiling Randburg, ceiling restoration Randburg, emergency ceiling repairs Randburg, ceiling contractors Randburg, ceiling repair Cresta, ceiling repair Northcliff, ceiling repair Ferndale, ceiling water damage Randburg, ceiling leak repair Randburg 2026",
   alternates: {
     canonical: "https://granitecarpentry.co.za/ceiling-repairs-randburg",
   },
   openGraph: {
-    title: "Ceiling Repairs Randburg 2025 | Water Damage, Cracks & Restoration",
+    title: "Ceiling Repairs Randburg 2026 | Water Damage, Cracks & Restoration",
     description:
       "★★★★★ Expert ceiling repairs in Randburg. Water damage restoration, crack repairs, sagging ceilings. 24/7 emergency service. Free quotes.",
     url: "https://granitecarpentry.co.za/ceiling-repairs-randburg",

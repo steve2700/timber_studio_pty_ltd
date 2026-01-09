@@ -7,13 +7,13 @@ import { Badge } from "@/components/ui/badge"
 import { Phone, Star, CheckCircle, ArrowRight, Shield, Award, Clock, Users, Wrench, AlertTriangle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Ceiling Repairs Vereeniging 2025 | Emergency Ceiling Repair Services",
+  title: "Ceiling Repairs Vereeniging 2026 | Emergency Ceiling Repair Services",
   description:
     "Professional ceiling repair services in Vereeniging. Water damage, cracks, sagging ceilings. Emergency repairs available. 5-star service, 24-month warranty. Call 067 601 4490.",
   keywords:
     "ceiling repairs Vereeniging, ceiling repair Vereeniging, water damage ceiling Vereeniging, ceiling crack repair Vereeniging, sagging ceiling repair Vereeniging, ceiling restoration Vereeniging, emergency ceiling repair Vereeniging, ceiling contractors Vereeniging, ceiling fixing Vereeniging, ceiling maintenance Vereeniging, ceiling specialists Vereeniging",
   openGraph: {
-    title: "Ceiling Repairs Vereeniging 2025 | Emergency Ceiling Repair Services",
+    title: "Ceiling Repairs Vereeniging 2026 | Emergency Ceiling Repair Services",
     description:
       "Professional ceiling repair services in Vereeniging. Emergency repairs available with 5-star service and 24-month warranty.",
     images: [{ url: "/drywall-contractor.jpg", width: 1200, height: 630 }],

@@ -5,11 +5,11 @@ import { CheckCircle2, Phone, MapPin, Clock, Award, Shield, Hammer, Home } from 
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Professional Door Installation Services Gauteng | Expert Fitters 2025',
+  title: 'Professional Door Installation Services Gauteng | Expert Fitters 2026',
   description: 'Premium door installation services across Gauteng. Pivot doors, barn doors, security doors, French doors & wooden doors. 15+ years experience. Free quotes. Call 067 601 4490',
   keywords: 'door installation Gauteng, door fitters Johannesburg, pivot door installation, barn door installation, security door installation, French door installation, wooden door installation, door hanging services, professional door installers',
   openGraph: {
-    title: 'Professional Door Installation Services Gauteng | Expert Fitters 2025',
+    title: 'Professional Door Installation Services Gauteng | Expert Fitters 2026',
     description: 'Premium door installation services across Gauteng. Pivot doors, barn doors, security doors & more. 15+ years experience.',
     url: 'https://granitecarpentry.co.za/door-installation',
     siteName: 'Granite Carpentry',

@@ -5,13 +5,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Phone, Mail, MapPin, Clock, Award, Shield, Wrench } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Ceiling Repairs Sandton | Professional Ceiling Contractors 2025",
+  title: "Ceiling Repairs Sandton | Professional Ceiling Contractors 2026",
   description:
     "Expert ceiling repairs in Sandton, Sandton City & Nelson Mandela Square. Water damage, cracks, sagging ceilings fixed fast. Call 0676014490 for emergency repairs.",
   keywords:
     "ceiling repairs sandton, ceiling contractors sandton, ceiling repair sandton city, water damage ceiling sandton, sagging ceiling repair sandton, ceiling specialists sandton",
   openGraph: {
-    title: "Ceiling Repairs Sandton | Professional Ceiling Contractors 2025",
+    title: "Ceiling Repairs Sandton | Professional Ceiling Contractors 2026",
     description:
       "Expert ceiling repairs in Sandton, Sandton City & Nelson Mandela Square. Water damage, cracks, sagging ceilings fixed fast.",
     url: "https://granitecarpentry.co.za/ceiling-repairs-sandton",
@@ -32,7 +32,7 @@ export default function CeilingRepairsSandtonPage() {
               Professional Ceiling Repairs in Sandton
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 text-balance">
-              Expert Ceiling Contractors for Sandton City, Morningside & Hyde Park | Emergency Repairs Available 2025
+              Expert Ceiling Contractors for Sandton City, Morningside & Hyde Park | Emergency Repairs Available 2026
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700 text-white">
@@ -385,7 +385,7 @@ export default function CeilingRepairsSandtonPage() {
               <CardContent className="p-8">
                 <p className="text-lg mb-6">
                   Ceiling repair costs vary based on damage extent, ceiling type, and access difficulty. Here's what
-                  Sandton property owners can expect for 2025:
+                  Sandton property owners can expect for 2026:
                 </p>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center border-b pb-3">

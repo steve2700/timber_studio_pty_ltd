@@ -6,13 +6,13 @@ import { Badge } from "@/components/ui/badge"
 import { Phone, Mail, MapPin, Clock, CheckCircle, Star, Shield, Award, Hammer, Home, ArrowRight, DoorOpen } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Barn Doors Cape Town 2025 | Rustic Sliding Door Experts | Free Quotes",
+  title: "Barn Doors Cape Town 2026 | Rustic Sliding Door Experts | Free Quotes",
   description:
     "Premium barn door installation in Cape Town. Rustic & modern sliding barn doors for homes & offices. Professional installation, custom designs. Free quotes. Call 067 601 4490",
   keywords:
-    "barn doors Cape Town, sliding barn doors Cape Town, barn door installation Cape Town, rustic doors Cape Town, interior barn doors Cape Town, custom barn doors Cape Town, barn door hardware Cape Town, sliding door installation Cape Town, barn door experts Cape Town, wooden barn doors Cape Town, modern barn doors Cape Town, barn door suppliers Cape Town, Cape Town barn doors 2025",
+    "barn doors Cape Town, sliding barn doors Cape Town, barn door installation Cape Town, rustic doors Cape Town, interior barn doors Cape Town, custom barn doors Cape Town, barn door hardware Cape Town, sliding door installation Cape Town, barn door experts Cape Town, wooden barn doors Cape Town, modern barn doors Cape Town, barn door suppliers Cape Town, Cape Town barn doors 2026",
   openGraph: {
-    title: "Barn Doors Cape Town 2025 | Rustic Sliding Door Experts",
+    title: "Barn Doors Cape Town 2026 | Rustic Sliding Door Experts",
     description:
       "Premium barn door installation in Cape Town. Rustic & modern sliding barn doors for homes & offices. Professional installation.",
     url: "https://granitecarpentry.co.za/barn-doors-cape-town",

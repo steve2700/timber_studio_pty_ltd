@@ -7,13 +7,13 @@ import { Badge } from "@/components/ui/badge"
 import { Phone, Star, CheckCircle, ArrowRight, Shield, Award, Clock, Users, MapPin, Wrench, Home } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Decking & Flooring Johannesburg 2025 | Professional Installation Services",
+  title: "Decking & Flooring Johannesburg 2026 | Professional Installation Services",
   description:
     "Professional decking & flooring installation in Johannesburg. Wooden decking, laminate flooring, vinyl flooring. 5-star service, 24-month warranty. Free quotes. Call 067 601 4490.",
   keywords:
     "decking installation Johannesburg, wooden decking Johannesburg, flooring installation Sandton, laminate flooring Johannesburg, vinyl flooring Randburg, outdoor decking Midrand, deck builders Johannesburg, flooring contractors Sandton, wooden floors Johannesburg, composite decking installation, deck construction Johannesburg, flooring services Randburg, outdoor living spaces Johannesburg, deck repair Johannesburg, flooring renovation Sandton",
   openGraph: {
-    title: "Decking & Flooring Johannesburg 2025 | Professional Installation Services",
+    title: "Decking & Flooring Johannesburg 2026 | Professional Installation Services",
     description:
       "Professional decking & flooring installation in Johannesburg. 5-star service, 24-month warranty, free quotes available.",
     images: [{ url: "/decking-flooring.jpg", width: 1200, height: 630 }],

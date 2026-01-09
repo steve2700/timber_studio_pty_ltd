@@ -20,16 +20,16 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Drywall Installation Sandton 2025 | Professional Drywalling Services | Free Quotes",
+  title: "Drywall Installation Sandton 2026 | Professional Drywalling Services | Free Quotes",
   description:
     "★★★★★ Expert drywall installation in Sandton. Premium drywalling for luxury homes & offices in Rosebank, Hyde Park, Bryanston. Licensed contractors, 5-year warranty. Call 067 601 4490 for free quotes.",
   keywords:
-    "drywall installation Sandton, drywalling Sandton, drywall contractors Sandton, plasterboard installation Sandton, drywall Rosebank, drywall Hyde Park, drywall Bryanston, drywall Sandton City, luxury drywall Sandton, commercial drywall Sandton, residential drywall Sandton, drywall finishing Sandton, drywall repairs Sandton, professional drywalling Sandton 2025",
+    "drywall installation Sandton, drywalling Sandton, drywall contractors Sandton, plasterboard installation Sandton, drywall Rosebank, drywall Hyde Park, drywall Bryanston, drywall Sandton City, luxury drywall Sandton, commercial drywall Sandton, residential drywall Sandton, drywall finishing Sandton, drywall repairs Sandton, professional drywalling Sandton 2026",
   alternates: {
     canonical: "https://granitecarpentry.co.za/drywall-sandton",
   },
   openGraph: {
-    title: "Drywall Installation Sandton 2025 | Professional Drywalling Services",
+    title: "Drywall Installation Sandton 2026 | Professional Drywalling Services",
     description:
       "★★★★★ Expert drywall installation in Sandton. Premium drywalling for luxury homes & offices. Licensed contractors, 5-year warranty. Free quotes.",
     url: "https://granitecarpentry.co.za/drywall-sandton",

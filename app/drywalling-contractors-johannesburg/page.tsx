@@ -5,13 +5,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Phone, Mail, MapPin, Star, Award, Shield, Users, Hammer } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Drywalling Contractors Johannesburg | Expert Drywall Services 2025",
+  title: "Drywalling Contractors Johannesburg | Expert Drywall Services 2026",
   description:
     "Professional drywalling contractors in Johannesburg. Expert drywall installation, repair, and finishing services for residential and commercial properties. Free quotes available.",
   keywords:
     "drywalling contractors Johannesburg, drywall contractors Johannesburg, drywall installation Johannesburg, drywall services Johannesburg, professional drywalling Johannesburg",
   openGraph: {
-    title: "Drywalling Contractors Johannesburg | Expert Drywall Services 2025",
+    title: "Drywalling Contractors Johannesburg | Expert Drywall Services 2026",
     description:
       "Professional drywalling contractors in Johannesburg offering expert installation, repair, and finishing services for all property types.",
     url: "https://granitecarpentry.co.za/drywalling-contractors-johannesburg",

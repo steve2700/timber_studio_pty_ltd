@@ -5,13 +5,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Clock, Shield, Star, Phone, MapPin, Award, Users } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Drywall Installation Edenvale | Professional Drywalling Services 2025",
+  title: "Drywall Installation Edenvale | Professional Drywalling Services 2026",
   description:
     "Expert drywall installation in Edenvale. Professional drywalling, partitions, ceilings & repairs. Quality workmanship, competitive prices. Free quotes. Call now!",
   keywords:
-    "drywall Edenvale, drywall installation Edenvale, drywalling Edenvale, drywall contractors Edenvale, partition walls Edenvale, drywall services Edenvale 2025",
+    "drywall Edenvale, drywall installation Edenvale, drywalling Edenvale, drywall contractors Edenvale, partition walls Edenvale, drywall services Edenvale 2026",
   openGraph: {
-    title: "Drywall Installation Edenvale | Professional Drywalling Services 2025",
+    title: "Drywall Installation Edenvale | Professional Drywalling Services 2026",
     description:
       "Expert drywall installation in Edenvale. Professional drywalling, partitions, ceilings & repairs. Quality workmanship, competitive prices.",
     url: "https://granitecarpentry.co.za/drywall-edenvale",

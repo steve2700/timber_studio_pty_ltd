@@ -8,13 +8,13 @@ import { CheckCircle, Star, Shield, Award, Phone, ArrowRight, Home, Cable as Cab
 import { FAQAccordion } from "@/components/faq-accordion"
 
 export const metadata: Metadata = {
-  title: "Built-in Cupboards Johannesburg 2025 | Custom Wardrobes & Storage Solutions",
+  title: "Built-in Cupboards Johannesburg 2026 | Custom Wardrobes & Storage Solutions",
   description:
     "Expert built-in cupboard installation in Johannesburg, Sandton, Randburg & Midrand. Custom wardrobes, bedroom cupboards, walk-in closets. 5-star rated. Free quotes. Call 067 601 4490.",
   keywords:
     "built-in cupboards johannesburg, custom wardrobes sandton, bedroom cupboards randburg, built-in storage midrand, fitted wardrobes gauteng, walk-in closets johannesburg, custom storage solutions, built-in wardrobes johannesburg, cupboard installation sandton, bedroom storage solutions",
   openGraph: {
-    title: "Built-in Cupboards Johannesburg 2025 | Custom Wardrobes & Storage Solutions",
+    title: "Built-in Cupboards Johannesburg 2026 | Custom Wardrobes & Storage Solutions",
     description:
       "Expert built-in cupboard installation in Johannesburg. Custom wardrobes, bedroom cupboards, and storage solutions. Quality guaranteed, 5-star rated service.",
     images: [{ url: "/Custom-Bedroom-Built-In-Cupboards-and-Wardrobes-JHB.png", width: 1200, height: 630 }],

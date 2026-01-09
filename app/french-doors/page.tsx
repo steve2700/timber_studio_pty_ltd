@@ -5,11 +5,11 @@ import { Button } from '@/components/ui/button'
 import { Phone, MapPin, Clock, Home, CheckCircle2, Star, ArrowRight, Lightbulb } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'French Door Installation Johannesburg & Pretoria | Expert Installers 2025',
+  title: 'French Door Installation Johannesburg & Pretoria | Expert Installers 2026',
   description: 'Professional French door installation services in Johannesburg, Pretoria, and Gauteng. Interior and exterior French doors, patio doors, and glass doors. Get a free quote!',
   keywords: 'french doors johannesburg, french door installation pretoria, patio doors, glass french doors, interior french doors, exterior french doors, double french doors',
   openGraph: {
-    title: 'French Door Installation Johannesburg & Pretoria | Expert Installers 2025',
+    title: 'French Door Installation Johannesburg & Pretoria | Expert Installers 2026',
     description: 'Professional French door installation services in Johannesburg, Pretoria, and Gauteng. Interior and exterior French doors, patio doors, and glass doors.',
     url: 'https://granitecarpentry.co.za/french-doors',
     siteName: 'Granite Carpentry',
@@ -187,7 +187,7 @@ export default function FrenchDoorsPage() {
 
             {/* Pricing Section */}
             <div className="mb-12 bg-gray-50 rounded-lg p-8">
-              <h2 className="text-3xl font-bold mb-6 text-center">French Door Installation Pricing 2025</h2>
+              <h2 className="text-3xl font-bold mb-6 text-center">French Door Installation Pricing 2026</h2>
               <p className="text-center text-gray-600 mb-8">Transparent pricing with professional installation included. All quotes include materials, labor, and 5-year warranty.</p>
               
               <div className="grid md:grid-cols-3 gap-6 mb-6">

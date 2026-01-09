@@ -5,13 +5,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Phone, Clock, Shield, Award, MapPin, Star } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Ceiling Installation Bryanston | Professional Ceiling Contractors 2025",
+  title: "Ceiling Installation Bryanston | Professional Ceiling Contractors 2026",
   description:
     "Expert ceiling installation services in Bryanston. Suspended ceilings, gypsum ceilings, acoustic solutions. Licensed contractors, 5-year warranty. Call 079 468 7537 for free quotes.",
   keywords:
     "ceiling installation Bryanston, suspended ceilings Bryanston, gypsum ceiling Bryanston, acoustic ceiling installation, ceiling contractors Bryanston, professional ceiling installers",
   openGraph: {
-    title: "Ceiling Installation Bryanston | Professional Ceiling Contractors 2025",
+    title: "Ceiling Installation Bryanston | Professional Ceiling Contractors 2026",
     description:
       "Expert ceiling installation services in Bryanston. Suspended ceilings, gypsum ceilings, acoustic solutions. Licensed contractors, 5-year warranty.",
     url: "https://granitecarpentry.co.za/ceiling-installation-bryanston",
@@ -41,7 +41,7 @@ export default function CeilingInstallationBryanstonPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="text-lg">
-                <Link href="tel:0794687537">
+                <Link href="tel:0676014490">
                   <Phone className="mr-2 h-5 w-5" />
                   Call 079 468 7537
                 </Link>
@@ -564,9 +564,9 @@ export default function CeilingInstallationBryanstonPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-lg">
-                <Link href="tel:0794687537">
+                <Link href="tel:0676014490">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call 079 468 7537
+                  Call 0676014490
                 </Link>
               </Button>
               <Button

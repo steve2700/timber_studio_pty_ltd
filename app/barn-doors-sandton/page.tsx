@@ -5,11 +5,11 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Best Barn Doors Sandton 2025 | Stylish Sliding Door Installation",
+  title: "★★★★★ Best Barn Doors Sandton 2026 | Stylish Sliding Door Installation",
   description: "★★★★★ #1 Barn Door installation specialists in Sandton. Modern sliding barn doors, custom designs, space-saving solutions. 600+ Sandton projects. FREE quotes. Call 067 601 4490",
   keywords: "barn doors Sandton, sliding barn doors Sandton, rustic barn doors Sandton, modern barn doors Sandton, barn door installation Sandton, custom barn doors Sandton, barn door hardware Sandton, interior barn doors Sandton, barn door track Sandton, barn door specialists Sandton, space saving doors Sandton, barn door company Sandton, barn door suppliers Sandton, farmhouse doors Sandton",
   openGraph: {
-    title: "★★★★★ Best Barn Doors Sandton 2025 | Stylish Sliding Door Installation",
+    title: "★★★★★ Best Barn Doors Sandton 2026 | Stylish Sliding Door Installation",
     description: "★★★★★ #1 Barn Door installation specialists in Sandton. Modern sliding barn doors, custom designs, space-saving solutions. 600+ Sandton projects.",
     url: "https://granitecarpentry.co.za/barn-doors-sandton",
     siteName: "Granite Carpentry",

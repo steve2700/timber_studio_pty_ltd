@@ -5,13 +5,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Phone, Mail, MapPin, Star, Award, Shield, Users } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Drywall Installation in Rosebank | Professional Drywalling Services 2025",
+  title: "Drywall Installation in Rosebank | Professional Drywalling Services 2026",
   description:
     "Expert drywall installation and repair services in Rosebank. Professional drywalling contractors offering quality workmanship, competitive pricing, and guaranteed results. Call now for a free quote.",
   keywords:
     "drywall Rosebank, drywall installation Rosebank, drywalling contractors Rosebank, drywall repair Rosebank, partition walls Rosebank, drywall services Rosebank",
   openGraph: {
-    title: "Drywall Installation in Rosebank | Professional Drywalling Services 2025",
+    title: "Drywall Installation in Rosebank | Professional Drywalling Services 2026",
     description:
       "Expert drywall installation and repair services in Rosebank. Professional drywalling contractors offering quality workmanship and competitive pricing.",
     url: "https://granitecarpentry.co.za/drywall-rosebank",

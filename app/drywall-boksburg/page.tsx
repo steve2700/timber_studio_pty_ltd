@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Phone, ArrowRight, Home } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Drywall Installation Boksburg 2025 | Professional Drywalling Services",
+  title: "Drywall Installation Boksburg 2026 | Professional Drywalling Services",
   description:
     "Professional drywall installation in Boksburg. Residential & commercial drywalling, plasterboard walls, ceiling installation. 5-star rated. Free quotes. Call 067 601 4490.",
   keywords:

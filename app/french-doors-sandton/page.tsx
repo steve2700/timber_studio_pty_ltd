@@ -5,11 +5,11 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Phone, MapPin, Clock, Award, CheckCircle, Star } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "French Doors Sandton | Premium Installation & Repairs 2025",
+  title: "French Doors Sandton | Premium Installation & Repairs 2026",
   description: "Premium French door installation & repair services in Sandton. Interior & patio French doors with custom glass options. 15+ years experience. FREE quotes. Call 067 601 4490",
   keywords: "french doors sandton, patio doors sandton, interior french doors sandton, glass doors sandton, door installation sandton, custom french doors johannesburg",
   openGraph: {
-    title: "French Doors Sandton | Premium Installation & Repairs 2025",
+    title: "French Doors Sandton | Premium Installation & Repairs 2026",
     description: "Premium French door installation & repair services in Sandton. Interior & patio French doors with custom glass options. 15+ years experience.",
     url: "https://granitecarpentry.co.za/french-doors-sandton",
     siteName: "Granite Carpentry",

@@ -20,7 +20,7 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Best Carpenter & Plumber Midrand 2024 | Kitchen Renovations, Commercial Carpentry & Business Plumbing | Free Quotes",
+    "Best Carpenter & Plumber Midrand 2026 | Kitchen Renovations, Commercial Carpentry & Business Plumbing | Free Quotes",
   description:
     "★★★★★ #1 Rated Carpenter & Plumber in Midrand business hub. Expert kitchen renovations, commercial carpentry, built-in solutions & business plumbing services. Serving Fourways, Waterfall City, Grand Central. Licensed & insured. Call 067 601 4490",
   keywords:
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     canonical: "https://granitecarpentry.co.za/areas/midrand",
   },
   openGraph: {
-    title: "Best Carpenter & Plumber Midrand 2024 | Kitchen Renovations & Commercial Carpentry",
+    title: "Best Carpenter & Plumber Midrand 2026 | Kitchen Renovations & Commercial Carpentry",
     description:
       "★★★★★ #1 Rated Carpenter & Plumber in Midrand. Expert kitchen renovations, commercial carpentry & business plumbing services. Free quotes. Call 067 601 4490",
     url: "https://granitecarpentry.co.za/areas/midrand",

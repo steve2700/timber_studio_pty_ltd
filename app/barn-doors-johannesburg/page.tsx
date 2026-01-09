@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Best Barn Door Installation Johannesburg 2025 | Sliding Doors",
+  title: "★★★★★ Best Barn Door Installation Johannesburg 2026 | Sliding Doors",
   description: "★★★★★ Professional barn door installation in Johannesburg. Custom sliding barn doors, rustic & modern designs. Space-saving solutions for homes & offices. FREE quotes & expert fitting.",
   keywords: "barn doors Johannesburg, sliding barn doors Johannesburg, barn door installation Johannesburg, rustic barn doors, modern barn doors, space saving doors Johannesburg, barn door hardware Johannesburg, custom barn doors",
   openGraph: {
-    title: "Best Barn Door Installation Johannesburg 2025 | Granite Carpentry",
+    title: "Best Barn Door Installation Johannesburg 2026 | Granite Carpentry",
     description: "Professional barn door installation services in Johannesburg. Custom sliding barn doors, rustic & modern designs.",
     url: "https://granitecarpentry.co.za/barn-doors-johannesburg",
     siteName: "Granite Carpentry",

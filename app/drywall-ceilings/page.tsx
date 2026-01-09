@@ -19,13 +19,13 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Drywall & Ceilings Johannesburg 2025 | Professional Installation Services",
+  title: "Drywall & Ceilings Johannesburg 2026 | Professional Installation Services",
   description:
     "Professional drywall & ceiling installation in Johannesburg. Suspended ceilings, plasterboard walls, ceiling repairs. 5-star service, 24-month warranty. Free quotes. Call 067 601 4490.",
   keywords:
     "drywall installation Johannesburg, ceiling installation Johannesburg, suspended ceilings Sandton, plasterboard installation Randburg, ceiling contractors Johannesburg, drywall contractors Midrand, ceiling repairs Johannesburg, office ceilings Sandton, residential drywall Johannesburg, commercial ceilings Randburg, ceiling tiles installation, acoustic ceilings Johannesburg, false ceilings installation, ceiling renovation Johannesburg, drywall finishing Sandton",
   openGraph: {
-    title: "Drywall & Ceilings Johannesburg 2025 | Professional Installation Services",
+    title: "Drywall & Ceilings Johannesburg 2026 | Professional Installation Services",
     description:
       "Professional drywall & ceiling installation in Johannesburg. 5-star service, 24-month warranty, free quotes available.",
     images: [{ url: "/drywall-contractor.jpg", width: 1200, height: 630 }],

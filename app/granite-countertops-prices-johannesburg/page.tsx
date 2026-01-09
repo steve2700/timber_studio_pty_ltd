@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Granite Countertops Prices Johannesburg 2025 | Complete Pricing Guide & Costs",
+  title: "Granite Countertops Prices Johannesburg 2026 | Complete Pricing Guide & Costs",
   description:
-    "Complete granite countertops pricing guide for Johannesburg 2025. Compare costs R2,500-R8,500/m². Real project examples, transparent quotes. Free consultation. Call 067 601 4490!",
+    "Complete granite countertops pricing guide for Johannesburg 2026. Compare costs R2,500-R8,500/m². Real project examples, transparent quotes. Free consultation. Call 067 601 4490!",
   openGraph: {
-    title: "Granite Countertops Prices Johannesburg 2025 | Complete Pricing Guide",
+    title: "Granite Countertops Prices Johannesburg 2026 | Complete Pricing Guide",
     description:
       "Complete granite pricing guide for Johannesburg. Compare costs, get accurate quotes, and understand what you'll pay for your kitchen renovation.",
     url: "https://granitecarpentry.co.za/granite-countertops-prices-johannesburg",
@@ -185,7 +185,7 @@ export default function GraniteCountertopsPricesJohannesburgPage() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-              Granite Countertops Prices Johannesburg 2025
+              Granite Countertops Prices Johannesburg 2026
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto">
               Complete pricing guide for granite countertops in Johannesburg. Compare costs, get accurate quotes, and
@@ -212,7 +212,7 @@ export default function GraniteCountertopsPricesJohannesburgPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Johannesburg Granite Prices at a Glance</h2>
             <p className="text-muted-foreground text-lg">
-              Updated December 2025 - Supply & Professional Installation Included
+              Updated December 2026 - Supply & Professional Installation Included
             </p>
           </div>
 

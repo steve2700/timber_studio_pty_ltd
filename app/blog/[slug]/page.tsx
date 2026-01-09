@@ -10,16 +10,16 @@ import { Calendar, Clock, User, ArrowLeft, ArrowRight, Phone, Mail } from "lucid
 // Mock blog data - same as in blog page
 const blogPosts = [
   {
-    slug: "kitchen-renovation-guide-2025",
-    title: "Complete Kitchen Renovation Guide 2025: From Planning to Completion",
+    slug: "kitchen-renovation-guide-2026",
+    title: "Complete Kitchen Renovation Guide 2026: From Planning to Completion",
     excerpt:
-      "Everything you need to know about renovating your kitchen in 2025, including costs, timelines, and latest design trends.",
+      "Everything you need to know about renovating your kitchen in 2026, including costs, timelines, and latest design trends.",
     content: `
-# Complete Kitchen Renovation Guide 2025: From Planning to Completion
+# Complete Kitchen Renovation Guide 2026: From Planning to Completion
 
 Planning a kitchen renovation can be overwhelming, but with the right guidance, you can create the kitchen of your dreams. Here's our comprehensive guide based on over 250 successful kitchen renovations in Johannesburg and surrounding areas.
 
-## Planning Your Kitchen Renovation in 2025
+## Planning Your Kitchen Renovation in 2026
 
 ### 1. Set Your Budget
 - **Basic Renovation**: R60,000 - R90,000
@@ -32,16 +32,16 @@ Planning a kitchen renovation can be overwhelming, but with the right guidance, 
 - **Lighting**: Combine task, ambient, and accent lighting
 - **Materials**: Choose durable, easy-to-maintain surfaces
 
-## Popular Kitchen Trends 2025
+## Popular Kitchen Trends 2026
 
 ### Smart Kitchen Integration
 IoT-enabled appliances and smart storage solutions are becoming standard in modern kitchen renovations.
 
 ### Sustainable Materials
-Eco-friendly materials and energy-efficient appliances are top priorities for homeowners in 2025.
+Eco-friendly materials and energy-efficient appliances are top priorities for homeowners in 2026.
 
 ### Bold Color Combinations
-Moving beyond all-white kitchens, 2025 sees bold accent colors paired with neutral bases.
+Moving beyond all-white kitchens, 2026 sees bold accent colors paired with neutral bases.
 
 ### Multi-Functional Islands
 Kitchen islands now serve as cooking, dining, and workspace hubs with integrated storage and technology.
@@ -65,7 +65,7 @@ Kitchen islands now serve as cooking, dining, and workspace hubs with integrated
 - Countertop templating and installation
 - Final fixtures and appliances
 
-## Cost Breakdown 2025
+## Cost Breakdown 2026
 
 - **Cabinets**: 35-40% of budget
 - **Labor**: 20-25% of budget
@@ -92,25 +92,25 @@ Ready to transform your kitchen? Contact Granite Carpentry for a free consultati
     image: "/Kitchen-renovations-sandton.webp",
     category: "Kitchen Renovations",
     author: "Granite Carpentry Team",
-    publishedAt: "2025-01-15",
+    publishedAt: "2026-01-15",
     readTime: "8 min read",
     featured: true,
   },
   {
-    slug: "built-in-cupboards-design-ideas-2025",
-    title: "15 Built-in Cupboard Design Ideas to Maximize Your Space in 2025",
+    slug: "built-in-cupboards-design-ideas-2026",
+    title: "15 Built-in Cupboard Design Ideas to Maximize Your Space in 2026",
     excerpt:
-      "Discover the latest built-in cupboard solutions that maximize storage while enhancing your home's aesthetic appeal in 2025.",
+      "Discover the latest built-in cupboard solutions that maximize storage while enhancing your home's aesthetic appeal in 2026.",
     content: `
-# 15 Built-in Cupboard Design Ideas to Maximize Your Space in 2025
+# 15 Built-in Cupboard Design Ideas to Maximize Your Space in 2026
 
-Built-in cupboards are the perfect solution for maximizing storage while maintaining a clean, organized look. Here are our top design ideas from successful projects across Johannesburg in 2025.
+Built-in cupboards are the perfect solution for maximizing storage while maintaining a clean, organized look. Here are our top design ideas from successful projects across Johannesburg in 2026.
 
 ## 1. Floor-to-Ceiling Smart Wardrobes
 
 Maximize vertical space with floor-to-ceiling designs that include smart organization systems and LED lighting.
 
-**2025 Features:**
+**2026 Features:**
 - Motion-sensor lighting
 - Automated clothing organization
 - Climate control for delicate items
@@ -120,7 +120,7 @@ Maximize vertical space with floor-to-ceiling designs that include smart organiz
 
 Transform wasted space under stairs into functional storage with custom-built solutions.
 
-**Popular 2025 Ideas:**
+**Popular 2026 Ideas:**
 - Home office nooks with built-in desks
 - Wine storage with temperature control
 - Pet spaces with feeding stations
@@ -130,7 +130,7 @@ Transform wasted space under stairs into functional storage with custom-built so
 
 Create luxurious walk-in closets with organized sections and smart features.
 
-**2025 Innovations:**
+**2026 Innovations:**
 - Automated clothing carousels
 - Digital wardrobe management
 - Integrated laundry solutions
@@ -140,7 +140,7 @@ Create luxurious walk-in closets with organized sections and smart features.
 
 Combine storage with functionality by creating built-in study areas optimized for remote work.
 
-**Essential 2025 Components:**
+**Essential 2026 Components:**
 - Ergonomic desk surfaces with height adjustment
 - Cable management for multiple devices
 - Video conferencing backgrounds
@@ -150,7 +150,7 @@ Combine storage with functionality by creating built-in study areas optimized fo
 
 Design built-in entertainment units that hide technology and provide ample storage.
 
-**2025 Features:**
+**2026 Features:**
 - Wireless charging stations
 - Smart home integration hubs
 - Gaming equipment storage
@@ -160,7 +160,7 @@ Design built-in entertainment units that hide technology and provide ample stora
 
 Maximize kitchen storage with smart pantry designs that include inventory management.
 
-**2025 Options:**
+**2026 Options:**
 - Pull-out drawers with weight sensors
 - Temperature-controlled sections
 - Automated inventory tracking
@@ -170,7 +170,7 @@ Maximize kitchen storage with smart pantry designs that include inventory manage
 
 Create organized bathroom storage with built-in vanity solutions featuring modern amenities.
 
-**2025 Elements:**
+**2026 Elements:**
 - Heated towel storage
 - UV sanitizing compartments
 - Bluetooth speaker integration
@@ -180,7 +180,7 @@ Create organized bathroom storage with built-in vanity solutions featuring moder
 
 Design storage that grows with children and adapts to changing needs.
 
-**2025 Innovations:**
+**2026 Innovations:**
 - Adjustable shelving systems
 - Study area transformations
 - Toy-to-book storage transitions
@@ -190,7 +190,7 @@ Design storage that grows with children and adapts to changing needs.
 
 Maximize guest room functionality with versatile storage that serves multiple purposes.
 
-**2025 Features:**
+**2026 Features:**
 - Murphy bed integration
 - Convertible desk spaces
 - Welcome amenity storage
@@ -200,13 +200,13 @@ Maximize guest room functionality with versatile storage that serves multiple pu
 
 Transform garage spaces into organized workshops with professional storage systems.
 
-**2025 Additions:**
+**2026 Additions:**
 - Tool tracking systems
 - Project material storage
 - Safety equipment organization
 - Workbench integration
 
-## Material Choices for 2025
+## Material Choices for 2026
 
 ### Sustainable Options
 - Bamboo composites
@@ -226,7 +226,7 @@ Transform garage spaces into organized workshops with professional storage syste
 - Durable melamine options
 - Premium veneer selections
 
-## Professional Installation Benefits 2025
+## Professional Installation Benefits 2026
 
 - Precision digital measurements
 - Smart home integration
@@ -236,28 +236,28 @@ Transform garage spaces into organized workshops with professional storage syste
 
 ## Get Your Custom Built-in Cupboards
 
-Ready to maximize your space with 2025's latest built-in cupboard innovations? Contact Granite Carpentry for a free consultation.
+Ready to maximize your space with 2026's latest built-in cupboard innovations? Contact Granite Carpentry for a free consultation.
 
 **Call 067 601 4490** or email **info@granitecarpentry.co.za** today!
     `,
     image: "/Built-Built-in-Cupboards-Midrand.jpg",
     category: "Built-in Cupboards",
     author: "Granite Carpentry Team",
-    publishedAt: "2025-01-10",
+    publishedAt: "2026-01-10",
     readTime: "10 min read",
     featured: true,
   },
   {
-    slug: "granite-vs-quartz-countertops-2025",
-    title: "Granite vs Quartz Countertops 2025: Complete Comparison Guide",
+    slug: "granite-vs-quartz-countertops-2026",
+    title: "Granite vs Quartz Countertops 2026: Complete Comparison Guide",
     excerpt:
-      "Updated 2025 comparison of granite and quartz countertops with latest pricing, trends, and technology innovations.",
+      "Updated 2026 comparison of granite and quartz countertops with latest pricing, trends, and technology innovations.",
     content: `
-# Granite vs Quartz Countertops 2025: Complete Comparison Guide
+# Granite vs Quartz Countertops 2026: Complete Comparison Guide
 
-Choosing between granite and quartz countertops remains one of the most important decisions in kitchen renovation. Here's our updated 2025 guide with the latest innovations, pricing, and trends.
+Choosing between granite and quartz countertops remains one of the most important decisions in kitchen renovation. Here's our updated 2026 guide with the latest innovations, pricing, and trends.
 
-## Granite Countertops in 2025
+## Granite Countertops in 2026
 
 ### Latest Advantages
 - **Natural Beauty**: Each slab remains unique with natural patterns
@@ -266,13 +266,13 @@ Choosing between granite and quartz countertops remains one of the most importan
 - **Sustainable Sourcing**: Eco-certified granite options available
 - **Advanced Fabrication**: Precision cutting with minimal waste
 
-### 2025 Innovations
+### 2026 Innovations
 - **Antibacterial Treatments**: Natural antimicrobial surface treatments
 - **Smart Sensors**: Embedded temperature and moisture monitoring
 - **Enhanced Durability**: New composite reinforcement techniques
 - **Color Consistency**: Advanced selection processes for uniform appearance
 
-## Quartz Countertops in 2025
+## Quartz Countertops in 2026
 
 ### Latest Advantages
 - **Zero Maintenance**: No sealing required with advanced formulations
@@ -281,13 +281,13 @@ Choosing between granite and quartz countertops remains one of the most importan
 - **Unlimited Designs**: Digital printing creates any pattern imaginable
 - **Antimicrobial Properties**: Built-in bacteria resistance
 
-### 2025 Innovations
+### 2026 Innovations
 - **Self-Healing Surfaces**: Minor scratches repair automatically
 - **Color-Changing Options**: Temperature-responsive surface colors
 - **Wireless Charging**: Integrated charging zones in countertops
 - **Air Purification**: Surfaces that actively clean surrounding air
 
-## 2025 Cost Comparison (Johannesburg Market)
+## 2026 Cost Comparison (Johannesburg Market)
 
 ### Granite Pricing
 - **Entry Level**: R500 - R700 per m²
@@ -303,7 +303,7 @@ Choosing between granite and quartz countertops remains one of the most importan
 
 *Prices include advanced templating and professional installation*
 
-## Installation Technology 2025
+## Installation Technology 2026
 
 ### Digital Templating
 - 3D laser scanning for perfect measurements
@@ -317,7 +317,7 @@ Choosing between granite and quartz countertops remains one of the most importan
 - Integrated quality control systems
 - Customer app for project monitoring
 
-## Maintenance in 2025
+## Maintenance in 2026
 
 ### Granite Care
 - **Smart Monitoring**: Apps track sealing schedules
@@ -331,7 +331,7 @@ Choosing between granite and quartz countertops remains one of the most importan
 - **Automated Systems**: Integration with smart home cleaning
 - **Long-term Warranties**: Extended coverage options available
 
-## Environmental Impact 2025
+## Environmental Impact 2026
 
 ### Sustainable Granite
 - Carbon-neutral transportation options
@@ -345,7 +345,7 @@ Choosing between granite and quartz countertops remains one of the most importan
 - Zero-waste production processes
 - Sustainable packaging solutions
 
-## Design Trends 2025
+## Design Trends 2026
 
 ### Granite Trends
 - **Dramatic Veining**: Bold, statement-making patterns
@@ -359,7 +359,7 @@ Choosing between granite and quartz countertops remains one of the most importan
 - **Textured Surfaces**: 3D patterns and tactile finishes
 - **Smart Integration**: Technology-embedded surfaces
 
-## Making Your 2025 Decision
+## Making Your 2026 Decision
 
 ### Consider These Factors:
 1. **Lifestyle Needs**: Smart features vs. natural beauty
@@ -370,42 +370,42 @@ Choosing between granite and quartz countertops remains one of the most importan
 
 ## Professional Installation Excellence
 
-### Why Choose Granite Carpentry in 2025:
+### Why Choose Granite Carpentry in 2026:
 - **Latest Technology**: State-of-the-art fabrication equipment
 - **Smart Integration**: Technology-ready installations
 - **Sustainability Focus**: Eco-friendly practices throughout
 - **Extended Warranties**: Comprehensive coverage options
 - **Digital Documentation**: Complete project records
 
-## Get Expert 2025 Guidance
+## Get Expert 2026 Guidance
 
-Ready to choose the perfect countertop for your 2025 kitchen? Our team stays current with all the latest innovations and can guide you to the best choice.
+Ready to choose the perfect countertop for your 2026 kitchen? Our team stays current with all the latest innovations and can guide you to the best choice.
 
 **Contact Granite Carpentry today:**
 - **Phone**: 067 601 4490
 - **Email**: info@granitecarpentry.co.za
-- **Free 2025 Consultation**: Latest options and pricing
+- **Free 2026 Consultation**: Latest options and pricing
 
-Transform your kitchen with the perfect countertop choice for 2025!
+Transform your kitchen with the perfect countertop choice for 2026!
     `,
     image: "/granite-installation-Johannesburg.jpg",
     category: "Granite & Quartz",
     author: "Granite Carpentry Team",
-    publishedAt: "2025-01-05",
+    publishedAt: "2026-01-05",
     readTime: "9 min read",
     featured: false,
   },
   {
-    slug: "home-office-carpentry-solutions-2025",
-    title: "Creating the Perfect Home Office 2025: Smart Carpentry Solutions",
+    slug: "home-office-carpentry-solutions-2026",
+    title: "Creating the Perfect Home Office 2026: Smart Carpentry Solutions",
     excerpt:
-      "Transform any space into a productive home office with 2025's latest custom carpentry solutions designed for hybrid work.",
+      "Transform any space into a productive home office with 2026's latest custom carpentry solutions designed for hybrid work.",
     content: `
-# Creating the Perfect Home Office 2025: Smart Carpentry Solutions
+# Creating the Perfect Home Office 2026: Smart Carpentry Solutions
 
-With hybrid work becoming permanent, having a well-designed home office is essential for productivity and work-life balance. Here are 2025's latest custom carpentry solutions for modern workspaces.
+With hybrid work becoming permanent, having a well-designed home office is essential for productivity and work-life balance. Here are 2026's latest custom carpentry solutions for modern workspaces.
 
-## Essential 2025 Home Office Components
+## Essential 2026 Home Office Components
 
 ### 1. Smart Desk Solutions
 - **AI-Powered Standing Desks**: Automatic height adjustment based on usage patterns
@@ -419,13 +419,13 @@ With hybrid work becoming permanent, having a well-designed home office is essen
 - **Modular Organization**: Reconfigurable storage systems
 - **Security Integration**: Monitored storage for sensitive materials
 
-### 3. Technology Integration 2025
+### 3. Technology Integration 2026
 - **5G Connectivity Hubs**: Built-in signal boosting and distribution
 - **Holographic Display Ready**: Mounting systems for future tech
 - **Voice Control Integration**: Hands-free office management
 - **Environmental Monitoring**: Air quality and lighting optimization
 
-## Space-Specific Solutions for 2025
+## Space-Specific Solutions for 2026
 
 ### Micro-Office Spaces
 - **Transforming Furniture**: Desks that convert to entertainment centers
@@ -445,7 +445,7 @@ With hybrid work becoming permanent, having a well-designed home office is essen
 - **Wellness Integration**: Health monitoring and ergonomic systems
 - **Productivity Analytics**: Workspace usage tracking and optimization
 
-## 2025 Ergonomic Innovations
+## 2026 Ergonomic Innovations
 
 ### Adaptive Workstations
 - **Posture Monitoring**: Real-time feedback and adjustment
@@ -459,7 +459,7 @@ With hybrid work becoming permanent, having a well-designed home office is essen
 - **Mood Enhancement**: Color therapy integration
 - **Energy Efficiency**: Smart power management systems
 
-## Material Innovations 2025
+## Material Innovations 2026
 
 ### Smart Materials
 - **Self-Cleaning Surfaces**: Antimicrobial and stain-resistant finishes
@@ -473,7 +473,7 @@ With hybrid work becoming permanent, having a well-designed home office is essen
 - **Local Sourcing**: Reduced transportation impact materials
 - **Renewable Resources**: Rapidly renewable material options
 
-## Technology Integration Features 2025
+## Technology Integration Features 2026
 
 ### Connectivity Solutions
 - **Mesh Network Integration**: Seamless internet throughout workspace
@@ -487,7 +487,7 @@ With hybrid work becoming permanent, having a well-designed home office is essen
 - **Energy Management**: Intelligent power usage optimization
 - **Remote Monitoring**: Check office status from anywhere
 
-## Productivity Enhancement Features 2025
+## Productivity Enhancement Features 2026
 
 ### Focus Optimization
 - **Distraction Blocking**: Physical and digital distraction management
@@ -501,7 +501,7 @@ With hybrid work becoming permanent, having a well-designed home office is essen
 - **Relaxation Zones**: Dedicated spaces for mental breaks
 - **Health Tracking**: Integration with health monitoring devices
 
-## Budget Planning for 2025
+## Budget Planning for 2026
 
 ### Smart Basic Setup
 - **Cost Range**: R25,000 - R40,000
@@ -521,7 +521,7 @@ With hybrid work becoming permanent, having a well-designed home office is essen
 - **ROI**: Maximum productivity and impressive client presentation
 - **Timeline**: 12-16 days installation
 
-## Installation Process 2025
+## Installation Process 2026
 
 ### 1. Smart Consultation
 - **3D Virtual Reality**: Experience your office before construction
@@ -541,7 +541,7 @@ With hybrid work becoming permanent, having a well-designed home office is essen
 - **User Training**: Comprehensive system operation training
 - **Ongoing Support**: 24/7 technical support and maintenance
 
-## Maintenance and Upgrades 2025
+## Maintenance and Upgrades 2026
 
 ### Predictive Maintenance
 - **AI Monitoring**: Automatic detection of maintenance needs
@@ -555,7 +555,7 @@ With hybrid work becoming permanent, having a well-designed home office is essen
 - **Scalability**: Grows with changing needs
 - **Investment Protection**: Maintains value through updates
 
-## Why Choose Professional 2025 Installation
+## Why Choose Professional 2026 Installation
 
 ### Expertise Advantages
 - **Technology Integration**: Seamless smart feature implementation
@@ -569,22 +569,22 @@ With hybrid work becoming permanent, having a well-designed home office is essen
 - **Productivity Gains**: Immediate improvement in work efficiency
 - **Property Value**: Significant increase in home value
 
-## Get Your 2025 Smart Home Office
+## Get Your 2026 Smart Home Office
 
-Ready to create the ultimate productive workspace with 2025's latest innovations? Our expert team will design and install a smart office that enhances your work life.
+Ready to create the ultimate productive workspace with 2026's latest innovations? Our expert team will design and install a smart office that enhances your work life.
 
 **Contact Granite Carpentry today:**
 - **Phone**: 067 601 4490
 - **Email**: info@granitecarpentry.co.za
 - **Service Areas**: Johannesburg, Sandton, Randburg, Pretoria, and surrounding areas
 
-**Free 2025 consultation includes:**
+**Free 2026 consultation includes:**
 - Smart technology assessment
 - 3D virtual reality design preview
 - Productivity optimization analysis
 - Comprehensive quote with timeline
 
-Transform your workspace with 2025's smartest carpentry solutions!
+Transform your workspace with 2026's smartest carpentry solutions!
     `,
     image: "/built-in-study-1 (1).webp",
     category: "Home Office",
@@ -594,16 +594,16 @@ Transform your workspace with 2025's smartest carpentry solutions!
     featured: false,
   },
   {
-    slug: "bathroom-renovation-carpentry-2025",
-    title: "Bathroom Renovation Carpentry 2025: Smart Vanities and Storage Solutions",
+    slug: "bathroom-renovation-carpentry-2026",
+    title: "Bathroom Renovation Carpentry 2026: Smart Vanities and Storage Solutions",
     excerpt:
-      "Complete guide to 2025 bathroom carpentry including smart vanities, moisture-resistant materials, and innovative storage solutions.",
+      "Complete guide to 2026 bathroom carpentry including smart vanities, moisture-resistant materials, and innovative storage solutions.",
     content: `
-# Bathroom Renovation Carpentry 2025: Smart Vanities and Storage Solutions
+# Bathroom Renovation Carpentry 2026: Smart Vanities and Storage Solutions
 
-Bathroom renovations in 2025 combine traditional craftsmanship with smart technology and advanced materials. Our comprehensive guide covers the latest innovations in bathroom carpentry.
+Bathroom renovations in 2026 combine traditional craftsmanship with smart technology and advanced materials. Our comprehensive guide covers the latest innovations in bathroom carpentry.
 
-## 2025 Bathroom Carpentry Essentials
+## 2026 Bathroom Carpentry Essentials
 
 ### Advanced Moisture-Resistant Materials
 - **Nano-Coated Wood**: Superior moisture protection with natural appearance
@@ -617,7 +617,7 @@ Bathroom renovations in 2025 combine traditional craftsmanship with smart techno
 - **UV-Resistant Coatings**: Prevent fading and degradation
 - **Easy-Clean Technologies**: Surfaces that repel dirt and grime
 
-## Smart Vanity Solutions 2025
+## Smart Vanity Solutions 2026
 
 ### Intelligent Single Vanities
 - **Motion-Activated Lighting**: Automatic illumination with color adjustment
@@ -637,7 +637,7 @@ Bathroom renovations in 2025 combine traditional craftsmanship with smart techno
 - **Vertical Storage Optimization**: Smart use of wall space
 - **Transforming Features**: Expandable surfaces and storage
 
-## Revolutionary Storage Solutions 2025
+## Revolutionary Storage Solutions 2026
 
 ### Smart Medicine Cabinets
 - **Inventory Tracking**: Automatic medication and supply monitoring
@@ -657,7 +657,7 @@ Bathroom renovations in 2025 combine traditional craftsmanship with smart techno
 - **Personalization**: Individual storage zones with preferences
 - **Hygiene Monitoring**: UV sanitization and cleanliness tracking
 
-## Specialized 2025 Bathroom Features
+## Specialized 2026 Bathroom Features
 
 ### Smart Shower Integration
 - **Digital Controls**: Precise temperature and pressure control
@@ -677,7 +677,7 @@ Bathroom renovations in 2025 combine traditional craftsmanship with smart techno
 - **Light Therapy**: Circadian rhythm support lighting
 - **Aromatherapy**: Integrated essential oil diffusion
 
-## 2025 Material Selection Guide
+## 2026 Material Selection Guide
 
 ### Smart Material Options
 
@@ -705,7 +705,7 @@ Bathroom renovations in 2025 combine traditional craftsmanship with smart techno
 - **Best For**: Modern, tech-integrated bathrooms
 - **Lifespan**: 15+ years with technology updates
 
-## Advanced Hardware Systems 2025
+## Advanced Hardware Systems 2026
 
 ### Smart Hardware Features
 - **Biometric Access**: Fingerprint and facial recognition locks
@@ -719,7 +719,7 @@ Bathroom renovations in 2025 combine traditional craftsmanship with smart techno
 - **Climate Response**: Automatic adjustment to conditions
 - **Longevity Guarantee**: Extended warranty coverage
 
-## Installation Innovations 2025
+## Installation Innovations 2026
 
 ### Precision Installation Technology
 - **Laser-Guided Placement**: Perfect alignment and fit
@@ -733,7 +733,7 @@ Bathroom renovations in 2025 combine traditional craftsmanship with smart techno
 - **Preventive Systems**: Automatic moisture management
 - **Long-term Protection**: 20+ year waterproofing warranties
 
-## 2025 Design Trends
+## 2026 Design Trends
 
 ### Minimalist Smart Design
 - **Clean Lines**: Uncluttered appearance with hidden technology
@@ -753,7 +753,7 @@ Bathroom renovations in 2025 combine traditional craftsmanship with smart techno
 - **Safety Integration**: Automatic safety monitoring and response
 - **Independence Support**: Technology that enables independent living
 
-## Budget Planning 2025
+## Budget Planning 2026
 
 ### Smart Basic Bathroom Carpentry
 - **Cost Range**: R15,000 - R25,000
@@ -773,7 +773,7 @@ Bathroom renovations in 2025 combine traditional craftsmanship with smart techno
 - **Features**: Full automation, wellness integration, premium finishes
 - **Timeline**: 8-12 days installation
 
-## Maintenance and Care 2025
+## Maintenance and Care 2026
 
 ### Predictive Maintenance
 - **AI Monitoring**: Automatic detection of maintenance needs
@@ -787,7 +787,7 @@ Bathroom renovations in 2025 combine traditional craftsmanship with smart techno
 - **Maintenance Tracking**: Digital records of all care activities
 - **Professional Services**: Scheduled professional maintenance programs
 
-## Professional Installation Benefits 2025
+## Professional Installation Benefits 2026
 
 ### Technology Expertise
 - **Smart Integration**: Seamless technology implementation
@@ -801,22 +801,22 @@ Bathroom renovations in 2025 combine traditional craftsmanship with smart techno
 - **Safety Standards**: Exceeding all safety requirements
 - **Performance Optimization**: Maximum efficiency and functionality
 
-## Get Your 2025 Smart Bathroom
+## Get Your 2026 Smart Bathroom
 
-Transform your bathroom with the latest 2025 innovations in smart carpentry and storage solutions. Our expert team combines traditional craftsmanship with cutting-edge technology.
+Transform your bathroom with the latest 2026 innovations in smart carpentry and storage solutions. Our expert team combines traditional craftsmanship with cutting-edge technology.
 
 **Contact Granite Carpentry today:**
 - **Phone**: 067 601 4490
 - **Email**: info@granitecarpentry.co.za
 - **Service Areas**: Johannesburg, Sandton, Randburg, Pretoria, and surrounding areas
 
-**Free 2025 consultation includes:**
+**Free 2026 consultation includes:**
 - Smart technology assessment
 - Moisture and ventilation analysis
 - Custom design with 3D visualization
 - Comprehensive quote with timeline
 
-Create your dream smart bathroom with 2025's most advanced carpentry solutions!
+Create your dream smart bathroom with 2026's most advanced carpentry solutions!
     `,
     image: "/bathroom-vanity (1).webp",
     category: "Bathroom Renovations",
@@ -826,16 +826,16 @@ Create your dream smart bathroom with 2025's most advanced carpentry solutions!
     featured: false,
   },
   {
-    slug: "decking-installation-maintenance-2025",
-    title: "Complete Decking Guide 2025: Smart Installation and Eco-Friendly Materials",
+    slug: "decking-installation-maintenance-2026",
+    title: "Complete Decking Guide 2026: Smart Installation and Eco-Friendly Materials",
     excerpt:
-      "Everything you need to know about 2025 decking installation, sustainable materials, and smart maintenance for Johannesburg's climate.",
+      "Everything you need to know about 2026 decking installation, sustainable materials, and smart maintenance for Johannesburg's climate.",
     content: `
-# Complete Decking Guide 2025: Smart Installation and Eco-Friendly Materials
+# Complete Decking Guide 2026: Smart Installation and Eco-Friendly Materials
 
-Decking in 2025 combines traditional outdoor living with smart technology and sustainable materials. This comprehensive guide covers the latest innovations for Johannesburg's unique climate.
+Decking in 2026 combines traditional outdoor living with smart technology and sustainable materials. This comprehensive guide covers the latest innovations for Johannesburg's unique climate.
 
-## 2025 Decking Material Innovations
+## 2026 Decking Material Innovations
 
 ### Smart Composite Decking
 - **Self-Monitoring Boards**: Built-in sensors detect moisture and structural issues
@@ -855,7 +855,7 @@ Decking in 2025 combines traditional outdoor living with smart technology and su
 - **UV-Adaptive Treatments**: Protection that adjusts to sun exposure levels
 - **Eco-Friendly Preservatives**: Non-toxic treatments safe for families and pets
 
-## Smart Design Features 2025
+## Smart Design Features 2026
 
 ### Intelligent Deck Systems
 - **Climate Response**: Automatic adjustment to weather conditions
@@ -875,7 +875,7 @@ Decking in 2025 combines traditional outdoor living with smart technology and su
 - **Multi-Level Intelligence**: Coordinated systems across deck levels
 - **Accessibility Options**: Automatic ramps and accessibility features
 
-## 2025 Installation Technology
+## 2026 Installation Technology
 
 ### Precision Installation Methods
 - **Laser-Guided Placement**: Perfect alignment and spacing
@@ -895,7 +895,7 @@ Decking in 2025 combines traditional outdoor living with smart technology and su
 - **Local Sourcing**: Materials sourced within 100km when possible
 - **Renewable Energy**: Solar-powered installation equipment
 
-## Cost Analysis 2025 (Johannesburg Market)
+## Cost Analysis 2026 (Johannesburg Market)
 
 ### Smart Composite Decking
 - **Basic Smart Features**: R800 - R1,200 per m²
@@ -917,7 +917,7 @@ Decking in 2025 combines traditional outdoor living with smart technology and su
 
 *All prices include smart features and professional installation*
 
-## Smart Maintenance Systems 2025
+## Smart Maintenance Systems 2026
 
 ### Predictive Maintenance
 - **AI Analysis**: Automatic detection of maintenance needs
@@ -937,7 +937,7 @@ Decking in 2025 combines traditional outdoor living with smart technology and su
 - **Weather Protection**: Automatic deployment of protective measures
 - **Energy Efficiency**: Optimization of heating and cooling systems
 
-## Environmental Benefits 2025
+## Environmental Benefits 2026
 
 ### Carbon Footprint Reduction
 - **Carbon Sequestration**: Materials that continue absorbing CO2
@@ -957,7 +957,7 @@ Decking in 2025 combines traditional outdoor living with smart technology and su
 - **Education Integration**: Learning opportunities about sustainability
 - **Future Planning**: Designs that adapt to climate change
 
-## Safety Innovations 2025
+## Safety Innovations 2026
 
 ### Smart Safety Systems
 - **Fall Prevention**: Automatic detection and prevention systems
@@ -977,7 +977,7 @@ Decking in 2025 combines traditional outdoor living with smart technology and su
 - **Safety Redundancy**: Multiple safety systems for critical areas
 - **Professional Certification**: Third-party safety verification
 
-## Customization Options 2025
+## Customization Options 2026
 
 ### Personal Preferences
 - **Color Customization**: Personalized color schemes and patterns
@@ -997,7 +997,7 @@ Decking in 2025 combines traditional outdoor living with smart technology and su
 - **Seasonal Modifications**: Temporary additions for special occasions
 - **Investment Protection**: Upgrades that maintain and increase value
 
-## Professional Installation Excellence 2025
+## Professional Installation Excellence 2026
 
 ### Expert Design Services
 - **3D Visualization**: See your deck before construction begins
@@ -1017,23 +1017,23 @@ Decking in 2025 combines traditional outdoor living with smart technology and su
 - **Clean Completion**: Thorough cleanup and site restoration
 - **User Training**: Complete education on all deck features
 
-## Get Your 2025 Smart Deck
+## Get Your 2026 Smart Deck
 
-Ready to create the ultimate outdoor living space with 2025's latest decking innovations? Our expert team combines traditional craftsmanship with cutting-edge technology and sustainability.
+Ready to create the ultimate outdoor living space with 2026's latest decking innovations? Our expert team combines traditional craftsmanship with cutting-edge technology and sustainability.
 
 **Contact Granite Carpentry today:**
 - **Phone**: 067 601 4490
 - **Email**: info@granitecarpentry.co.za
 - **Service Areas**: Johannesburg, Sandton, Randburg, Pretoria, and surrounding areas
 
-**Free 2025 consultation includes:**
+**Free 2026 consultation includes:**
 - Smart technology assessment
 - Sustainability analysis and recommendations
 - 3D design visualization
 - Comprehensive quote with timeline
 - Climate optimization planning
 
-Transform your outdoor space with 2025's smartest and most sustainable decking solutions!
+Transform your outdoor space with 2026's smartest and most sustainable decking solutions!
     `,
     image: "/beautiful-decking.jpg",
     category: "Decking & Outdoor",

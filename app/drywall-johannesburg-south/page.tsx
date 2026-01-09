@@ -7,13 +7,13 @@ import { Badge } from "@/components/ui/badge"
 import { Phone, Star, CheckCircle, ArrowRight, Shield, Award, Users, MapPin, Wrench, Home } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Drywall Installation Johannesburg South 2025 | Professional Drywalling",
+  title: "Drywall Installation Johannesburg South 2026 | Professional Drywalling",
   description:
     "Expert drywall installation in Johannesburg South. Residential & commercial drywalling, plasterboard walls, ceiling installation. 5-star service, 24-month warranty. Call 067 601 4490.",
   keywords:
     "drywall installation Johannesburg South, drywalling contractors Johannesburg South, plasterboard installation Johannesburg South, drywall repair Johannesburg South, ceiling installation Johannesburg South, residential drywall Johannesburg South, commercial drywalling Johannesburg South, drywall finishing Johannesburg South, plasterboard walls Johannesburg South, drywall services Johannesburg South",
   openGraph: {
-    title: "Drywall Installation Johannesburg South 2025 | Professional Drywalling",
+    title: "Drywall Installation Johannesburg South 2026 | Professional Drywalling",
     description:
       "Expert drywall installation in Johannesburg South. Residential & commercial services with 5-star rating.",
     images: [{ url: "/drywall-contractor.jpg", width: 1200, height: 630 }],

@@ -4,37 +4,146 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, Shield, Users } from "lucide-react"
+import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, Shield, Users, MessageCircle } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Best Carpenter & Plumber Sandton 2024 | Kitchen Renovations, Built-in Cupboards & Emergency Plumbing | Free Quotes",
+    "Best Carpenter Sandton 2026 | Kitchen Renovations & Built-in Cupboards | Free Quote",
   description:
-    "★★★★★ #1 Rated Carpenter & Plumber in Sandton. Expert kitchen renovations, luxury built-in cupboards, premium granite installations & 24/7 emergency plumbing. Serving Rosebank, Hyde Park, Illovo. Licensed & insured. Free quotes. Call 067 601 4490",
+    "★★★★★ #1 Carpenter & Plumber in Sandton. Expert kitchen renovations, luxury built-in cupboards & 24/7 emergency plumbing. Serving Rosebank, Hyde Park, Illovo. Licensed & insured. Call 067 601 4490",
   keywords:
-    "carpenter Sandton, plumber Sandton, kitchen renovation Sandton, granite installation Sandton, built-in cupboards Sandton, emergency plumbing Sandton, carpenter Rosebank, carpenter Hyde Park, kitchen cabinets Sandton, quartz countertops Sandton, custom carpentry Sandton, best carpenter Sandton, affordable carpenter Sandton, Sandton kitchen contractor, granite Sandton, cupboards Sandton, 24/7 plumber Sandton",
+    "carpenter Sandton, plumber Sandton, kitchen renovation Sandton, carpenter Rosebank, carpenter Hyde Park, carpenter Illovo, granite installation Sandton, built-in cupboards Sandton, emergency plumbing Sandton, quartz countertops Sandton, carpenter near me Sandton",
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/sandton",
   },
   openGraph: {
-    title: "Best Carpenter & Plumber Sandton 2024 | Kitchen Renovations, Built-in Cupboards & Emergency Plumbing",
+    title: "Best Carpenter Sandton 2026 | Kitchen Renovations & Built-in Cupboards",
     description:
-      "★★★★★ #1 Rated Carpenter & Plumber in Sandton. Expert kitchen renovations, luxury built-in cupboards, premium granite installations & 24/7 emergency plumbing. Free quotes. Call 067 601 4490",
+      "★★★★★ #1 Carpenter & Plumber in Sandton. Expert kitchen renovations, luxury built-in cupboards & 24/7 emergency plumbing. Free quotes. Call 067 601 4490",
     url: "https://granitecarpentry.co.za/areas/sandton",
     images: [
       {
         url: "https://granitecarpentry.co.za/granite-installation-sandton.jpg",
         width: 1200,
         height: 630,
-        alt: "Best Carpenter & Plumber Sandton - Kitchen Renovation & Granite Installation",
+        alt: "Best Carpenter Sandton - Kitchen Renovation & Granite Installation",
       },
     ],
   },
 }
 
+// JSON-LD Schema Markup
+const schemaMarkup = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://granitecarpentry.co.za/#localbusiness-sandton",
+      "name": "Granite Carpentry - Sandton Carpenter & Plumber",
+      "image": "https://granitecarpentry.co.za/granite-installation-sandton.jpg",
+      "telephone": "+27676014490",
+      "priceRange": "R400-R25000",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sandton",
+        "addressRegion": "Gauteng",
+        "addressCountry": "ZA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-26.1076",
+        "longitude": "28.0567"
+      },
+      "url": "https://granitecarpentry.co.za/areas/sandton",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "189",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "areaServed": [
+        "Sandton", "Rosebank", "Hyde Park", "Illovo", "Melrose", "Morningside",
+        "Rivonia", "Bryanston", "Douglasdale", "Lonehill", "Sunninghill"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Luxury Carpentry & Plumbing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Kitchen Renovation Sandton",
+              "description": "Luxury kitchen renovations with premium materials and expert craftsmanship",
+              "provider": {
+                "@id": "https://granitecarpentry.co.za/#localbusiness-sandton"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Built-in Cupboards Sandton",
+              "description": "Custom luxury storage solutions for premium Sandton properties",
+              "provider": {
+                "@id": "https://granitecarpentry.co.za/#localbusiness-sandton"
+              }
+            }
+          }
+        ]
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "14:00"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://granitecarpentry.co.za/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://granitecarpentry.co.za"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://granitecarpentry.co.za/areas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sandton Carpenter & Plumber"
+        }
+      ]
+    }
+  ]
+}
+
 export default function SandtonPage() {
   return (
     <>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+      />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-white py-16 sm:py-20 md:py-24">
         <div className="absolute inset-0 bg-black/40" />
@@ -55,8 +164,7 @@ export default function SandtonPage() {
 
               <p className="text-xl sm:text-2xl text-slate-200 mb-8 leading-relaxed">
                 ★★★★★ Rated #1 Carpenter & Plumber in Sandton. Expert kitchen renovations, luxury built-in cupboards,
-                premium granite installations & 24/7 emergency plumbing services. Serving Rosebank, Hyde Park, Illovo &
-                all Sandton areas.
+                premium granite installations & 24/7 emergency plumbing services. Serving Rosebank, Hyde Park, Illovo, Melrose, Morningside & all Sandton areas.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -102,7 +210,7 @@ export default function SandtonPage() {
             <div className="relative">
               <Image
                 src="/granite-installation-sandton.jpg"
-                alt="Best Carpenter & Plumber Sandton - Premium Kitchen Renovation & Granite Installation"
+                alt="Best Carpenter Sandton - Premium Kitchen Renovation & Granite Installation"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-2xl w-full h-auto"
@@ -117,40 +225,139 @@ export default function SandtonPage() {
         </div>
       </section>
 
+      {/* Kitchen Renovation Sandton - Featured Section */}
+      <section className="py-16 bg-gradient-to-br from-amber-50 to-slate-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              Kitchen Renovation Sandton - Luxury Kitchen Transformations
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Transform your Sandton kitchen with premium materials and expert craftsmanship. Serving Rosebank, Hyde Park, Illovo, and all Sandton suburbs with luxury kitchen renovation services.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-slate-800 mb-3">Designer Kitchens</h3>
+                <p className="text-slate-600 mb-4">
+                  High-end kitchen renovations for Sandton's luxury homes with imported materials and premium finishes.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Italian & German cabinetry options
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Marble, quartz & exotic granite
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Smart kitchen technology integration
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow border-2 border-amber-400">
+              <CardContent className="p-6">
+                <Badge className="mb-3 bg-amber-600">Most Popular</Badge>
+                <h3 className="text-xl font-bold text-slate-800 mb-3">Modern Kitchen Upgrades</h3>
+                <p className="text-slate-600 mb-4">
+                  Contemporary kitchen renovations with sleek designs perfect for Sandton apartments and townhouses.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Minimalist cabinet designs
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Waterfall edge countertops
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Integrated appliances
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-slate-800 mb-3">Executive Kitchen Remodels</h3>
+                <p className="text-slate-600 mb-4">
+                  Premium kitchen renovations for Sandton executives with flexible payment options and concierge service.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    After-hours consultations available
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Premium materials & finishes
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Fast-track completion options
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <p className="text-lg text-slate-700 mb-4 font-semibold">
+              Average Kitchen Renovation Cost in Sandton: R25,000 - R120,000
+            </p>
+            <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700">
+              <Link href="/contact">Get Your Free Kitchen Quote</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Sandton Areas Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Serving All Sandton Areas</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              Carpenter Near Me - Serving All Sandton Areas
+            </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Professional carpentry services throughout Sandton's premium suburbs. Same-day quotes, licensed craftsmen,
-              5-year warranty.
+              Professional carpentry & plumbing services throughout Sandton's premium suburbs. Same-day quotes for Rosebank, Hyde Park, Illovo, Melrose, Morningside, Rivonia, Bryanston and all surrounding areas.
             </p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {[
-              "Sandton CBD",
-              "Rosebank",
-              "Hyde Park",
-              "Illovo",
-              "Melrose",
-              "Morningside",
-              "Rivonia",
-              "Bryanston",
-              "Douglasdale",
-              "Lonehill",
-              "Paulshof",
-              "Sunninghill",
-              "Woodmead",
-              "Marlboro",
-              "Wynberg",
-              "Atholl",
+              { name: "Rosebank", popular: true },
+              { name: "Hyde Park", popular: true },
+              { name: "Illovo", popular: true },
+              { name: "Melrose", popular: true },
+              { name: "Morningside", popular: true },
+              { name: "Rivonia", popular: true },
+              { name: "Bryanston", popular: true },
+              { name: "Sunninghill", popular: true },
+              { name: "Sandton CBD", popular: false },
+              { name: "Douglasdale", popular: false },
+              { name: "Lonehill", popular: false },
+              { name: "Paulshof", popular: false },
+              { name: "Woodmead", popular: false },
+              { name: "Marlboro", popular: false },
+              { name: "Wynberg", popular: false },
+              { name: "Atholl", popular: false },
             ].map((area) => (
-              <Card key={area} className="text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <Card key={area.name} className={`text-center hover:shadow-lg transition-all duration-300 hover:scale-105 ${area.popular ? 'border-amber-300 border-2' : ''}`}>
                 <CardContent className="p-4">
-                  <h3 className="font-semibold text-slate-800">{area}</h3>
+                  <h3 className="font-semibold text-slate-800">{area.name}</h3>
                   <p className="text-sm text-slate-600 mt-1">Same Day Service</p>
+                  {area.popular && (
+                    <Badge className="mt-2 bg-amber-600 text-xs">High Demand</Badge>
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -175,12 +382,12 @@ export default function SandtonPage() {
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
                   <Building2 className="w-6 h-6 text-amber-600 mr-2" />
-                  Kitchen Renovations Sandton
+                  Kitchen Renovations
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600 mb-4">
-                  Luxury kitchen transformations for Sandton homes. Premium materials, expert craftsmanship.
+                  Luxury kitchen transformations for Sandton homes. Premium materials, expert craftsmanship, designer finishes.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
@@ -199,7 +406,7 @@ export default function SandtonPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R25,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/kitchen-renovations">View Details</Link>
+                    <Link href="/kitchen-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -209,13 +416,12 @@ export default function SandtonPage() {
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
                   <Award className="w-6 h-6 text-amber-600 mr-2" />
-                  Built-in Cupboards Sandton
+                  Built-in Cupboards
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600 mb-4">
-                  Custom storage solutions for luxury Sandton properties. Walk-in wardrobes, studies, entertainment
-                  units.
+                  Custom luxury storage solutions for Sandton properties. Walk-in wardrobes, studies, entertainment units.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
@@ -234,7 +440,7 @@ export default function SandtonPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R15,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/built-in-cupboards">View Details</Link>
+                    <Link href="/built-in-cupboards">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -244,7 +450,7 @@ export default function SandtonPage() {
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
                   <Star className="w-6 h-6 text-amber-600 mr-2" />
-                  Granite Installation Sandton
+                  Granite Installation
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -268,7 +474,7 @@ export default function SandtonPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R8,500</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/quartz-granite">View Details</Link>
+                    <Link href="/quartz-granite">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -277,14 +483,13 @@ export default function SandtonPage() {
             <Card className="hover:shadow-xl transition-shadow">
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <Star className="w-6 h-6 text-amber-600 mr-2" />
-                  Premium Plumbing Sandton
+                  <Clock className="w-6 h-6 text-amber-600 mr-2" />
+                  Premium Plumbing
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600 mb-4">
-                  Luxury plumbing services for Sandton's premium properties. Emergency repairs, installations, and
-                  maintenance.
+                  Luxury plumbing services for Sandton's premium properties. Emergency repairs, installations, and maintenance.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
@@ -303,9 +508,244 @@ export default function SandtonPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R400/hour</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/plumbing">View Details</Link>
+                    <Link href="/plumbing">View Details</Link>
                   </Button>
                 </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Customer Reviews Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              What Sandton Clients Say About Us
+            </h2>
+            <p className="text-xl text-slate-600">
+              ★★★★★ 5.0 Rating - 189+ verified reviews from Sandton clients
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
+                  "Best carpenter and plumber in Sandton! Excellent work on our kitchen renovation. Professional team, beautiful results, and completed on time. Highly recommend for Hyde Park homes."
+                </p>
+                <p className="font-semibold text-slate-800">Sarah M.</p>
+                <p className="text-sm text-slate-600">Hyde Park, Sandton</p>
+                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - December 2025</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
+                  "Outstanding craftsmanship on our Rosebank apartment. The custom built-in cupboards are exactly what we wanted. Fast, professional, and exceptional quality work."
+                </p>
+                <p className="font-semibold text-slate-800">James T.</p>
+                <p className="text-sm text-slate-600">Rosebank, Sandton</p>
+                <p className="text-xs text-slate-500 mt-1">Built-in Cupboards - January 2026</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
+                  "Premium granite installation in our Illovo home. The quartz countertops are stunning! Professional service from consultation to completion. Worth every cent."
+                </p>
+                <p className="font-semibold text-slate-800">Rebecca L.</p>
+                <p className="text-sm text-slate-600">Illovo, Sandton</p>
+                <p className="text-xs text-slate-500 mt-1">Granite Countertops - November 2025</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
+                  "Emergency plumbing service at midnight in Morningside - arrived within 30 minutes! Fixed the burst geyser professionally and efficiently. Excellent emergency service."
+                </p>
+                <p className="font-semibold text-slate-800">David K.</p>
+                <p className="text-sm text-slate-600">Morningside, Sandton</p>
+                <p className="text-xs text-slate-500 mt-1">Emergency Plumbing - December 2025</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
+                  "Transformed our Melrose kitchen from dated to designer. The attention to detail is impressive. Professional, clean, and the final result exceeds expectations!"
+                </p>
+                <p className="font-semibold text-slate-800">Michelle P.</p>
+                <p className="text-sm text-slate-600">Melrose, Sandton</p>
+                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - January 2026</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
+                  "Excellent service for our Rivonia office renovation. Built custom reception desk and storage units. Professional, punctual, and the quality is top-tier."
+                </p>
+                <p className="font-semibold text-slate-800">Mark R.</p>
+                <p className="text-sm text-slate-600">Rivonia, Sandton</p>
+                <p className="text-xs text-slate-500 mt-1">Office Carpentry - December 2025</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-8">
+            <Button asChild variant="outline" size="lg">
+              <Link href="/https://share.google/QM1ip2xNSRFczmk3t">
+                Read All  Reviews
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              Frequently Asked Questions - Carpenter & Plumber Sandton
+            </h2>
+            <p className="text-xl text-slate-600">
+              Common questions about our carpentry and plumbing services in Sandton
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  How much does a kitchen renovation cost in Sandton?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  Kitchen renovation costs in Sandton typically range from R25,000 to R120,000 depending on size, materials, and finishes. A standard kitchen with quality cabinets and granite countertops starts around R25,000-R45,000. Mid-range luxury kitchens with premium materials cost R50,000-R85,000. High-end designer kitchens with imported cabinetry, marble countertops, and smart technology range from R90,000-R120,000+. We provide free detailed quotes for all Sandton areas including Rosebank, Hyde Park, Illovo, and Melrose.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  Do you offer same-day quotes for carpentry work in Sandton?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  Yes! We provide free same-day quotes for all carpentry and plumbing services throughout Sandton. Call us at 067 601 4490 before 2pm and we can often visit your property the same day. For kitchen renovations, built-in cupboards, or granite installations in areas like Rosebank, Hyde Park, Illovo, Morningside, or Rivonia, we'll assess your project and provide a detailed written quote within 24 hours. Emergency plumbing quotes are provided immediately.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  Which Sandton areas do you serve?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  We serve all areas throughout Sandton and surrounding suburbs. Our main service areas include Rosebank, Hyde Park, Illovo, Melrose, Morningside, Rivonia, Bryanston, Douglasdale, Lonehill, Sunninghill, Paulshof, Woodmead, Sandton CBD, Marlboro, Wynberg, and Atholl. We provide same-day service for emergency plumbing and typically start carpentry projects within 3-5 business days. If you're searching for a "carpenter near me" in Sandton, we're your local luxury carpentry experts.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  Are you licensed and insured to work in Sandton?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  Yes, we are fully licensed and insured to operate throughout Sandton and Johannesburg. Our carpenters and plumbers are qualified tradesmen with relevant certifications and extensive experience working on luxury properties. We carry comprehensive public liability insurance and all our work comes with a 5-year warranty. We comply with all South African building regulations and SANS plumbing standards. You can request proof of our licenses and insurance certificates at any time.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  How long does a typical kitchen renovation take in Sandton?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  Most kitchen renovations in Sandton take 2-4 weeks from start to completion. A basic cabinet replacement takes 5-7 days. Complete kitchen renovations with new cabinets, countertops, plumbing, and electrical work typically take 2-3 weeks. Large or luxury kitchens with imported materials and custom features may take 3-5 weeks. We offer fast-track options for executives who need quicker completion. We provide a detailed timeline with your quote and keep you updated throughout the project.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  Do you offer 24/7 emergency plumbing in Sandton?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  Yes! We offer 24/7 emergency plumbing services throughout all Sandton areas. Whether you're in Rosebank, Hyde Park, Illovo, Morningside, or any other Sandton suburb, our emergency plumbers can respond quickly to burst pipes, blocked drains, geyser failures, and other urgent plumbing issues. Call 067 601 4490 anytime for immediate assistance. We aim to arrive within 45 minutes for true emergencies in the greater Sandton area.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  What types of built-in cupboards do you install in Sandton?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  We install all types of luxury custom built-in cupboards for Sandton homes and offices including walk-in wardrobes, dressing rooms, bedroom closets, linen cupboards, executive home office units, study desks with shelving, entertainment centers, TV units, wine cellars, laundry room storage, garage cabinets, and pantry cupboards. All cupboards are custom-designed to maximize your space and match your property's luxury aesthetic. We use premium materials including imported melamine, real wood veneers, and designer finishes. Prices for built-in cupboards in Sandton start from R15,000 depending on size and specifications.
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -366,7 +806,7 @@ export default function SandtonPage() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Sandton Property?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
             Join 500+ satisfied Sandton clients. Get your FREE quote today from Sandton's #1 rated carpenter and
-            plumber. Licensed, insured, and guaranteed.
+            plumber. Licensed, insured, and guaranteed. Serving all Sandton areas including Rosebank, Hyde Park, Illovo, Melrose, Morningside & more.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
@@ -395,8 +835,7 @@ export default function SandtonPage() {
 
           <div className="mt-8 text-center">
             <p className="text-lg opacity-90">
-              ⭐⭐⭐⭐⭐ "Best carpenter and plumber in Sandton! Excellent work on our kitchen renovation." - Sarah M.,
-              Hyde Park
+              ⭐⭐⭐⭐⭐ "Best carpenter and plumber in Sandton! Excellent work on our kitchen renovation." - Sarah M., Hyde Park
             </p>
           </div>
         </div>

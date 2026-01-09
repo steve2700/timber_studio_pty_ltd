@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Phone, ArrowRight, Building } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Ceiling Installation Edenvale 2025 | Professional Ceiling Services",
+  title: "Ceiling Installation Edenvale 2026 | Professional Ceiling Services",
   description:
     "Professional ceiling installation in Edenvale. Suspended ceilings, acoustic ceilings, false ceilings. Residential & commercial. 5-star rated. Free quotes. Call 067 601 4490.",
   keywords:

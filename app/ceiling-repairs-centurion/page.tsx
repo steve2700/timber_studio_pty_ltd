@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Phone, AlertCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Ceiling Repairs Centurion 2025 | Emergency Ceiling Repair Services",
+  title: "Ceiling Repairs Centurion 2026 | Emergency Ceiling Repair Services",
   description:
     "Professional ceiling repair services in Centurion. Water damage, cracks, sagging ceilings. Emergency repairs available. 5-star rated. Free quotes. Call 067 601 4490.",
   keywords:

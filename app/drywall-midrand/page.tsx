@@ -7,13 +7,13 @@ import { Badge } from "@/components/ui/badge"
 import { Phone, Star, CheckCircle, ArrowRight, Shield, Award, Clock, Users, MapPin, Wrench, Home } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Drywall Installation Midrand 2025 | Professional Drywalling Services",
+  title: "Drywall Installation Midrand 2026 | Professional Drywalling Services",
   description:
     "Expert drywall installation in Midrand. Residential & commercial drywalling, plasterboard walls, ceiling installation. 5-star service, 24-month warranty. Free quotes. Call 067 601 4490.",
   keywords:
     "drywall installation Midrand, drywalling contractors Midrand, plasterboard installation Midrand, drywall repair Midrand, ceiling installation Midrand, residential drywall Midrand, commercial drywalling Midrand, drywall finishing Midrand, plasterboard walls Midrand, drywall services Midrand, professional drywalling Midrand, drywall contractors near me",
   openGraph: {
-    title: "Drywall Installation Midrand 2025 | Professional Drywalling Services",
+    title: "Drywall Installation Midrand 2026 | Professional Drywalling Services",
     description:
       "Expert drywall installation in Midrand. Residential & commercial services with 5-star rating and 24-month warranty.",
     images: [{ url: "/drywall-contractor.jpg", width: 1200, height: 630 }],

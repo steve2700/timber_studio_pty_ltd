@@ -5,13 +5,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Clock, Shield, Star, Phone, MapPin, Award, Users } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Ceiling Repairs Pretoria | Expert Ceiling Repair Services 2025",
+  title: "Ceiling Repairs Pretoria | Expert Ceiling Repair Services 2026",
   description:
     "★★★★★ Professional ceiling repair services in Pretoria. Expert repairs for cracks, water damage, sagging ceilings, gypsum repairs & more. 24/7 emergency service. 500+ repairs completed. Free quotes. Licensed & insured. Call 067 601 4490!",
   keywords:
-    "ceiling repairs Pretoria, ceiling repair services Pretoria, ceiling crack repair Pretoria, water damaged ceiling repair Pretoria, sagging ceiling repair Pretoria, gypsum ceiling repair Pretoria, ceiling contractors Pretoria 2025, ceiling repair cost Pretoria, emergency ceiling repair Pretoria, professional ceiling repair Pretoria, ceiling board replacement Pretoria, ceiling texture matching Pretoria",
+    "ceiling repairs Pretoria, ceiling repair services Pretoria, ceiling crack repair Pretoria, water damaged ceiling repair Pretoria, sagging ceiling repair Pretoria, gypsum ceiling repair Pretoria, ceiling contractors Pretoria 2026, ceiling repair cost Pretoria, emergency ceiling repair Pretoria, professional ceiling repair Pretoria, ceiling board replacement Pretoria, ceiling texture matching Pretoria",
   openGraph: {
-    title: "Ceiling Repairs Pretoria | Expert Ceiling Repair Services 2025",
+    title: "Ceiling Repairs Pretoria | Expert Ceiling Repair Services 2026",
     description:
       "Professional ceiling repair services in Pretoria. Expert repairs for cracks, water damage, sagging ceilings & more. 24/7 emergency service.",
     url: "https://granitecarpentry.co.za/ceiling-repairs-pretoria",

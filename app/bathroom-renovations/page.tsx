@@ -19,7 +19,7 @@ import {
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Complete Bathroom Renovations Johannesburg 2025 | Professional Design & Installation",
+  title: "★★★★★ Complete Bathroom Renovations Johannesburg 2026 | Professional Design & Installation",
   description:
     "★★★★★ Professional bathroom renovations in Johannesburg, Sandton & Pretoria. Complete bathroom makeovers. Quality workmanship. Free quotes. 20+ years experience. Call 067 601 4490.",
   keywords:
@@ -528,12 +528,12 @@ export default function BathroomRenovationsPage() {
         </div>
       </section>
 
-      {/* Design Trends 2025 */}
+      {/* Design Trends 2026 */}
       <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-slate-900">
-              Bathroom Renovation Ideas & Trends 2025
+              Bathroom Renovation Ideas & Trends 2026
             </h2>
             <p className="text-center text-slate-600 mb-12">
               Stay ahead with the latest design trends and smart bathroom features

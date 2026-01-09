@@ -5,13 +5,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Phone, Clock, Shield, Award, MapPin, Star } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Drywall Installation Pretoria | Professional Drywalling Services 2025",
+  title: "Drywall Installation Pretoria | Professional Drywalling Services 2026",
   description:
     "Expert drywall installation in Pretoria. Residential & commercial drywalling, partitions, ceilings. Licensed contractors, 5-year warranty. Call 067 601 4490 free quotes.",
   keywords:
     "drywall Pretoria, drywalling Pretoria, drywall installation Pretoria, drywall contractors Pretoria, partition walls Pretoria, gypsum board installation",
   openGraph: {
-    title: "Drywall Installation Pretoria | Professional Drywalling Services 2025",
+    title: "Drywall Installation Pretoria | Professional Drywalling Services 2026",
     description:
       "Expert drywall installation in Pretoria. Residential & commercial drywalling, partitions, ceilings. Licensed contractors, 5-year warranty.",
     url: "https://granitecarpentry.co.za/drywall-pretoria",

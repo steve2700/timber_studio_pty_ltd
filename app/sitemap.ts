@@ -92,6 +92,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/areas/westonaria",
     "/areas/bedfordview",
   ]
+  //carpenter pages suburbs there make money 
+  const carpenterPages = [
+  "/carpenter-rosebank",
+  "/carpenter-woodmead",
+  "/carpenter-hyde-park",
+  "/carpenter-illovo",
+  "/carpenter-morningside",
+  "/carpenter-rivonia",
+  "/carpenter-bryanston",
+  "/carpenter-sunninghill",
+  "/carpenter-sandhurst",
+]
+
 
   // Blog pages
   const blogPages = [
@@ -100,7 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/built-in-cupboard-design-ideas",
   ]
 
-  const allPages = [...staticPages, ...servicePages, ...doorPages, ...drywallLocationPages, ...areaPages, ...blogPages]
+  const allPages = [...staticPages, ...servicePages, ...doorPages, ...drywallLocationPages, ...areaPages, ...carpenterPages,...blogPages]
 
   return allPages.map((page) => ({
     url: `${baseUrl}${page}`,

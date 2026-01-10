@@ -55,13 +55,6 @@ const schemaMarkup = {
         "longitude": "28.2293"
       },
       "url": "https://granitecarpentry.co.za/areas/pretoria",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "247",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "areaServed": [
         "Pretoria", "Brooklyn", "Hatfield", "Menlyn", "Waterkloof", "Centurion", 
         "Lynnwood", "Groenkloof", "Faerie Glen", "Sunnyside", "Tshwane"

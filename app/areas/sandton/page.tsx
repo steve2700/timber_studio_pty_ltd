@@ -232,11 +232,11 @@ export default function SandtonPage() {
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
               Kitchen Renovation Sandton - Luxury Kitchen Transformations
             </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Transform your Sandton kitchen with premium materials and expert craftsmanship. Serving Rosebank, Hyde Park, Illovo, and all Sandton suburbs with luxury kitchen renovation services.
-            </p>
+            <p className="text-sm text-slate-600 mt-4">
+            Also serving nearby <Link href="/carpenter-rosebank" className="text-amber-600 hover:underline">Rosebank</Link>, <Link href="/carpenter-hyde-park" className="text-amber-600 hover:underline">Hyde Park</Link>, <Link href="/carpenter-illovo" className="text-amber-600 hover:underline">Illovo</Link>, and <Link href="/carpenter-morningside" className="text-amber-600 hover:underline">Morningside</Link>
+           </p>
           </div>
-
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
@@ -334,19 +334,19 @@ export default function SandtonPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {[
-              { name: "Rosebank", popular: true },
-              { name: "Hyde Park", popular: true },
-              { name: "Illovo", popular: true },
-              { name: "Melrose", popular: true },
-              { name: "Morningside", popular: true },
-              { name: "Rivonia", popular: true },
-              { name: "Bryanston", popular: true },
-              { name: "Sunninghill", popular: true },
+              { name: "Rosebank", popular: true, link: "/carpenter-rosebank" },
+              { name: "Hyde Park", popular: true, link: "/carpenter-hyde-park" },
+              { name: "Illovo", popular: true, link: "/carpenter-illovo" },
+              { name: "Morningside", popular: true, link: "/carpenter-morningside" },
+              { name: "Rivonia", popular: true, link: "/carpenter-rivonia" },
+              { name: "Bryanston", popular: true, link: "/carpenter-bryanston" },
+              { name: "Sunninghill", popular: true, link: "/carpenter-sunninghill" },
               { name: "Sandton CBD", popular: false },
+              { name: "Sandhurst", popular: false, link: "/carpenter-sandhurst" },
               { name: "Douglasdale", popular: false },
               { name: "Lonehill", popular: false },
               { name: "Paulshof", popular: false },
-              { name: "Woodmead", popular: false },
+              { name: "Woodmead", popular: false, link: "/carpenter-woodmead" },
               { name: "Marlboro", popular: false },
               { name: "Wynberg", popular: false },
               { name: "Atholl", popular: false },
@@ -637,6 +637,50 @@ export default function SandtonPage() {
           </div>
         </div>
       </section>
+      
+      {/* Nearby Sandton Suburbs */}
+      <section className="py-12 bg-white border-t border-slate-200">
+      div className="container mx-auto">
+      <div className="text-center mb-8">
+      <h3 className="text-2xl font-bold text-slate-800 mb-3">
+        Explore Our Carpentry Services in Nearby Sandton Suburbs
+      </h3>
+      <p className="text-slate-600">
+        Click to view dedicated pages for each suburb with local pricing, testimonials, and projects
+      </p>
+    </div>
+    
+    <div className="flex flex-wrap justify-center gap-3">
+      <Link href="/carpenter-rosebank" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+        Carpenter Rosebank →
+      </Link>
+      <Link href="/carpenter-woodmead" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+        Carpenter Woodmead →
+      </Link>
+      <Link href="/carpenter-hyde-park" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+        Carpenter Hyde Park →
+      </Link>
+      <Link href="/carpenter-illovo" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+        Carpenter Illovo →
+      </Link>
+      <Link href="/carpenter-morningside" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+        Carpenter Morningside →
+      </Link>
+      <Link href="/carpenter-rivonia" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+        Carpenter Rivonia →
+      </Link>
+      <Link href="/carpenter-bryanston" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+        Carpenter Bryanston →
+      </Link>
+      <Link href="/carpenter-sunninghill" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+        Carpenter Sunninghill →
+      </Link>
+      <Link href="/carpenter-sandhurst" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+        Carpenter Sandhurst →
+      </Link>
+    </div>
+  </div>
+</section>
 
       {/* FAQ Section */}
       <section className="py-16 bg-slate-50">
@@ -688,7 +732,7 @@ export default function SandtonPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700">
-                  We serve all areas throughout Sandton and surrounding suburbs. Our main service areas include Rosebank, Hyde Park, Illovo, Melrose, Morningside, Rivonia, Bryanston, Douglasdale, Lonehill, Sunninghill, Paulshof, Woodmead, Sandton CBD, Marlboro, Wynberg, and Atholl. We provide same-day service for emergency plumbing and typically start carpentry projects within 3-5 business days. If you're searching for a "carpenter near me" in Sandton, we're your local luxury carpentry experts.
+                  We serve all areas throughout Sandton and surrounding suburbs including <Link href="/carpenter-rosebank" className="text-amber-600 hover:underline">Rosebank</Link>, <Link href="/carpenter-hyde-park" className="text-amber-600 hover:underline">Hyde Park</Link>, <Link href="/carpenter-illovo" className="text-amber-600 hover:underline">Illovo</Link>, <Link href="/carpenter-morningside" className="text-amber-600 hover:underline">Morningside</Link>, <Link href="/carpenter-rivonia" className="text-amber-600 hover:underline">Rivonia</Link>, <Link href="/carpenter-bryanston" className="text-amber-600 hover:underline">Bryanston</Link>, and more...
                 </p>
               </CardContent>
             </Card>
@@ -780,6 +824,20 @@ export default function SandtonPage() {
                 Fully licensed carpenter and plumber with comprehensive insurance coverage
               </p>
             </div>
+            <div className="mt-6 text-sm opacity-80">
+            <p className="mb-2">Carpenter services in Sandton suburbs:</p>
+           <p>
+           <Link href="/carpenter-rosebank" className="underline hover:text-amber-200">Rosebank</Link> | 
+           <Link href="/carpenter-woodmead" className="underline hover:text-amber-200">Woodmead</Link> |
+           <Link href="/carpenter-hyde-park" className="underline hover:text-amber-200">Hyde Park</Link> | 
+           <Link href="/carpenter-illovo" className="underline hover:text-amber-200">Illovo</Link> | 
+           <Link href="/carpenter-morningside" className="underline hover:text-amber-200">Morningside</Link> | 
+          <Link href="/carpenter-rivonia" className="underline hover:text-amber-200">Rivonia</Link> | 
+          <Link href="/carpenter-bryanston" className="underline hover:text-amber-200">Bryanston</Link> | 
+          <Link href="/carpenter-sunninghill" className="underline hover:text-amber-200">Sunninghill</Link> | 
+          <Link href="/carpenter-sandhurst" className="underline hover:text-amber-200">Sandhurst</Link>
+          </p>
+         </div>
 
             <div className="text-center">
               <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">

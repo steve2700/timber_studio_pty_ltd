@@ -698,6 +698,7 @@ export default function CarpenterMorningSidePage() {
               </Link>
               <Link href="/carpenter-rosebank" className="text-amber-600 hover:underline font-semibold">
                 Carpenter Rosebank
+              </Link>
               <Link href="/carpenter-bryanston" className="text-amber-600 hover:underline font-semibold">
                 Carpenter Bryanston 
               </Link>

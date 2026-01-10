@@ -640,7 +640,7 @@ export default function SandtonPage() {
       
       {/* Nearby Sandton Suburbs */}
       <section className="py-12 bg-white border-t border-slate-200">
-      div className="container mx-auto">
+      <div className="container mx-auto">
       <div className="text-center mb-8">
       <h3 className="text-2xl font-bold text-slate-800 mb-3">
         Explore Our Carpentry Services in Nearby Sandton Suburbs

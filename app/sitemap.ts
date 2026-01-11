@@ -108,9 +108,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Blog pages
   const blogPages = [
-    "/blog/kitchen-renovation-trends-2025",
-    "/blog/choosing-granite-vs-quartz",
-    "/blog/built-in-cupboard-design-ideas",
+    
   ]
 
   const allPages = [...staticPages, ...servicePages, ...doorPages, ...drywallLocationPages, ...areaPages, ...carpenterPages,...blogPages]

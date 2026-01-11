@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Best Security Door Installation Sandton 2025 | Steel Security Doors",
+  title: "★★★★★ Best Security Door Installation Sandton 2026 | Steel Security Doors",
   description: "★★★★★ Professional security door installation in Sandton. Steel security gates, burglar bars, slam-lock doors. Protect your home with certified installations. FREE security assessment.",
   keywords: "security doors Sandton, steel security doors Sandton, burglar bars Sandton, security gates Sandton, slam lock doors, home security Sandton, security door installation, residential security",
   openGraph: {
-    title: "Best Security Door Installation Sandton 2025 | Granite Carpentry",
+    title: "Best Security Door Installation Sandton 2026 | Granite Carpentry",
     description: "Professional security door installation services in Sandton. Steel security gates, burglar bars, and slam-lock doors for maximum protection.",
     url: "https://granitecarpentry.co.za/security-doors-sandton",
     siteName: "Granite Carpentry",

@@ -5,13 +5,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Phone, Mail, MapPin, Star, Award, Shield, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Suspended Ceilings Johannesburg | Professional Ceiling Installation 2025",
+  title: "Suspended Ceilings Johannesburg | Professional Ceiling Installation 2026",
   description:
     "Expert suspended ceiling installation in Johannesburg. Professional drop ceiling contractors offering acoustic tiles, grid systems, and modern ceiling solutions. Free quotes available.",
   keywords:
     "suspended ceilings Johannesburg, drop ceilings Johannesburg, ceiling installation Johannesburg, acoustic ceilings Johannesburg, ceiling contractors Johannesburg, false ceilings Johannesburg",
   openGraph: {
-    title: "Suspended Ceilings Johannesburg | Professional Ceiling Installation 2025",
+    title: "Suspended Ceilings Johannesburg | Professional Ceiling Installation 2026",
     description:
       "Expert suspended ceiling installation in Johannesburg. Professional contractors offering acoustic tiles, grid systems, and modern ceiling solutions.",
     url: "https://granitecarpentry.co.za/suspended-ceilings-johannesburg",

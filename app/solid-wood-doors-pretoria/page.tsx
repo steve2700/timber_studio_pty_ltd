@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Check, Home, Clock, Award, Phone, MapPin, Star } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "★★★★★ Solid Wood Doors Pretoria 2025 | #1 Custom Wooden Door Installation",
+  title: "★★★★★ Solid Wood Doors Pretoria 2026 | #1 Custom Wooden Door Installation",
   description: "★★★★★ #1 solid wood door specialists in Pretoria. Expert craftsmanship in meranti, oak, mahogany & pine doors. 300+ Tshwane installations. FREE quotes & design consultation.",
   openGraph: {
     title: "Solid Wood Doors Pretoria | Custom Wooden Door Installation",

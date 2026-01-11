@@ -5,11 +5,11 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Best Pivot Doors Pretoria 2025 | Premium Installation Services",
+  title: "★★★★★ Best Pivot Doors Pretoria 2026 | Premium Installation Services",
   description: "★★★★★ #1 Pivot Door installation specialists in Pretoria. Custom luxury pivot doors, modern designs, professional installation. 500+ Pretoria projects. FREE quotes. Call 067 601 4490",
   keywords: "pivot doors Pretoria, luxury pivot doors Pretoria, custom pivot doors Pretoria, modern pivot doors Pretoria, pivot door installation Pretoria, oversized pivot doors Pretoria, glass pivot doors Pretoria, steel pivot doors Pretoria, wooden pivot doors Pretoria, pivot door specialists Pretoria, premium pivot doors Pretoria, contemporary pivot doors Pretoria, architectural pivot doors Pretoria, pivot door company Pretoria, pivot door suppliers Pretoria",
   openGraph: {
-    title: "★★★★★ Best Pivot Doors Pretoria 2025 | Premium Installation Services",
+    title: "★★★★★ Best Pivot Doors Pretoria 2026 | Premium Installation Services",
     description: "★★★★★ #1 Pivot Door installation specialists in Pretoria. Custom luxury pivot doors, modern designs, professional installation. 500+ Pretoria projects.",
     url: "https://granitecarpentry.co.za/pivot-doors-pretoria",
     siteName: "Granite Carpentry",

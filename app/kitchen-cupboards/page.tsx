@@ -19,13 +19,13 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Custom Kitchen Cupboards Johannesburg | Professional Cabinet Installation 2025",
+  title: "Custom Kitchen Cupboards Johannesburg | Professional Cabinet Installation 2026",
   description:
     "Custom kitchen cupboards in Johannesburg, Sandton & Pretoria. Modern & traditional designs. Expert installation. Free quotes. Transform your kitchen today with quality cabinets from R35,000.",
   keywords:
     "kitchen cupboards johannesburg, kitchen cabinets sandton, custom kitchen cupboards pretoria, kitchen cabinets installation johannesburg, kitchen cupboard prices johannesburg, shaker kitchen cupboards, modern kitchen cabinets gauteng, kitchen cupboard manufacturers johannesburg, kitchen renovation cupboards, affordable kitchen cupboards",
   openGraph: {
-    title: "Custom Kitchen Cupboards Johannesburg | Professional Cabinet Installation 2025",
+    title: "Custom Kitchen Cupboards Johannesburg | Professional Cabinet Installation 2026",
     description:
       "Custom kitchen cupboards in Johannesburg. Modern & traditional designs. Expert installation. Transform your kitchen with quality cabinets from Granite Carpentry.",
     images: [{ url: "/carpenter-johannesburg-installing-kitchen-cupboards.jpg", width: 1200, height: 630 }],
@@ -105,7 +105,7 @@ const kitchenStyles = [
       "Blend of modern and traditional",
       "Simple door profiles",
       "Neutral color palettes",
-      "Most popular for 2025",
+      "Most popular for 2026",
     ],
   },
 ]
@@ -216,7 +216,7 @@ const faqs = [
   {
     question: "What's the most popular kitchen style right now?",
     answer:
-      "Shaker-style in grey or white remains most popular in Johannesburg, with navy and two-tone kitchens trending strongly for 2025. Handleless modern designs are also increasingly popular for contemporary homes.",
+      "Shaker-style in grey or white remains most popular in Johannesburg, with navy and two-tone kitchens trending strongly for 2026. Handleless modern designs are also increasingly popular for contemporary homes.",
   },
   {
     question: "Do you install countertops too?",
@@ -432,7 +432,7 @@ export default function KitchenCupboardsPage() {
             </div>
 
             <div className="prose prose-lg max-w-none text-slate-700 space-y-6">
-              <h3 className="text-2xl font-bold text-slate-900">Popular Kitchen Cupboard Colors for 2025</h3>
+              <h3 className="text-2xl font-bold text-slate-900">Popular Kitchen Cupboard Colors for 2026</h3>
               <ul className="grid md:grid-cols-2 gap-4">
                 <li>
                   <strong>White/Off-White:</strong> Timeless, bright, makes spaces feel larger

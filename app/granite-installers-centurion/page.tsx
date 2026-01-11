@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Expert Granite Installers Centurion 2025 | #1 Professional Installation",
+  title: "★★★★★ Expert Granite Installers Centurion 2026 | #1 Professional Installation",
   description:
     "★★★★★ #1 professional granite installers in Centurion. Expert countertop installation, supply & fitting. Serving all Centurion suburbs. Free quotes. Call 067 601 4490!",
   openGraph: {

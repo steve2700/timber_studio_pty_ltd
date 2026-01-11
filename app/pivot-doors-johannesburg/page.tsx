@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Pivot Doors Johannesburg | Custom Installation 2025 | Granite Carpentry",
+  title: "Pivot Doors Johannesburg | Custom Installation 2026 | Granite Carpentry",
   description: "Premium pivot door installation in Johannesburg. Modern architectural doors, custom designs, expert fitting. 15+ years experience. Free quotes. Call 067 601 4490",
   keywords: "pivot doors Johannesburg, pivot door installation Johannesburg, modern doors JHB, architectural doors Johannesburg, custom pivot doors, door installation Johannesburg",
   openGraph: {

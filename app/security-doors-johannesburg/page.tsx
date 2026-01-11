@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Check, Shield, Clock, Award, Phone, MapPin, Star } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "★★★★★ Security Doors Johannesburg 2025 | #1 Professional Installation",
+  title: "★★★★★ Security Doors Johannesburg 2026 | #1 Professional Installation",
   description: "★★★★★ #1 security door specialists in Johannesburg. Expert installation of steel security doors, burglar bars & access control. 500+ Gauteng installations. FREE security assessment & quotes.",
   openGraph: {
     title: "Security Doors Johannesburg | Professional Installation",

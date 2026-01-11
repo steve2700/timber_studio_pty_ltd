@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Phone, Mail, MapPin, Clock, CheckCircle, ArrowRight, Package } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Granite Supply & Installation Johannesburg | Premium Stone Suppliers 2025",
+  title: "Granite Supply & Installation Johannesburg | Premium Stone Suppliers 2026",
   description:
     "Complete granite supply and installation services in Johannesburg. Import & local granite slabs, expert fabrication, professional installation from R900/m². Free quotes & delivery available.",
   keywords:
@@ -273,7 +273,7 @@ export default function GraniteSupplyAndInstallationPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-              Popular Granite Colors & Patterns 2025
+              Popular Granite Colors & Patterns 2026
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Trending granite selections for Johannesburg homes and businesses. Each slab features unique natural

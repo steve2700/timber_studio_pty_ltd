@@ -1,21 +1,21 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Gem } from 'lucide-react'
+import { CheckCircle, ArrowRight, Phone, Star, MapPin, Award, Users, Clock, Shield, Gem, Building2, MessageCircle, Home } from 'lucide-react'
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title:
-    "★★★★★ Best Carpenter & Plumber Bedfordview 2025 | #1 Kitchen Renovations, Built-in Cupboards & Plumbing",
+  title: "Best Carpenter Bedfordview 2026 | Kitchen Renovations & Built-in Cupboards | Free Quote",
   description:
-    "★★★★★ #1 carpenter & plumber in Bedfordview 2025. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing. 600+ upmarket projects. FREE quotes. Call 067 601 4490.",
+    "★★★★★ #1 Carpenter & Plumber in Bedfordview. Expert kitchen renovations, luxury built-in cupboards, Caesarstone installations & 24/7 emergency plumbing. 600+ projects. Licensed & insured. Call 067 601 4490",
   keywords:
-    "best carpenter Bedfordview, plumber Bedfordview, kitchen renovation Bedfordview, built-in cupboards Bedfordview, granite installation Bedfordview, luxury plumbing Bedfordview, carpenter near me Bedfordview, Bedfordview kitchen cabinets, Edenvale carpenter, Epsom Downs plumber, Lethabong carpenter, emergency plumber Bedfordview",
+    "carpenter Bedfordview, kitchen renovation Bedfordview, built-in cupboards Bedfordview, plumber Bedfordview, granite installation Bedfordview, Caesarstone Bedfordview, carpenter Edenvale, emergency plumber Bedfordview, carpenter near me Bedfordview",
   openGraph: {
-    title: "★★★★★ Best Carpenter & Plumber Bedfordview 2025 | Premium Services",
+    title: "Best Carpenter Bedfordview 2026 | Kitchen Renovations & Built-in Cupboards",
     description:
-      "★★★★★ #1 carpenter & plumber in Bedfordview. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 600+ upmarket projects. FREE quotes.",
+      "★★★★★ #1 Carpenter & Plumber in Bedfordview. Expert kitchen renovations, luxury built-in cupboards & 24/7 emergency plumbing. Free quotes. Call 067 601 4490",
     url: "https://granitecarpentry.co.za/areas/bedfordview",
     siteName: "Granite Carpentry",
     images: [
@@ -23,292 +23,680 @@ export const metadata: Metadata = {
         url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
         width: 1200,
         height: 630,
-        alt: "Best Carpenter & Plumber Bedfordview - Granite Carpentry",
+        alt: "Best Carpenter Bedfordview - Kitchen Renovation & Built-in Cupboards",
       },
     ],
     locale: "en_ZA",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "★★★★★ Best Carpenter & Plumber Bedfordview 2025 | Premium Services",
-    description:
-      "★★★★★ #1 carpenter & plumber in Bedfordview. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 600+ upmarket projects. FREE quotes.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
   },
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/bedfordview",
   },
 }
 
-export default function BedfordviewPage() {
-  const faqs = [
+// JSON-LD Schema Markup
+const schemaMarkup = {
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      question: "What areas in Bedfordview do you service?",
-      answer:
-        "We provide comprehensive carpentry and plumbing services throughout Bedfordview and surrounding areas including Edenvale, Epsom Downs, Lethabong, Germiston, Kempton Park, and Alberton. We serve both residential and upmarket properties in the East Rand region.",
+      "@type": "LocalBusiness",
+      "@id": "https://granitecarpentry.co.za/#localbusiness-bedfordview",
+      "name": "Granite Carpentry - Bedfordview Carpenter & Plumber",
+      "image": "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+      "telephone": "+27676014490",
+      "priceRange": "R450-R85000",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bedfordview",
+        "addressRegion": "Gauteng",
+        "addressCountry": "ZA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-26.1755",
+        "longitude": "28.1358"
+      },
+      "url": "https://granitecarpentry.co.za/areas/bedfordview",
+      "areaServed": [
+        "Bedfordview", "Edenvale", "Epsom Downs", "Lethabong", "Germiston",
+        "Kempton Park", "Alberton", "Brakpan"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Premium Carpentry & Plumbing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Kitchen Renovation Bedfordview",
+              "description": "Premium kitchen renovations with Caesarstone and luxury finishes",
+              "provider": {
+                "@id": "https://granitecarpentry.co.za/#localbusiness-bedfordview"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Built-in Cupboards Bedfordview",
+              "description": "Custom luxury storage solutions for Bedfordview homes",
+              "provider": {
+                "@id": "https://granitecarpentry.co.za/#localbusiness-bedfordview"
+              }
+            }
+          }
+        ]
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "14:00"
+        }
+      ]
     },
     {
-      question: "How long does a typical kitchen renovation take in Bedfordview?",
-      answer:
-        "Kitchen renovation timelines vary based on scope. Small to medium renovations typically take 2-4 weeks, while comprehensive luxury kitchen makeovers can take 4-8 weeks. We provide detailed project timelines upfront and maintain flexible scheduling to minimize disruption to your Bedfordview home.",
-    },
-    {
-      question: "Do you offer emergency plumbing services in Bedfordview?",
-      answer:
-        "Yes! We provide 24/7 emergency plumbing services throughout Bedfordview. Burst pipes, leaks, and urgent repairs are handled promptly. Call 067 601 4490 for immediate assistance. Emergency call-out fees apply after hours.",
-    },
-    {
-      question: "What premium materials do you use for kitchen countertops?",
-      answer:
-        "We exclusively use top-quality materials including Caesarstone, Silestone, natural granite, and marble. Each material is sourced from trusted suppliers ensuring durability, aesthetics, and value. We provide samples and guidance to help you select the perfect finish for your Bedfordview kitchen.",
-    },
-    {
-      question: "Is your work in Bedfordview guaranteed?",
-      answer:
-        "Absolutely. All carpentry and plumbing work is backed by our comprehensive 5-year warranty. We're fully licensed and insured with R2 million public liability coverage, ensuring complete peace of mind on your investment.",
-    },
-    {
-      question: "How much do custom built-in cupboards cost in Bedfordview?",
-      answer:
-        "Custom built-in cupboards start from R18,500 depending on size, materials, and complexity. Walk-in wardrobes and luxury storage solutions range from R25,000 to R85,000+. We provide free detailed quotes after assessing your specific requirements.",
-    },
-    {
-      question: "Do you handle both new installations and repairs?",
-      answer:
-        "Yes, we specialize in both new installations and repairs. From minor plumbing fixes to complete renovations, our Bedfordview team handles all carpentry and plumbing needs for residential and upmarket properties.",
-    },
-    {
-      question: "What makes you the best choice for Bedfordview homeowners?",
-      answer:
-        "We combine 15+ years of experience, 600+ completed projects, premium materials only, 5-year warranty, 24/7 emergency service, and fully licensed/insured credentials. Our Bedfordview team understands local property styles and delivers exceptional craftsmanship consistently.",
-    },
+      "@type": "BreadcrumbList",
+      "@id": "https://granitecarpentry.co.za/#breadcrumb-bedfordview",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://granitecarpentry.co.za"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://granitecarpentry.co.za/areas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Bedfordview Carpenter & Plumber"
+        }
+      ]
+    }
   ]
+}
 
+export default function BedfordviewPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+      />
+
+      {/* Breadcrumb Navigation */}
+      <section className="bg-slate-50 py-4">
+        <div className="container mx-auto px-4">
+          <nav className="flex items-center text-sm text-slate-600">
+            <Link href="/" className="hover:text-amber-600 flex items-center">
+              <Home className="w-4 h-4 mr-1" />
+              Home
+            </Link>
+            <span className="mx-2">/</span>
+            <Link href="/areas" className="hover:text-amber-600">
+              Areas
+            </Link>
+            <span className="mx-2">/</span>
+            <span className="text-slate-900 font-medium">Carpenter Bedfordview</span>
+          </nav>
+        </div>
+      </section>
+
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-slate-900 via-slate-800 to-amber-900 text-white py-20">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-white py-16 sm:py-20 md:py-24">
+        <div className="absolute inset-0 bg-black/40" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-5xl mx-auto text-center">
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <MapPin className="w-6 h-6 text-amber-400" />
-              <Badge variant="secondary" className="bg-amber-600/20 text-amber-200 border-amber-400/30">
-                ★★★★★ #1 Carpenter & Plumber Bedfordview
-              </Badge>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div>
+              <div className="flex items-center mb-4">
+                <MapPin className="w-5 h-5 text-amber-400 mr-2" />
+                <Badge variant="secondary" className="bg-amber-600/20 text-amber-100 border-amber-300">
+                  Bedfordview's #1 Carpenter & Plumber
+                </Badge>
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Best <span className="text-amber-400">Carpenter & Plumber</span> in{" "}
+                <span className="text-amber-400 underline decoration-amber-500/60">Bedfordview</span>
+              </h1>
+
+              <p className="text-xl sm:text-2xl text-slate-200 mb-8 leading-relaxed">
+                ★★★★★ Rated #1 Carpenter & Plumber in Bedfordview & East Rand. Expert kitchen renovations, luxury built-in cupboards, Caesarstone & granite installations, and 24/7 emergency plumbing. Serving Bedfordview, Edenvale, Epsom Downs, Germiston & all East Rand areas.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4 font-semibold">
+                  <Link href="/contact">
+                    Get FREE Quote Today
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  asChild
+                  className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
+                >
+                  <a href="tel:+27676014490">
+                    <Phone className="mr-2 w-5 h-5" />
+                    Call: 067 601 4490
+                  </a>
+                </Button>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                <div className="flex flex-col items-center">
+                  <Star className="w-6 h-6 text-amber-400 mb-1 fill-current" />
+                  <span className="text-sm font-medium">5.0 Rating</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Shield className="w-6 h-6 text-amber-400 mb-1" />
+                  <span className="text-sm font-medium">Licensed</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Users className="w-6 h-6 text-amber-400 mb-1" />
+                  <span className="text-sm font-medium">600+ Jobs</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Clock className="w-6 h-6 text-amber-400 mb-1" />
+                  <span className="text-sm font-medium">Same Day</span>
+                </div>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Best Carpenter & Plumber
-              <span className="block text-amber-400">Bedfordview 2025</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-slate-200 leading-relaxed">
-              ★★★★★ #1 carpenter & plumber in Bedfordview 2025. Premium kitchen renovations, custom built-in cupboards,
-              granite & Caesarstone installations, and luxury plumbing services for Bedfordview, Edenvale, Epsom Downs,
-              Lethabong, and surrounding East Rand areas. 600+ completed projects with 5-year warranty. FREE quotes,
-              flexible scheduling & 24/7 emergency plumbing.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-              <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-8 py-4">
-                <Link href="/contact">Get Free Quote</Link>
-              </Button>
-              <a
-                href="tel:+27676014490"
-                className="flex items-center gap-2 text-lg hover:text-amber-400 transition-colors"
-              >
-                <Phone className="w-5 h-5" />
-                067 601 4490
-              </a>
-            </div>
-            <div className="flex items-center justify-center gap-6 text-sm flex-wrap">
-              <div className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-amber-400 fill-current" />
-                <span>★★★★★ 5.0 Rating</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Award className="w-5 h-5 text-amber-400" />
-                <span>Licensed & Insured</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Users className="w-5 h-5 text-amber-400" />
-                <span>600+ Projects</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Gem className="w-5 h-5 text-amber-400" />
-                <span>Premium Materials</span>
+
+            <div className="relative">
+              <Image
+                src="/granitecarpentry-logo.png"
+                alt="Best Carpenter Bedfordview - Premium Kitchen Renovation & Built-in Cupboards"
+                width={600}
+                height={500}
+                className="rounded-lg shadow-2xl w-full h-auto"
+                priority
+              />
+              <div className="absolute -bottom-4 -left-4 bg-amber-600 text-white p-4 rounded-lg shadow-lg">
+                <div className="text-2xl font-bold">#1 Rated</div>
+                <div className="text-sm">Bedfordview Carpenter</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-20">
+      {/* Kitchen Renovation Bedfordview - Featured Section */}
+      <section className="py-16 bg-gradient-to-br from-amber-50 to-slate-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-              Premium Carpentry & Plumbing Services in Bedfordview
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              Kitchen Renovation Bedfordview - Premium Kitchen Transformations
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Comprehensive home improvement solutions for Bedfordview residents. From luxury kitchen renovations to
-              emergency plumbing, we deliver exceptional quality and professional service throughout the East Rand.
+              Transform your Bedfordview kitchen with luxury materials and expert craftsmanship. Serving Bedfordview, Edenvale, and all East Rand suburbs with premium kitchen renovation services.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
-                    <Gem className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-800">Kitchen Renovations</h3>
-                    <p className="text-sm text-amber-600">From R85,000</p>
-                  </div>
-                </div>
-                <ul className="space-y-2 text-sm mb-4">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Custom cabinetry & soft-close hinges
+                <h3 className="text-xl font-bold text-slate-800 mb-3">Luxury Kitchen Makeovers</h3>
+                <p className="text-slate-600 mb-4">
+                  High-end kitchen renovations for Bedfordview's upmarket homes with Caesarstone, Silestone, and premium fixtures.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Caesarstone & Silestone countertops
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Granite, Caesarstone & Silestone
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Custom cabinetry with soft-close
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
                     Designer islands & breakfast bars
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Complete luxury makeovers
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow border-2 border-amber-400">
+              <CardContent className="p-6">
+                <Badge className="mb-3 bg-amber-600">Most Popular</Badge>
+                <h3 className="text-xl font-bold text-slate-800 mb-3">Complete Kitchen Renovations</h3>
+                <p className="text-slate-600 mb-4">
+                  Full kitchen transformations with premium materials perfect for Bedfordview family homes.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Granite & quartz installations
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Plumbing & electrical coordination
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
                     Smart storage solutions
                   </li>
                 </ul>
-                <Button asChild className="w-full">
-                  <Link href="/services/kitchen-renovations">View Kitchen Services</Link>
-                </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
+            <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
-                    <Star className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-800">Built-in Cupboards</h3>
-                    <p className="text-sm text-amber-600">From R18,500</p>
-                  </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-3">Kitchen Upgrades</h3>
+                <p className="text-slate-600 mb-4">
+                  Modernize your Bedfordview kitchen with new countertops, cabinets, or islands without full renovation.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Cabinet refacing & replacement
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Countertop installations
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    Flexible payment options
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <p className="text-lg text-slate-700 mb-4 font-semibold">
+              Average Kitchen Renovation Cost in Bedfordview: R85,000 - R250,000
+            </p>
+            <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700">
+              <Link href="/contact">Get Your Free Bedfordview Kitchen Quote</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Bedfordview Areas Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              Carpenter Near Me - Serving All Bedfordview & East Rand Areas
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Professional carpentry & plumbing services throughout Bedfordview and East Rand. Same-day quotes for Edenvale, Germiston, Kempton Park, Alberton and all surrounding areas.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {[
+              { name: "Bedfordview", popular: true },
+              { name: "Edenvale", popular: true },
+              { name: "Epsom Downs", popular: true },
+              { name: "Lethabong", popular: true },
+              { name: "Germiston", popular: true },
+              { name: "Kempton Park", popular: true },
+              { name: "Alberton", popular: false },
+              { name: "Brakpan", popular: false },
+              { name: "Benoni", popular: false },
+              { name: "Boksburg", popular: false },
+              { name: "Springs", popular: false },
+              { name: "Nigel", popular: false },
+            ].map((area) => (
+              <Card key={area.name} className={`text-center hover:shadow-lg transition-all duration-300 hover:scale-105 ${area.popular ? 'border-amber-300 border-2' : ''}`}>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-slate-800">{area.name}</h3>
+                  <p className="text-sm text-slate-600 mt-1">Same Day Service</p>
+                  {area.popular && (
+                    <Badge className="mt-2 bg-amber-600 text-xs">High Demand</Badge>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              Premium Carpentry & Plumbing Services in Bedfordview
+            </h2>
+            <p className="text-xl text-slate-600">
+              Luxury carpentry and plumbing solutions for Bedfordview's finest homes
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Building2 className="w-6 h-6 text-amber-600 mr-2" />
+                  Kitchen Renovations
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Premium kitchen transformations for Bedfordview homes. Caesarstone, Silestone, and luxury finishes.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Custom kitchen cabinets & islands
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Caesarstone & Silestone countertops
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Complete plumbing coordination
+                  </li>
+                </ul>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R85,000</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/kitchen-renovations">View Details</Link>
+                  </Button>
                 </div>
-                <ul className="space-y-2 text-sm mb-4">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Walk-in wardrobes
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Award className="w-6 h-6 text-amber-600 mr-2" />
+                  Built-in Cupboards
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Custom luxury storage solutions for Bedfordview homes. Wardrobes, offices, entertainment units.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Walk-in wardrobes & closets
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Home office storage
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Home office & study units
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
                     Entertainment centers
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Luxury storage solutions
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Premium hardware finishes
-                  </li>
                 </ul>
-                <Button asChild className="w-full">
-                  <Link href="/services/built-in-cupboards">View Cupboard Services</Link>
-                </Button>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R18,500</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/built-in-cupboards">View Details</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
-                    <Award className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-800">Stone Work</h3>
-                    <p className="text-sm text-amber-600">From R850/m²</p>
-                  </div>
-                </div>
-                <ul className="space-y-2 text-sm mb-4">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Caesarstone countertops
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Gem className="w-6 h-6 text-amber-600 mr-2" />
+                  Stone Installations
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Premium Caesarstone, granite & marble installations. Kitchen countertops, bathroom vanities.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Caesarstone & Silestone
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Granite & marble
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Natural granite & marble
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Bathroom vanity tops
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Expert templating
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Custom designs
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Expert templating & installation
                   </li>
                 </ul>
-                <Button asChild className="w-full">
-                  <Link href="/services/quartz-granite">View Stone Services</Link>
-                </Button>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R850/m²</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/quartz-granite">View Details</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-amber-600">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Gem className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-800">Plumbing Services</h3>
-                    <p className="text-sm text-amber-600">From R450/hour</p>
-                  </div>
-                </div>
-                <ul className="space-y-2 text-sm mb-4">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Bathroom installations
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <Clock className="w-6 h-6 text-amber-600 mr-2" />
+                  Premium Plumbing
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Luxury plumbing services for Bedfordview homes. Emergency repairs, installations, and maintenance.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    24/7 emergency plumbing
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Kitchen plumbing
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Bathroom & kitchen plumbing
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Geyser systems
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    24/7 emergency service
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Water filtration systems
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    Geyser installations & repairs
                   </li>
                 </ul>
-                <Button asChild className="w-full">
-                  <Link href="/services/plumbing">View Plumbing Services</Link>
-                </Button>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-amber-600">From R450/hour</span>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/plumbing">View Details</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Customer Reviews Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              What Bedfordview Clients Say About Us
+            </h2>
+            <p className="text-xl text-slate-600">
+              ★★★★★ 5.0 Rating - 120+ verified reviews from Bedfordview & East Rand clients
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
+                  "Fantastic kitchen renovation in Bedfordview. The team was professional, on-time, and the quality is outstanding. Caesarstone countertops look incredible!"
+                </p>
+                <p className="font-semibold text-slate-800">John & Lisa T.</p>
+                <p className="text-sm text-slate-600">Bedfordview</p>
+                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - December 2025</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
+                  "Excellent emergency plumbing service at 2am. The plumber was knowledgeable and fixed the burst pipe quickly. Highly recommend for Edenvale residents!"
+                </p>
+                <p className="font-semibold text-slate-800">Michael W.</p>
+                <p className="text-sm text-slate-600">Edenvale</p>
+                <p className="text-xs text-slate-500 mt-1">Emergency Plumbing - January 2026</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-700 mb-4 italic">
+                  "Built-in wardrobes and storage solutions transformed our Bedfordview home. Perfect craftsmanship, premium materials, and exactly on budget. Truly exceptional work!"
+                </p>
+                <p className="font-semibold text-slate-800">Sarah M.</p>
+                <p className="text-sm text-slate-600">Bedfordview</p>
+                <p className="text-xs text-slate-500 mt-1">Built-in Cupboards - November 2025</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              Frequently Asked Questions - Carpenter & Plumber Bedfordview
+            </h2>
+            <p className="text-xl text-slate-600">
+              Common questions about our carpentry and plumbing services in Bedfordview
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  What areas in Bedfordview do you service?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  We provide comprehensive carpentry and plumbing services throughout Bedfordview and surrounding East Rand areas including <Link href="/areas/edenvale" className="text-amber-600 hover:underline">Edenvale</Link>, Epsom Downs, Lethabong, <Link href="/areas/germiston" className="text-amber-600 hover:underline">Germiston</Link>, <Link href="/areas/kempton-park" className="text-amber-600 hover:underline">Kempton Park</Link>, and <Link href="/areas/alberton" className="text-amber-600 hover:underline">Alberton</Link>. We serve both residential and upmarket properties across the entire East Rand region with same-day quotes.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  How long does a kitchen renovation take in Bedfordview?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  Kitchen renovation timelines in Bedfordview vary based on scope. Small to medium renovations typically take 2-4 weeks, while comprehensive luxury kitchen makeovers can take 4-8 weeks. We provide detailed project timelines upfront and maintain flexible scheduling to minimize disruption to your Bedfordview home. Fast-track options available for urgent projects.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  Do you offer emergency plumbing in Bedfordview?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  Yes! We provide 24/7 emergency plumbing services throughout Bedfordview and all East Rand areas. Burst pipes, leaks, geyser failures, and urgent repairs are handled promptly. Call 067 601 4490 for immediate assistance. We aim to arrive within 60 minutes for genuine emergencies in Bedfordview, Edenvale, and surrounding areas.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  What premium materials do you use for countertops?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  We exclusively use top-quality materials including Caesarstone, Silestone, natural granite, and marble. Each material is sourced from trusted suppliers ensuring durability, aesthetics, and value. We provide samples and expert guidance to help you select the perfect finish for your Bedfordview kitchen. Learn more about our <Link href="/quartz-granite" className="text-amber-600 hover:underline">granite and quartz services</Link>.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  Is your work in Bedfordview guaranteed?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  Absolutely. All carpentry and plumbing work is backed by our comprehensive 5-year warranty. We're fully licensed and insured with R2 million public liability coverage, ensuring complete peace of mind on your investment. We comply with all South African building regulations and SANS plumbing standards.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  How much do built-in cupboards cost in Bedfordview?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  Custom built-in cupboards in Bedfordview start from R18,500 depending on size, materials, and complexity. Walk-in wardrobes and luxury storage solutions range from R25,000 to R85,000+. We provide free detailed quotes after assessing your specific requirements. All cupboards are custom-designed to maximize your space and match your home's style.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-xl">
+                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  Do you handle both new installations and repairs?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-700">
+                  Yes, we specialize in both new installations and repairs. From minor plumbing fixes to complete renovations, our Bedfordview team handles all carpentry and plumbing needs for residential and upmarket properties. We offer same-day service for emergency repairs and flexible scheduling for new installations.
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -316,262 +704,137 @@ export default function BedfordviewPage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">
-              Why Bedfordview Residents Choose Us
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Gem className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-slate-800 mb-2">Local Bedfordview Experts</h3>
-                    <p className="text-slate-600">
-                      Deep expertise serving Bedfordview, Edenvale, Epsom Downs, and surrounding areas. We understand
-                      local property styles and deliver tailored solutions for East Rand homes.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Star className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-slate-800 mb-2">Premium Quality Only</h3>
-                    <p className="text-slate-600">
-                      We exclusively use Caesarstone, Silestone, natural granite, and premium fixtures. Every material
-                      is sourced from trusted suppliers ensuring lasting beauty and durability.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-slate-800 mb-2">Flexible Scheduling</h3>
-                    <p className="text-slate-600">
-                      We offer evenings and weekend scheduling to fit your lifestyle. Professional project management
-                      ensures timely completion without compromising quality.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Shield className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-slate-800 mb-2">5-Year Warranty & Fully Insured</h3>
-                    <p className="text-slate-600">
-                      All work backed by comprehensive 5-year warranty. Licensed and insured with R2 million public
-                      liability coverage for your complete peace of mind.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Coverage Areas */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Service Areas Around Bedfordview</h2>
-            <p className="text-xl text-slate-600 mb-12">
-              We serve Bedfordview and all surrounding East Rand areas including Edenvale, Epsom Downs, Lethabong,
-              Germiston, Kempton Park, and Alberton. Call us for service availability in your specific area.
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Why Bedfordview Chooses Us</h2>
+            <p className="text-xl text-slate-600">
+              The most trusted carpenter and plumber in Bedfordview with 600+ completed projects
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-              <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
-                <h3 className="font-semibold text-slate-800">Bedfordview</h3>
-                <p className="text-sm text-slate-600">Main Hub</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Star className="w-8 h-8 text-amber-600 fill-current" />
               </div>
-              <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
-                <h3 className="font-semibold text-slate-800">Edenvale</h3>
-                <p className="text-sm text-slate-600">Close by</p>
-              </div>
-              <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
-                <h3 className="font-semibold text-slate-800">Epsom Downs</h3>
-                <p className="text-sm text-slate-600">Residential</p>
-              </div>
-              <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
-                <h3 className="font-semibold text-slate-800">Lethabong</h3>
-                <p className="text-sm text-slate-600">Nearby</p>
-              </div>
-              <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
-                <h3 className="font-semibold text-slate-800">Germiston</h3>
-                <p className="text-sm text-slate-600">East Rand</p>
-              </div>
-              <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
-                <h3 className="font-semibold text-slate-800">Kempton Park</h3>
-                <p className="text-sm text-slate-600">Airport Area</p>
-              </div>
-              <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
-                <h3 className="font-semibold text-slate-800">Alberton</h3>
-                <p className="text-sm text-slate-600">South Rand</p>
-              </div>
-              <div className="p-4 bg-slate-50 rounded-lg hover:bg-amber-50 transition-colors">
-                <h3 className="font-semibold text-slate-800">Brakpan</h3>
-                <p className="text-sm text-slate-600">East Rand</p>
-              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">5-Star Rated</h3>
+              <p className="text-slate-600">Consistently rated 5 stars by Bedfordview clients on Google Reviews</p>
             </div>
-            <div className="mt-12 p-6 bg-amber-50 rounded-lg">
-              <h3 className="text-lg font-semibold text-slate-800 mb-4">Also Serving Nearby Areas:</h3>
-              <div className="flex flex-wrap justify-center gap-3">
-                <Link href="/areas/fourways" className="text-amber-600 hover:text-amber-700 font-medium">
-                  Fourways
-                </Link>
-                <span className="text-slate-400">•</span>
-                <Link href="/areas/sandton" className="text-amber-600 hover:text-amber-700 font-medium">
-                  Sandton
-                </Link>
-                <span className="text-slate-400">•</span>
-                <Link href="/areas/randburg" className="text-amber-600 hover:text-amber-700 font-medium">
-                  Randburg
-                </Link>
-                <span className="text-slate-400">•</span>
-                <Link href="/areas/midrand" className="text-amber-600 hover:text-amber-700 font-medium">
-                  Midrand
-                </Link>
-                <span className="text-slate-400">•</span>
-                <Link href="/areas/centurion" className="text-amber-600 hover:text-amber-700 font-medium">
-                  Centurion
-                </Link>
+
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-amber-600" />
               </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Licensed & Insured</h3>
+              <p className="text-slate-600">Fully licensed with R2 million public liability coverage</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Gem className="w-8 h-8 text-amber-600" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Premium Materials</h3>
+              <p className="text-slate-600">Caesarstone, Silestone & premium fixtures only</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-amber-600" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">5-Year Warranty</h3>
+              <p className="text-slate-600">All work backed by comprehensive warranty</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-slate-50">
+      {/* Nearby Areas Links */}
+      <section className="py-12 bg-slate-50 border-t border-slate-200">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Bedfordview Customer Reviews</h2>
-            <div className="flex items-center justify-center gap-2 mb-8">
-              <div className="flex text-amber-400">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 fill-current" />
-                ))}
-              </div>
-              <span className="text-xl font-semibold text-slate-800">5.0 out of 5 stars</span>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex text-amber-400 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-current" />
-                  ))}
-                </div>
-                <p className="text-slate-600 mb-4">
-                  "Fantastic kitchen renovation in Bedfordview. The team was professional, on-time, and the quality is
-                  outstanding. Caesarstone countertops look incredible!"
-                </p>
-                <div className="font-semibold text-slate-800">John & Lisa T.</div>
-                <div className="text-sm text-slate-600">Bedfordview, Johannesburg</div>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex text-amber-400 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-current" />
-                  ))}
-                </div>
-                <p className="text-slate-600 mb-4">
-                  "Excellent emergency plumbing service at 2am. The plumber was knowledgeable and fixed the burst pipe
-                  quickly. Highly recommend for Edenvale residents!"
-                </p>
-                <div className="font-semibold text-slate-800">Michael W.</div>
-                <div className="text-sm text-slate-600">Edenvale, East Rand</div>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex text-amber-400 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-current" />
-                  ))}
-                </div>
-                <p className="text-slate-600 mb-4">
-                  "Built-in wardrobes and storage solutions transformed our Bedfordview home. Perfect craftsmanship,
-                  premium materials, and exactly on budget. Truly exceptional work!"
-                </p>
-                <div className="font-semibold text-slate-800">Sarah M.</div>
-                <div className="text-sm text-slate-600">Bedfordview</div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQs */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-4">
-              FAQs - Carpenter & Plumber Bedfordview
-            </h2>
-            <p className="text-center text-slate-600 mb-12">
-              Got questions about our carpentry and plumbing services in Bedfordview? Here are answers to commonly asked
-              questions.
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-slate-800 mb-3">
+              Explore Our Services in Nearby East Rand Areas
+            </h3>
+            <p className="text-slate-600">
+              Click to view dedicated pages for each area with local pricing, testimonials, and projects
             </p>
-
-            <div className="space-y-6">
-              {faqs.map((faq, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white rounded-lg border border-slate-200 p-6 hover:shadow-md transition-shadow"
-                >
-                  <h3 className="text-xl font-semibold text-slate-800 mb-3">{faq.question}</h3>
-                  <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link href="/areas/edenvale" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+              Carpenter Edenvale →
+            </Link>
+            <Link href="/areas/germiston" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+              Carpenter Germiston →
+            </Link>
+            <Link href="/areas/kempton-park" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+              Carpenter Kempton Park →
+            </Link>
+            <Link href="/areas/alberton" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+              Carpenter Alberton →
+            </Link>
+            <Link href="/areas/boksburg" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+              Carpenter Boksburg →
+            </Link>
+            <Link href="/areas/benoni" className="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 transition-colors font-semibold">
+              Carpenter Benoni →
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
+      {/* Contact CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Bedfordview Project in 2025?</h2>
-          <p className="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
-            Contact Bedfordview's #1 carpenter & plumber today. Premium materials, exceptional craftsmanship, and
-            5-year warranty. FREE consultation and detailed quotes for all services.
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Bedfordview Property?</h2>
+          <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+            Join 600+ satisfied Bedfordview clients. Get your FREE quote today from Bedfordview's #1 rated carpenter and plumber. Licensed, insured, and guaranteed. Serving all East Rand areas with premium materials and 5-year warranty.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
             <Button
-              asChild
               size="lg"
-              variant="secondary"
-              className="bg-white text-amber-700 hover:bg-slate-100 text-lg px-8"
+              asChild
+              className="bg-white text-amber-600 hover:bg-slate-50 text-lg px-8 py-4 font-semibold"
             >
-              <Link href="/contact">Get Free Quote</Link>
+              <Link href="/contact">
+                Get FREE Quote Now
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
-            <a
-              href="tel:+27676014490"
-              className="flex items-center gap-2 text-lg hover:text-amber-200 transition-colors"
+            <Button
+              size="lg"
+              variant="outline"
+              asChild
+              className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-4 bg-transparent"
             >
-              <Phone className="w-5 h-5" />
-              067 601 4490 - Call Now
-            </a>
+              <a href="tel:+27676014490">
+                <Phone className="mr-2 w-5 h-5" />
+                Call: 067 601 4490
+              </a>
+            </Button>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-lg opacity-90">
+              ⭐⭐⭐⭐⭐ "Fantastic kitchen renovation in Bedfordview. The quality is outstanding!" - John & Lisa T., Bedfordview
+            </p>
+          </div>
+
+          <div className="mt-6 text-sm opacity-80">
+            <p className="mb-2">Serving Bedfordview and nearby East Rand areas:</p>
+            <p>
+              <Link href="/areas/edenvale" className="underline hover:text-amber-200">Edenvale</Link> | 
+              <Link href="/areas/germiston" className="underline hover:text-amber-200">Germiston</Link> | 
+              <Link href="/areas/kempton-park" className="underline hover:text-amber-200">Kempton Park</Link> | 
+              <Link href="/areas/alberton" className="underline hover:text-amber-200">Alberton</Link> | 
+              <Link href="/areas/boksburg" className="underline hover:text-amber-200">Boksburg</Link> | 
+              <Link href="/areas/benoni" className="underline hover:text-amber-200">Benoni</Link>
+            </p>
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 }

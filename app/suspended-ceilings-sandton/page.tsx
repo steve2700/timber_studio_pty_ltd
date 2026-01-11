@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Phone, Clock, Shield, Building2 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Suspended Ceilings Sandton | Commercial Ceiling Installation 2025",
+  title: "Suspended Ceilings Sandton | Commercial Ceiling Installation 2026",
   description:
     "Professional suspended ceiling installation in Sandton. Expert commercial and office ceiling solutions. Call 0676014490 for a free quote.",
   keywords:

@@ -20,13 +20,13 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Professional Plumber Johannesburg 2025 | Emergency Plumbing Services | Licensed & Insured",
+  title: "Professional Plumber Johannesburg 2026 | Emergency Plumbing Services | Licensed & Insured",
   description:
     "Expert plumber in Johannesburg offering 24/7 emergency plumbing services. Licensed, insured & 5-star rated. Kitchen, bathroom, geyser repairs & installations. Call 067 601 4490 for same-day service.",
   keywords:
     "plumber Johannesburg, emergency plumber Johannesburg, plumbing services Johannesburg, 24 hour plumber Johannesburg, bathroom plumber Johannesburg, kitchen plumber Johannesburg, geyser installation Johannesburg, plumber Sandton, plumber Randburg, plumber Pretoria",
   openGraph: {
-    title: "Professional Plumber Johannesburg 2025 | Emergency Plumbing Services",
+    title: "Professional Plumber Johannesburg 2026 | Emergency Plumbing Services",
     description:
       "Expert plumber in Johannesburg offering 24/7 emergency plumbing services. Licensed, insured & 5-star rated.",
     url: "https://granitecarpentry.co.za/services/plumbing",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Professional Plumber Johannesburg 2025 | Emergency Plumbing Services",
+    title: "Professional Plumber Johannesburg 2026 | Emergency Plumbing Services",
     description:
       "Expert plumber in Johannesburg offering 24/7 emergency plumbing services. Licensed, insured & 5-star rated.",
   },

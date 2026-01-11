@@ -5,11 +5,11 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Pivot Doors Sandton | Modern Entrance Pivot Door Installation Sandton 2025',
+  title: 'Pivot Doors Sandton | Modern Entrance Pivot Door Installation Sandton 2026',
   description: 'Expert pivot door installation in Sandton. Modern statement entrances with smooth operation. German hardware, 10-year guarantee. Serving Sandton, Bryanston, Hyde Park. Call 067 601 4490',
   keywords: 'pivot doors Sandton, pivot door installation Sandton, modern entrance doors Sandton, large pivot doors, custom pivot doors, pivot door hardware, Sandton doors, Bryanston pivot doors, Hyde Park doors',
   openGraph: {
-    title: 'Pivot Doors Sandton | Modern Entrance Pivot Door Installation 2025',
+    title: 'Pivot Doors Sandton | Modern Entrance Pivot Door Installation 2026',
     description: 'Expert pivot door installation in Sandton. Modern statement entrances. German hardware, 10-year guarantee. Same-day quotes available.',
     url: 'https://granitecarpentry.co.za/pivot-doors-sandton',
     siteName: 'Granite Carpentry',

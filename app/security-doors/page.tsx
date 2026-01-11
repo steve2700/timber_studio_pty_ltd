@@ -5,11 +5,11 @@ import { Button } from '@/components/ui/button'
 import { Phone, MapPin, Clock, Shield, Lock, Eye, CheckCircle2, Star, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Security Door Installation Johannesburg & Pretoria | Expert Installers 2025',
+  title: 'Security Door Installation Johannesburg & Pretoria | Expert Installers 2026',
   description: 'Professional security door installation services in Johannesburg, Pretoria, and Gauteng. Steel security doors, burglar bars, and access control. Get a free quote today!',
   keywords: 'security doors johannesburg, security door installation pretoria, steel security doors, burglar bars, home security doors, commercial security doors, security gate installation',
   openGraph: {
-    title: 'Security Door Installation Johannesburg & Pretoria | Expert Installers 2025',
+    title: 'Security Door Installation Johannesburg & Pretoria | Expert Installers 2026',
     description: 'Professional security door installation services in Johannesburg, Pretoria, and Gauteng. Steel security doors, burglar bars, and access control.',
     type: 'website',
   },
@@ -181,7 +181,7 @@ export default function SecurityDoorsPage() {
 
             {/* Pricing Section */}
             <div className="mb-12 bg-gray-50 rounded-lg p-8">
-              <h2 className="text-3xl font-bold mb-6 text-center">Security Door Installation Pricing 2025</h2>
+              <h2 className="text-3xl font-bold mb-6 text-center">Security Door Installation Pricing 2026</h2>
               <p className="text-center text-gray-600 mb-8">Transparent pricing with no hidden fees. All installations include professional fitting and 5-year warranty.</p>
               
               <div className="grid md:grid-cols-3 gap-6 mb-6">

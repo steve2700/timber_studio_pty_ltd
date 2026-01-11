@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Best Security Door Installation Pretoria 2025 | Steel Security Doors",
+  title: "★★★★★ Best Security Door Installation Pretoria 2026 | Steel Security Doors",
   description: "★★★★★ Professional security door installation in Pretoria. Steel security gates, burglar bars, slam-lock doors. Protect your home with certified installations. FREE security assessment.",
   keywords: "security doors Pretoria, steel security doors Pretoria, burglar bars Pretoria, security gates Pretoria, slam lock doors Pretoria, home security Pretoria, security door installation, residential security",
   openGraph: {
-    title: "Best Security Door Installation Pretoria 2025 | Granite Carpentry",
+    title: "Best Security Door Installation Pretoria 2026 | Granite Carpentry",
     description: "Professional security door installation services in Pretoria. Steel security gates, burglar bars, and slam-lock doors for maximum protection.",
     url: "https://granitecarpentry.co.za/security-doors-pretoria",
     siteName: "Granite Carpentry",

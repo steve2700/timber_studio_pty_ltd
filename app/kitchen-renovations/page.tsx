@@ -8,13 +8,13 @@ import { CheckCircle, Star, Shield, Award, Phone, ArrowRight, Home, ChefHat } fr
 import { FAQAccordion } from "@/components/faq-accordion"
 
 export const metadata: Metadata = {
-  title: "Kitchen Renovations Johannesburg 2025 | Expert Kitchen Remodeling Services",
+  title: "Kitchen Renovations Johannesburg 2026 | Expert Kitchen Remodeling Services",
   description:
     "Transform your kitchen with expert renovation services in Johannesburg, Sandton, Randburg & Midrand. Custom designs, granite countertops, built-in cupboards. 5-star rated. Free quotes. Call 067 601 4490.",
   keywords:
     "kitchen renovations johannesburg, kitchen remodeling sandton, kitchen renovation randburg, kitchen design midrand, custom kitchens gauteng, kitchen cupboards johannesburg, granite countertops kitchen, kitchen renovation cost johannesburg, modern kitchen design sandton, kitchen contractors johannesburg",
   openGraph: {
-    title: "Kitchen Renovations Johannesburg 2025 | Expert Kitchen Remodeling Services",
+    title: "Kitchen Renovations Johannesburg 2026 | Expert Kitchen Remodeling Services",
     description:
       "Transform your kitchen with expert renovation services in Johannesburg. Custom designs, granite countertops, professional installation. 5-star rated service.",
     images: [{ url: "/Kitchen-renovations-sandton.webp", width: 1200, height: 630 }],

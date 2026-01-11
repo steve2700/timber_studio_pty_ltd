@@ -7,13 +7,13 @@ import { Badge } from "@/components/ui/badge"
 import { Phone, Star, Award, Users, CheckCircle, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Portfolio | Best Carpenter Johannesburg 2024 - 1000+ Completed Projects Gallery",
+  title: "★★★★★ Portfolio | Best Carpenter Johannesburg 2026 - 1000+ Completed Projects Gallery",
   description:
     "★★★★★ View our portfolio of 1000+ completed carpentry projects in Johannesburg. Kitchen renovations, built-in cupboards, granite installations across Gauteng. #1 rated carpenter with 5-year warranty. FREE quotes.",
   keywords:
-    "carpentry portfolio Johannesburg, best carpenter portfolio 2024, kitchen renovation gallery Johannesburg, built-in cupboards portfolio, granite installation gallery, carpenter work examples Johannesburg, #1 carpenter portfolio, professional carpentry gallery, Johannesburg carpenter projects, kitchen makeover gallery",
+    "carpentry portfolio Johannesburg, best carpenter portfolio 2026, kitchen renovation gallery Johannesburg, built-in cupboards portfolio, granite installation gallery, carpenter work examples Johannesburg, #1 carpenter portfolio, professional carpentry gallery, Johannesburg carpenter projects, kitchen makeover gallery",
   openGraph: {
-    title: "★★★★★ Portfolio | Best Carpenter Johannesburg 2024 - 1000+ Projects",
+    title: "★★★★★ Portfolio | Best Carpenter Johannesburg 2026 - 1000+ Projects",
     description:
       "★★★★★ View our portfolio of 1000+ completed carpentry projects. Kitchen renovations, built-in cupboards, granite installations. #1 rated carpenter Johannesburg.",
     url: "https://granitecarpentry.co.za/portfolio",

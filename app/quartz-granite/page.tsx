@@ -20,13 +20,13 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Granite & Quartz Countertops Johannesburg 2025 | Professional Installation",
+  title: "Granite & Quartz Countertops Johannesburg 2026 | Professional Installation",
   description:
     "Premium granite & quartz countertops in Johannesburg. Kitchen countertops, bathroom vanities, custom stone work. Professional installation, 5-star service, 24-month warranty. Free quotes. Call 067 601 4490.",
   keywords:
     "granite countertops johannesburg, quartz countertops johannesburg, kitchen countertops sandton, granite installation johannesburg, quartz installation randburg, bathroom vanities granite, granite suppliers johannesburg, quartz suppliers sandton, stone countertops midrand, granite kitchen tops, quartz kitchen counters, granite bathroom vanities, stone fabrication johannesburg, granite cutting johannesburg, quartz cutting services",
   openGraph: {
-    title: "Granite & Quartz Countertops Johannesburg 2025 | Professional Installation",
+    title: "Granite & Quartz Countertops Johannesburg 2026 | Professional Installation",
     description:
       "Premium granite & quartz countertops in Johannesburg. Professional installation, 5-star service, 24-month warranty, extensive stone selection.",
     images: [{ url: "/granite-countertop.jpg", width: 1200, height: 630 }],

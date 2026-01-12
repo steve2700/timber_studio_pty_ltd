@@ -522,6 +522,143 @@ export default function DoorHangingCityPage() {
         </div>
       </section>
 
+      {/* Related Door Services (Internal Links) */}
+      <section className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+      <div className="text-center mb-12">
+       <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        Related Door Services in Gauteng
+       </h2>
+       <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        Need more than door hanging? Explore our most requested door repair services across Gauteng.
+      </p>
+      </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <Card className="hover:shadow-xl transition-shadow">
+        <CardContent className="p-6">
+          <h3 className="font-bold text-lg mb-2">Door Alignment Repair</h3>
+          <p className="text-sm text-gray-600 mb-3">
+            Door won’t close or rubs? We align doors, fix hinge sag, and correct gaps.
+          </p>
+          <Link
+            href="/door-alignment-repair-gauteng"
+            className="text-amber-600 hover:underline text-sm font-semibold"
+          >
+            Door Alignment Repair Gauteng →
+          </Link>
+        </CardContent>
+      </Card>
+
+      <Card className="hover:shadow-xl transition-shadow">
+        <CardContent className="p-6">
+          <h3 className="font-bold text-lg mb-2">Door Handle Replacement</h3>
+          <p className="text-sm text-gray-600 mb-3">
+            Replace handles, privacy locks, and install new locksets with clean finishing.
+          </p>
+          <Link
+            href="/door-handle-replacement-gauteng"
+            className="text-amber-600 hover:underline text-sm font-semibold"
+          >
+            Door Handle Replacement Gauteng →
+          </Link>
+        </CardContent>
+      </Card>
+
+      <Card className="hover:shadow-xl transition-shadow">
+        <CardContent className="p-6">
+          <h3 className="font-bold text-lg mb-2">Door Lock Replacement</h3>
+          <p className="text-sm text-gray-600 mb-3">
+            Lock broken or jammed? We replace locks, cylinders, and align strike plates.
+          </p>
+          <Link
+            href="/door-lock-replacement-gauteng"
+            className="text-amber-600 hover:underline text-sm font-semibold"
+          >
+            Door Lock Replacement Gauteng →
+          </Link>
+        </CardContent>
+      </Card>
+
+      <Card className="hover:shadow-xl transition-shadow">
+        <CardContent className="p-6">
+          <h3 className="font-bold text-lg mb-2">Door Repair Gauteng</h3>
+          <p className="text-sm text-gray-600 mb-3">
+            Full door repairs: scraping, swelling, frame issues, hinges, and latch problems.
+          </p>
+          <Link
+            href="/door-repair-gauteng"
+            className="text-amber-600 hover:underline text-sm font-semibold"
+          >
+            Door Repair Gauteng →
+          </Link>
+        </CardContent>
+      </Card>
+
+      <Card className="hover:shadow-xl transition-shadow">
+        <CardContent className="p-6">
+          <h3 className="font-bold text-lg mb-2">Cupboard Door Repair</h3>
+          <p className="text-sm text-gray-600 mb-3">
+            Hinges loose, doors sagging, or misaligned? We fix cupboard doors fast.
+          </p>
+          <Link
+            href="/cupboard-door-repair-gauteng"
+            className="text-amber-600 hover:underline text-sm font-semibold"
+          >
+            Cupboard Door Repair Gauteng →
+          </Link>
+        </CardContent>
+      </Card>
+
+      <Card className="hover:shadow-xl transition-shadow">
+        <CardContent className="p-6">
+          <h3 className="font-bold text-lg mb-2">Emergency Door Repair</h3>
+          <p className="text-sm text-gray-600 mb-3">
+            Door can’t lock or close? Emergency repairs for urgent door issues.
+          </p>
+          <Link
+            href="/emergency-door-repair-gauteng"
+            className="text-amber-600 hover:underline text-sm font-semibold"
+          >
+            Emergency Door Repair Gauteng →
+          </Link>
+        </CardContent>
+      </Card>
+
+      <Card className="hover:shadow-xl transition-shadow">
+        <CardContent className="p-6">
+          <h3 className="font-bold text-lg mb-2">Move-Out Repairs</h3>
+          <p className="text-sm text-gray-600 mb-3">
+            Tenant exit / inspection fixes: doors, handles, locks, cupboard hinges and more.
+          </p>
+          <Link
+            href="/move-out-repairs-gauteng"
+            className="text-amber-600 hover:underline text-sm font-semibold"
+          >
+            Move-Out Repairs Gauteng →
+          </Link>
+        </CardContent>
+      </Card>
+
+      <Card className="hover:shadow-xl transition-shadow">
+        <CardContent className="p-6">
+          <h3 className="font-bold text-lg mb-2">Door Installation</h3>
+          <p className="text-sm text-gray-600 mb-3">
+            Full installation for interior/exterior doors, security doors and replacements.
+          </p>
+          <Link
+            href="/door-installation"
+            className="text-amber-600 hover:underline text-sm font-semibold"
+          >
+            Door Installation →
+          </Link>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</section>
+
+
       {/* FAQ - bigger */}
       <section className="py-16 bg-white">
         <div className="container mx-auto max-w-4xl">

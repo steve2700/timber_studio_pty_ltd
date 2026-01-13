@@ -25,10 +25,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/decking-flooring",
     "/drywall-ceilings",
     "/granite-countertops-prices-johannesburg",
+    "/countertop-cutting-service-gauteng",
   ]
 
   const doorPages = [
-    "/door-installation", // Main hub page
+    "/door-installation",            // Main hub page
+    "/door-hanging-johannesburg",
+    "/emergency-door-repair-gauteng",
     "/pivot-doors",
     "/barn-doors",
     "/security-doors",
@@ -39,6 +42,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/security-doors-johannesburg",
     "/solid-wood-doors-pretoria",
     "/french-doors-sandton",
+    "/bathroom-door-replacement-gauteng",
+    "/cupboard-door-repair-gauteng",
+    "/door-alignment-repair-gauteng",
+    "/door-handle-replacement-gauteng",
+    "/door-lock-replacement-gauteng",
+    "/door-repair-gauteng",
+    "/move-out-repairs-gauteng",
+    "/rental-property-repairs-gauteng",
+    "/same-day-carpenter-gauteng",
   ]
 
   const drywallLocationPages = [

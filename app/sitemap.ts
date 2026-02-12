@@ -51,6 +51,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/move-out-repairs-gauteng",
     "/rental-property-repairs-gauteng",
     "/same-day-carpenter-gauteng",
+    "/24-hour-emergency-carpenter-johannesburg",
+
   ]
 
   const drywallLocationPages = [

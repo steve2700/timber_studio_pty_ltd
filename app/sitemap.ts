@@ -27,6 +27,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/granite-countertops-prices-johannesburg",
     "/countertop-cutting-service-gauteng",
     "/custom-built-in-cupboards-johannesburg",
+    "/same-day-kitchen-repairs-gauteng",
+    "/complete-home-renovations-sandton",
   ]
 
   const doorPages = [

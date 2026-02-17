@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/drywall-ceilings",
     "/granite-countertops-prices-johannesburg",
     "/countertop-cutting-service-gauteng",
+    "/custom-built-in-cupboards-johannesburg",
   ]
 
   const doorPages = [

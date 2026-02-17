@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/custom-built-in-cupboards-johannesburg",
     "/same-day-kitchen-repairs-gauteng",
     "/complete-home-renovations-sandton",
+    "/waterproofing-repairs-gauteng",
   ]
 
   const doorPages = [

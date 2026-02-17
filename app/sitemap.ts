@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/same-day-kitchen-repairs-gauteng",
     "/complete-home-renovations-sandton",
     "/waterproofing-repairs-gauteng",
+    "/painting-services-johannesburg",
   ]
 
   const doorPages = [

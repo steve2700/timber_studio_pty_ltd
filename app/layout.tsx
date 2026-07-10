@@ -27,13 +27,13 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.timberstudio.co.za"),
   title: {
-    default: "Professional Carpenter & Granite Installation Johannesburg 2025 | 5-Star Rated Experts",
-    template: "%s | The Timber Studio - Professional Carpentry Services",
+    default: "The Timber Studio | Bespoke Carpentry & Custom Joinery in Johannesburg",
+    template: "%s | The Timber Studio - Bespoke Carpentry & Joinery",
   },
   description:
-    "Johannesburg's #1 rated carpenter & granite installation specialists. Kitchen renovations, built-in cupboards, quartz countertops. 5-star service, 1000+ projects, 24-month warranty. Licensed & insured. Free quotes. Call 063 397 7498.",
+    "The Timber Studio is Johannesburg's premier bespoke carpentry and custom joinery studio. Custom kitchens, built-in cupboards, solid timber doors, decking & flooring. 5-star service, 1000+ projects, 24-month workmanship warranty. Free quotes. Call 063 397 7498.",
   keywords:
-    "professional carpenter Johannesburg 2025, granite installation Johannesburg, kitchen renovations Johannesburg, built-in cupboards Johannesburg, quartz countertops Johannesburg, carpenter Sandton, carpenter Randburg, granite installation Sandton, kitchen renovation company Johannesburg, best carpenter Johannesburg South, affordable carpenter Johannesburg, licensed carpenter Gauteng, granite specialists Johannesburg, custom kitchen cabinets Johannesburg, bathroom renovations Johannesburg, decking installation Johannesburg, drywall contractor Johannesburg",
+    "bespoke carpentry Johannesburg, custom joinery Johannesburg, The Timber Studio, timber studio Johannesburg, kitchen renovations Johannesburg, built-in cupboards Johannesburg, custom kitchen cabinets Johannesburg, solid timber doors Johannesburg, wooden doors Johannesburg, carpenter Sandton, carpenter Randburg, joinery Sandton, decking installation Johannesburg, wooden flooring Johannesburg, bathroom renovations Johannesburg, drywall contractor Johannesburg, best carpenter Johannesburg, licensed carpenter Gauteng",
   authors: [{ name: "The Timber Studio", url: "https://www.timberstudio.co.za" }],
   creator: "The Timber Studio",
   publisher: "The Timber Studio",
@@ -52,24 +52,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_ZA",
     url: "https://www.timberstudio.co.za",
-    siteName: "The Timber Studio - Professional Carpentry & Granite Installation",
-    title: "Professional Carpenter & Granite Installation Johannesburg 2025 | 5-Star Rated",
+    siteName: "The Timber Studio - Bespoke Carpentry & Custom Joinery",
+    title: "The Timber Studio | Bespoke Carpentry & Custom Joinery in Johannesburg",
     description:
-      "Johannesburg's #1 rated carpenter & granite installation specialists. Kitchen renovations, built-in cupboards, quartz countertops. 5-star service with 24-month warranty.",
+      "Johannesburg's premier bespoke carpentry & custom joinery studio. Custom kitchens, built-in cupboards, solid timber doors, decking & flooring. 5-star service with 24-month warranty.",
     images: [
       {
         url: "/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "The Timber Studio - Professional Carpenter & Granite Installation Johannesburg",
+        alt: "The Timber Studio - Bespoke Carpentry & Custom Joinery Johannesburg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Professional Carpenter & Granite Installation Johannesburg 2025",
+    title: "The Timber Studio | Bespoke Carpentry & Custom Joinery Johannesburg",
     description:
-      "Johannesburg's #1 rated carpenter. Kitchen renovations, built-in cupboards, granite installation. 5-star service, 24-month warranty.",
+      "Johannesburg's premier bespoke carpentry & joinery studio. Custom kitchens, built-in cupboards, solid timber doors. 5-star service, 24-month warranty.",
     images: ["/timber-studio-logo.png"],
     creator: "@timberstudio",
   },
@@ -102,7 +102,7 @@ export const metadata: Metadata = {
     "business:hours:start": "08:00",
     "business:hours:end": "14:00",
   },
-  generator: "v0.app",
+  generator: "The Timber Studio",
 }
 
 export default function RootLayout({
@@ -134,8 +134,8 @@ export default function RootLayout({
         <link rel="icon" href="/timber-studio-logo.png" sizes="32x32" type="image/png" />
         <link rel="apple-touch-icon" href="/timber-studio-logo.png" sizes="180x180" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#d97706" />
-        <meta name="msapplication-TileColor" content="#d97706" />
+        <meta name="theme-color" content="#b36a3d" />
+        <meta name="msapplication-TileColor" content="#1c1b19" />
         <meta name="msapplication-TileImage" content="/timber-studio-logo.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -143,7 +143,7 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="The Timber Studio" />
         <meta name="apple-mobile-web-app-title" content="The Timber Studio" />
-        <meta name="msapplication-tooltip" content="Professional Carpenter & Granite Installation Johannesburg" />
+        <meta name="msapplication-tooltip" content="The Timber Studio - Bespoke Carpentry & Custom Joinery Johannesburg" />
         <meta name="msapplication-starturl" content="/" />
         <meta name="msapplication-tap-highlight" content="no" />
 
@@ -171,7 +171,7 @@ export default function RootLayout({
                   name: "The Timber Studio",
                   alternateName: "The Timber Studio Johannesburg",
                   description:
-                    "Professional carpenter and granite installation specialists in Johannesburg. Kitchen renovations, built-in cupboards, and stone installations with 5-star service.",
+                    "Bespoke carpentry and custom joinery studio in Johannesburg. Custom kitchens, built-in cupboards, solid timber doors, decking and flooring with 5-star service.",
                   url: "https://www.timberstudio.co.za",
                   logo: {
                     "@type": "ImageObject",
@@ -232,13 +232,14 @@ export default function RootLayout({
                   ],
                   foundingDate: "2020",
                   numberOfEmployees: "5-10",
-                  slogan: "Johannesburg's #1 Rated Carpenter & Granite Installation Specialists",
+                  slogan: "Johannesburg's Premier Bespoke Carpentry & Custom Joinery Studio",
                   knowsAbout: [
+                    "Bespoke Carpentry",
+                    "Custom Joinery",
                     "Kitchen Renovations",
                     "Built-in Cupboards",
-                    "Granite Installation",
-                    "Quartz Countertops",
-                    "Custom Carpentry",
+                    "Solid Timber Doors",
+                    "Decking & Flooring",
                     "Home Renovations",
                   ],
                   hasCredential: [
@@ -311,9 +312,9 @@ export default function RootLayout({
                   "@type": "WebSite",
                   "@id": "https://www.timberstudio.co.za/#website",
                   url: "https://www.timberstudio.co.za",
-                  name: "The Timber Studio - Professional Carpentry & Granite Installation",
+                  name: "The Timber Studio - Bespoke Carpentry & Custom Joinery",
                   description:
-                    "Johannesburg's #1 rated carpenter and granite installation specialists. Kitchen renovations, built-in cupboards, quartz countertops with 5-star service.",
+                    "Johannesburg's premier bespoke carpentry and custom joinery studio. Custom kitchens, built-in cupboards, solid timber doors, decking and flooring with 5-star service.",
                   publisher: {
                     "@id": "https://www.timberstudio.co.za/#organization",
                   },
@@ -347,7 +348,7 @@ export default function RootLayout({
               <AIChatWidget />
               <GoogleBusinessSchema
                 businessName="The Timber Studio"
-                description="Professional carpenter and granite installation specialists in Johannesburg. Kitchen renovations, built-in cupboards, and stone installations with 5-star service."
+                description="Bespoke carpentry and custom joinery studio in Johannesburg. Custom kitchens, built-in cupboards, solid timber doors, decking and flooring with 5-star service."
                 address={{
                   street: "Greater Johannesburg Area",
                   city: "Johannesburg",
@@ -359,12 +360,12 @@ export default function RootLayout({
                 email="info@timberstudio.co.za"
                 website="https://www.timberstudio.co.za"
                 services={[
+                  "Bespoke Carpentry",
+                  "Custom Joinery",
                   "Kitchen Renovations",
                   "Built-in Cupboards",
-                  "Granite Installation",
-                  "Quartz Countertops",
-                  "Custom Carpentry",
-                  "Home Renovations",
+                  "Solid Timber Doors",
+                  "Decking & Flooring",
                 ]}
                 areas={["Johannesburg", "Sandton", "Randburg", "Pretoria", "Centurion", "Midrand"]}
                 rating={5.0}
@@ -386,7 +387,7 @@ export default function RootLayout({
                   logo: "/timber-studio-logo.png",
                   photos: [
                     "/timber-studio-logo.png",
-                    "/granite-installation-Johannesburg.jpg",
+                    "/carpenter-johannesburg-installing-kitchen-cupboards.jpg",
                     "/Built-Built-in-Cupboards-Midrand.jpg",
                   ],
                 }}

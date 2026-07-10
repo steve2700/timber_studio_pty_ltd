@@ -21,7 +21,7 @@ export function AIChatWidget() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "Hi! 👋 I'm your The Timber Studio assistant. I can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n💎 Granite & Quartz\n🔧 Plumbing Services\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n\nWhat service are you interested in?",
+      text: "Hi! 👋 I'm The Timber Studio assistant. I can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n🪵 Solid Timber Doors\n🔧 Plumbing Services\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n\nWhat service are you interested in?",
       sender: "bot",
       timestamp: new Date(),
     },
@@ -99,7 +99,7 @@ export function AIChatWidget() {
     setMessages([
       {
         id: "1",
-        text: "Hi! 👋 I'm your The Timber Studio assistant. I can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n💎 Granite & Quartz\n🔧 Plumbing Services\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n\nWhat service are you interested in?",
+        text: "Hi! 👋 I'm The Timber Studio assistant. I can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n🪵 Solid Timber Doors\n🔧 Plumbing Services\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n\nWhat service are you interested in?",
         sender: "bot",
         timestamp: new Date(),
       },

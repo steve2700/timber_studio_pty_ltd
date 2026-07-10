@@ -135,8 +135,9 @@ export function Footer() {
                 </div>
               </div>
               <p className="text-slate-300 leading-relaxed">
-                Johannesburg's #1 rated carpenter and plumber with over 1000+ completed projects. Professional kitchen
-                renovations, built-in cupboards, emergency plumbing, and granite installations with 24-month warranty.
+                Johannesburg&apos;s premier bespoke joinery and carpentry studio with over 1000+ completed projects.
+                Custom kitchens, built-in cupboards, solid timber doors, decking, and expert plumbing &mdash; all backed
+                by our 24-month workmanship warranty.
               </p>
             </div>
 
@@ -321,7 +322,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-slate-400 text-sm text-center md:text-left">
-            <p>© {currentYear} The Timber Studio & Joinery Experts. All rights reserved.</p>
+            <p>© {currentYear} The Timber Studio (Pty) Ltd. All rights reserved.</p>
             <p className="mt-1">
               Professional carpentry & plumbing services in Johannesburg | Licensed & Insured | 24-Month Warranty
             </p>

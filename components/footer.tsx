@@ -9,45 +9,18 @@ export function Footer() {
 
   const services = [
     { name: "Kitchen Renovations", href: "/kitchen-renovations" },
-    { name: "Kitchen Renovations Cost Johannesburg", href: "/kitchen-renovation-cost-johannesburg"},
-    { name: "Kitchen Cupboards", href: "/kitchen-cupboards" }, 
-    { name: "Bathroom Renovations", href: "/bathroom-renovations" }, 
+    { name: "Bathroom Renovations", href: "/bathroom-renovations" },
     { name: "Built-in Cupboards", href: "/built-in-cupboards" },
-    { name: "Professional Plumbing", href: "/plumbing" },
     { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
     { name: "Decking & Flooring", href: "/decking-flooring" },
     { name: "Door Installation", href: "/door-installation" },
   ]
 
-  const doorServices = [
-    { name: "Pivot Doors", href: "/pivot-doors" },
-    { name: "Barn Doors", href: "/barn-doors" },
-    { name: "Security Doors", href: "/security-doors" },
-    { name: "French Doors", href: "/french-doors" },
-    { name: "Wooden Doors", href: "/wooden-doors" },
-    { name: "Pivot Doors Sandton", href: "/pivot-doors-sandton" },
-    { name: "French Doors Sandton", href: "/french-doors-sandton" },
-    { name: "Barn Doors Cape Town", href: "/barn-doors-cape-town" },
-    { name: "Security Doors JHB", href: "/security-doors-johannesburg" },
-    { name: "Wood Doors Pretoria", href: "/solid-wood-doors-pretoria" },
-  ]
-
-  const drywallServices = [
+  const specialistPages = [
+    { name: "Carpenter Sandhurst", href: "/carpenter-sandhurst" },
+    { name: "Carpenter Near Me JHB", href: "/carpenter-near-me-johannesburg" },
     { name: "Drywall Sandton", href: "/drywall-sandton" },
-    { name: "Ceiling Repairs Randburg", href: "/ceiling-repairs-randburg" },
-    { name: "Drywall Rosebank", href: "/drywall-rosebank" },
-    { name: "Suspended Ceilings JHB", href: "/suspended-ceilings-johannesburg" },
-    { name: "Drywalling Contractors", href: "/drywalling-contractors-johannesburg" },
-    { name: "Drywall Fourways", href: "/drywall-fourways" },
-    { name: "Ceiling Repairs Sandton", href: "/ceiling-repairs-sandton" },
-    { name: "Drywall Midrand", href: "/drywall-midrand" },
-    { name: "Ceiling Repairs Vereeniging", href: "/ceiling-repairs-vereeniging" },
-    { name: "Drywall JHB South", href: "/drywall-johannesburg-south" },
-    { name: "Drywall Bryanston", href: "/drywall-bryanston" },
-    { name: "Drywall Centurion", href: "/drywall-centurion" },
-    { name: "Drywall Pretoria", href: "/drywall-pretoria" },
-    { name: "Drywall Edenvale", href: "/drywall-edenvale" },
-    { name: "Drywall Boksburg", href: "/drywall-boksburg" },
+    { name: "Drywalling Contractors JHB", href: "/drywalling-contractors-johannesburg" },
   ]
 
   const areas = [
@@ -64,7 +37,6 @@ export function Footer() {
   const company = [
     { name: "About Us", href: "/about" },
     { name: "Portfolio", href: "/portfolio" },
-    { name: "Blog", href: "/blog" },
     { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact" },
     { name: "Privacy Policy", href: "/privacy" },
@@ -118,7 +90,7 @@ export function Footer() {
 
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
             <div>
@@ -224,28 +196,11 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Door Services */}
+          {/* Specialist Pages */}
           <div>
-            <h4 className="text-lg font-semibold text-amber-400 mb-6">Door Services</h4>
+            <h4 className="text-lg font-semibold text-amber-400 mb-6">Specialist Pages</h4>
             <ul className="space-y-3">
-              {doorServices.map((service) => (
-                <li key={service.name}>
-                  <Link
-                    href={service.href}
-                    className="text-slate-300 hover:text-amber-400 transition-colors flex items-center group"
-                  >
-                    <span className="w-2 h-2 bg-amber-600 rounded-full mr-3 group-hover:bg-amber-400 transition-colors"></span>
-                    {service.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-semibold text-amber-400 mb-6">Drywall Locations</h4>
-            <ul className="space-y-3">
-              {drywallServices.map((service) => (
+              {specialistPages.map((service) => (
                 <li key={service.name}>
                   <Link
                     href={service.href}

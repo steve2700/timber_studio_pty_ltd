@@ -86,7 +86,7 @@ export default function DoorInstallationPage() {
                   </li>
                 </ul>
                 <Button className="w-full" asChild>
-                  <Link href="/pivot-doors">Learn More</Link>
+                  <Link href="/contact?service=pivot-door-installation">Get a Quote</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -116,7 +116,7 @@ export default function DoorInstallationPage() {
                   </li>
                 </ul>
                 <Button className="w-full" asChild>
-                  <Link href="/barn-doors">Learn More</Link>
+                  <Link href="/contact?service=barn-door-installation">Get a Quote</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -146,7 +146,7 @@ export default function DoorInstallationPage() {
                   </li>
                 </ul>
                 <Button className="w-full" asChild>
-                  <Link href="/security-doors">Learn More</Link>
+                  <Link href="/contact?service=security-door-installation">Get a Quote</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -176,7 +176,7 @@ export default function DoorInstallationPage() {
                   </li>
                 </ul>
                 <Button className="w-full" asChild>
-                  <Link href="/french-doors">Learn More</Link>
+                  <Link href="/contact?service=french-door-installation">Get a Quote</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -206,7 +206,7 @@ export default function DoorInstallationPage() {
                   </li>
                 </ul>
                 <Button className="w-full" asChild>
-                  <Link href="/wooden-doors">Learn More</Link>
+                  <Link href="/contact?service=wooden-door-installation">Get a Quote</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -294,23 +294,23 @@ export default function DoorInstallationPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Door Installation Services By Location</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Link href="/pivot-doors-sandton" className="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+            <Link href="/areas/sandton" className="p-6 border rounded-lg hover:shadow-lg transition-shadow">
               <h3 className="font-bold text-lg mb-2">Pivot Doors Sandton</h3>
               <p className="text-gray-600 text-sm">Premium pivot door installation in Sandton's luxury properties</p>
             </Link>
-            <Link href="/barn-doors-cape-town" className="p-6 border rounded-lg hover:shadow-lg transition-shadow">
-              <h3 className="font-bold text-lg mb-2">Barn Doors Cape Town</h3>
-              <p className="text-gray-600 text-sm">Stylish barn door installation throughout Cape Town</p>
+            <Link href="/areas/fourways" className="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+              <h3 className="font-bold text-lg mb-2">Barn Doors Fourways</h3>
+              <p className="text-gray-600 text-sm">Stylish barn door installation throughout Fourways</p>
             </Link>
-            <Link href="/security-doors-johannesburg" className="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+            <Link href="/areas/johannesburg" className="p-6 border rounded-lg hover:shadow-lg transition-shadow">
               <h3 className="font-bold text-lg mb-2">Security Doors Johannesburg</h3>
               <p className="text-gray-600 text-sm">Enhanced security door solutions for Johannesburg homes</p>
             </Link>
-            <Link href="/solid-wood-doors-pretoria" className="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+            <Link href="/areas/pretoria" className="p-6 border rounded-lg hover:shadow-lg transition-shadow">
               <h3 className="font-bold text-lg mb-2">Wooden Doors Pretoria</h3>
               <p className="text-gray-600 text-sm">Premium solid wood door installation in Pretoria</p>
             </Link>
-            <Link href="/french-doors-sandton" className="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+            <Link href="/areas/sandton" className="p-6 border rounded-lg hover:shadow-lg transition-shadow">
               <h3 className="font-bold text-lg mb-2">French Doors Sandton</h3>
               <p className="text-gray-600 text-sm">Elegant French door installation for Sandton properties</p>
             </Link>

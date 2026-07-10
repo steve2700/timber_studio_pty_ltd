@@ -214,7 +214,7 @@ export default function KemptonParkPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R18,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/kitchen-renovations">View Details</Link>
+                    <Link href="/kitchen-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -248,7 +248,7 @@ export default function KemptonParkPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R10,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/built-in-cupboards">View Details</Link>
+                    <Link href="/built-in-cupboards">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -317,7 +317,7 @@ export default function KemptonParkPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R360/hour</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/plumbing">View Details</Link>
+                    <Link href="/bathroom-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>

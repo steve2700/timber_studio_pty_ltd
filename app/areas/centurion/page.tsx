@@ -8,7 +8,7 @@ import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, 
 
 export const metadata: Metadata = {
   title:
-    "Best Carpenter & Plumber Centurion 2024 | Kitchen Renovations, Built-in Cupboards & Modern Plumbing | Free Quotes",
+    "Best Carpenter & Plumber Centurion 2026 | Kitchen Renovations, Built-in Cupboards & Modern Plumbing | Free Quotes",
   description:
     "★★★★★ #1 Rated Carpenter & Plumber in Centurion. Expert kitchen renovations, modern built-in cupboards, granite installation & smart plumbing systems. Serving Irene, Highveld, Lyttelton. Licensed & insured. Free quotes. Call 063 397 7498",
   keywords:
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://www.timberstudio.co.za/areas/centurion",
   },
   openGraph: {
-    title: "Best Carpenter & Plumber Centurion 2024 | Kitchen Renovations & Built-in Cupboards",
+    title: "Best Carpenter & Plumber Centurion 2026 | Kitchen Renovations & Built-in Cupboards",
     description:
       "★★★★★ #1 Rated Carpenter & Plumber in Centurion. Expert kitchen renovations, granite installation & smart plumbing systems. Free quotes. Call 063 397 7498",
     url: "https://www.timberstudio.co.za/areas/centurion",
@@ -200,7 +200,7 @@ export default function CenturionPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R20,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/kitchen-renovations">View Details</Link>
+                    <Link href="/kitchen-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -235,7 +235,7 @@ export default function CenturionPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R11,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/built-in-cupboards">View Details</Link>
+                    <Link href="/built-in-cupboards">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -270,7 +270,7 @@ export default function CenturionPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R7,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/quartz-granite">View Details</Link>
+                    <Link href="/kitchen-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -305,7 +305,7 @@ export default function CenturionPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R370/hour</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/plumbing">View Details</Link>
+                    <Link href="/bathroom-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>

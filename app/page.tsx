@@ -125,7 +125,7 @@ export default function HomePage() {
       icon: <Award className="h-8 w-8 text-amber-600" />,
       title: "5-Star Rated Service",
       description:
-        "Consistently rated 5 stars across Google Reviews with 47+ successful projects completed in 2024-2025",
+        "Consistently rated 5 stars across Google Reviews with 1,000+ successful projects completed for Gauteng homes and businesses",
     },
     {
       icon: <Shield className="h-8 w-8 text-amber-600" />,
@@ -156,7 +156,7 @@ export default function HomePage() {
             <div className="space-y-6 lg:space-y-8">
               <div className="space-y-4">
                 <Badge className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2">
-                  Johannesburg's #1 Rated Carpenter & Joinery Studio 2025
+                  Johannesburg&apos;s #1 Rated Carpenter &amp; Joinery Studio 2026
                 </Badge>
                 <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
                   Expert Carpentry, Joinery &{" "}
@@ -179,7 +179,7 @@ export default function HomePage() {
                   <span className="ml-2 font-semibold">5.0 Google Rating</span>
                 </div>
                 <Separator orientation="vertical" className="h-6 bg-slate-600 hidden sm:block" />
-                <span className="font-semibold">50+ Projects (2024-2025)</span>
+                <span className="font-semibold">1,000+ Projects Completed</span>
                 <Separator orientation="vertical" className="h-6 bg-slate-600 hidden sm:block" />
                 <span className="font-semibold">24/7 Emergency Response</span>
               </div>
@@ -396,7 +396,7 @@ export default function HomePage() {
               Gauteng's Most Trusted Home Service Experts Since 2020
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              With 50+ successfully completed projects in 2024-2025 and a flawless 5.0-star Google rating, we're the
+              With 1,000+ successfully completed projects and a flawless 5.0-star Google rating, we&apos;re the
               preferred choice for discerning homeowners and businesses across Johannesburg, Sandton, Pretoria, and
               Gauteng for carpentry, plumbing, and professional installations.
             </p>

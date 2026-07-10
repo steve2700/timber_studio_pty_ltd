@@ -142,7 +142,7 @@ export function GoogleBusinessSchema() {
         },
         reviewBody:
           "Excellent kitchen renovation service. The team was professional, punctual, and delivered exactly what was promised. Highly recommend The Timber Studio!",
-        datePublished: "2024-01-15",
+        datePublished: "2026-04-15",
       },
       {
         "@type": "Review",
@@ -157,7 +157,7 @@ export function GoogleBusinessSchema() {
         },
         reviewBody:
           "Outstanding built-in cupboard work. The finish looks amazing and the installation was flawless. Great value for money.",
-        datePublished: "2024-02-20",
+        datePublished: "2026-05-20",
       },
     ],
     sameAs: [

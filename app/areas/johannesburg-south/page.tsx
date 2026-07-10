@@ -7,13 +7,13 @@ import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield } from "l
 
 export const metadata: Metadata = {
   title:
-    "★★★★★ Best Carpenter & Plumber Johannesburg South 2024 | #1 Rated Kitchen Renovations, Built-in Cupboards & Plumbing Services",
+    "★★★★★ Best Carpenter & Plumber Johannesburg South 2026 | #1 Rated Kitchen Renovations, Built-in Cupboards & Plumbing Services",
   description:
-    "★★★★★ #1 rated carpenter & plumber in Johannesburg South 2024. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 500+ completed jobs. FREE quotes. Licensed & insured. Call 063 397 7498.",
+    "★★★★★ #1 rated carpenter & plumber in Johannesburg South 2026. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 500+ completed jobs. FREE quotes. Licensed & insured. Call 063 397 7498.",
   keywords:
-    "best carpenter Johannesburg South, plumber Johannesburg South 2024, kitchen renovation Johannesburg South, built-in cupboards Johannesburg South, granite installation Johannesburg South, emergency plumbing Johannesburg South, professional carpentry Johannesburg South, #1 carpenter Johannesburg South, cheap carpenter Johannesburg South, carpenter near me Johannesburg South, 24/7 plumber Johannesburg South",
+    "best carpenter Johannesburg South, plumber Johannesburg South 2026, kitchen renovation Johannesburg South, built-in cupboards Johannesburg South, granite installation Johannesburg South, emergency plumbing Johannesburg South, professional carpentry Johannesburg South, #1 carpenter Johannesburg South, cheap carpenter Johannesburg South, carpenter near me Johannesburg South, 24/7 plumber Johannesburg South",
   openGraph: {
-    title: "★★★★★ Best Carpenter & Plumber Johannesburg South 2024 | #1 Rated",
+    title: "★★★★★ Best Carpenter & Plumber Johannesburg South 2026 | #1 Rated",
     description:
       "★★★★★ #1 rated carpenter & plumber in Johannesburg South. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 500+ jobs completed. FREE quotes.",
     url: "https://www.timberstudio.co.za/areas/johannesburg-south",
@@ -39,7 +39,7 @@ export default function JohannesburgSouthPage() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Best Carpenter
-              <span className="block text-amber-400">Johannesburg South 2024</span>
+              <span className="block text-amber-400">Johannesburg South 2026</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 leading-relaxed">
               ★★★★★ #1 rated carpenter & plumber in Johannesburg South. Professional kitchen renovations, built-in
@@ -124,7 +124,7 @@ export default function JohannesburgSouthPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/services/kitchen-renovations">View Kitchen Services</Link>
+                  <Link href="/kitchen-renovations">View Kitchen Services</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -159,7 +159,7 @@ export default function JohannesburgSouthPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/services/built-in-cupboards">View Cupboard Services</Link>
+                  <Link href="/built-in-cupboards">View Cupboard Services</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -194,7 +194,7 @@ export default function JohannesburgSouthPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/services/quartz-granite">View Stone Services</Link>
+                  <Link href="/kitchen-renovations">View Stone Services</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -229,7 +229,7 @@ export default function JohannesburgSouthPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/services/plumbing">View Plumbing Services</Link>
+                  <Link href="/bathroom-renovations">View Plumbing Services</Link>
                 </Button>
               </CardContent>
             </Card>

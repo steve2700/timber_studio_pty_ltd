@@ -108,29 +108,6 @@ const schemaMarkup = {
           "closes": "14:00"
         }
       ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://www.timberstudio.co.za/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.timberstudio.co.za"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Areas",
-          "item": "https://www.timberstudio.co.za/areas"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Sandton Carpenter & Plumber"
-        }
-      ]
     }
   ]
 }
@@ -542,7 +519,7 @@ export default function SandtonPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Sarah M.</p>
                 <p className="text-sm text-slate-600">Hyde Park, Sandton</p>
-                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - December 2025</p>
+                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - April 2026</p>
               </CardContent>
             </Card>
 
@@ -574,7 +551,7 @@ export default function SandtonPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Rebecca L.</p>
                 <p className="text-sm text-slate-600">Illovo, Sandton</p>
-                <p className="text-xs text-slate-500 mt-1">Granite Countertops - November 2025</p>
+                <p className="text-xs text-slate-500 mt-1">Granite Countertops - March 2026</p>
               </CardContent>
             </Card>
 
@@ -590,7 +567,7 @@ export default function SandtonPage() {
                 </p>
                 <p className="font-semibold text-slate-800">David K.</p>
                 <p className="text-sm text-slate-600">Morningside, Sandton</p>
-                <p className="text-xs text-slate-500 mt-1">Emergency Plumbing - December 2025</p>
+                <p className="text-xs text-slate-500 mt-1">Emergency Plumbing - April 2026</p>
               </CardContent>
             </Card>
 
@@ -622,7 +599,7 @@ export default function SandtonPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Mark R.</p>
                 <p className="text-sm text-slate-600">Rivonia, Sandton</p>
-                <p className="text-xs text-slate-500 mt-1">Office Carpentry - December 2025</p>
+                <p className="text-xs text-slate-500 mt-1">Office Carpentry - April 2026</p>
               </CardContent>
             </Card>
           </div>

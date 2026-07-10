@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     images: [{ url: "/drywall-contractor.jpg", width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: "https://www.timberstudio.co.za/services/drywall-ceilings",
+    canonical: "https://www.timberstudio.co.za/drywall-ceilings",
   },
 }
 

@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { CheckCircle, Star, Shield, Award, Phone, ArrowRight, Home, ChefHat } from "lucide-react"
+import { CheckCircle, Star, Shield, Award, Phone, ArrowRight, ChefHat } from "lucide-react"
 import { FAQAccordion } from "@/components/faq-accordion"
 
 export const metadata: Metadata = {
@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     description:
       "Transform your kitchen with expert renovation services in Johannesburg. Custom designs, premium countertops, professional installation. 5-star rated service.",
     images: [{ url: "/Kitchen-renovations-sandton.webp", width: 1200, height: 630 }],
-    url: "https://www.timberstudio.co.za/services/kitchen-renovations",
+    url: "https://www.timberstudio.co.za/kitchen-renovations",
   },
   alternates: {
-    canonical: "https://www.timberstudio.co.za/services/kitchen-renovations",
+    canonical: "https://www.timberstudio.co.za/kitchen-renovations",
   },
   robots: {
     index: true,
@@ -71,7 +71,7 @@ export default function KitchenRenovationsPage() {
             "@graph": [
               {
                 "@type": "Service",
-                "@id": "https://www.timberstudio.co.za/services/kitchen-renovations#service",
+                "@id": "https://www.timberstudio.co.za/kitchen-renovations#service",
                 name: "Kitchen Renovations Johannesburg",
                 description:
                   "Professional kitchen renovation services in Johannesburg including custom cabinet installation, premium countertops, and complete kitchen remodeling.",
@@ -141,29 +141,6 @@ export default function KitchenRenovationsPage() {
                 },
               },
               {
-                "@type": "BreadcrumbList",
-                itemListElement: [
-                  {
-                    "@type": "ListItem",
-                    position: 1,
-                    name: "Home",
-                    item: "https://www.timberstudio.co.za",
-                  },
-                  {
-                    "@type": "ListItem",
-                    position: 2,
-                    name: "Services",
-                    item: "https://www.timberstudio.co.za/services",
-                  },
-                  {
-                    "@type": "ListItem",
-                    position: 3,
-                    name: "Kitchen Renovations",
-                    item: "https://www.timberstudio.co.za/services/kitchen-renovations",
-                  },
-                ],
-              },
-              {
                 "@type": "FAQPage",
                 mainEntity: kitchenFAQs.map((faq) => ({
                   "@type": "Question",
@@ -178,22 +155,6 @@ export default function KitchenRenovationsPage() {
           }),
         }}
       />
-
-      {/* Breadcrumb Navigation */}
-      <section className="bg-slate-100 py-4">
-        <div className="container mx-auto px-4">
-          <nav className="flex items-center space-x-2 text-sm">
-            <Link href="/" className="text-slate-600 hover:text-amber-600 flex items-center">
-              <Home className="h-4 w-4 mr-1" />
-              Home
-            </Link>
-            <span className="text-slate-400">/</span>
-            <span className="text-slate-600">Services</span>
-            <span className="text-slate-400">/</span>
-            <span className="text-amber-600 font-medium">Kitchen Renovations</span>
-          </nav>
-        </div>
-      </section>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">

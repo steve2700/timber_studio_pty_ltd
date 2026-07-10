@@ -126,7 +126,7 @@ export default function AlbertonPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/services/kitchen-renovations">View Kitchen Services</Link>
+                  <Link href="/kitchen-renovations">View Kitchen Services</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -161,7 +161,7 @@ export default function AlbertonPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/services/built-in-cupboards">View Cupboard Services</Link>
+                  <Link href="/built-in-cupboards">View Cupboard Services</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -196,7 +196,7 @@ export default function AlbertonPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/services/quartz-granite">View Stone Services</Link>
+                  <Link href="/kitchen-renovations">View Stone Services</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -231,7 +231,7 @@ export default function AlbertonPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/services/plumbing">View Plumbing Services</Link>
+                  <Link href="/bathroom-renovations">View Plumbing Services</Link>
                 </Button>
               </CardContent>
             </Card>

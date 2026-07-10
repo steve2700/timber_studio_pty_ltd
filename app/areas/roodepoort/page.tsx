@@ -187,7 +187,7 @@ export default function RoodepoortPage() {
                   </li>
                 </ul>
                 <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <Link href="/services/quartz-granite">Learn More</Link>
+                  <Link href="/kitchen-renovations">Learn More</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -214,7 +214,7 @@ export default function RoodepoortPage() {
                   </li>
                 </ul>
                 <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <Link href="/services/kitchen-renovations">Learn More</Link>
+                  <Link href="/kitchen-renovations">Learn More</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -241,7 +241,7 @@ export default function RoodepoortPage() {
                   </li>
                 </ul>
                 <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <Link href="/services/plumbing">Learn More</Link>
+                  <Link href="/bathroom-renovations">Learn More</Link>
                 </Button>
               </CardContent>
             </Card>

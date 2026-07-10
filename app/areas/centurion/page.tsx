@@ -10,20 +10,20 @@ export const metadata: Metadata = {
   title:
     "Best Carpenter & Plumber Centurion 2024 | Kitchen Renovations, Built-in Cupboards & Modern Plumbing | Free Quotes",
   description:
-    "★★★★★ #1 Rated Carpenter & Plumber in Centurion. Expert kitchen renovations, modern built-in cupboards, granite installation & smart plumbing systems. Serving Irene, Highveld, Lyttelton. Licensed & insured. Free quotes. Call 067 601 4490",
+    "★★★★★ #1 Rated Carpenter & Plumber in Centurion. Expert kitchen renovations, modern built-in cupboards, granite installation & smart plumbing systems. Serving Irene, Highveld, Lyttelton. Licensed & insured. Free quotes. Call 063 397 7498",
   keywords:
     "carpenter Centurion, plumber Centurion, kitchen renovation Centurion, built-in cupboards Centurion, granite installation Centurion, modern plumbing Centurion, carpenter Irene, carpenter Highveld, kitchen cabinets Centurion, best carpenter Centurion, affordable carpenter Centurion, Centurion kitchen contractor, granite Centurion, cupboards Centurion, smart plumbing Centurion",
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/centurion",
+    canonical: "https://www.timberstudio.co.za/areas/centurion",
   },
   openGraph: {
     title: "Best Carpenter & Plumber Centurion 2024 | Kitchen Renovations & Built-in Cupboards",
     description:
-      "★★★★★ #1 Rated Carpenter & Plumber in Centurion. Expert kitchen renovations, granite installation & smart plumbing systems. Free quotes. Call 067 601 4490",
-    url: "https://granitecarpentry.co.za/areas/centurion",
+      "★★★★★ #1 Rated Carpenter & Plumber in Centurion. Expert kitchen renovations, granite installation & smart plumbing systems. Free quotes. Call 063 397 7498",
+    url: "https://www.timberstudio.co.za/areas/centurion",
     images: [
       {
-        url: "https://granitecarpentry.co.za/carpenter-johannesburg-installing-kitchen-cupboards.jpg",
+        url: "https://www.timberstudio.co.za/carpenter-johannesburg-installing-kitchen-cupboards.jpg",
         width: 1200,
         height: 630,
         alt: "Best Carpenter & Plumber Centurion - Kitchen Renovation & Built-in Cupboards",
@@ -72,9 +72,9 @@ export default function CenturionPage() {
                   asChild
                   className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <a href="tel:+27676014490">
+                  <a href="tel:+27633977498">
                     <Phone className="mr-2 w-5 h-5" />
-                    Call: 067 601 4490
+                    Call: 063 397 7498
                   </a>
                 </Button>
               </div>
@@ -388,9 +388,9 @@ export default function CenturionPage() {
               asChild
               className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-4 bg-transparent"
             >
-              <a href="tel:+27676014490">
+              <a href="tel:+27633977498">
                 <Phone className="mr-2 w-5 h-5" />
-                Call: 067 601 4490
+                Call: 063 397 7498
               </a>
             </Button>
           </div>

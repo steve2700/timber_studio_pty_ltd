@@ -9,23 +9,23 @@ import { Phone, Star, CheckCircle, Clock, Shield, Award, MapPin, ArrowRight, Quo
 
 export const metadata: Metadata = {
   title:
-    "Industrial Carpenter & Plumber Krugersdorp | Commercial Carpentry, Granite Installation & Industrial Plumbing | Granite Carpentry",
+    "Industrial Carpenter & Plumber Krugersdorp | Commercial Carpentry, Granite Installation & Industrial Plumbing | The Timber Studio",
   description:
-    "Industrial carpenter & plumber services in Krugersdorp. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation & industrial plumbing. Licensed & insured for industrial projects. Call 067 601 4490 for free quote.",
+    "Industrial carpenter & plumber services in Krugersdorp. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation & industrial plumbing. Licensed & insured for industrial projects. Call 063 397 7498 for free quote.",
   keywords:
     "carpenter Krugersdorp, industrial plumber Krugersdorp, commercial carpentry Krugersdorp, kitchen renovations Krugersdorp, built-in cupboards Krugersdorp, granite installation Krugersdorp, industrial plumbing Krugersdorp",
   openGraph: {
     title: "Industrial Carpenter & Plumber Krugersdorp | Commercial Carpentry & Granite Installation",
     description:
       "Industrial carpenter & plumber services in Krugersdorp. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation & industrial plumbing. Licensed & insured for industrial projects.",
-    url: "https://granitecarpentry.co.za/areas/krugersdorp",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/areas/krugersdorp",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://www.timberstudio.co.za/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "Industrial Carpenter & Plumber Krugersdorp - Granite Carpentry",
+        alt: "Industrial Carpenter & Plumber Krugersdorp - The Timber Studio",
       },
     ],
     locale: "en_ZA",
@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     title: "Industrial Carpenter & Plumber Krugersdorp | Commercial Carpentry & Granite Installation",
     description:
       "Industrial carpenter & plumber services in Krugersdorp. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation & industrial plumbing. Licensed & insured for industrial projects.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://www.timberstudio.co.za/timber-studio-logo.png"],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/krugersdorp",
+    canonical: "https://www.timberstudio.co.za/areas/krugersdorp",
   },
 }
 
@@ -181,7 +181,7 @@ export default function KrugersdorpPage() {
     {
       question: "Do you offer emergency plumbing services in Krugersdorp?",
       answer:
-        "Yes, we provide 24/7 emergency plumbing services throughout Krugersdorp and the West Rand. Burst pipes, major leaks, geyser failures, and urgent drainage issues are handled promptly by our licensed plumbers. Industrial and commercial emergency call-outs are prioritized. Call 067 601 4490 for immediate assistance.",
+        "Yes, we provide 24/7 emergency plumbing services throughout Krugersdorp and the West Rand. Burst pipes, major leaks, geyser failures, and urgent drainage issues are handled promptly by our licensed plumbers. Industrial and commercial emergency call-outs are prioritized. Call 063 397 7498 for immediate assistance.",
     },
     {
       question: "Are you licensed and insured for industrial work in Krugersdorp?",
@@ -253,7 +253,7 @@ export default function KrugersdorpPage() {
                   size="lg"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
 
@@ -579,7 +579,7 @@ export default function KrugersdorpPage() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
             </div>
@@ -613,7 +613,7 @@ export default function KrugersdorpPage() {
               size="lg"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498</Link>
             </Button>
           </div>
         </div>

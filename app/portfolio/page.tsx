@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     title: "★★★★★ Portfolio | Best Carpenter Johannesburg 2026 - 1000+ Projects",
     description:
       "★★★★★ View our portfolio of 1000+ completed carpentry projects. Kitchen renovations, built-in cupboards, granite installations. #1 rated carpenter Johannesburg.",
-    url: "https://granitecarpentry.co.za/portfolio",
+    url: "https://www.timberstudio.co.za/portfolio",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/portfolio",
+    canonical: "https://www.timberstudio.co.za/portfolio",
   },
 }
 
@@ -115,11 +115,11 @@ export default function PortfolioPage() {
                 <Link href="/contact">Start Your Project</Link>
               </Button>
               <a
-                href="tel:+27676014490"
+                href="tel:+27633977498"
                 className="flex items-center gap-2 text-lg hover:text-amber-400 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                067 601 4490
+                063 397 7498
               </a>
             </div>
 
@@ -391,11 +391,11 @@ export default function PortfolioPage() {
               <Link href="/contact">Get Your FREE Quote</Link>
             </Button>
             <a
-              href="tel:+27676014490"
+              href="tel:+27633977498"
               className="flex items-center gap-2 text-lg hover:text-amber-200 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              067 601 4490 - Call Now
+              063 397 7498 - Call Now
             </a>
           </div>
         </div>

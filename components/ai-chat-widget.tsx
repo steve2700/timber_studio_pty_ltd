@@ -21,7 +21,7 @@ export function AIChatWidget() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "Hi! 👋 I'm your Granite Carpentry assistant. I can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n💎 Granite & Quartz\n🔧 Plumbing Services\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n\nWhat service are you interested in?",
+      text: "Hi! 👋 I'm The Timber Studio assistant. I can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n🪵 Solid Timber Doors\n🔧 Plumbing Services\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n\nWhat service are you interested in?",
       sender: "bot",
       timestamp: new Date(),
     },
@@ -99,7 +99,7 @@ export function AIChatWidget() {
     setMessages([
       {
         id: "1",
-        text: "Hi! 👋 I'm your Granite Carpentry assistant. I can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n💎 Granite & Quartz\n🔧 Plumbing Services\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n\nWhat service are you interested in?",
+        text: "Hi! 👋 I'm The Timber Studio assistant. I can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n🪵 Solid Timber Doors\n🔧 Plumbing Services\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n\nWhat service are you interested in?",
         sender: "bot",
         timestamp: new Date(),
       },
@@ -114,15 +114,15 @@ export function AIChatWidget() {
     const text = userText.toLowerCase()
 
     if (text.includes("kitchen") || text.includes("renovation")) {
-      return "🔨 KITCHEN RENOVATIONS\n\nWe specialize in complete kitchen transformations!\n\n💰 Pricing:\n• Basic Renovation: R50,000 - R90,000\n• Mid-Range: R90,000 - R180,000\n• High-End: R180,000+\n\n✅ Includes:\n• Custom cabinets & cupboards\n• Granite/quartz countertops\n• Modern appliances integration\n• Professional installation\n• 24-month warranty\n\n📞 Call 067 601 4490 for a FREE quote!"
+      return "🔨 KITCHEN RENOVATIONS\n\nWe specialize in complete kitchen transformations!\n\n💰 Pricing:\n• Basic Renovation: R50,000 - R90,000\n• Mid-Range: R90,000 - R180,000\n• High-End: R180,000+\n\n✅ Includes:\n• Custom cabinets & cupboards\n• Granite/quartz countertops\n• Modern appliances integration\n• Professional installation\n• 24-month warranty\n\n📞 Call 063 397 7498 for a FREE quote!"
     }
 
     if (text.includes("cupboard") || text.includes("built-in") || text.includes("wardrobe")) {
-      return "🚪 BUILT-IN CUPBOARDS\n\nCustom storage solutions for every room!\n\n💰 Pricing:\n• Standard Cupboards: R15,000 - R25,000\n• Walk-in Wardrobes: R25,000 - R45,000\n• Luxury Storage: R45,000+\n\n✅ Features:\n• Custom designs to fit your space\n• Quality materials & finishes\n• Soft-close mechanisms\n• Mirror options available\n• 24-month warranty\n\n📞 Call 067 601 4490 for a FREE consultation!"
+      return "🚪 BUILT-IN CUPBOARDS\n\nCustom storage solutions for every room!\n\n💰 Pricing:\n• Standard Cupboards: R15,000 - R25,000\n• Walk-in Wardrobes: R25,000 - R45,000\n• Luxury Storage: R45,000+\n\n✅ Features:\n• Custom designs to fit your space\n• Quality materials & finishes\n• Soft-close mechanisms\n• Mirror options available\n• 24-month warranty\n\n📞 Call 063 397 7498 for a FREE consultation!"
     }
 
     if (text.includes("granite") || text.includes("quartz") || text.includes("countertop") || text.includes("stone")) {
-      return "💎 GRANITE & QUARTZ INSTALLATION\n\nPremium stone surfaces with expert installation!\n\n💰 Pricing:\n• Granite: R500 - R1,400/m²\n• Quartz: R600 - R1,800/m²\n• Installation included\n\n✅ Benefits:\n• Heat & scratch resistant\n• Professional templating\n• Seamless installation\n• 12-month warranty\n• Free consultation\n\n📞 Call 067 601 4490 for pricing!"
+      return "💎 GRANITE & QUARTZ INSTALLATION\n\nPremium stone surfaces with expert installation!\n\n💰 Pricing:\n• Granite: R500 - R1,400/m²\n• Quartz: R600 - R1,800/m²\n• Installation included\n\n✅ Benefits:\n• Heat & scratch resistant\n• Professional templating\n• Seamless installation\n• 12-month warranty\n• Free consultation\n\n📞 Call 063 397 7498 for pricing!"
     }
 
     if (
@@ -131,38 +131,38 @@ export function AIChatWidget() {
       text.includes("plasterboard") ||
       text.includes("suspended ceiling")
     ) {
-      return "🏗️ DRYWALL & CEILING SERVICES\n\nProfessional installation throughout Johannesburg!\n\n💰 Pricing:\n• Suspended Ceilings: From R180/m²\n• Plasterboard Walls: From R120/m²\n• Ceiling Repairs: From R350/repair\n• Acoustic Ceilings: From R220/m²\n\n📍 Available in:\n• Sandton, Randburg, Fourways\n• Midrand, Centurion, Pretoria\n• Johannesburg South & more!\n\n✅ 24-month warranty on all work\n\n📞 Call 067 601 4490 for a FREE quote!"
+      return "🏗️ DRYWALL & CEILING SERVICES\n\nProfessional installation throughout Johannesburg!\n\n💰 Pricing:\n• Suspended Ceilings: From R180/m²\n• Plasterboard Walls: From R120/m²\n• Ceiling Repairs: From R350/repair\n• Acoustic Ceilings: From R220/m²\n\n📍 Available in:\n• Sandton, Randburg, Fourways\n• Midrand, Centurion, Pretoria\n• Johannesburg South & more!\n\n✅ 24-month warranty on all work\n\n📞 Call 063 397 7498 for a FREE quote!"
     }
 
     if (text.includes("plumb") || text.includes("geyser") || text.includes("leak") || text.includes("bathroom")) {
-      return "🔧 PROFESSIONAL PLUMBING\n\n24/7 Emergency service available!\n\n💰 Pricing:\n• Emergency Callout: From R280\n• Geyser Installation: From R3,500\n• Bathroom Renovations: From R25,000\n• General Repairs: From R350/hour\n\n✅ Services:\n• Emergency repairs\n• Geyser installations\n• Bathroom renovations\n• Leak detection & repair\n• Licensed & insured\n\n📞 Call 067 601 4490 - Available 24/7!"
+      return "🔧 PROFESSIONAL PLUMBING\n\n24/7 Emergency service available!\n\n💰 Pricing:\n• Emergency Callout: From R280\n• Geyser Installation: From R3,500\n• Bathroom Renovations: From R25,000\n• General Repairs: From R350/hour\n\n✅ Services:\n• Emergency repairs\n• Geyser installations\n• Bathroom renovations\n• Leak detection & repair\n• Licensed & insured\n\n📞 Call 063 397 7498 - Available 24/7!"
     }
 
     if (text.includes("deck") || text.includes("floor") || text.includes("laminate") || text.includes("wood")) {
-      return "🪵 DECKING & FLOORING\n\nBeautiful outdoor & indoor solutions!\n\n💰 Pricing:\n• Outdoor Decking: From R12,000\n• Laminate Flooring: From R150/m²\n• Wooden Flooring: From R250/m²\n\n✅ Features:\n• Weather-resistant materials\n• Professional installation\n• Various wood options\n• Maintenance advice\n• 24-month warranty\n\n📞 Call 067 601 4490 for a FREE quote!"
+      return "🪵 DECKING & FLOORING\n\nBeautiful outdoor & indoor solutions!\n\n💰 Pricing:\n• Outdoor Decking: From R12,000\n• Laminate Flooring: From R150/m²\n• Wooden Flooring: From R250/m²\n\n✅ Features:\n• Weather-resistant materials\n• Professional installation\n• Various wood options\n• Maintenance advice\n• 24-month warranty\n\n📞 Call 063 397 7498 for a FREE quote!"
     }
 
     if (text.includes("price") || text.includes("cost") || text.includes("quote") || text.includes("how much")) {
-      return "💰 PRICING OVERVIEW\n\nHere are our typical price ranges:\n\n🔨 Kitchen Renovations: R50k - R200k+\n🚪 Built-in Cupboards: R15k - R80k\n💎 Granite/Quartz: R8k - R25k\n🏗️ Drywall & Ceilings: R6k - R30k\n🔧 Plumbing: From R280\n🪵 Decking & Flooring: R12k - R40k\n\n✅ All quotes include:\n• Free consultation\n• Detailed breakdown\n• No hidden fees\n• Warranty coverage\n\n📞 Call 067 601 4490 for your personalized quote!"
+      return "💰 PRICING OVERVIEW\n\nHere are our typical price ranges:\n\n🔨 Kitchen Renovations: R50k - R200k+\n🚪 Built-in Cupboards: R15k - R80k\n💎 Granite/Quartz: R8k - R25k\n🏗️ Drywall & Ceilings: R6k - R30k\n🔧 Plumbing: From R280\n🪵 Decking & Flooring: R12k - R40k\n\n✅ All quotes include:\n• Free consultation\n• Detailed breakdown\n• No hidden fees\n• Warranty coverage\n\n📞 Call 063 397 7498 for your personalized quote!"
     }
 
     if (text.includes("area") || text.includes("location") || text.includes("where") || text.includes("serve")) {
-      return "📍 SERVICE AREAS\n\nWe serve Greater Johannesburg & Gauteng:\n\n✅ Main Areas:\n• Sandton, Randburg, Fourways\n• Midrand, Centurion, Pretoria\n• Johannesburg South, Alberton\n• Boksburg, Edenvale, Benoni\n• Kempton Park, Germiston\n• Roodepoort, Krugersdorp\n• Vereeniging, Vanderbijlpark\n• And 10+ more areas!\n\n🚗 No travel fees within service areas\n📞 Call 067 601 4490 to confirm coverage!"
+      return "📍 SERVICE AREAS\n\nWe serve Greater Johannesburg & Gauteng:\n\n✅ Main Areas:\n• Sandton, Randburg, Fourways\n• Midrand, Centurion, Pretoria\n• Johannesburg South, Alberton\n• Boksburg, Edenvale, Benoni\n• Kempton Park, Germiston\n• Roodepoort, Krugersdorp\n• Vereeniging, Vanderbijlpark\n• And 10+ more areas!\n\n🚗 No travel fees within service areas\n📞 Call 063 397 7498 to confirm coverage!"
     }
 
     if (text.includes("warrant") || text.includes("guarantee") || text.includes("insurance")) {
-      return "🛡️ WARRANTY & GUARANTEES\n\nYour peace of mind is our priority!\n\n✅ Coverage:\n• 24-month warranty on carpentry\n• 12-month warranty on installations\n• Licensed & insured business\n• R2 million public liability\n• 5-star rated service\n\n✅ What's Covered:\n• Workmanship defects\n• Material failures\n• Installation issues\n• Structural problems\n\n📞 Call 067 601 4490 for details!"
+      return "🛡️ WARRANTY & GUARANTEES\n\nYour peace of mind is our priority!\n\n✅ Coverage:\n• 24-month warranty on carpentry\n• 12-month warranty on installations\n• Licensed & insured business\n• R2 million public liability\n• 5-star rated service\n\n✅ What's Covered:\n• Workmanship defects\n• Material failures\n• Installation issues\n• Structural problems\n\n📞 Call 063 397 7498 for details!"
     }
 
     if (text.includes("contact") || text.includes("phone") || text.includes("call") || text.includes("email")) {
-      return "📞 CONTACT INFORMATION\n\nReady to help you!\n\n📱 Phone: 067 601 4490\n📧 Email: info@granitecarpentry.co.za\n🌐 Website: granitecarpentry.co.za\n\n🕒 Business Hours:\n• Mon-Sat: 7:00 AM - 5:00 PM\n• Emergency: 24/7 Available\n\n✅ Free Services:\n• Consultations\n• Site visits\n• Detailed quotes\n• Design advice\n\nCall us now for immediate assistance!"
+      return "📞 CONTACT INFORMATION\n\nReady to help you!\n\n📱 Phone: 063 397 7498\n📧 Email: info@timberstudio.co.za\n🌐 Website: www.timberstudio.co.za\n\n🕒 Business Hours:\n• Mon-Sat: 7:00 AM - 5:00 PM\n• Emergency: 24/7 Available\n\n✅ Free Services:\n• Consultations\n• Site visits\n• Detailed quotes\n• Design advice\n\nCall us now for immediate assistance!"
     }
 
     if (text.includes("emergency") || text.includes("urgent") || text.includes("asap") || text.includes("now")) {
-      return "🚨 EMERGENCY SERVICE\n\nWe're here to help 24/7!\n\n📞 CALL NOW: 067 601 4490\n\n✅ Emergency Services:\n• Plumbing leaks & bursts\n• Geyser failures\n• Urgent repairs\n• Same-day service\n\n⚡ Response Time:\n• Emergency callout: 1-2 hours\n• Standard service: Same/next day\n\nDon't wait - call us immediately!"
+      return "🚨 EMERGENCY SERVICE\n\nWe're here to help 24/7!\n\n📞 CALL NOW: 063 397 7498\n\n✅ Emergency Services:\n• Plumbing leaks & bursts\n• Geyser failures\n• Urgent repairs\n• Same-day service\n\n⚡ Response Time:\n• Emergency callout: 1-2 hours\n• Standard service: Same/next day\n\nDon't wait - call us immediately!"
     }
 
-    return "Thanks for your message! 😊\n\nI can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n💎 Granite & Quartz\n🔧 Plumbing Services\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n💰 Pricing Information\n📍 Service Areas\n\nJust ask about any service, or:\n📞 Call 067 601 4490\n📧 info@granitecarpentry.co.za\n\nWe offer FREE consultations & quotes!"
+    return "Thanks for your message! 😊\n\nI can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n💎 Granite & Quartz\n🔧 Plumbing Services\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n💰 Pricing Information\n📍 Service Areas\n\nJust ask about any service, or:\n📞 Call 063 397 7498\n📧 info@timberstudio.co.za\n\nWe offer FREE consultations & quotes!"
   }
 
   if (!isOpen) {

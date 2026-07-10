@@ -9,17 +9,17 @@ export const metadata: Metadata = {
   title:
     "★★★★★ Best Carpenter & Plumber Alberton 2026 | #1 Trusted Kitchen Renovations, Built-in Cupboards & Family Plumbing",
   description:
-    "★★★★★ #1 trusted carpenter & plumber in Alberton 2026. Family-focused kitchen renovations, built-in cupboards, granite installations & family plumbing services. 350+ South Rand projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
+    "★★★★★ #1 trusted carpenter & plumber in Alberton 2026. Family-focused kitchen renovations, built-in cupboards, granite installations & family plumbing services. 350+ South Rand projects. FREE quotes. Licensed & insured. Call 063 397 7498.",
   keywords:
     "best carpenter Alberton, trusted plumber Alberton 2026, kitchen renovation Alberton, built-in cupboards Alberton, granite installation Alberton, family plumbing Alberton, professional carpentry Alberton, #1 carpenter Alberton, carpenter near me Alberton, Meyerton carpenter, Vereeniging carpenter, South Rand carpenter, family plumber Alberton, emergency plumber Alberton, affordable carpenter Alberton, Alberton kitchen renovations 2026",
   openGraph: {
     title: "★★★★★ Best Carpenter & Plumber Alberton 2026 | #1 Trusted Family Services",
     description:
       "★★★★★ #1 trusted carpenter & plumber in Alberton. Family-focused kitchen renovations, built-in cupboards, granite installations & family plumbing services. 350+ South Rand projects. FREE quotes.",
-    url: "https://granitecarpentry.co.za/areas/alberton",
+    url: "https://www.timberstudio.co.za/areas/alberton",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/alberton",
+    canonical: "https://www.timberstudio.co.za/areas/alberton",
   },
 }
 
@@ -52,11 +52,11 @@ export default function AlbertonPage() {
                 <Link href="/contact">Get Trusted Quote</Link>
               </Button>
               <a
-                href="tel:+27676014490"
+                href="tel:+27633977498"
                 className="flex items-center gap-2 text-lg hover:text-amber-400 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                067 601 4490
+                063 397 7498
               </a>
             </div>
             <div className="flex items-center justify-center gap-6 text-sm">
@@ -503,11 +503,11 @@ export default function AlbertonPage() {
               <Link href="/contact">Get Trusted Quote</Link>
             </Button>
             <a
-              href="tel:+27676014490"
+              href="tel:+27633977498"
               className="flex items-center gap-2 text-lg hover:text-amber-200 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              067 601 4490 - Call Now
+              063 397 7498 - Call Now
             </a>
           </div>
         </div>

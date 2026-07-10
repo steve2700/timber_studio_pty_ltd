@@ -9,17 +9,17 @@ export const metadata: Metadata = {
   title:
     "★★★★★ Best Carpenter & Plumber Boksburg 2026 | #1 Reliable Kitchen Renovations, Built-in Cupboards & Emergency Plumbing",
   description:
-    "★★★★★ #1 reliable carpenter & plumber in Boksburg 2026. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 400+ East Rand projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
+    "★★★★★ #1 reliable carpenter & plumber in Boksburg 2026. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 400+ East Rand projects. FREE quotes. Licensed & insured. Call 063 397 7498.",
   keywords:
     "best carpenter Boksburg, reliable plumber Boksburg 2026, kitchen renovation Boksburg, built-in cupboards Boksburg, granite installation Boksburg, emergency plumbing Boksburg, affordable carpenter Boksburg, professional carpentry Boksburg, #1 carpenter Boksburg, carpenter near me Boksburg, Benoni carpenter, Germiston carpenter, East Rand carpenter, 24/7 plumber Boksburg, Boksburg kitchen renovations 2026, Boksburg plumber 2026",
   openGraph: {
     title: "★★★★★ Best Carpenter & Plumber Boksburg 2026 | #1 Reliable Services",
     description:
       "★★★★★ #1 reliable carpenter & plumber in Boksburg. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 400+ East Rand projects. FREE quotes.",
-    url: "https://granitecarpentry.co.za/areas/boksburg",
+    url: "https://www.timberstudio.co.za/areas/boksburg",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/boksburg",
+    canonical: "https://www.timberstudio.co.za/areas/boksburg",
   },
 }
 
@@ -52,11 +52,11 @@ export default function BoksburgPage() {
                 <Link href="/contact">Get Reliable Quote</Link>
               </Button>
               <a
-                href="tel:+27676014490"
+                href="tel:+27633977498"
                 className="flex items-center gap-2 text-lg hover:text-amber-400 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                067 601 4490
+                063 397 7498
               </a>
             </div>
             <div className="flex items-center justify-center gap-6 text-sm">
@@ -628,11 +628,11 @@ export default function BoksburgPage() {
               <Link href="/contact">Get Reliable Quote</Link>
             </Button>
             <a
-              href="tel:+27676014490"
+              href="tel:+27633977498"
               className="flex items-center gap-2 text-lg hover:text-amber-200 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              067 601 4490 - Call Now
+              063 397 7498 - Call Now
             </a>
           </div>
         </div>

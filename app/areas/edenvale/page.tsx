@@ -9,17 +9,17 @@ export const metadata: Metadata = {
   title:
     "★★★★★ Best Carpenter & Plumber Edenvale 2026 | #1 Quality Kitchen Renovations, Built-in Cupboards & Professional Plumbing",
   description:
-    "★★★★★ #1 quality carpenter & plumber in Edenvale 2026. Premium kitchen renovations, built-in cupboards, granite installations & professional plumbing services. 450+ East Rand projects. FREE quotes. Licensed & insured. Call 067 601 4490.",
+    "★★★★★ #1 quality carpenter & plumber in Edenvale 2026. Premium kitchen renovations, built-in cupboards, granite installations & professional plumbing services. 450+ East Rand projects. FREE quotes. Licensed & insured. Call 063 397 7498.",
   keywords:
     "best carpenter Edenvale, quality plumber Edenvale 2026, kitchen renovation Edenvale, built-in cupboards Edenvale, granite installation Edenvale, professional plumbing Edenvale, premium carpenter Edenvale, professional carpentry Edenvale, #1 carpenter Edenvale, carpenter near me Edenvale, Bedfordview carpenter, Germiston carpenter, East Rand carpenter, emergency plumbing Edenvale, Edenvale kitchen renovations 2026, Edenvale plumber 2026",
   openGraph: {
     title: "★★★★★ Best Carpenter & Plumber Edenvale 2026 | #1 Quality Services",
     description:
       "★★★★★ #1 quality carpenter & plumber in Edenvale. Premium kitchen renovations, built-in cupboards, granite installations & professional plumbing services. 450+ East Rand projects. FREE quotes.",
-    url: "https://granitecarpentry.co.za/areas/edenvale",
+    url: "https://www.timberstudio.co.za/areas/edenvale",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/edenvale",
+    canonical: "https://www.timberstudio.co.za/areas/edenvale",
   },
 }
 
@@ -52,11 +52,11 @@ export default function EdenvalePage() {
                 <Link href="/contact">Get Quality Quote</Link>
               </Button>
               <a
-                href="tel:+27676014490"
+                href="tel:+27633977498"
                 className="flex items-center gap-2 text-lg hover:text-amber-400 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                067 601 4490
+                063 397 7498
               </a>
             </div>
             <div className="flex items-center justify-center gap-6 text-sm">
@@ -451,11 +451,11 @@ export default function EdenvalePage() {
               <Link href="/contact">Get Quality Quote</Link>
             </Button>
             <a
-              href="tel:+27676014490"
+              href="tel:+27633977498"
               className="flex items-center gap-2 text-lg hover:text-amber-200 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              067 601 4490 - Call Now
+              063 397 7498 - Call Now
             </a>
           </div>
         </div>

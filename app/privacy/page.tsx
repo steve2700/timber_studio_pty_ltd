@@ -5,9 +5,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Shield, Lock, Eye, FileText, Phone, Mail } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Granite Carpentry - POPIA Compliant Data Protection 2026",
+  title: "Privacy Policy | The Timber Studio - POPIA Compliant Data Protection 2026",
   description:
-    "Granite Carpentry's comprehensive privacy policy. POPIA compliant data protection for South African customers. Learn how we protect your personal information and carpentry project details.",
+    "The Timber Studio's comprehensive privacy policy. POPIA compliant data protection for South African customers. Learn how we protect your personal information and carpentry project details.",
   keywords:
     "privacy policy, POPIA compliance, data protection South Africa, carpenter privacy policy, granite installation privacy, personal information protection",
   robots: "index, follow",
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
               <h1 className="text-4xl lg:text-5xl font-bold">Privacy Policy</h1>
             </div>
             <p className="text-xl text-slate-300 mb-8">
-              Your privacy is our priority. Learn how Granite Carpentry protects your personal information in compliance
+              Your privacy is our priority. Learn how The Timber Studio protects your personal information in compliance
               with South African POPIA regulations.
             </p>
             <div className="flex items-center justify-center text-slate-400">
@@ -78,7 +78,7 @@ export default function PrivacyPage() {
                 <CardContent className="space-y-4">
                   <h4 className="font-semibold text-lg">Personal Information</h4>
                   <p className="text-slate-700">
-                    When you contact Granite Carpentry for carpentry, kitchen renovation, or granite installation
+                    When you contact The Timber Studio for carpentry, kitchen renovation, or granite installation
                     services, we may collect:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-slate-700">
@@ -105,7 +105,7 @@ export default function PrivacyPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-700 mb-4">
-                    Granite Carpentry uses your personal information for the following purposes:
+                    The Timber Studio uses your personal information for the following purposes:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-slate-700">
                     <li>Providing accurate quotes for kitchen renovations and carpentry services</li>
@@ -125,7 +125,7 @@ export default function PrivacyPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-700 mb-4">
-                    Granite Carpentry does not sell, trade, or rent your personal information. We may share information
+                    The Timber Studio does not sell, trade, or rent your personal information. We may share information
                     only in these circumstances:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-slate-700">
@@ -247,12 +247,12 @@ export default function PrivacyPage() {
                         <Phone className="w-5 h-5 text-amber-600 mr-3" />
                         <div>
                           <p className="font-semibold">Phone</p>
-                          <p className="text-slate-600">067 601 4490</p>
+                          <p className="text-slate-600">063 397 7498</p>
                         </div>
                       </div>
                     </div>
                     <p className="text-slate-600 mt-4">
-                      <strong>Privacy Officer:</strong> Granite Carpentry Data Protection Team
+                      <strong>Privacy Officer:</strong> The Timber Studio Data Protection Team
                       <br />
                       <strong>Response Time:</strong> We will respond to privacy requests within 30 days as required by
                       POPIA.
@@ -267,7 +267,7 @@ export default function PrivacyPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-700">
-                    Granite Carpentry may update this privacy policy to reflect changes in our practices or legal
+                    The Timber Studio may update this privacy policy to reflect changes in our practices or legal
                     requirements. We will notify you of significant changes by:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-slate-700 mt-4">

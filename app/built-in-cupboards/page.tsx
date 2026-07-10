@@ -10,7 +10,7 @@ import { FAQAccordion } from "@/components/faq-accordion"
 export const metadata: Metadata = {
   title: "Built-in Cupboards Johannesburg 2026 | Custom Wardrobes & Storage Solutions",
   description:
-    "Expert built-in cupboard installation in Johannesburg, Sandton, Randburg & Midrand. Custom wardrobes, bedroom cupboards, walk-in closets. 5-star rated. Free quotes. Call 067 601 4490.",
+    "Expert built-in cupboard installation in Johannesburg, Sandton, Randburg & Midrand. Custom wardrobes, bedroom cupboards, walk-in closets. 5-star rated. Free quotes. Call 063 397 7498.",
   keywords:
     "built-in cupboards johannesburg, custom wardrobes sandton, bedroom cupboards randburg, built-in storage midrand, fitted wardrobes gauteng, walk-in closets johannesburg, custom storage solutions, built-in wardrobes johannesburg, cupboard installation sandton, bedroom storage solutions",
   openGraph: {
@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     description:
       "Expert built-in cupboard installation in Johannesburg. Custom wardrobes, bedroom cupboards, and storage solutions. Quality guaranteed, 5-star rated service.",
     images: [{ url: "/Custom-Bedroom-Built-In-Cupboards-and-Wardrobes-JHB.png", width: 1200, height: 630 }],
-    url: "https://granitecarpentry.co.za/services/built-in-cupboards",
+    url: "https://www.timberstudio.co.za/services/built-in-cupboards",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/services/built-in-cupboards",
+    canonical: "https://www.timberstudio.co.za/services/built-in-cupboards",
   },
   robots: {
     index: true,
@@ -71,16 +71,16 @@ export default function BuiltInCupboardsPage() {
             "@graph": [
               {
                 "@type": "Service",
-                "@id": "https://granitecarpentry.co.za/services/built-in-cupboards#service",
+                "@id": "https://www.timberstudio.co.za/services/built-in-cupboards#service",
                 name: "Built-in Cupboards Johannesburg",
                 description:
                   "Professional built-in cupboard installation in Johannesburg including custom wardrobes, bedroom cupboards, walk-in closets, and storage solutions.",
                 provider: {
                   "@type": "LocalBusiness",
-                  "@id": "https://granitecarpentry.co.za/#organization",
-                  name: "Granite Carpentry",
-                  telephone: "+27676014490",
-                  email: "info@granitecarpentry.co.za",
+                  "@id": "https://www.timberstudio.co.za/#organization",
+                  name: "The Timber Studio",
+                  telephone: "+27633977498",
+                  email: "info@timberstudio.co.za",
                   address: {
                     "@type": "PostalAddress",
                     addressLocality: "Johannesburg",
@@ -147,19 +147,19 @@ export default function BuiltInCupboardsPage() {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://granitecarpentry.co.za",
+                    item: "https://www.timberstudio.co.za",
                   },
                   {
                     "@type": "ListItem",
                     position: 2,
                     name: "Services",
-                    item: "https://granitecarpentry.co.za/services",
+                    item: "https://www.timberstudio.co.za/services",
                   },
                   {
                     "@type": "ListItem",
                     position: 3,
                     name: "Built-in Cupboards",
-                    item: "https://granitecarpentry.co.za/services/built-in-cupboards",
+                    item: "https://www.timberstudio.co.za/services/built-in-cupboards",
                   },
                 ],
               },
@@ -228,9 +228,9 @@ export default function BuiltInCupboardsPage() {
                   size="lg"
                   className="text-lg px-8 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">
+                  <Link href="tel:+27633977498">
                     <Phone className="mr-2 h-5 w-5" />
-                    067 601 4490
+                    063 397 7498
                   </Link>
                 </Button>
               </div>
@@ -600,9 +600,9 @@ export default function BuiltInCupboardsPage() {
                 size="lg"
                 className="text-lg px-8 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent"
               >
-                <Link href="tel:+27676014490">
+                <Link href="tel:+27633977498">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call: 067 601 4490
+                  Call: 063 397 7498
                 </Link>
               </Button>
             </div>

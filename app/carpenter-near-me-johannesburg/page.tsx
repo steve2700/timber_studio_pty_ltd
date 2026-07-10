@@ -24,18 +24,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export const metadata: Metadata = {
   title: "Carpenter Near Me Johannesburg 2026 | Local Carpenter Available Today",
   description:
-    "Looking for a carpenter near you in Johannesburg? Local, trusted, same-day available. Doors, cupboards, kitchens, built-ins & more. Call 067 601 4490 — we come to you!",
+    "Looking for a carpenter near you in Johannesburg? Local, trusted, same-day available. Doors, cupboards, kitchens, built-ins & more. Call 063 397 7498 — we come to you!",
   openGraph: {
     title: "Carpenter Near Me Johannesburg | Local Carpenter Available Today",
     description:
       "Find a trusted local carpenter in Johannesburg. Same-day available across Sandton, Randburg, Fourways, Midrand & all of Gauteng. Call now.",
-    url: "https://granitecarpentry.co.za/carpenter-near-me-johannesburg",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/carpenter-near-me-johannesburg",
+    siteName: "The Timber Studio",
     locale: "en_ZA",
     type: "website",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/carpenter-near-me-johannesburg",
+    canonical: "https://www.timberstudio.co.za/carpenter-near-me-johannesburg",
   },
 }
 
@@ -183,7 +183,7 @@ export default function CarpenterNearMeJohannesburgPage() {
       step: "01",
       title: "Call or WhatsApp",
       description:
-        "Call 067 601 4490 right now. Tell us what you need and where you are. We'll confirm we have a carpenter near you and give an arrival window.",
+        "Call 063 397 7498 right now. Tell us what you need and where you are. We'll confirm we have a carpenter near you and give an arrival window.",
       icon: Phone,
     },
     {
@@ -356,9 +356,9 @@ export default function CarpenterNearMeJohannesburgPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
               <Button size="lg" className="text-lg px-8 bg-yellow-500 hover:bg-yellow-400 text-zinc-900 font-bold">
-                <a href="tel:0676014490" className="flex items-center">
+                <a href="tel:0633977498" className="flex items-center">
                   <Phone className="mr-2 h-5 w-5" />
-                  CALL NOW: 067 601 4490
+                  CALL NOW: 063 397 7498
                 </a>
               </Button>
               <div className="text-center sm:text-left">
@@ -632,7 +632,7 @@ export default function CarpenterNearMeJohannesburgPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Call 067 601 4490 — we're a Johannesburg-based carpentry company with 20+ years of
+                  Call 063 397 7498 — we're a Johannesburg-based carpentry company with 20+ years of
                   experience serving all areas of Gauteng. We cover Sandton, Randburg, Fourways,
                   Midrand, Centurion, Pretoria, Roodepoort, East Rand, Johannesburg South, and all
                   surrounding suburbs. We dispatch the nearest available carpenter to your location,
@@ -647,7 +647,7 @@ export default function CarpenterNearMeJohannesburgPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Yes — call before 12pm on 067 601 4490 for guaranteed same-day carpenter service
+                  Yes — call before 12pm on 063 397 7498 for guaranteed same-day carpenter service
                   across Johannesburg and Gauteng. For emergencies like broken doors or security
                   issues, we're available 24/7 with{" "}
                   <Link href="/24-hour-emergency-carpenter-johannesburg" className="text-primary hover:underline">
@@ -839,8 +839,8 @@ export default function CarpenterNearMeJohannesburgPage() {
                 <Phone className="h-8 w-8 mx-auto mb-2 text-yellow-500" />
                 <CardTitle>Call Us Now</CardTitle>
                 <CardDescription className="text-zinc-300">
-                  <a href="tel:0676014490" className="text-xl font-bold hover:underline text-yellow-400">
-                    067 601 4490
+                  <a href="tel:0633977498" className="text-xl font-bold hover:underline text-yellow-400">
+                    063 397 7498
                   </a>
                 </CardDescription>
               </CardHeader>
@@ -859,8 +859,8 @@ export default function CarpenterNearMeJohannesburgPage() {
                 <Mail className="h-8 w-8 mx-auto mb-2 text-yellow-500" />
                 <CardTitle>Email Us</CardTitle>
                 <CardDescription className="text-zinc-300">
-                  <a href="mailto:info@granitecarpentry.co.za" className="hover:underline text-sm text-white">
-                    info@granitecarpentry.co.za
+                  <a href="mailto:info@timberstudio.co.za" className="hover:underline text-sm text-white">
+                    info@timberstudio.co.za
                   </a>
                 </CardDescription>
               </CardHeader>
@@ -872,7 +872,7 @@ export default function CarpenterNearMeJohannesburgPage() {
             className="text-lg px-8 bg-yellow-500 text-zinc-900 hover:bg-yellow-400 font-bold"
             asChild
           >
-            <a href="tel:0676014490">
+            <a href="tel:0633977498">
               <Phone className="mr-2 h-5 w-5" />
               FIND MY LOCAL CARPENTER NOW
             </a>

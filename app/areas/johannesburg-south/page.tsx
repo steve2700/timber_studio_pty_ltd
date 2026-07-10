@@ -9,17 +9,17 @@ export const metadata: Metadata = {
   title:
     "★★★★★ Best Carpenter & Plumber Johannesburg South 2024 | #1 Rated Kitchen Renovations, Built-in Cupboards & Plumbing Services",
   description:
-    "★★★★★ #1 rated carpenter & plumber in Johannesburg South 2024. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 500+ completed jobs. FREE quotes. Licensed & insured. Call 067 601 4490.",
+    "★★★★★ #1 rated carpenter & plumber in Johannesburg South 2024. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 500+ completed jobs. FREE quotes. Licensed & insured. Call 063 397 7498.",
   keywords:
     "best carpenter Johannesburg South, plumber Johannesburg South 2024, kitchen renovation Johannesburg South, built-in cupboards Johannesburg South, granite installation Johannesburg South, emergency plumbing Johannesburg South, professional carpentry Johannesburg South, #1 carpenter Johannesburg South, cheap carpenter Johannesburg South, carpenter near me Johannesburg South, 24/7 plumber Johannesburg South",
   openGraph: {
     title: "★★★★★ Best Carpenter & Plumber Johannesburg South 2024 | #1 Rated",
     description:
       "★★★★★ #1 rated carpenter & plumber in Johannesburg South. Professional kitchen renovations, built-in cupboards, granite installations & emergency plumbing services. 500+ jobs completed. FREE quotes.",
-    url: "https://granitecarpentry.co.za/areas/johannesburg-south",
+    url: "https://www.timberstudio.co.za/areas/johannesburg-south",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/johannesburg-south",
+    canonical: "https://www.timberstudio.co.za/areas/johannesburg-south",
   },
 }
 
@@ -51,11 +51,11 @@ export default function JohannesburgSouthPage() {
                 <Link href="/contact">Get FREE Quote Today</Link>
               </Button>
               <a
-                href="tel:+27676014490"
+                href="tel:+27633977498"
                 className="flex items-center gap-2 text-lg hover:text-amber-400 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                067 601 4490
+                063 397 7498
               </a>
             </div>
             <div className="flex items-center justify-center gap-6 text-sm">
@@ -435,11 +435,11 @@ export default function JohannesburgSouthPage() {
               <Link href="/contact">Get FREE Quote Today</Link>
             </Button>
             <a
-              href="tel:+27676014490"
+              href="tel:+27633977498"
               className="flex items-center gap-2 text-lg hover:text-amber-200 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              067 601 4490 - Call Now
+              063 397 7498 - Call Now
             </a>
           </div>
         </div>

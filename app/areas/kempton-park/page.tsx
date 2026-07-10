@@ -22,20 +22,20 @@ export const metadata: Metadata = {
   title:
     "Best Carpenter & Plumber Kempton Park 2026 | Kitchen Renovations, Joinery Services & Airport Area Plumbing | Free Quotes",
   description:
-    "★★★★★ #1 Rated Carpenter & Plumber in Kempton Park near OR Tambo. Expert kitchen renovations, professional joinery, built-in cupboards & airport area plumbing. Serving Edenvale, Bedfordview, Boksburg. Licensed & insured. Call 067 601 4490",
+    "★★★★★ #1 Rated Carpenter & Plumber in Kempton Park near OR Tambo. Expert kitchen renovations, professional joinery, built-in cupboards & airport area plumbing. Serving Edenvale, Bedfordview, Boksburg. Licensed & insured. Call 063 397 7498",
   keywords:
     "carpenter Kempton Park, plumber Kempton Park, kitchen renovation Kempton Park, built-in cupboards Kempton Park, granite installation Kempton Park, airport plumbing Kempton Park, carpenter Edenvale, carpenter Bedfordview, joinery Kempton Park, kitchen cabinets Kempton Park, best carpenter Kempton Park, affordable carpenter Kempton Park, OR Tambo carpenter, East Rand carpenter, emergency plumbing Kempton Park",
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/kempton-park",
+    canonical: "https://www.timberstudio.co.za/areas/kempton-park",
   },
   openGraph: {
     title: "Best Carpenter & Plumber Kempton Park 2026 | Kitchen Renovations & Joinery Services",
     description:
-      "★★★★★ #1 Rated Carpenter & Plumber in Kempton Park. Expert kitchen renovations, joinery services & airport area plumbing. Free quotes. Call 067 601 4490",
-    url: "https://granitecarpentry.co.za/areas/kempton-park",
+      "★★★★★ #1 Rated Carpenter & Plumber in Kempton Park. Expert kitchen renovations, joinery services & airport area plumbing. Free quotes. Call 063 397 7498",
+    url: "https://www.timberstudio.co.za/areas/kempton-park",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry.webp",
+        url: "https://www.timberstudio.co.za/granitecarpentry.webp",
         width: 1200,
         height: 630,
         alt: "Best Carpenter & Plumber Kempton Park - Kitchen Renovation & Joinery Services",
@@ -84,9 +84,9 @@ export default function KemptonParkPage() {
                   asChild
                   className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <a href="tel:+27676014490">
+                  <a href="tel:+27633977498">
                     <Phone className="mr-2 w-5 h-5" />
-                    Call: 067 601 4490
+                    Call: 063 397 7498
                   </a>
                 </Button>
               </div>
@@ -398,9 +398,9 @@ export default function KemptonParkPage() {
               asChild
               className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-4 bg-transparent"
             >
-              <a href="tel:+27676014490">
+              <a href="tel:+27633977498">
                 <Phone className="mr-2 w-5 h-5" />
-                Call: 067 601 4490
+                Call: 063 397 7498
               </a>
             </Button>
           </div>

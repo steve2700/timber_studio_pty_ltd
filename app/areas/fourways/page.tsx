@@ -9,17 +9,17 @@ export const metadata: Metadata = {
   title:
     "★★★★★ Best Carpenter & Plumber Fourways 2025 | #1 Luxury Kitchen Renovations, Built-in Cupboards & Premium Plumbing Services",
   description:
-    "★★★★★ #1 luxury carpenter & plumber in Fourways 2025. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 700+ upmarket projects completed. FREE quotes & flexible scheduling. Licensed & insured. Call 067 601 4490.",
+    "★★★★★ #1 luxury carpenter & plumber in Fourways 2025. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 700+ upmarket projects completed. FREE quotes & flexible scheduling. Licensed & insured. Call 063 397 7498.",
   keywords:
     "best carpenter Fourways 2025, luxury plumber Fourways, kitchen renovation Fourways, built-in cupboards Fourways, granite installation Fourways, premium plumbing Fourways, professional carpentry Fourways, #1 carpenter Fourways, upmarket carpenter Fourways, carpenter near me Fourways, Dainfern carpenter, Bryanston carpenter, Steyn City carpenter, luxury plumbing Fourways, emergency plumber Fourways, kitchen cabinets Fourways, custom cupboards Fourways",
   openGraph: {
     title: "★★★★★ Best Carpenter & Plumber Fourways 2025 | #1 Luxury Services",
     description:
       "★★★★★ #1 luxury carpenter & plumber in Fourways 2025. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 700+ upmarket projects. FREE quotes.",
-    url: "https://granitecarpentry.co.za/areas/fourways",
+    url: "https://www.timberstudio.co.za/areas/fourways",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/fourways",
+    canonical: "https://www.timberstudio.co.za/areas/fourways",
   },
 }
 
@@ -52,11 +52,11 @@ export default function FourwaysPage() {
                 <Link href="/contact">Get Premium Quote</Link>
               </Button>
               <a
-                href="tel:+27676014490"
+                href="tel:+27633977498"
                 className="flex items-center gap-2 text-lg hover:text-amber-400 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                067 601 4490
+                063 397 7498
               </a>
             </div>
             <div className="flex items-center justify-center gap-6 text-sm flex-wrap">
@@ -479,11 +479,11 @@ export default function FourwaysPage() {
               <Link href="/contact">Get Premium Quote</Link>
             </Button>
             <a
-              href="tel:+27676014490"
+              href="tel:+27633977498"
               className="flex items-center gap-2 text-lg hover:text-amber-200 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              067 601 4490 - Call Now
+              063 397 7498 - Call Now
             </a>
           </div>
         </div>

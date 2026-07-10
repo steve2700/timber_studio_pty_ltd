@@ -61,7 +61,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/private/", "/admin/", "/api/"],
       },
     ],
-    sitemap: "https://granitecarpentry.co.za/sitemap.xml",
-    host: "https://granitecarpentry.co.za",
+    sitemap: "https://www.timberstudio.co.za/sitemap.xml",
+    host: "https://www.timberstudio.co.za",
   }
 }

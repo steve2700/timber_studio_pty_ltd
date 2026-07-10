@@ -21,23 +21,23 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Mining Town Carpenter & Plumber Carletonville | Heavy-Duty Carpentry, Granite Installation & Industrial Plumbing | Granite Carpentry",
+    "Mining Town Carpenter & Plumber Carletonville | Heavy-Duty Carpentry, Granite Installation & Industrial Plumbing | The Timber Studio",
   description:
-    "Mining town carpenter & plumber services in Carletonville. Heavy-duty carpentry, kitchen renovations, built-in cupboards, granite installation & industrial plumbing. Licensed & insured for mining communities. Call 067 601 4490 for free quote.",
+    "Mining town carpenter & plumber services in Carletonville. Heavy-duty carpentry, kitchen renovations, built-in cupboards, granite installation & industrial plumbing. Licensed & insured for mining communities. Call 063 397 7498 for free quote.",
   keywords:
     "carpenter Carletonville, mining town plumber Carletonville, heavy-duty carpentry Carletonville, kitchen renovations Carletonville, built-in cupboards Carletonville, granite installation Carletonville, industrial plumbing Carletonville",
   openGraph: {
     title: "Mining Town Carpenter & Plumber Carletonville | Heavy-Duty Carpentry & Granite Installation",
     description:
       "Mining town carpenter services in Carletonville. Heavy-duty carpentry, kitchen renovations, built-in cupboards, granite installation. Licensed & insured for mining communities.",
-    url: "https://granitecarpentry.co.za/areas/carletonville",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/areas/carletonville",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://www.timberstudio.co.za/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "Mining Town Carpenter Carletonville - Granite Carpentry",
+        alt: "Mining Town Carpenter Carletonville - The Timber Studio",
       },
     ],
     locale: "en_ZA",
@@ -48,10 +48,10 @@ export const metadata: Metadata = {
     title: "Mining Town Carpenter & Plumber Carletonville | Heavy-Duty Carpentry & Granite Installation",
     description:
       "Mining town carpenter services in Carletonville. Heavy-duty carpentry, kitchen renovations, built-in cupboards, granite installation. Licensed & insured for mining communities.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://www.timberstudio.co.za/timber-studio-logo.png"],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/carletonville",
+    canonical: "https://www.timberstudio.co.za/areas/carletonville",
   },
 }
 
@@ -212,7 +212,7 @@ export default function CarletonvillePage() {
                   size="lg"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
 
@@ -454,7 +454,7 @@ export default function CarletonvillePage() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498</Link>
             </Button>
           </div>
         </div>

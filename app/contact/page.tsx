@@ -27,7 +27,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact Johannesburg's #1 Carpenter | Free Quotes Kitchen Renovations 2026",
   description:
-    "Contact Granite Carpentry for free quotes on kitchen renovations, built-in cupboards & granite installation. Call 067 601 4490 or email info@granitecarpentry.co.za. 5-star rated carpenter serving Johannesburg, Sandton, Randburg.",
+    "Contact The Timber Studio for free quotes on kitchen renovations, built-in cupboards & granite installation. Call 063 397 7498 or email info@timberstudio.co.za. 5-star rated carpenter serving Johannesburg, Sandton, Randburg.",
   keywords:
     "contact carpenter Johannesburg, free kitchen renovation quote, granite installation quote Johannesburg, built-in cupboards quote, carpenter contact details Johannesburg, kitchen renovation consultation, professional carpenter contact",
   robots: "index, follow",
@@ -35,14 +35,14 @@ export const metadata: Metadata = {
     title: "Contact Johannesburg's #1 Carpenter | Free Quotes 2026",
     description:
       "Get free quotes for kitchen renovations, built-in cupboards & granite installation. 5-star rated carpenter serving Greater Johannesburg.",
-    url: "https://granitecarpentry.co.za/contact",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/contact",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry.webp",
+        url: "https://www.timberstudio.co.za/granitecarpentry.webp",
         width: 1200,
         height: 630,
-        alt: "Contact Granite Carpentry - Professional Carpenter Johannesburg",
+        alt: "Contact The Timber Studio - Professional Carpenter Johannesburg",
       },
     ],
     locale: "en_ZA",
@@ -97,9 +97,9 @@ export default function ContactPage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700 text-lg px-8">
-                  <a href="tel:+27676014490">
+                  <a href="tel:+27633977498">
                     <Phone className="mr-2 w-5 h-5" />
-                    Call: 067 601 4490
+                    Call: 063 397 7498
                   </a>
                 </Button>
                 <Button
@@ -108,7 +108,7 @@ export default function ContactPage() {
                   variant="outline"
                   className="text-lg px-8 border-amber-600 text-amber-600 hover:bg-amber-50 bg-transparent"
                 >
-                  <a href="https://wa.me/27676014490" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/27633977498" target="_blank" rel="noopener noreferrer">
                     <MessageSquare className="mr-2 w-5 h-5" />
                     WhatsApp Quote
                   </a>
@@ -119,7 +119,7 @@ export default function ContactPage() {
             <div className="relative">
               <Image
                 src="/granitecarpentry.webp"
-                alt="Contact Granite Carpentry - Professional carpenter in Johannesburg for kitchen renovations"
+                alt="Contact The Timber Studio - Professional carpenter in Johannesburg for kitchen renovations"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-2xl"
@@ -151,7 +151,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-slate-800 mb-2">Call Us</h3>
                 <p className="text-slate-600 mb-4">Speak directly with our team</p>
                 <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
-                  <a href="tel:+27676014490">067 601 4490</a>
+                  <a href="tel:+27633977498">063 397 7498</a>
                 </Button>
                 <p className="text-xs text-slate-500 mt-2">Available 7 days a week</p>
               </CardContent>
@@ -165,7 +165,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-slate-800 mb-2">WhatsApp</h3>
                 <p className="text-slate-600 mb-4">Quick quotes & photos</p>
                 <Button asChild className="w-full bg-green-600 hover:bg-green-700">
-                  <a href="https://wa.me/27676014490" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/27633977498" target="_blank" rel="noopener noreferrer">
                     Message Us
                   </a>
                 </Button>
@@ -185,9 +185,9 @@ export default function ContactPage() {
                   variant="outline"
                   className="w-full border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
                 >
-                  <a href="mailto:info@granitecarpentry.co.za">Send Email</a>
+                  <a href="mailto:info@timberstudio.co.za">Send Email</a>
                 </Button>
-                <p className="text-xs text-slate-500 mt-2">info@granitecarpentry.co.za</p>
+                <p className="text-xs text-slate-500 mt-2">info@timberstudio.co.za</p>
               </CardContent>
             </Card>
 
@@ -203,7 +203,7 @@ export default function ContactPage() {
                   variant="outline"
                   className="w-full border-purple-600 text-purple-600 hover:bg-purple-50 bg-transparent"
                 >
-                  <a href="tel:+27676014490">Schedule Visit</a>
+                  <a href="tel:+27633977498">Schedule Visit</a>
                 </Button>
                 <p className="text-xs text-slate-500 mt-2">Free consultations available</p>
               </CardContent>
@@ -400,7 +400,7 @@ export default function ContactPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Why Choose Granite Carpentry?</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Why Choose The Timber Studio?</h2>
             <p className="text-xl text-slate-600">Johannesburg's most trusted carpentry specialists</p>
           </div>
 
@@ -544,15 +544,15 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ready to Transform Your Space?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Join 47+ satisfied customers who chose Granite Carpentry for their kitchen renovations, built-in cupboards,
+            Join 47+ satisfied customers who chose The Timber Studio for their kitchen renovations, built-in cupboards,
             and granite installations across Johannesburg.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
             <Button size="lg" asChild className="bg-white text-amber-600 hover:bg-slate-50 text-lg px-8">
-              <a href="tel:+27676014490">
+              <a href="tel:+27633977498">
                 <Phone className="mr-2 w-5 h-5" />
-                Call Now: 067 601 4490
+                Call Now: 063 397 7498
               </a>
             </Button>
             <Button

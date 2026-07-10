@@ -75,7 +75,7 @@ export function SmartRecommendations() {
         description: "Our team is available right now for immediate assistance and quotes.",
         type: "trending",
         priority: hour >= 8 && hour <= 17 && !isWeekend ? "high" : "low",
-        link: "tel:+27676014490",
+        link: "tel:+27633977498",
         icon: <Star className="w-4 h-4" />,
         badge: "Available Now",
       },

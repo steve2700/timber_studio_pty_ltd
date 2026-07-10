@@ -9,23 +9,23 @@ import { Phone, Star, CheckCircle, Clock, Shield, Award, MapPin, ArrowRight, Quo
 
 export const metadata: Metadata = {
   title:
-    "Country Carpenter & Plumber Nigel | Rural Carpentry, Granite Installation & Country Plumbing | Granite Carpentry",
+    "Country Carpenter & Plumber Nigel | Rural Carpentry, Granite Installation & Country Plumbing | The Timber Studio",
   description:
-    "Country carpenter & plumber services in Nigel. Rural carpentry, kitchen renovations, built-in cupboards, granite installation & country plumbing. Licensed & insured with country service. Call 067 601 4490 for free quote.",
+    "Country carpenter & plumber services in Nigel. Rural carpentry, kitchen renovations, built-in cupboards, granite installation & country plumbing. Licensed & insured with country service. Call 063 397 7498 for free quote.",
   keywords:
     "carpenter Nigel, country plumber Nigel, rural carpentry Nigel, kitchen renovations Nigel, built-in cupboards Nigel, granite installation Nigel, country plumbing Nigel, East Rand carpenter",
   openGraph: {
     title: "Country Carpenter & Plumber Nigel | Rural Carpentry & Granite Installation",
     description:
       "Country carpenter & plumber services in Nigel. Rural carpentry, kitchen renovations, built-in cupboards, granite installation & country plumbing. Licensed & insured with country service.",
-    url: "https://granitecarpentry.co.za/areas/nigel",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/areas/nigel",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://www.timberstudio.co.za/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "Country Carpenter & Plumber Nigel - Granite Carpentry",
+        alt: "Country Carpenter & Plumber Nigel - The Timber Studio",
       },
     ],
     locale: "en_ZA",
@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     title: "Country Carpenter & Plumber Nigel | Rural Carpentry & Granite Installation",
     description:
       "Country carpenter & plumber services in Nigel. Rural carpentry, kitchen renovations, built-in cupboards, granite installation & country plumbing. Licensed & insured with country service.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://www.timberstudio.co.za/timber-studio-logo.png"],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/nigel",
+    canonical: "https://www.timberstudio.co.za/areas/nigel",
   },
 }
 
@@ -181,7 +181,7 @@ export default function NigelPage() {
     {
       question: "Do you offer emergency plumbing services in Nigel?",
       answer:
-        "Yes, we provide 24/7 emergency plumbing services throughout Nigel and the East Rand. Burst pipes, major leaks, geyser failures, and urgent drainage issues are handled promptly by our licensed plumbers. Rural and country property emergencies are prioritized. Call 067 601 4490 for immediate assistance.",
+        "Yes, we provide 24/7 emergency plumbing services throughout Nigel and the East Rand. Burst pipes, major leaks, geyser failures, and urgent drainage issues are handled promptly by our licensed plumbers. Rural and country property emergencies are prioritized. Call 063 397 7498 for immediate assistance.",
     },
     {
       question: "Are you licensed and insured for work in Nigel?",
@@ -253,7 +253,7 @@ export default function NigelPage() {
                   size="lg"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
 
@@ -579,7 +579,7 @@ export default function NigelPage() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
             </div>
@@ -613,7 +613,7 @@ export default function NigelPage() {
               size="lg"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498</Link>
             </Button>
           </div>
         </div>

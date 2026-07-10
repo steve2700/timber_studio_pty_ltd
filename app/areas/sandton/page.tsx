@@ -10,20 +10,20 @@ export const metadata: Metadata = {
   title:
     "Best Carpenter Sandton 2026 | Kitchen Renovations & Built-in Cupboards | Free Quote",
   description:
-    "★★★★★ #1 Carpenter & Plumber in Sandton. Expert kitchen renovations, luxury built-in cupboards & 24/7 emergency plumbing. Serving Rosebank, Hyde Park, Illovo. Licensed & insured. Call 067 601 4490",
+    "★★★★★ #1 Carpenter & Plumber in Sandton. Expert kitchen renovations, luxury built-in cupboards & 24/7 emergency plumbing. Serving Rosebank, Hyde Park, Illovo. Licensed & insured. Call 063 397 7498",
   keywords:
     "carpenter Sandton, plumber Sandton, kitchen renovation Sandton, carpenter Rosebank, carpenter Hyde Park, carpenter Illovo, granite installation Sandton, built-in cupboards Sandton, emergency plumbing Sandton, quartz countertops Sandton, carpenter near me Sandton",
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/sandton",
+    canonical: "https://www.timberstudio.co.za/areas/sandton",
   },
   openGraph: {
     title: "Best Carpenter Sandton 2026 | Kitchen Renovations & Built-in Cupboards",
     description:
-      "★★★★★ #1 Carpenter & Plumber in Sandton. Expert kitchen renovations, luxury built-in cupboards & 24/7 emergency plumbing. Free quotes. Call 067 601 4490",
-    url: "https://granitecarpentry.co.za/areas/sandton",
+      "★★★★★ #1 Carpenter & Plumber in Sandton. Expert kitchen renovations, luxury built-in cupboards & 24/7 emergency plumbing. Free quotes. Call 063 397 7498",
+    url: "https://www.timberstudio.co.za/areas/sandton",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granite-installation-sandton.jpg",
+        url: "https://www.timberstudio.co.za/granite-installation-sandton.jpg",
         width: 1200,
         height: 630,
         alt: "Best Carpenter Sandton - Kitchen Renovation & Granite Installation",
@@ -38,10 +38,10 @@ const schemaMarkup = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://granitecarpentry.co.za/#localbusiness-sandton",
-      "name": "Granite Carpentry - Sandton Carpenter & Plumber",
-      "image": "https://granitecarpentry.co.za/granite-installation-sandton.jpg",
-      "telephone": "+27676014490",
+      "@id": "https://www.timberstudio.co.za/#localbusiness-sandton",
+      "name": "The Timber Studio - Sandton Carpenter & Plumber",
+      "image": "https://www.timberstudio.co.za/granite-installation-sandton.jpg",
+      "telephone": "+27633977498",
       "priceRange": "R400-R25000",
       "address": {
         "@type": "PostalAddress",
@@ -54,7 +54,7 @@ const schemaMarkup = {
         "latitude": "-26.1076",
         "longitude": "28.0567"
       },
-      "url": "https://granitecarpentry.co.za/areas/sandton",
+      "url": "https://www.timberstudio.co.za/areas/sandton",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
@@ -77,7 +77,7 @@ const schemaMarkup = {
               "name": "Kitchen Renovation Sandton",
               "description": "Luxury kitchen renovations with premium materials and expert craftsmanship",
               "provider": {
-                "@id": "https://granitecarpentry.co.za/#localbusiness-sandton"
+                "@id": "https://www.timberstudio.co.za/#localbusiness-sandton"
               }
             }
           },
@@ -88,7 +88,7 @@ const schemaMarkup = {
               "name": "Built-in Cupboards Sandton",
               "description": "Custom luxury storage solutions for premium Sandton properties",
               "provider": {
-                "@id": "https://granitecarpentry.co.za/#localbusiness-sandton"
+                "@id": "https://www.timberstudio.co.za/#localbusiness-sandton"
               }
             }
           }
@@ -111,19 +111,19 @@ const schemaMarkup = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://granitecarpentry.co.za/#breadcrumb",
+      "@id": "https://www.timberstudio.co.za/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://granitecarpentry.co.za"
+          "item": "https://www.timberstudio.co.za"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Areas",
-          "item": "https://granitecarpentry.co.za/areas"
+          "item": "https://www.timberstudio.co.za/areas"
         },
         {
           "@type": "ListItem",
@@ -180,9 +180,9 @@ export default function SandtonPage() {
                   asChild
                   className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <a href="tel:+27676014490">
+                  <a href="tel:+27633977498">
                     <Phone className="mr-2 w-5 h-5" />
-                    Call: 067 601 4490
+                    Call: 063 397 7498
                   </a>
                 </Button>
               </div>
@@ -718,7 +718,7 @@ export default function SandtonPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700">
-                  Yes! We provide free same-day quotes for all carpentry and plumbing services throughout Sandton. Call us at 067 601 4490 before 2pm and we can often visit your property the same day. For kitchen renovations, built-in cupboards, or granite installations in areas like Rosebank, Hyde Park, Illovo, Morningside, or Rivonia, we'll assess your project and provide a detailed written quote within 24 hours. Emergency plumbing quotes are provided immediately.
+                  Yes! We provide free same-day quotes for all carpentry and plumbing services throughout Sandton. Call us at 063 397 7498 before 2pm and we can often visit your property the same day. For kitchen renovations, built-in cupboards, or granite installations in areas like Rosebank, Hyde Park, Illovo, Morningside, or Rivonia, we'll assess your project and provide a detailed written quote within 24 hours. Emergency plumbing quotes are provided immediately.
                 </p>
               </CardContent>
             </Card>
@@ -774,7 +774,7 @@ export default function SandtonPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700">
-                  Yes! We offer 24/7 emergency plumbing services throughout all Sandton areas. Whether you're in Rosebank, Hyde Park, Illovo, Morningside, or any other Sandton suburb, our emergency plumbers can respond quickly to burst pipes, blocked drains, geyser failures, and other urgent plumbing issues. Call 067 601 4490 anytime for immediate assistance. We aim to arrive within 45 minutes for true emergencies in the greater Sandton area.
+                  Yes! We offer 24/7 emergency plumbing services throughout all Sandton areas. Whether you're in Rosebank, Hyde Park, Illovo, Morningside, or any other Sandton suburb, our emergency plumbers can respond quickly to burst pipes, blocked drains, geyser failures, and other urgent plumbing issues. Call 063 397 7498 anytime for immediate assistance. We aim to arrive within 45 minutes for true emergencies in the greater Sandton area.
                 </p>
               </CardContent>
             </Card>
@@ -884,9 +884,9 @@ export default function SandtonPage() {
               asChild
               className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-4 bg-transparent"
             >
-              <a href="tel:+27676014490">
+              <a href="tel:+27633977498">
                 <Phone className="mr-2 w-5 h-5" />
-                Call: 067 601 4490
+                Call: 063 397 7498
               </a>
             </Button>
           </div>

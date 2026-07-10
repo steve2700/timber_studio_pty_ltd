@@ -171,7 +171,7 @@ export default function HomePage() {
       name: "Sarah Mitchell",
       location: "Sandton",
       rating: 5,
-      text: "Absolutely exceptional work! Our kitchen renovation exceeded all expectations. The Granite Carpentry team was professional, punctual, and delivered exactly what they promised. The granite countertops are stunning and installation was flawless.",
+      text: "Absolutely exceptional work! Our kitchen renovation exceeded all expectations. The The Timber Studio team was professional, punctual, and delivered exactly what they promised. The granite countertops are stunning and installation was flawless.",
       service: "Kitchen Renovation",
     },
     {
@@ -311,7 +311,7 @@ export default function HomePage() {
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="font-semibold text-slate-900 text-sm sm:text-base">Quick Response</p>
-                        <p className="text-xs sm:text-sm text-slate-600">Call 067 601 4490</p>
+                        <p className="text-xs sm:text-sm text-slate-600">Call 063 397 7498</p>
                       </div>
                       <Phone className="h-6 w-6 sm:h-8 sm:w-8 text-amber-600" />
                     </div>
@@ -866,7 +866,7 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 sm:mb-16">
-            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Why Choose Granite Carpentry</Badge>
+            <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Why Choose The Timber Studio</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
               Gauteng's Most Trusted Home Service Experts Since 2020
             </h2>
@@ -1003,7 +1003,7 @@ export default function HomePage() {
               size="lg"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490 (24/7)</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498 (24/7)</Link>
             </Button>
           </div>
           <div className="mt-8 grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-4 sm:gap-8 text-sm opacity-90">

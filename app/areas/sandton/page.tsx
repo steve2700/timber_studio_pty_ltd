@@ -108,29 +108,6 @@ const schemaMarkup = {
           "closes": "14:00"
         }
       ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://www.timberstudio.co.za/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.timberstudio.co.za"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Areas",
-          "item": "https://www.timberstudio.co.za/areas"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Sandton Carpenter & Plumber"
-        }
-      ]
     }
   ]
 }

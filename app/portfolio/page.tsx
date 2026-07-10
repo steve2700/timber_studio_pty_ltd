@@ -9,13 +9,13 @@ import { Phone, Star, Award, Users, CheckCircle, MapPin } from "lucide-react"
 export const metadata: Metadata = {
   title: "★★★★★ Portfolio | Best Carpenter Johannesburg 2026 - 1000+ Completed Projects Gallery",
   description:
-    "★★★★★ View our portfolio of 1000+ completed carpentry projects in Johannesburg. Kitchen renovations, built-in cupboards, granite installations across Gauteng. #1 rated carpenter with 5-year warranty. FREE quotes.",
+    "★★★★★ View our portfolio of 1000+ completed carpentry projects in Johannesburg. Kitchen renovations, built-in cupboards, custom joinery across Gauteng. #1 rated carpenter with 24-month warranty. FREE quotes.",
   keywords:
-    "carpentry portfolio Johannesburg, best carpenter portfolio 2026, kitchen renovation gallery Johannesburg, built-in cupboards portfolio, granite installation gallery, carpenter work examples Johannesburg, #1 carpenter portfolio, professional carpentry gallery, Johannesburg carpenter projects, kitchen makeover gallery",
+    "carpentry portfolio Johannesburg, best carpenter portfolio 2026, kitchen renovation gallery Johannesburg, built-in cupboards portfolio, custom joinery gallery, carpenter work examples Johannesburg, #1 carpenter portfolio, professional carpentry gallery, Johannesburg carpenter projects, kitchen makeover gallery",
   openGraph: {
     title: "★★★★★ Portfolio | Best Carpenter Johannesburg 2026 - 1000+ Projects",
     description:
-      "★★★★★ View our portfolio of 1000+ completed carpentry projects. Kitchen renovations, built-in cupboards, granite installations. #1 rated carpenter Johannesburg.",
+      "★★★★★ View our portfolio of 1000+ completed carpentry projects. Kitchen renovations, built-in cupboards, custom joinery. #1 rated carpenter Johannesburg.",
     url: "https://www.timberstudio.co.za/portfolio",
   },
   alternates: {
@@ -44,13 +44,13 @@ export default function PortfolioPage() {
       features: ["Sliding Doors", "Internal Organization", "LED Lighting", "Premium Hardware"],
     },
     {
-      title: "Granite Kitchen Island - Pretoria",
-      category: "Stone Installation",
+      title: "Bespoke Timber Kitchen Island - Pretoria",
+      category: "Custom Joinery",
       location: "Pretoria",
       price: "R35,000",
-      description: "Premium granite island with waterfall edge and integrated breakfast bar seating",
-      image: "/granitecarpentry.webp?height=400&width=600",
-      features: ["Waterfall Edge", "Breakfast Bar", "Premium Granite", "Professional Installation"],
+      description: "Handcrafted solid timber island with waterfall detailing and integrated breakfast bar seating",
+      image: "/kitchen-renovation-cost-johannesburg.png",
+      features: ["Waterfall Detail", "Breakfast Bar", "Solid Timber", "Professional Installation"],
     },
     {
       title: "Executive Study Built-ins - Centurion",
@@ -361,7 +361,7 @@ export default function PortfolioPage() {
                   ))}
                 </div>
                 <p className="text-slate-600 mb-4">
-                  "Excellent granite installation and fair pricing. The team was professional, punctual, and delivered
+                  "Excellent custom joinery and fair pricing. The team was professional, punctual, and delivered
                   exactly what was promised. Highly recommend!"
                 </p>
                 <div className="font-semibold text-slate-800">Michael T.</div>

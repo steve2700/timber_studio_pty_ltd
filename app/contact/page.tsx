@@ -27,19 +27,19 @@ import {
 export const metadata: Metadata = {
   title: "Contact Johannesburg's #1 Carpenter | Free Quotes Kitchen Renovations 2026",
   description:
-    "Contact The Timber Studio for free quotes on kitchen renovations, built-in cupboards & granite installation. Call 063 397 7498 or email info@timberstudio.co.za. 5-star rated carpenter serving Johannesburg, Sandton, Randburg.",
+    "Contact The Timber Studio for free quotes on kitchen renovations, built-in cupboards & custom joinery. Call 063 397 7498 or email info@timberstudio.co.za. 5-star rated carpenter serving Johannesburg, Sandton, Randburg.",
   keywords:
-    "contact carpenter Johannesburg, free kitchen renovation quote, granite installation quote Johannesburg, built-in cupboards quote, carpenter contact details Johannesburg, kitchen renovation consultation, professional carpenter contact",
+    "contact carpenter Johannesburg, free kitchen renovation quote, custom joinery quote Johannesburg, built-in cupboards quote, carpenter contact details Johannesburg, kitchen renovation consultation, professional carpenter contact",
   robots: "index, follow",
   openGraph: {
     title: "Contact Johannesburg's #1 Carpenter | Free Quotes 2026",
     description:
-      "Get free quotes for kitchen renovations, built-in cupboards & granite installation. 5-star rated carpenter serving Greater Johannesburg.",
+      "Get free quotes for kitchen renovations, built-in cupboards & custom joinery. 5-star rated carpenter serving Greater Johannesburg.",
     url: "https://www.timberstudio.co.za/contact",
     siteName: "The Timber Studio",
     images: [
       {
-        url: "https://www.timberstudio.co.za/granitecarpentry.webp",
+        url: "https://www.timberstudio.co.za/timber-studio-bespoke-joinery-johannesburg.png",
         width: 1200,
         height: 630,
         alt: "Contact The Timber Studio - Professional Carpenter Johannesburg",
@@ -72,8 +72,9 @@ export default function ContactPage() {
               </h1>
 
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                Ready to transform your space? Contact Johannesburg's most trusted carpenter for kitchen renovations,
-                built-in cupboards, and granite installations. Free consultations and competitive quotes guaranteed.
+                Ready to transform your space? Contact Johannesburg's most trusted bespoke joinery studio for kitchen
+                renovations, built-in cupboards, and custom timber work. Free consultations and competitive quotes
+                guaranteed.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -118,8 +119,8 @@ export default function ContactPage() {
 
             <div className="relative">
               <Image
-                src="/granitecarpentry.webp"
-                alt="Contact The Timber Studio - Professional carpenter in Johannesburg for kitchen renovations"
+                src="/timber-studio-bespoke-joinery-johannesburg.png"
+                alt="Contact The Timber Studio - Bespoke joinery studio in Johannesburg for kitchen renovations"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-2xl"
@@ -291,7 +292,7 @@ export default function ContactPage() {
                       <SelectContent>
                         <SelectItem value="kitchen-renovation">Kitchen Renovation</SelectItem>
                         <SelectItem value="built-in-cupboards">Built-in Cupboards</SelectItem>
-                        <SelectItem value="granite-installation">Granite/Quartz Installation</SelectItem>
+                        <SelectItem value="custom-joinery">Custom Joinery & Cabinetry</SelectItem>
                         <SelectItem value="decking-flooring">Decking & Flooring</SelectItem>
                         <SelectItem value="drywall-ceilings">Drywall & Ceilings</SelectItem>
                         <SelectItem value="multiple-services">Multiple Services</SelectItem>
@@ -544,8 +545,8 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ready to Transform Your Space?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Join 47+ satisfied customers who chose The Timber Studio for their kitchen renovations, built-in cupboards,
-            and granite installations across Johannesburg.
+            Join 1,000+ satisfied customers who chose The Timber Studio for their kitchen renovations, built-in
+            cupboards, and custom joinery across Johannesburg.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">

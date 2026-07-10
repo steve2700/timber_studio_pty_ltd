@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description:
     "★★★★★ #1 Rated Carpenter & Plumber in Kempton Park near OR Tambo. Expert kitchen renovations, professional joinery, built-in cupboards & airport area plumbing. Serving Edenvale, Bedfordview, Boksburg. Licensed & insured. Call 063 397 7498",
   keywords:
-    "carpenter Kempton Park, plumber Kempton Park, kitchen renovation Kempton Park, built-in cupboards Kempton Park, granite installation Kempton Park, airport plumbing Kempton Park, carpenter Edenvale, carpenter Bedfordview, joinery Kempton Park, kitchen cabinets Kempton Park, best carpenter Kempton Park, affordable carpenter Kempton Park, OR Tambo carpenter, East Rand carpenter, emergency plumbing Kempton Park",
+    "carpenter Kempton Park, kitchen renovation Kempton Park, built-in cupboards Kempton Park, custom joinery Kempton Park, carpenter Edenvale, carpenter Bedfordview, joinery Kempton Park, kitchen cabinets Kempton Park, best carpenter Kempton Park, affordable carpenter Kempton Park, OR Tambo carpenter, East Rand carpenter, timber doors Kempton Park",
   alternates: {
     canonical: "https://www.timberstudio.co.za/areas/kempton-park",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     url: "https://www.timberstudio.co.za/areas/kempton-park",
     images: [
       {
-        url: "https://www.timberstudio.co.za/granitecarpentry.webp",
+        url: "https://www.timberstudio.co.za/timber-studio-bespoke-joinery-johannesburg.png",
         width: 1200,
         height: 630,
         alt: "Best Carpenter & Plumber Kempton Park - Kitchen Renovation & Joinery Services",
@@ -113,8 +113,8 @@ export default function KemptonParkPage() {
 
             <div className="relative">
               <Image
-                src="/granitecarpentry.webp"
-                alt="Best Carpenter & Plumber Kempton Park - Expert Joinery & Kitchen Renovation near OR Tambo"
+                src="/timber-studio-bespoke-joinery-johannesburg.png"
+                alt="Best Carpenter Kempton Park - Expert Joinery & Kitchen Renovation near OR Tambo"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-2xl w-full h-auto"
@@ -204,7 +204,7 @@ export default function KemptonParkPage() {
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Granite & quartz countertops
+                    Solid timber doors & decking
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />

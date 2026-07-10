@@ -1,10 +1,9 @@
-# Granite & Carpentry Website
+Timber Studio PTY LTD 
 
 *Professional carpentry and granite installation services in Johannesburg, Gauteng*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/nyaruwatastewart27-gmailcoms-projects/v0-granite-website-project)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/x8K74VTCego)
-[![AI Powered](https://img.shields.io/badge/AI%20Powered-🤖-blue?style=for-the-badge)](https://v0.dev)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)]
+
 
 ## 🚀 Live Website
 

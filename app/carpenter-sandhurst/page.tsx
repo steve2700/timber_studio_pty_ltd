@@ -80,29 +80,6 @@ const schemaMarkup = {
           "closes": "14:00"
         }
       ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://www.timberstudio.co.za/#breadcrumb-sandhurst",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.timberstudio.co.za"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Sandton Areas",
-          "item": "https://www.timberstudio.co.za/areas/sandton"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Carpenter Sandhurst"
-        }
-      ]
     }
   ]
 }
@@ -115,24 +92,6 @@ export default function CarpenterSandhurstPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
-
-      {/* Breadcrumb Navigation */}
-      <section className="bg-slate-50 py-4">
-        <div className="container mx-auto">
-          <nav className="flex items-center text-sm text-slate-600">
-            <Link href="/" className="hover:text-amber-600 flex items-center">
-              <Home className="w-4 h-4 mr-1" />
-              Home
-            </Link>
-            <span className="mx-2">/</span>
-            <Link href="/areas/sandton" className="hover:text-amber-600">
-              Sandton
-            </Link>
-            <span className="mx-2">/</span>
-            <span className="text-slate-900 font-medium">Carpenter Sandhurst</span>
-          </nav>
-        </div>
-      </section>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-white py-16 sm:py-20 md:py-24">
@@ -511,7 +470,7 @@ export default function CarpenterSandhurstPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Sarah K.</p>
                 <p className="text-sm text-slate-600">SandhurstCountry Estate, Sandhurst</p>
-                <p className="text-xs text-slate-500 mt-1">Kitchen Island - December 2025</p>
+                <p className="text-xs text-slate-500 mt-1">Kitchen Island - April 2026</p>
               </CardContent>
             </Card>
 
@@ -527,7 +486,7 @@ export default function CarpenterSandhurstPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Michael R.</p>
                 <p className="text-sm text-slate-600">44 Stanley, Sandhurst</p>
-                <p className="text-xs text-slate-500 mt-1">Built-in Wardrobes - November 2025</p>
+                <p className="text-xs text-slate-500 mt-1">Built-in Wardrobes - March 2026</p>
               </CardContent>
             </Card>
           </div>

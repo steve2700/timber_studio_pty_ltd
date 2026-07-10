@@ -7,15 +7,15 @@ import { CheckCircle, Phone, Star, MapPin, Award, Users, Clock, Shield, Gem } fr
 
 export const metadata: Metadata = {
   title:
-    "★★★★★ Best Carpenter & Plumber Fourways 2025 | #1 Luxury Kitchen Renovations, Built-in Cupboards & Premium Plumbing Services",
+    "★★★★★ Best Carpenter & Plumber Fourways 2026 | #1 Luxury Kitchen Renovations, Built-in Cupboards & Premium Plumbing Services",
   description:
-    "★★★★★ #1 luxury carpenter & plumber in Fourways 2025. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 700+ upmarket projects completed. FREE quotes & flexible scheduling. Licensed & insured. Call 063 397 7498.",
+    "★★★★★ #1 luxury carpenter & plumber in Fourways 2026. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 700+ upmarket projects completed. FREE quotes & flexible scheduling. Licensed & insured. Call 063 397 7498.",
   keywords:
-    "best carpenter Fourways 2025, luxury plumber Fourways, kitchen renovation Fourways, built-in cupboards Fourways, granite installation Fourways, premium plumbing Fourways, professional carpentry Fourways, #1 carpenter Fourways, upmarket carpenter Fourways, carpenter near me Fourways, Dainfern carpenter, Bryanston carpenter, Steyn City carpenter, luxury plumbing Fourways, emergency plumber Fourways, kitchen cabinets Fourways, custom cupboards Fourways",
+    "best carpenter Fourways 2026, luxury plumber Fourways, kitchen renovation Fourways, built-in cupboards Fourways, granite installation Fourways, premium plumbing Fourways, professional carpentry Fourways, #1 carpenter Fourways, upmarket carpenter Fourways, carpenter near me Fourways, Dainfern carpenter, Bryanston carpenter, Steyn City carpenter, luxury plumbing Fourways, emergency plumber Fourways, kitchen cabinets Fourways, custom cupboards Fourways",
   openGraph: {
-    title: "★★★★★ Best Carpenter & Plumber Fourways 2025 | #1 Luxury Services",
+    title: "★★★★★ Best Carpenter & Plumber Fourways 2026 | #1 Luxury Services",
     description:
-      "★★★★★ #1 luxury carpenter & plumber in Fourways 2025. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 700+ upmarket projects. FREE quotes.",
+      "★★★★★ #1 luxury carpenter & plumber in Fourways 2026. Premium kitchen renovations, custom built-in cupboards, granite installations & luxury plumbing services. 700+ upmarket projects. FREE quotes.",
     url: "https://www.timberstudio.co.za/areas/fourways",
   },
   alternates: {
@@ -39,10 +39,10 @@ export default function FourwaysPage() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Best Luxury Carpenter & Plumber
-              <span className="block text-amber-400">Fourways 2025</span>
+              <span className="block text-amber-400">Fourways 2026</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 leading-relaxed">
-              ★★★★★ #1 luxury carpenter & plumber in Fourways 2025. Specializing in premium kitchen renovations, custom
+              ★★★★★ #1 luxury carpenter & plumber in Fourways 2026. Specializing in premium kitchen renovations, custom
               built-in cupboards, granite & Caesarstone installations, and luxury plumbing services for upmarket homes
               in Fourways, Dainfern, Steyn City, and Bryanston. 700+ completed projects with 5-year warranty. FREE
               quotes, flexible scheduling & same-day emergency plumbing available.
@@ -86,7 +86,7 @@ export default function FourwaysPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-              Luxury Carpentry & Plumbing Services Fourways 2025
+              Luxury Carpentry & Plumbing Services Fourways 2026
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Serving Fourways, Dainfern Golf Estate, Steyn City, Bryanston, Lonehill, Broadacres, and all upmarket
@@ -129,7 +129,7 @@ export default function FourwaysPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/services/kitchen-renovations">View Kitchen Services</Link>
+                  <Link href="/kitchen-renovations">View Kitchen Services</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -168,7 +168,7 @@ export default function FourwaysPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/services/built-in-cupboards">View Cupboard Services</Link>
+                  <Link href="/built-in-cupboards">View Cupboard Services</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -207,7 +207,7 @@ export default function FourwaysPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/services/quartz-granite">View Stone Services</Link>
+                  <Link href="/kitchen-renovations">View Stone Services</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -246,7 +246,7 @@ export default function FourwaysPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/services/plumbing">View Plumbing Services</Link>
+                  <Link href="/bathroom-renovations">View Plumbing Services</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -259,7 +259,7 @@ export default function FourwaysPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">
-              Why Fourways Homeowners Choose Us in 2025
+              Why Fourways Homeowners Choose Us in 2026
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
@@ -327,7 +327,7 @@ export default function FourwaysPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Fourways Luxury Area Coverage 2025</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">Fourways Luxury Area Coverage 2026</h2>
             <p className="text-xl text-slate-600 mb-12">
               Premium carpentry and plumbing services throughout Fourways and surrounding upmarket areas. Trusted by
               homeowners in Gauteng's most prestigious estates and suburbs.
@@ -464,7 +464,7 @@ export default function FourwaysPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Luxury Fourways Project in 2025?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Your Luxury Fourways Project in 2026?</h2>
           <p className="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
             Contact Fourways' #1 luxury carpenter & plumber today. Premium materials, exceptional craftsmanship, and
             5-year warranty. FREE consultation and detailed quotes for all services.

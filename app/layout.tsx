@@ -4,6 +4,7 @@ import { Manrope, Fraunces } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 import { GoogleBusinessSchema } from "@/components/google-business-schema"
 import { FloatingWhatsApp } from "@/components/floating-whatsapp"
 import { AIChatWidget } from "@/components/ai-chat-widget"
@@ -341,6 +342,7 @@ export default function RootLayout({
             <Suspense fallback={null}>
               <div className="flex flex-col min-h-screen">
                 <Header />
+                <Breadcrumbs />
                 <main className="flex-grow">{children}</main>
                 <Footer />
               </div>

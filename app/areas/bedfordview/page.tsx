@@ -550,7 +550,7 @@ export default function BedfordviewPage() {
                 </p>
                 <p className="font-semibold text-slate-800">John & Lisa T.</p>
                 <p className="text-sm text-slate-600">Bedfordview</p>
-                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - December 2025</p>
+                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - April 2026</p>
               </CardContent>
             </Card>
 
@@ -582,7 +582,7 @@ export default function BedfordviewPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Sarah M.</p>
                 <p className="text-sm text-slate-600">Bedfordview</p>
-                <p className="text-xs text-slate-500 mt-1">Built-in Cupboards - November 2025</p>
+                <p className="text-xs text-slate-500 mt-1">Built-in Cupboards - March 2026</p>
               </CardContent>
             </Card>
           </div>

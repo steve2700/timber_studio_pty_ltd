@@ -399,7 +399,7 @@ export default function PretoriaPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R22,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/kitchen-renovations">View Details</Link>
+                    <Link href="/kitchen-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -433,7 +433,7 @@ export default function PretoriaPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R12,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/built-in-cupboards">View Details</Link>
+                    <Link href="/built-in-cupboards">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -467,7 +467,7 @@ export default function PretoriaPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R7,500</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/quartz-granite">View Details</Link>
+                    <Link href="/kitchen-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -501,7 +501,7 @@ export default function PretoriaPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R380/hour</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/plumbing">View Details</Link>
+                    <Link href="/bathroom-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -535,7 +535,7 @@ export default function PretoriaPage() {
                 </p>
                 <p className="font-semibold text-slate-800">John D.</p>
                 <p className="text-sm text-slate-600">Brooklyn, Pretoria</p>
-                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - December 2024</p>
+                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - May 2026</p>
               </CardContent>
             </Card>
 
@@ -567,7 +567,7 @@ export default function PretoriaPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Michael R.</p>
                 <p className="text-sm text-slate-600">Centurion</p>
-                <p className="text-xs text-slate-500 mt-1">Granite Countertops - November 2024</p>
+                <p className="text-xs text-slate-500 mt-1">Granite Countertops - February 2026</p>
               </CardContent>
             </Card>
 
@@ -583,7 +583,7 @@ export default function PretoriaPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Linda K.</p>
                 <p className="text-sm text-slate-600">Menlyn, Pretoria</p>
-                <p className="text-xs text-slate-500 mt-1">Emergency Plumbing - December 2024</p>
+                <p className="text-xs text-slate-500 mt-1">Emergency Plumbing - May 2026</p>
               </CardContent>
             </Card>
 
@@ -615,7 +615,7 @@ export default function PretoriaPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Jennifer S.</p>
                 <p className="text-sm text-slate-600">Groenkloof, Pretoria</p>
-                <p className="text-xs text-slate-500 mt-1">Wardrobes - December 2024</p>
+                <p className="text-xs text-slate-500 mt-1">Wardrobes - May 2026</p>
               </CardContent>
             </Card>
           </div>

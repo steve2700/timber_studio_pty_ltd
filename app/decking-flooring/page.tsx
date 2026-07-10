@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: [{ url: "/decking-flooring.jpg", width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: "https://www.timberstudio.co.za/services/decking-flooring",
+    canonical: "https://www.timberstudio.co.za/decking-flooring",
   },
 }
 
@@ -466,7 +466,7 @@ export default function DeckingFlooringPage() {
                   Complete kitchen renovations with custom cabinets and premium finishes.
                 </p>
                 <Button asChild variant="outline">
-                  <Link href="/services/kitchen-renovations">Learn More</Link>
+                  <Link href="/kitchen-renovations">Learn More</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -478,7 +478,7 @@ export default function DeckingFlooringPage() {
                   Custom built-in storage solutions to complement your flooring renovation.
                 </p>
                 <Button asChild variant="outline">
-                  <Link href="/services/built-in-cupboards">View Options</Link>
+                  <Link href="/built-in-cupboards">View Options</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -490,7 +490,7 @@ export default function DeckingFlooringPage() {
                   Professional drywall and ceiling installation for complete renovations.
                 </p>
                 <Button asChild variant="outline">
-                  <Link href="/services/drywall-ceilings">Explore Services</Link>
+                  <Link href="/drywall-ceilings">Explore Services</Link>
                 </Button>
               </CardContent>
             </Card>

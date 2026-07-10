@@ -2,48 +2,94 @@ import type { MetadataRoute } from "next"
 
 const baseUrl = "https://www.timberstudio.co.za"
 
-/**
- * Exactly 18 pages, matched to the routes that actually exist after
- * cleanup-to-18.sh. Each entry is explicit rather than pattern-matched —
- * at this page count a flat list is easier to audit and keep in sync
- * with the app/ directory than prefix-based rules.
- */
-const pages: {
+type SitemapEntry = {
   path: string
   changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]
   priority: number
-}[] = [
-  // Core pages
+}
+
+// Core pages
+const corePages: SitemapEntry[] = [
   { path: "", changeFrequency: "daily", priority: 1 },
   { path: "/areas", changeFrequency: "weekly", priority: 0.9 },
-  { path: "/about", changeFrequency: "yearly", priority: 0.6 },
-  { path: "/contact", changeFrequency: "yearly", priority: 0.6 },
-  { path: "/portfolio", changeFrequency: "yearly", priority: 0.6 },
-  { path: "/faq", changeFrequency: "yearly", priority: 0.6 },
+  { path: "/about", changeFrequency: "monthly", priority: 0.6 },
+  { path: "/contact", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/portfolio", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/faq", changeFrequency: "monthly", priority: 0.6 },
   { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
   { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
+]
 
-  // 6 core services
-  { path: "/kitchen-renovations", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/built-in-cupboards", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/bathroom-renovations", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/decking-flooring", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/drywall-ceilings", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/door-installation", changeFrequency: "monthly", priority: 0.8 },
+// Core service pages (each has a live route at /<slug>)
+const serviceSlugs = [
+  "kitchen-renovations",
+  "bathroom-renovations",
+  "built-in-cupboards",
+  "decking-flooring",
+  "drywall-ceilings",
+  "door-installation",
+]
 
-  // Top 2 carpenter pages — highest-value suburb + highest-volume generic intent
-  { path: "/carpenter-sandhurst", changeFrequency: "weekly", priority: 0.85 },
-  { path: "/carpenter-near-me-johannesburg", changeFrequency: "weekly", priority: 0.85 },
+// Specialist / high-intent SEO landing pages
+const specialistSlugs = [
+  "carpenter-sandhurst",
+  "carpenter-near-me-johannesburg",
+  "drywall-sandton",
+  "drywalling-contractors-johannesburg",
+]
 
-  // Top 2 drywall/ceiling pages — highest-value suburb + highest-volume generic intent
-  { path: "/drywall-sandton", changeFrequency: "weekly", priority: 0.85 },
-  { path: "/drywalling-contractors-johannesburg", changeFrequency: "weekly", priority: 0.85 },
+// Every area page that actually exists under app/areas/<slug>
+const areaSlugs = [
+  "alberton",
+  "bedfordview",
+  "benoni",
+  "boksburg",
+  "carletonville",
+  "centurion",
+  "edenvale",
+  "fourways",
+  "germiston",
+  "heidelberg",
+  "johannesburg",
+  "johannesburg-south",
+  "kempton-park",
+  "krugersdorp",
+  "midrand",
+  "nigel",
+  "pretoria",
+  "randburg",
+  "roodepoort",
+  "sandton",
+  "springs",
+  "vanderbijlpark",
+  "vereeniging",
+  "westonaria",
+]
+
+const pages: SitemapEntry[] = [
+  ...corePages,
+  ...serviceSlugs.map((slug) => ({
+    path: `/${slug}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  })),
+  ...specialistSlugs.map((slug) => ({
+    path: `/${slug}`,
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  })),
+  ...areaSlugs.map((slug) => ({
+    path: `/areas/${slug}`,
+    changeFrequency: "weekly" as const,
+    priority: 0.75,
+  })),
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date()
   return pages.map((page) => ({
     url: `${baseUrl}${page.path}`,
-    lastModified: new Date(),
+    lastModified,
     changeFrequency: page.changeFrequency,
     priority: page.priority,
   }))

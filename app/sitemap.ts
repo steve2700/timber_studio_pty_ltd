@@ -30,6 +30,9 @@ const serviceSlugs = [
   "door-installation",
 ]
 
+// Studio Collections - bespoke joinery SEO landing pages
+const collectionSlugs = ["custom-furniture", "home-office-fit-outs", "outdoor-timber-structures"]
+
 // Specialist / high-intent SEO landing pages
 const specialistSlugs = [
   "carpenter-sandhurst",
@@ -69,6 +72,11 @@ const areaSlugs = [
 const pages: SitemapEntry[] = [
   ...corePages,
   ...serviceSlugs.map((slug) => ({
+    path: `/${slug}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  })),
+  ...collectionSlugs.map((slug) => ({
     path: `/${slug}`,
     changeFrequency: "monthly" as const,
     priority: 0.8,

@@ -6,7 +6,7 @@ export function GoogleBusinessSchema() {
     name: "The Timber Studio",
     alternateName: "The Timber Studio Johannesburg",
     description:
-      "Professional carpenter and granite installation specialists in Johannesburg. Specializing in kitchen renovations, built-in cupboards, granite countertops, decking, flooring, and carpentry training.",
+      "Professional carpentry and joinery specialists in Johannesburg. Specializing in kitchen renovations, built-in cupboards, bathroom renovations, decking, flooring, drywall, ceilings, and door installation.",
     url: "https://www.timberstudio.co.za",
     logo: {
       "@type": "ImageObject",
@@ -17,7 +17,7 @@ export function GoogleBusinessSchema() {
     image: [
       "https://www.timberstudio.co.za/timber-studio-logo.png",
       "https://www.timberstudio.co.za/Kitchen-renovations-sandton.webp",
-      "https://www.timberstudio.co.za/granite-installation-Johannesburg.jpg",
+      "https://www.timberstudio.co.za/beautiful-decking.jpg",
       "https://www.timberstudio.co.za/Built-Built-in-Cupboards-Midrand.jpg",
     ],
     telephone: "+27633977498",
@@ -76,14 +76,14 @@ export function GoogleBusinessSchema() {
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Carpentry and Granite Installation Services",
+      name: "Carpentry and Joinery Services",
       itemListElement: [
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
             name: "Kitchen Renovations",
-            description: "Complete kitchen renovation services including custom cabinets and granite countertops",
+            description: "Complete kitchen renovation services including custom cabinets and premium finishes",
           },
         },
         {
@@ -98,8 +98,8 @@ export function GoogleBusinessSchema() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Granite & Quartz Installation",
-            description: "Professional granite and quartz countertop installation for kitchens and bathrooms",
+            name: "Door Installation",
+            description: "Professional installation of pivot, barn, security, French, and solid wood doors",
           },
         },
       ],
@@ -156,7 +156,7 @@ export function GoogleBusinessSchema() {
           bestRating: "5",
         },
         reviewBody:
-          "Outstanding granite installation work. The countertops look amazing and the installation was flawless. Great value for money.",
+          "Outstanding built-in cupboard work. The finish looks amazing and the installation was flawless. Great value for money.",
         datePublished: "2024-02-20",
       },
     ],
@@ -170,12 +170,13 @@ export function GoogleBusinessSchema() {
       name: "The Timber Studio Team",
     },
     foundingDate: "2020",
-    slogan: "Professional Carpentry & Granite Installation Excellence",
+    slogan: "Professional Carpentry & Joinery Excellence",
     knowsAbout: [
       "Kitchen Renovations",
       "Built-in Cupboards",
-      "Granite Installation",
-      "Quartz Countertops",
+      "Door Installation",
+      "Drywall & Ceilings",
+      "Decking & Flooring",
       "Carpentry Services",
       "Home Renovations",
     ],
@@ -183,7 +184,7 @@ export function GoogleBusinessSchema() {
       {
         "@type": "Offer",
         name: "Free Consultation",
-        description: "Free home consultation and quote for all carpentry and granite installation services",
+        description: "Free home consultation and quote for all carpentry and joinery services",
         price: "0",
         priceCurrency: "ZAR",
       },

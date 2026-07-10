@@ -114,15 +114,11 @@ export function AIChatWidget() {
     const text = userText.toLowerCase()
 
     if (text.includes("kitchen") || text.includes("renovation")) {
-      return "🔨 KITCHEN RENOVATIONS\n\nWe specialize in complete kitchen transformations!\n\n💰 Pricing:\n• Basic Renovation: R50,000 - R90,000\n• Mid-Range: R90,000 - R180,000\n• High-End: R180,000+\n\n✅ Includes:\n• Custom cabinets & cupboards\n• Granite/quartz countertops\n• Modern appliances integration\n• Professional installation\n• 24-month warranty\n\n📞 Call 063 397 7498 for a FREE quote!"
+      return "🔨 KITCHEN RENOVATIONS\n\nWe specialize in complete kitchen transformations!\n\n💰 Pricing:\n• Basic Renovation: R50,000 - R90,000\n• Mid-Range: R90,000 - R180,000\n• High-End: R180,000+\n\n✅ Includes:\n• Custom cabinets & cupboards\n• Premium countertops & finishes\n• Modern appliances integration\n• Professional installation\n• 24-month warranty\n\n📞 Call 063 397 7498 for a FREE quote!"
     }
 
     if (text.includes("cupboard") || text.includes("built-in") || text.includes("wardrobe")) {
       return "🚪 BUILT-IN CUPBOARDS\n\nCustom storage solutions for every room!\n\n💰 Pricing:\n• Standard Cupboards: R15,000 - R25,000\n• Walk-in Wardrobes: R25,000 - R45,000\n• Luxury Storage: R45,000+\n\n✅ Features:\n• Custom designs to fit your space\n• Quality materials & finishes\n• Soft-close mechanisms\n• Mirror options available\n• 24-month warranty\n\n📞 Call 063 397 7498 for a FREE consultation!"
-    }
-
-    if (text.includes("granite") || text.includes("quartz") || text.includes("countertop") || text.includes("stone")) {
-      return "💎 GRANITE & QUARTZ INSTALLATION\n\nPremium stone surfaces with expert installation!\n\n💰 Pricing:\n• Granite: R500 - R1,400/m²\n• Quartz: R600 - R1,800/m²\n• Installation included\n\n✅ Benefits:\n• Heat & scratch resistant\n• Professional templating\n• Seamless installation\n• 12-month warranty\n• Free consultation\n\n📞 Call 063 397 7498 for pricing!"
     }
 
     if (
@@ -143,7 +139,7 @@ export function AIChatWidget() {
     }
 
     if (text.includes("price") || text.includes("cost") || text.includes("quote") || text.includes("how much")) {
-      return "💰 PRICING OVERVIEW\n\nHere are our typical price ranges:\n\n🔨 Kitchen Renovations: R50k - R200k+\n🚪 Built-in Cupboards: R15k - R80k\n💎 Granite/Quartz: R8k - R25k\n🏗️ Drywall & Ceilings: R6k - R30k\n🔧 Plumbing: From R280\n🪵 Decking & Flooring: R12k - R40k\n\n✅ All quotes include:\n• Free consultation\n• Detailed breakdown\n• No hidden fees\n• Warranty coverage\n\n📞 Call 063 397 7498 for your personalized quote!"
+      return "💰 PRICING OVERVIEW\n\nHere are our typical price ranges:\n\n🔨 Kitchen Renovations: R50k - R200k+\n🚪 Built-in Cupboards: R15k - R80k\n🚪 Door Installation: From R4,500\n🏗️ Drywall & Ceilings: R6k - R30k\n🪵 Decking & Flooring: R12k - R40k\n\n✅ All quotes include:\n• Free consultation\n• Detailed breakdown\n• No hidden fees\n• Warranty coverage\n\n📞 Call 063 397 7498 for your personalized quote!"
     }
 
     if (text.includes("area") || text.includes("location") || text.includes("where") || text.includes("serve")) {
@@ -162,7 +158,7 @@ export function AIChatWidget() {
       return "🚨 EMERGENCY SERVICE\n\nWe're here to help 24/7!\n\n📞 CALL NOW: 063 397 7498\n\n✅ Emergency Services:\n• Plumbing leaks & bursts\n• Geyser failures\n• Urgent repairs\n• Same-day service\n\n⚡ Response Time:\n• Emergency callout: 1-2 hours\n• Standard service: Same/next day\n\nDon't wait - call us immediately!"
     }
 
-    return "Thanks for your message! 😊\n\nI can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n💎 Granite & Quartz\n🔧 Plumbing Services\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n💰 Pricing Information\n📍 Service Areas\n\nJust ask about any service, or:\n📞 Call 063 397 7498\n📧 info@timberstudio.co.za\n\nWe offer FREE consultations & quotes!"
+    return "Thanks for your message! 😊\n\nI can help you with:\n\n🔨 Kitchen Renovations\n🚪 Built-in Cupboards\n🪵 Door Installation\n🔧 Bathroom Renovations\n🏗️ Drywall & Ceilings\n🪵 Decking & Flooring\n💰 Pricing Information\n📍 Service Areas\n\nJust ask about any service, or:\n📞 Call 063 397 7498\n📧 info@timberstudio.co.za\n\nWe offer FREE consultations & quotes!"
   }
 
   if (!isOpen) {

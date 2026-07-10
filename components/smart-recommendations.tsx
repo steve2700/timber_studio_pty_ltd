@@ -43,7 +43,7 @@ export function SmartRecommendations() {
         description: "Perfect weather for outdoor decking projects. Get ready for summer entertaining!",
         type: "seasonal",
         priority: month >= 9 || month <= 2 ? "high" : "low", // Spring/Summer in SA
-        link: "/services/decking-flooring",
+        link: "/decking-flooring",
         icon: <TrendingUp className="w-4 h-4" />,
         badge: "Seasonal",
       },
@@ -53,7 +53,7 @@ export function SmartRecommendations() {
         description: "Perfect time for kitchen renovations and built-in cupboards while staying indoors.",
         type: "seasonal",
         priority: month >= 5 && month <= 8 ? "high" : "low", // Winter in SA
-        link: "/services/kitchen-renovations",
+        link: "/kitchen-renovations",
         icon: <Clock className="w-4 h-4" />,
         badge: "Winter Special",
       },
@@ -84,10 +84,10 @@ export function SmartRecommendations() {
       {
         id: "kitchen-popular",
         title: "Most Popular: Kitchen Renovations",
-        description: "Our #1 requested service. Transform your kitchen with custom cabinets and granite.",
+        description: "Our #1 requested service. Transform your kitchen with custom cabinets and premium finishes.",
         type: "service",
         priority: "high",
-        link: "/services/kitchen-renovations",
+        link: "/kitchen-renovations",
         icon: <TrendingUp className="w-4 h-4" />,
         badge: "Most Popular",
       },
@@ -97,7 +97,7 @@ export function SmartRecommendations() {
         description: "Maximize your space with custom built-in cupboards and wardrobes.",
         type: "service",
         priority: "high",
-        link: "/services/built-in-cupboards",
+        link: "/built-in-cupboards",
         icon: <TrendingUp className="w-4 h-4" />,
         badge: "Trending",
       },
@@ -116,7 +116,7 @@ export function SmartRecommendations() {
       {
         id: "sandton-premium",
         title: "Sandton Premium Services",
-        description: "Luxury carpentry and granite installations for upmarket Sandton properties.",
+        description: "Luxury carpentry and joinery for upmarket Sandton properties.",
         type: "area",
         priority: "medium",
         link: "/areas/sandton",

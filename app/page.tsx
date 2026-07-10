@@ -11,7 +11,7 @@ export default function HomePage() {
     {
       title: "Kitchen Renovations",
       description:
-        "Transform your kitchen with custom cabinetry, premium granite countertops, and modern appliances. Expert Johannesburg kitchen remodeling specialists delivering stunning results.",
+        "Transform your kitchen with custom cabinetry, premium finishes, and modern appliances. Expert Johannesburg kitchen remodeling specialists delivering stunning results.",
       image: "/Kitchen-renovations-sandton.webp",
       href: "/kitchen-renovations",
       price: "From R50,000",
@@ -19,17 +19,7 @@ export default function HomePage() {
       linkText: "Explore Kitchen Renovations",
     },
     {
-      title: "Kitchen Cupboards", // Added kitchen cupboards service card
-      description:
-        "Custom kitchen cabinetry with premium finishes. Shaker, modern, and contemporary designs with soft-close mechanisms and durable materials for lasting quality.",
-      image: "/Kitchen-renovations-sandton.webp",
-      href: "/kitchen-cupboards",
-      price: "From R35,000",
-      duration: "5-10 days",
-      linkText: "View Kitchen Cupboard Designs",
-    },
-    {
-      title: "Bathroom Renovations", // Added bathroom renovations service card
+      title: "Bathroom Renovations",
       description:
         "Complete bathroom makeovers with modern fixtures, tiling, waterproofing, and plumbing. Contemporary, classic, and luxury designs for Johannesburg homes.",
       image: "/professional-plumber-working.png",
@@ -47,46 +37,6 @@ export default function HomePage() {
       price: "From R15,000",
       duration: "3-7 days",
       linkText: "View Built-in Cupboard Options",
-    },
-    {
-      title: "Granite & Quartz",
-      description:
-        "Luxury stone countertops and surfaces with precision installation. Imported and local granite, quartz, and marble for kitchens, bathrooms, and commercial spaces.",
-      image: "/granite-installation-Johannesburg.jpg",
-      href: "/quartz-granite",
-      price: "From R8,000",
-      duration: "2-5 days",
-      linkText: "Discover Granite & Quartz Services",
-    },
-    {
-      title: "Granite Countertops",
-      description:
-        "Premium natural granite countertops with unique patterns. Heat-resistant, scratch-resistant, and luxurious stone surfaces for kitchens and bathrooms.",
-      image: "/granite-installation-Johannesburg.jpg",
-      href: "/granite-countertops",
-      price: "From R1,200/m²",
-      duration: "1-2 weeks",
-      linkText: "View Granite Options",
-    },
-    {
-      title: "Quartz Countertops",
-      description:
-        "Engineered quartz surfaces with consistent patterns. Non-porous, stain-resistant, and low-maintenance countertops from Caesarstone, Silestone, and Compac.",
-      image: "/granite-installation-sandton.jpg",
-      href: "/quartz-countertops",
-      price: "From R3,500/m²",
-      duration: "1-2 weeks",
-      linkText: "Explore Quartz Designs",
-    },
-    {
-      title: "Professional Plumbing",
-      description:
-        "24/7 emergency plumbing, bathroom installations, geyser repairs, and leak detection. Licensed plumbers serving all of Johannesburg and Gauteng.",
-      image: "/professional-plumber-working.png",
-      href: "/plumbing",
-      price: "From R280",
-      duration: "Same day",
-      linkText: "Get Plumbing Services",
     },
     {
       title: "Decking & Flooring",
@@ -117,26 +67,6 @@ export default function HomePage() {
       price: "From R4,500",
       duration: "1-3 days",
       linkText: "Explore Door Services",
-    },
-    {
-      title: "Granite Supply & Installation",
-      description:
-        "Complete granite supply and installation services. Premium imported and local granite slabs, expert fabrication, and professional installation throughout Gauteng.",
-      image: "/granite-installation-Johannesburg.jpg",
-      href: "/granite-supply-and-installation",
-      price: "From R900/m²",
-      duration: "10-14 days",
-      linkText: "View Supply & Installation",
-    },
-    {
-      title: "Granite Installers Sandton",
-      description:
-        "Expert granite installation in Sandton. Precision templating, professional fabrication, and flawless installation for residential and commercial projects.",
-      image: "/granite-installation-Johannesburg.jpg",
-      href: "/granite-installers-sandton",
-      price: "From R1,200/m²",
-      duration: "1-2 weeks",
-      linkText: "Sandton Installation Services",
     },
   ]
 
@@ -171,7 +101,7 @@ export default function HomePage() {
       name: "Sarah Mitchell",
       location: "Sandton",
       rating: 5,
-      text: "Absolutely exceptional work! Our kitchen renovation exceeded all expectations. The The Timber Studio team was professional, punctual, and delivered exactly what they promised. The granite countertops are stunning and installation was flawless.",
+      text: "Absolutely exceptional work! Our kitchen renovation exceeded all expectations. The Timber Studio team was professional, punctual, and delivered exactly what they promised. The custom cabinetry is stunning and the finish was flawless.",
       service: "Kitchen Renovation",
     },
     {
@@ -185,8 +115,8 @@ export default function HomePage() {
       name: "Lisa Chen",
       location: "Midrand",
       rating: 5,
-      text: "Professional granite installation with perfect finishing. The team was courteous, cleaned up after themselves, and the result is stunning. Our kitchen looks like a showroom now. Worth every penny!",
-      service: "Granite Installation",
+      text: "Professional built-in cupboard installation with perfect finishing. The team was courteous, cleaned up after themselves, and the result is stunning. Our home looks like a showroom now. Worth every penny!",
+      service: "Built-in Cupboards",
     },
   ]
 
@@ -226,18 +156,18 @@ export default function HomePage() {
             <div className="space-y-6 lg:space-y-8">
               <div className="space-y-4">
                 <Badge className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2">
-                  Johannesburg's #1 Rated Carpenter, Plumber & Granite Installer 2025
+                  Johannesburg's #1 Rated Carpenter & Joinery Studio 2025
                 </Badge>
                 <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
-                  Expert Carpentry, Plumbing &{" "}
-                  <span className="text-amber-400 block sm:inline">Granite Installation</span>{" "}
+                  Expert Carpentry, Joinery &{" "}
+                  <span className="text-amber-400 block sm:inline">Renovation</span>{" "}
                   <span className="block">Services Johannesburg</span>
                 </h1>
                 <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
                   Transform your property with Johannesburg's most trusted home improvement specialists. From luxury
-                  kitchen renovations and custom built-in cupboards to 24/7 emergency plumbing and premium granite
-                  installations - we deliver exceptional craftsmanship backed by 5-star reviews and a 24-month warranty
-                  guarantee across all Gauteng areas.
+                  kitchen renovations and custom built-in cupboards to bespoke decking, drywall, and door installation -
+                  we deliver exceptional craftsmanship backed by 5-star reviews and a 24-month warranty guarantee across
+                  all Gauteng areas.
                 </p>
               </div>
 
@@ -299,7 +229,7 @@ export default function HomePage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/granitecarpentry.webp"
-                  alt="Professional Carpenter, Plumber & Granite Installation Johannesburg"
+                  alt="Professional Carpentry & Joinery Johannesburg"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -382,72 +312,27 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Drywall location services section */}
+          {/* Specialist location pages */}
           <div className="mt-16 pt-16 border-t border-slate-200">
             <div className="text-center mb-12">
               <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-                Professional Drywall Installation & Ceiling Repair Services by Location
+                Specialist Carpentry & Drywall Services by Location
               </h3>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Expert drywall contractors and ceiling specialists serving all major Johannesburg suburbs - same-day
-                quotes, quality workmanship, and guaranteed results
+                Dedicated pages for our most-requested suburbs and services - same-day quotes, quality workmanship, and
+                guaranteed results across Johannesburg.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Sandton</h4>
                   <p className="text-slate-600 mb-4">
-                    Premium drywall installation services in Sandton's residential and commercial properties.
+                    Premium drywall installation services for Sandton's residential and commercial properties.
                   </p>
                   <Button asChild variant="outline" className="w-full bg-transparent">
                     <Link href="/drywall-sandton">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Repairs Randburg</h4>
-                  <p className="text-slate-600 mb-4">
-                    Expert ceiling repair and restoration services throughout Randburg area.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/ceiling-repairs-randburg">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Rosebank</h4>
-                  <p className="text-slate-600 mb-4">
-                    Professional drywall solutions for Rosebank's modern homes and offices.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/drywall-rosebank">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Suspended Ceilings Johannesburg</h4>
-                  <p className="text-slate-600 mb-4">
-                    Commercial suspended ceiling systems for Johannesburg businesses.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/suspended-ceilings-johannesburg">
                       View Services
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
@@ -470,12 +355,12 @@ export default function HomePage() {
 
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Fourways</h4>
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Carpenter Sandhurst</h4>
                   <p className="text-slate-600 mb-4">
-                    Expert drywall installation for Fourways residential and commercial properties.
+                    Bespoke carpentry and joinery for Sandhurst's luxury homes and estates.
                   </p>
                   <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/drywall-fourways">
+                    <Link href="/carpenter-sandhurst">
                       View Services
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
@@ -485,373 +370,13 @@ export default function HomePage() {
 
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Repairs Sandton</h4>
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Carpenter Near Me Johannesburg</h4>
                   <p className="text-slate-600 mb-4">
-                    Professional ceiling repair services for Sandton homes and offices.
+                    Trusted local carpenters ready to help with projects across Johannesburg.
                   </p>
                   <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/ceiling-repairs-sandton">
+                    <Link href="/carpenter-near-me-johannesburg">
                       View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Midrand</h4>
-                  <p className="text-slate-600 mb-4">Quality drywall installation services throughout Midrand area.</p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/drywall-midrand">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Repairs Vereeniging</h4>
-                  <p className="text-slate-600 mb-4">Emergency ceiling repair services available in Vereeniging.</p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/ceiling-repairs-vereeniging">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Johannesburg South</h4>
-                  <p className="text-slate-600 mb-4">Professional drywalling for all Johannesburg South communities.</p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/drywall-johannesburg-south">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Bryanston</h4>
-                  <p className="text-slate-600 mb-4">
-                    Premium drywall installation for Bryanston's luxury homes and estates.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/drywall-bryanston">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Suspended Ceilings Sandton</h4>
-                  <p className="text-slate-600 mb-4">
-                    Commercial suspended ceiling systems for Sandton business district.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/suspended-ceilings-sandton">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Centurion</h4>
-                  <p className="text-slate-600 mb-4">
-                    Expert drywall installation for Centurion residential and commercial properties.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/drywall-centurion">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Repairs Pretoria</h4>
-                  <p className="text-slate-600 mb-4">Professional ceiling repair services throughout Pretoria area.</p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/ceiling-repairs-pretoria">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Edenvale</h4>
-                  <p className="text-slate-600 mb-4">
-                    Quality drywall installation services for Edenvale homes and businesses.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/drywall-edenvale">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Installation Bryanston</h4>
-                  <p className="text-slate-600 mb-4">Professional ceiling installation for Bryanston properties.</p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/ceiling-installation-bryanston">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Pretoria</h4>
-                  <p className="text-slate-600 mb-4">
-                    Expert drywall solutions for Pretoria residential and commercial spaces.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/drywall-pretoria">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Repairs Centurion</h4>
-                  <p className="text-slate-600 mb-4">Emergency ceiling repair services available in Centurion.</p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/ceiling-repairs-centurion">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Drywall Boksburg</h4>
-                  <p className="text-slate-600 mb-4">
-                    Professional drywall installation for Boksburg homes and businesses.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/drywall-boksburg">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Ceiling Installation Edenvale</h4>
-                  <p className="text-slate-600 mb-4">Expert ceiling installation services throughout Edenvale area.</p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/ceiling-installation-edenvale">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-          <div className="mt-16 pt-16 border-t border-slate-200">
-            <div className="text-center mb-12">
-              <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-                Expert Door Installation Services - Pivot, Barn, Security & French Doors
-              </h3>
-              <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
-                Premium door installation specialists for residential and commercial properties across Gauteng - modern
-                designs, security solutions, and architectural statement pieces installed with precision
-              </p>
-            </div>
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Pivot Doors</h4>
-                  <p className="text-slate-600 mb-4">
-                    Modern pivot door installation for contemporary homes - architectural statement pieces.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/pivot-doors">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Barn Doors</h4>
-                  <p className="text-slate-600 mb-4">
-                    Rustic and modern barn door installations - space-saving sliding door solutions.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/barn-doors">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Security Doors</h4>
-                  <p className="text-slate-600 mb-4">
-                    High-security door installation - protection without compromising style.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/security-doors">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">French Doors</h4>
-                  <p className="text-slate-600 mb-4">
-                    Elegant French door installation - bringing natural light and elegance to your space.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/french-doors">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Wooden Doors</h4>
-                  <p className="text-slate-600 mb-4">
-                    Custom solid wood door installation - timeless craftsmanship and durability.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/wooden-doors">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Pivot Doors Sandton</h4>
-                  <p className="text-slate-600 mb-4">
-                    Premium pivot door installation services for Sandton's luxury homes and estates.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/pivot-doors-sandton">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Barn Doors Cape Town</h4>
-                  <p className="text-slate-600 mb-4">
-                    Stylish barn door installations for Cape Town homes - modern and rustic designs.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/barn-doors-cape-town">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Security Doors Johannesburg</h4>
-                  <p className="text-slate-600 mb-4">
-                    Professional security door installation throughout Johannesburg area.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/security-doors-johannesburg">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Solid Wood Doors Pretoria</h4>
-                  <p className="text-slate-600 mb-4">
-                    Expert solid wood door installation for Pretoria homes - premium craftsmanship.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/solid-wood-doors-pretoria">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">French Doors Sandton</h4>
-                  <p className="text-slate-600 mb-4">
-                    Luxury French door installation for Sandton properties - elegance and light.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/french-doors-sandton">
-                      View Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Door Installation Hub</h4>
-                  <p className="text-slate-600 mb-4">
-                    Complete door installation services - browse all door types and locations.
-                  </p>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="/door-installation">
-                      View All Services
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
@@ -900,7 +425,7 @@ export default function HomePage() {
               Serving 23+ Areas Across Greater Johannesburg, Pretoria & Gauteng Province
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              Professional carpentry, plumbing, granite installation, and door services available throughout Gauteng.
+              Professional carpentry, joinery, renovation, and door installation services available throughout Gauteng.
               Same-day quotes and rapid response times for emergency services in all serviced areas.
             </p>
           </div>
@@ -982,7 +507,7 @@ export default function HomePage() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Home or Business?</h2>
           <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Get your FREE no-obligation consultation and detailed quote today. Our experts are ready to discuss your
-            carpentry, plumbing, granite installation, or door installation project. Available 24/7 for emergency
+            carpentry, joinery, renovation, or door installation project. Available 24/7 for emergency
             services throughout Johannesburg and Gauteng.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

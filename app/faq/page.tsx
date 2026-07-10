@@ -6,11 +6,11 @@ import { ArrowRight, Phone, Star } from "lucide-react"
 import { FAQAccordion } from "@/components/faq-accordion"
 
 export const metadata: Metadata = {
-  title: "FAQ - Frequently Asked Questions | Granite & Joinery Experts Johannesburg",
+  title: "FAQ - Frequently Asked Questions | The Timber Studio Johannesburg",
   description:
-    "Get answers to frequently asked questions about our carpentry, kitchen renovation, granite installation, and built-in cupboard services in Johannesburg and Gauteng.",
+    "Get answers to frequently asked questions about our bespoke carpentry, kitchen renovation, custom joinery, and built-in cupboard services in Johannesburg and Gauteng.",
   keywords:
-    "carpentry FAQ Johannesburg, kitchen renovation questions, granite installation FAQ, built-in cupboards questions, carpenter pricing Johannesburg South",
+    "carpentry FAQ Johannesburg, kitchen renovation questions, custom joinery FAQ, built-in cupboards questions, carpenter pricing Johannesburg South",
 }
 
 export default function FAQPage() {
@@ -28,7 +28,7 @@ export default function FAQPage() {
     {
       question: "Do you provide free quotes for all services?",
       answer:
-        "Yes! We provide completely free, no-obligation quotes for all our services including kitchen renovations, built-in cupboards, granite installations, decking, and drywall. Contact us at 063 397 7498 to schedule your free consultation.",
+        "Yes! We provide completely free, no-obligation quotes for all our services including kitchen renovations, built-in cupboards, solid timber doors, decking, and drywall. Contact us at 063 397 7498 to schedule your free consultation.",
     },
     {
       question: "What areas in Gauteng do you service?",
@@ -36,14 +36,14 @@ export default function FAQPage() {
         "We service all areas across Gauteng including Johannesburg South (our primary area), Randburg, Sandton, Midrand, Kempton Park, Fourways, Boksburg, Benoni, Germiston, Alberton, Edenvale, Bedfordview, Centurion, Pretoria, Roodepoort, Krugersdorp, and surrounding areas.",
     },
     {
-      question: "What types of granite and quartz do you install?",
+      question: "What types of timber and materials do you work with?",
       answer:
-        "We install premium granite and engineered quartz from leading suppliers. Popular granite options include Nero Impala, Rustenburg, and imported stones. For quartz, we offer Caesarstone, Silestone, and other premium brands in various colors and finishes.",
+        "We work with premium local and imported timbers including oak, meranti, pine, and blackwood, as well as high-quality engineered boards, veneers, and melamine for cabinetry. We match the material to your design, budget, and the demands of the space, and we only source from trusted, sustainably managed suppliers.",
     },
     {
       question: "Do you offer warranties on your work?",
       answer:
-        "Yes, we provide comprehensive warranties on all our work. Carpentry work comes with a 2-year warranty, granite/quartz installations have a 5-year warranty, and we guarantee all workmanship. We stand behind our quality with full warranty coverage.",
+        "Yes, we provide comprehensive warranties on all our work. Every project comes with a 24-month workmanship warranty, and we guarantee all joinery, hardware, and installation. We stand behind our quality with full warranty coverage.",
     },
     {
       question: "Can you help with kitchen design and planning?",
@@ -53,7 +53,7 @@ export default function FAQPage() {
     {
       question: "What makes you different from other carpenters in Johannesburg?",
       answer:
-        "We're 5-star rated with 47+ satisfied customers, offer transparent pricing, use quality materials, provide comprehensive warranties, and specialize in both carpentry and stone installations. We're local Johannesburg experts who understand the market and deliver exceptional value.",
+        "We're 5-star rated with 1,000+ completed projects, offer transparent pricing, use premium timber and hardware, provide comprehensive warranties, and specialize in bespoke carpentry and custom joinery. We're local Johannesburg craftsmen who understand the market and deliver exceptional value.",
     },
     {
       question: "How do I get started with my project?",
@@ -92,7 +92,7 @@ export default function FAQPage() {
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-600 mb-6 sm:mb-8 leading-relaxed">
-              Get answers to common questions about our carpentry, kitchen renovation, granite installation, and
+              Get answers to common questions about our bespoke carpentry, kitchen renovation, custom joinery, and
               built-in cupboard services across Johannesburg and Gauteng.
             </p>
 

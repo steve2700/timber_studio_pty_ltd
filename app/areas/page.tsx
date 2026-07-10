@@ -8,25 +8,25 @@ import { MapPin, Phone, Star, ArrowRight, CheckCircle, Award, Users, Clock } fro
 
 export const metadata: Metadata = {
   title:
-    "Service Areas | Professional Carpenter & Plumber Gauteng | Johannesburg, Pretoria, East & West Rand | The Timber Studio",
+    "Service Areas | Bespoke Carpentry & Joinery Gauteng | Johannesburg, Pretoria, East & West Rand | The Timber Studio",
   description:
-    "Professional carpenter & plumber services across Gauteng. Serving 23+ areas including Johannesburg, Sandton, Pretoria, Centurion, Midrand, East Rand & West Rand. Kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured. Free quotes. Call 063 397 7498",
+    "Bespoke carpentry & custom joinery services across Gauteng. Serving 23+ areas including Johannesburg, Sandton, Pretoria, Centurion, Midrand, East Rand & West Rand. Kitchen renovations, built-in cupboards, solid timber doors & decking. Licensed & insured. Free quotes. Call 063 397 7498",
   keywords:
-    "carpenter Gauteng, plumber Gauteng, carpenter Johannesburg, plumber Pretoria, carpenter Sandton, plumber Midrand, carpenter East Rand, plumber West Rand, kitchen renovations Gauteng, built-in cupboards Gauteng, granite installation Gauteng, emergency plumbing Gauteng, service areas, coverage areas, where we work",
+    "carpenter Gauteng, joinery Gauteng, carpenter Johannesburg, joinery Pretoria, carpenter Sandton, carpenter Midrand, carpenter East Rand, carpenter West Rand, kitchen renovations Gauteng, built-in cupboards Gauteng, custom joinery Gauteng, timber doors Gauteng, service areas, coverage areas, where we work",
   alternates: {
     canonical: "https://www.timberstudio.co.za/areas",
   },
   openGraph: {
-    title: "Service Areas | Professional Carpenter & Plumber Gauteng | 23+ Areas Covered",
+    title: "Service Areas | Bespoke Carpentry & Joinery Gauteng | 23+ Areas Covered",
     description:
-      "Professional carpenter & plumber services across Gauteng. Serving Johannesburg, Sandton, Pretoria, Centurion, Midrand, East & West Rand. Free quotes. Call 063 397 7498",
+      "Bespoke carpentry & custom joinery services across Gauteng. Serving Johannesburg, Sandton, Pretoria, Centurion, Midrand, East & West Rand. Free quotes. Call 063 397 7498",
     url: "https://www.timberstudio.co.za/areas",
     images: [
       {
-        url: "https://www.timberstudio.co.za/granitecarpentry.webp",
+        url: "https://www.timberstudio.co.za/timber-studio-bespoke-joinery-johannesburg.png",
         width: 1200,
         height: 630,
-        alt: "Professional Carpenter & Plumber Service Areas - Gauteng Coverage",
+        alt: "Bespoke Carpentry & Joinery Service Areas - Gauteng Coverage",
       },
     ],
   },
@@ -221,14 +221,14 @@ export default function AreasPage() {
       icon: "🚪",
     },
     {
-      title: "Granite Installation",
-      description: "Premium stone countertops throughout Gauteng",
-      icon: "💎",
+      title: "Solid Timber Doors",
+      description: "Handcrafted pivot, barn & entrance doors throughout Gauteng",
+      icon: "🚪",
     },
     {
-      title: "Emergency Plumbing",
-      description: "24/7 plumbing services across all areas",
-      icon: "🔧",
+      title: "Decking & Flooring",
+      description: "Premium hardwood decking and timber flooring across all areas",
+      icon: "🪵",
     },
   ]
 
@@ -266,7 +266,7 @@ export default function AreasPage() {
     {
       question: "What services are available in all areas?",
       answer:
-        "All our core services are available across every area we serve: kitchen renovations, built-in cupboards, granite and quartz countertop installation, custom carpentry, wardrobes, vanities, and comprehensive plumbing services including emergency repairs, installations, and maintenance. We also offer 24/7 emergency plumbing in all areas.",
+        "All our core services are available across every area we serve: kitchen renovations, built-in cupboards, custom carpentry, wardrobes, vanities, solid timber doors, decking, flooring, and drywall & ceilings. Every project is designed, crafted, and installed by our own team with a 24-month workmanship warranty.",
     },
     {
       question: "How do I know which area page to visit for my location?",
@@ -288,11 +288,12 @@ export default function AreasPage() {
               Serving {totalAreas}+ Areas Across Gauteng
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              Professional Carpenter & Plumber <span className="text-amber-400 block">Service Areas in Gauteng</span>
+              Bespoke Carpentry & Joinery <span className="text-amber-400 block">Service Areas in Gauteng</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
-              Comprehensive carpentry, plumbing, and granite installation services across Johannesburg, Pretoria, East
-              Rand, West Rand, and South Rand. Licensed, insured, and trusted by 3,000+ Gauteng homeowners since 2020.
+              Comprehensive bespoke carpentry, custom joinery, and timber renovation services across Johannesburg,
+              Pretoria, East Rand, West Rand, and South Rand. Licensed, insured, and trusted by 3,000+ Gauteng
+              homeowners since 2020.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center items-center text-sm sm:text-base">
@@ -559,8 +560,8 @@ export default function AreasPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
           <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Get a free consultation and quote for your carpentry, plumbing, or granite installation project. We serve
-            all {totalAreas}+ areas across Gauteng with professional craftsmanship and 24/7 emergency service.
+            Get a free consultation and quote for your kitchen, joinery, or timber renovation project. We serve all{" "}
+            {totalAreas}+ areas across Gauteng with meticulous craftsmanship and a 24-month workmanship warranty.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -611,9 +612,9 @@ export default function AreasPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            name: "Professional Carpenter & Plumber Services Gauteng",
+            name: "Bespoke Carpentry & Custom Joinery Services Gauteng",
             description:
-              "Comprehensive carpentry, plumbing, and granite installation services across Johannesburg, Pretoria, East Rand, West Rand, and South Rand",
+              "Comprehensive bespoke carpentry, custom joinery, and timber renovation services across Johannesburg, Pretoria, East Rand, West Rand, and South Rand",
             provider: {
               "@id": "https://www.timberstudio.co.za/#business",
             },
@@ -630,9 +631,10 @@ export default function AreasPage() {
             serviceType: [
               "Kitchen Renovations",
               "Built-in Cupboards",
-              "Granite Installation",
-              "Plumbing Services",
-              "Carpentry Services",
+              "Custom Joinery",
+              "Solid Timber Doors",
+              "Decking & Flooring",
+              "Bespoke Carpentry",
             ],
           }),
         }}

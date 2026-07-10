@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "The Timber Studio's comprehensive privacy policy. POPIA compliant data protection for South African customers. Learn how we protect your personal information and carpentry project details.",
   keywords:
-    "privacy policy, POPIA compliance, data protection South Africa, carpenter privacy policy, granite installation privacy, personal information protection",
+    "privacy policy, POPIA compliance, data protection South Africa, carpenter privacy policy, joinery privacy, personal information protection",
   robots: "index, follow",
 }
 
@@ -78,8 +78,8 @@ export default function PrivacyPage() {
                 <CardContent className="space-y-4">
                   <h4 className="font-semibold text-lg">Personal Information</h4>
                   <p className="text-slate-700">
-                    When you contact The Timber Studio for carpentry, kitchen renovation, or granite installation
-                    services, we may collect:
+                    When you contact The Timber Studio for carpentry, kitchen renovation, or custom joinery services, we
+                    may collect:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-slate-700">
                     <li>Full name and contact details (phone, email, address)</li>
@@ -129,7 +129,7 @@ export default function PrivacyPage() {
                     only in these circumstances:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-slate-700">
-                    <li>With trusted suppliers for granite and materials sourcing (project-specific only)</li>
+                    <li>With trusted suppliers for timber and materials sourcing (project-specific only)</li>
                     <li>With subcontractors when necessary for large carpentry projects</li>
                     <li>When required by South African law or legal proceedings</li>
                     <li>To protect our rights, property, or safety of our customers</li>
@@ -240,7 +240,7 @@ export default function PrivacyPage() {
                         <Mail className="w-5 h-5 text-amber-600 mr-3" />
                         <div>
                           <p className="font-semibold">Email</p>
-                          <p className="text-slate-600">granitecarpentry5@gmail.com</p>
+                          <p className="text-slate-600">info@timberstudio.co.za</p>
                         </div>
                       </div>
                       <div className="flex items-center">

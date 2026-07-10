@@ -137,7 +137,7 @@ export default function HomePage() {
       icon: <Users className="h-8 w-8 text-amber-600" />,
       title: "Licensed & Insured",
       description:
-        "Fully licensed carpentry and plumbing business with comprehensive public liability insurance coverage",
+        "Fully licensed joinery and carpentry business with comprehensive public liability insurance coverage",
     },
     {
       icon: <Clock className="h-8 w-8 text-amber-600" />,
@@ -156,18 +156,18 @@ export default function HomePage() {
             <div className="space-y-6 lg:space-y-8">
               <div className="space-y-4">
                 <Badge className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2">
-                  Johannesburg&apos;s #1 Rated Carpenter &amp; Joinery Studio 2026
+                  Johannesburg&apos;s #1 Rated Bespoke Joinery Studio 2026
                 </Badge>
                 <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
-                  Expert Carpentry, Joinery &{" "}
-                  <span className="text-amber-400 block sm:inline">Renovation</span>{" "}
-                  <span className="block">Services Johannesburg</span>
+                  Bespoke Carpentry &{" "}
+                  <span className="text-amber-400 block sm:inline">Custom Joinery</span>{" "}
+                  <span className="block">Crafted in Johannesburg</span>
                 </h1>
                 <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
-                  Transform your property with Johannesburg's most trusted home improvement specialists. From luxury
-                  kitchen renovations and custom built-in cupboards to bespoke decking, drywall, and door installation -
-                  we deliver exceptional craftsmanship backed by 5-star reviews and a 24-month warranty guarantee across
-                  all Gauteng areas.
+                  The Timber Studio designs, crafts, and installs handmade timber pieces that transform the way you live.
+                  From custom kitchens and built-in wardrobes to solid timber doors, decking, and full renovations &mdash;
+                  every project is measured, made, and fitted by our own master craftsmen, backed by 5-star reviews and a
+                  24-month workmanship warranty across Gauteng.
                 </p>
               </div>
 
@@ -228,8 +228,8 @@ export default function HomePage() {
             <div className="relative mt-8 lg:mt-0">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/granitecarpentry.webp"
-                  alt="Professional Carpentry & Joinery Johannesburg"
+                  src="/timber-studio-bespoke-joinery-johannesburg.png"
+                  alt="Bespoke custom timber kitchen and joinery by The Timber Studio Johannesburg"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -259,12 +259,12 @@ export default function HomePage() {
           <div className="text-center mb-12 sm:mb-16">
             <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Our Premium Services</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-              Complete Home Improvement & Renovation Solutions Across Gauteng
+              Handcrafted Timber Solutions for Every Room in Your Home
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              From luxury kitchen makeovers to emergency plumbing repairs - we deliver world-class craftsmanship with
-              premium materials, expert installation, and unmatched customer service throughout Johannesburg, Pretoria,
-              and surrounding areas.
+              From bespoke kitchens and fitted wardrobes to solid timber doors and hardwood decking, every piece is
+              custom-designed and built to last. Premium materials, meticulous joinery, and expert installation across
+              Johannesburg, Pretoria, and the wider Gauteng region.
             </p>
           </div>
 
@@ -393,12 +393,12 @@ export default function HomePage() {
           <div className="text-center mb-12 sm:mb-16">
             <Badge className="bg-amber-100 text-amber-800 px-4 py-2 mb-4">Why Choose The Timber Studio</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-              Gauteng's Most Trusted Home Service Experts Since 2020
+              Gauteng's Most Trusted Bespoke Joinery Studio Since 2020
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              With 1,000+ successfully completed projects and a flawless 5.0-star Google rating, we&apos;re the
-              preferred choice for discerning homeowners and businesses across Johannesburg, Sandton, Pretoria, and
-              Gauteng for carpentry, plumbing, and professional installations.
+              With 1,000+ completed projects and a flawless 5.0-star Google rating, we&apos;re the preferred choice for
+              discerning homeowners, architects, and businesses across Johannesburg, Sandton, Pretoria, and Gauteng for
+              custom carpentry, joinery, and premium timber installations.
             </p>
           </div>
 
@@ -465,8 +465,8 @@ export default function HomePage() {
             <Badge className="bg-amber-600 text-white px-4 py-2 mb-4">5-Star Client Reviews</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">Real Reviews from Satisfied Clients Across Gauteng</h2>
             <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto">
-              Don't just take our word for it - read verified testimonials from homeowners and businesses who've
-              experienced our exceptional carpentry, plumbing, and installation services first-hand.
+              Don't just take our word for it - read verified testimonials from homeowners, architects, and businesses
+              who've experienced our exceptional bespoke carpentry and joinery craftsmanship first-hand.
             </p>
           </div>
 
@@ -506,9 +506,9 @@ export default function HomePage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Home or Business?</h2>
           <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Get your FREE no-obligation consultation and detailed quote today. Our experts are ready to discuss your
-            carpentry, joinery, renovation, or door installation project. Available 24/7 for emergency
-            services throughout Johannesburg and Gauteng.
+            Book your FREE no-obligation design consultation and detailed quote today. Our master craftsmen are ready to
+            discuss your custom kitchen, wardrobe, timber door, decking, or full renovation project anywhere in
+            Johannesburg and Gauteng.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

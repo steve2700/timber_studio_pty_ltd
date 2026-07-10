@@ -108,8 +108,8 @@ export function Footer() {
               </div>
               <p className="text-slate-300 leading-relaxed">
                 Johannesburg&apos;s premier bespoke joinery and carpentry studio with over 1000+ completed projects.
-                Custom kitchens, built-in cupboards, solid timber doors, decking, and expert plumbing &mdash; all backed
-                by our 24-month workmanship warranty.
+                Custom kitchens, built-in cupboards, solid timber doors, decking, and full renovations &mdash; every
+                piece designed, crafted, and installed by our own team and backed by a 24-month workmanship warranty.
               </p>
             </div>
 
@@ -121,7 +121,7 @@ export function Footer() {
                   <a href="tel:+27633977498" className="hover:text-amber-400 transition-colors">
                     063 397 7498
                   </a>
-                  <div className="text-xs text-slate-400">24/7 Emergency Service</div>
+                  <div className="text-xs text-slate-400">Mon–Sat Studio Line</div>
                 </div>
               </div>
 
@@ -233,8 +233,8 @@ export function Footer() {
             <div className="mt-6 p-4 bg-slate-800 rounded-lg">
               <h5 className="font-semibold text-amber-400 mb-2">Free Service Areas</h5>
               <p className="text-sm text-slate-300">
-                We provide free quotes and consultations throughout Johannesburg, Sandton, Randburg, Pretoria,
-                Centurion, Midrand, Krugersdorp, and Benoni. Emergency plumbing available 24/7.
+                We provide free quotes and design consultations throughout Johannesburg, Sandton, Randburg, Pretoria,
+                Centurion, Midrand, Krugersdorp, and Benoni.
               </p>
             </div>
           </div>
@@ -243,7 +243,7 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-amber-400 mb-6">Stay Updated</h4>
             <p className="text-slate-300 mb-4">
-              Get expert carpentry tips, plumbing advice, project ideas, and special offers delivered to your inbox.
+              Get expert carpentry tips, joinery inspiration, project ideas, and special offers delivered to your inbox.
             </p>
 
             <div className="space-y-3 mb-6">

@@ -6,11 +6,11 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowRight, Phone, Star, Award, Users, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Us | Granite & Joinery Experts Johannesburg - 5-Star Rated Carpenter",
+  title: "About Us | The Timber Studio Johannesburg - 5-Star Rated Bespoke Joinery",
   description:
-    "Learn about Granite & Joinery Experts Johannesburg. 5-star rated carpenter specializing in kitchen renovations, built-in cupboards, and stone installations across Gauteng.",
+    "Learn about The Timber Studio Johannesburg. 5-star rated bespoke carpentry and custom joinery studio specializing in kitchen renovations, built-in cupboards, and solid timber craftsmanship across Gauteng.",
   keywords:
-    "about Granite Joinery Experts, best carpenter Johannesburg South, 5-star carpenter, professional carpentry Gauteng, trusted carpenter Randburg",
+    "about The Timber Studio, bespoke joinery Johannesburg, best carpenter Johannesburg South, 5-star carpenter, custom joinery Gauteng, trusted carpenter Randburg",
 }
 
 export default function AboutPage() {
@@ -31,12 +31,13 @@ export default function AboutPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-6 leading-tight">
-                About <span className="text-amber-600">Granite & Joinery</span> Experts
+                About <span className="text-amber-600">The Timber Studio</span>
               </h1>
 
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                We are Johannesburg's trusted carpentry and stone installation specialists, serving homeowners across
-                Gauteng with professional craftsmanship and exceptional service since our founding.
+                We are Johannesburg's trusted bespoke carpentry and custom joinery studio, serving homeowners,
+                architects, and businesses across Gauteng with handcrafted timber work and exceptional service since our
+                founding.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
@@ -65,8 +66,8 @@ export default function AboutPage() {
 
             <div className="relative">
               <Image
-                src="/granitecarpentry.webp?height=600&width=800"
-                alt="Professional carpenter team at Granite & Joinery Experts Johannesburg"
+                src="/carpenter-johannesburg-installing-kitchen-cupboards.jpg"
+                alt="The Timber Studio craftsmen installing bespoke joinery in Johannesburg"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl"
@@ -87,9 +88,9 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-6">Our Story & Mission</h2>
             <p className="text-xl text-slate-600 leading-relaxed">
-              Granite & Joinery Experts Johannesburg was founded with a simple mission: to provide homeowners across
-              Gauteng with exceptional carpentry and stone installation services at affordable prices. We believe that
-              quality craftsmanship shouldn't be a luxury.
+              The Timber Studio Johannesburg was founded with a simple mission: to provide homeowners across Gauteng
+              with exceptional bespoke carpentry and custom joinery at honest prices. We believe that beautifully
+              crafted timber work shouldn't be a luxury reserved for the few.
             </p>
           </div>
 
@@ -141,8 +142,8 @@ export default function AboutPage() {
 
             <div className="relative">
               <Image
-                src="/granite-carpentry-different.webp?height=500&width=600"
-                alt="Quality craftsmanship and attention to detail in carpentry work"
+                src="/carpentry.webp"
+                alt="Quality craftsmanship and attention to detail in bespoke timber joinery"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-xl"
@@ -239,7 +240,7 @@ export default function AboutPage() {
 
             <div className="text-center p-6 rounded-lg bg-slate-50 hover:bg-amber-50 transition-colors">
               <h3 className="text-xl font-bold text-slate-800 mb-2">Roodepoort</h3>
-              <p className="text-slate-600">Quality granite and quartz installations with professional service.</p>
+              <p className="text-slate-600">Custom timber kitchens and fitted cabinetry with professional installation.</p>
             </div>
           </div>
         </div>
@@ -250,8 +251,8 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Experience the Difference</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Join our growing family of satisfied customers. Contact us today to discuss your carpentry or stone
-            installation project.
+            Join our growing family of satisfied customers. Contact us today to discuss your custom kitchen, joinery, or
+            timber renovation project.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

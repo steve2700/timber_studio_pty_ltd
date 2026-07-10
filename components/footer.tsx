@@ -16,6 +16,12 @@ export function Footer() {
     { name: "Door Installation", href: "/door-installation" },
   ]
 
+  const collections = [
+    { name: "Bespoke Furniture", href: "/custom-furniture" },
+    { name: "Home Office & Study Fit-Outs", href: "/home-office-fit-outs" },
+    { name: "Pergolas & Outdoor Timber", href: "/outdoor-timber-structures" },
+  ]
+
   const specialistPages = [
     { name: "Carpenter Sandhurst", href: "/carpenter-sandhurst" },
     { name: "Carpenter Near Me JHB", href: "/carpenter-near-me-johannesburg" },
@@ -43,7 +49,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-charcoal text-cream">
       {/* Trust Indicators */}
       <div className="border-b border-slate-800">
         <div className="container mx-auto px-4 py-8">
@@ -196,9 +202,23 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Specialist Pages */}
+          {/* Studio Collections & Specialist Pages */}
           <div>
-            <h4 className="text-lg font-semibold text-amber-400 mb-6">Specialist Pages</h4>
+            <h4 className="text-lg font-semibold text-amber-400 mb-6">Studio Collections</h4>
+            <ul className="space-y-3">
+              {collections.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="text-slate-300 hover:text-amber-400 transition-colors flex items-center group"
+                  >
+                    <span className="w-2 h-2 bg-amber-600 rounded-full mr-3 group-hover:bg-amber-400 transition-colors"></span>
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h4 className="text-lg font-semibold text-amber-400 mb-4 mt-8">Specialist Pages</h4>
             <ul className="space-y-3">
               {specialistPages.map((service) => (
                 <li key={service.name}>
@@ -279,7 +299,8 @@ export function Footer() {
           <div className="text-slate-400 text-sm text-center md:text-left">
             <p>© {currentYear} The Timber Studio (Pty) Ltd. All rights reserved.</p>
             <p className="mt-1">
-              Professional carpentry & plumbing services in Johannesburg | Licensed & Insured | 24-Month Warranty
+              Bespoke carpentry & custom joinery in Johannesburg | Licensed &amp; Insured | 24-Month Workmanship
+              Warranty
             </p>
           </div>
 
@@ -301,7 +322,7 @@ export function Footer() {
       <div className="bg-amber-600 text-white py-2">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <span className="font-semibold">24/7 Emergency Carpentry & Plumbing Service Available</span>
+            <span className="font-semibold">Free Design Consultations &amp; Quotes Across Greater Johannesburg</span>
             <span className="mx-2">|</span>
             <a href="tel:+27633977498" className="hover:underline font-semibold">
               Call 063 397 7498 Now

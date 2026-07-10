@@ -19,6 +19,12 @@ export function Header() {
     { name: "Door Installation", href: "/door-installation" },
   ]
 
+  const collections = [
+    { name: "Bespoke Furniture", href: "/custom-furniture" },
+    { name: "Home Office & Study Fit-Outs", href: "/home-office-fit-outs" },
+    { name: "Pergolas & Outdoor Timber", href: "/outdoor-timber-structures" },
+  ]
+
   const specialistPages = [
     { name: "Carpenter Sandhurst", href: "/carpenter-sandhurst" },
     { name: "Carpenter Near Me Johannesburg", href: "/carpenter-near-me-johannesburg" },
@@ -54,31 +60,33 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       {/* Top Bar - Hidden on small mobile, visible on larger screens */}
-      <div className="bg-slate-900 text-white hidden sm:block">
+      <div className="bg-charcoal text-cream hidden sm:block">
         <div className="container mx-auto px-4">
           <div className="flex h-10 items-center justify-between text-sm">
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-1">
-                <Phone className="h-3 w-3 text-amber-400" />
-                <a href="tel:+27633977498" className="hover:text-amber-400 transition-colors">
-                  063 397 7498
-                </a>
-              </div>
-              <div className="hidden md:flex items-center space-x-1">
-                <Mail className="h-3 w-3 text-amber-400" />
-                <a href="mailto:info@timberstudio.co.za" className="hover:text-amber-400 transition-colors">
-                  info@timberstudio.co.za
-                </a>
-              </div>
+            <div className="flex items-center space-x-5">
+              <a
+                href="tel:+27633977498"
+                className="flex items-center space-x-1.5 text-cream/90 hover:text-gold transition-colors"
+              >
+                <Phone className="h-3.5 w-3.5 text-gold" />
+                <span>063 397 7498</span>
+              </a>
+              <a
+                href="mailto:info@timberstudio.co.za"
+                className="hidden md:flex items-center space-x-1.5 text-cream/90 hover:text-gold transition-colors"
+              >
+                <Mail className="h-3.5 w-3.5 text-gold" />
+                <span>info@timberstudio.co.za</span>
+              </a>
             </div>
-            <div className="hidden lg:flex items-center space-x-4">
-              <div className="flex items-center space-x-1">
-                <MapPin className="h-3 w-3 text-amber-400" />
-                <span>Serving Greater Johannesburg & Pretoria</span>
+            <div className="hidden lg:flex items-center space-x-5">
+              <div className="flex items-center space-x-1.5 text-cream/80">
+                <MapPin className="h-3.5 w-3.5 text-gold" />
+                <span>Serving Greater Johannesburg &amp; Pretoria</span>
               </div>
-              <div className="flex items-center space-x-1">
-                <Star className="h-3 w-3 text-amber-400 fill-current" />
-                <span className="text-amber-400">★★★★★ 5.0</span>
+              <div className="flex items-center space-x-1.5">
+                <span className="text-gold tracking-wide">★★★★★</span>
+                <span className="text-cream/90">5.0 · 1000+ Projects</span>
               </div>
             </div>
           </div>
@@ -128,24 +136,39 @@ export function Header() {
               <button className="flex items-center text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
                 Services <ChevronDown className="ml-1 h-3 w-3" />
               </button>
-              <div className="absolute left-0 top-full mt-2 w-56 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <div className="py-1">
+              <div className="absolute left-0 top-full mt-2 w-64 rounded-lg bg-card shadow-xl ring-1 ring-border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                <div className="py-2">
                   {services.map((service) => (
                     <Link
                       key={service.href}
                       href={service.href}
-                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600"
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600 transition-colors"
                     >
                       {service.name}
                     </Link>
                   ))}
-                  <div className="border-t border-slate-200 my-1"></div>
-                  <div className="px-4 py-2 text-xs font-semibold text-slate-500 uppercase">Specialist Pages</div>
+                  <div className="border-t border-border my-1.5" />
+                  <div className="px-4 py-1.5 text-xs font-semibold text-gold uppercase tracking-wider">
+                    Studio Collections
+                  </div>
+                  {collections.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600 transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                  <div className="border-t border-border my-1.5" />
+                  <div className="px-4 py-1.5 text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                    Specialist Pages
+                  </div>
                   {specialistPages.map((page) => (
                     <Link
                       key={page.href}
                       href={page.href}
-                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600"
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600 transition-colors"
                     >
                       {page.name}
                     </Link>
@@ -244,7 +267,24 @@ export function Header() {
                             </Link>
                           ))}
                           <div className="pt-3 mt-3 border-t border-slate-200">
-                            <div className="text-xs font-semibold text-slate-500 uppercase mb-2">Specialist Pages</div>
+                            <div className="text-xs font-semibold text-gold uppercase tracking-wider mb-2">
+                              Studio Collections
+                            </div>
+                            {collections.map((item) => (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                className="block text-sm text-slate-600 hover:text-amber-600 transition-colors py-1"
+                                onClick={() => setIsOpen(false)}
+                              >
+                                {item.name}
+                              </Link>
+                            ))}
+                          </div>
+                          <div className="pt-3 mt-3 border-t border-slate-200">
+                            <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">
+                              Specialist Pages
+                            </div>
                             {specialistPages.map((page) => (
                               <Link
                                 key={page.href}

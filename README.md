@@ -1,127 +1,165 @@
-Timber Studio PTY LTD 
+# The Timber Studio (Pty) Ltd
 
-*Professional carpentry and granite installation services in Johannesburg, Gauteng*
+*Custom carpentry, joinery and home renovations across Gauteng, South Africa*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)]
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)]()
 
-
-## 🚀 Live Website
+## 🌐 Live Website
 
 **Production URL:** [https://www.timberstudio.co.za](https://www.timberstudio.co.za)
 
 ## 📋 Overview
 
-Professional website for Granite & Carpentry - Johannesburg's leading carpentry and granite installation specialists. Features cutting-edge AI technology and Google-optimized design for maximum visibility and customer engagement.
+The Timber Studio designs, crafts and builds custom kitchens, built-in cupboards, bathroom renovations, decking, drywall/ceilings and door installations for homes across Gauteng. This repo is the marketing site: a Next.js App Router build with per-page SEO metadata, JSON-LD structured data, and a set of geo-targeted landing pages for local search.
 
-### ✨ **Key Features:**
+> ⚠️ **Fix before launch:** the previous version of this README (inherited from the old Granite & Carpentry business) had a phone number mismatch — the displayed number and the `tel:` link pointed to two different numbers. Confirm every `tel:` href across the site actually points to **063 397 7498** before going live.
 
-- ⚡ **Lightning-fast performance** with Next.js 15
-- 🤖 **AI-powered chat widget** for 24/7 customer support
-- 🧠 **Smart recommendations** based on user behavior and season
-- 📱 **Fully responsive** design for all devices
-- 🔍 **Advanced SEO optimization** with rich snippets and schema markup
-- ♿ **Accessibility compliant** with WCAG guidelines
-- 🎨 **Modern design** with Tailwind CSS
-- 📞 **WhatsApp integration** for instant communication
-- 🌐 **Social media ready** with Facebook integration
-- 📊 **Google Analytics 4** with advanced tracking
-- 🔒 **Security optimized** with HTTPS and security headers
+## 🎨 Brand
 
-## 🤖 AI Features
+| Token | Value | Use |
+|---|---|---|
+| Charcoal | `#1C1B19` | Primary dark, headings |
+| Copper | `#B36A3D` (light `#C98356`, dark `#8A4E2A`) | Primary accent, buttons, links |
+| Gold | `#C6A15B` (light `#DEC084`) | Secondary accent |
+| Walnut | `#4A2F1C` | Dark section backgrounds |
+| Cream | `#F4EFE6` | Light backgrounds, text-on-dark |
+| Paper | `#FBF8F2` | Page background |
 
-### **💬 AI Chat Widget**
-- **Smart responses** to customer inquiries about services, pricing, and availability
-- **Lead generation** through conversational interface
-- **24/7 availability** for customer support
-- **Context-aware** responses about carpentry and granite services
-- **Mobile optimized** for seamless mobile experience
-
-### **🧠 Smart Recommendations**
-- **Time-based suggestions** - Different recommendations based on time of day and season
-- **Popular services** - Highlights trending services in user's area
-- **Seasonal promotions** - Summer decking specials, winter indoor projects
-- **Area-specific offers** - Location-based service recommendations
-
-### **📊 Advanced Analytics**
-- **Conversion tracking** for calls, emails, and quote requests
-- **User behavior analysis** with scroll depth and engagement metrics
-- **Service performance** tracking across different pages
-- **Lead source attribution** to optimize marketing spend
-
-## 🛠️ Services Featured
-
-- **Kitchen Renovations & Joinery** - Custom kitchen designs and installations
-- **Built-in Cupboards & Wardrobes** - Bespoke storage solutions
-- **Quartz & Granite Installation** - Premium countertop installations
-- **Decking & Flooring** - Outdoor and indoor flooring solutions
-- **Drywall & Ceilings** - Professional drywall installations
-- **Professional Carpentry Training** - Skills development programs
-
-## 🌍 Service Areas
-
-Serving all major areas across Gauteng with dedicated pages for local SEO:
-
-### **Primary Areas:**
-- **Johannesburg South** (Primary service area)
-- **Sandton & Rosebank** - Premium residential and commercial
-- **Randburg & Northcliff** - Established residential areas
-- **Kempton Park & Edenvale** - East Rand coverage
-- **Midrand & Fourways** - Northern suburbs
-- **Roodepoort** - West Rand services
-
-### **Extended Coverage:**
-- **Boksburg & Benoni** - East Rand expansion
-- **Centurion & Pretoria** - Northern coverage
-- **Alberton** - Southern expansion
-- **Cape Town areas** (Coming soon)
+**Tagline:** Design · Craft · Build
+**Typography:** Serif display font for headings (Fraunces/Playfair Display), Inter for body copy.
 
 ## 🏗️ Technical Stack
 
-### **Frontend:**
-- **Framework:** Next.js 15 with App Router
-- **Styling:** Tailwind CSS with custom optimizations
-- **UI Components:** Radix UI with shadcn/ui
-- **Icons:** Lucide React
-- **Typography:** Inter font with display swap
+| Layer | Choice |
+|---|---|
+| Framework | Next.js (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS with custom brand tokens |
+| Images | `next/image` — local placeholder JPGs under `/public/images/placeholders/` until real project photos are added |
+| SEO | Next.js Metadata API per route + JSON-LD structured data |
+| Icons | Inline SVG — no icon library dependency |
+| Deployment | Vercel, auto-deploy on push to `main` |
 
-### **AI & Analytics:**
-- **AI Chat:** Custom conversational AI for customer support
-- **Analytics:** Google Analytics 4 with enhanced e-commerce tracking
-- **Performance:** Core Web Vitals optimization
-- **SEO:** Advanced schema markup and structured data
+## 🔍 SEO Implementation
 
-### **Deployment & Hosting:**
-- **Platform:** Vercel with automatic deployments
-- **Domain:** .co.za domain for local SEO advantage
-- **SSL:** Automatic HTTPS with free SSL certificates
-- **CDN:** Global content delivery network
+- **Per-route metadata** — unique `title`, `description`, canonical URL (`www.timberstudio.co.za`), `robots` directives (`max-snippet`, `max-image-preview`), OpenGraph (`en_ZA` locale, sized image), Twitter `summary_large_image` card, geo-targeted `keywords` on every page.
+- **JSON-LD structured data:**
+  - `HomeAndConstructionBusiness` (sitewide, root layout)
+  - `Service` schema on each of the 6 core service pages
+  - `FAQPage` schema on the FAQ page and homepage FAQ teaser, matched exactly to on-page content
+  - `BreadcrumbList` on nested routes
+- **`sitemap.ts`** — generates the full sitemap from typed slug arrays (see Site Structure below) rather than a hand-maintained list, so new pages register automatically.
+- **`robots.ts`** — points crawlers at the sitemap, allows indexing.
 
-## 📊 SEO & Performance Features
+## 🗺️ Site Structure
 
-### **🔍 Advanced SEO:**
-- **Local Business Schema** - Complete business information for search engines
-- **FAQ Schema** - Rich snippets for common questions
-- **Service Schema** - Individual service page optimization
-- **Breadcrumb Schema** - Enhanced navigation structure
-- **Review Schema** - Customer ratings and testimonials
+**Core pages (8)**
+```
+/                    Home
+/about
+/contact
+/portfolio
+/faq
+/privacy
+/terms
+/areas               Areas-served hub
+```
 
-### **⚡ Performance Optimization:**
-- **Core Web Vitals optimized** - Perfect Lighthouse scores
-- **Image optimization** with Next.js Image component
-- **Font optimization** with preloading and display swap
-- **CSS optimization** with Tailwind purging
-- **JavaScript optimization** with SWC minification
-- **Caching strategies** for static assets
+**Core services (6)**
+```
+/kitchen-renovations
+/bathroom-renovations
+/built-in-cupboards
+/decking-flooring
+/drywall-ceilings
+/door-installation
+```
 
-### **📱 Mobile Excellence:**
-- **Mobile-first design** - Optimized for mobile users
-- **Progressive Web App** features for app-like experience
-- **Touch-optimized** interface for mobile interactions
-- **Fast loading** on mobile networks
+**Studio Collections (3)** — bespoke joinery landing pages
+```
+/custom-furniture
+/home-office-fit-outs
+/outdoor-timber-structures
+```
+
+**Specialist / high-intent landing pages (4)**
+```
+/carpenter-sandhurst                    High-value suburb
+/carpenter-near-me-johannesburg         High-volume generic search intent
+/drywall-sandton                        High-value suburb
+/drywalling-contractors-johannesburg    High-volume generic search intent
+```
+
+**Area pages (24)** — `/areas/[slug]`
+```
+alberton, bedfordview, benoni, boksburg, carletonville, centurion,
+edenvale, fourways, germiston, heidelberg, johannesburg,
+johannesburg-south, kempton-park, krugersdorp, midrand, nigel,
+pretoria, randburg, roodepoort, sandton, springs, vanderbijlpark,
+vereeniging, westonaria
+```
+
+**Total: 45 routes.**
+
+> Note: this list grew from an earlier, more conservative 18-page trim once full area pages and the Studio Collections pages were built out. If you're tracking build/hosting costs or v0 credit usage, that's worth knowing — 45 unique pages of real content is a bigger ongoing commitment than 18.
+
+## 🛠️ Services Offered
+
+- **Kitchen Renovations** — custom kitchen design and installation
+- **Built-In Cupboards** — bespoke storage and wardrobes
+- **Bathroom Renovations**
+- **Decking & Flooring** — indoor and outdoor
+- **Drywall & Ceilings**
+- **Door Installation** — supply, fitting, and repair
+
+*(Granite and quartz countertop services from the previous business are no longer offered — do not reference them anywhere in copy, metadata, or schema.)*
+
+## 🌍 Service Area
+
+**Gauteng only** — Johannesburg, Johannesburg South, Sandton, Randburg, Pretoria, Centurion, Midrand, Kempton Park, Roodepoort, Fourways, Edenvale, Boksburg, Alberton, Benoni, Germiston, Springs, Vanderbijlpark, Vereeniging, Nigel, Heidelberg, Carletonville, Krugersdorp, Westonaria, Bedfordview.
+
+The business does not serve outside Gauteng — don't imply otherwise in copy or metadata.
+
+## 📁 Project Structure
+
+```
+├── app/
+│   ├── areas/[slug]/           # 24 area landing pages
+│   ├── kitchen-renovations/    # Core service pages
+│   ├── built-in-cupboards/
+│   ├── bathroom-renovations/
+│   ├── decking-flooring/
+│   ├── drywall-ceilings/
+│   ├── door-installation/
+│   ├── custom-furniture/       # Studio Collections
+│   ├── home-office-fit-outs/
+│   ├── outdoor-timber-structures/
+│   ├── carpenter-sandhurst/    # Specialist landing pages
+│   ├── carpenter-near-me-johannesburg/
+│   ├── drywall-sandton/
+│   ├── drywalling-contractors-johannesburg/
+│   ├── about/ contact/ portfolio/ faq/ privacy/ terms/
+│   ├── layout.tsx              # Root layout, sitewide JSON-LD
+│   ├── page.tsx                # Homepage
+│   ├── sitemap.ts
+│   └── robots.ts
+├── components/                 # Header, Footer, shared UI blocks
+├── lib/
+│   ├── data/                   # services, areas, home-faqs — typed data sources
+│   └── seo.ts                  # buildMetadata, schema helpers
+└── public/
+    └── images/placeholders/    # Placeholder JPGs — replace with real project photos
+```
+
+## 📱 Contact
+
+- **Phone:** [063 397 7498](tel:+27633977498) — *verify this `tel:` href matches on every page before launch*
+- **Email:** info@timberstudio.co.za *(confirm this is a live, monitored inbox)*
+- **Address:** Gauteng, South Africa
 
 ## 🔧 Development
 
-\`\`\`bash
+```bash
 # Install dependencies
 npm install
 
@@ -136,107 +174,21 @@ npm start
 
 # Run linting
 npm run lint
-\`\`\`
-
-## 📁 Project Structure
-
-\`\`\`
-├── app/                    # Next.js App Router pages
-│   ├── areas/             # Location-specific pages
-│   ├── services/          # Service-specific pages
-│   ├── layout.tsx         # Root layout with AI features
-│   └── page.tsx           # Homepage with smart recommendations
-├── components/            # Reusable components
-│   ├── ui/               # shadcn/ui components
-│   ├── ai-chat-widget.tsx        # AI chat functionality
-│   ├── smart-recommendations.tsx # Intelligent recommendations
-│   ├── google-business-schema.tsx # SEO schema markup
-│   ├── analytics-provider.tsx    # GA4 integration
-│   └── floating-whatsapp.tsx     # WhatsApp integration
-├── public/               # Static assets and images
-└── styles/              # Global styles and Tailwind config
-\`\`\`
-
-## 📱 Contact Information
-
-- **Phone:** [063 397 7498](tel:0676014490)
-- **Email:** [info@timberstudio.co.za](mailto:info@timberstudio.co.za)
-- **WhatsApp:** Available via floating widget
-- **Facebook:** [facebook.com/timberstudio](https://www.facebook.com/timberstudio)
-- **Google Reviews:** [5-Star Rating](https://g.co/kgs/epZT5BY)
-- **Address:** Johannesburg South, Gauteng, South Africa
-
-## 🎯 Business Highlights
-
-- ⭐ **5.0 star Google rating** from 47+ satisfied customers
-- 🏆 **500+ completed projects** across Gauteng
-- 💯 **100% quality guarantee** on all work
-- ⚡ **24-hour quote response** time
-- 🛡️ **Licensed & insured** professional service
-- 📞 **Free professional quotes** and consultations
-- 🤖 **AI-powered customer support** available 24/7
+```
 
 ## 🚀 Deployment
 
-### **Vercel Deployment:**
-1. Connect your GitHub repository to Vercel
-2. Configure your .co.za domain in Vercel dashboard
-3. Set up environment variables for analytics
-4. Deploy automatically on every push to main branch
+1. Connect this repository to Vercel.
+2. Add `www.timberstudio.co.za` as the custom domain in Vercel project settings.
+3. Update DNS records as instructed by Vercel.
+4. Push to `main` — Vercel auto-deploys, HTTPS is provisioned automatically.
 
-### **Domain Configuration:**
-1. Purchase your .co.za domain from any registrar
-2. Add custom domain in Vercel project settings
-3. Update DNS records as instructed by Vercel
-4. Automatic HTTPS certificate provisioning
+## ✅ Pre-Launch Checklist
 
-## 📈 Analytics & Tracking
-
-### **Google Analytics 4:**
-- **Enhanced e-commerce** tracking for quote requests
-- **Conversion tracking** for calls and emails
-- **User behavior** analysis and heatmaps
-- **Service performance** metrics
-- **Lead attribution** and ROI tracking
-
-### **Key Metrics Tracked:**
-- Quote request conversions
-- Phone call interactions
-- Email contact submissions
-- Service page engagement
-- Area-specific performance
-- AI chat widget usage
-
-## 🔒 Security Features
-
-- **HTTPS enforcement** with automatic SSL certificates
-- **Security headers** for XSS and clickjacking protection
-- **Content Security Policy** implementation
-- **GDPR compliance** for user data protection
-- **Secure contact forms** with validation
-
-## 🌟 Future Enhancements
-
-- **Multi-language support** (Afrikaans, Zulu)
-- **Online booking system** with calendar integration
-- **Customer portal** for project tracking
-- **Advanced AI features** with voice support
-- **Cape Town expansion** with dedicated pages
-- **Mobile app** development
-
----
-
-## 📞 Get Started
-
-Ready to transform your space with professional carpentry and granite installation?
-
-1. **💬 Chat with our AI assistant** - Get instant answers to your questions
-2. **📞 Call us** - Speak directly with our experts at 063 397 7498
-3. **📧 Email us** - Send your project details to info@timberstudio.co.za
-4. **💬 WhatsApp** - Quick communication via our floating widget
-
----
-
-*Built with ❤️ and AI for professional carpentry excellence in Johannesburg*
-
-**Powered by:** Next.js 15 • Vercel • AI Technology • Google Optimization
+- [ ] Fix the phone number `tel:` link mismatch flagged above
+- [ ] Replace all placeholder images in `/public/images/placeholders/` with real project photos
+- [ ] Confirm `info@timberstudio.co.za` is a monitored inbox
+- [ ] Write real, locally-specific copy for the 4 specialist landing pages and 24 area pages — avoid template-with-city-swapped content, which search engines treat as low-value
+- [ ] Verify no granite/quartz/countertop language remains anywhere (copy, metadata, JSON-LD)
+- [ ] Confirm the JSON-LD `HomeAndConstructionBusiness` schema has accurate `name`, `telephone`, `url`, and `logo` fields
+- [ ] Remove any leftover "Built with v0" or AI-disclosure component if one still exists in the layout

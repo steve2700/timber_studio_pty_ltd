@@ -10,7 +10,7 @@ import { FAQAccordion } from "@/components/faq-accordion"
 export const metadata: Metadata = {
   title: "Kitchen Renovations Johannesburg 2026 | Expert Kitchen Remodeling Services",
   description:
-    "Transform your kitchen with expert renovation services in Johannesburg, Sandton, Randburg & Midrand. Custom designs, granite countertops, built-in cupboards. 5-star rated. Free quotes. Call 067 601 4490.",
+    "Transform your kitchen with expert renovation services in Johannesburg, Sandton, Randburg & Midrand. Custom designs, granite countertops, built-in cupboards. 5-star rated. Free quotes. Call 063 397 7498.",
   keywords:
     "kitchen renovations johannesburg, kitchen remodeling sandton, kitchen renovation randburg, kitchen design midrand, custom kitchens gauteng, kitchen cupboards johannesburg, granite countertops kitchen, kitchen renovation cost johannesburg, modern kitchen design sandton, kitchen contractors johannesburg",
   openGraph: {
@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     description:
       "Transform your kitchen with expert renovation services in Johannesburg. Custom designs, granite countertops, professional installation. 5-star rated service.",
     images: [{ url: "/Kitchen-renovations-sandton.webp", width: 1200, height: 630 }],
-    url: "https://granitecarpentry.co.za/services/kitchen-renovations",
+    url: "https://www.timberstudio.co.za/services/kitchen-renovations",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/services/kitchen-renovations",
+    canonical: "https://www.timberstudio.co.za/services/kitchen-renovations",
   },
   robots: {
     index: true,
@@ -71,16 +71,16 @@ export default function KitchenRenovationsPage() {
             "@graph": [
               {
                 "@type": "Service",
-                "@id": "https://granitecarpentry.co.za/services/kitchen-renovations#service",
+                "@id": "https://www.timberstudio.co.za/services/kitchen-renovations#service",
                 name: "Kitchen Renovations Johannesburg",
                 description:
                   "Professional kitchen renovation services in Johannesburg including custom cabinet installation, granite countertops, and complete kitchen remodeling.",
                 provider: {
                   "@type": "LocalBusiness",
-                  "@id": "https://granitecarpentry.co.za/#organization",
-                  name: "Granite Carpentry",
-                  telephone: "+27676014490",
-                  email: "info@granitecarpentry.co.za",
+                  "@id": "https://www.timberstudio.co.za/#organization",
+                  name: "The Timber Studio",
+                  telephone: "+27633977498",
+                  email: "info@timberstudio.co.za",
                   address: {
                     "@type": "PostalAddress",
                     addressLocality: "Johannesburg",
@@ -147,19 +147,19 @@ export default function KitchenRenovationsPage() {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://granitecarpentry.co.za",
+                    item: "https://www.timberstudio.co.za",
                   },
                   {
                     "@type": "ListItem",
                     position: 2,
                     name: "Services",
-                    item: "https://granitecarpentry.co.za/services",
+                    item: "https://www.timberstudio.co.za/services",
                   },
                   {
                     "@type": "ListItem",
                     position: 3,
                     name: "Kitchen Renovations",
-                    item: "https://granitecarpentry.co.za/services/kitchen-renovations",
+                    item: "https://www.timberstudio.co.za/services/kitchen-renovations",
                   },
                 ],
               },
@@ -229,9 +229,9 @@ export default function KitchenRenovationsPage() {
                   size="lg"
                   className="text-lg px-8 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">
+                  <Link href="tel:+27633977498">
                     <Phone className="mr-2 h-5 w-5" />
-                    067 601 4490
+                    063 397 7498
                   </Link>
                 </Button>
               </div>
@@ -600,9 +600,9 @@ export default function KitchenRenovationsPage() {
                 size="lg"
                 className="text-lg px-8 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent"
               >
-                <Link href="tel:+27676014490">
+                <Link href="tel:+27633977498">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call: 067 601 4490
+                  Call: 063 397 7498
                 </Link>
               </Button>
             </div>

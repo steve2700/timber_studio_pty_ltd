@@ -21,23 +21,23 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Historic Carpenter & Plumber Heidelberg | Traditional Carpentry, Granite Installation & Heritage Plumbing | Granite Carpentry",
+    "Historic Carpenter & Plumber Heidelberg | Traditional Carpentry, Granite Installation & Heritage Plumbing | The Timber Studio",
   description:
-    "Historic carpenter & plumber services in Heidelberg. Traditional carpentry, kitchen renovations, built-in cupboards, granite installation & heritage plumbing. Licensed & insured with historic expertise. Call 067 601 4490 for free quote.",
+    "Historic carpenter & plumber services in Heidelberg. Traditional carpentry, kitchen renovations, built-in cupboards, granite installation & heritage plumbing. Licensed & insured with historic expertise. Call 063 397 7498 for free quote.",
   keywords:
     "carpenter Heidelberg, historic plumber Heidelberg, traditional carpentry Heidelberg, kitchen renovations Heidelberg, built-in cupboards Heidelberg, granite installation Heidelberg, heritage plumbing Heidelberg",
   openGraph: {
     title: "Historic Carpenter & Plumber Heidelberg | Traditional Carpentry & Granite Installation",
     description:
       "Historic carpenter & plumber services in Heidelberg. Traditional carpentry, kitchen renovations, built-in cupboards, granite installation & heritage plumbing. Licensed & insured with historic expertise.",
-    url: "https://granitecarpentry.co.za/areas/heidelberg",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/areas/heidelberg",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://www.timberstudio.co.za/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "Historic Carpenter & Plumber Heidelberg - Granite Carpentry",
+        alt: "Historic Carpenter & Plumber Heidelberg - The Timber Studio",
       },
     ],
     locale: "en_ZA",
@@ -48,10 +48,10 @@ export const metadata: Metadata = {
     title: "Historic Carpenter & Plumber Heidelberg | Traditional Carpentry & Granite Installation",
     description:
       "Historic carpenter & plumber services in Heidelberg. Traditional carpentry, kitchen renovations, built-in cupboards, granite installation & heritage plumbing. Licensed & insured with historic expertise.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://www.timberstudio.co.za/timber-studio-logo.png"],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/heidelberg",
+    canonical: "https://www.timberstudio.co.za/areas/heidelberg",
   },
 }
 
@@ -214,7 +214,7 @@ export default function HeidelbergPage() {
                   size="lg"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
 
@@ -456,7 +456,7 @@ export default function HeidelbergPage() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498</Link>
             </Button>
           </div>
         </div>

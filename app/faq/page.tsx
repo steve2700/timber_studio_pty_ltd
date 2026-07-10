@@ -28,7 +28,7 @@ export default function FAQPage() {
     {
       question: "Do you provide free quotes for all services?",
       answer:
-        "Yes! We provide completely free, no-obligation quotes for all our services including kitchen renovations, built-in cupboards, granite installations, decking, and drywall. Contact us at 067 601 4490 to schedule your free consultation.",
+        "Yes! We provide completely free, no-obligation quotes for all our services including kitchen renovations, built-in cupboards, granite installations, decking, and drywall. Contact us at 063 397 7498 to schedule your free consultation.",
     },
     {
       question: "What areas in Gauteng do you service?",
@@ -58,7 +58,7 @@ export default function FAQPage() {
     {
       question: "How do I get started with my project?",
       answer:
-        "Simply call us at 067 601 4490 or fill out our contact form. We'll schedule a free consultation, discuss your requirements, provide a detailed quote, and if you're happy, we'll schedule your project. It's that simple!",
+        "Simply call us at 063 397 7498 or fill out our contact form. We'll schedule a free consultation, discuss your requirements, provide a detailed quote, and if you're happy, we'll schedule your project. It's that simple!",
     },
     {
       question: "Do you handle permits and approvals?",
@@ -113,9 +113,9 @@ export default function FAQPage() {
                 asChild
                 className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto bg-transparent"
               >
-                <a href="tel:+27676014490">
+                <a href="tel:+27633977498">
                   <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                  Call: 067 601 4490
+                  Call: 063 397 7498
                 </a>
               </Button>
             </div>
@@ -150,8 +150,8 @@ export default function FAQPage() {
                   <Phone className="w-8 h-8 text-amber-600 mx-auto mb-4" />
                   <h3 className="font-bold text-slate-800 mb-2">Call Us</h3>
                   <p className="text-slate-600 mb-3">Speak directly with our experts</p>
-                  <a href="tel:+27676014490" className="text-amber-600 hover:text-amber-700 font-medium">
-                    067 601 4490
+                  <a href="tel:+27633977498" className="text-amber-600 hover:text-amber-700 font-medium">
+                    063 397 7498
                   </a>
                 </CardContent>
               </Card>

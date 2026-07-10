@@ -16,11 +16,6 @@ export function Header() {
     { name: "Kitchen Cupboards", href: "/kitchen-cupboards" }, 
     { name: "Bathroom Renovations", href: "/bathroom-renovations" }, 
     { name: "Built-in Cupboards", href: "/built-in-cupboards" },
-    { name: "Quartz & Granite", href: "/quartz-granite" },
-    { name: "Granite Countertops", href: "/granite-countertops" },
-    { name: "Quartz Countertops", href: "/quartz-countertops" },
-    { name: "Granite Supply & Installation", href: "/granite-supply-and-installation" },
-    { name: "Granite Installers Sandton", href: "/granite-installers-sandton" }, 
     { name: "Decking & Flooring", href: "/decking-flooring" },
     { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
     { name: "Door Installation", href: "/door-installation" },
@@ -97,14 +92,14 @@ export function Header() {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-1">
                 <Phone className="h-3 w-3 text-amber-400" />
-                <a href="tel:+27676014490" className="hover:text-amber-400 transition-colors">
-                  067 601 4490
+                <a href="tel:+27633977498" className="hover:text-amber-400 transition-colors">
+                  063 397 7498
                 </a>
               </div>
               <div className="hidden md:flex items-center space-x-1">
                 <Mail className="h-3 w-3 text-amber-400" />
-                <a href="mailto:info@granitecarpentry.co.za" className="hover:text-amber-400 transition-colors">
-                  info@granitecarpentry.co.za
+                <a href="mailto:info@timberstudio.co.za" className="hover:text-amber-400 transition-colors">
+                  info@timberstudio.co.za
                 </a>
               </div>
             </div>
@@ -128,12 +123,15 @@ export function Header() {
           {/* Logo - Optimized for mobile */}
           <div className="flex items-center min-w-0 flex-1">
             <Link href="/" className="flex items-center space-x-2 min-w-0">
-              <div className="h-8 w-8 sm:h-10 sm:w-10 rounded bg-amber-600 flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-sm sm:text-base">GC</span>
+              <div className="h-8 w-8 sm:h-10 sm:w-10 rounded bg-charcoal flex items-center justify-center flex-shrink-0 ring-1 ring-amber-600/40">
+                <span className="font-serif font-bold text-sm sm:text-base">
+                  <span className="text-amber-500">T</span>
+                  <span className="text-gold">S</span>
+                </span>
               </div>
               <div className="min-w-0 flex-1">
-                <div className="font-bold text-base sm:text-lg text-slate-900 truncate">Granite Carpentry</div>
-                <div className="text-xs text-slate-600 hidden sm:block">& Joinery Experts</div>
+                <div className="font-serif font-bold text-base sm:text-lg text-slate-900 truncate">The Timber Studio</div>
+                <div className="text-xs text-slate-600 hidden sm:block tracking-wide">Design · Craft · Build</div>
               </div>
             </Link>
           </div>
@@ -141,7 +139,7 @@ export function Header() {
           {/* Mobile Contact & CTA - Only on small screens */}
           <div className="flex items-center space-x-2 sm:hidden">
             <a
-              href="tel:+27676014490"
+              href="tel:+27633977498"
               className="flex items-center justify-center h-9 w-9 rounded-full bg-amber-600 text-white hover:bg-amber-700 transition-colors"
               aria-label="Call us"
             >
@@ -254,12 +252,15 @@ export function Header() {
                   {/* Header */}
                   <div className="flex items-center justify-between p-4 sm:p-6 border-b bg-slate-50">
                     <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
-                      <div className="h-8 w-8 rounded bg-amber-600 flex items-center justify-center">
-                        <span className="text-white font-bold text-sm">GC</span>
+                      <div className="h-8 w-8 rounded bg-charcoal flex items-center justify-center ring-1 ring-amber-600/40">
+                        <span className="font-serif font-bold text-sm">
+                          <span className="text-amber-500">T</span>
+                          <span className="text-gold">S</span>
+                        </span>
                       </div>
                       <div>
-                        <div className="font-bold text-base text-slate-900">Granite Carpentry</div>
-                        <div className="text-xs text-slate-600">& Joinery Experts</div>
+                        <div className="font-serif font-bold text-base text-slate-900">The Timber Studio</div>
+                        <div className="text-xs text-slate-600 tracking-wide">Design · Craft · Build</div>
                       </div>
                     </Link>
                   </div>
@@ -368,13 +369,13 @@ export function Header() {
                   <div className="border-t p-4 sm:p-6 space-y-4 bg-slate-50">
                     <div className="flex items-center space-x-2 text-sm text-slate-600">
                       <Phone className="h-4 w-4 text-amber-600" />
-                      <a href="tel:+27676014490" className="hover:text-amber-600 transition-colors">
-                        067 601 4490
+                      <a href="tel:+27633977498" className="hover:text-amber-600 transition-colors">
+                        063 397 7498
                       </a>
                     </div>
                     <div className="flex items-center space-x-2 text-sm text-slate-600">
                       <Mail className="h-4 w-4 text-amber-600" />
-                      <span>info@granitecarpentry.co.za</span>
+                      <span>info@timberstudio.co.za</span>
                     </div>
                     <div className="flex items-center space-x-2 text-sm text-slate-600">
                       <MapPin className="h-4 w-4 text-amber-600" />

@@ -1,6 +1,6 @@
 {
-  "name": "Granite Carpentry - Professional Carpenter & Granite Installation Specialists",
-  "short_name": "Granite Carpentry",
+  "name": "The Timber Studio - Professional Carpenter & Granite Installation Specialists",
+  "short_name": "The Timber Studio",
   "description": "Professional carpenter and granite installation specialists in Johannesburg. Kitchen renovations, built-in cupboards, granite countertops.",
   "start_url": "/",
   "display": "standalone",
@@ -9,19 +9,19 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/granitecarpentry-logo.png",
+      "src": "/timber-studio-logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/granitecarpentry-logo.png",
+      "src": "/timber-studio-logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/granitecarpentry-logo.png",
+      "src": "/timber-studio-logo.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "apple-touch-icon"

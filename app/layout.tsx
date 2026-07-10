@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Manrope, Fraunces } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -12,21 +12,31 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 import { Suspense } from "react"
 
-const inter = Inter({ subsets: ["latin"] })
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
+})
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "900"],
+})
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://granitecarpentry.co.za"),
+  metadataBase: new URL("https://www.timberstudio.co.za"),
   title: {
     default: "Professional Carpenter & Granite Installation Johannesburg 2025 | 5-Star Rated Experts",
-    template: "%s | Granite Carpentry - Professional Carpentry Services",
+    template: "%s | The Timber Studio - Professional Carpentry Services",
   },
   description:
-    "Johannesburg's #1 rated carpenter & granite installation specialists. Kitchen renovations, built-in cupboards, quartz countertops. 5-star service, 1000+ projects, 24-month warranty. Licensed & insured. Free quotes. Call 067 601 4490.",
+    "Johannesburg's #1 rated carpenter & granite installation specialists. Kitchen renovations, built-in cupboards, quartz countertops. 5-star service, 1000+ projects, 24-month warranty. Licensed & insured. Free quotes. Call 063 397 7498.",
   keywords:
     "professional carpenter Johannesburg 2025, granite installation Johannesburg, kitchen renovations Johannesburg, built-in cupboards Johannesburg, quartz countertops Johannesburg, carpenter Sandton, carpenter Randburg, granite installation Sandton, kitchen renovation company Johannesburg, best carpenter Johannesburg South, affordable carpenter Johannesburg, licensed carpenter Gauteng, granite specialists Johannesburg, custom kitchen cabinets Johannesburg, bathroom renovations Johannesburg, decking installation Johannesburg, drywall contractor Johannesburg",
-  authors: [{ name: "Granite Carpentry", url: "https://granitecarpentry.co.za" }],
-  creator: "Granite Carpentry",
-  publisher: "Granite Carpentry",
+  authors: [{ name: "The Timber Studio", url: "https://www.timberstudio.co.za" }],
+  creator: "The Timber Studio",
+  publisher: "The Timber Studio",
   robots: {
     index: true,
     follow: true,
@@ -41,17 +51,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_ZA",
-    url: "https://granitecarpentry.co.za",
-    siteName: "Granite Carpentry - Professional Carpentry & Granite Installation",
+    url: "https://www.timberstudio.co.za",
+    siteName: "The Timber Studio - Professional Carpentry & Granite Installation",
     title: "Professional Carpenter & Granite Installation Johannesburg 2025 | 5-Star Rated",
     description:
       "Johannesburg's #1 rated carpenter & granite installation specialists. Kitchen renovations, built-in cupboards, quartz countertops. 5-star service with 24-month warranty.",
     images: [
       {
-        url: "/granitecarpentry-logo.png",
+        url: "/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "Granite Carpentry - Professional Carpenter & Granite Installation Johannesburg",
+        alt: "The Timber Studio - Professional Carpenter & Granite Installation Johannesburg",
       },
     ],
   },
@@ -60,8 +70,8 @@ export const metadata: Metadata = {
     title: "Professional Carpenter & Granite Installation Johannesburg 2025",
     description:
       "Johannesburg's #1 rated carpenter. Kitchen renovations, built-in cupboards, granite installation. 5-star service, 24-month warranty.",
-    images: ["/granitecarpentry-logo.png"],
-    creator: "@granitecarpentry",
+    images: ["/timber-studio-logo.png"],
+    creator: "@timberstudio",
   },
   verification: {
     google: "your-google-verification-code",
@@ -69,7 +79,7 @@ export const metadata: Metadata = {
     yahoo: "your-yahoo-verification-code",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za",
+    canonical: "https://www.timberstudio.co.za",
   },
   category: "Construction & Home Improvement",
   classification: "Business",
@@ -83,8 +93,8 @@ export const metadata: Metadata = {
     "business:contact_data:region": "Gauteng",
     "business:contact_data:postal_code": "2000",
     "business:contact_data:country_name": "South Africa",
-    "business:contact_data:phone_number": "+27676014490",
-    "business:contact_data:email": "info@granitecarpentry.co.za",
+    "business:contact_data:phone_number": "+27633977498",
+    "business:contact_data:email": "info@timberstudio.co.za",
     "business:hours:day": "monday,tuesday,wednesday,thursday,friday",
     "business:hours:start": "07:00",
     "business:hours:end": "17:00",
@@ -101,7 +111,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en-ZA" suppressHydrationWarning>
+    <html
+      lang="en-ZA"
+      className={`${manrope.variable} ${fraunces.variable} bg-background`}
+      suppressHydrationWarning
+    >
       <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6B51FH166"></script>
         <script
@@ -116,19 +130,19 @@ export default function RootLayout({
         />
 
         {/* Updated Favicon and Icon References */}
-        <link rel="icon" href="/granitecarpentry-logo.png" sizes="16x16" type="image/png" />
-        <link rel="icon" href="/granitecarpentry-logo.png" sizes="32x32" type="image/png" />
-        <link rel="apple-touch-icon" href="/granitecarpentry-logo.png" sizes="180x180" />
+        <link rel="icon" href="/timber-studio-logo.png" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/timber-studio-logo.png" sizes="32x32" type="image/png" />
+        <link rel="apple-touch-icon" href="/timber-studio-logo.png" sizes="180x180" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#d97706" />
         <meta name="msapplication-TileColor" content="#d97706" />
-        <meta name="msapplication-TileImage" content="/granitecarpentry-logo.png" />
+        <meta name="msapplication-TileImage" content="/timber-studio-logo.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=yes" />
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="application-name" content="Granite Carpentry" />
-        <meta name="apple-mobile-web-app-title" content="Granite Carpentry" />
+        <meta name="application-name" content="The Timber Studio" />
+        <meta name="apple-mobile-web-app-title" content="The Timber Studio" />
         <meta name="msapplication-tooltip" content="Professional Carpenter & Granite Installation Johannesburg" />
         <meta name="msapplication-starturl" content="/" />
         <meta name="msapplication-tap-highlight" content="no" />
@@ -153,26 +167,26 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "Organization",
-                  "@id": "https://granitecarpentry.co.za/#organization",
-                  name: "Granite Carpentry",
-                  alternateName: "Granite Carpentry Johannesburg",
+                  "@id": "https://www.timberstudio.co.za/#organization",
+                  name: "The Timber Studio",
+                  alternateName: "The Timber Studio Johannesburg",
                   description:
                     "Professional carpenter and granite installation specialists in Johannesburg. Kitchen renovations, built-in cupboards, and stone installations with 5-star service.",
-                  url: "https://granitecarpentry.co.za",
+                  url: "https://www.timberstudio.co.za",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+                    url: "https://www.timberstudio.co.za/timber-studio-logo.png",
                     width: 300,
                     height: 100,
                   },
                   image: {
                     "@type": "ImageObject",
-                    url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+                    url: "https://www.timberstudio.co.za/timber-studio-logo.png",
                     width: 1200,
                     height: 630,
                   },
-                  telephone: "+27676014490",
-                  email: "info@granitecarpentry.co.za",
+                  telephone: "+27633977498",
+                  email: "info@timberstudio.co.za",
                   address: {
                     "@type": "PostalAddress",
                     addressLocality: "Johannesburg",
@@ -212,9 +226,9 @@ export default function RootLayout({
                     },
                   ],
                   sameAs: [
-                    "https://www.facebook.com/granitecarpentry",
-                    "https://www.instagram.com/granitecarpentry",
-                    "https://www.linkedin.com/company/granite-carpentry",
+                    "https://www.facebook.com/timberstudio",
+                    "https://www.instagram.com/timberstudio",
+                    "https://www.linkedin.com/company/timberstudio",
                   ],
                   foundingDate: "2020",
                   numberOfEmployees: "5-10",
@@ -242,11 +256,11 @@ export default function RootLayout({
                 },
                 {
                   "@type": "LocalBusiness",
-                  "@id": "https://granitecarpentry.co.za/#localbusiness",
-                  name: "Granite Carpentry",
-                  image: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
-                  telephone: "+27676014490",
-                  email: "info@granitecarpentry.co.za",
+                  "@id": "https://www.timberstudio.co.za/#localbusiness",
+                  name: "The Timber Studio",
+                  image: "https://www.timberstudio.co.za/timber-studio-logo.png",
+                  telephone: "+27633977498",
+                  email: "info@timberstudio.co.za",
                   address: {
                     "@type": "PostalAddress",
                     addressLocality: "Johannesburg",
@@ -258,7 +272,7 @@ export default function RootLayout({
                     latitude: -26.2041,
                     longitude: 28.0473,
                   },
-                  url: "https://granitecarpentry.co.za",
+                  url: "https://www.timberstudio.co.za",
                   openingHoursSpecification: [
                     {
                       "@type": "OpeningHoursSpecification",
@@ -295,13 +309,13 @@ export default function RootLayout({
                 },
                 {
                   "@type": "WebSite",
-                  "@id": "https://granitecarpentry.co.za/#website",
-                  url: "https://granitecarpentry.co.za",
-                  name: "Granite Carpentry - Professional Carpentry & Granite Installation",
+                  "@id": "https://www.timberstudio.co.za/#website",
+                  url: "https://www.timberstudio.co.za",
+                  name: "The Timber Studio - Professional Carpentry & Granite Installation",
                   description:
                     "Johannesburg's #1 rated carpenter and granite installation specialists. Kitchen renovations, built-in cupboards, quartz countertops with 5-star service.",
                   publisher: {
-                    "@id": "https://granitecarpentry.co.za/#organization",
+                    "@id": "https://www.timberstudio.co.za/#organization",
                   },
                   inLanguage: "en-ZA",
                   potentialAction: [
@@ -309,7 +323,7 @@ export default function RootLayout({
                       "@type": "SearchAction",
                       target: {
                         "@type": "EntryPoint",
-                        urlTemplate: "https://granitecarpentry.co.za/search?q={search_term_string}",
+                        urlTemplate: "https://www.timberstudio.co.za/search?q={search_term_string}",
                       },
                       "query-input": "required name=search_term_string",
                     },
@@ -320,7 +334,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className} suppressHydrationWarning>
+      <body className="font-sans" suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
           <AnalyticsProvider>
             <Suspense fallback={null}>
@@ -332,7 +346,7 @@ export default function RootLayout({
               <FloatingWhatsApp />
               <AIChatWidget />
               <GoogleBusinessSchema
-                businessName="Granite Carpentry"
+                businessName="The Timber Studio"
                 description="Professional carpenter and granite installation specialists in Johannesburg. Kitchen renovations, built-in cupboards, and stone installations with 5-star service."
                 address={{
                   street: "Greater Johannesburg Area",
@@ -341,9 +355,9 @@ export default function RootLayout({
                   postalCode: "2000",
                   country: "ZA",
                 }}
-                phone="+27676014490"
-                email="info@granitecarpentry.co.za"
-                website="https://granitecarpentry.co.za"
+                phone="+27633977498"
+                email="info@timberstudio.co.za"
+                website="https://www.timberstudio.co.za"
                 services={[
                   "Kitchen Renovations",
                   "Built-in Cupboards",
@@ -364,14 +378,14 @@ export default function RootLayout({
                   "Saturday 08:00-14:00",
                 ]}
                 socialMedia={{
-                  facebook: "https://www.facebook.com/granitecarpentry",
-                  instagram: "https://www.instagram.com/granitecarpentry",
-                  linkedin: "https://www.linkedin.com/company/granite-carpentry",
+                  facebook: "https://www.facebook.com/timberstudio",
+                  instagram: "https://www.instagram.com/timberstudio",
+                  linkedin: "https://www.linkedin.com/company/timberstudio",
                 }}
                 images={{
-                  logo: "/granitecarpentry-logo.png",
+                  logo: "/timber-studio-logo.png",
                   photos: [
-                    "/granitecarpentry-logo.png",
+                    "/timber-studio-logo.png",
                     "/granite-installation-Johannesburg.jpg",
                     "/Built-Built-in-Cupboards-Midrand.jpg",
                   ],

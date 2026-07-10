@@ -21,23 +21,23 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "River City Carpenter & Plumber Vereeniging | Traditional Kitchen Renovations, Built-in Cupboards & Reliable Plumbing | Granite Carpentry",
+    "River City Carpenter & Plumber Vereeniging | Traditional Kitchen Renovations, Built-in Cupboards & Reliable Plumbing | The Timber Studio",
   description:
-    "River city carpenter & plumber services in Vereeniging. Traditional kitchen renovations, built-in cupboards, granite installation & reliable plumbing. Licensed & insured for Vaal Triangle living. Call 067 601 4490 for free quote.",
+    "River city carpenter & plumber services in Vereeniging. Traditional kitchen renovations, built-in cupboards, granite installation & reliable plumbing. Licensed & insured for Vaal Triangle living. Call 063 397 7498 for free quote.",
   keywords:
     "carpenter Vereeniging, river city plumber Vereeniging, traditional kitchen renovations Vereeniging, built-in cupboards Vereeniging, granite installation Vereeniging, reliable plumbing Vereeniging, Vaal Triangle carpenter, emergency plumber Vereeniging, heritage plumbing Vereeniging",
   openGraph: {
     title: "River City Carpenter & Plumber Vereeniging | Traditional Kitchen Renovations & Reliable Plumbing",
     description:
       "River city carpenter & plumber services in Vereeniging. Traditional kitchen renovations, built-in cupboards, granite installation & reliable plumbing. Licensed & insured for Vaal Triangle living.",
-    url: "https://granitecarpentry.co.za/areas/vereeniging",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/areas/vereeniging",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://www.timberstudio.co.za/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "River City Carpenter & Plumber Vereeniging - Granite Carpentry",
+        alt: "River City Carpenter & Plumber Vereeniging - The Timber Studio",
       },
     ],
     locale: "en_ZA",
@@ -48,10 +48,10 @@ export const metadata: Metadata = {
     title: "River City Carpenter & Plumber Vereeniging | Traditional Kitchen Renovations & Reliable Plumbing",
     description:
       "River city carpenter & plumber services in Vereeniging. Traditional kitchen renovations, built-in cupboards, granite installation & reliable plumbing. Licensed & insured for Vaal Triangle living.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://www.timberstudio.co.za/timber-studio-logo.png"],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/vereeniging",
+    canonical: "https://www.timberstudio.co.za/areas/vereeniging",
   },
 }
 
@@ -205,7 +205,7 @@ export default function VereenigingPage() {
                   size="lg"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
 
@@ -450,7 +450,7 @@ export default function VereenigingPage() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498</Link>
             </Button>
           </div>
         </div>

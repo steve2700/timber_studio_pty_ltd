@@ -9,23 +9,23 @@ import { Phone, Star, CheckCircle, Clock, Shield, Award, MapPin, ArrowRight, Quo
 
 export const metadata: Metadata = {
   title:
-    "Efficient Carpenter & Plumber Springs | Fast Kitchen Renovations, Built-in Cupboards & Emergency Plumbing | Granite Carpentry",
+    "Efficient Carpenter & Plumber Springs | Fast Kitchen Renovations, Built-in Cupboards & Emergency Plumbing | The Timber Studio",
   description:
-    "Efficient carpenter & plumber services in Springs. Fast kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured with quick turnaround. Call 067 601 4490 for free quote.",
+    "Efficient carpenter & plumber services in Springs. Fast kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured with quick turnaround. Call 063 397 7498 for free quote.",
   keywords:
     "carpenter Springs, efficient plumber Springs, fast kitchen renovations Springs, built-in cupboards Springs, granite installation Springs, emergency plumbing Springs, quick carpentry Springs, fast plumbing Springs",
   openGraph: {
     title: "Efficient Carpenter & Plumber Springs | Fast Kitchen Renovations & Built-in Cupboards",
     description:
       "Efficient carpenter & plumber services in Springs. Fast kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured with quick turnaround.",
-    url: "https://granitecarpentry.co.za/areas/springs",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/areas/springs",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://www.timberstudio.co.za/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "Efficient Carpenter & Plumber Springs - Granite Carpentry",
+        alt: "Efficient Carpenter & Plumber Springs - The Timber Studio",
       },
     ],
     locale: "en_ZA",
@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     title: "Efficient Carpenter & Plumber Springs | Fast Kitchen Renovations & Built-in Cupboards",
     description:
       "Efficient carpenter & plumber services in Springs. Fast kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured with quick turnaround.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://www.timberstudio.co.za/timber-studio-logo.png"],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/springs",
+    canonical: "https://www.timberstudio.co.za/areas/springs",
   },
 }
 
@@ -201,7 +201,7 @@ export default function SpringsPage() {
                   size="lg"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
 
@@ -443,7 +443,7 @@ export default function SpringsPage() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498</Link>
             </Button>
           </div>
         </div>

@@ -9,18 +9,18 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Best Carpenter Bedfordview 2026 | Kitchen Renovations & Built-in Cupboards | Free Quote",
   description:
-    "★★★★★ #1 Carpenter & Plumber in Bedfordview. Expert kitchen renovations, luxury built-in cupboards, Caesarstone installations & 24/7 emergency plumbing. 600+ projects. Licensed & insured. Call 067 601 4490",
+    "★★★★★ #1 Carpenter & Plumber in Bedfordview. Expert kitchen renovations, luxury built-in cupboards, Caesarstone installations & 24/7 emergency plumbing. 600+ projects. Licensed & insured. Call 063 397 7498",
   keywords:
     "carpenter Bedfordview, kitchen renovation Bedfordview, built-in cupboards Bedfordview, plumber Bedfordview, granite installation Bedfordview, Caesarstone Bedfordview, carpenter Edenvale, emergency plumber Bedfordview, carpenter near me Bedfordview",
   openGraph: {
     title: "Best Carpenter Bedfordview 2026 | Kitchen Renovations & Built-in Cupboards",
     description:
-      "★★★★★ #1 Carpenter & Plumber in Bedfordview. Expert kitchen renovations, luxury built-in cupboards & 24/7 emergency plumbing. Free quotes. Call 067 601 4490",
-    url: "https://granitecarpentry.co.za/areas/bedfordview",
-    siteName: "Granite Carpentry",
+      "★★★★★ #1 Carpenter & Plumber in Bedfordview. Expert kitchen renovations, luxury built-in cupboards & 24/7 emergency plumbing. Free quotes. Call 063 397 7498",
+    url: "https://www.timberstudio.co.za/areas/bedfordview",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://www.timberstudio.co.za/timber-studio-logo.png",
         width: 1200,
         height: 630,
         alt: "Best Carpenter Bedfordview - Kitchen Renovation & Built-in Cupboards",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/bedfordview",
+    canonical: "https://www.timberstudio.co.za/areas/bedfordview",
   },
 }
 
@@ -40,10 +40,10 @@ const schemaMarkup = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://granitecarpentry.co.za/#localbusiness-bedfordview",
-      "name": "Granite Carpentry - Bedfordview Carpenter & Plumber",
-      "image": "https://granitecarpentry.co.za/granitecarpentry-logo.png",
-      "telephone": "+27676014490",
+      "@id": "https://www.timberstudio.co.za/#localbusiness-bedfordview",
+      "name": "The Timber Studio - Bedfordview Carpenter & Plumber",
+      "image": "https://www.timberstudio.co.za/timber-studio-logo.png",
+      "telephone": "+27633977498",
       "priceRange": "R450-R85000",
       "address": {
         "@type": "PostalAddress",
@@ -56,7 +56,7 @@ const schemaMarkup = {
         "latitude": "-26.1755",
         "longitude": "28.1358"
       },
-      "url": "https://granitecarpentry.co.za/areas/bedfordview",
+      "url": "https://www.timberstudio.co.za/areas/bedfordview",
       "areaServed": [
         "Bedfordview", "Edenvale", "Epsom Downs", "Lethabong", "Germiston",
         "Kempton Park", "Alberton", "Brakpan"
@@ -72,7 +72,7 @@ const schemaMarkup = {
               "name": "Kitchen Renovation Bedfordview",
               "description": "Premium kitchen renovations with Caesarstone and luxury finishes",
               "provider": {
-                "@id": "https://granitecarpentry.co.za/#localbusiness-bedfordview"
+                "@id": "https://www.timberstudio.co.za/#localbusiness-bedfordview"
               }
             }
           },
@@ -83,7 +83,7 @@ const schemaMarkup = {
               "name": "Built-in Cupboards Bedfordview",
               "description": "Custom luxury storage solutions for Bedfordview homes",
               "provider": {
-                "@id": "https://granitecarpentry.co.za/#localbusiness-bedfordview"
+                "@id": "https://www.timberstudio.co.za/#localbusiness-bedfordview"
               }
             }
           }
@@ -106,19 +106,19 @@ const schemaMarkup = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://granitecarpentry.co.za/#breadcrumb-bedfordview",
+      "@id": "https://www.timberstudio.co.za/#breadcrumb-bedfordview",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://granitecarpentry.co.za"
+          "item": "https://www.timberstudio.co.za"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Areas",
-          "item": "https://granitecarpentry.co.za/areas"
+          "item": "https://www.timberstudio.co.za/areas"
         },
         {
           "@type": "ListItem",
@@ -192,9 +192,9 @@ export default function BedfordviewPage() {
                   asChild
                   className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <a href="tel:+27676014490">
+                  <a href="tel:+27633977498">
                     <Phone className="mr-2 w-5 h-5" />
-                    Call: 067 601 4490
+                    Call: 063 397 7498
                   </a>
                 </Button>
               </div>
@@ -221,7 +221,7 @@ export default function BedfordviewPage() {
 
             <div className="relative">
               <Image
-                src="/granitecarpentry-logo.png"
+                src="/timber-studio-logo.png"
                 alt="Best Carpenter Bedfordview - Premium Kitchen Renovation & Built-in Cupboards"
                 width={600}
                 height={500}
@@ -639,7 +639,7 @@ export default function BedfordviewPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700">
-                  Yes! We provide 24/7 emergency plumbing services throughout Bedfordview and all East Rand areas. Burst pipes, leaks, geyser failures, and urgent repairs are handled promptly. Call 067 601 4490 for immediate assistance. We aim to arrive within 60 minutes for genuine emergencies in Bedfordview, Edenvale, and surrounding areas.
+                  Yes! We provide 24/7 emergency plumbing services throughout Bedfordview and all East Rand areas. Burst pipes, leaks, geyser failures, and urgent repairs are handled promptly. Call 063 397 7498 for immediate assistance. We aim to arrive within 60 minutes for genuine emergencies in Bedfordview, Edenvale, and surrounding areas.
                 </p>
               </CardContent>
             </Card>
@@ -809,9 +809,9 @@ export default function BedfordviewPage() {
               asChild
               className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-4 bg-transparent"
             >
-              <a href="tel:+27676014490">
+              <a href="tel:+27633977498">
                 <Phone className="mr-2 w-5 h-5" />
-                Call: 067 601 4490
+                Call: 063 397 7498
               </a>
             </Button>
           </div>

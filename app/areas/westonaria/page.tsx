@@ -9,23 +9,23 @@ import { Phone, Star, CheckCircle, Clock, Shield, MapPin, ArrowRight, Quote, Wre
 
 export const metadata: Metadata = {
   title:
-    "West Rand Carpenter & Plumber Westonaria | Mining Carpentry, Granite Installation & Heavy-Duty Plumbing | Granite Carpentry",
+    "West Rand Carpenter & Plumber Westonaria | Mining Carpentry, Granite Installation & Heavy-Duty Plumbing | The Timber Studio",
   description:
-    "West Rand carpenter & plumber services in Westonaria. Mining carpentry, kitchen renovations, built-in cupboards, granite installation & heavy-duty plumbing. Licensed & insured for mining town living. Call 067 601 4490 for free quote.",
+    "West Rand carpenter & plumber services in Westonaria. Mining carpentry, kitchen renovations, built-in cupboards, granite installation & heavy-duty plumbing. Licensed & insured for mining town living. Call 063 397 7498 for free quote.",
   keywords:
     "carpenter Westonaria, West Rand plumber Westonaria, mining carpentry Westonaria, kitchen renovations Westonaria, built-in cupboards Westonaria, granite installation Westonaria, heavy-duty plumbing Westonaria, mining town carpenter, emergency plumber Westonaria, industrial plumbing Westonaria",
   openGraph: {
     title: "West Rand Carpenter & Plumber Westonaria | Mining Carpentry & Heavy-Duty Plumbing",
     description:
       "West Rand carpenter & plumber services in Westonaria. Mining carpentry, kitchen renovations, built-in cupboards, granite installation & heavy-duty plumbing. Licensed & insured for mining town living.",
-    url: "https://granitecarpentry.co.za/areas/westonaria",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/areas/westonaria",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://www.timberstudio.co.za/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "West Rand Carpenter & Plumber Westonaria - Granite Carpentry",
+        alt: "West Rand Carpenter & Plumber Westonaria - The Timber Studio",
       },
     ],
     locale: "en_ZA",
@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     title: "West Rand Carpenter & Plumber Westonaria | Mining Carpentry & Heavy-Duty Plumbing",
     description:
       "West Rand carpenter & plumber services in Westonaria. Mining carpentry, kitchen renovations, built-in cupboards, granite installation & heavy-duty plumbing. Licensed & insured for mining town living.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://www.timberstudio.co.za/timber-studio-logo.png"],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/westonaria",
+    canonical: "https://www.timberstudio.co.za/areas/westonaria",
   },
 }
 
@@ -192,7 +192,7 @@ export default function WestonariaPage() {
                   size="lg"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
 
@@ -437,7 +437,7 @@ export default function WestonariaPage() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498</Link>
             </Button>
           </div>
         </div>

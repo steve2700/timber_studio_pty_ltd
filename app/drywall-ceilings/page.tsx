@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = {
   title: "Drywall & Ceilings Johannesburg 2026 | Professional Installation Services",
   description:
-    "Professional drywall & ceiling installation in Johannesburg. Suspended ceilings, plasterboard walls, ceiling repairs. 5-star service, 24-month warranty. Free quotes. Call 067 601 4490.",
+    "Professional drywall & ceiling installation in Johannesburg. Suspended ceilings, plasterboard walls, ceiling repairs. 5-star service, 24-month warranty. Free quotes. Call 063 397 7498.",
   keywords:
     "drywall installation Johannesburg, ceiling installation Johannesburg, suspended ceilings Sandton, plasterboard installation Randburg, ceiling contractors Johannesburg, drywall contractors Midrand, ceiling repairs Johannesburg, office ceilings Sandton, residential drywall Johannesburg, commercial ceilings Randburg, ceiling tiles installation, acoustic ceilings Johannesburg, false ceilings installation, ceiling renovation Johannesburg, drywall finishing Sandton",
   openGraph: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     images: [{ url: "/drywall-contractor.jpg", width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/services/drywall-ceilings",
+    canonical: "https://www.timberstudio.co.za/services/drywall-ceilings",
   },
 }
 
@@ -147,9 +147,9 @@ export default function DrywallCeilingsPage() {
               "Professional drywall and ceiling installation services in Johannesburg including suspended ceilings, plasterboard walls, and ceiling repairs.",
             provider: {
               "@type": "LocalBusiness",
-              name: "Granite Carpentry",
-              telephone: "+27676014490",
-              email: "info@granitecarpentry.co.za",
+              name: "The Timber Studio",
+              telephone: "+27633977498",
+              email: "info@timberstudio.co.za",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Johannesburg",
@@ -203,9 +203,9 @@ export default function DrywallCeilingsPage() {
                   size="lg"
                   className="text-lg px-8 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">
+                  <Link href="tel:+27633977498">
                     <Phone className="mr-2 h-5 w-5" />
-                    067 601 4490
+                    063 397 7498
                   </Link>
                 </Button>
               </div>
@@ -662,9 +662,9 @@ export default function DrywallCeilingsPage() {
                 size="lg"
                 className="text-lg px-8 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent"
               >
-                <Link href="tel:+27676014490">
+                <Link href="tel:+27633977498">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call: 067 601 4490
+                  Call: 063 397 7498
                 </Link>
               </Button>
             </div>

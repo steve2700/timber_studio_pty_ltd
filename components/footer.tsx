@@ -13,11 +13,6 @@ export function Footer() {
     { name: "Kitchen Cupboards", href: "/kitchen-cupboards" }, 
     { name: "Bathroom Renovations", href: "/bathroom-renovations" }, 
     { name: "Built-in Cupboards", href: "/built-in-cupboards" },
-    { name: "Granite & Quartz", href: "/quartz-granite" },
-    { name: "Granite Countertops", href: "/granite-countertops" },
-    { name: "Quartz Countertops", href: "/quartz-countertops" },
-    { name: "Granite Supply & Installation", href: "/granite-supply-and-installation" },
-    { name: "Granite Installers Sandton", href: "/granite-installers-sandton" },
     { name: "Professional Plumbing", href: "/plumbing" },
     { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
     { name: "Decking & Flooring", href: "/decking-flooring" },
@@ -128,12 +123,15 @@ export function Footer() {
           <div className="space-y-6">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="h-8 w-8 rounded bg-amber-600 flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">GC</span>
+                <div className="h-8 w-8 rounded bg-charcoal flex items-center justify-center ring-1 ring-amber-600/50">
+                  <span className="font-serif font-bold text-sm">
+                    <span className="text-amber-500">T</span>
+                    <span className="text-gold">S</span>
+                  </span>
                 </div>
                 <div>
-                  <div className="font-bold text-lg text-amber-400">Granite Carpentry</div>
-                  <div className="text-sm text-slate-400">& Joinery Experts</div>
+                  <div className="font-serif font-bold text-lg text-amber-400">The Timber Studio</div>
+                  <div className="text-sm text-slate-400 tracking-wide">Design · Craft · Build</div>
                 </div>
               </div>
               <p className="text-slate-300 leading-relaxed">
@@ -147,8 +145,8 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-amber-400 flex-shrink-0" />
                 <div>
-                  <a href="tel:+27676014490" className="hover:text-amber-400 transition-colors">
-                    067 601 4490
+                  <a href="tel:+27633977498" className="hover:text-amber-400 transition-colors">
+                    063 397 7498
                   </a>
                   <div className="text-xs text-slate-400">24/7 Emergency Service</div>
                 </div>
@@ -157,8 +155,8 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-amber-400 flex-shrink-0" />
                 <div>
-                  <a href="mailto:info@granitecarpentry.co.za" className="hover:text-amber-400 transition-colors">
-                    info@granitecarpentry.co.za
+                  <a href="mailto:info@timberstudio.co.za" className="hover:text-amber-400 transition-colors">
+                    info@timberstudio.co.za
                   </a>
                   <div className="text-xs text-slate-400">Free Quotes Available</div>
                 </div>
@@ -184,21 +182,21 @@ export function Footer() {
             {/* Social Media */}
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com/granitecarpentry"
+                href="https://facebook.com/timberstudio"
                 className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors"
                 aria-label="Follow us on Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com/granitecarpentry"
+                href="https://instagram.com/timberstudio"
                 className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors"
                 aria-label="Follow us on Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/company/granite-carpentry"
+                href="https://linkedin.com/company/timberstudio"
                 className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors"
                 aria-label="Connect with us on LinkedIn"
               >
@@ -323,7 +321,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-slate-400 text-sm text-center md:text-left">
-            <p>© {currentYear} Granite Carpentry & Joinery Experts. All rights reserved.</p>
+            <p>© {currentYear} The Timber Studio & Joinery Experts. All rights reserved.</p>
             <p className="mt-1">
               Professional carpentry & plumbing services in Johannesburg | Licensed & Insured | 24-Month Warranty
             </p>
@@ -349,8 +347,8 @@ export function Footer() {
           <div className="text-center">
             <span className="font-semibold">24/7 Emergency Carpentry & Plumbing Service Available</span>
             <span className="mx-2">|</span>
-            <a href="tel:+27676014490" className="hover:underline font-semibold">
-              Call 067 601 4490 Now
+            <a href="tel:+27633977498" className="hover:underline font-semibold">
+              Call 063 397 7498 Now
             </a>
           </div>
         </div>

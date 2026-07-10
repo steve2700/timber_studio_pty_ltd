@@ -8,7 +8,7 @@
 
 ## 🚀 Live Website
 
-**Production URL:** [https://granitecarpentry.co.za](https://granitecarpentry.co.za)
+**Production URL:** [https://www.timberstudio.co.za](https://www.timberstudio.co.za)
 
 ## 📋 Overview
 
@@ -160,10 +160,10 @@ npm run lint
 
 ## 📱 Contact Information
 
-- **Phone:** [067 601 4490](tel:0676014490)
-- **Email:** [info@granitecarpentry.co.za](mailto:info@granitecarpentry.co.za)
+- **Phone:** [063 397 7498](tel:0676014490)
+- **Email:** [info@timberstudio.co.za](mailto:info@timberstudio.co.za)
 - **WhatsApp:** Available via floating widget
-- **Facebook:** [facebook.com/granitecarpentry](https://www.facebook.com/granitecarpentry)
+- **Facebook:** [facebook.com/timberstudio](https://www.facebook.com/timberstudio)
 - **Google Reviews:** [5-Star Rating](https://g.co/kgs/epZT5BY)
 - **Address:** Johannesburg South, Gauteng, South Africa
 
@@ -232,8 +232,8 @@ npm run lint
 Ready to transform your space with professional carpentry and granite installation?
 
 1. **💬 Chat with our AI assistant** - Get instant answers to your questions
-2. **📞 Call us** - Speak directly with our experts at 067 601 4490
-3. **📧 Email us** - Send your project details to info@granitecarpentry.co.za
+2. **📞 Call us** - Speak directly with our experts at 063 397 7498
+3. **📧 Email us** - Send your project details to info@timberstudio.co.za
 4. **💬 WhatsApp** - Quick communication via our floating widget
 
 ---

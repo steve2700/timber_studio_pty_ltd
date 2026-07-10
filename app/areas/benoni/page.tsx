@@ -9,23 +9,23 @@ import { Phone, Star, CheckCircle, Clock, Shield, Award, Users, MapPin, ArrowRig
 
 export const metadata: Metadata = {
   title:
-    "Professional Carpenter & Plumber Benoni | Kitchen Renovations, Built-in Cupboards & Emergency Plumbing | Granite Carpentry",
+    "Professional Carpenter & Plumber Benoni | Kitchen Renovations, Built-in Cupboards & Emergency Plumbing | The Timber Studio",
   description:
-    "Professional carpenter & plumber services in Benoni. Kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured with 24-month warranty. Call 067 601 4490 for free quote.",
+    "Professional carpenter & plumber services in Benoni. Kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured with 24-month warranty. Call 063 397 7498 for free quote.",
   keywords:
     "carpenter Benoni, plumber Benoni, kitchen renovations Benoni, built-in cupboards Benoni, granite installation Benoni, emergency plumbing Benoni, professional carpenter East Rand, carpentry services Benoni, plumbing services Benoni",
   openGraph: {
     title: "Professional Carpenter & Plumber Benoni | Kitchen Renovations & Built-in Cupboards",
     description:
       "Professional carpenter & plumber services in Benoni. Kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured with 24-month warranty.",
-    url: "https://granitecarpentry.co.za/areas/benoni",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/areas/benoni",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://www.timberstudio.co.za/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "Professional Carpenter & Plumber Benoni - Granite Carpentry",
+        alt: "Professional Carpenter & Plumber Benoni - The Timber Studio",
       },
     ],
     locale: "en_ZA",
@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     title: "Professional Carpenter & Plumber Benoni | Kitchen Renovations & Built-in Cupboards",
     description:
       "Professional carpenter & plumber services in Benoni. Kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured with 24-month warranty.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://www.timberstudio.co.za/timber-studio-logo.png"],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/benoni",
+    canonical: "https://www.timberstudio.co.za/areas/benoni",
   },
 }
 
@@ -201,7 +201,7 @@ export default function BenoniBenoniPage() {
                   size="lg"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
 
@@ -440,7 +440,7 @@ export default function BenoniBenoniPage() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498</Link>
             </Button>
           </div>
         </div>

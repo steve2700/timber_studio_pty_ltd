@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 export function FloatingWhatsApp() {
   const [showTooltip, setShowTooltip] = useState(false)
 
-  const whatsappNumber = "+27676014490"
+  const whatsappNumber = "+27633977498"
   const message = "Hi! I'm interested in your carpentry services. Can you help me with a quote?"
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace("+", "")}?text=${encodeURIComponent(message)}`
 
@@ -26,7 +26,7 @@ export function FloatingWhatsApp() {
         <Button
           asChild
           size="lg"
-          className="h-14 w-14 rounded-full bg-green-500 hover:bg-green-600 shadow-lg transition-all duration-300 hover:scale-105 animate-pulse hover:animate-none"
+          className="h-14 w-14 rounded-full bg-[#25D366] hover:bg-[#1FAD54] shadow-lg transition-all duration-300 hover:scale-105 animate-pulse hover:animate-none"
           onMouseEnter={() => setShowTooltip(true)}
           onMouseLeave={() => setShowTooltip(false)}
         >

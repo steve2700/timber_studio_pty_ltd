@@ -9,23 +9,23 @@ import { Phone, Star, CheckCircle, Clock, Shield, MapPin, ArrowRight, Quote, Bui
 
 export const metadata: Metadata = {
   title:
-    "Industrial Carpenter & Plumber Germiston | Commercial Carpentry, Granite Installation & Industrial Plumbing | Granite Carpentry",
+    "Industrial Carpenter & Plumber Germiston | Commercial Carpentry, Granite Installation & Industrial Plumbing | The Timber Studio",
   description:
-    "Industrial carpenter & plumber services in Germiston. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation & industrial plumbing. Licensed & insured. Call 067 601 4490 for free quote.",
+    "Industrial carpenter & plumber services in Germiston. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation & industrial plumbing. Licensed & insured. Call 063 397 7498 for free quote.",
   keywords:
     "carpenter Germiston, industrial plumber Germiston, commercial carpentry Germiston, kitchen renovations Germiston, built-in cupboards Germiston, granite installation Germiston, industrial plumbing Germiston",
   openGraph: {
     title: "Industrial Carpenter Germiston | Commercial Carpentry & Granite Installation",
     description:
       "Industrial carpenter services in Germiston. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation. Licensed & insured.",
-    url: "https://granitecarpentry.co.za/areas/germiston",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/areas/germiston",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://www.timberstudio.co.za/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "Industrial Carpenter Germiston - Granite Carpentry",
+        alt: "Industrial Carpenter Germiston - The Timber Studio",
       },
     ],
     locale: "en_ZA",
@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     title: "Industrial Carpenter Germiston | Commercial Carpentry & Granite Installation",
     description:
       "Industrial carpenter services in Germiston. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation. Licensed & insured.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://www.timberstudio.co.za/timber-studio-logo.png"],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/germiston",
+    canonical: "https://www.timberstudio.co.za/areas/germiston",
   },
 }
 
@@ -200,7 +200,7 @@ export default function GermistonPage() {
                   size="lg"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
 
@@ -439,7 +439,7 @@ export default function GermistonPage() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498</Link>
             </Button>
           </div>
         </div>

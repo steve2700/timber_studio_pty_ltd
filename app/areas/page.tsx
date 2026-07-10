@@ -8,22 +8,22 @@ import { MapPin, Phone, Star, ArrowRight, CheckCircle, Award, Users, Clock } fro
 
 export const metadata: Metadata = {
   title:
-    "Service Areas | Professional Carpenter & Plumber Gauteng | Johannesburg, Pretoria, East & West Rand | Granite Carpentry",
+    "Service Areas | Professional Carpenter & Plumber Gauteng | Johannesburg, Pretoria, East & West Rand | The Timber Studio",
   description:
-    "Professional carpenter & plumber services across Gauteng. Serving 23+ areas including Johannesburg, Sandton, Pretoria, Centurion, Midrand, East Rand & West Rand. Kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured. Free quotes. Call 067 601 4490",
+    "Professional carpenter & plumber services across Gauteng. Serving 23+ areas including Johannesburg, Sandton, Pretoria, Centurion, Midrand, East Rand & West Rand. Kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured. Free quotes. Call 063 397 7498",
   keywords:
     "carpenter Gauteng, plumber Gauteng, carpenter Johannesburg, plumber Pretoria, carpenter Sandton, plumber Midrand, carpenter East Rand, plumber West Rand, kitchen renovations Gauteng, built-in cupboards Gauteng, granite installation Gauteng, emergency plumbing Gauteng, service areas, coverage areas, where we work",
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas",
+    canonical: "https://www.timberstudio.co.za/areas",
   },
   openGraph: {
     title: "Service Areas | Professional Carpenter & Plumber Gauteng | 23+ Areas Covered",
     description:
-      "Professional carpenter & plumber services across Gauteng. Serving Johannesburg, Sandton, Pretoria, Centurion, Midrand, East & West Rand. Free quotes. Call 067 601 4490",
-    url: "https://granitecarpentry.co.za/areas",
+      "Professional carpenter & plumber services across Gauteng. Serving Johannesburg, Sandton, Pretoria, Centurion, Midrand, East & West Rand. Free quotes. Call 063 397 7498",
+    url: "https://www.timberstudio.co.za/areas",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry.webp",
+        url: "https://www.timberstudio.co.za/granitecarpentry.webp",
         width: 1200,
         height: 630,
         alt: "Professional Carpenter & Plumber Service Areas - Gauteng Coverage",
@@ -325,7 +325,7 @@ export default function AreasPage() {
                 size="lg"
                 className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
               >
-                <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                <Link href="tel:+27633977498">Call 063 397 7498</Link>
               </Button>
             </div>
           </div>
@@ -580,7 +580,7 @@ export default function AreasPage() {
               size="lg"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498</Link>
             </Button>
           </div>
           <div className="mt-8 grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-4 sm:gap-8 text-sm opacity-90">
@@ -615,7 +615,7 @@ export default function AreasPage() {
             description:
               "Comprehensive carpentry, plumbing, and granite installation services across Johannesburg, Pretoria, East Rand, West Rand, and South Rand",
             provider: {
-              "@id": "https://granitecarpentry.co.za/#business",
+              "@id": "https://www.timberstudio.co.za/#business",
             },
             areaServed: Object.values(areasByRegion)
               .flat()

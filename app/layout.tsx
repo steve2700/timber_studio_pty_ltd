@@ -28,13 +28,13 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.timberstudio.co.za"),
   title: {
-    default: "The Timber Studio | Bespoke Carpentry & Custom Joinery in Johannesburg",
+    default: "The Timber Studio | Bespoke Carpentry & Custom Joinery in Gauteng",
     template: "%s | The Timber Studio - Bespoke Carpentry & Joinery",
   },
   description:
-    "The Timber Studio is Johannesburg's premier bespoke carpentry and custom joinery studio. Custom kitchens, built-in cupboards, solid timber doors, decking & flooring. 5-star service, 1000+ projects, 24-month workmanship warranty. Free quotes. Call 063 397 7498.",
+    "The Timber Studio is a bespoke carpentry and custom joinery studio serving Gauteng. Custom kitchens, built-in cupboards, solid timber doors, decking & flooring. Free quotes. Call 063 397 7498.",
   keywords:
-    "bespoke carpentry Johannesburg, custom joinery Johannesburg, The Timber Studio, timber studio Johannesburg, kitchen renovations Johannesburg, built-in cupboards Johannesburg, custom kitchen cabinets Johannesburg, solid timber doors Johannesburg, wooden doors Johannesburg, carpenter Sandton, carpenter Randburg, joinery Sandton, decking installation Johannesburg, wooden flooring Johannesburg, bathroom renovations Johannesburg, drywall contractor Johannesburg, best carpenter Johannesburg, licensed carpenter Gauteng",
+    "bespoke carpentry Johannesburg, custom joinery Johannesburg, The Timber Studio, timber studio Johannesburg, kitchen renovations Johannesburg, built-in cupboards Johannesburg, custom kitchen cabinets Johannesburg, solid timber doors Johannesburg, wooden doors Johannesburg, carpenter Sandton, carpenter Randburg, joinery Sandton, decking installation Johannesburg, wooden flooring Johannesburg, bathroom renovations Johannesburg, drywall contractor Johannesburg, best carpenter Johannesburg",
   authors: [{ name: "The Timber Studio", url: "https://www.timberstudio.co.za" }],
   creator: "The Timber Studio",
   publisher: "The Timber Studio",
@@ -54,31 +54,29 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     url: "https://www.timberstudio.co.za",
     siteName: "The Timber Studio - Bespoke Carpentry & Custom Joinery",
-    title: "The Timber Studio | Bespoke Carpentry & Custom Joinery in Johannesburg",
+    title: "The Timber Studio | Bespoke Carpentry & Custom Joinery in Gauteng",
     description:
-      "Johannesburg's premier bespoke carpentry & custom joinery studio. Custom kitchens, built-in cupboards, solid timber doors, decking & flooring. 5-star service with 24-month warranty.",
+      "Gauteng's bespoke carpentry & custom joinery studio. Custom kitchens, built-in cupboards, solid timber doors, decking & flooring.",
     images: [
       {
-        url: "/timber-studio-logo.png",
+        url: "/og-default.jpg",
         width: 1200,
         height: 630,
-        alt: "The Timber Studio - Bespoke Carpentry & Custom Joinery Johannesburg",
+        alt: "The Timber Studio - Bespoke Carpentry & Custom Joinery",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Timber Studio | Bespoke Carpentry & Custom Joinery Johannesburg",
+    title: "The Timber Studio | Bespoke Carpentry & Custom Joinery",
     description:
-      "Johannesburg's premier bespoke carpentry & joinery studio. Custom kitchens, built-in cupboards, solid timber doors. 5-star service, 24-month warranty.",
-    images: ["/timber-studio-logo.png"],
-    creator: "@timberstudio",
+      "Gauteng's bespoke carpentry & joinery studio. Custom kitchens, built-in cupboards, solid timber doors.",
+    images: ["/og-default.jpg"],
   },
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
-  },
+  // Search engine verification codes removed — the placeholder strings here
+  // did nothing but risk confusion. Add this block back once you have real
+  // codes from Google Search Console / Bing Webmaster Tools, e.g.:
+  // verification: { google: "abc123...", other: { "msvalidate.01": "..." } },
   alternates: {
     canonical: "https://www.timberstudio.co.za",
   },
@@ -86,22 +84,15 @@ export const metadata: Metadata = {
   classification: "Business",
   other: {
     "geo.region": "ZA-GP",
-    "geo.placename": "Johannesburg, Gauteng, South Africa",
+    "geo.placename": "Gauteng, South Africa",
+    // Update these to your real coordinates if you have a fixed studio/office address.
     "geo.position": "-26.2041;28.0473",
     ICBM: "-26.2041, 28.0473",
-    "business:contact_data:street_address": "Greater Johannesburg Area",
     "business:contact_data:locality": "Johannesburg",
     "business:contact_data:region": "Gauteng",
-    "business:contact_data:postal_code": "2000",
     "business:contact_data:country_name": "South Africa",
     "business:contact_data:phone_number": "+27633977498",
     "business:contact_data:email": "info@timberstudio.co.za",
-    "business:hours:day": "monday,tuesday,wednesday,thursday,friday",
-    "business:hours:start": "07:00",
-    "business:hours:end": "17:00",
-    "business:hours:day": "saturday",
-    "business:hours:start": "08:00",
-    "business:hours:end": "14:00",
   },
   generator: "The Timber Studio",
 }
@@ -118,6 +109,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        {/* Confirm this is your real GA4 measurement ID before relying on the data */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6B51FH166"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -130,21 +122,23 @@ export default function RootLayout({
           }}
         />
 
-        {/* Updated Favicon and Icon References */}
-        <link rel="icon" href="/timber-studio-logo.png" sizes="16x16" type="image/png" />
-        <link rel="icon" href="/timber-studio-logo.png" sizes="32x32" type="image/png" />
-        <link rel="apple-touch-icon" href="/timber-studio-logo.png" sizes="180x180" />
-        <link rel="manifest" href="/manifest.json" />
+        {/* Favicon & Icons — generated from the real logo, replacing the old placeholder paths */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
+        <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#b36a3d" />
         <meta name="msapplication-TileColor" content="#1c1b19" />
-        <meta name="msapplication-TileImage" content="/timber-studio-logo.png" />
+        <meta name="msapplication-TileImage" content="/android-chrome-192x192.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=yes" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="The Timber Studio" />
         <meta name="apple-mobile-web-app-title" content="The Timber Studio" />
-        <meta name="msapplication-tooltip" content="The Timber Studio - Bespoke Carpentry & Custom Joinery Johannesburg" />
+        <meta name="msapplication-tooltip" content="The Timber Studio - Bespoke Carpentry & Custom Joinery" />
         <meta name="msapplication-starturl" content="/" />
         <meta name="msapplication-tap-highlight" content="no" />
 
@@ -159,182 +153,15 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
 
-        {/* Structured Data for AI Platforms */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "Organization",
-                  "@id": "https://www.timberstudio.co.za/#organization",
-                  name: "The Timber Studio",
-                  alternateName: "The Timber Studio Johannesburg",
-                  description:
-                    "Bespoke carpentry and custom joinery studio in Johannesburg. Custom kitchens, built-in cupboards, solid timber doors, decking and flooring with 5-star service.",
-                  url: "https://www.timberstudio.co.za",
-                  logo: {
-                    "@type": "ImageObject",
-                    url: "https://www.timberstudio.co.za/timber-studio-logo.png",
-                    width: 300,
-                    height: 100,
-                  },
-                  image: {
-                    "@type": "ImageObject",
-                    url: "https://www.timberstudio.co.za/timber-studio-logo.png",
-                    width: 1200,
-                    height: 630,
-                  },
-                  telephone: "+27633977498",
-                  email: "info@timberstudio.co.za",
-                  address: {
-                    "@type": "PostalAddress",
-                    addressLocality: "Johannesburg",
-                    addressRegion: "Gauteng",
-                    addressCountry: "ZA",
-                    postalCode: "2000",
-                  },
-                  geo: {
-                    "@type": "GeoCoordinates",
-                    latitude: -26.2041,
-                    longitude: 28.0473,
-                  },
-                  areaServed: [
-                    {
-                      "@type": "City",
-                      name: "Johannesburg",
-                      addressRegion: "Gauteng",
-                      addressCountry: "ZA",
-                    },
-                    {
-                      "@type": "City",
-                      name: "Sandton",
-                      addressRegion: "Gauteng",
-                      addressCountry: "ZA",
-                    },
-                    {
-                      "@type": "City",
-                      name: "Randburg",
-                      addressRegion: "Gauteng",
-                      addressCountry: "ZA",
-                    },
-                    {
-                      "@type": "City",
-                      name: "Pretoria",
-                      addressRegion: "Gauteng",
-                      addressCountry: "ZA",
-                    },
-                  ],
-                  sameAs: [
-                    "https://www.facebook.com/timberstudio",
-                    "https://www.instagram.com/timberstudio",
-                    "https://www.linkedin.com/company/timberstudio",
-                  ],
-                  foundingDate: "2020",
-                  numberOfEmployees: "5-10",
-                  slogan: "Johannesburg's Premier Bespoke Carpentry & Custom Joinery Studio",
-                  knowsAbout: [
-                    "Bespoke Carpentry",
-                    "Custom Joinery",
-                    "Kitchen Renovations",
-                    "Built-in Cupboards",
-                    "Solid Timber Doors",
-                    "Decking & Flooring",
-                    "Home Renovations",
-                  ],
-                  hasCredential: [
-                    {
-                      "@type": "EducationalOccupationalCredential",
-                      name: "Licensed Carpentry Business",
-                      credentialCategory: "Professional License",
-                    },
-                    {
-                      "@type": "EducationalOccupationalCredential",
-                      name: "Public Liability Insurance",
-                      credentialCategory: "Insurance Coverage",
-                    },
-                  ],
-                },
-                {
-                  "@type": "LocalBusiness",
-                  "@id": "https://www.timberstudio.co.za/#localbusiness",
-                  name: "The Timber Studio",
-                  image: "https://www.timberstudio.co.za/timber-studio-logo.png",
-                  telephone: "+27633977498",
-                  email: "info@timberstudio.co.za",
-                  address: {
-                    "@type": "PostalAddress",
-                    addressLocality: "Johannesburg",
-                    addressRegion: "Gauteng",
-                    addressCountry: "ZA",
-                  },
-                  geo: {
-                    "@type": "GeoCoordinates",
-                    latitude: -26.2041,
-                    longitude: 28.0473,
-                  },
-                  url: "https://www.timberstudio.co.za",
-                  openingHoursSpecification: [
-                    {
-                      "@type": "OpeningHoursSpecification",
-                      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                      opens: "07:00",
-                      closes: "17:00",
-                    },
-                    {
-                      "@type": "OpeningHoursSpecification",
-                      dayOfWeek: "Saturday",
-                      opens: "08:00",
-                      closes: "14:00",
-                    },
-                  ],
-                  priceRange: "$$",
-                  currenciesAccepted: "ZAR",
-                  paymentAccepted: "Cash, Bank Transfer, Card",
-                  aggregateRating: {
-                    "@type": "AggregateRating",
-                    ratingValue: "5.0",
-                    reviewCount: "150",
-                    bestRating: "5",
-                    worstRating: "1",
-                  },
-                  serviceArea: {
-                    "@type": "GeoCircle",
-                    geoMidpoint: {
-                      "@type": "GeoCoordinates",
-                      latitude: -26.2041,
-                      longitude: 28.0473,
-                    },
-                    geoRadius: "50000",
-                  },
-                },
-                {
-                  "@type": "WebSite",
-                  "@id": "https://www.timberstudio.co.za/#website",
-                  url: "https://www.timberstudio.co.za",
-                  name: "The Timber Studio - Bespoke Carpentry & Custom Joinery",
-                  description:
-                    "Johannesburg's premier bespoke carpentry and custom joinery studio. Custom kitchens, built-in cupboards, solid timber doors, decking and flooring with 5-star service.",
-                  publisher: {
-                    "@id": "https://www.timberstudio.co.za/#organization",
-                  },
-                  inLanguage: "en-ZA",
-                  potentialAction: [
-                    {
-                      "@type": "SearchAction",
-                      target: {
-                        "@type": "EntryPoint",
-                        urlTemplate: "https://www.timberstudio.co.za/search?q={search_term_string}",
-                      },
-                      "query-input": "required name=search_term_string",
-                    },
-                  ],
-                },
-              ],
-            }),
-          }}
-        />
+        {/*
+          NOTE: The manual @graph JSON-LD block that was here before has been
+          removed. It duplicated the same Organization/LocalBusiness data that
+          <GoogleBusinessSchema /> already receives as props below — having
+          both risks Google seeing two conflicting LocalBusiness entries for
+          the same site. If <GoogleBusinessSchema /> turns out to only render
+          visual UI and NOT its own JSON-LD, tell me and I'll add a single,
+          correct JSON-LD script back in here instead.
+        */}
       </head>
       <body className="font-sans" suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
@@ -350,12 +177,10 @@ export default function RootLayout({
               <AIChatWidget />
               <GoogleBusinessSchema
                 businessName="The Timber Studio"
-                description="Bespoke carpentry and custom joinery studio in Johannesburg. Custom kitchens, built-in cupboards, solid timber doors, decking and flooring with 5-star service."
+                description="Bespoke carpentry and custom joinery studio serving Gauteng. Custom kitchens, built-in cupboards, solid timber doors, decking and flooring."
                 address={{
-                  street: "Greater Johannesburg Area",
                   city: "Johannesburg",
                   region: "Gauteng",
-                  postalCode: "2000",
                   country: "ZA",
                 }}
                 phone="+27633977498"
@@ -370,8 +195,8 @@ export default function RootLayout({
                   "Decking & Flooring",
                 ]}
                 areas={["Johannesburg", "Sandton", "Randburg", "Pretoria", "Centurion", "Midrand"]}
-                rating={5.0}
-                reviewCount={150}
+                // rating/reviewCount removed — add these back only once you have a
+                // real, verifiable review count (e.g. from Google Business Profile).
                 openingHours={[
                   "Monday 07:00-17:00",
                   "Tuesday 07:00-17:00",
@@ -383,15 +208,13 @@ export default function RootLayout({
                 socialMedia={{
                   facebook: "https://www.facebook.com/timberstudio",
                   instagram: "https://www.instagram.com/timberstudio",
-                  linkedin: "https://www.linkedin.com/company/timberstudio",
                 }}
                 images={{
                   logo: "/timber-studio-logo.png",
-                  photos: [
-                    "/timber-studio-logo.png",
-                    "/carpenter-johannesburg-installing-kitchen-cupboards.jpg",
-                    "/Built-Built-in-Cupboards-Midrand.jpg",
-                  ],
+                  // Replace with real project photos once you have them —
+                  // the old filenames here referenced images that don't exist
+                  // in this build and would 404.
+                  photos: ["/timber-studio-logo.png"],
                 }}
               />
               <Toaster />

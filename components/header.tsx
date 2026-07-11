@@ -1,272 +1,362 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Logo } from "@/components/logo"
-import { RuleDivider } from "@/components/rule-divider"
-import { mainNav, site } from "@/lib/site"
-import { services } from "@/lib/data/services"
-
-function PhoneIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" className="h-3.5 w-3.5" aria-hidden="true">
-      <path
-        d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .5 1 1v3.4c0 .6-.4 1-1 1C10.7 21 3 13.3 3 3.9c0-.5.4-1 1-1h3.5c.5 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8Z"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function PinIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" className="h-3.5 w-3.5" aria-hidden="true">
-      <path
-        d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
-      <circle cx="12" cy="9.5" r="2.2" stroke="currentColor" strokeWidth="1.5" />
-    </svg>
-  )
-}
-
-function ChevronDown({ open }: { open: boolean }) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      className={`h-3.5 w-3.5 transition-transform duration-200 motion-reduce:transition-none ${
-        open ? "rotate-180" : ""
-      }`}
-      aria-hidden="true"
-    >
-      <path d="m6 9 6 6 6-6" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  )
-}
+import { Button } from "@/components/ui/button"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { ScrollArea } from "@/components/ui/scroll-area"
+import { Menu, Phone, Mail, MapPin, ChevronDown, Star } from "lucide-react"
 
 export function Header() {
-  const [mobileOpen, setMobileOpen] = useState(false)
-  const [servicesOpen, setServicesOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false)
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8)
-    onScroll()
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
+  const services = [
+    { name: "Kitchen Renovations", href: "/kitchen-renovations" },
+    { name: "Bathroom Renovations", href: "/bathroom-renovations" },
+    { name: "Built-in Cupboards", href: "/built-in-cupboards" },
+    { name: "Decking & Flooring", href: "/decking-flooring" },
+    { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
+    { name: "Door Installation", href: "/door-installation" },
+  ]
 
-  useEffect(() => {
-    setMobileOpen(false)
-    setServicesOpen(false)
-  }, [pathname])
+  const collections = [
+    { name: "Bespoke Furniture", href: "/custom-furniture" },
+    { name: "Home Office & Study Fit-Outs", href: "/home-office-fit-outs" },
+    { name: "Pergolas & Outdoor Timber", href: "/outdoor-timber-structures" },
+  ]
 
-  const whatsappHref = `https://wa.me/${site.phoneTel.replace(/\D/g, "")}`
+  const specialistPages = [
+    { name: "Carpenter Sandhurst", href: "/carpenter-sandhurst" },
+    { name: "Carpenter Near Me Johannesburg", href: "/carpenter-near-me-johannesburg" },
+    { name: "Drywall Sandton", href: "/drywall-sandton" },
+    { name: "Drywalling Contractors JHB", href: "/drywalling-contractors-johannesburg" },
+  ]
+
+  const areas = [
+    { name: "Johannesburg South", href: "/areas/johannesburg-south" },
+    { name: "Sandton", href: "/areas/sandton" },
+    { name: "Pretoria", href: "/areas/pretoria" },
+    { name: "Centurion", href: "/areas/centurion" },
+    { name: "Midrand", href: "/areas/midrand" },
+    { name: "Kempton Park", href: "/areas/kempton-park" },
+    { name: "Randburg", href: "/areas/randburg" },
+    { name: "Roodepoort", href: "/areas/roodepoort" },
+    { name: "Fourways", href: "/areas/fourways" },
+    { name: "Edenvale", href: "/areas/edenvale" },
+    { name: "Boksburg", href: "/areas/boksburg" },
+    { name: "Alberton", href: "/areas/alberton" },
+    { name: "Benoni", href: "/areas/benoni" },
+    { name: "Germiston", href: "/areas/germiston" },
+    { name: "Springs", href: "/areas/springs" },
+    { name: "Vanderbijlpark", href: "/areas/vanderbijlpark" },
+    { name: "Vereeniging", href: "/areas/vereeniging" },
+    { name: "Nigel", href: "/areas/nigel" },
+    { name: "Heidelberg", href: "/areas/heidelberg" },
+    { name: "Carletonville", href: "/areas/carletonville" },
+    { name: "Krugersdorp", href: "/areas/krugersdorp" },
+    { name: "Westonaria", href: "/areas/westonaria" },
+  ]
 
   return (
-    <header className="sticky top-0 z-50">
-      {/* Utility bar — trust signals at a glance */}
-      <div className="hidden bg-charcoal text-cream/80 sm:block">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-1.5 text-xs lg:px-8">
-          <div className="flex items-center gap-1.5">
-            <PinIcon />
-            <span>Serving Gauteng only — Johannesburg, Pretoria &amp; surrounds</span>
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      {/* Top Bar - Hidden on small mobile, visible on larger screens */}
+      <div className="bg-charcoal text-cream hidden sm:block">
+        <div className="container mx-auto px-4">
+          <div className="flex h-10 items-center justify-between text-sm">
+            <div className="flex items-center space-x-5">
+              <a
+                href="tel:+27633977498"
+                className="flex items-center space-x-1.5 text-cream/90 hover:text-gold transition-colors"
+              >
+                <Phone className="h-3.5 w-3.5 text-gold" />
+                <span>063 397 7498</span>
+              </a>
+              <a
+                href="mailto:info@timberstudio.co.za"
+                className="hidden md:flex items-center space-x-1.5 text-cream/90 hover:text-gold transition-colors"
+              >
+                <Mail className="h-3.5 w-3.5 text-gold" />
+                <span>info@timberstudio.co.za</span>
+              </a>
+            </div>
+            <div className="hidden lg:flex items-center space-x-5">
+              <div className="flex items-center space-x-1.5 text-cream/80">
+                <MapPin className="h-3.5 w-3.5 text-gold" />
+                <span>Serving Greater Johannesburg &amp; Pretoria</span>
+              </div>
+              <div className="flex items-center space-x-1.5">
+                <span className="text-gold tracking-wide">★★★★★</span>
+                <span className="text-cream/90">5.0 · 1000+ Projects</span>
+              </div>
+            </div>
           </div>
-          <a
-            href={`tel:${site.phoneTel}`}
-            className="flex items-center gap-1.5 transition-colors hover:text-gold-light"
-          >
-            <PhoneIcon />
-            <span>{site.phoneDisplay}</span>
-          </a>
         </div>
       </div>
 
-      {/* Main nav */}
-      <div
-        className={`border-b bg-paper/95 backdrop-blur transition-shadow duration-200 supports-[backdrop-filter]:bg-paper/85 ${
-          scrolled ? "border-border shadow-sm" : "border-transparent"
-        }`}
-      >
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 lg:px-8">
-          <Logo />
+      {/* Main Navigation */}
+      <div className="container mx-auto px-3 sm:px-4">
+        <div className="flex h-14 sm:h-16 items-center justify-between">
+          {/* Logo - Optimized for mobile */}
+          <div className="flex items-center min-w-0 flex-1">
+            <Link href="/" className="flex items-center space-x-2 min-w-0">
+              <div className="h-8 w-8 sm:h-10 sm:w-10 rounded bg-charcoal flex items-center justify-center flex-shrink-0 ring-1 ring-amber-600/40">
+                <span className="font-serif font-bold text-sm sm:text-base">
+                  <span className="text-amber-500">T</span>
+                  <span className="text-gold">S</span>
+                </span>
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-serif font-bold text-base sm:text-lg text-slate-900 truncate">The Timber Studio</div>
+                <div className="text-xs text-slate-600 hidden sm:block tracking-wide">Design · Craft · Build</div>
+              </div>
+            </Link>
+          </div>
 
-          {/* Desktop nav */}
-          <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">
-            {mainNav.map((item) => {
-              if (item.label === "Services") {
-                const active = pathname.startsWith("/services") || services.some((s) => pathname === `/${s.slug}`)
-                return (
-                  <div
-                    key={item.href}
-                    className="relative"
-                    onMouseEnter={() => setServicesOpen(true)}
-                    onMouseLeave={() => setServicesOpen(false)}
-                  >
-                    <button
-                      type="button"
-                      onClick={() => setServicesOpen((o) => !o)}
-                      aria-expanded={servicesOpen}
-                      className="group flex items-center gap-1 px-3 py-2 text-sm font-medium text-charcoal transition-colors hover:text-copper"
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-6">
+            <Link href="/" className="text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
+              Home
+            </Link>
+
+            <div className="relative group">
+              <button className="flex items-center text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
+                Services <ChevronDown className="ml-1 h-3 w-3" />
+              </button>
+              <div className="absolute left-0 top-full mt-2 w-64 rounded-lg bg-card shadow-xl ring-1 ring-border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                <div className="py-2">
+                  {services.map((service) => (
+                    <Link
+                      key={service.href}
+                      href={service.href}
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600 transition-colors"
                     >
-                      Services
-                      <ChevronDown open={servicesOpen} />
-                      <span
-                        className={`absolute inset-x-3 -bottom-[1px] h-0.5 origin-center scale-x-0 rounded-full bg-copper transition-transform duration-200 motion-reduce:transition-none ${
-                          active ? "scale-x-100" : "group-hover:scale-x-100"
-                        }`}
-                        aria-hidden="true"
-                      />
-                    </button>
+                      {service.name}
+                    </Link>
+                  ))}
+                  <div className="border-t border-border my-1.5" />
+                  <div className="px-4 py-1.5 text-xs font-semibold text-gold uppercase tracking-wider">
+                    Studio Collections
+                  </div>
+                  {collections.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600 transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                  <div className="border-t border-border my-1.5" />
+                  <div className="px-4 py-1.5 text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                    Specialist Pages
+                  </div>
+                  {specialistPages.map((page) => (
+                    <Link
+                      key={page.href}
+                      href={page.href}
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600 transition-colors"
+                    >
+                      {page.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
 
-                    {servicesOpen && (
-                      <div className="absolute left-1/2 top-full w-[560px] -translate-x-1/2 pt-3">
-                        <div className="overflow-hidden rounded-xl border border-border bg-card shadow-xl">
-                          <ul className="grid grid-cols-2 gap-1 p-3">
-                            {services.map((s) => (
-                              <li key={s.slug}>
-                                <Link
-                                  href={`/${s.slug}`}
-                                  className="block rounded-lg px-3 py-2.5 transition-colors hover:bg-cream"
-                                >
-                                  <span className="block text-sm font-medium text-charcoal">
-                                    {s.name}
-                                  </span>
-                                  {"description" in s && (s as { description?: string }).description && (
-                                    <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
-                                      {(s as { description?: string }).description}
-                                    </span>
-                                  )}
-                                </Link>
-                              </li>
+            <div className="relative group">
+              <button className="flex items-center text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
+                Areas <ChevronDown className="ml-1 h-3 w-3" />
+              </button>
+              <div className="absolute left-0 top-full mt-2 w-56 max-h-96 overflow-y-auto rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-1">
+                  {areas.map((area) => (
+                    <Link
+                      key={area.href}
+                      href={area.href}
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600"
+                    >
+                      {area.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <Link href="/about" className="text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
+              About
+            </Link>
+            <Link
+              href="/portfolio"
+              className="text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors"
+            >
+              Portfolio
+            </Link>
+            <Link href="/faq" className="text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
+              FAQ
+            </Link>
+          </nav>
+
+          {/* Desktop CTA & Mobile Menu */}
+          <div className="flex items-center space-x-3">
+            <Button asChild className="hidden sm:inline-flex bg-amber-600 hover:bg-amber-700">
+              <Link href="/contact">Get Quote</Link>
+            </Button>
+
+            {/* Mobile menu trigger — this is now the only element mobile users see here */}
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild className="lg:hidden">
+                <Button variant="ghost" size="icon" className="text-slate-700 h-9 w-9">
+                  <Menu className="h-5 w-5" />
+                  <span className="sr-only">Toggle menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[280px] sm:w-[350px] p-0">
+                <div className="flex flex-col h-full">
+                  {/* Header */}
+                  <div className="flex items-center justify-between p-4 sm:p-6 border-b bg-slate-50">
+                    <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
+                      <div className="h-8 w-8 rounded bg-charcoal flex items-center justify-center ring-1 ring-amber-600/40">
+                        <span className="font-serif font-bold text-sm">
+                          <span className="text-amber-500">T</span>
+                          <span className="text-gold">S</span>
+                        </span>
+                      </div>
+                      <div>
+                        <div className="font-serif font-bold text-base text-slate-900">The Timber Studio</div>
+                        <div className="text-xs text-slate-600 tracking-wide">Design · Craft · Build</div>
+                      </div>
+                    </Link>
+                  </div>
+
+                  {/* Scrollable Navigation */}
+                  <ScrollArea className="flex-1 px-4 sm:px-6">
+                    <div className="flex flex-col space-y-6 py-6">
+                      <Link
+                        href="/"
+                        className="text-lg font-medium text-slate-900 hover:text-amber-600 transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Home
+                      </Link>
+
+                      <div className="space-y-3">
+                        <div className="text-lg font-medium text-slate-900">Services</div>
+                        <div className="pl-4 space-y-3 border-l-2 border-amber-100">
+                          {services.map((service) => (
+                            <Link
+                              key={service.href}
+                              href={service.href}
+                              className="block text-sm text-slate-600 hover:text-amber-600 transition-colors py-1"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {service.name}
+                            </Link>
+                          ))}
+                          <div className="pt-3 mt-3 border-t border-slate-200">
+                            <div className="text-xs font-semibold text-gold uppercase tracking-wider mb-2">
+                              Studio Collections
+                            </div>
+                            {collections.map((item) => (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                className="block text-sm text-slate-600 hover:text-amber-600 transition-colors py-1"
+                                onClick={() => setIsOpen(false)}
+                              >
+                                {item.name}
+                              </Link>
                             ))}
-                          </ul>
-                          <RuleDivider className="px-3" />
-                          <Link
-                            href="/services"
-                            className="flex items-center justify-between px-6 py-3 text-sm font-semibold text-copper transition-colors hover:bg-cream"
-                          >
-                            View all services
-                            <span aria-hidden="true">→</span>
-                          </Link>
+                          </div>
+                          <div className="pt-3 mt-3 border-t border-slate-200">
+                            <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">
+                              Specialist Pages
+                            </div>
+                            {specialistPages.map((page) => (
+                              <Link
+                                key={page.href}
+                                href={page.href}
+                                className="block text-sm text-slate-600 hover:text-amber-600 transition-colors py-1"
+                                onClick={() => setIsOpen(false)}
+                              >
+                                {page.name}
+                              </Link>
+                            ))}
+                          </div>
                         </div>
                       </div>
-                    )}
-                  </div>
-                )
-              }
-              const active = pathname === item.href
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="group relative px-3 py-2 text-sm font-medium text-charcoal transition-colors hover:text-copper"
-                >
-                  <span className={active ? "text-copper" : ""}>{item.label}</span>
-                  <span
-                    className={`absolute inset-x-3 -bottom-[1px] h-0.5 origin-center scale-x-0 rounded-full bg-copper transition-transform duration-200 motion-reduce:transition-none ${
-                      active ? "scale-x-100" : "group-hover:scale-x-100"
-                    }`}
-                    aria-hidden="true"
-                  />
-                </Link>
-              )
-            })}
-          </nav>
 
-          <div className="flex items-center gap-2">
-            <Link
-              href="/contact"
-              className="hidden rounded-md border border-copper px-4 py-2 text-sm font-semibold text-copper transition-colors hover:bg-copper hover:text-cream md:inline-block"
-            >
-              Get a Free Quote
-            </Link>
-            <a
-              href={`tel:${site.phoneTel}`}
-              className="hidden items-center gap-1.5 rounded-md bg-copper px-4 py-2 text-sm font-semibold text-cream shadow-sm transition-colors hover:bg-copper-dark sm:inline-flex"
-            >
-              <PhoneIcon />
-              Call Now
-            </a>
-            <button
-              type="button"
-              onClick={() => setMobileOpen((o) => !o)}
-              aria-expanded={mobileOpen}
-              aria-controls="mobile-menu"
-              className="rounded-md border border-border px-3 py-2 text-sm font-medium text-charcoal lg:hidden"
-            >
-              {mobileOpen ? "Close" : "Menu"}
-            </button>
+                      <div className="space-y-3">
+                        <div className="text-lg font-medium text-slate-900">Areas</div>
+                        <div className="pl-4 space-y-3 border-l-2 border-amber-100">
+                          {areas.map((area) => (
+                            <Link
+                              key={area.href}
+                              href={area.href}
+                              className="block text-sm text-slate-600 hover:text-amber-600 transition-colors py-1"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {area.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+
+                      <Link
+                        href="/about"
+                        className="text-lg font-medium text-slate-900 hover:text-amber-600 transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        About
+                      </Link>
+                      <Link
+                        href="/portfolio"
+                        className="text-lg font-medium text-slate-900 hover:text-amber-600 transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Portfolio
+                      </Link>
+                      <Link
+                        href="/faq"
+                        className="text-lg font-medium text-slate-900 hover:text-amber-600 transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        FAQ
+                      </Link>
+                    </div>
+                  </ScrollArea>
+
+                  {/* Footer */}
+                  <div className="border-t p-4 sm:p-6 space-y-4 bg-slate-50">
+                    <div className="flex items-center space-x-2 text-sm text-slate-600">
+                      <Phone className="h-4 w-4 text-amber-600" />
+                      <a href="tel:+27633977498" className="hover:text-amber-600 transition-colors">
+                        063 397 7498
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-2 text-sm text-slate-600">
+                      <Mail className="h-4 w-4 text-amber-600" />
+                      <span>info@timberstudio.co.za</span>
+                    </div>
+                    <div className="flex items-center space-x-2 text-sm text-slate-600">
+                      <MapPin className="h-4 w-4 text-amber-600" />
+                      <span>Johannesburg & Pretoria</span>
+                    </div>
+                    <div className="flex items-center space-x-1 text-sm">
+                      <Star className="h-4 w-4 text-amber-400 fill-current" />
+                      <span className="text-amber-600 font-medium">★★★★★ 5.0 Rating</span>
+                    </div>
+                    <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
+                      <Link href="/contact" onClick={() => setIsOpen(false)}>
+                        Get Free Quote
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
-
-      {/* Mobile menu — full panel */}
-      {mobileOpen && (
-        <div
-          id="mobile-menu"
-          className="fixed inset-x-0 top-[var(--header-h,3.75rem)] z-40 h-[calc(100dvh-var(--header-h,3.75rem))] overflow-y-auto border-t border-border bg-paper lg:hidden"
-        >
-          <nav aria-label="Mobile" className="mx-auto flex min-h-full max-w-6xl flex-col px-4 py-4">
-            <ul className="flex flex-col gap-1">
-              {mainNav.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="block rounded-md px-3 py-2.5 text-base font-medium text-charcoal transition-colors hover:bg-cream hover:text-copper"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            <div className="mt-3 border-t border-border pt-3">
-              <p className="px-3 pb-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                Our Services
-              </p>
-              <ul className="flex flex-col gap-1">
-                {services.map((s) => (
-                  <li key={s.slug}>
-                    <Link
-                      href={`/${s.slug}`}
-                      className="block rounded-md px-3 py-2 text-sm text-charcoal transition-colors hover:bg-cream hover:text-copper"
-                    >
-                      {s.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* CTAs pinned to the bottom of the panel */}
-            <div className="mt-auto grid grid-cols-2 gap-3 border-t border-border pt-4">
-              <a
-                href={`tel:${site.phoneTel}`}
-                className="flex items-center justify-center gap-1.5 rounded-md bg-copper px-4 py-3 text-sm font-semibold text-cream"
-              >
-                <PhoneIcon />
-                Call Now
-              </a>
-              <a
-                href={whatsappHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-1.5 rounded-md border border-copper px-4 py-3 text-sm font-semibold text-copper"
-              >
-                WhatsApp
-              </a>
-            </div>
-          </nav>
-        </div>
-      )}
     </header>
   )
 }

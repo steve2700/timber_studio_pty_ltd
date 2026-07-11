@@ -1,7 +1,6 @@
 import Link from "next/link"
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Star, Award, Shield, Users } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Star, ShieldCheck, Hammer, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
 
 export function Footer() {
@@ -29,8 +28,11 @@ export function Footer() {
     { name: "Drywalling Contractors JHB", href: "/drywalling-contractors-johannesburg" },
   ]
 
+  // Note: "Johannesburg" now correctly points to /areas/johannesburg —
+  // /areas/johannesburg-south is a separate page in the sitemap and was
+  // being linked to by mistake here before.
   const areas = [
-    { name: "Johannesburg", href: "/areas/johannesburg-south" },
+    { name: "Johannesburg", href: "/areas/johannesburg" },
     { name: "Sandton", href: "/areas/sandton" },
     { name: "Randburg", href: "/areas/randburg" },
     { name: "Pretoria", href: "/areas/pretoria" },
@@ -46,49 +48,66 @@ export function Footer() {
     { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact" },
     { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms of Service", href: "/terms" },
   ]
 
   return (
     <footer className="bg-charcoal text-cream">
-      {/* Trust Indicators */}
-      <div className="border-b border-slate-800">
+      {/* CTA band — closes the loop instead of leaving the footer purely informational */}
+      <div className="border-b border-cream/10">
+        <div className="container mx-auto flex flex-col items-start justify-between gap-4 px-4 py-8 sm:flex-row sm:items-center">
+          <div>
+            <p className="font-serif text-xl font-semibold text-cream sm:text-2xl">
+              Ready to start your next project?
+            </p>
+            <p className="mt-1 text-sm text-cream/70">
+              Free, no-obligation quotes across Gauteng.
+            </p>
+          </div>
+          <div className="flex w-full gap-3 sm:w-auto">
+            <Button asChild className="flex-1 bg-copper hover:bg-copper-dark sm:flex-none">
+              <Link href="/contact">Get a Free Quote</Link>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              className="flex-1 border-cream/25 bg-transparent text-cream hover:border-gold hover:text-gold sm:flex-none"
+            >
+              <a href="tel:+27633977498">063 397 7498</a>
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* Trust indicators — honest, defensible claims only.
+          Swap these back to specific numbers (years in business, project count,
+          warranty length, licensing status) once you can verify each one. */}
+      <div className="border-b border-cream/10">
         <div className="container mx-auto px-4 py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 gap-6 text-center md:grid-cols-4">
             <div className="flex flex-col items-center space-y-2">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
-                <Star className="h-6 w-6 text-white" />
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-copper">
+                <Star className="h-6 w-6 text-cream" />
               </div>
-              <div>
-                <div className="text-2xl font-bold text-amber-400">★★★★★</div>
-                <div className="text-sm text-slate-300">5-Star Rated</div>
-              </div>
+              <div className="text-sm text-cream/70">Craftsmanship Clients Recommend</div>
             </div>
             <div className="flex flex-col items-center space-y-2">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
-                <Users className="h-6 w-6 text-white" />
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-copper">
+                <Users className="h-6 w-6 text-cream" />
               </div>
-              <div>
-                <div className="text-2xl font-bold text-amber-400">1000+</div>
-                <div className="text-sm text-slate-300">Projects Completed</div>
-              </div>
+              <div className="text-sm text-cream/70">Trusted By Gauteng Homeowners</div>
             </div>
             <div className="flex flex-col items-center space-y-2">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
-                <Shield className="h-6 w-6 text-white" />
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-copper">
+                <ShieldCheck className="h-6 w-6 text-cream" />
               </div>
-              <div>
-                <div className="text-2xl font-bold text-amber-400">24</div>
-                <div className="text-sm text-slate-300">Month Warranty</div>
-              </div>
+              <div className="text-sm text-cream/70">Written Workmanship Guarantee</div>
             </div>
             <div className="flex flex-col items-center space-y-2">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
-                <Award className="h-6 w-6 text-white" />
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-copper">
+                <Hammer className="h-6 w-6 text-cream" />
               </div>
-              <div>
-                <div className="text-2xl font-bold text-amber-400">15+</div>
-                <div className="text-sm text-slate-300">Years Experience</div>
-              </div>
+              <div className="text-sm text-cream/70">Skilled In-House Craftsmen</div>
             </div>
           </div>
         </div>
@@ -96,237 +115,179 @@ export function Footer() {
 
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div className="space-y-6">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="h-8 w-8 rounded bg-charcoal flex items-center justify-center ring-1 ring-amber-600/50">
-                  <span className="font-serif font-bold text-sm">
-                    <span className="text-amber-500">T</span>
+              <div className="mb-4 flex items-center space-x-2">
+                <div className="flex h-8 w-8 items-center justify-center rounded bg-walnut ring-1 ring-copper/50">
+                  <span className="font-serif text-sm font-bold">
+                    <span className="text-copper-light">T</span>
                     <span className="text-gold">S</span>
                   </span>
                 </div>
                 <div>
-                  <div className="font-serif font-bold text-lg text-amber-400">The Timber Studio</div>
-                  <div className="text-sm text-slate-400 tracking-wide">Design · Craft · Build</div>
+                  <div className="font-serif text-lg font-bold text-gold-light">The Timber Studio</div>
+                  <div className="text-sm tracking-wide text-cream/60">Design · Craft · Build</div>
                 </div>
               </div>
-              <p className="text-slate-300 leading-relaxed">
-                Johannesburg&apos;s premier bespoke joinery and carpentry studio with over 1000+ completed projects.
-                Custom kitchens, built-in cupboards, solid timber doors, decking, and full renovations &mdash; every
-                piece designed, crafted, and installed by our own team and backed by a 24-month workmanship warranty.
+              <p className="leading-relaxed text-cream/70">
+                Gauteng&apos;s bespoke joinery and carpentry studio. Custom kitchens, built-in cupboards, solid
+                timber doors, decking, and full renovations — designed, crafted and installed by our own team.
               </p>
             </div>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-amber-400 flex-shrink-0" />
-                <div>
-                  <a href="tel:+27633977498" className="hover:text-amber-400 transition-colors">
-                    063 397 7498
-                  </a>
-                  <div className="text-xs text-slate-400">Mon–Sat Studio Line</div>
-                </div>
+                <Phone className="h-5 w-5 flex-shrink-0 text-gold-light" />
+                <a href="tel:+27633977498" className="transition-colors hover:text-gold-light">
+                  063 397 7498
+                </a>
               </div>
 
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-amber-400 flex-shrink-0" />
-                <div>
-                  <a href="mailto:info@timberstudio.co.za" className="hover:text-amber-400 transition-colors">
-                    info@timberstudio.co.za
-                  </a>
-                  <div className="text-xs text-slate-400">Free Quotes Available</div>
-                </div>
+                <Mail className="h-5 w-5 flex-shrink-0 text-gold-light" />
+                <a href="mailto:info@timberstudio.co.za" className="transition-colors hover:text-gold-light">
+                  info@timberstudio.co.za
+                </a>
               </div>
 
               <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-amber-400 flex-shrink-0" />
-                <div>
-                  <span>Johannesburg, Gauteng</span>
-                  <div className="text-xs text-slate-400">Serving Greater Johannesburg</div>
-                </div>
+                <MapPin className="h-5 w-5 flex-shrink-0 text-gold-light" />
+                <span className="text-cream/70">Gauteng, South Africa</span>
               </div>
 
               <div className="flex items-center space-x-3">
-                <Clock className="h-5 w-5 text-amber-400 flex-shrink-0" />
-                <div>
-                  <span>Mon-Sat: 7AM-5PM</span>
-                  <div className="text-xs text-slate-400">Sunday: Emergency Only</div>
-                </div>
+                <Clock className="h-5 w-5 flex-shrink-0 text-gold-light" />
+                <span className="text-cream/70">Mon–Sat, by appointment</span>
               </div>
             </div>
 
-            {/* Social Media */}
+            {/* Social Media — confirm these accounts exist before linking to them */}
             <div className="flex space-x-4">
               <a
                 href="https://facebook.com/timberstudio"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10 transition-colors hover:bg-copper"
                 aria-label="Follow us on Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
                 href="https://instagram.com/timberstudio"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10 transition-colors hover:bg-copper"
                 aria-label="Follow us on Instagram"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://linkedin.com/company/timberstudio"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors"
-                aria-label="Connect with us on LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
               </a>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold text-amber-400 mb-6">Our Services</h4>
+            <h4 className="mb-6 text-lg font-semibold text-gold-light">Our Services</h4>
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service.name}>
                   <Link
                     href={service.href}
-                    className="text-slate-300 hover:text-amber-400 transition-colors flex items-center group"
+                    className="group flex items-center text-cream/70 transition-colors hover:text-gold-light"
                   >
-                    <span className="w-2 h-2 bg-amber-600 rounded-full mr-3 group-hover:bg-amber-400 transition-colors"></span>
+                    <span className="mr-3 h-2 w-2 rounded-full bg-copper transition-colors group-hover:bg-gold-light" />
                     {service.name}
                   </Link>
                 </li>
               ))}
             </ul>
-          </div>
 
-          {/* Studio Collections & Specialist Pages */}
-          <div>
-            <h4 className="text-lg font-semibold text-amber-400 mb-6">Studio Collections</h4>
+            <h4 className="mb-4 mt-8 text-lg font-semibold text-gold-light">Studio Collections</h4>
             <ul className="space-y-3">
               {collections.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-slate-300 hover:text-amber-400 transition-colors flex items-center group"
+                    className="group flex items-center text-cream/70 transition-colors hover:text-gold-light"
                   >
-                    <span className="w-2 h-2 bg-amber-600 rounded-full mr-3 group-hover:bg-amber-400 transition-colors"></span>
+                    <span className="mr-3 h-2 w-2 rounded-full bg-copper transition-colors group-hover:bg-gold-light" />
                     {item.name}
                   </Link>
                 </li>
               ))}
             </ul>
-            <h4 className="text-lg font-semibold text-amber-400 mb-4 mt-8">Specialist Pages</h4>
+          </div>
+
+          {/* Specialist Pages & Service Areas */}
+          <div>
+            <h4 className="mb-6 text-lg font-semibold text-gold-light">Specialist Pages</h4>
             <ul className="space-y-3">
-              {specialistPages.map((service) => (
-                <li key={service.name}>
+              {specialistPages.map((page) => (
+                <li key={page.name}>
                   <Link
-                    href={service.href}
-                    className="text-slate-300 hover:text-amber-400 transition-colors flex items-center group"
+                    href={page.href}
+                    className="group flex items-center text-cream/70 transition-colors hover:text-gold-light"
                   >
-                    <span className="w-2 h-2 bg-amber-600 rounded-full mr-3 group-hover:bg-amber-400 transition-colors"></span>
-                    {service.name}
+                    <span className="mr-3 h-2 w-2 rounded-full bg-copper transition-colors group-hover:bg-gold-light" />
+                    {page.name}
                   </Link>
                 </li>
               ))}
             </ul>
-          </div>
 
-          {/* Service Areas */}
-          <div>
-            <h4 className="text-lg font-semibold text-amber-400 mb-6">Service Areas</h4>
+            <h4 className="mb-4 mt-8 text-lg font-semibold text-gold-light">Service Areas</h4>
             <ul className="space-y-3">
               {areas.map((area) => (
                 <li key={area.name}>
                   <Link
                     href={area.href}
-                    className="text-slate-300 hover:text-amber-400 transition-colors flex items-center group"
+                    className="group flex items-center text-cream/70 transition-colors hover:text-gold-light"
                   >
-                    <span className="w-2 h-2 bg-amber-600 rounded-full mr-3 group-hover:bg-amber-400 transition-colors"></span>
+                    <span className="mr-3 h-2 w-2 rounded-full bg-copper transition-colors group-hover:bg-gold-light" />
                     {area.name}
                   </Link>
                 </li>
               ))}
             </ul>
-            <div className="mt-6 p-4 bg-slate-800 rounded-lg">
-              <h5 className="font-semibold text-amber-400 mb-2">Free Service Areas</h5>
-              <p className="text-sm text-slate-300">
-                We provide free quotes and design consultations throughout Johannesburg, Sandton, Randburg, Pretoria,
-                Centurion, Midrand, Krugersdorp, and Benoni.
-              </p>
-            </div>
+            <Link
+              href="/areas"
+              className="mt-3 inline-block text-sm font-semibold text-copper-light hover:text-gold-light"
+            >
+              View all areas we serve →
+            </Link>
           </div>
 
-          {/* Newsletter & Company */}
+          {/* Company links */}
           <div>
-            <h4 className="text-lg font-semibold text-amber-400 mb-6">Stay Updated</h4>
-            <p className="text-slate-300 mb-4">
-              Get expert carpentry tips, joinery inspiration, project ideas, and special offers delivered to your inbox.
-            </p>
-
-            <div className="space-y-3 mb-6">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-slate-800 border-slate-700 text-white placeholder:text-slate-400"
-              />
-              <Button className="w-full bg-amber-600 hover:bg-amber-700">Subscribe to Newsletter</Button>
-            </div>
-
-            <div className="space-y-3">
-              <h5 className="font-semibold text-amber-400">Company</h5>
-              <ul className="space-y-2">
-                {company.map((item) => (
-                  <li key={item.name}>
-                    <Link href={item.href} className="text-slate-300 hover:text-amber-400 transition-colors text-sm">
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <h4 className="mb-6 text-lg font-semibold text-gold-light">Company</h4>
+            <ul className="space-y-3">
+              {company.map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href} className="text-cream/70 transition-colors hover:text-gold-light">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
 
-      <Separator className="bg-slate-800" />
+      <Separator className="bg-cream/10" />
 
       {/* Bottom Footer */}
       <div className="container mx-auto px-4 py-6">
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="text-slate-400 text-sm text-center md:text-left">
+        <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
+          <div className="text-center text-sm text-cream/50 md:text-left">
             <p>© {currentYear} The Timber Studio (Pty) Ltd. All rights reserved.</p>
-            <p className="mt-1">
-              Bespoke carpentry & custom joinery in Johannesburg | Licensed &amp; Insured | 24-Month Workmanship
-              Warranty
-            </p>
+            <p className="mt-1">Bespoke carpentry &amp; custom joinery across Gauteng.</p>
           </div>
 
-          <div className="flex flex-wrap justify-center md:justify-end items-center space-x-6 text-sm">
-            <Link href="/privacy" className="text-slate-400 hover:text-amber-400 transition-colors">
+          <div className="flex flex-wrap items-center justify-center space-x-6 text-sm md:justify-end">
+            <Link href="/privacy" className="text-cream/50 transition-colors hover:text-gold-light">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-slate-400 hover:text-amber-400 transition-colors">
+            <Link href="/terms" className="text-cream/50 transition-colors hover:text-gold-light">
               Terms of Service
             </Link>
-            <div className="text-slate-400">
-              <span className="text-amber-400">★★★★★</span> 5.0 Rating
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Emergency Contact Banner */}
-      <div className="bg-amber-600 text-white py-2">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <span className="font-semibold">Free Design Consultations &amp; Quotes Across Greater Johannesburg</span>
-            <span className="mx-2">|</span>
-            <a href="tel:+27633977498" className="hover:underline font-semibold">
-              Call 063 397 7498 Now
-            </a>
           </div>
         </div>
       </div>

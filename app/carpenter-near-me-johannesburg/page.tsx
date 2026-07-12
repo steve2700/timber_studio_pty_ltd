@@ -1,22 +1,16 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
-  Wrench,
   CheckCircle,
   Clock,
   Shield,
   MapPin,
   Phone,
   Mail,
-  Calendar,
-  AlertCircle,
-  Zap,
+  Navigation,
   Star,
-  Award,
-  Home,
   Hammer,
   ThumbsUp,
-  Navigation,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -42,23 +36,23 @@ export const metadata: Metadata = {
 export default function CarpenterNearMeJohannesburgPage() {
   const whatWeDoNearYou = [
     {
-      title: "Emergency Door Repairs",
-      description: "Broken door? Won't close? We're near you and can be there fast.",
-      href: "/door-repair-gauteng",
-      responseTime: "30-90 mins",
-      urgency: "Emergency",
+      title: "Door Repairs & Alignment",
+      description: "Broken door? Won't close? We can be there fast to repair or realign it.",
+      href: "/door-installation",
+      responseTime: "Same Day",
+      urgency: "Fast",
     },
     {
       title: "Kitchen Cupboard Repairs",
-      description: "Broken hinges, doors off, drawers stuck — fixed same day near you.",
-      href: "/same-day-kitchen-repairs-gauteng",
+      description: "Broken hinges, doors off, drawers stuck — repaired at your home.",
+      href: "/built-in-cupboards",
       responseTime: "Same Day",
       urgency: "Fast",
     },
     {
       title: "Custom Built-In Cupboards",
       description: "Bespoke wardrobes and storage built to fit your exact space.",
-      href: "/custom-built-in-cupboards-johannesburg",
+      href: "/built-in-cupboards",
       responseTime: "2-3 Weeks",
       urgency: "Project",
     },
@@ -77,20 +71,6 @@ export default function CarpenterNearMeJohannesburgPage() {
       urgency: "Fast",
     },
     {
-      title: "Handyman Services",
-      description: "Shelves, repairs, installations — a full list of jobs done in one visit.",
-      href: "/handyman-services-johannesburg",
-      responseTime: "Same Day",
-      urgency: "Fast",
-    },
-    {
-      title: "Granite Countertops",
-      description: "Premium granite supply and installation for kitchens and bathrooms.",
-      href: "/granite-countertops",
-      responseTime: "3-7 Days",
-      urgency: "Project",
-    },
-    {
       title: "Drywall & Ceilings",
       description: "Partition walls, ceiling installations, and ceiling repairs near you.",
       href: "/drywall-ceilings",
@@ -98,18 +78,11 @@ export default function CarpenterNearMeJohannesburgPage() {
       urgency: "Project",
     },
     {
-      title: "Security Doors",
-      description: "Security doors supplied and fitted to protect your Johannesburg home.",
-      href: "/security-doors-johannesburg",
+      title: "Security & Feature Doors",
+      description: "Security doors and statement entryways supplied and fitted.",
+      href: "/door-installation",
       responseTime: "2-5 Days",
       urgency: "Fast",
-    },
-    {
-      title: "Waterproofing & Leak Repairs",
-      description: "Leaking roof or wet walls? We're nearby and respond fast.",
-      href: "/waterproofing-repairs-gauteng",
-      responseTime: "Same Day",
-      urgency: "Emergency",
     },
     {
       title: "Bathroom Renovations",
@@ -123,6 +96,13 @@ export default function CarpenterNearMeJohannesburgPage() {
       description: "Timber decking, laminate, and engineered wood flooring installed near you.",
       href: "/decking-flooring",
       responseTime: "1-2 Weeks",
+      urgency: "Project",
+    },
+    {
+      title: "Bespoke Furniture & Fit-Outs",
+      description: "Custom furniture and home office fit-outs, designed and built for your space.",
+      href: "/custom-furniture",
+      responseTime: "2-4 Weeks",
       urgency: "Project",
     },
   ]
@@ -190,7 +170,7 @@ export default function CarpenterNearMeJohannesburgPage() {
       step: "02",
       title: "We Confirm Availability",
       description:
-        "We check which carpenter is closest to your location in Johannesburg. For most areas we can be with you same day — often within the hour for emergencies.",
+        "We check which carpenter is closest to your location in Johannesburg. For most areas we can be with you same day.",
       icon: Navigation,
     },
     {
@@ -211,24 +191,24 @@ export default function CarpenterNearMeJohannesburgPage() {
 
   const carpenterTypes = [
     {
-      type: "Emergency Carpenter Near Me",
-      description:
-        "Need someone now? Our emergency carpenters respond within 60-90 minutes across Johannesburg. Available 24/7.",
-      href: "/24-hour-emergency-carpenter-johannesburg",
-      tag: "24/7",
-    },
-    {
       type: "Same-Day Carpenter Near Me",
       description:
-        "Call before 12pm for a guaranteed same-day carpenter anywhere in Gauteng. Fully stocked van, ready to work.",
-      href: "/same-day-carpenter-gauteng",
+        "Call before 12pm and we'll do our best to get a carpenter to you the same day, anywhere in Gauteng.",
+      href: "/contact",
       tag: "Today",
+    },
+    {
+      type: "Urgent Carpentry Near Me",
+      description:
+        "Need something fixed quickly? Call us to check availability for an urgent visit.",
+      href: "/contact",
+      tag: "Urgent",
     },
     {
       type: "Kitchen Carpenter Near Me",
       description:
         "Specialist kitchen carpenters for repairs, cupboard installations, and full kitchen renovations in your area.",
-      href: "/kitchen-cupboards",
+      href: "/kitchen-renovations",
       tag: "Specialist",
     },
     {
@@ -246,11 +226,11 @@ export default function CarpenterNearMeJohannesburgPage() {
       tag: "Fast",
     },
     {
-      type: "Handyman Carpenter Near Me",
+      type: "Decking Carpenter Near Me",
       description:
-        "General carpentry and handyman services for all the smaller jobs around your Johannesburg home.",
-      href: "/handyman-services-johannesburg",
-      tag: "All Jobs",
+        "Timber decking design and installation specialists working across Gauteng gardens and outdoor spaces.",
+      href: "/decking-flooring",
+      tag: "Outdoor",
     },
   ]
 
@@ -259,7 +239,7 @@ export default function CarpenterNearMeJohannesburgPage() {
       icon: Navigation,
       title: "Faster Response Times",
       description:
-        "A local Johannesburg carpenter means shorter travel, faster arrival, and less time waiting — especially for emergencies.",
+        "A local Johannesburg carpenter means shorter travel, faster arrival, and less time waiting.",
     },
     {
       icon: Shield,
@@ -271,7 +251,7 @@ export default function CarpenterNearMeJohannesburgPage() {
       icon: Star,
       title: "Local Reputation to Protect",
       description:
-        "We've been serving Johannesburg for 20+ years. Our reputation in the area matters more to us than any single job.",
+        "We've been serving Johannesburg for 10+ years. Our reputation in the area matters more to us than any single job.",
     },
     {
       icon: ThumbsUp,
@@ -281,31 +261,29 @@ export default function CarpenterNearMeJohannesburgPage() {
     },
   ]
 
-  const popularSuburbLinks = [
-    { name: "Carpenter Rosebank", href: "/carpenter-rosebank" },
-    { name: "Carpenter Bryanston", href: "/carpenter-bryanston" },
-    { name: "Carpenter Rivonia", href: "/carpenter-rivonia" },
-    { name: "Carpenter Morningside", href: "/carpenter-morningside" },
-    { name: "Carpenter Hyde Park", href: "/carpenter-hyde-park" },
-    { name: "Carpenter Illovo", href: "/carpenter-illovo" },
-    { name: "Carpenter Woodmead", href: "/carpenter-woodmead" },
-    { name: "Carpenter Sunninghill", href: "/carpenter-sunninghill" },
+  // Real specialist pages and area hubs only — the individual carpenter-by-suburb
+  // pages (Rosebank, Bryanston, Rivonia, etc.) don't exist in this build.
+  const nearbySpecialistLinks = [
     { name: "Carpenter Sandhurst", href: "/carpenter-sandhurst" },
+    { name: "Drywall Sandton", href: "/drywall-sandton" },
+    { name: "Drywalling Contractors JHB", href: "/drywalling-contractors-johannesburg" },
+    { name: "Sandton Area", href: "/areas/sandton" },
+    { name: "Johannesburg Area", href: "/areas/johannesburg" },
   ]
 
   const relatedServices = [
-    { name: "Emergency Carpenter Johannesburg", href: "/24-hour-emergency-carpenter-johannesburg" },
-    { name: "Same-Day Carpenter Gauteng", href: "/same-day-carpenter-gauteng" },
-    { name: "Handyman Services Johannesburg", href: "/handyman-services-johannesburg" },
-    { name: "Door Repair Gauteng", href: "/door-repair-gauteng" },
     { name: "Door Installation", href: "/door-installation" },
     { name: "Kitchen Renovations", href: "/kitchen-renovations" },
     { name: "Built-In Cupboards", href: "/built-in-cupboards" },
-    { name: "Same-Day Kitchen Repairs", href: "/same-day-kitchen-repairs-gauteng" },
-    { name: "Waterproofing Gauteng", href: "/waterproofing-repairs-gauteng" },
-    { name: "Granite Countertops", href: "/granite-countertops" },
+    { name: "Bathroom Renovations", href: "/bathroom-renovations" },
+    { name: "Decking & Flooring", href: "/decking-flooring" },
     { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
-    { name: "Security Doors Johannesburg", href: "/security-doors-johannesburg" },
+    { name: "Bespoke Furniture", href: "/custom-furniture" },
+    { name: "Home Office & Study Fit-Outs", href: "/home-office-fit-outs" },
+    { name: "Outdoor Timber Structures", href: "/outdoor-timber-structures" },
+    { name: "Carpenter Sandhurst", href: "/carpenter-sandhurst" },
+    { name: "Drywall Sandton", href: "/drywall-sandton" },
+    { name: "Drywalling Contractors JHB", href: "/drywalling-contractors-johannesburg" },
   ]
 
   const areaPages = [
@@ -385,13 +363,13 @@ export default function CarpenterNearMeJohannesburgPage() {
               <CardHeader>
                 <div className="text-4xl font-bold text-yellow-600 mb-2">60min</div>
                 <CardTitle>Avg Response</CardTitle>
-                <CardDescription>Emergency callouts</CardDescription>
+                <CardDescription>Urgent callouts, area dependent</CardDescription>
               </CardHeader>
             </Card>
             <Card className="text-center border-yellow-200">
               <CardHeader>
-                <div className="text-4xl font-bold text-yellow-600 mb-2">20+</div>
-                <CardTitle>Years Local</CardTitle>
+                <div className="text-4xl font-bold text-yellow-600 mb-2">10+</div>
+                <CardTitle>Years Experience</CardTitle>
                 <CardDescription>Johannesburg based</CardDescription>
               </CardHeader>
             </Card>
@@ -413,7 +391,7 @@ export default function CarpenterNearMeJohannesburgPage() {
             What Kind of Carpenter Are You Looking For?
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            We cover every type of carpentry need — emergency, same-day, specialist, or project work
+            We cover every type of carpentry need — urgent, same-day, specialist, or project work
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -478,7 +456,7 @@ export default function CarpenterNearMeJohannesburgPage() {
             Carpentry Services Available Near You
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            From emergency repairs to full renovations — all available near you in Johannesburg
+            From repairs to full renovations — all available near you in Johannesburg
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -486,11 +464,7 @@ export default function CarpenterNearMeJohannesburgPage() {
               <Card
                 key={index}
                 className={`hover:shadow-lg transition-shadow border-l-4 ${
-                  service.urgency === "Emergency"
-                    ? "border-l-red-500"
-                    : service.urgency === "Fast"
-                    ? "border-l-yellow-500"
-                    : "border-l-blue-400"
+                  service.urgency === "Fast" ? "border-l-yellow-500" : "border-l-blue-400"
                 }`}
               >
                 <CardHeader>
@@ -502,11 +476,7 @@ export default function CarpenterNearMeJohannesburgPage() {
                     </CardTitle>
                     <span
                       className={`text-xs px-2 py-1 rounded-full shrink-0 ml-2 ${
-                        service.urgency === "Emergency"
-                          ? "bg-red-100 text-red-700"
-                          : service.urgency === "Fast"
-                          ? "bg-yellow-100 text-yellow-700"
-                          : "bg-blue-100 text-blue-700"
+                        service.urgency === "Fast" ? "bg-yellow-100 text-yellow-700" : "bg-blue-100 text-blue-700"
                       }`}
                     >
                       {service.urgency}
@@ -515,7 +485,7 @@ export default function CarpenterNearMeJohannesburgPage() {
                   <CardDescription className="mb-3 text-sm">{service.description}</CardDescription>
                   <div className="bg-muted rounded px-3 py-1.5 text-sm flex items-center gap-2">
                     <Clock className="h-4 w-4 text-yellow-500" />
-                    <span className="text-muted-foreground text-xs">Available: </span>
+                    <span className="text-muted-foreground text-xs">Typical timeline: </span>
                     <span className="font-semibold text-xs">{service.responseTime}</span>
                   </div>
                 </CardHeader>
@@ -549,7 +519,7 @@ export default function CarpenterNearMeJohannesburgPage() {
                     </Link>
                   </div>
                   <div className="mb-3">
-                    <div className="text-xs text-muted-foreground mb-1">Response Time</div>
+                    <div className="text-xs text-muted-foreground mb-1">Typical Response Window</div>
                     <div className="text-lg font-bold text-yellow-600">{location.responseTime}</div>
                   </div>
                   <div className="space-y-1">
@@ -591,26 +561,26 @@ export default function CarpenterNearMeJohannesburgPage() {
         </div>
       </section>
 
-      {/* Suburb Specific Links */}
+      {/* Specialist Pages & Nearby Areas */}
       <section className="py-16 px-4 md:px-6 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            Carpenters in Sandton Suburbs Near You
+            Specialist Pages & Nearby Areas
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Serving every Sandton suburb with local knowledge and fast response
+            Dedicated pages for our most-requested specialist services and areas
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
-            {popularSuburbLinks.map((suburb, index) => (
+            {nearbySpecialistLinks.map((link, index) => (
               <Link
                 key={index}
-                href={suburb.href}
+                href={link.href}
                 className="flex items-center gap-2 p-4 rounded-lg border bg-card hover:bg-accent hover:shadow-md transition-all group"
               >
                 <MapPin className="h-4 w-4 text-yellow-500 shrink-0" />
                 <span className="text-sm font-medium group-hover:text-yellow-600 transition-colors">
-                  {suburb.name}
+                  {link.name}
                 </span>
               </Link>
             ))}
@@ -632,11 +602,11 @@ export default function CarpenterNearMeJohannesburgPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Call 063 397 7498 — we're a Johannesburg-based carpentry company with 20+ years of
-                  experience serving all areas of Gauteng. We cover Sandton, Randburg, Fourways,
+                  Call 063 397 7498 — we're a Johannesburg-based carpentry company with 10+ years of
+                  hands-on experience serving all areas of Gauteng. We cover Sandton, Randburg, Fourways,
                   Midrand, Centurion, Pretoria, Roodepoort, East Rand, Johannesburg South, and all
                   surrounding suburbs. We dispatch the nearest available carpenter to your location,
-                  usually within 60-90 minutes for emergencies or same-day for planned work.
+                  usually same-day for planned work.
                 </p>
               </CardContent>
             </Card>
@@ -647,13 +617,13 @@ export default function CarpenterNearMeJohannesburgPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Yes — call before 12pm on 063 397 7498 for guaranteed same-day carpenter service
-                  across Johannesburg and Gauteng. For emergencies like broken doors or security
-                  issues, we're available 24/7 with{" "}
-                  <Link href="/24-hour-emergency-carpenter-johannesburg" className="text-primary hover:underline">
-                    emergency carpenter services
+                  Call before 12pm on 063 397 7498 to check same-day availability across Johannesburg
+                  and Gauteng. For urgent jobs like broken doors, give us a call and we'll let you know
+                  our nearest availability —{" "}
+                  <Link href="/contact" className="text-primary hover:underline">
+                    get in touch here
                   </Link>{" "}
-                  that dispatch within 60-90 minutes.
+                  to check.
                 </p>
               </CardContent>
             </Card>
@@ -664,11 +634,9 @@ export default function CarpenterNearMeJohannesburgPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Carpenter rates in Johannesburg vary by job type. Handyman-style carpentry runs
-                  R550-R750 per hour. Specialist work like door installation, built-in cupboards, and
-                  kitchen cabinetry is quoted per project. Emergency callouts range from R850-R2,200
-                  depending on time of day. We always provide an on-site quote before starting any
-                  work — no surprise invoices.
+                  Cost depends on job scope — a small repair is priced differently to a full kitchen
+                  renovation. We always provide a clear, written on-site quote before starting any work,
+                  so you know the price upfront with no surprise invoices.
                 </p>
               </CardContent>
             </Card>
@@ -694,32 +662,14 @@ export default function CarpenterNearMeJohannesburgPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Yes — broken door repairs are one of our most common same-day and emergency jobs
-                  across Johannesburg. Whether your door won't close, has fallen off its hinges,
-                  or was damaged in a break-in, our{" "}
-                  <Link href="/door-repair-gauteng" className="text-primary hover:underline">
-                    door repair team
+                  Broken door repairs are one of our most common same-day jobs across Johannesburg.
+                  Whether your door won't close, has fallen off its hinges, or was damaged in a
+                  break-in, our{" "}
+                  <Link href="/door-installation" className="text-primary hover:underline">
+                    door installation and repair team
                   </Link>{" "}
-                  is available same-day and 24/7 for emergencies. We carry hinges, locks, and
-                  hardware in our vans for immediate on-site repairs.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>What's the difference between a handyman and a carpenter near me?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  A handyman covers a broad range of small maintenance tasks around your home — shelves,
-                  minor repairs, installations. A carpenter specialises in woodwork, cabinetry, doors,
-                  and structural joinery. We offer both — our{" "}
-                  <Link href="/handyman-services-johannesburg" className="text-primary hover:underline">
-                    handyman service
-                  </Link>{" "}
-                  handles general home maintenance, while our specialist carpenters handle kitchens,
-                  cupboards, doors, and renovations. One call covers both.
+                  is available same-day in most areas. We carry hinges, locks, and hardware in our
+                  vans for on-site repairs.
                 </p>
               </CardContent>
             </Card>
@@ -734,16 +684,12 @@ export default function CarpenterNearMeJohannesburgPage() {
                   <Link href="/kitchen-renovations" className="text-primary hover:underline">
                     kitchen renovations
                   </Link>{" "}
-                  across Johannesburg and Gauteng. From{" "}
-                  <Link href="/kitchen-cupboards" className="text-primary hover:underline">
-                    custom kitchen cupboards
-                  </Link>{" "}
-                  to{" "}
-                  <Link href="/granite-countertops" className="text-primary hover:underline">
-                    granite countertop installation
+                  across Johannesburg and Gauteng, including{" "}
+                  <Link href="/built-in-cupboards" className="text-primary hover:underline">
+                    custom kitchen cabinetry
                   </Link>
-                  , we handle every element of your kitchen in-house. We start with a free in-home
-                  consultation and design visit — call us to book yours.
+                  , handled in-house from design through to installation. We start with a free
+                  in-home consultation and design visit — call us to book yours.
                 </p>
               </CardContent>
             </Card>
@@ -754,10 +700,11 @@ export default function CarpenterNearMeJohannesburgPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  We are a registered Johannesburg business with 20+ years of trading history, thousands
-                  of completed jobs across Gauteng, and a real physical presence in the area. We're not
-                  an app or platform connecting you to unknown contractors — our tradespeople are vetted,
-                  experienced, and employed by us directly. You can check our work on our{" "}
+                  We are a Johannesburg-based business with 10+ years of hands-on carpentry
+                  experience and a growing track record of completed projects across Gauteng.
+                  We're not an app or platform connecting you to unknown contractors — our
+                  tradespeople are experienced and work directly for us. You can check our work on
+                  our{" "}
                   <Link href="/portfolio" className="text-primary hover:underline">
                     portfolio page
                   </Link>{" "}
@@ -829,7 +776,7 @@ export default function CarpenterNearMeJohannesburgPage() {
             Your Local Carpenter is One Call Away
           </h2>
           <p className="text-xl mb-8 text-zinc-300">
-            Whatever you need — emergency repair, same-day fix, or a full renovation — we're
+            Whatever you need — a quick repair, a same-day fix, or a full renovation — we're
             nearby, ready, and trusted across Johannesburg and Gauteng.
           </p>
 
@@ -850,7 +797,7 @@ export default function CarpenterNearMeJohannesburgPage() {
                 <Clock className="h-8 w-8 mx-auto mb-2 text-yellow-500" />
                 <CardTitle>Response Time</CardTitle>
                 <CardDescription className="text-zinc-300 font-semibold">
-                  60 mins for emergencies
+                  Around 60 mins for urgent jobs, area dependent
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -879,7 +826,7 @@ export default function CarpenterNearMeJohannesburgPage() {
           </Button>
 
           <p className="mt-6 text-sm text-zinc-400">
-            Available 24/7 for emergencies • Same-day bookings • All of Gauteng covered
+            Same-day bookings where possible • All of Gauteng covered
           </p>
         </div>
       </section>

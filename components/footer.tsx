@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Star, ShieldCheck, Hammer, Users } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Star, ShieldCheck, Hammer, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 
@@ -49,6 +49,14 @@ export function Footer() {
     { name: "Contact", href: "/contact" },
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms of Service", href: "/terms" },
+  ]
+
+  // Real, confirmed accounts.
+  const socialLinks = [
+    { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61591863510143", icon: Facebook },
+    { name: "Instagram", href: "https://www.instagram.com/timberstudioza_/", icon: Instagram },
+    { name: "Pinterest", href: "https://za.pinterest.com/timberstudio/", icon: PinterestIcon },
+    { name: "LinkedIn", href: "https://www.linkedin.com/company/timberstudio/", icon: Linkedin },
   ]
 
   return (
@@ -164,22 +172,23 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Social Media — confirm these accounts exist before linking to them */}
-            <div className="flex space-x-4">
-              <a
-                href="https://facebook.com/timberstudio"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10 transition-colors hover:bg-copper"
-                aria-label="Follow us on Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="https://instagram.com/timberstudio"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10 transition-colors hover:bg-copper"
-                aria-label="Follow us on Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
+            {/* Social Media — real, confirmed accounts */}
+            <div>
+              <p className="mb-3 text-sm font-semibold text-gold-light">Please follow us on our new socials!</p>
+              <div className="flex space-x-4">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10 transition-colors hover:bg-copper"
+                    aria-label={`Follow us on ${social.name}`}
+                  >
+                    <social.icon className="h-5 w-5" />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -292,5 +301,26 @@ export function Footer() {
         </div>
       </div>
     </footer>
+  )
+}
+
+// lucide-react doesn't ship a Pinterest icon, so this is a small inline SVG
+// styled to match the other icons' 24x24 viewBox and stroke conventions.
+function PinterestIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M8 20c.5-2 1.5-6.5 1.5-6.5" />
+      <path d="M9.5 13.5C9 12.5 9 11 9 11c0-2 1.5-4 4-4 3 0 4.5 2 4.5 4.5 0 3-1.5 5.5-4 5.5-1 0-1.8-.5-2-1" />
+      <circle cx="12" cy="12" r="10" />
+    </svg>
   )
 }

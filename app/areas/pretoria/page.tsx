@@ -10,20 +10,20 @@ export const metadata: Metadata = {
   title:
     "Best Carpenter Pretoria 2026 | Kitchen Renovations & Built-in Cupboards | Free Quote",
   description:
-    "★★★★★ #1 Carpenter & Plumber in Pretoria & Centurion. Expert kitchen renovations, built-in cupboards & 24/7 emergency plumbing. Licensed & insured. Call 067 601 4490 for same-day quotes.",
+    "★★★★★ #1 Carpenter & Plumber in Pretoria & Centurion. Expert kitchen renovations, built-in cupboards & 24/7 emergency plumbing. Licensed & insured. Call 063 397 7498 for same-day quotes.",
   keywords:
     "carpenter Pretoria, kitchen renovation Pretoria Centurion, carpenter Waterkloof, carpenter Lynnwood, carpenter Menlyn, carpenter Groenkloof, carpenter Faerie Glen, carpenter Sunnyside, built-in cupboards Pretoria, granite installation Pretoria, plumber Pretoria, carpenter near me Pretoria",
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/pretoria",
+    canonical: "https://www.timberstudio.co.za/areas/pretoria",
   },
   openGraph: {
     title: "Best Carpenter Pretoria 2026 | Kitchen Renovations & Built-in Cupboards",
     description:
-      "★★★★★ #1 Carpenter & Plumber serving Pretoria & Centurion. Expert kitchen renovations, granite installation & 24/7 emergency plumbing. Free quotes. Call 067 601 4490",
-    url: "https://granitecarpentry.co.za/areas/pretoria",
+      "★★★★★ #1 Carpenter & Plumber serving Pretoria & Centurion. Expert kitchen renovations, granite installation & 24/7 emergency plumbing. Free quotes. Call 063 397 7498",
+    url: "https://www.timberstudio.co.za/areas/pretoria",
     images: [
       {
-        url: "https://granitecarpentry.co.za/carpenter-johannesburg-installing-kitchen-cupboards.jpg",
+        url: "https://www.timberstudio.co.za/carpenter-johannesburg-installing-kitchen-cupboards.jpg",
         width: 1200,
         height: 630,
         alt: "Best Carpenter Pretoria - Kitchen Renovation & Built-in Cupboards",
@@ -38,10 +38,10 @@ const schemaMarkup = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://granitecarpentry.co.za/#localbusiness",
-      "name": "Granite Carpentry - Pretoria Carpenter & Plumber",
-      "image": "https://granitecarpentry.co.za/carpenter-johannesburg-installing-kitchen-cupboards.jpg",
-      "telephone": "+27676014490",
+      "@id": "https://www.timberstudio.co.za/#localbusiness",
+      "name": "The Timber Studio - Pretoria Carpenter & Plumber",
+      "image": "https://www.timberstudio.co.za/carpenter-johannesburg-installing-kitchen-cupboards.jpg",
+      "telephone": "+27633977498",
       "priceRange": "R380-R22000",
       "address": {
         "@type": "PostalAddress",
@@ -54,7 +54,7 @@ const schemaMarkup = {
         "latitude": "-25.7479",
         "longitude": "28.2293"
       },
-      "url": "https://granitecarpentry.co.za/areas/pretoria",
+      "url": "https://www.timberstudio.co.za/areas/pretoria",
       "areaServed": [
         "Pretoria", "Brooklyn", "Hatfield", "Menlyn", "Waterkloof", "Centurion", 
         "Lynnwood", "Groenkloof", "Faerie Glen", "Sunnyside", "Tshwane"
@@ -70,7 +70,7 @@ const schemaMarkup = {
               "name": "Kitchen Renovation Pretoria",
               "description": "Complete kitchen renovations including cabinets, granite, and plumbing",
               "provider": {
-                "@id": "https://granitecarpentry.co.za/#localbusiness"
+                "@id": "https://www.timberstudio.co.za/#localbusiness"
               }
             }
           },
@@ -81,7 +81,7 @@ const schemaMarkup = {
               "name": "Built-in Cupboards Pretoria",
               "description": "Custom wardrobes, closets, and storage solutions",
               "provider": {
-                "@id": "https://granitecarpentry.co.za/#localbusiness"
+                "@id": "https://www.timberstudio.co.za/#localbusiness"
               }
             }
           }
@@ -99,29 +99,6 @@ const schemaMarkup = {
           "dayOfWeek": "Saturday",
           "opens": "08:00",
           "closes": "14:00"
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://granitecarpentry.co.za/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://granitecarpentry.co.za"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Areas",
-          "item": "https://granitecarpentry.co.za/areas"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Pretoria Carpenter & Plumber"
         }
       ]
     }
@@ -173,9 +150,9 @@ export default function PretoriaPage() {
                   asChild
                   className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <a href="tel:+27676014490">
+                  <a href="tel:+27633977498">
                     <Phone className="mr-2 w-5 h-5" />
-                    Call: 067 601 4490
+                    Call: 063 397 7498
                   </a>
                 </Button>
               </div>
@@ -399,7 +376,7 @@ export default function PretoriaPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R22,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/kitchen-renovations">View Details</Link>
+                    <Link href="/kitchen-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -433,7 +410,7 @@ export default function PretoriaPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R12,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/built-in-cupboards">View Details</Link>
+                    <Link href="/built-in-cupboards">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -467,7 +444,7 @@ export default function PretoriaPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R7,500</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/quartz-granite">View Details</Link>
+                    <Link href="/kitchen-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -501,7 +478,7 @@ export default function PretoriaPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R380/hour</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/plumbing">View Details</Link>
+                    <Link href="/bathroom-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -535,7 +512,7 @@ export default function PretoriaPage() {
                 </p>
                 <p className="font-semibold text-slate-800">John D.</p>
                 <p className="text-sm text-slate-600">Brooklyn, Pretoria</p>
-                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - December 2024</p>
+                <p className="text-xs text-slate-500 mt-1">Kitchen Renovation - May 2026</p>
               </CardContent>
             </Card>
 
@@ -567,7 +544,7 @@ export default function PretoriaPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Michael R.</p>
                 <p className="text-sm text-slate-600">Centurion</p>
-                <p className="text-xs text-slate-500 mt-1">Granite Countertops - November 2024</p>
+                <p className="text-xs text-slate-500 mt-1">Granite Countertops - February 2026</p>
               </CardContent>
             </Card>
 
@@ -583,7 +560,7 @@ export default function PretoriaPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Linda K.</p>
                 <p className="text-sm text-slate-600">Menlyn, Pretoria</p>
-                <p className="text-xs text-slate-500 mt-1">Emergency Plumbing - December 2024</p>
+                <p className="text-xs text-slate-500 mt-1">Emergency Plumbing - May 2026</p>
               </CardContent>
             </Card>
 
@@ -615,7 +592,7 @@ export default function PretoriaPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Jennifer S.</p>
                 <p className="text-sm text-slate-600">Groenkloof, Pretoria</p>
-                <p className="text-xs text-slate-500 mt-1">Wardrobes - December 2024</p>
+                <p className="text-xs text-slate-500 mt-1">Wardrobes - May 2026</p>
               </CardContent>
             </Card>
           </div>
@@ -667,7 +644,7 @@ export default function PretoriaPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700">
-                  Yes! We provide free same-day quotes for all carpentry and plumbing services throughout Pretoria, Centurion, and Tshwane. Call us at 067 601 4490 before 2pm and we can often visit your property the same day. For kitchen renovations, built-in cupboards, granite installations, or any carpentry work in areas like Waterkloof, Groenkloof, Faerie Glen, Sunnyside, Hatfield, or Menlyn, we'll assess your project and provide a detailed written quote within 24 hours. Emergency plumbing quotes are provided immediately.
+                  Yes! We provide free same-day quotes for all carpentry and plumbing services throughout Pretoria, Centurion, and Tshwane. Call us at 063 397 7498 before 2pm and we can often visit your property the same day. For kitchen renovations, built-in cupboards, granite installations, or any carpentry work in areas like Waterkloof, Groenkloof, Faerie Glen, Sunnyside, Hatfield, or Menlyn, we'll assess your project and provide a detailed written quote within 24 hours. Emergency plumbing quotes are provided immediately.
                 </p>
               </CardContent>
             </Card>
@@ -723,7 +700,7 @@ export default function PretoriaPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700">
-                  Yes! We offer 24/7 emergency plumbing services throughout Pretoria, Centurion, and all Tshwane areas. Whether you're in Menlyn, Waterkloof, Brooklyn, Lynnwood, or any other Pretoria suburb, our emergency plumbers can respond quickly to burst pipes, blocked drains, geyser failures, and other urgent plumbing issues. Call 067 601 4490 anytime for immediate assistance. We aim to arrive within 60 minutes for true emergencies in the greater Pretoria area.
+                  Yes! We offer 24/7 emergency plumbing services throughout Pretoria, Centurion, and all Tshwane areas. Whether you're in Menlyn, Waterkloof, Brooklyn, Lynnwood, or any other Pretoria suburb, our emergency plumbers can respond quickly to burst pipes, blocked drains, geyser failures, and other urgent plumbing issues. Call 063 397 7498 anytime for immediate assistance. We aim to arrive within 60 minutes for true emergencies in the greater Pretoria area.
                 </p>
               </CardContent>
             </Card>
@@ -819,9 +796,9 @@ export default function PretoriaPage() {
               asChild
               className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-4 bg-transparent"
             >
-              <a href="tel:+27676014490">
+              <a href="tel:+27633977498">
                 <Phone className="mr-2 w-5 h-5" />
-                Call: 067 601 4490
+                Call: 063 397 7498
               </a>
             </Button>
           </div>

@@ -12,5 +12,5 @@ Disallow: /admin/
 Disallow: /_next/
 Disallow: /api/
 
-Sitemap: https://granitecarpentry.co.za/sitemap.xml
-Host: https://granitecarpentry.co.za
+Sitemap: https://www.timberstudio.co.za/sitemap.xml
+Host: https://www.timberstudio.co.za

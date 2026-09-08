@@ -9,20 +9,20 @@ import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, 
 export const metadata: Metadata = {
   title: "Carpenter Sandhurst 2026 | Kitchen Renovations & Built-in Cupboards | Same Day Quotes",
   description:
-    "★★★★★ #1 Carpenter in Sandhurst. Expert kitchen renovations, luxury built-in cupboards & granite installations. 50+ completed Sandhurstprojects. Licensed & insured. Call 067 601 4490",
+    "★★★★★ #1 Carpenter in Sandhurst. Expert kitchen renovations, luxury built-in cupboards & granite installations. 50+ completed Sandhurstprojects. Licensed & insured. Call 063 397 7498",
   keywords:
     "carpenter Sandhurst, kitchen renovation Sandhurst, built-in cupboards Sandhurst, granite installation Sandhurst, carpenter near me Sandhurst, Sandhurstcarpenter, kitchen cabinets Sandhurst, cupboards Sandhurst, best carpenter Sandhurst",
   alternates: {
-    canonical: "https://granitecarpentry.co.za/carpenter-sandhurst",
+    canonical: "https://www.timberstudio.co.za/carpenter-sandhurst",
   },
   openGraph: {
     title: "Carpenter Sandhurst 2026 | Kitchen Renovations & Built-in Cupboards",
     description:
-      "★★★★★ #1 Carpenter in Sandhurst. Expert kitchen renovations, luxury built-in cupboards & granite installations. Call 067 601 4490",
-    url: "https://granitecarpentry.co.za/carpenter-sandhurst",
+      "★★★★★ #1 Carpenter in Sandhurst. Expert kitchen renovations, luxury built-in cupboards & granite installations. Call 063 397 7498",
+    url: "https://www.timberstudio.co.za/carpenter-sandhurst",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granite-installation-sandton.jpg",
+        url: "https://www.timberstudio.co.za/granite-installation-sandton.jpg",
         width: 1200,
         height: 630,
         alt: "Carpenter Sandhurst- Kitchen Renovation & Built-in Cupboards",
@@ -37,10 +37,10 @@ const schemaMarkup = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://granitecarpentry.co.za/#carpenter-sandhurst",
-      "name": "Granite Carpentry - Sandhurst Carpenter",
-      "image": "https://granitecarpentry.co.za/granite-installation-sandton.jpg",
-      "telephone": "+27676014490",
+      "@id": "https://www.timberstudio.co.za/#carpenter-sandhurst",
+      "name": "The Timber Studio - Sandhurst Carpenter",
+      "image": "https://www.timberstudio.co.za/granite-installation-sandton.jpg",
+      "telephone": "+27633977498",
       "priceRange": "R400-R25000",
       "address": {
         "@type": "PostalAddress",
@@ -54,7 +54,7 @@ const schemaMarkup = {
         "latitude": "-26.108",
         "longitude": "28.044"
       },
-      "url": "https://granitecarpentry.co.za/carpenter-sandhurst",
+      "url": "https://www.timberstudio.co.za/carpenter-sandhurst",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
@@ -80,29 +80,6 @@ const schemaMarkup = {
           "closes": "14:00"
         }
       ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://granitecarpentry.co.za/#breadcrumb-sandhurst",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://granitecarpentry.co.za"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Sandton Areas",
-          "item": "https://granitecarpentry.co.za/areas/sandton"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Carpenter Sandhurst"
-        }
-      ]
     }
   ]
 }
@@ -115,24 +92,6 @@ export default function CarpenterSandhurstPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
-
-      {/* Breadcrumb Navigation */}
-      <section className="bg-slate-50 py-4">
-        <div className="container mx-auto">
-          <nav className="flex items-center text-sm text-slate-600">
-            <Link href="/" className="hover:text-amber-600 flex items-center">
-              <Home className="w-4 h-4 mr-1" />
-              Home
-            </Link>
-            <span className="mx-2">/</span>
-            <Link href="/areas/sandton" className="hover:text-amber-600">
-              Sandton
-            </Link>
-            <span className="mx-2">/</span>
-            <span className="text-slate-900 font-medium">Carpenter Sandhurst</span>
-          </nav>
-        </div>
-      </section>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-white py-16 sm:py-20 md:py-24">
@@ -170,9 +129,9 @@ export default function CarpenterSandhurstPage() {
                   asChild
                   className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <a href="tel:+27676014490">
+                  <a href="tel:+27633977498">
                     <Phone className="mr-2 w-5 h-5" />
-                    Call: 067 601 4490
+                    Call: 063 397 7498
                   </a>
                 </Button>
               </div>
@@ -511,7 +470,7 @@ export default function CarpenterSandhurstPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Sarah K.</p>
                 <p className="text-sm text-slate-600">SandhurstCountry Estate, Sandhurst</p>
-                <p className="text-xs text-slate-500 mt-1">Kitchen Island - December 2025</p>
+                <p className="text-xs text-slate-500 mt-1">Kitchen Island - April 2026</p>
               </CardContent>
             </Card>
 
@@ -527,7 +486,7 @@ export default function CarpenterSandhurstPage() {
                 </p>
                 <p className="font-semibold text-slate-800">Michael R.</p>
                 <p className="text-sm text-slate-600">44 Stanley, Sandhurst</p>
-                <p className="text-xs text-slate-500 mt-1">Built-in Wardrobes - November 2025</p>
+                <p className="text-xs text-slate-500 mt-1">Built-in Wardrobes - March 2026</p>
               </CardContent>
             </Card>
           </div>
@@ -601,7 +560,7 @@ export default function CarpenterSandhurstPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700 text-sm">
-                  Yes! Based nearby in Sandton, we can typically reach Sandhurst properties within 30-45 minutes. Call us at 067 601 4490 before 2pm and we can often visit your Sandhurst property the same day. We provide detailed written quotes within 24 hours covering materials, labor, and timeline. Emergency plumbing quotes are provided immediately upon arrival.
+                  Yes! Based nearby in Sandton, we can typically reach Sandhurst properties within 30-45 minutes. Call us at 063 397 7498 before 2pm and we can often visit your Sandhurst property the same day. We provide detailed written quotes within 24 hours covering materials, labor, and timeline. Emergency plumbing quotes are provided immediately upon arrival.
                 </p>
               </CardContent>
             </Card>
@@ -643,7 +602,7 @@ export default function CarpenterSandhurstPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700 text-sm">
-                  Yes! We provide 24/7 emergency plumbing services throughout Sandhurst. Whether you're in The Zone, 44 Stanley, or anywhere in Sandhurst, we aim to arrive within 30-45 minutes for genuine emergencies like burst pipes, geyser failures, or major leaks. Call 067 601 4490 anytime. We understand the urgency in apartment buildings where leaks can affect multiple units.
+                  Yes! We provide 24/7 emergency plumbing services throughout Sandhurst. Whether you're in The Zone, 44 Stanley, or anywhere in Sandhurst, we aim to arrive within 30-45 minutes for genuine emergencies like burst pipes, geyser failures, or major leaks. Call 063 397 7498 anytime. We understand the urgency in apartment buildings where leaks can affect multiple units.
                 </p>
               </CardContent>
             </Card>
@@ -806,9 +765,9 @@ export default function CarpenterSandhurstPage() {
               asChild
               className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-4 bg-transparent"
             >
-              <a href="tel:+27676014490">
+              <a href="tel:+27633977498">
                 <Phone className="mr-2 w-5 h-5" />
-                Call: 067 601 4490
+                Call: 063 397 7498
               </a>
             </Button>
           </div>

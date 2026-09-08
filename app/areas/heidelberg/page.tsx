@@ -21,23 +21,23 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Historic Carpenter & Plumber Heidelberg | Traditional Carpentry, Granite Installation & Heritage Plumbing | Granite Carpentry",
+    "Historic Carpenter & Plumber Heidelberg | Traditional Carpentry, Granite Installation & Heritage Plumbing | The Timber Studio",
   description:
-    "Historic carpenter & plumber services in Heidelberg. Traditional carpentry, kitchen renovations, built-in cupboards, granite installation & heritage plumbing. Licensed & insured with historic expertise. Call 067 601 4490 for free quote.",
+    "Historic carpenter & plumber services in Heidelberg. Traditional carpentry, kitchen renovations, built-in cupboards, granite installation & heritage plumbing. Licensed & insured with historic expertise. Call 063 397 7498 for free quote.",
   keywords:
     "carpenter Heidelberg, historic plumber Heidelberg, traditional carpentry Heidelberg, kitchen renovations Heidelberg, built-in cupboards Heidelberg, granite installation Heidelberg, heritage plumbing Heidelberg",
   openGraph: {
     title: "Historic Carpenter & Plumber Heidelberg | Traditional Carpentry & Granite Installation",
     description:
       "Historic carpenter & plumber services in Heidelberg. Traditional carpentry, kitchen renovations, built-in cupboards, granite installation & heritage plumbing. Licensed & insured with historic expertise.",
-    url: "https://granitecarpentry.co.za/areas/heidelberg",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/areas/heidelberg",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://www.timberstudio.co.za/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "Historic Carpenter & Plumber Heidelberg - Granite Carpentry",
+        alt: "Historic Carpenter & Plumber Heidelberg - The Timber Studio",
       },
     ],
     locale: "en_ZA",
@@ -48,10 +48,10 @@ export const metadata: Metadata = {
     title: "Historic Carpenter & Plumber Heidelberg | Traditional Carpentry & Granite Installation",
     description:
       "Historic carpenter & plumber services in Heidelberg. Traditional carpentry, kitchen renovations, built-in cupboards, granite installation & heritage plumbing. Licensed & insured with historic expertise.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://www.timberstudio.co.za/timber-studio-logo.png"],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/heidelberg",
+    canonical: "https://www.timberstudio.co.za/areas/heidelberg",
   },
 }
 
@@ -62,7 +62,7 @@ export default function HeidelbergPage() {
       description:
         "Traditional kitchen makeovers that honor Heidelberg's historic character with modern functionality.",
       image: "/Kitchen-renovations-sandton.webp",
-      href: "/services/kitchen-renovations",
+      href: "/kitchen-renovations",
       price: "From R51,000",
       duration: "8-15 days",
     },
@@ -70,7 +70,7 @@ export default function HeidelbergPage() {
       title: "Heritage Built-in Cupboards Heidelberg",
       description: "Classic custom wardrobes and storage solutions that reflect Heidelberg's historic charm.",
       image: "/Built-Built-in-Cupboards-Midrand.jpg",
-      href: "/services/built-in-cupboards",
+      href: "/built-in-cupboards",
       price: "From R15,500",
       duration: "4-8 days",
     },
@@ -78,7 +78,7 @@ export default function HeidelbergPage() {
       title: "Traditional Granite Installation Heidelberg",
       description: "Premium granite and quartz installations that complement Heidelberg's historic architecture.",
       image: "/granite-installation-Johannesburg.jpg",
-      href: "/services/quartz-granite",
+      href: "/kitchen-renovations",
       price: "From R9,000",
       duration: "3-6 days",
     },
@@ -86,7 +86,7 @@ export default function HeidelbergPage() {
       title: "Historic Decking & Flooring Heidelberg",
       description: "Traditional outdoor decking and flooring solutions for Heidelberg's historic properties.",
       image: "/beautiful-decking.jpg",
-      href: "/services/decking-flooring",
+      href: "/decking-flooring",
       price: "From R13,500",
       duration: "4-9 days",
     },
@@ -95,7 +95,7 @@ export default function HeidelbergPage() {
       description:
         "Traditional plumbing services that respect Heidelberg's historic character while providing modern functionality.",
       image: "/granite-installation-Johannesburg.jpg",
-      href: "/services/plumbing",
+      href: "/bathroom-renovations",
       price: "From R380/hour",
       duration: "Heritage Service",
     },
@@ -214,7 +214,7 @@ export default function HeidelbergPage() {
                   size="lg"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
 
@@ -456,7 +456,7 @@ export default function HeidelbergPage() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498</Link>
             </Button>
           </div>
         </div>

@@ -22,20 +22,20 @@ export const metadata: Metadata = {
   title:
     "Best Carpenter & Plumber Midrand 2026 | Kitchen Renovations, Commercial Carpentry & Business Plumbing | Free Quotes",
   description:
-    "★★★★★ #1 Rated Carpenter & Plumber in Midrand business hub. Expert kitchen renovations, commercial carpentry, built-in solutions & business plumbing services. Serving Fourways, Waterfall City, Grand Central. Licensed & insured. Call 067 601 4490",
+    "★★★★★ #1 Rated Carpenter & Plumber in Midrand business hub. Expert kitchen renovations, commercial carpentry, built-in solutions & business plumbing services. Serving Fourways, Waterfall City, Grand Central. Licensed & insured. Call 063 397 7498",
   keywords:
     "carpenter Midrand, plumber Midrand, kitchen renovation Midrand, commercial carpentry Midrand, built-in cupboards Midrand, business plumbing Midrand, carpenter Fourways, carpenter Waterfall City, kitchen cabinets Midrand, office carpentry Midrand, best carpenter Midrand, affordable carpenter Midrand, Midrand kitchen contractor, business carpentry Midrand, commercial plumbing Midrand",
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/midrand",
+    canonical: "https://www.timberstudio.co.za/areas/midrand",
   },
   openGraph: {
     title: "Best Carpenter & Plumber Midrand 2026 | Kitchen Renovations & Commercial Carpentry",
     description:
-      "★★★★★ #1 Rated Carpenter & Plumber in Midrand. Expert kitchen renovations, commercial carpentry & business plumbing services. Free quotes. Call 067 601 4490",
-    url: "https://granitecarpentry.co.za/areas/midrand",
+      "★★★★★ #1 Rated Carpenter & Plumber in Midrand. Expert kitchen renovations, commercial carpentry & business plumbing services. Free quotes. Call 063 397 7498",
+    url: "https://www.timberstudio.co.za/areas/midrand",
     images: [
       {
-        url: "https://granitecarpentry.co.za/professional-carpenter-midrand.jpeg",
+        url: "https://www.timberstudio.co.za/professional-carpenter-midrand.jpeg",
         width: 1200,
         height: 630,
         alt: "Best Carpenter & Plumber Midrand - Kitchen Renovation & Commercial Carpentry Services",
@@ -84,9 +84,9 @@ export default function MidrandPage() {
                   asChild
                   className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <a href="tel:+27676014490">
+                  <a href="tel:+27633977498">
                     <Phone className="mr-2 w-5 h-5" />
-                    Call: 067 601 4490
+                    Call: 063 397 7498
                   </a>
                 </Button>
               </div>
@@ -211,7 +211,7 @@ export default function MidrandPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R19,000</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/kitchen-renovations">View Details</Link>
+                    <Link href="/kitchen-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -281,7 +281,7 @@ export default function MidrandPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R9,500</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/built-in-cupboards">View Details</Link>
+                    <Link href="/built-in-cupboards">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -316,7 +316,7 @@ export default function MidrandPage() {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-amber-600">From R390/hour</span>
                   <Button asChild variant="outline" size="sm">
-                    <Link href="/services/plumbing">View Details</Link>
+                    <Link href="/bathroom-renovations">View Details</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -399,9 +399,9 @@ export default function MidrandPage() {
               asChild
               className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-4 bg-transparent"
             >
-              <a href="tel:+27676014490">
+              <a href="tel:+27633977498">
                 <Phone className="mr-2 w-5 h-5" />
-                Call: 067 601 4490
+                Call: 063 397 7498
               </a>
             </Button>
           </div>

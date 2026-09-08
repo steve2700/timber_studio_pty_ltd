@@ -1,5 +1,47 @@
 import type { Config } from "tailwindcss"
 
+// The Timber Studio brand scales.
+// Off-palette Tailwind color families (blue, green, yellow, gray, etc.) are aliased
+// to these so every legacy utility class renders in the new brand palette.
+const copperScale = {
+  50: "#faf3ec",
+  100: "#f2e4d6",
+  200: "#e7cbb0",
+  300: "#dec084",
+  400: "#c6a15b",
+  500: "#c98356",
+  600: "#b36a3d",
+  700: "#8a4e2a",
+  800: "#6f3e22",
+  900: "#4a2f1c",
+}
+
+const goldScale = {
+  50: "#faf5ea",
+  100: "#f4ead0",
+  200: "#ecd9a8",
+  300: "#dec084",
+  400: "#c6a15b",
+  500: "#b98f45",
+  600: "#a07636",
+  700: "#7e5c2c",
+  800: "#5f4623",
+  900: "#4a2f1c",
+}
+
+const neutralScale = {
+  50: "#fbf8f2",
+  100: "#f4efe6",
+  200: "#e6ddce",
+  300: "#d2c6b2",
+  400: "#a99c87",
+  500: "#7c6f5c",
+  600: "#5a4b3a",
+  700: "#3e3226",
+  800: "#2a231b",
+  900: "#1c1b19",
+}
+
 const config = {
   darkMode: ["class"],
   content: [
@@ -53,30 +95,48 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        amber: {
-          50: "#fffbeb",
-          100: "#fef3c7",
-          200: "#fde68a",
-          300: "#fcd34d",
-          400: "#fbbf24",
-          500: "#f59e0b",
-          600: "#d97706",
-          700: "#b45309",
-          800: "#92400e",
-          900: "#78350f",
+        // Primary accent (copper -> gold) mapped onto former accent families.
+        amber: copperScale,
+        orange: copperScale,
+        red: copperScale,
+        rose: copperScale,
+        pink: copperScale,
+        blue: copperScale,
+        sky: copperScale,
+        indigo: copperScale,
+        violet: copperScale,
+        purple: copperScale,
+        cyan: copperScale,
+        teal: copperScale,
+        emerald: copperScale,
+        green: copperScale,
+        // Secondary accent (gold) mapped onto former warm-highlight families.
+        yellow: goldScale,
+        lime: goldScale,
+        // Neutrals (paper/cream -> walnut/charcoal) mapped onto former neutral families.
+        slate: neutralScale,
+        gray: neutralScale,
+        zinc: neutralScale,
+        neutral: neutralScale,
+        stone: neutralScale,
+        // Named brand tokens for intentional use.
+        charcoal: "#1c1b19",
+        copper: {
+          DEFAULT: "#b36a3d",
+          light: "#c98356",
+          dark: "#8a4e2a",
         },
-        slate: {
-          50: "#f8fafc",
-          100: "#f1f5f9",
-          200: "#e2e8f0",
-          300: "#cbd5e1",
-          400: "#94a3b8",
-          500: "#64748b",
-          600: "#475569",
-          700: "#334155",
-          800: "#1e293b",
-          900: "#0f172a",
+        gold: {
+          DEFAULT: "#c6a15b",
+          light: "#dec084",
         },
+        walnut: "#4a2f1c",
+        cream: "#f4efe6",
+        paper: "#fbf8f2",
+      },
+      fontFamily: {
+        sans: ["var(--font-manrope)", "ui-sans-serif", "system-ui", "sans-serif"],
+        serif: ["var(--font-fraunces)", "ui-serif", "Georgia", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

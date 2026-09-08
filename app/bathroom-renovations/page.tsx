@@ -21,20 +21,20 @@ import { Button } from "@/components/ui/button"
 export const metadata: Metadata = {
   title: "★★★★★ Complete Bathroom Renovations Johannesburg 2026 | Professional Design & Installation",
   description:
-    "★★★★★ Professional bathroom renovations in Johannesburg, Sandton & Pretoria. Complete bathroom makeovers. Quality workmanship. Free quotes. 20+ years experience. Call 067 601 4490.",
+    "★★★★★ Professional bathroom renovations in Johannesburg, Sandton & Pretoria. Complete bathroom makeovers. Quality workmanship. Free quotes. 20+ years experience. Call 063 397 7498.",
   keywords:
     "bathroom renovations Johannesburg, bathroom makeover Johannesburg, bathroom renovation Sandton, ensuite renovation Pretoria, bathroom design Johannesburg, bathroom installation, luxury bathroom renovation, small bathroom renovation, bathroom plumbing, bathroom tiles Johannesburg",
   openGraph: {
-    title: "Complete Bathroom Renovations Johannesburg | Granite Carpentry",
+    title: "Complete Bathroom Renovations Johannesburg | The Timber Studio",
     description:
       "Professional bathroom renovations in Johannesburg, Sandton & Pretoria. Complete bathroom makeovers with quality workmanship and 20+ years experience.",
-    url: "https://granitecarpentry.co.za/bathroom-renovations",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/bathroom-renovations",
+    siteName: "The Timber Studio",
     locale: "en_ZA",
     type: "website",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/bathroom-renovations",
+    canonical: "https://www.timberstudio.co.za/bathroom-renovations",
   },
 }
 
@@ -283,9 +283,9 @@ export default function BathroomRenovationsPage() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" asChild className="bg-amber-500 hover:bg-amber-600 text-white">
-                <Link href="tel:0676014490">
+                <Link href="tel:0633977498">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call 067 601 4490
+                  Call 063 397 7498
                 </Link>
               </Button>
               <Button
@@ -758,7 +758,7 @@ export default function BathroomRenovationsPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-slate-900">
-              Why Choose Granite Carpentry for Bathroom Renovations?
+              Why Choose The Timber Studio for Bathroom Renovations?
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card className="text-center hover:shadow-lg transition-shadow">
@@ -931,9 +931,9 @@ export default function BathroomRenovationsPage() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-blue-50">
-                <Link href="tel:0676014490">
+                <Link href="tel:0633977498">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call 067 601 4490
+                  Call 063 397 7498
                 </Link>
               </Button>
               <Button

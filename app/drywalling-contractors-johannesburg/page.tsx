@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     title: "Drywalling Contractors Johannesburg | Expert Drywall Services 2026",
     description:
       "Professional drywalling contractors in Johannesburg offering expert installation, repair, and finishing services for all property types.",
-    url: "https://granitecarpentry.co.za/drywalling-contractors-johannesburg",
-    siteName: "Granite Carpentry & Joinery Experts",
+    url: "https://www.timberstudio.co.za/drywalling-contractors-johannesburg",
+    siteName: "The Timber Studio & Joinery Experts",
     locale: "en_ZA",
     type: "website",
   },
@@ -38,7 +38,7 @@ export default function DrywallContractorsJohannesburg() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700 text-white">
-                <Link href="tel:+27676014490">
+                <Link href="tel:+27633977498">
                   <Phone className="mr-2 h-5 w-5" />
                   Call for Immediate Service
                 </Link>
@@ -519,9 +519,9 @@ export default function DrywallContractorsJohannesburg() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="bg-white text-amber-600 hover:bg-slate-100">
-                <Link href="tel:+27676014490">
+                <Link href="tel:+27633977498">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Now: 0676014490
+                  Call Now: 0633977498
                 </Link>
               </Button>
               <Button
@@ -544,12 +544,12 @@ export default function DrywallContractorsJohannesburg() {
             <div>
               <Phone className="h-8 w-8 mx-auto mb-3 text-amber-600" />
               <h3 className="font-semibold mb-2">Call Us</h3>
-              <p className="text-slate-600">0676014490</p>
+              <p className="text-slate-600">0633977498</p>
             </div>
             <div>
               <Mail className="h-8 w-8 mx-auto mb-3 text-amber-600" />
               <h3 className="font-semibold mb-2">Email Us</h3>
-              <p className="text-slate-600">info@granitecarpentry.co.za</p>
+              <p className="text-slate-600">info@timberstudio.co.za</p>
             </div>
             <div>
               <MapPin className="h-8 w-8 mx-auto mb-3 text-amber-600" />

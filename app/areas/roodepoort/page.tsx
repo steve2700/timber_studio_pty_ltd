@@ -61,9 +61,9 @@ export default function RoodepoortPage() {
                     asChild
                     className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto bg-transparent"
                   >
-                    <a href="tel:+27676014490">
+                    <a href="tel:+27633977498">
                       <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                      Call: 067 601 4490
+                      Call: 063 397 7498
                     </a>
                   </Button>
                   <Button
@@ -187,7 +187,7 @@ export default function RoodepoortPage() {
                   </li>
                 </ul>
                 <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <Link href="/services/quartz-granite">Learn More</Link>
+                  <Link href="/kitchen-renovations">Learn More</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -214,7 +214,7 @@ export default function RoodepoortPage() {
                   </li>
                 </ul>
                 <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <Link href="/services/kitchen-renovations">Learn More</Link>
+                  <Link href="/kitchen-renovations">Learn More</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -241,7 +241,7 @@ export default function RoodepoortPage() {
                   </li>
                 </ul>
                 <Button asChild variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <Link href="/services/plumbing">Learn More</Link>
+                  <Link href="/bathroom-renovations">Learn More</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -277,9 +277,9 @@ export default function RoodepoortPage() {
               asChild
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto bg-transparent"
             >
-              <a href="tel:+27676014490">
+              <a href="tel:+27633977498">
                 <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                Call: 067 601 4490
+                Call: 063 397 7498
               </a>
             </Button>
           </div>

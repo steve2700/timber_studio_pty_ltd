@@ -5,9 +5,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { FileText, Scale, Shield, AlertTriangle, Phone, Mail, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Granite Carpentry - Professional Carpentry Service Agreement 2026",
+  title: "Terms of Service | The Timber Studio - Professional Carpentry Service Agreement 2026",
   description:
-    "Granite Carpentry's comprehensive terms of service for kitchen renovations, built-in cupboards, and granite installations. Professional carpentry service agreements for Johannesburg customers.",
+    "The Timber Studio's comprehensive terms of service for kitchen renovations, built-in cupboards, and granite installations. Professional carpentry service agreements for Johannesburg customers.",
   keywords:
     "terms of service, carpentry service agreement, kitchen renovation terms, granite installation contract, built-in cupboards agreement, professional carpenter terms",
   robots: "index, follow",
@@ -79,7 +79,7 @@ export default function TermsPage() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-slate-700">
-                    By engaging Granite Carpentry for carpentry services, kitchen renovations, built-in cupboards, or
+                    By engaging The Timber Studio for carpentry services, kitchen renovations, built-in cupboards, or
                     granite installations, you agree to these terms of service. This agreement becomes effective when:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-slate-700">
@@ -110,7 +110,7 @@ export default function TermsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-700 mb-4">
-                    Granite Carpentry provides professional carpentry and installation services including:
+                    The Timber Studio provides professional carpentry and installation services including:
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -302,7 +302,7 @@ export default function TermsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-700 mb-4">
-                    Granite Carpentry's liability is limited to the value of the specific project or service provided.
+                    The Timber Studio's liability is limited to the value of the specific project or service provided.
                     We are not liable for:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-slate-700 mb-6">
@@ -316,7 +316,7 @@ export default function TermsPage() {
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                     <h4 className="font-semibold text-blue-800 mb-2">Insurance Coverage</h4>
                     <p className="text-blue-700 text-sm">
-                      Granite Carpentry maintains comprehensive public liability insurance and professional indemnity
+                      The Timber Studio maintains comprehensive public liability insurance and professional indemnity
                       coverage. Insurance certificates available upon request.
                     </p>
                   </div>
@@ -366,14 +366,14 @@ export default function TermsPage() {
                         <Mail className="w-5 h-5 text-amber-600 mr-3" />
                         <div>
                           <p className="font-semibold">Email</p>
-                          <p className="text-slate-600">info@granitecarpentry.co.za</p>
+                          <p className="text-slate-600">info@timberstudio.co.za</p>
                         </div>
                       </div>
                       <div className="flex items-center">
                         <Phone className="w-5 h-5 text-amber-600 mr-3" />
                         <div>
                           <p className="font-semibold">Phone</p>
-                          <p className="text-slate-600">067 601 4490</p>
+                          <p className="text-slate-600">063 397 7498</p>
                         </div>
                       </div>
                     </div>
@@ -392,7 +392,7 @@ export default function TermsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-700 mb-4">
-                    Granite Carpentry reserves the right to update these terms of service. Changes will be communicated
+                    The Timber Studio reserves the right to update these terms of service. Changes will be communicated
                     through:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-slate-700">
@@ -414,7 +414,7 @@ export default function TermsPage() {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-slate-800 mb-4">Ready to Start Your Carpentry Project?</h3>
                   <p className="text-slate-700 mb-6">
-                    Contact Granite Carpentry today for professional kitchen renovations, built-in cupboards, and
+                    Contact The Timber Studio today for professional kitchen renovations, built-in cupboards, and
                     granite installations across Johannesburg.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">

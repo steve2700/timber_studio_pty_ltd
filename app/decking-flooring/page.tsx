@@ -9,7 +9,7 @@ import { Phone, Star, CheckCircle, ArrowRight, Shield, Award, Clock, Users, MapP
 export const metadata: Metadata = {
   title: "Decking & Flooring Johannesburg 2026 | Professional Installation Services",
   description:
-    "Professional decking & flooring installation in Johannesburg. Wooden decking, laminate flooring, vinyl flooring. 5-star service, 24-month warranty. Free quotes. Call 067 601 4490.",
+    "Professional decking & flooring installation in Johannesburg. Wooden decking, laminate flooring, vinyl flooring. 5-star service, 24-month warranty. Free quotes. Call 063 397 7498.",
   keywords:
     "decking installation Johannesburg, wooden decking Johannesburg, flooring installation Sandton, laminate flooring Johannesburg, vinyl flooring Randburg, outdoor decking Midrand, deck builders Johannesburg, flooring contractors Sandton, wooden floors Johannesburg, composite decking installation, deck construction Johannesburg, flooring services Randburg, outdoor living spaces Johannesburg, deck repair Johannesburg, flooring renovation Sandton",
   openGraph: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: [{ url: "/decking-flooring.jpg", width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/services/decking-flooring",
+    canonical: "https://www.timberstudio.co.za/decking-flooring",
   },
 }
 
@@ -140,9 +140,9 @@ export default function DeckingFlooringPage() {
               "Professional decking and flooring installation services in Johannesburg including wooden decking, composite decking, laminate and vinyl flooring.",
             provider: {
               "@type": "LocalBusiness",
-              name: "Granite Carpentry",
-              telephone: "+27676014490",
-              email: "info@granitecarpentry.co.za",
+              name: "The Timber Studio",
+              telephone: "+27633977498",
+              email: "info@timberstudio.co.za",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Johannesburg",
@@ -196,9 +196,9 @@ export default function DeckingFlooringPage() {
                   size="lg"
                   className="text-lg px-8 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">
+                  <Link href="tel:+27633977498">
                     <Phone className="mr-2 h-5 w-5" />
-                    067 601 4490
+                    063 397 7498
                   </Link>
                 </Button>
               </div>
@@ -466,7 +466,7 @@ export default function DeckingFlooringPage() {
                   Complete kitchen renovations with custom cabinets and premium finishes.
                 </p>
                 <Button asChild variant="outline">
-                  <Link href="/services/kitchen-renovations">Learn More</Link>
+                  <Link href="/kitchen-renovations">Learn More</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -478,7 +478,7 @@ export default function DeckingFlooringPage() {
                   Custom built-in storage solutions to complement your flooring renovation.
                 </p>
                 <Button asChild variant="outline">
-                  <Link href="/services/built-in-cupboards">View Options</Link>
+                  <Link href="/built-in-cupboards">View Options</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -490,7 +490,7 @@ export default function DeckingFlooringPage() {
                   Professional drywall and ceiling installation for complete renovations.
                 </p>
                 <Button asChild variant="outline">
-                  <Link href="/services/drywall-ceilings">Explore Services</Link>
+                  <Link href="/drywall-ceilings">Explore Services</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -521,9 +521,9 @@ export default function DeckingFlooringPage() {
                 size="lg"
                 className="text-lg px-8 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent"
               >
-                <Link href="tel:+27676014490">
+                <Link href="tel:+27633977498">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call: 067 601 4490
+                  Call: 063 397 7498
                 </Link>
               </Button>
             </div>

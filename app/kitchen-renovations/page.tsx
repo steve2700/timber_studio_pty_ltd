@@ -4,24 +4,24 @@ import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { CheckCircle, Star, Shield, Award, Phone, ArrowRight, Home, ChefHat } from "lucide-react"
+import { CheckCircle, Star, Shield, Award, Phone, ArrowRight, ChefHat } from "lucide-react"
 import { FAQAccordion } from "@/components/faq-accordion"
 
 export const metadata: Metadata = {
   title: "Kitchen Renovations Johannesburg 2026 | Expert Kitchen Remodeling Services",
   description:
-    "Transform your kitchen with expert renovation services in Johannesburg, Sandton, Randburg & Midrand. Custom designs, granite countertops, built-in cupboards. 5-star rated. Free quotes. Call 067 601 4490.",
+    "Transform your kitchen with expert renovation services in Johannesburg, Sandton, Randburg & Midrand. Custom designs, premium countertops, built-in cupboards. 5-star rated. Free quotes. Call 063 397 7498.",
   keywords:
-    "kitchen renovations johannesburg, kitchen remodeling sandton, kitchen renovation randburg, kitchen design midrand, custom kitchens gauteng, kitchen cupboards johannesburg, granite countertops kitchen, kitchen renovation cost johannesburg, modern kitchen design sandton, kitchen contractors johannesburg",
+    "kitchen renovations johannesburg, kitchen remodeling sandton, kitchen renovation randburg, kitchen design midrand, custom kitchens gauteng, kitchen cupboards johannesburg, premium countertops kitchen, kitchen renovation cost johannesburg, modern kitchen design sandton, kitchen contractors johannesburg",
   openGraph: {
     title: "Kitchen Renovations Johannesburg 2026 | Expert Kitchen Remodeling Services",
     description:
-      "Transform your kitchen with expert renovation services in Johannesburg. Custom designs, granite countertops, professional installation. 5-star rated service.",
+      "Transform your kitchen with expert renovation services in Johannesburg. Custom designs, premium countertops, professional installation. 5-star rated service.",
     images: [{ url: "/Kitchen-renovations-sandton.webp", width: 1200, height: 630 }],
-    url: "https://granitecarpentry.co.za/services/kitchen-renovations",
+    url: "https://www.timberstudio.co.za/kitchen-renovations",
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/services/kitchen-renovations",
+    canonical: "https://www.timberstudio.co.za/kitchen-renovations",
   },
   robots: {
     index: true,
@@ -40,7 +40,7 @@ const kitchenFAQs = [
   {
     question: "How much does a kitchen renovation cost in Johannesburg?",
     answer:
-      "Kitchen renovation costs in Johannesburg vary based on size, materials, and scope of work. Basic renovations start from R80,000, mid-range renovations R120,000-R250,000, and luxury renovations R300,000+. Factors affecting cost include cabinet quality, countertop materials (granite R1,200-R2,000/m², quartz R1,500-R2,500/m²), appliances, plumbing changes, and electrical work. We provide detailed quotes with no hidden costs during our free consultation.",
+      "Kitchen renovation costs in Johannesburg vary based on size, materials, and scope of work. Basic renovations start from R80,000, mid-range renovations R120,000-R250,000, and luxury renovations R300,000+. Factors affecting cost include cabinet quality, countertop materials, appliances, plumbing changes, and electrical work. We provide detailed quotes with no hidden costs during our free consultation.",
   },
   {
     question: "How long does a kitchen renovation take in Sandton and Randburg?",
@@ -50,7 +50,7 @@ const kitchenFAQs = [
   {
     question: "What kitchen renovation services do you provide in Johannesburg?",
     answer:
-      "We provide comprehensive kitchen renovation services including custom cabinet design and installation, granite and quartz countertops, kitchen islands, backsplash installation, plumbing and electrical work, flooring installation, lighting design, appliance installation, and project management. Our team handles everything from initial design consultation to final cleanup, ensuring a seamless renovation experience throughout Johannesburg, Sandton, Randburg, and Midrand.",
+      "We provide comprehensive kitchen renovation services including custom cabinet design and installation, premium countertops, kitchen islands, backsplash installation, plumbing and electrical work, flooring installation, lighting design, appliance installation, and project management. Our team handles everything from initial design consultation to final cleanup, ensuring a seamless renovation experience throughout Johannesburg, Sandton, Randburg, and Midrand.",
   },
   {
     question: "Do you provide kitchen design services with 3D visualization?",
@@ -71,16 +71,16 @@ export default function KitchenRenovationsPage() {
             "@graph": [
               {
                 "@type": "Service",
-                "@id": "https://granitecarpentry.co.za/services/kitchen-renovations#service",
+                "@id": "https://www.timberstudio.co.za/kitchen-renovations#service",
                 name: "Kitchen Renovations Johannesburg",
                 description:
-                  "Professional kitchen renovation services in Johannesburg including custom cabinet installation, granite countertops, and complete kitchen remodeling.",
+                  "Professional kitchen renovation services in Johannesburg including custom cabinet installation, premium countertops, and complete kitchen remodeling.",
                 provider: {
                   "@type": "LocalBusiness",
-                  "@id": "https://granitecarpentry.co.za/#organization",
-                  name: "Granite Carpentry",
-                  telephone: "+27676014490",
-                  email: "info@granitecarpentry.co.za",
+                  "@id": "https://www.timberstudio.co.za/#organization",
+                  name: "The Timber Studio",
+                  telephone: "+27633977498",
+                  email: "info@timberstudio.co.za",
                   address: {
                     "@type": "PostalAddress",
                     addressLocality: "Johannesburg",
@@ -125,8 +125,8 @@ export default function KitchenRenovationsPage() {
                       "@type": "Offer",
                       itemOffered: {
                         "@type": "Service",
-                        name: "Granite Countertops",
-                        description: "Premium granite countertop installation for kitchens",
+                        name: "Custom Countertops",
+                        description: "Premium custom countertop installation for kitchens",
                       },
                     },
                     {
@@ -139,29 +139,6 @@ export default function KitchenRenovationsPage() {
                     },
                   ],
                 },
-              },
-              {
-                "@type": "BreadcrumbList",
-                itemListElement: [
-                  {
-                    "@type": "ListItem",
-                    position: 1,
-                    name: "Home",
-                    item: "https://granitecarpentry.co.za",
-                  },
-                  {
-                    "@type": "ListItem",
-                    position: 2,
-                    name: "Services",
-                    item: "https://granitecarpentry.co.za/services",
-                  },
-                  {
-                    "@type": "ListItem",
-                    position: 3,
-                    name: "Kitchen Renovations",
-                    item: "https://granitecarpentry.co.za/services/kitchen-renovations",
-                  },
-                ],
               },
               {
                 "@type": "FAQPage",
@@ -178,22 +155,6 @@ export default function KitchenRenovationsPage() {
           }),
         }}
       />
-
-      {/* Breadcrumb Navigation */}
-      <section className="bg-slate-100 py-4">
-        <div className="container mx-auto px-4">
-          <nav className="flex items-center space-x-2 text-sm">
-            <Link href="/" className="text-slate-600 hover:text-amber-600 flex items-center">
-              <Home className="h-4 w-4 mr-1" />
-              Home
-            </Link>
-            <span className="text-slate-400">/</span>
-            <span className="text-slate-600">Services</span>
-            <span className="text-slate-400">/</span>
-            <span className="text-amber-600 font-medium">Kitchen Renovations</span>
-          </nav>
-        </div>
-      </section>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
@@ -229,9 +190,9 @@ export default function KitchenRenovationsPage() {
                   size="lg"
                   className="text-lg px-8 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">
+                  <Link href="tel:+27633977498">
                     <Phone className="mr-2 h-5 w-5" />
-                    067 601 4490
+                    063 397 7498
                   </Link>
                 </Button>
               </div>
@@ -256,7 +217,7 @@ export default function KitchenRenovationsPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/Kitchen-renovations-sandton.webp"
-                  alt="Professional Kitchen Renovation Johannesburg - Modern kitchen with granite countertops and custom cabinets"
+                  alt="Professional Kitchen Renovation Johannesburg - Modern kitchen with premium countertops and custom cabinets"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -324,15 +285,13 @@ export default function KitchenRenovationsPage() {
               </p>
 
               <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
-                Granite and Quartz Countertop Installation
+                Premium Countertop Installation
               </h3>
               <p>
-                Premium countertops are essential for both functionality and aesthetics in modern kitchens. We
-                specialize in granite and quartz countertop installation, offering extensive selections of colors and
-                patterns to complement your kitchen design. Our fabrication process includes precise templating, custom
-                edge profiles, and professional installation with seamless joints. Popular choices in Johannesburg
-                include Black Galaxy granite, Kashmir White granite, and engineered quartz in Calacatta and marble-look
-                patterns.
+                Premium countertops are essential for both functionality and aesthetics in modern kitchens. We install a
+                wide range of durable countertop surfaces, offering extensive selections of colors and patterns to
+                complement your kitchen design. Our fabrication process includes precise templating, custom edge
+                profiles, and professional installation with seamless joints for a flawless, long-lasting finish.
               </p>
 
               <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">
@@ -401,7 +360,7 @@ export default function KitchenRenovationsPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600">
-                  Professional installation of granite, quartz, and marble countertops. Precision cutting and seamless
+                  Professional installation of premium countertop surfaces. Precision cutting and seamless
                   installation for a flawless finish that lasts for decades.
                 </p>
               </CardContent>
@@ -469,7 +428,7 @@ export default function KitchenRenovationsPage() {
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
               <Image
                 src="/modern-kitchen renovation.webp"
-                alt="Modern kitchen renovation with white cabinets and granite countertops in Sandton"
+                alt="Modern kitchen renovation with white cabinets and premium countertops in Sandton"
                 width={400}
                 height={300}
                 className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -482,13 +441,13 @@ export default function KitchenRenovationsPage() {
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
               <Image
                 src="/kitchen-renovation-granite-installation-johannesburg.jpg"
-                alt="Kitchen renovation with granite installation in Johannesburg showing custom cabinets"
+                alt="Kitchen renovation in Johannesburg showing custom cabinets and premium countertops"
                 width={400}
                 height={300}
                 className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <p className="text-white font-semibold">Granite Kitchen - Johannesburg</p>
+                <p className="text-white font-semibold">Custom Kitchen - Johannesburg</p>
               </div>
             </div>
 
@@ -540,36 +499,36 @@ export default function KitchenRenovationsPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="hover:shadow-xl transition-shadow border-0 shadow-md">
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-slate-800 mb-4">Granite & Quartz Countertops</h3>
-                <p className="text-slate-600 mb-6">
-                  Premium granite and quartz countertops with professional installation and lifetime beauty.
-                </p>
-                <Button asChild variant="outline">
-                  <Link href="/services/quartz-granite">View Countertops</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-shadow border-0 shadow-md">
-              <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-bold text-slate-800 mb-4">Built-in Cupboards</h3>
                 <p className="text-slate-600 mb-6">
                   Custom built-in storage solutions to complement your new kitchen renovation.
                 </p>
                 <Button asChild variant="outline">
-                  <Link href="/services/built-in-cupboards">View Storage</Link>
+                  <Link href="/built-in-cupboards">View Storage</Link>
                 </Button>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-xl transition-shadow border-0 shadow-md">
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-slate-800 mb-4">Professional Plumbing</h3>
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Bathroom Renovations</h3>
                 <p className="text-slate-600 mb-6">
-                  Complete plumbing services for kitchen renovations and home improvements.
+                  Complete bathroom makeovers with modern fixtures, tiling, and waterproofing.
                 </p>
                 <Button asChild variant="outline">
-                  <Link href="/services/plumbing">View Plumbing</Link>
+                  <Link href="/bathroom-renovations">View Bathrooms</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow border-0 shadow-md">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Door Installation</h3>
+                <p className="text-slate-600 mb-6">
+                  Premium pivot, barn, security, and French door installation for your home.
+                </p>
+                <Button asChild variant="outline">
+                  <Link href="/door-installation">View Doors</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -600,9 +559,9 @@ export default function KitchenRenovationsPage() {
                 size="lg"
                 className="text-lg px-8 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent"
               >
-                <Link href="tel:+27676014490">
+                <Link href="tel:+27633977498">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call: 067 601 4490
+                  Call: 063 397 7498
                 </Link>
               </Button>
             </div>

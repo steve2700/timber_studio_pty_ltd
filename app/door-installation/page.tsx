@@ -6,18 +6,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Professional Door Installation Services Gauteng | Expert Fitters 2026',
-  description: 'Premium door installation services across Gauteng. Pivot doors, barn doors, security doors, French doors & wooden doors. 15+ years experience. Free quotes. Call 067 601 4490',
+  description: 'Premium door installation services across Gauteng. Pivot doors, barn doors, security doors, French doors & wooden doors. 15+ years experience. Free quotes. Call 063 397 7498',
   keywords: 'door installation Gauteng, door fitters Johannesburg, pivot door installation, barn door installation, security door installation, French door installation, wooden door installation, door hanging services, professional door installers',
   openGraph: {
     title: 'Professional Door Installation Services Gauteng | Expert Fitters 2026',
     description: 'Premium door installation services across Gauteng. Pivot doors, barn doors, security doors & more. 15+ years experience.',
-    url: 'https://granitecarpentry.co.za/door-installation',
-    siteName: 'Granite Carpentry',
+    url: 'https://www.timberstudio.co.za/door-installation',
+    siteName: 'The Timber Studio',
     locale: 'en_ZA',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://granitecarpentry.co.za/door-installation',
+    canonical: 'https://www.timberstudio.co.za/door-installation',
   },
 }
 
@@ -37,9 +37,9 @@ export default function DoorInstallationPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white text-lg px-8" asChild>
-                <a href="tel:0676014490">
+                <a href="tel:0633977498">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call 067 601 4490
+                  Call 063 397 7498
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="text-black border-white hover:bg-white hover:text-gray-900 text-lg px-8" asChild>
@@ -450,9 +450,9 @@ export default function DoorInstallationPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="outline" className="bg-white text-amber-600 hover:bg-gray-100 text-lg px-8" asChild>
-              <a href="tel:0676014490">
+              <a href="tel:0633977498">
                 <Phone className="mr-2 h-5 w-5" />
-                Call 067 601 4490
+                Call 063 397 7498
               </a>
             </Button>
             <Button size="lg" className="bg-gray-900 hover:bg-gray-800 text-white text-lg px-8" asChild>

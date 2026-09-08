@@ -9,23 +9,23 @@ import { Phone, Star, CheckCircle, Clock, Shield, MapPin, ArrowRight, Quote, Bui
 
 export const metadata: Metadata = {
   title:
-    "Industrial Carpenter & Plumber Germiston | Commercial Carpentry, Granite Installation & Industrial Plumbing | Granite Carpentry",
+    "Industrial Carpenter & Plumber Germiston | Commercial Carpentry, Granite Installation & Industrial Plumbing | The Timber Studio",
   description:
-    "Industrial carpenter & plumber services in Germiston. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation & industrial plumbing. Licensed & insured. Call 067 601 4490 for free quote.",
+    "Industrial carpenter & plumber services in Germiston. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation & industrial plumbing. Licensed & insured. Call 063 397 7498 for free quote.",
   keywords:
     "carpenter Germiston, industrial plumber Germiston, commercial carpentry Germiston, kitchen renovations Germiston, built-in cupboards Germiston, granite installation Germiston, industrial plumbing Germiston",
   openGraph: {
     title: "Industrial Carpenter Germiston | Commercial Carpentry & Granite Installation",
     description:
       "Industrial carpenter services in Germiston. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation. Licensed & insured.",
-    url: "https://granitecarpentry.co.za/areas/germiston",
-    siteName: "Granite Carpentry",
+    url: "https://www.timberstudio.co.za/areas/germiston",
+    siteName: "The Timber Studio",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://www.timberstudio.co.za/timber-studio-logo.png",
         width: 1200,
         height: 630,
-        alt: "Industrial Carpenter Germiston - Granite Carpentry",
+        alt: "Industrial Carpenter Germiston - The Timber Studio",
       },
     ],
     locale: "en_ZA",
@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     title: "Industrial Carpenter Germiston | Commercial Carpentry & Granite Installation",
     description:
       "Industrial carpenter services in Germiston. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation. Licensed & insured.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://www.timberstudio.co.za/timber-studio-logo.png"],
   },
   alternates: {
-    canonical: "https://granitecarpentry.co.za/areas/germiston",
+    canonical: "https://www.timberstudio.co.za/areas/germiston",
   },
 }
 
@@ -49,7 +49,7 @@ export default function GermistonPage() {
       title: "Commercial Carpentry Germiston",
       description: "Industrial-grade carpentry solutions for Germiston's commercial and industrial properties.",
       image: "/carpenter-johannesburg-installing-kitchen-cupboards.jpg",
-      href: "/services/kitchen-renovations",
+      href: "/kitchen-renovations",
       price: "From R75,000",
       duration: "10-21 days",
     },
@@ -57,7 +57,7 @@ export default function GermistonPage() {
       title: "Industrial Built-ins Germiston",
       description: "Heavy-duty built-in storage solutions designed for Germiston's industrial environment.",
       image: "/Built-Built-in-Cupboards-Midrand.jpg",
-      href: "/services/built-in-cupboards",
+      href: "/built-in-cupboards",
       price: "From R20,000",
       duration: "5-10 days",
     },
@@ -65,7 +65,7 @@ export default function GermistonPage() {
       title: "Commercial Granite Germiston",
       description: "Industrial-strength granite and quartz installations for commercial properties in Germiston.",
       image: "/granite-installation-Johannesburg.jpg",
-      href: "/services/quartz-granite",
+      href: "/kitchen-renovations",
       price: "From R12,000",
       duration: "3-7 days",
     },
@@ -73,7 +73,7 @@ export default function GermistonPage() {
       title: "Industrial Flooring Germiston",
       description: "Durable flooring solutions designed for Germiston's industrial and commercial needs.",
       image: "/beautiful-decking.jpg",
-      href: "/services/decking-flooring",
+      href: "/decking-flooring",
       price: "From R18,000",
       duration: "5-12 days",
     },
@@ -81,7 +81,7 @@ export default function GermistonPage() {
       title: "Industrial Plumbing Germiston",
       description: "Heavy-duty plumbing services designed for Germiston's industrial and commercial properties.",
       image: "/granite-installation-Johannesburg.jpg",
-      href: "/services/plumbing",
+      href: "/bathroom-renovations",
       price: "From R420/hour",
       duration: "24/7 Service",
     },
@@ -200,7 +200,7 @@ export default function GermistonPage() {
                   size="lg"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
                 >
-                  <Link href="tel:+27676014490">Call 067 601 4490</Link>
+                  <Link href="tel:+27633977498">Call 063 397 7498</Link>
                 </Button>
               </div>
 
@@ -439,7 +439,7 @@ export default function GermistonPage() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-amber-600 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
             >
-              <Link href="tel:+27676014490">Call 067 601 4490</Link>
+              <Link href="tel:+27633977498">Call 063 397 7498</Link>
             </Button>
           </div>
         </div>

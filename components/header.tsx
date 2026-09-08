@@ -12,55 +12,24 @@ export function Header() {
 
   const services = [
     { name: "Kitchen Renovations", href: "/kitchen-renovations" },
-     { name: "Kitchen Renovations Cost Johannesburg", href: "/kitchen-renovation-cost-johannesburg" },
-    { name: "Kitchen Cupboards", href: "/kitchen-cupboards" }, 
-    { name: "Bathroom Renovations", href: "/bathroom-renovations" }, 
+    { name: "Bathroom Renovations", href: "/bathroom-renovations" },
     { name: "Built-in Cupboards", href: "/built-in-cupboards" },
-    { name: "Quartz & Granite", href: "/quartz-granite" },
-    { name: "Granite Countertops", href: "/granite-countertops" },
-    { name: "Quartz Countertops", href: "/quartz-countertops" },
-    { name: "Granite Supply & Installation", href: "/granite-supply-and-installation" },
-    { name: "Granite Installers Sandton", href: "/granite-installers-sandton" }, 
     { name: "Decking & Flooring", href: "/decking-flooring" },
     { name: "Drywall & Ceilings", href: "/drywall-ceilings" },
     { name: "Door Installation", href: "/door-installation" },
-    { name: "Professional Plumbing", href: "/plumbing" },
   ]
 
-  const drywallLocations = [
+  const collections = [
+    { name: "Bespoke Furniture", href: "/custom-furniture" },
+    { name: "Home Office & Study Fit-Outs", href: "/home-office-fit-outs" },
+    { name: "Pergolas & Outdoor Timber", href: "/outdoor-timber-structures" },
+  ]
+
+  const specialistPages = [
+    { name: "Carpenter Sandhurst", href: "/carpenter-sandhurst" },
+    { name: "Carpenter Near Me Johannesburg", href: "/carpenter-near-me-johannesburg" },
     { name: "Drywall Sandton", href: "/drywall-sandton" },
-    { name: "Ceiling Repairs Randburg", href: "/ceiling-repairs-randburg" },
-    { name: "Drywall Rosebank", href: "/drywall-rosebank" },
-    { name: "Suspended Ceilings JHB", href: "/suspended-ceilings-johannesburg" },
     { name: "Drywalling Contractors JHB", href: "/drywalling-contractors-johannesburg" },
-    { name: "Drywall Fourways", href: "/drywall-fourways" },
-    { name: "Ceiling Repairs Sandton", href: "/ceiling-repairs-sandton" },
-    { name: "Drywall Midrand", href: "/drywall-midrand" },
-    { name: "Ceiling Repairs Vereeniging", href: "/ceiling-repairs-vereeniging" },
-    { name: "Drywall JHB South", href: "/drywall-johannesburg-south" },
-    { name: "Drywall Bryanston", href: "/drywall-bryanston" },
-    { name: "Suspended Ceilings Sandton", href: "/suspended-ceilings-sandton" },
-    { name: "Drywall Centurion", href: "/drywall-centurion" },
-    { name: "Ceiling Repairs Pretoria", href: "/ceiling-repairs-pretoria" },
-    { name: "Drywall Edenvale", href: "/drywall-edenvale" },
-    { name: "Ceiling Installation Bryanston", href: "/ceiling-installation-bryanston" },
-    { name: "Drywall Pretoria", href: "/drywall-pretoria" },
-    { name: "Ceiling Repairs Centurion", href: "/ceiling-repairs-centurion" },
-    { name: "Drywall Boksburg", href: "/drywall-boksburg" },
-    { name: "Ceiling Installation Edenvale", href: "/ceiling-installation-edenvale" },
-  ]
-
-  const doorServices = [
-    { name: "Pivot Doors", href: "/pivot-doors" },
-    { name: "Barn Doors", href: "/barn-doors" },
-    { name: "Security Doors", href: "/security-doors" },
-    { name: "French Doors", href: "/french-doors" },
-    { name: "Wooden Doors", href: "/wooden-doors" },
-    { name: "Pivot Doors Sandton", href: "/pivot-doors-sandton" },
-    { name: "Barn Doors Cape Town", href: "/barn-doors-cape-town" },
-    { name: "Security Doors Johannesburg", href: "/security-doors-johannesburg" },
-    { name: "Solid Wood Doors Pretoria", href: "/solid-wood-doors-pretoria" },
-    { name: "French Doors Sandton", href: "/french-doors-sandton" },
   ]
 
   const areas = [
@@ -91,31 +60,33 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       {/* Top Bar - Hidden on small mobile, visible on larger screens */}
-      <div className="bg-slate-900 text-white hidden sm:block">
+      <div className="bg-charcoal text-cream hidden sm:block">
         <div className="container mx-auto px-4">
           <div className="flex h-10 items-center justify-between text-sm">
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-1">
-                <Phone className="h-3 w-3 text-amber-400" />
-                <a href="tel:+27676014490" className="hover:text-amber-400 transition-colors">
-                  067 601 4490
-                </a>
-              </div>
-              <div className="hidden md:flex items-center space-x-1">
-                <Mail className="h-3 w-3 text-amber-400" />
-                <a href="mailto:info@granitecarpentry.co.za" className="hover:text-amber-400 transition-colors">
-                  info@granitecarpentry.co.za
-                </a>
-              </div>
+            <div className="flex items-center space-x-5">
+              <a
+                href="tel:+27633977498"
+                className="flex items-center space-x-1.5 text-cream/90 hover:text-gold transition-colors"
+              >
+                <Phone className="h-3.5 w-3.5 text-gold" />
+                <span>063 397 7498</span>
+              </a>
+              <a
+                href="mailto:info@timberstudio.co.za"
+                className="hidden md:flex items-center space-x-1.5 text-cream/90 hover:text-gold transition-colors"
+              >
+                <Mail className="h-3.5 w-3.5 text-gold" />
+                <span>info@timberstudio.co.za</span>
+              </a>
             </div>
-            <div className="hidden lg:flex items-center space-x-4">
-              <div className="flex items-center space-x-1">
-                <MapPin className="h-3 w-3 text-amber-400" />
-                <span>Serving Greater Johannesburg & Pretoria</span>
+            <div className="hidden lg:flex items-center space-x-5">
+              <div className="flex items-center space-x-1.5 text-cream/80">
+                <MapPin className="h-3.5 w-3.5 text-gold" />
+                <span>Serving Greater Johannesburg &amp; Pretoria</span>
               </div>
-              <div className="flex items-center space-x-1">
-                <Star className="h-3 w-3 text-amber-400 fill-current" />
-                <span className="text-amber-400">★★★★★ 5.0</span>
+              <div className="flex items-center space-x-1.5">
+                <span className="text-gold tracking-wide">★★★★★</span>
+                <span className="text-cream/90">5.0 · 1000+ Projects</span>
               </div>
             </div>
           </div>
@@ -128,28 +99,17 @@ export function Header() {
           {/* Logo - Optimized for mobile */}
           <div className="flex items-center min-w-0 flex-1">
             <Link href="/" className="flex items-center space-x-2 min-w-0">
-              <div className="h-8 w-8 sm:h-10 sm:w-10 rounded bg-amber-600 flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-sm sm:text-base">GC</span>
+              <div className="h-8 w-8 sm:h-10 sm:w-10 rounded bg-charcoal flex items-center justify-center flex-shrink-0 ring-1 ring-amber-600/40">
+                <span className="font-serif font-bold text-sm sm:text-base">
+                  <span className="text-amber-500">T</span>
+                  <span className="text-gold">S</span>
+                </span>
               </div>
               <div className="min-w-0 flex-1">
-                <div className="font-bold text-base sm:text-lg text-slate-900 truncate">Granite Carpentry</div>
-                <div className="text-xs text-slate-600 hidden sm:block">& Joinery Experts</div>
+                <div className="font-serif font-bold text-base sm:text-lg text-slate-900 truncate">The Timber Studio</div>
+                <div className="text-xs text-slate-600 hidden sm:block tracking-wide">Design · Craft · Build</div>
               </div>
             </Link>
-          </div>
-
-          {/* Mobile Contact & CTA - Only on small screens */}
-          <div className="flex items-center space-x-2 sm:hidden">
-            <a
-              href="tel:+27676014490"
-              className="flex items-center justify-center h-9 w-9 rounded-full bg-amber-600 text-white hover:bg-amber-700 transition-colors"
-              aria-label="Call us"
-            >
-              <Phone className="h-4 w-4" />
-            </a>
-            <Button asChild size="sm" className="bg-amber-600 hover:bg-amber-700 text-xs px-3">
-              <Link href="/contact">Quote</Link>
-            </Button>
           </div>
 
           {/* Desktop Navigation */}
@@ -162,37 +122,41 @@ export function Header() {
               <button className="flex items-center text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
                 Services <ChevronDown className="ml-1 h-3 w-3" />
               </button>
-              <div className="absolute left-0 top-full mt-2 w-56 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <div className="py-1">
+              <div className="absolute left-0 top-full mt-2 w-64 rounded-lg bg-card shadow-xl ring-1 ring-border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                <div className="py-2">
                   {services.map((service) => (
                     <Link
                       key={service.href}
                       href={service.href}
-                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600"
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600 transition-colors"
                     >
                       {service.name}
                     </Link>
                   ))}
-                  <div className="border-t border-slate-200 my-1"></div>
-                  <div className="px-4 py-2 text-xs font-semibold text-slate-500 uppercase">Door Services</div>
-                  {doorServices.map((door) => (
+                  <div className="border-t border-border my-1.5" />
+                  <div className="px-4 py-1.5 text-xs font-semibold text-gold uppercase tracking-wider">
+                    Studio Collections
+                  </div>
+                  {collections.map((item) => (
                     <Link
-                      key={door.href}
-                      href={door.href}
-                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600"
+                      key={item.href}
+                      href={item.href}
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600 transition-colors"
                     >
-                      {door.name}
+                      {item.name}
                     </Link>
                   ))}
-                  <div className="border-t border-slate-200 my-1"></div>
-                  <div className="px-4 py-2 text-xs font-semibold text-slate-500 uppercase">Drywall Locations</div>
-                  {drywallLocations.map((location) => (
+                  <div className="border-t border-border my-1.5" />
+                  <div className="px-4 py-1.5 text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                    Specialist Pages
+                  </div>
+                  {specialistPages.map((page) => (
                     <Link
-                      key={location.href}
-                      href={location.href}
-                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600"
+                      key={page.href}
+                      href={page.href}
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600 transition-colors"
                     >
-                      {location.name}
+                      {page.name}
                     </Link>
                   ))}
                 </div>
@@ -227,9 +191,6 @@ export function Header() {
             >
               Portfolio
             </Link>
-            <Link href="/blog" className="text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
-              Blog
-            </Link>
             <Link href="/faq" className="text-sm font-medium text-slate-700 hover:text-amber-600 transition-colors">
               FAQ
             </Link>
@@ -241,7 +202,7 @@ export function Header() {
               <Link href="/contact">Get Quote</Link>
             </Button>
 
-            {/* Mobile menu trigger */}
+            {/* Mobile menu trigger — this is now the only element mobile users see here */}
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="lg:hidden">
                 <Button variant="ghost" size="icon" className="text-slate-700 h-9 w-9">
@@ -254,12 +215,15 @@ export function Header() {
                   {/* Header */}
                   <div className="flex items-center justify-between p-4 sm:p-6 border-b bg-slate-50">
                     <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
-                      <div className="h-8 w-8 rounded bg-amber-600 flex items-center justify-center">
-                        <span className="text-white font-bold text-sm">GC</span>
+                      <div className="h-8 w-8 rounded bg-charcoal flex items-center justify-center ring-1 ring-amber-600/40">
+                        <span className="font-serif font-bold text-sm">
+                          <span className="text-amber-500">T</span>
+                          <span className="text-gold">S</span>
+                        </span>
                       </div>
                       <div>
-                        <div className="font-bold text-base text-slate-900">Granite Carpentry</div>
-                        <div className="text-xs text-slate-600">& Joinery Experts</div>
+                        <div className="font-serif font-bold text-base text-slate-900">The Timber Studio</div>
+                        <div className="text-xs text-slate-600 tracking-wide">Design · Craft · Build</div>
                       </div>
                     </Link>
                   </div>
@@ -289,28 +253,32 @@ export function Header() {
                             </Link>
                           ))}
                           <div className="pt-3 mt-3 border-t border-slate-200">
-                            <div className="text-xs font-semibold text-slate-500 uppercase mb-2">Door Services</div>
-                            {doorServices.map((door) => (
+                            <div className="text-xs font-semibold text-gold uppercase tracking-wider mb-2">
+                              Studio Collections
+                            </div>
+                            {collections.map((item) => (
                               <Link
-                                key={door.href}
-                                href={door.href}
+                                key={item.href}
+                                href={item.href}
                                 className="block text-sm text-slate-600 hover:text-amber-600 transition-colors py-1"
                                 onClick={() => setIsOpen(false)}
                               >
-                                {door.name}
+                                {item.name}
                               </Link>
                             ))}
                           </div>
                           <div className="pt-3 mt-3 border-t border-slate-200">
-                            <div className="text-xs font-semibold text-slate-500 uppercase mb-2">Drywall Locations</div>
-                            {drywallLocations.map((location) => (
+                            <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">
+                              Specialist Pages
+                            </div>
+                            {specialistPages.map((page) => (
                               <Link
-                                key={location.href}
-                                href={location.href}
+                                key={page.href}
+                                href={page.href}
                                 className="block text-sm text-slate-600 hover:text-amber-600 transition-colors py-1"
                                 onClick={() => setIsOpen(false)}
                               >
-                                {location.name}
+                                {page.name}
                               </Link>
                             ))}
                           </div>
@@ -348,13 +316,6 @@ export function Header() {
                         Portfolio
                       </Link>
                       <Link
-                        href="/blog"
-                        className="text-lg font-medium text-slate-900 hover:text-amber-600 transition-colors"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        Blog
-                      </Link>
-                      <Link
                         href="/faq"
                         className="text-lg font-medium text-slate-900 hover:text-amber-600 transition-colors"
                         onClick={() => setIsOpen(false)}
@@ -368,13 +329,13 @@ export function Header() {
                   <div className="border-t p-4 sm:p-6 space-y-4 bg-slate-50">
                     <div className="flex items-center space-x-2 text-sm text-slate-600">
                       <Phone className="h-4 w-4 text-amber-600" />
-                      <a href="tel:+27676014490" className="hover:text-amber-600 transition-colors">
-                        067 601 4490
+                      <a href="tel:+27633977498" className="hover:text-amber-600 transition-colors">
+                        063 397 7498
                       </a>
                     </div>
                     <div className="flex items-center space-x-2 text-sm text-slate-600">
                       <Mail className="h-4 w-4 text-amber-600" />
-                      <span>info@granitecarpentry.co.za</span>
+                      <span>info@timberstudio.co.za</span>
                     </div>
                     <div className="flex items-center space-x-2 text-sm text-slate-600">
                       <MapPin className="h-4 w-4 text-amber-600" />

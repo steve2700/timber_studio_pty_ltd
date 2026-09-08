@@ -22,17 +22,17 @@ import {
 export const metadata: Metadata = {
   title: "Drywall Installation Sandton 2026 | Professional Drywalling Services | Free Quotes",
   description:
-    "★★★★★ Expert drywall installation in Sandton. Premium drywalling for luxury homes & offices in Rosebank, Hyde Park, Bryanston. Licensed contractors, 5-year warranty. Call 067 601 4490 for free quotes.",
+    "★★★★★ Expert drywall installation in Sandton. Premium drywalling for luxury homes & offices in Rosebank, Hyde Park, Bryanston. Licensed contractors, 5-year warranty. Call 063 397 7498 for free quotes.",
   keywords:
     "drywall installation Sandton, drywalling Sandton, drywall contractors Sandton, plasterboard installation Sandton, drywall Rosebank, drywall Hyde Park, drywall Bryanston, drywall Sandton City, luxury drywall Sandton, commercial drywall Sandton, residential drywall Sandton, drywall finishing Sandton, drywall repairs Sandton, professional drywalling Sandton 2026",
   alternates: {
-    canonical: "https://granitecarpentry.co.za/drywall-sandton",
+    canonical: "https://www.timberstudio.co.za/drywall-sandton",
   },
   openGraph: {
     title: "Drywall Installation Sandton 2026 | Professional Drywalling Services",
     description:
       "★★★★★ Expert drywall installation in Sandton. Premium drywalling for luxury homes & offices. Licensed contractors, 5-year warranty. Free quotes.",
-    url: "https://granitecarpentry.co.za/drywall-sandton",
+    url: "https://www.timberstudio.co.za/drywall-sandton",
     images: [{ url: "/drywall-contractor.jpg", width: 1200, height: 630 }],
   },
 }
@@ -76,9 +76,9 @@ export default function DrywallSandtonPage() {
                   asChild
                   className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                 >
-                  <a href="tel:+27676014490">
+                  <a href="tel:+27633977498">
                     <Phone className="mr-2 w-5 h-5" />
-                    067 601 4490
+                    063 397 7498
                   </a>
                 </Button>
               </div>
@@ -790,9 +790,9 @@ export default function DrywallSandtonPage() {
               asChild
               className="border-white text-white hover:bg-white hover:text-amber-600 text-lg px-8 py-4 bg-transparent"
             >
-              <a href="tel:+27676014490">
+              <a href="tel:+27633977498">
                 <Phone className="mr-2 w-5 h-5" />
-                067 601 4490
+                063 397 7498
               </a>
             </Button>
           </div>

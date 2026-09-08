@@ -3,19 +3,17 @@ import { useState } from "react"
 export function FloatingWhatsApp() {
   const [showTooltip, setShowTooltip] = useState(false)
   const whatsappNumber = "+27633977498"
-  const message = "Hi! I'm interested in your carpentry services. Can you help me with a quote?"
+  const message = "Hi! I am interested in your carpentry services. Can you help me with a quote?"
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace("+", "")}?text=${encodeURIComponent(message)}`
   return (
     <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50">
       <div className="relative">
-        {/* Tooltip */}
         {showTooltip && (
           <div className="absolute bottom-16 left-0 mb-2 px-3 py-2 bg-slate-900 text-white text-sm rounded-lg whitespace-nowrap shadow-lg max-w-[200px] text-center">
             Chat with us on WhatsApp!
             <div className="absolute top-full left-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-slate-900"></div>
           </div>
         )}
-        {/* WhatsApp Button - Green & White brand colors with the real WhatsApp logo */}
         
           href={whatsappUrl}
           target="_blank"
@@ -25,7 +23,6 @@ export function FloatingWhatsApp() {
           onMouseLeave={() => setShowTooltip(false)}
           className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg ring-4 ring-white transition-all duration-300 hover:scale-105 hover:bg-[#20BD5A] animate-pulse hover:animate-none"
         >
-          {/* Official WhatsApp glyph */}
           <svg
             viewBox="0 0 24 24"
             fill="currentColor"

@@ -3,10 +3,11 @@ import type { MetadataRoute } from "next"
 const baseUrl = "https://www.timberstudio.co.za"
 
 /**
- * Exactly 18 pages, matched to the routes that actually exist after
- * cleanup-to-18.sh. Each entry is explicit rather than pattern-matched —
- * at this page count a flat list is easier to audit and keep in sync
- * with the app/ directory than prefix-based rules.
+ * Exactly 19 pages, matched to the routes that actually exist after
+ * cleanup-to-18.sh plus the new Sandton bathroom landing page. Each entry
+ * is explicit rather than pattern-matched — at this page count a flat list
+ * is easier to audit and keep in sync with the app/ directory than
+ * prefix-based rules.
  */
 const pages: {
   path: string
@@ -27,6 +28,7 @@ const pages: {
   { path: "/kitchen-renovations", changeFrequency: "monthly", priority: 0.8 },
   { path: "/built-in-cupboards", changeFrequency: "monthly", priority: 0.8 },
   { path: "/bathroom-renovations", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/bathroom-renovations-sandton", changeFrequency: "weekly", priority: 0.85 },
   { path: "/decking-flooring", changeFrequency: "monthly", priority: 0.8 },
   { path: "/drywall-ceilings", changeFrequency: "monthly", priority: 0.8 },
   { path: "/door-installation", changeFrequency: "monthly", priority: 0.8 },
